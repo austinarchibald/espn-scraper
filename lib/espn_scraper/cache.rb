@@ -8,7 +8,7 @@ module ESPN
       end
 
       def precache
-        ESPN::Schedule.precache
+        ESPN::Schedule::League.precache
       end
 
       def read(cache_key)
