@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    espn_scraper (1.0.4)
+    espn_scraper (1.0.5)
       activesupport
       addressable
       httparty
@@ -10,11 +10,11 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.1.6)
-      i18n (~> 0.6, >= 0.6.9)
+    activesupport (4.2.0)
+      i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
-      thread_safe (~> 0.1)
+      thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.6)
     byebug (3.5.1)
@@ -28,18 +28,18 @@ GEM
     httparty (0.13.3)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    i18n (0.6.11)
-    json (1.8.1)
-    mini_portile (0.6.1)
-    minitest (5.4.3)
+    i18n (0.7.0)
+    json (1.8.2)
+    mini_portile (0.6.2)
+    minitest (5.5.1)
     multi_xml (0.5.5)
-    nokogiri (1.6.4.1)
+    nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     rake (10.1.0)
     rr (1.1.2)
     safe_yaml (1.0.4)
     slop (3.6.0)
-    thread_safe (0.3.4)
+    thread_safe (0.3.5)
     timecop (0.7.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
