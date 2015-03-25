@@ -32,16 +32,6 @@ module ESPN
       return espn_scores
     end
 
-    # TODO: Reimplement you
-    #def self.get_nfl_scores(year = Time.now.year, week = nil)
-      #ESPN::Score.nfl_scores(Score.markup_from_year_and_week('nfl', year, week))
-    #end
-
-    # TODO: Reimplement you
-    #def self.get_ncf_scores(year, week)
-      #ESPN::Score.ncf_scores(Score.markup_from_year_and_week('college-football', year, week))
-    #end
-
     def nfl_scores
       visitor_home_parse.tap do |scores|
         scores.each { |report| report[:league] = 'nfl' }
@@ -81,12 +71,6 @@ module ESPN
     def teams
       @teams ||= ESPN::Team.find(league).values.flatten.map  { |t| t[:data_name] }.to_set
     end
-
-    # Get Markup
-    #def markup_from_year_and_week(league, year, week)
-      #http_params = %W[ seasonYear=#{year} seasonType=2 weekNumber=#{week} confId=80 ]
-      #ESPN.get 'scores', league, "scoreboard?#{ http_params.join('&') }"
-    #end
 
     def markup_from_date
       @markup_from_date ||= begin

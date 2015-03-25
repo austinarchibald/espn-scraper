@@ -23,13 +23,14 @@ module ESPN::Schedule
       data[:team_name]  = self.name
 
       data[:games] = markup.css('.oddrow, .evenrow').map do |row|
+        starting_index = league == 'nfl' ? 1 : 0
+
         tds = row.xpath('td')
         next if tds.count == 1
         next if row.content.match(/BYE WEEK/)
-        next if tds[2].content.match(/Postponed|Canceled/)
+        next if tds[starting_index + 2].content.match(/Postponed|Canceled/i)
 
         {}.tap do |game_info|
-          starting_index = league == 'nfl' ? 1 : 0
           time_string = "#{tds[starting_index + 2].content.match(/^\d*:\d\d (PM|AM)/)} EST"
           time = (Time.parse(time_string) rescue nil) if !time_string.match(/^[WL]/)
           is_over = !time && !tds[starting_index + 2].content.match(/TBD|TBA|Half/)
@@ -51,6 +52,7 @@ module ESPN::Schedule
           game_info[:opponent] = ESPN.parse_data_name_from(tds[starting_index + 1])
           game_info[:opponent_name] = tds[(starting_index.to_i + 1)].at_css('.team-name').content.to_s.gsub(/#\d*/, '').strip
           game_info[:is_away] = !!tds[(starting_index.to_i + 1)].content.match(/^@/)
+          game_info[:week] = tds[0].content if %w[ncf nfl].include?(league)
 
           if is_over
             game_info[:result] = tds[starting_index + 2].at_css('.score').content.strip
@@ -74,7 +76,7 @@ module ESPN::Schedule
     end
 
     def markup
-      @markup ||= ESPN.get "#{league}/team/schedule/_/#{by}/#{name}"
+      @markup ||= ESPN.get "#{league}/team/schedule/_/#{by}/#{name}/year/2014"
     end
   end
 end

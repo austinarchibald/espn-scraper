@@ -14,10 +14,12 @@ module ESPN
     end
 
     def uri
-      closest_game
+      http_params = %W[ seasonYear=#{self.date.year} seasonType=2 weekNumber=#{closest_game_week} confId=80 ]
+
+      "scores/#{self.league}/scoreboard?#{http_params.join('&')}"
     end
 
-    def closest_game
+    def closest_game_week
       return self.game_dates[date] if self.game_dates[date]
 
       closest_date = self.game_dates.keys.sort.detect do |game_date|
@@ -28,7 +30,12 @@ module ESPN
     end
 
     def game_dates
-      @game_dates ||= ESPN::Schedule::League.new(league).get_with_cache(false)
+      @game_dates ||= begin
+                        ESPN::Schedule::League.new(league).get_with_cache(false).inject({}) do |hash, game|
+                          hash[game[:date]] = game[:week]
+                          hash
+                        end
+                      end
     end
   end
 end

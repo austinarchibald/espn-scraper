@@ -16,16 +16,22 @@ module ESPN::Schedule
       end
     end
 
-    def get_with_cache
-      ESPN::Cache.fetch("espn_schedule_#{league}", expires_in: 1.year) do
+    def get_with_cache(just_dates = true)
+      games = ESPN::Cache.fetch("espn_schedule_#{league}", expires_in: 1.year) do
         get
+      end.flatten
+
+      if just_dates
+        games.map { |g| g[:date] }.uniq.sort
+      else
+        games
       end
     end
 
     def get
       team_data_names.map do |team|
-        ESPN::Schedule::Team.find(league, team)[:games].map { |g| g[:date] }
-      end.flatten.uniq.sort
+        ESPN::Schedule::Team.find(league, team)[:games]
+      end
     end
 
     private
