@@ -22,8 +22,16 @@ module ESPN::Schedule
       data[:league]     = self.league
       data[:team_name]  = self.name
 
-      data[:games] = markup.css('.oddrow, .evenrow').map do |row|
+      headings = markup.css('.stathead').map(&:content)
+      current_heading = -1
+
+      data[:games] = markup.css('tr').map do |row|
         starting_index = league == 'nfl' ? 1 : 0
+        next if row.attributes['class'].value == 'colhead'
+
+        if row.attributes['class'].value == 'stathead'
+          current_heading = current_heading + 1
+        end
 
         tds = row.xpath('td')
         next if tds.count == 1
@@ -53,6 +61,7 @@ module ESPN::Schedule
           game_info[:opponent_name] = tds[(starting_index.to_i + 1)].at_css('.team-name').content.to_s.gsub(/#\d*/, '').strip
           game_info[:is_away] = !!tds[(starting_index.to_i + 1)].content.match(/^@/)
           game_info[:week] = tds[0].content if %w[ncf nfl].include?(league)
+          game_info[:heading] = headings[current_heading]
 
           if is_over
             game_info[:result] = tds[starting_index + 2].at_css('.score').content.strip
@@ -76,7 +85,7 @@ module ESPN::Schedule
     end
 
     def markup
-      @markup ||= ESPN.get "#{league}/team/schedule/_/#{by}/#{name}/year/2014"
+      @markup ||= ESPN.get "#{league}/team/schedule/_/#{by}/#{name}"
     end
   end
 end
