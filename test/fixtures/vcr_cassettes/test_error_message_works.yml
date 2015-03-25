@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://espn.go.com/bad-api-keyword
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - text/html
+      Last-Modified:
+      - Tue, 28 Feb 2012 18:02:36 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Sat, 08 Nov 2014 23:46:12 GMT
+      Connection:
+      - keep-alive
+      P3p:
+      - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
+        BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
+      Set-Cookie:
+      - SWID=9F063290-2814-4E88-B10B-7BCA94616B8C; path=/; expires=Fri, 03 Nov 2034
+        23:46:12 GMT; domain=go.com;
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+        <title>ESPN - Not Found</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+        </head>
+        <body>
+        <!-- Redirect to search page. -->
+        <form method="get" action="http://search.espn.go.com/s/404/" name="searchForm">
+            <input type="hidden" name="ref" />
+            <input type="hidden" name="404" value="true" />
+        </form>
+        <script type="text/javascript">
+            document.searchForm.ref.value = document.location;
+            document.cookie=['oRef=',encodeURIComponent(document.location),'; expires='+(new Date(+new Date+3E4)).toUTCString()].join('');
+            document.searchForm.submit();
+        </script>
+        </body>
+        </html>
+    http_version: 
+  recorded_at: Sat, 08 Nov 2014 23:46:12 GMT
+recorded_with: VCR 2.9.3

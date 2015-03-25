@@ -1,0 +1,1756 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://espn.go.com/nhl/photos?gameId=400564325
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Content-Type:
+      - text/html;charset=iso-8859-1
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 21 Jan 2015 04:29:34 GMT
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=300
+      P3p:
+      - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
+        BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
+      Set-Cookie:
+      - SWID=0F0A6E50-5D05-4EFE-9A37-67D981355A90; path=/; expires=Tue, 16 Jan 2035
+        04:29:34 GMT; domain=go.com;
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
+        src=\"http://sports-ak.espn.go.com/sports/optimizely.js\"></script><meta charset=\"iso-8859-1\">\n<meta
+        http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n<script type=\"text/javascript\">
+        \   \n    if(true && navigator && navigator.userAgent.toLowerCase().indexOf(\"teamstream\")
+        >= 0) {\n        window.location = 'http://a.m.espn.go.com/mobilecache/general/apps/sc';\n
+        \   }\n</script><script type=\"text/javascript\">\nvar espn=window.espn||{};espn.beta=(function(f,i,b){var
+        c=\"http://beta.espn.go.com\",j=f.location.href,l=i.location.pathname;function
+        a(n){var r,m,o,q,s,v,w,p,t;if(n!==b){j=n;r=n.match(/http:\\/\\/([^\\/]*)([^?]*).*/);if(r&&r.length===3){l=r[2];}}if(l.match(/\\/story$/i)||l.match(/\\/story\\//i)){q=k(\"storyId\",n)||k(\"id\",n);s=k(\"storyPage\",n)||k(\"page\",n);if(q!==\"\"){return
+        c+l+\"/_/id/\"+q;}else{if(s!==\"\"){return c+l+\"/_/page/\"+s;}else{return
+        c+l;}}}if(l.match(/\\/blogpostindex$/i)){m=k(\"blogname\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"){return
+        c+\"/blog/\"+m;}}if(l.match(/\\/blogpost$/i)){m=k(\"blogname\",n);o=k(\"id\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"&&o!==\"\"){return
+        c+\"/blog/\"+m+\"/post/_/id/\"+o;}}if(l.match(/^\\/blog\\//i)){m=k(\"blogName\",n);o=k(\"id\",n);if(l.match(/\\/blog\\/.*\\/post$/i)){if(o!==\"\"){return
+        c+l+\"/_/id/\"+o;}}else{if(m!==\"\"&&o!==\"\"){return c+\"/blog/\"+m+\"/post/_/id/\"+o;}else{if(m!==\"\"){return
+        c+\"/blog/\"+m;}else{return c+l;}}}}if((l===\"\"||l===\"/\")&&!j.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)){return
+        c;}var u=l.match(/^\\/.*?\\/(?:index)?$/i);if(u){v={\"/frontpage/\":true,\"/wireless/\":true,\"/general/\":true,\"/extra/\":true,\"/mobile/\":true,\"/nfl/\":true,\"/nba/\":true,\"/mlb/\":true,\"/nhl/\":true,\"/ncf/\":true,\"/college-football/\":true,\"/ncb/\":true,\"/mens-college-basketball/\":true,\"/ncw/\":true,\"/womenbb/\":true,\"/womens-basketball/\":true,\"/wnba/\":true,\"/golf/\":true,\"/tennis/\":true,\"/general/tennis/\":true,\"/mma/\":true,\"/extra/mma/\":true,\"/racing/\":true,\"/rpm/\":true,\"/racing/nascar/\":true,\"/rpm/nascar/\":true,\"/boxing/\":true,\"/extra/boxing/\":true,\"/college-sports/\":true,\"/ncaa/\":true,\"/extra/ncaa/\":true,\"/olympics/\":true,\"/extra/olympics/\":true,\"/horse-racing/\":true,\"/horse/\":true,\"/general/horse/\":true,\"/poker/\":true,\"/general/poker/\":true,\"/sports/endurance/\":true,\"/extra/endurance/\":true};if(l.match(/\\/index$/i)){l=l.substring(0,l.length-5);}if(v[l]===true){return
+        c+l;}}if(l.match(/\\/nflpreview$/i)||l.match(/\\/preview$/i)){w=k(\"gameId\",n);if(w!==\"\"){if(l.match(/\\/nflpreview$/i)){return
+        c+\"/nfl/preview?gameId=\"+w;}else{return c+l+\"?gameId=\"+w;}}}if(l.match(/\\/recap$/i)){w=k(\"gameId\",n);if(w!==\"\"){return
+        c+l+\"?gameId=\"+w;}}if(l===\"/general/video\"){p=k(\"cid\",n);t=k(\"vid\",n);if(p!==\"\"){return
+        c+\"/video/clip?id=\"+p;}else{if(t!==\"\"){return c+\"/video/clip?id=\"+t;}}}if(l.match(/^\\/(?:videohub\\/video|video)\\/clip$/i)){p=k(\"id\",n);if(p!==\"\"){return
+        c+l+\"?id=\"+p;}}}function h(o){var n=a(o);var m=j.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)||(o&&o.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i))||(espn&&espn.GLOBALS&&espn.GLOBALS.isPremium);if(n){n=n.replace(\"/wireless/\",\"/\");n=n.replace(\"/general/\",\"/\");n=n.replace(\"/extra/\",\"/\");n=n.replace(\"/mobile/\",\"/\");n=n.replace(\"/frontpage/\",\"/\");n=n.replace(\"/videohub/\",\"/\");n=n.replace(\"/ncf/\",\"/college-football/\");n=n.replace(\"/rpm/\",\"/racing/\");n=n.replace(\"/ncb/\",\"/mens-college-basketball/\");n=n.replace(\"/ncw/\",\"/womens-basketball/\");n=n.replace(\"/wnba/\",\"/womens-basketball/\");n=n.replace(\"/ncaa/\",\"/college-sports/\");if(m){n=n.replace(\"/story/\",\"/insider/story/\");n=n.replace(\"/post/\",\"/insider/post/\");if(n.match(/\\/blog\\/[^_]*$/i)){if(n.charAt(n.length-1)===\"/\"){n=n+\"insider/\";}else{n=n+\"/insider/\";}}}}return
+        n;}function k(o,q){var m=location.search;if(q!==b){var n=q.indexOf(\"?\");if(n>-1){m=q.substr(n);}}o=o.replace(/[\\[]/,\"\\\\[\").replace(/[\\]]/,\"\\\\]\");var
+        r=new RegExp(\"[\\\\?&]\"+o+\"=([^&#]*)\"),p=r.exec(m);return p===null?\"\":decodeURIComponent(p[1].replace(/\\+/g,\"
+        \"));}function d(){var n=e(\"betauser\");var m=e(\"betacohort\")||\"\";if(n!==null&&m.indexOf(\"cohort-\")===0){var
+        p=m.split(\"-\");if(p&&p.length===2){if(parseInt(p[1],10)===999){return;}}var
+        o=h();if(o){f.location=o;}}}function e(n){var p=n+\"=\";var m=i.cookie.split(\";\");for(var
+        o=0;o<m.length;o++){var q=m[o];while(q.charAt(0)===\" \"){q=q.substring(1,q.length);}if(q.indexOf(p)===0){return
+        q.substring(p.length,q.length);}}return null;}function g(){if(k(\"rand\")===\"beta\"){espn.beta.recheck=true;}else{d();}}return{init:function(){g();}};})(this,this.document);espn.beta.init();\n</script><title>New
+        York Islanders vs. Pittsburgh Penguins - Photos - November 21, 2014 - ESPN</title>\n<meta
+        name=\"google-site-verification\" content=\"xuj1ODRluWa0frM-BjIr_aSHoUC7HB5C1MgmYAM_GkA\"
+        />\n<meta name=\"msvalidate.01\" content=\"B1FEB7C682C46C8FCDA3130F3D18AC28\"
+        />\n<meta name=\"googlebot\" content=\"noodp\" />\n<meta name=\"robots\" content=\"index,
+        follow\" />\n<meta name=\"description\" content=\"NHL Hockey Photos: Final
+        statistics from the New York vs. Pittsburgh game played on November 21, 2014\"
+        />\n<meta name=\"keywords\" content=\"nhl hockey Photos, New York stats, Pittsburgh
+        stats\" />\n<meta property=\"fb:app_id\" content=\"116656161708917\">\n<meta
+        property=\"og:site_name\" content=\"ESPN.com\">\n<link rel=\"canonical\" href=\"http://scores.espn.go.com/nhl/photos?gameId=400564325\"
+        />\n\n\t\t<script>var _sf_startpt=(new Date()).getTime();</script>\n<link
+        rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"http://a.espncdn.com/search/opensearch.xml\"
+        title=\"ESPN Search\" />\n<link rel=\"stylesheet\" href=\"http://a.espncdn.com/combiner/c/201401211964?css=global_reset.r1.css,base.r236.css,modules.r462.css,global_header.r44.css,header_topbar.r1.css,modules/global_nav.r54.css,modules/insider_enhanced.r1.css,modules/mem/mem.r12.1.css,modules/mem/mem_espn360.r8.4.css,modules/mem/skirmish.r8.css,modules/twin.r1.css,modules/facebook/button.r2.css,universal_overlay/universal_overlay.css,universal_overlay/media_overlay.css,universal_overlay/video_overlay.css,universal_overlay/photo_overlay.css,universal_overlay/dyk_overlay.css,fonts/bentonsans.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/201303290924?css=sprites/teamlogos.r18.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c?v=201407081137&css=/espn/espn/styles/gamepackage10/ootCSS,/espn/espn/styles/gamepackage10/gamepackage10CSS,/espn/espn/styles/gamepackage10/gamepackage10moduleCSS\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c?v=201308011131&css=modules/playerpopup.r2.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c?v=201108152006&css=modules/videoplayer12.r1.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/prod/styles/social_upgrade.r1.css\" type=\"text/css\"
+        media=\"screen\" charset=\"utf-8\" />\n<script type=\"text/javascript\">\nvar
+        _vrq = _vrq || [];\n _vrq.push(['id', 489]);\n _vrq.push(['automate', false]);\n
+        _vrq.push(['track', function(){}]);\n (function(d, a){var s = d.createElement(a),x
+        = d.getElementsByTagName(a)[0];\ns.async = true;\ns.src = 'http://a.visualrevenue.com/vrs.js';\n
+        x.parentNode.insertBefore(s, x);})(document, 'script'); </script>\n<script
+        src=\"http://a.espncdn.com/combiner/c?js=jquery-1.7.1.js,plugins/json2.r3.js,plugins/teacrypt.js,plugins/jquery.metadata.js,plugins/jquery.bgiframe.r3.js,plugins/jquery.easing.1.3.js,plugins/jquery.hoverIntent.js,plugins/jquery.jcarousel.0.2.9.js,plugins/jquery.tinysort.r4.js,plugins/jquery.pubsub.r5.js,ui/1.8.16/jquery.ui.core.js,ui/1.8.16/jquery.ui.widget.js,ui/1.8.16/jquery.ui.tabs.js,ui/1.8.16/jquery.ui.accordion.js,plugins/ba-debug-0.4.js,espn.l10n.r12.js,swfobject/2.2/swfobject.js,flashObjWrapper.r7.js,plugins/jquery.colorbox.1.3.14.js,plugins/jquery.ba-postmessage.js,espn.core.duo.r57.js,m/beta/betacheck.r5.js,espn.mem.r39.js,stub.search.r9.js,espn.nav.mega.r38b.js,espn.storage.r6.js,espn.p13n.r19.5.js,espn.geo.r3.js,espn.video.r81.r5.js,analytics/chartbeat/video/strategy_comprehensive.r1.js,registration/staticLogin.r12.06102014.js,espn.universal.overlay.r19.js,insider/espn.insider.20140915.js,espn.espn360.stub.r9.js,espn.myHeadlines.stub.r16.js,espn.myfaves.stub.r3.js,tsscoreboard.20090612.js,ie9pinning.r3.js,espn.f8.noauth.r3.js,espn.socialmediamod.r7.js,playerpopup.r14.js\"></script>\n<script
+        src=\"http://a.espncdn.com/prod/scripts/espn.loader.200901201835.js\" type=\"text/javascript\"
+        charset=\"utf-8\"></script>\n<script type=\"text/javascript\" charset=\"utf-8\">\nESPN.include([\n\t'http://widgets.outbrain.com/outbrain.js'\n]);\n</script>\n<script>espn.core.navVersion
+        = 'a';</script>\n<script>var ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlphotos\",ad_kvps=\"pgtyp=nhlphotos;sp=nhl;\",ad_swid=\"\",ad_counter=1,ad_ord=Math.floor(9999999999*Math.random()),ad_seg=\"\",ad_mnr=-1<document.cookie.indexOf(\"grif=1\")?\"t\":\"f\",ad_ref=\"other\",ref=document.referrer,refsMap={\"facebook.com\":\"facebook\",\"twitter.com|t.co\":\"twitter\",\"plus.url.google.com|plus.google.com\":\"googleplus\",\"google.com\":\"google\",\"bing.com\":\"bing\",\"yahoo.com\":\"yahoo\",\"espn.go.com\":\"espn\"},refKey;for(refKey
+        in refsMap)ref.match(refKey)&&(ad_ref=refsMap[refKey]);\nad_kvps=ad_kvps+\"ref=\"+ad_ref+\";mnr=\"+ad_mnr+\";\";ad_swid=jQuery.cookie(\"SWID\");\"function\"===typeof
+        espn.core.ad_segments&&(ad_seg=espn.core.ad_segments(),null!=ad_seg&&\"\"!=ad_seg&&(ad_kvps+=ad_seg));var
+        ad_u=\"\";null!=ad_swid&&\"\"!=ad_swid&&(ad_u=\"swid=\"+ad_swid+\";\");</script>\n</head>\n<body
+        class=\"game-package nhl {sportId:90}\" >\n<div class=\"mboxDefault\"><link
+        rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/prod/styles/modules/hideGravity.css\"
+        type=\"text/css\" /></div><script>mboxCreate('ESPN_global');</script><!--[if
+        IE 5]><div class=\"ie5\"><![endif]-->\n<!--[if IE 6]><div class=\"ie ie6\"><![endif]-->\n<!--[if
+        IE 7]><div class=\"ie ie7\"><![endif]-->\n<!--[if IE 8]><div class=\"ie ie8\"><![endif]-->\n<!--[if
+        IE 9]><div class=\"ie9\"><![endif]-->\n<!-- begin bg-elements -->\n<div class=\"bg-elements\">\n<!--
+        begin header -->\n<div id=\"header\" class=\"container\">\n<!-- begin top-bar
+        -->\n<div class=\"top-bar\">\n<!-- begin uni login -->\n<script type=\"text/javascript\">\nvar
+        returnURL = document.location.href;\nvar anCV = \"\";\nvar myEspnText = {'welcometext':'Welcome','register':'Register','signin':'Sign
+        In','signout':'Sign Out','heliumdown':'Login Temporarily Unavailable','connectedfacebook':'Connected
+        to Facebook','connectfacebook':'Connect with Facebook','activateinsider':'Activate
+        Insider'};\n</script>\n<form id=\"form-memberarea\">\n<input type=\"hidden\"
+        name=\"language\" id=\"language\" value=\"en\"/>\n<input type=\"hidden\" name=\"affiliateName\"
+        id=\"memberAreaAffiliateName\" value=\"espn\"/>\n<input type=\"hidden\" name=\"regFormId\"
+        id=\"regFormId\" value=\"espn\"/>\n</form>\n<div class=\"signin\" id=\"signin\"></div>\n<script>espn.memberservices.welcome();</script>\n<div
+        class=\"nav-edition editions\">\n<label>EDITIONS:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-usa active\"><a href=\"http://espn.go.com/\" name=\"&amp;lpos=editionsnav&amp;lid=usa\">USA</a></li>\n\t<li
+        class=\"e-deportes\"><a href=\"http://www.espn.com?country-view=us&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=deportes\" class=\"{langPref:'spanish'}\">DEPORTES</a></li>\n\t<li
+        class=\"last dropdown\">\n\t<ul class=\"\">\n\t<li class=\"selected\">More</li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=ar&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=argentina\">Argentina</a></li>\n\t<li><a
+        href=\"http://www.espn.com.au\" name=\"&amp;lpos=editionsnav&amp;lid=australia\">Australia</a></li>\n\t<li><a
+        href=\"http://www.espn.com.br\" name=\"&amp;lpos=editionsnav&amp;lid=brazil\">Brazil</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=co&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=colombia\">Colombia</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=mx&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=mexico\">Mexico</a></li>\n\t<li><a
+        href=\"http://www.espn.co.uk/\" name=\"&amp;lpos=editionsnav&amp;lid=uk\">United
+        Kingdom</a></li>\n        <li><a href=\"http://www.espn.com?country-view=ve&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=venezuela\">Venezuela</a></li>\n\t</ul>\n\t</li>\n</ul>\n</div>\n\n<div
+        class=\"nav-edition\">\n<label>CITIES:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-boston\"><a href=\"http://espn.go.com/boston/\" name=\"&amp;lpos=citynav&amp;lid=boston\">BOSTON</a></li>\n\t<li
+        class=\"e-chicago\"><a href=\"http://espn.go.com/chicago/\" name=\"&amp;lpos=citynav&amp;lid=chicago\">CHICAGO</a></li>\n\t<li
+        class=\"e-dallas\"><a href=\"http://espn.go.com/dallas/\" name=\"&amp;lpos=citynav&amp;lid=dallas\">DALLAS</a></li>\n\t<li
+        class=\"e-losangeles\"><a href=\"http://espn.go.com/los-angeles/\" name=\"&amp;lpos=citynav&amp;lid=losangeles\">LOS
+        ANGELES</a></li>\n\t<li class=\"last e-newyork\"><a href=\"http://espn.go.com/new-york/\"
+        name=\"&amp;lpos=citynav&amp;lid=newyork\">NEW YORK</a></li>\n</ul>\n</div>\n</div>\n<!--
+        end top-bar -->\n<!-- begin espn-logo -->\n<div class=\"espn-logo\">\n<h1>\n<a
+        href=\"http://espn.go.com/\" name=\"&lpos=sitenavdefault&lid=sitenav_main-logo\"
+        class=\"espn\">ESPN</a> <a href=\"http://espn.go.com/nhl/\" class=\"section-title\">NHL</a></h1>\n</div>\n<!--
+        end espn-logo -->\n<!-- begin ad -->\n<span class=\"presby\"><!--espn.us.com.nhl
+        sitezone--><!--http://ad.Doubleclick.net hostUrl-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlphotos\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=SponsoredByLogoHeader;\"+ad_u+\"sz=150x45,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"SponsoredByLogoHeader\" data-cb-dfp-id=\"'+ad_kvps+'sz=150x45,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nhl/nhlphotos;pgtyp=nhlphotos;sp=nhl;sz=150x45,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlphotos;pgtyp=nhlphotos;sp=nhl;sz=150x45,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</span>\n<!-- end ad -->\n<div class=\"header-right\">\n<style>.ie6
+        #searchBox, .ie6 #searchBox div { display: inline; } </style><!-- begin search
+        -->\n<div id=\"nav-main-search\">\n<form id=\"searchBox\" name=\"searchBox\"
+        action=\"http://search.espn.go.com/results\" method=\"get\" accept-charset=\"utf-8\"
+        style=\"color: #999999;\">\n<div class=\"clearfix\">\n<input autocomplete=\"off\"
+        class=\"text\" type=\"text\" placeholder=\"Search\" name=\"searchString\"
+        id=\"searchString\" />\n<input type=\"hidden\" name=\"page\" id=\"page\" value=\"null\"
+        />\n<input type=\"hidden\" name=\"fromForm\" value=\"true\" />\n<input class=\"submit\"
+        type=\"submit\" value=\"\" />\n</div>\n</form>\n</div>\n<!-- end search -->\n<div
+        id=\"shop\"><a class=\"shop-btn\" href=\"http://www.dickssportinggoods.com/category/index.jsp?categoryId=15504466&camp=Part:ESPNpart::nhlshopbutton:NHL\"
+        name=\"&lpos=sitenavdefault&lid=sitenav_shopbutton\" rel=\"nofollow\">Shop</a></div></div>\n</div>\n<!--
+        end header -->\n<!--espn.us.com.nhl sitezone--><!--http://ad.Doubleclick.net
+        hostUrl-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlphotos\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Background_Skin;\"+ad_u+\"sz=1280x946,200x800,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Background_Skin\" data-cb-dfp-id=\"'+ad_kvps+'sz=1280x946,200x800,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nhl/nhlphotos;pgtyp=nhlphotos;sp=nhl;sz=1280x946,200x800,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlphotos;pgtyp=nhlphotos;sp=nhl;sz=1280x946,200x800,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n<!-- begin subheader -->\n<div id=\"subheader\">\n<!--
+        begin content -->\n<div id=\"content-wrapper\">\n<div id=\"ad-top\" class=\"container\">\n<!--
+        begin Banner ad -->\n<div class=\"span-6 ad banner top\"><div class=\"ad-center\"><div
+        class=\"ad-wrapper\"><!--espn.us.com.nhl sitezone--><!--http://ad.Doubleclick.net
+        hostUrl-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlphotos\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Banner;\"+ad_u+\"sz=728x90,970x66,924x50,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Banner\" data-cb-dfp-id=\"'+ad_kvps+'sz=728x90,970x66,924x50,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nhl/nhlphotos;pgtyp=nhlphotos;sp=nhl;sz=728x90,970x66,924x50,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlphotos;pgtyp=nhlphotos;sp=nhl;sz=728x90,970x66,924x50,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div></div></div>\n<!-- end Banner
+        ad -->\n</div>\n<div id=\"content\" class=\"container\">\n<div id=\"fb-root\"></div><!--[if
+        lte IE 7]><link rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/combiner/c?css=modules/browser-alert.r7.css\"
+        type=\"text/css\" /><div class=\"span-6\" id=\"browser-alert-wrapper\" style=\"display:none;\"><div
+        class=\"mod-container mod-no-header-footer browser-alert\"><div class=\"mod-content\"><div
+        class=\"gradient-container\"><h1><span>Your Web Browser</span> is no longer
+        supported</h1><p>To experience everything that ESPN.com has to offer, we recommend
+        that you upgrade to a newer version of your web browser. Click the upgrade
+        button to the right or <a href=\"http://espn.go.com/espn/news/story?id=5630562\">learn
+        more</a>.</p><ul><li><a class=\"btn-upgrade\" href=\"http://www.microsoft.com/windows/internet-explorer/default.aspx\">Upgrade</a></li><li><a
+        class=\"btn-faq\" href=\"http://espn.go.com/espn/news/story?id=5630562\">FAQs</a></li></ul></div></div></div></div><script>(function(b){setTimeout(function(){var
+        a=b(\"#browser-alert-wrapper\");if(espn.cookie.get(\"browseralert\")!=\"true\"){b('<a
+        class=\"btn-close\" href=\"#\">Close</a>').bind(\"click\",function(){a.hide();espn.cookie.set(\"browseralert\",\"true\",30);return
+        false}).appendTo(a.find(\".gradient-container\"));a.show();espn.cookie.set(\"browseralert\",\"true\")}},100)})(jQuery);</script><![endif]--><!--
+        left column -->\n\n<div class=\"scoreboard-strip-wrapper\" style=\"height:61px;
+        width:916px;\">\n    <div class=\"scoreboard-strip oot-wide\" id=\"ootScoreboard\">\n
+        \       <div id=\"ootShadow\"></div>\n\n        <div class=\"scoreboard-title-hq\">\n\n
+        \           <div class=\"subhead\">\n\n                <span>\n                    <a
+        name=\"&lpos=nhlGamePackageOOT&lid=scoreLinkOOT\" href=\"/nhl/scoreboard?date=20141121\">Scores
+        for Nov 21, 2014</a>\n                <span>\n\n        </div>\n\n        </div>\n\n
+        \       <div class=\"scoreboard-container\" id=\"scoreboard2\" style=\"width:auto
+        !important; margin-left: 210px !important\">\n            <div class=\"container\">\n
+        \               <div style=\"display: block;\" class=\"jcarousel-prev jcarousel-next-horizontal
+        oot-prev\"></div>\n                <div style=\"display: block;\" class=\"jcarousel-next
+        jcarousel-next-horizontal oot-next\"></div>\n                <div class=\"mod-content
+        mod-content-hq\">\n                    <div id=\"nhl-scores\" class=\"scores-carousel
+        {note:'THERE ARE NO NHL GAMES TODAY'} ui-tabs-panel ui-widget-content ui-corner-bottom\">\n
+        \                       <ul>\n                            <li id=\"nhl-400563818\"><!--
+        url: /nhl/photos --><div name=\"&lpos=nhlGamePackageOOT&lid=gameLinkOOT\"
+        onclick=\"window.location = '/nhl/preview?gameId=400563818'\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"clock\">Postponed</span><span class=\"hidden-clock\"></span></div><div
+        class=\"game-right\"><span class=\"period\"></span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"teams\"><span class=\"away\">NYR</span><br/><span class=\"home\">BUF</span></div><div
+        class=\"hidden-scores\"><span class=\"awayScore\">0</span><br/><span class=\"homeScore\">0</span></div><div
+        class=\"scores\"><span class=\"awayScore\">0</span><br/><span class=\"homeScore\">0</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">0</span></div></div></li><li id=\"nhl-400563738\"><!--
+        url: /nhl/photos --><div name=\"&lpos=nhlGamePackageOOT&lid=gameLinkOOT\"
+        onclick=\"window.location = '/nhl/photos?gameId=400563738'\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"clock\">Final</span><span class=\"hidden-clock\"> SO</span></div><div
+        class=\"game-right\"><span class=\"period\"> SO</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info away-winner\"></div><div
+        class=\"teams\"><span class=\"away\">BOS</span><br/><span class=\"home\">CBJ</span></div><div
+        class=\"hidden-scores\"><span class=\"awayScore\">4</span><br/><span class=\"homeScore\">3</span></div><div
+        class=\"scores\"><span class=\"awayScore\">4</span><br/><span class=\"homeScore\">3</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">1</span></div></div></li><li id=\"nhl-400564325\"><!--
+        url: /nhl/photos --><div name=\"&lpos=nhlGamePackageOOT&lid=gameLinkOOT\"
+        onclick=\"window.location = '/nhl/photos?gameId=400564325'\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"clock\">Final</span><span class=\"hidden-clock\"> SO</span></div><div
+        class=\"game-right\"><span class=\"period\"> SO</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info away-winner\"></div><div
+        class=\"teams\"><span class=\"away\">NYI</span><br/><span class=\"home\">PIT</span></div><div
+        class=\"hidden-scores\"><span class=\"awayScore\">5</span><br/><span class=\"homeScore\">4</span></div><div
+        class=\"scores\"><span class=\"awayScore\">5</span><br/><span class=\"homeScore\">4</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">2</span></div></div></li><li id=\"nhl-400564268\"><!--
+        url: /nhl/photos --><div name=\"&lpos=nhlGamePackageOOT&lid=gameLinkOOT\"
+        onclick=\"window.location = '/nhl/photos?gameId=400564268'\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"clock\">Final</span><span class=\"hidden-clock\"></span></div><div
+        class=\"game-right\"><span class=\"period\"></span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info away-winner\"></div><div
+        class=\"teams\"><span class=\"away\">NJ</span><br/><span class=\"home\">EDM</span></div><div
+        class=\"hidden-scores\"><span class=\"awayScore\">2</span><br/><span class=\"homeScore\">0</span></div><div
+        class=\"scores\"><span class=\"awayScore\">2</span><br/><span class=\"homeScore\">0</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">3</span></div></div></li>\n                        </ul>\n
+        \                   </div>\n                </div>\n\n            </div>\n
+        \       </div>\n\n    </div>\n</div>\n\n<script type=\"text/javascript\">\n\n
+        \   var ESPNootScoreboard = {};\n\n    ESPNootScoreboard.activeSport = 'nhl';\n\n\n
+        \   ESPNootScoreboard.myTeams = {'90-12': ['nhl-400564325'], \n'90-11': ['nhl-400564268'],
+        \n'90-1': ['nhl-400563738'], \n'90-6': ['nhl-400564268'], \n'90-2': ['nhl-400563818'],
+        \n'90-29': ['nhl-400563738'], \n'90-13': ['nhl-400563818'], \n'90-16': ['nhl-400564325']};\n\n</script><div
+        class=\"gamehq-wrapper\"><div class=\"summary-tabs-container\"><div class=\"span-4\"
+        id=\"gamepackageTop\"><div class=\"status-bar status-final\" id=\"gameStatusBarWrap\"><p
+        class=\"game-state\" id=\"gameStatusBarText\"><span id=\"status-bar-period\">Final</span>
+        <span id=\"status-bar-clock\"> SO</span></p><!-- Series at a Glance -->\n<div
+        class=\"series-status\"><p><span id=\"seriesTextTitle\">Series</span> (Game
+        2 of 5)</p><a href=\"#\" class=\"arrow\" id=\"series-dd-arrow\"></a></div><div
+        class=\"series-dropdown\" id=\"series-dd\"><p class=\"close-link\"><a href=\"#\"
+        id=\"dd-close\">Close</a></p><p class=\"dd-series-status\">New York leads
+        3-1</p><table cellspacing=\"0\" class=\"dd-game\"><tr><th colspan=\"3\"><span>Game
+        1:</span> Saturday, October 18th</th></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders
+        \" style=\"color:#000 !important;\">Islanders</a></td><td class=\"score \">1</td><td
+        class=\"dd-game-status\" rowspan=\"2\">Final<br/></td></tr><tr><td class=\"team\"><a
+        href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins \" style=\"color:#000
+        !important;\">Penguins</a></td><td class=\"score \">3</td></tr><tr><td colspan=\"3\"
+        class=\"footer-links\" id=\"footerLinks-400564316\"><a href=\"\" style=\"display:none\"
+        id=\"sdd-preview-400564316\">Preview &#187;</a><a href=\"/nhl/recap?gameId=400564316\"
+        \ id=\"sdd-recap-400564316\">Recap &#187;</a><a href=\"/nhl/boxscore?gameId=400564316\"
+        \ id=\"sdd-boxscore-400564316\">Boxscore &#187;</a></td></tr></table><table
+        cellspacing=\"0\" class=\"dd-game\"><tr><th colspan=\"3\"><span>Game 2:</span>
+        Friday, November 21st</th></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders
+        \" style=\"color:#000 !important;\">Islanders</a></td><td class=\"score gp-awayScore\">5</td><td
+        class=\"dd-game-status\" id=\"sg-clockPeriod\"  rowspan=\"2\">Final<br/> SO</td></tr><tr><td
+        class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins
+        \" style=\"color:#000 !important;\">Penguins</a></td><td class=\"score gp-homeScore\">4</td></tr><tr><td
+        colspan=\"3\" class=\"footer-links\" id=\"footerLinks-400564325\"><a href=\"\"
+        style=\"display:none\" id=\"sdd-preview-400564325\">Preview &#187;</a><a href=\"/nhl/recap?gameId=400564325\"
+        \ id=\"sdd-recap-400564325\">Recap &#187;</a><a href=\"/nhl/boxscore?gameId=400564325\"
+        \ id=\"sdd-boxscore-400564325\">Boxscore &#187;</a></td></tr></table><table
+        cellspacing=\"0\" class=\"dd-game\"><tr><th colspan=\"3\"><span>Game 3:</span>
+        Saturday, November 22nd</th></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins
+        \" style=\"color:#000 !important;\">Penguins</a></td><td class=\"score \">1</td><td
+        class=\"dd-game-status\" rowspan=\"2\">Final<br/></td></tr><tr><td class=\"team\"><a
+        href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders \" style=\"color:#000
+        !important;\">Islanders</a></td><td class=\"score \">4</td></tr><tr><td colspan=\"3\"
+        class=\"footer-links\" id=\"footerLinks-400564326\"><a href=\"\" style=\"display:none\"
+        id=\"sdd-preview-400564326\">Preview &#187;</a><a href=\"/nhl/recap?gameId=400564326\"
+        \ id=\"sdd-recap-400564326\">Recap &#187;</a><a href=\"/nhl/boxscore?gameId=400564326\"
+        \ id=\"sdd-boxscore-400564326\">Boxscore &#187;</a></td></tr></table><table
+        cellspacing=\"0\" class=\"dd-game\"><tr><th colspan=\"3\"><span>Game 4:</span>
+        Friday, January 16th</th></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins
+        \" style=\"color:#000 !important;\">Penguins</a></td><td class=\"score \">3</td><td
+        class=\"dd-game-status\" rowspan=\"2\">Final<br/></td></tr><tr><td class=\"team\"><a
+        href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders \" style=\"color:#000
+        !important;\">Islanders</a></td><td class=\"score \">6</td></tr><tr><td colspan=\"3\"
+        class=\"footer-links\" id=\"footerLinks-400564341\"><a href=\"\" style=\"display:none\"
+        id=\"sdd-preview-400564341\">Preview &#187;</a><a href=\"/nhl/recap?gameId=400564341\"
+        \ id=\"sdd-recap-400564341\">Recap &#187;</a><a href=\"/nhl/boxscore?gameId=400564341\"
+        \ id=\"sdd-boxscore-400564341\">Boxscore &#187;</a></td></tr></table><table
+        cellspacing=\"0\" class=\"dd-game\"><tr><th colspan=\"3\"><span>Game 5:</span>
+        Friday, April 10th</th></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders
+        \" style=\"color:#000 !important;\">Islanders</a></td><td class=\"score \"></td><td
+        class=\"dd-game-status\" rowspan=\"2\">7:00 PM<br/> ET</td></tr><tr><td class=\"team\"><a
+        href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins \" style=\"color:#000
+        !important;\">Penguins</a></td><td class=\"score \"></td></tr><tr><td colspan=\"3\"
+        class=\"footer-links\" id=\"footerLinks-400564364\"><a href=\"/nhl/preview?gameId=400564364\"
+        \ id=\"sdd-preview-400564364\">Preview &#187;</a><a href=\"\" style=\"display:none\"
+        id=\"sdd-recap-400564364\">Recap &#187;</a><a href=\"\" style=\"display:none\"
+        id=\"sdd-boxscore-400564364\">Boxscore &#187;</a></td></tr></table></div><!--
+        end Series at a Glance -->\n</div><div class=\"matchup \" id=\"matchup-nhl-400564325\"><div
+        class=\"team away\"><div class=\"logo-medium\" style=\"background:#06143F;\"><img
+        src=\"http://a.espncdn.com/combiner/i?img=/i/teamlogos/nhl/500-dark/nyi.png&w=40&h=40&transparent=true\"
+        alt=\"\"/></div><div class=\"team-info\"><h3><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\">Islanders</a>
+        <span id=\"matchup-nhl-400564325-awayScore\" class=\"gp-awayScore\">5</span></h3><p
+        id=\"awayRecord\">(13-6-0, 26 pts)</p></div></div><div class=\"team home\"><div
+        class=\"logo-medium\" style=\"background:#C3B263;\"><img src=\"http://a.espncdn.com/combiner/i?img=/i/teamlogos/nhl/500-dark/pit.png&w=40&h=40&transparent=true\"
+        alt=\"\"/></div><div class=\"team-info\"><h3><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins\">Penguins</a>
+        <span id=\"matchup-nhl-400564325-homeScore\" class=\"gp-homeScore\">4</span></h3><p
+        id=\"homeRecord\">(13-3-2, 28 pts)</p></div></div></div><div class=\"game-actions\"><ul><li
+        id=\"ga-realtime\" style=\"display:none\"><a href=\"#\" onclick=\"window.open('http://insider.espn.go.com/nhl/caster/realtime','','width=785,height=214,scrollbars=no');
+        return false;\"\"><span class=\"outer\"><span class=\"title\" style=\"position:relative;
+        padding-right:15px;\">Realtime</span></span></a></li><li id=\"ga-motion\"
+        style=\"display:none\"><a href=\"#\"><span class=\"outer\"><span class=\"title\">&nbsp;</span></span></a></li></ul></div><div
+        class=\"game-vitals\"><p style=\"padding: 8px 0px 0px; float: right; font-size:
+        11px;\">Coverage: <strong>SPNET</strong></p><div class=\"game-time-location\"><p>7:00
+        PM ET, November 21, 2014</p><p>CONSOL Energy Center, Pittsburgh, Pennsylvania</p></div></div>\n\n
+        \   <!-- begin line score -->\n    <div class=\"line-score clear\">\n        <div
+        class=\"line-score-container\">\n            <table cellspacing=\"0\" id=\"gp-linescore\"
+        class=\"linescore\"  >\n                <tr class=\"periods\">\n                    <td
+        class=\"team\"></td>\n\n                    <td class=\"period\" style=\"text-align:center\"
+        > 1</td><td class=\"period\" style=\"text-align:center\" > 2</td><td class=\"period\"
+        style=\"text-align:center\" > 3</td><td class=\"period otPeriod\" style=\"text-align:center\"
+        > SO</td>\n                    <td class=\"total\" style=\"text-align:center\">T</td>\n\n
+        \               </tr>\n\n                <tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\">NYI</a></td><td
+        id=\"lsAway1\" style=\"text-align:center\" > 3</td><td id=\"lsAway2\" style=\"text-align:center\"
+        > 1</td><td id=\"lsAway3\" style=\"text-align:center\" > 0</td><td id=\"lsAwayot\"
+        style=\"text-align:center\" class=\"otPeriod\" > 1</td><td class=\"ts gp-awayScore\"
+        style=\"text-align:center\" id=\"linescore-totalScoreAway\">5</td></tr><tr><td
+        class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins\">PIT</a></td><td
+        id=\"lsHome1\" style=\"text-align:center\" > 2</td><td id=\"lsHome2\" style=\"text-align:center\"
+        > 1</td><td id=\"lsHome3\" style=\"text-align:center\" > 1</td><td id=\"lsHomeot\"
+        style=\"text-align:center\" class=\"otPeriod\" > 0</td><td class=\"ts gp-homeScore\"
+        style=\"text-align:center\" id=\"linescore-totalScoreHome\">4</td></tr>\n
+        \           </table>\n            \n\n                <table class=\"season-leaders\"
+        id=\"gp-season-leaders\" cellspacing=\"4\" style=\"display:none\">\n                    <thead>\n
+        \                       <tr class=\"periods\">\n                            <th>&nbsp;</th>\n
+        \                           <th style=\"text-align:left\">Points</th>\n                            <th
+        style=\"text-align:left\">Goals</th>\n                            <th style=\"text-align:left\">Assists</th>\n
+        \                       </tr>\n                    </thead>\n                    <tbody>\n
+        \                   <tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\"><strong>NYI</strong></a></td><td
+        style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/5160/john-tavares\">J&nbsp;Tavares</a>
+        <b>45</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/5160/john-tavares\">J&nbsp;Tavares</a>
+        <b>21</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3859/kyle-okposo\">K&nbsp;Okposo</a>
+        <b>30</b></td></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins\"><strong>PIT</strong></a></td><td
+        style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3114/sidney-crosby\">S&nbsp;Crosby</a>
+        <b>51</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3124/evgeni-malkin\">E&nbsp;Malkin</a>
+        <b>19</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3114/sidney-crosby\">S&nbsp;Crosby</a>
+        <b>36</b></td></tr>\n                    </tbody>\n                </table>\n
+        \               \n            \n\n\n        </div>\n\n        <!-- end line
+        score -->\n\n        <div id=\"gp-gameNotes\" class=\"game-notes\"  >\n        <p><span
+        class=\"stars\" style=\"width:45px; display:inline-block; text-align:right;
+        padding-right:5px; padding-top: 6px;\"><img src=\"http://a.espncdn.com/nhl/i/star-gold.png\"
+        alt=\"\" /></span><span><a href=\"http://espn.go.com/nhl/player/_/id/2562636/ryan-strome\"
+        style=\"color:#000;\">R. Strome</a></span> (Islanders - C): Goals: 1, Assists:
+        2</p><p><span class=\"stars\" style=\"width:45px; display:inline-block; text-align:right;
+        padding-right:5px; \"><img src=\"http://a.espncdn.com/nhl/i/star-gold.png\"
+        alt=\"\" /><img src=\"http://a.espncdn.com/nhl/i/star-gold.png\" alt=\"\"
+        /></span><span><a href=\"http://espn.go.com/nhl/player/_/id/3859/kyle-okposo\"
+        style=\"color:#000;\">K. Okposo</a></span> (Islanders - RW): Goals: 0, Assists:
+        0</p><p><span class=\"stars\" style=\"width:45px; display:inline-block; text-align:right;
+        padding-right:5px; \"><img src=\"http://a.espncdn.com/nhl/i/star-gold.png\"
+        alt=\"\" /><img src=\"http://a.espncdn.com/nhl/i/star-gold.png\" alt=\"\"
+        /><img src=\"http://a.espncdn.com/nhl/i/star-gold.png\" alt=\"\" /></span><span><a
+        href=\"http://espn.go.com/nhl/player/_/id/3699/patric-hornqvist\" style=\"color:#000;\">P.
+        Hornqvist</a></span> (Penguins - RW): Goals: 1, Assists: 1</p>\n        </div>\n
+        \   </div>\n</div><div class=\"span-2 last\" id=\"gp-adwrap\"><div class=\"ad-box\"
+        style=\"padding:2px 0px; height:250px;\"><iframe width=\"300\" id=\"adIframe\"
+        scrolling=\"NO\" height=\"250\" frameborder=\"0\" src=\"/nhl/photos?ads=incontent\"
+        marginheight=\"0\" marginwidth=\"0\"/></iframe></div></div>\n\t<div class=\"tabs
+        clear\">\n\t\t<ul>\n\n\t\t<li class=\"\" style=\"display:none;\"><a href=\"preview?gameId=400564325\"><span
+        class=\"title\">Preview</span></a></li><li class=\"\" style=\"display:block;\"><a
+        href=\"recap?gameId=400564325\"><span class=\"title\">Recap</span></a></li><li
+        class=\"\" style=\"display:block;\"><a href=\"boxscore?gameId=400564325\"><span
+        class=\"title\">Box Score</span></a></li><li class=\"\" style=\"display:block;\"><a
+        href=\"playbyplay?gameId=400564325\"><span class=\"title\">Play-By-Play</span></a></li><li
+        class=\"\" style=\"display:block;\"><a href=\"gamecast?gameId=400564325\"><span
+        class=\"title\">GameCast</span></a></li><li class=\"active\" style=\"display:block;\"><a
+        href=\"photos?gameId=400564325\"><span class=\"title\">Photos</span><span
+        class=\"quantity\"><span>25</span></span></a></li><li class=\"\" style=\"display:block;\"><a
+        href=\"conversation?gameId=400564325\"><span class=\"title\">Conversation</span><span
+        class=\"fb-comments-long quantity\"><span class=\"count\"></span></span></a></li><li
+        class=\"\" style=\"display:none;\"><a href=\"commentary?gameId=400564325\"><span
+        class=\"title\">Pressbox</span></a></li></ul></div><script>jQuery.getScriptCache(\"http://a.espncdn.com/combiner/c/69?js=jquery.sharetools.r15-u4.js\",
+        function() {jQuery(\".tabs\").sharetools(\"http://scores.espn.go.com/nhl/conversation?gameId=400564325\");});</script></div><div
+        class=\"story-container\"><div class=\"gp-body\"><div style=\"height:0px;
+        visibility:hidden;\" id=\"presByIframeContainer\"><iframe width=\"715\" id=\"presbyIframe\"
+        scrolling=\"NO\" frameborder=\"0\" src=\"/nhl/photos?ads=presby\" marginheight=\"0\"
+        marginwidth=\"0\"/></iframe></div><noscript><InLineReplace name=ad type=PresentedByLogo></noscript>\n\t<style
+        type=\"text/css\">\n\t\t.photo-index dl dt a img {padding:3px; border:1px
+        solid #CCC;}\n\t\t.photo-index dl dt a:hover img {border-color:#000;}\n\t</style>\n\t<div
+        class=\"photo-nav\"><p><span style=\"float:left;\">Photos 1 - 18 of 25</span>&nbsp;&nbsp;<strong
+        class=\"currentPage\" style=\"border-bottom:2px solid #000;\">1</strong>&nbsp;<a
+        href=\"/nhl/photos?gameId=400564325&page=2\" style=\"text-decoration:none;\"
+        class=\"navLink\" id=\"page_2\">2</a>&nbsp;&nbsp;<a href=\"/nhl/photos?gameId=400564325&page=2\"
+        style=\"text-decoration:none;\" class=\"navLink\" id=\"page_2\">Next</a>&nbsp;&nbsp;</p></div><div
+        class=\"photo-index\" style=\"display:none\"><div class=\"photo-row clearfix\"
+        style=\"padding:0 0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0;
+        padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305502\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Kyle
+        Okposo #21 of the New York Islanders controls the puck in front of Christian
+        Ehrhoff #10 of the Pittsburgh Penguins at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384854.jpg&amp;w=127&amp;h=88\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305516\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Ryan
+        Strome #18 of the New York Islanders celebrates his goal with teammates during
+        the first period against the Pittsburgh Penguins at Consol Energy Center on
+        November 21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384900.jpg&amp;w=127&amp;h=93\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305518\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: John
+        Tavares #91 of the New York Islanders moves the puck in front of Olli Maatta
+        #3 of the Pittsburgh Penguins at Consol Energy Center on November 21, 2014
+        in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384912.jpg&amp;w=127&amp;h=96\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305519\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Josh
+        Bailey #12 of the New York Islanders moves the puck in front of Brandon Sutter
+        #16 of the Pittsburgh Penguins at Consol Energy Center on November 21, 2014
+        in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384916.jpg&amp;w=127&amp;h=103\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305520\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Nikolay
+        Kulemin #86 of the New York Islanders skates for the loose puck alongside
+        Paul Martin #7 of the Pittsburgh Penguins at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384918.jpg&amp;w=127&amp;h=99\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305522\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Nikolay
+        Kulemin #86 of the New York Islanders skates for the loose puck alongside
+        Paul Martin #7 of the Pittsburgh Penguins at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384922.jpg&amp;w=127&amp;h=88\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl></div><div class=\"photo-row clearfix\"
+        style=\"padding:0 0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0;
+        padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305523\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Frans
+        Nielsen #51 of the New York Islanders is checked by Kris Letang #58 of the
+        Pittsburgh Penguins during the first period at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384926.jpg&amp;w=127&amp;h=101\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305525\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Blake
+        Comeau #17 of the Pittsburgh Penguins celebrates his goal during the first
+        period against the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384930.jpg&amp;w=127&amp;h=98\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305550\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Nikolay
+        Kulemin #86 of the New York Islanders collides with Christian Ehrhoff #10
+        of the Pittsburgh Penguins during the first period at Consol Energy Center
+        on November 21, 2014 in Pittsburgh, Pennsylvania.  \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459385092.jpg&amp;w=101&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305680\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Fans
+        show their support for Pascal Dupuis #9 of the Pittsburgh Penguins after being
+        shown on the scoreboard during the second period against the New York Islanders
+        at Consol Energy Center on November 21, 2014 in Pittsburgh, Pennsylvania.
+        \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386506.jpg&amp;w=127&amp;h=88\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305681\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Blake
+        Comeau #17 of the Pittsburgh Penguins skates for the loose puck alongside
+        Casey Cizikas #53 of the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386508.jpg&amp;w=127&amp;h=91\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305683\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Sidney
+        Crosby #87 of the Pittsburgh Penguins moves the puck up ice during the second
+        period against the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386514.jpg&amp;w=127&amp;h=103\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl></div><div class=\"photo-row clearfix\"
+        style=\"padding:0 0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0;
+        padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305684\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Beau
+        Bennett #19 of the Pittsburgh Penguins controls the puck in front of John
+        Tavares #91 of the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386516.jpg&amp;w=127&amp;h=90\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305685\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Sidney
+        Crosby #87 of the Pittsburgh Penguins reaches for the puck during the second
+        period against the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386518.jpg&amp;w=127&amp;h=87\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305686\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Nick
+        Leddy #2 of the New York Islanders celebrates his goal with teammates during
+        the second period against the Pittsburgh Penguins at Consol Energy Center
+        on November 21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386520.jpg&amp;w=127&amp;h=99\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305687\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Chad
+        Johnson #30 of the New York Islanders stops a shot by Steve Downie #23 of
+        the Pittsburgh Penguins at Consol Energy Center on November 21, 2014 in Pittsburgh,
+        Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386522.jpg&amp;w=127&amp;h=98\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305688\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Evgeni
+        Malkin #71, Patric Hornqvist #72 and Christian Ehrhoff #10 of the Pittsburgh
+        Penguins celebrate a goal by Nick Spaling #13 during the second period against
+        the New York Islanders at Consol Energy Center on November 21, 2014 in Pittsburgh,
+        Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386524.jpg&amp;w=127&amp;h=98\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4306156\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Kyle
+        Okposo #21 of the New York Islanders scores past Marc-Andre Fleury #29 of
+        the Pittsburgh Penguins at Consol Energy Center on November 21, 2014 in Pittsburgh,
+        Pennsylvania. New York won the game 5-4 in a shootout. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389734.jpg&amp;w=127&amp;h=92\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl></div></div><noscript><div class=\"photo-index\"><div
+        class=\"photo-row clearfix\" style=\"padding:0 0 10px 0;\"><dl style=\"width:auto;
+        text-align:center; margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a
+        href=\"/nhl/photos?gameId=400564325&photoId=4305502\" style=\"margin:0; padding:0;\"
+        title = \"PITTSBURGH, PA - NOVEMBER 21: Kyle Okposo #21 of the New York Islanders
+        controls the puck in front of Christian Ehrhoff #10 of the Pittsburgh Penguins
+        at Consol Energy Center on November 21, 2014 in Pittsburgh, Pennsylvania.
+        \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384854.jpg&amp;w=127&amp;h=88\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305516\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Ryan
+        Strome #18 of the New York Islanders celebrates his goal with teammates during
+        the first period against the Pittsburgh Penguins at Consol Energy Center on
+        November 21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384900.jpg&amp;w=127&amp;h=93\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305518\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: John
+        Tavares #91 of the New York Islanders moves the puck in front of Olli Maatta
+        #3 of the Pittsburgh Penguins at Consol Energy Center on November 21, 2014
+        in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384912.jpg&amp;w=127&amp;h=96\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305519\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Josh
+        Bailey #12 of the New York Islanders moves the puck in front of Brandon Sutter
+        #16 of the Pittsburgh Penguins at Consol Energy Center on November 21, 2014
+        in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384916.jpg&amp;w=127&amp;h=103\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305520\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Nikolay
+        Kulemin #86 of the New York Islanders skates for the loose puck alongside
+        Paul Martin #7 of the Pittsburgh Penguins at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384918.jpg&amp;w=127&amp;h=99\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305522\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Nikolay
+        Kulemin #86 of the New York Islanders skates for the loose puck alongside
+        Paul Martin #7 of the Pittsburgh Penguins at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384922.jpg&amp;w=127&amp;h=88\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl></div><div class=\"photo-row clearfix\"
+        style=\"padding:0 0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0;
+        padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305523\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Frans
+        Nielsen #51 of the New York Islanders is checked by Kris Letang #58 of the
+        Pittsburgh Penguins during the first period at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384926.jpg&amp;w=127&amp;h=101\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305525\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Blake
+        Comeau #17 of the Pittsburgh Penguins celebrates his goal during the first
+        period against the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459384930.jpg&amp;w=127&amp;h=98\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305550\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Nikolay
+        Kulemin #86 of the New York Islanders collides with Christian Ehrhoff #10
+        of the Pittsburgh Penguins during the first period at Consol Energy Center
+        on November 21, 2014 in Pittsburgh, Pennsylvania.  \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459385092.jpg&amp;w=101&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305680\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Fans
+        show their support for Pascal Dupuis #9 of the Pittsburgh Penguins after being
+        shown on the scoreboard during the second period against the New York Islanders
+        at Consol Energy Center on November 21, 2014 in Pittsburgh, Pennsylvania.
+        \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386506.jpg&amp;w=127&amp;h=88\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305681\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Blake
+        Comeau #17 of the Pittsburgh Penguins skates for the loose puck alongside
+        Casey Cizikas #53 of the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386508.jpg&amp;w=127&amp;h=91\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305683\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Sidney
+        Crosby #87 of the Pittsburgh Penguins moves the puck up ice during the second
+        period against the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386514.jpg&amp;w=127&amp;h=103\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl></div><div class=\"photo-row clearfix\"
+        style=\"padding:0 0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0;
+        padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305684\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Beau
+        Bennett #19 of the Pittsburgh Penguins controls the puck in front of John
+        Tavares #91 of the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386516.jpg&amp;w=127&amp;h=90\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305685\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Sidney
+        Crosby #87 of the Pittsburgh Penguins reaches for the puck during the second
+        period against the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386518.jpg&amp;w=127&amp;h=87\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305686\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Nick
+        Leddy #2 of the New York Islanders celebrates his goal with teammates during
+        the second period against the Pittsburgh Penguins at Consol Energy Center
+        on November 21, 2014 in Pittsburgh, Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386520.jpg&amp;w=127&amp;h=99\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305687\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Chad
+        Johnson #30 of the New York Islanders stops a shot by Steve Downie #23 of
+        the Pittsburgh Penguins at Consol Energy Center on November 21, 2014 in Pittsburgh,
+        Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386522.jpg&amp;w=127&amp;h=98\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4305688\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21: Evgeni
+        Malkin #71, Patric Hornqvist #72 and Christian Ehrhoff #10 of the Pittsburgh
+        Penguins celebrate a goal by Nick Spaling #13 during the second period against
+        the New York Islanders at Consol Energy Center on November 21, 2014 in Pittsburgh,
+        Pennsylvania. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459386524.jpg&amp;w=127&amp;h=98\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4306156\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Kyle
+        Okposo #21 of the New York Islanders scores past Marc-Andre Fleury #29 of
+        the Pittsburgh Penguins at Consol Energy Center on November 21, 2014 in Pittsburgh,
+        Pennsylvania. New York won the game 5-4 in a shootout. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389734.jpg&amp;w=127&amp;h=92\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl></div></div></noscript><div class=\"photo-nav\"><p><span
+        style=\"float:left;\">Photos 1 - 18 of 25</span>&nbsp;&nbsp;<strong class=\"currentPage\"
+        style=\"border-bottom:2px solid #000;\">1</strong>&nbsp;<a href=\"/nhl/photos?gameId=400564325&page=2\"
+        style=\"text-decoration:none;\" class=\"navLink\" id=\"page_2\">2</a>&nbsp;&nbsp;<a
+        href=\"/nhl/photos?gameId=400564325&page=2\" style=\"text-decoration:none;\"
+        class=\"navLink\" id=\"page_2\">Next</a>&nbsp;&nbsp;</p></div>\n\n\t<script
+        src=\"http://a.espncdn.com/combiner/c?v=201004161710&js=/plugins/jquery.history_2010.js\"
+        type=\"text/javascript\"></script>\n\t<script src=\"http://scores.espn.go.com/espn/javascript/gamepackage10/photoPageJS?sportId=90&sportName=nhl&gameId=400564325&pageType=gallery&langType=0\"
+        type=\"text/javascript\"></script>\n\n\t<!-- begin sp links -->\n<div style=\"margin:
+        10px 0 0 0;\">\n<!-- CONTENT: photos990990, SPORT: nhl--><div style=\"margin:0px
+        0px 5px 0px; text-align: center; width: 614px;\"><ins id=\"splinks-7870\"></ins>\n
+        \       <script type=\"text/javascript\">\n            (function($) {\n                //
+        config params\n                var width = '614',\n                    height
+        = '300',\n                    client = 'ca-espn-q-game',\n                    channel
+        = 'nhl bottom',\n                    lang = 'null';\n\n                //
+        builds iframe HTML\n                function buildIframe(width, height, client,
+        channel) {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
+        \                   // pass params as the hash as they are only needed on
+        the client\n                    var hash = '7870|' + width + '|' + height
+        + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
+        = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
+        + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
+        \                   return iframe;\n                }\n\n                //
+        handles messages from child iframe\n                function handleMessage(event)
+        {\n                    if (event.origin === 'http://sports-ak.espn.go.com')
+        {\n                        $('#splinks-' + event.data).html('<!-- no ads served
+        -->');\n                    }\n                }\n\n                if (typeof
+        window.addEventListener === 'function') {\n                    window.addEventListener('message',
+        handleMessage, false);\n                } else {\n                    window.attachEvent('onmessage',
+        handleMessage);\n                }\n\n                // insert the iframe\n
+        \               if (espn.geo) {\n                    espn.geo.getLocation().done(function(loc)
+        {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
+        || espn.core.android) {\n                            // outside US or not
+        on desktop\n                            client = 'ca-espn-nq';\n                        }\n
+        \                       $('#splinks-7870').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-7870').html(buildIframe(width,
+        height, 'ca-espn-nq', channel));\n                    });\n                }
+        else {\n                    // can't locate them, assume they are outside
+        US\n                    $('#splinks-7870').html(buildIframe(width, height,
+        'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
+        \   </div></div>\n<!-- end sp links -->\n\n<div id=\"caster\"></div>\n\n<script
+        type=\"text/javascript\">\n\tvar settings = {\n\t\t\"gameId\": 400564325,\n\t\t\"seasonType\":
+        2,\n\t\t\"sessionId\": \"nhlGC400564325\",\n\t\t\"status\": 3,\n\t\t\"period\":
+        5,\n\t\t\"currentSnapshotId\": 0\n\t};\n\ttry {\n\t\tconsole.log(settings);\n\t}\n\tcatch(e)
+        {}\n</script>\n\n<script type=\"text/javascript\" src=\"http://a.espncdn.com/combiner/c?v=201101281234&js=/espn/espn/javascript/gamepackage10/gamepackageOOTJS?sport=nhl,/espn/espn/javascript/gamepackage10/fixedOOTJS,/espn/espn/javascript/gamepackage10/seriesDropdown\"></script></div><!--
+        end gp-body --></div><!-- end story-container --><div class=\"clear\"></div></div><!--
+        end span-6 --></div>\n<div id=\"nav-wrapper\" class=\"container\">\n<div id=\"nav-wrapper-container\">\n<div
+        id=\"nav-main\">\n<!-- begin site nav -->\n<ul class=\"top\">\n<!-- begin
+        site nav -->\n<p><!-- begin site nav --></p>\n<ul class=\"top\" id=\"nav-main-list\"><!--
+        start: Menuitem :: MyTAB -->\n<li class=\"last myespn\" id=\"menu-myespn\"><a
+        class=\"myespn\" ref=\"#\">MyESPN</a></li>\n<!-- start: Menuitem :: NFL -->\n<li
+        class=\"sport-menu default t-nfl\" data-sportid=\"28\" id=\"menu-nfl\"><a
+        href=\"http://espn.go.com/nfl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nfl\">NFL</a></li>\n<!--
+        start: Menuitem :: MLB -->\n<li class=\"sport-menu default t-mlb\" data-sportid=\"10\"
+        id=\"menu-mlb\"><a href=\"http://espn.go.com/mlb/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mlb\">MLB</a></li>\n<!--
+        start: Menuitem :: NBA -->\n<li class=\"sport-menu default t-nba\" data-sportid=\"46\"
+        id=\"menu-nba\"><a href=\"http://espn.go.com/nba/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nba\">NBA</a></li>\n<!--
+        start: Menuitem :: NHL -->\n<li class=\"sport-menu default t-nhl selected\"
+        data-sportid=\"90\" id=\"menu-nhl\"><a href=\"http://espn.go.com/nhl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nhl\">NHL</a></li>\n<!--
+        start: Menuitem :: NCAA FB -->\n<li class=\"sport-menu default t-ncf\" data-sportid=\"23\"
+        id=\"menu-ncf\"><a href=\"http://espn.go.com/college-football/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncf\">NCAAF</a></li>\n<!--
+        start: Menuitem :: NCAA BB -->\n<li class=\"sport-menu default t-ncb\" data-sportid=\"41\"
+        id=\"menu-ncb\"><a href=\"http://espn.go.com/mens-college-basketball/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncb\">NCAAM</a></li>\n<!--
+        start: Menuitem :: NASCAR -->\n<li class=\"sport-menu default t-nascar\" data-sportid=\"2020\"
+        id=\"menu-nascar\"><a href=\"http://espn.go.com/racing/nascar/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nascar\">NASCAR</a></li>\n<!--
+        start: Menuitem :: SOCCER -->\n<li class=\"sport-menu default t-soccer\" data-sportid=\"600\"
+        id=\"menu-soccer\"><a href=\"http://espnfc.us/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_soccer\">SOCCER</a></li>\n<!--
+        start: Menuitem :: GOLF -->\n<li class=\"sport-menu t-golf\" data-sportid=\"1106\"
+        id=\"menu-golf\" style=\"display: none;\"><a href=\"http://espn.go.com/golf/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_golfl\">GOLF</a></li>\n<!--
+        start: Menuitem :: TENNIS -->\n<li class=\"sport-menu t-tennis\" data-sportid=\"850\"
+        id=\"menu-tennis\" style=\"display: none;\"><a href=\"http://espn.go.com/tennis/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_tennis\">TENNIS</a></li>\n<!--
+        start: Menuitem :: BOXING-->\n<li class=\"sport-menu t-boxing\" data-sportid=\"1000\"
+        id=\"menu-boxing\" style=\"display: none;\"><a href=\"http://espn.go.com/boxing/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_boxing\">BOXING</a></li>\n<!--
+        start: Menuitem :: MMA -->\n<li class=\"sport-menu t-mma\" data-sportid=\"3301\"
+        id=\"menu-mma\" style=\"display: none;\"><a href=\"http://espn.go.com/mma/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mma\">MMA</a></li>\n<!-- start:
+        Menuitem :: ALL SPORTS -->\n<li class=\"nav-allsports t-allsports\" id=\"menu-allsports\"><a
+        href=\"http://espn.go.com/sports/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_allsports\">MORE
+        SPORTS</a></li>\n<!-- start: Menuitem :: INSIDER -->\n<li class=\"sport-menu
+        t-insider\" id=\"menu-insider\" style=\"display: none;\"><a href=\"http://insider.espn.go.com/insider/index\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_insider\">INSIDER</a></li>\n<!--
+        start: Menuitem :: SPORTSNATION -->\n<li class=\"sport-menu t-sportsnation\"
+        id=\"menu-sportsnation\" style=\"display: none;\"><a href=\"http://espn.go.com/sportsnation/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_sportsnation\">SN</a></li>\n<!--
+        start: Menuitem :: RADIO & MORE -->\n<li class=\"right-menu two-line last
+        t-radio\" id=\"menu-radio\"><a href=\"http://espn.go.com/espnradio/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_radioandmore\">RADIO<span>&amp;
+        MORE</span></a></li>\n<!-- start: Menuitem :: espnW & PLAYBOOK -->\n<li class=\"right-menu
+        two-line t-page2\" id=\"menu-page2\"><a href=\"http://espn.go.com/espnw/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_espnwandxgames\" target=\"_blank\">espnW<span>&amp;
+        X GAMES</span></a></li>\n<!-- start: Menuitem :: FANTASY & GAMES -->\n<li
+        class=\"right-menu two-line t-fantasy\" id=\"menu-fantasy\"><a href=\"http://games.espn.go.com/frontpage\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_fantasy\">FANTASY<span>&amp;
+        GAMES</span></a></li>\n<!-- start: Menuitem :: WATCH -->\n<li class=\"right-menu
+        t-watch\" id=\"menu-watch\"><a href=\"http://espn.go.com/video/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_watch\">WATCH</a></li>\n</ul>\n<!--
+        end site nav -->\n<!-- end site nav -->\n</ul>\n<!-- end site nav -->\n</div>\n<div
+        class=\"nav-main-secondary\">\n<!--/nhl/photos--><ul>\n<li><a href=\"http://espn.go.com/nhl/\"
+        name=\"&lpos=subnav&lid=subnav_NHL_NHL+Home\">NHL Home</a></li><!--<li><a
+        href=\"http://sports.espn.go.com/nhl/playoffs\" name=\"&lpos=subnav&lid=subnav_NHL+Playoffs\">Playoffs</a></li>--><li><a
+        href=\"http://scores.espn.go.com/nhl/scoreboard\" name=\"&lpos=subnav&lid=subnav_NHL+Scores\">Scores</a></li><!--<li><a
+        href=\"http://espn.go.com/nhl/preview2014/\" name=\"&lpos=subnav&lid=subnav_NHL+Preview\">Preview</a></li>--><li><a
+        href=\"http://espn.go.com/nhl/schedule\" name=\"&lpos=subnav&lid=subnav_NHL_Schedule\">Schedule</a></li><li><a
+        href=\"http://espn.go.com/nhl/powerranking\" name=\"&lpos=subnav&lid=subnav_NHL+Power+Rankings\">Rankings</a></li><li><a
+        href=\"http://espn.go.com/nhl/standings\" name=\"&lpos=subnav&lid=subnav_NHL_Standings\">Standings</a></li><li><a
+        href=\"http://espn.go.com/nhl/statistics\" name=\"&lpos=subnav&lid=subnav_NHL_Statistics\">Stats</a></li><li><a
+        href=\"http://espn.go.com/nhl/story/_/page/nhltradetracker/nhl-trade-tracker\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Trade\">Trades</a></li><li><a href=\"http://espn.go.com/nhl/freeagents/_/type/signed/sort/signDate\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Signings\">Signings</a></li><li><a href=\"http://insider.espn.go.com/nhl/features/rumors\"
+        name=\"&lpos=subnav&lid=subnav_NHL+Rumor+Central\">Rumors</a></li><li><a href=\"http://espn.go.com/nhl/players\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Players\">Players</a></li><li class=\"expandable\"><a
+        href=\"http://espn.go.com/nhl/teams\" name=\"&lpos=subnav&lid=subnav_NHL_Teams\"><span>Teams</span></a><div><dl><dt
+        class=\"first\">Metropolitan</dt><dd><a href=\"http://espn.go.com/nhl/team/_/name/car/carolina-hurricanes\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_car\">Carolina Hurricanes</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_cls\">Columbus
+        B. Jackets</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_njd\">New Jersey Devils</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_nyi\">New
+        York Islanders</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/nyr/new-york-rangers\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_nyr\">New York Rangers</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/phi/philadelphia-flyers\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_phi\">Philadelphia
+        Flyers</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_pit\">Pittsburgh Penguins</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/wsh/washington-capitals\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_was\">Washington
+        Capitals</a></dd><dt class=\"first\">Atlantic</dt><dd><a href=\"http://espn.go.com/nhl/team/_/name/bos/boston-bruins\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_bos\">Boston Bruins</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/buf/buffalo-sabres\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_buf\">Buffalo
+        Sabres</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_det\">Detroit Red Wings</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/fla/florida-panthers\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_fla\">Florida
+        Panthers</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/mtl/montreal-canadiens\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_mon\">Montreal Canadiens</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/ott/ottawa-senators\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_ott\">Ottawa
+        Senators</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/tb/tampa-bay-lightning\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_tam\">Tampa Bay Lightning</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/tor/toronto-maple-leafs\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_tor\">Toronto
+        Maple Leafs</a></dd></dl><dl class=\"last\"><dt class=\"first\">Central</dt><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/chi/chicago-blackhawks\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_chi\">Chicago
+        Blackhawks</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/col/colorado-avalanche\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_col\">Colorado Avalanche</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/dal/dallas-stars\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_dal\">Dallas
+        Stars</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/min/minnesota-wild\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_min\">Minnesota Wild</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/nsh/nashville-predators\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_nsh\">Nashville
+        Predators</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/stl/st-louis-blues\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_stl\">St. Louis Blues</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/wpg/winnipeg-jets \"name=\"&lpos=subnav&lid=subnav_NHL_Teams_win\">Winnipeg
+        Jets</a></dd><dt class=\"first\">Pacific</dt><dd><a href=\"http://espn.go.com/nhl/team/_/name/ana/anaheim-ducks\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_ana\">Anaheim Ducks</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/ari/arizona-coyotes\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_ari\">Arizona
+        Coyotes</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/cgy/calgary-flames\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_cgy\">Calgary Flames</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/edm/edmonton-oilers\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_edm\">Edmonton
+        Oilers</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/la/los-angeles-kings\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_los\">Los Angeles Kings</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/sj/san-jose-sharks\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_san\">San
+        Jose Sharks</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/van/vancouver-canucks\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_van\">Vancouver Canucks</a></dd></dl></div></li><li><a
+        href=\"http://games.espn.go.com/frontpage/hockey\" name=\"&lpos=subnav&lid=subnav_NHL+Fantasy\">Fantasy</a></li><!--<li><a
+        href=\"http://espn.go.com/nhl/lines\" name=\"&lpos=subnav&lid=subnav_NHL+Odds\">Odds</a></li>--><li
+        class=\"expandable\"><a href=\"javascript:void(0);\"><span>Resources</span></a><div><dl><dd><a
+        href=\"http://espn.go.com/nhl/injuries\" name=\"&lpos=subnav&lid=subnav_NHL_Injuries\">Injuries</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/glance\" name=\"&lpos=subnav&lid=subnav_NHL_Glance\">Daily
+        Glance</a></dd><dd><a href=\"http://espn.go.com/nhl/stats/dailyleaders\" name=\"&lpos=subnav&lid=subnav_NHL_Leaders\">Daily
+        Leaders</a></dd><dd><a href=\"http://espn.go.com/nhl/story/_/page/nhltradetracker/nhl-trade-tracker\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Trade\">Trade Tracker</a></dd><dd><a href=\"http://espn.go.com/nhl/playoffs/matchups\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Matchups\">Projected Matchups</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/history/leaders\" name=\"&lpos=subnav&lid=subnav_NHL_History\">Career
+        Leaders</a></dd><dd><a href=\"http://espn.go.com/nhl/stats/rpi\" name=\"&lpos=subnav&lid=subnav_NHL_RPI\">Relative
+        Power Index</a></dd><dd><a href=\"http://espn.go.com/nhl/attendance\" name=\"&lpos=subnav&lid=subnav_NHL_Attendance\">Attendance</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/freeagents/_/type/signed/sort/signDate\" name=\"&lpos=subnav&lid=subnav_NHL+Tracker\">Free-Agent
+        Tracker</a></dd><dd><a href=\"http://sports.espn.go.com/nhl/playoffs/2011/news/story?page=cupchamps11\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Stanley_Cup_Winners\">Stanley Cup Winners</a></dd></dl><dl
+        class=\"last\">                <dd><a href=\"http://espn.go.com/nhl/transactions\"
+        name=\"&lpos=subnav&lid=subnav_Transactions\">Transactions</a></dd>                <dd><a
+        href=\"http://espn.go.com/nhl/story/_/page/calendar2014/2014-15-nhl-calendar\"
+        name=\"&lpos=subnav&lid=subnav_Dates\">Key Dates</a></dd><dd><a href=\"http://espn.go.com/nhl/preview2014/\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Preview\">2014-15 Season Preview</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/winterclassic15/\" name=\"&lpos=subnav&lid=subnav_NHL_2015_Winter_Classic\">2015
+        Winter Classic</a></dd><dd><a href=\"http://espn.go.com/nhl/winterclassic14/\"
+        name=\"&lpos=subnav&lid=subnav_NHL_2014_Winter_Classic\">2014 Winter Classic</a></dd><dd><a
+        href=\"http://espn.go.com/nhldraft/draft/tracker/round\" name=\"&lpos=subnav&lid=subnav_NHL_Draft\">2014
+        NHL Draft</a></dd><dd><a href=\"http://espn.go.com/nhl/playoffs/2014/matchup/_/teams/la-nyr\">2014
+        Stanley Cup playoffs</a></dd><dd><a href=\"http://espn.go.com/nhl/playoffs/2013/matchup/_/teams/blackhawks-bruins\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Playoffs\">2013 Stanley Cup playoffs</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/playoffs/2012/matchup/_/teams/devils-kings\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Playoffs\">2012 Stanley Cup playoffs</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/allstargame\" name=\"&lpos=subnav&lid=subnav_ASG\">2012
+        All-Star Game</a></dd><!--<dd><a href=\"http://espn.go.com/nhl/topics/_/page/hockey-hall-fame\">Hockey
+        Hall of Fame</a></dd><dd><a href=\"http://espn.go.com/nhl/trophytracker\"
+        name=\"&lpos=subnav&lid=subnav_Trophy+Tracker\">Trophy Tracker</a></dd>--><dd><a
+        href=\"http://espn.go.com/nhl/news/story?page=awardshistory\" name=\"&lpos=subnav&lid=subnav_NHL_Awards\">Awards
+        History</a></dd></dl></div></li><li><a href=\"http://www.stubhub.com/nhl-tickets/\"
+        target=\"_blank\" onclick=\"this.href=this.href+'?gcid=C12289x522&gtkw=NHL+Sub+Nav'\"
+        class=\"external\" name=\"&lpos=subnav&lid=subnav_NHL+Tickets\">Tix</a></li>\n</ul>\n</div>\n</div>\n</div>\n</div>\n<!--
+        end content -->\n</div>\n<!-- end subheader -->\n\n<script>\nespn.core.init.nav();\nespn.insider.checkUserForPromo();\n</script>\n<!--
+        begin footer -->\n<div id=\"footer\" class=\"container\">\n<script type=\"text/javascript\">\n//<![CDATA[\nvar
+        link = window.location;\nvar bugText = '<a href=\"#\" onclick=\"window.open(\\'http://dynamic.espn.go.com/espn/bugs?url='
+        + escape(link) + '\\', \\'Bugs\\',\\'noresizable,noscrollbars,height=400,width=400\\');\">Report
+        a Bug</a> | ';\n//]]>\n</script>\n<span style=\"font-weight:bold;\">ESPN.com:</span>
+        <a href=\"http://sports.espn.go.com/espn/news/story?page=help/index\">Help</a>
+        | <a href=\"http://espnmediazone.com/us/\" rel=\"nofollow\">Press</a> | <a
+        href=\"http://www.espncms.com/Advertise-on-ESPN.aspx\" rel=\"nofollow\">Advertise
+        on ESPN.com</a> | <a href=\"http://www.espncms.com\" rel=\"nofollow\">Sales
+        Media Kit</a> | <a href=\"http://preferences.truste.com/2.0/?type=espn&affiliateId=148\"
+        onclick=\"window.open('http://preferences.truste.com/2.0/?type=espn&affiliateId=148','popup','width=986,height=878,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0');
+        return false\">Interest-Based Ads</a> | <script type=\"text/javascript\">document.write(bugText);</script><a
+        href=\"http://espn.go.com/espn/corrections\">Corrections</a> | <a href=\"http://sports.espn.go.com/espn/news/story?page=contact/index\">Contact
+        Us</a> | <a href=\"http://espn.go.com/espn/sitemap\">Site Map</a> | <a href=\"http://espncareers.com\">Jobs
+        at ESPN</a> | <!--a href=\"http://corporate.disney.go.com/corporate/sourcing.html\"
+        rel=\"nofollow\"><span style=\"font-weight:bold;\">Supplier Information</span></a--><a
+        href=\"http://go.com\">Go.com</a><br/>&copy; 2015  ESPN Internet Ventures.
+        <a href=\"http://disneytermsofuse.com/\" rel=\"nofollow\">Terms of Use</a>,
+        <a href=\"http://disneyprivacycenter.com/\" rel=\"nofollow\">Privacy Policy</a>,
+        <a href=\"https://disneyprivacycenter.com/notice-to-california-residents/\"
+        rel=\"nofollow\">Your California Privacy Rights</a>,  <a href=\"https://disneyprivacycenter.com/kids-privacy-policy/english/\">Children's
+        Online Privacy Policy</a> and <a href=\"http://preferences-mgr.truste.com/?type=espn&affiliateId=148\">Interest-Based
+        Ads</a> are applicable to you.  All rights reserved.\n\n<!--\n<a href=\"http://www.espnshop.com/\"
+        onClick=\"location.href('http://log.go.com/log?srvc=sz&guid=73B641A0-6660-4EFC-B8FF-9DE23E8CD9BD&drop=0&addata=3374:65:478847:65&a=1&goto=http://www.espnshop.com/');return
+        false\">Shop</a>\n--></div>\n<!-- end footer -->\n<!--[if lte IE 9]></div><![endif]-->\n</div>\n<!--
+        end bg-elements -->\n\n\n<!-- SiteCatalyst code version: H.21.3 Copyright
+        1997-2010 Omniture, Inc. http://www.omniture.com -->\n<script type=\"text/javascript\">\n\tvar
+        undef = 'undefined'\n\t,s_account=\"wdgespcom\"\n\t,omniPageName = \"espn:nhl:game:photos:400564325+-+nyi+at+pit\"\n\t\n\t,insiderStatus
+        = \"\"\n\t,anGen = \"\"\n\t,anYear = \"\"\n\t,anDateString = \"\"\n\t,anLoginStatus
+        = \"\"\n\t,callOmniture = function(){\n\t\t/*-- core story s_omni properties
+        --*/\n\t\tif (typeof anCV != \"undefined\"){anParseLoginBarInfo(anCV);}\n\t\ts_omni.pageName=\"nhl:game:photos:400564325+-+nyi+at+pit\";\n\t\ts_omni.server
+        = window.location.host; // Server from the Host\n\t\ts_omni.channel = \"nhl\";\n\t\ts_omni.prop1
+        = \"espn\";\n\t\ts_omni.prop4 = \"nhlphotos\";\n\t\ts_omni.prop5 = \"nhl:game:photos\";\n\t\ts_omni.prop11
+        = (insiderStatus !== null) ? insiderStatus + \":premium-no\" : \"premium-no\";\n\t\ts_omni.prop17
+        = \"en\";\n\t\ts_omni.prop21 = anDateString;\n\t\ts_omni.prop22 = anGen;\n\t\ts_omni.prop25
+        = \"hockey\";\n\t\ts_omni.prop26 = \"nhl\";\n\t\ts_omni.prop29 = anLoginStatus;\n\t\ts_omni.prop30
+        = \"n\";\n\t\ts_omni.hier1 = \"nhl:game:photos:400564325+-+nyi+at+pit\";\n\t\ts_omni.eVar7
+        = anYear + \":\" + anGen + \":\" + anLoginStatus + \":\" + s_omni.prop11 +
+        \":\";\n\t\ts_omni.eVar9 = \"en\";\n\t\ts_omni.eVar13 = \"nhl:game:photos:400564325+-+nyi+at+pit\";\n\t\ts_omni.eVar19
+        = \"hockey\";\n\t\ts_omni.eVar21 = \"nhl\";\n\t\t\n\t\tif (s_omni.prop11==\"anonymous:premium-yes\"
+        || s_omni.prop11==\"insider-no:premium-yes\" && typeof s_omni.prop4!=\"undefined\"
+        &&\n\t\t\t(s_omni.prop4==\"story\" || s_omni.prop4==\"blog\")) {\n\t\t\tif
+        (typeof s_omni.events != \"undefined\" && s_omni.events!=\"\") {\n\t\t\t\ts_omni.events
+        = s_omni.events+\",event8\" }\n\t\t\telse { s_omni.events=\"event8\" }\n\t\t}\n\t\t\n\t\t\n\t\tanVersion
+        = \"_11apr14_v2_0_r5_\";\n\t\t\n\t\t/************* DO NOT ALTER ANYTHING BELOW
+        THIS LINE ! **************/\n\t\t\n\t\tvar s_code = s_omni.t();\n\t\tif(s_code)
+        {\n\t\t\tvar sci = new Image(1,1);\n\t\t\tsci.onload = function() {console.log(\"loaded
+        no append\")};\n\t\t\tsci.src = s_code;\n\t\t}\n\t\t\n\t};\t\n</script>\n\n\n\n<script
+        type=\"text/javascript\">\n\tif (typeof(s_omni) === 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\t// we want to load the analytics files from the cache if possible
+        - so, let's use full $.ajax() calls\n\t\t\t$.ajax({\n\t\t\t\ttype:'GET',\n\t\t\t\turl:
+        'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/externalnielsen.js&v=11',\n\t\t\t\tdataType:
+        'script',\n\t\t\t\tcache: true,\n\t\t\t\tsuccess: function() {\n\t\t\t\t\tvar
+        lgSrc;\n\t\t\t\t\tif(typeof anCV !== undef && anCV === '' && document.getElementById('form-memberarea')
+        != null) {\n\t\t\t\t\t\tlgSrc = 'https://r.espn.go.com/members/util/getUserInfo?cb=runOmnitureIndependently&regType=true';\n\t\t\t\t\t\t$.getScript(lgSrc);
+        // we don't want this to be cached - so we'll use the $.getScript() method\n\t\t\t\t\t}
+        else {\n\t\t\t\t\t\tcallOmniture();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t});\n\t\t});\n\t}\n</script>\n\n<!--
+        End SiteCatalyst code version: H.21. -->\n\n\n<!-- Begin comScore Tag -->\n<script
+        type=\"text/javascript\">\n\tif (typeof(jQuery) !== 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\tif(typeof window._comscore === 'undefined') {\n\t\t\t\twindow._comscore
+        = window._comscore || [];\n\t\t\t\twindow._comscore.push({ c1: \"2\", c2:
+        \"3000005\" });\n\t\t\t\tjQuery.getScript((document.location.protocol == \"https:\"
+        ? \"https://sb\" : \"http://b\") + \".scorecardresearch.com/beacon.js\");\n\t\t\t}\n\t\t});\n\t}\n</script>\n<!--
+        End comScore Tag -->\n\t\t<script>\n\t\tvar _sf_async_config={\n\t\t\t\"uid\":22222,\n\t\t\t\"domain\":\"espn.go.com\",\n\t\t\t\"pingServer\":\"pespn.chartbeat.net\",\n\t\t\t\"useCanonical\":true,\n\t\t\t\"useSubDomains\":false,\n\t\t\t\"sections\":\"nhl:gamehq:photos,photos,game\",\n\t\t\t\"authors\":\"gamehq\"\n\t\t};\n\t\tif
+        (typeof(ad_site) !== 'undefined') { _sf_async_config.zone = ad_site; }\n\n\t\t//
+        load both chartbeat_pub and chartbeat_video\n\t\t(function () {\n\t\t\tfunction
+        a() {\n\t\t\t\twindow._sf_endpt = (new Date()).getTime();\n\n\t\t\t\tvar cbDomain
+        = ((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\");\n\n\t\t\t\tvar
+        c = document.createElement(\"script\");\n\t\t\t\tc.setAttribute(\"language\",\"javascript\");\n\t\t\t\tc.setAttribute(\"type\",\"text/javascript\");\n\t\t\t\tc.setAttribute(\"src\",
+        cbDomain+\"js/chartbeat_pub.js\");\n\t\t\t\tdocument.body.appendChild(c);\n\n\t\t\t\tif(typeof
+        StrategyInterface !== 'undefined' && (typeof espn !== 'undefined' && typeof
+        espn.video !== 'undefined')){\n\t\t\t\t\tvar e = document.createElement(\"script\");\n\t\t\t\t\te.setAttribute(\"language\",\t\"javascript\");\n\t\t\t\t\te.setAttribute(\"type\",
+        \"text/javascript\");\n\t\t\t\t\te.setAttribute(\"src\", cbDomain+\"js/chartbeat_video.js\");\n\t\t\t\t\tdocument.body.appendChild(e);\n\t\t\t\t}\n\t\t\t}\n\t\t\tvar
+        b = window.onload;\n\t\t\twindow.onload = (typeof window.onload != \"function\")
+        ? a : function () { b(); a() }\n\t\t})();\n\t\t//(function(){function a(){window._sf_endpt=(new
+        Date()).getTime();var c=document.createElement(\"script\");c.setAttribute(\"language\",\"javascript\");c.setAttribute(\"type\",\"text/javascript\");c.setAttribute(\"src\",((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\")+\"js/chartbeat_pub.js\");document.body.appendChild(c)}var
+        b=window.onload;window.onload=(typeof window.onload!=\"function\")?a:function(){b();a()}})();\n\t\t</script>\n\t\n<!--
+        dynamic logic: safecount -->\n<script src=\"http://content.dl-rms.com/rms/mother/508/nodetag.js\"></script>\n\n<script
+        type=\"text/javascript\" charset=\"utf-8\">buildOutHeadlinesForPinnedSite();</script>\n<script
+        type=\"text/javascript\">\n   var isInIFrame = (window.location != window.parent.location)
+        ? true : false;\n   if(isInIFrame){ if(document.referrer){ if(document.referrer.indexOf(\".go.com\")==-1){
+        top.location.href=self.location.href; } } }\n</script>\n\n<script type='text/javascript'>\n
+        \ //<![CDATA[\n    (function(){\n    window.gravityInsightsParams = {\n      'type':
+        'content',\n      'action': '',\n      'site_guid': '9a41401e9b7c945344e001ee7f23031e'\n
+        \   };\n    var b,c;b=\"https:\"===document.location.protocol?\"https://b-ssl.grvcdn.com/moth-min.js\":\"http://b.grvcdn.com/moth-min.js\";window.grvMakeScript=function(d){var
+        a;a=document.createElement(\"script\");a.type=\"text/javascript\";a.async=!0;a.src=d;return
+        a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
+        \ //]]>\n</script></body>\n</html>"
+    http_version: 
+  recorded_at: Wed, 21 Jan 2015 04:29:35 GMT
+- request:
+    method: get
+    uri: http://espn.go.com/nhl/photos?gameId=400564325&page=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Content-Type:
+      - text/html;charset=iso-8859-1
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 21 Jan 2015 04:29:34 GMT
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=300
+      P3p:
+      - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
+        BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
+      Set-Cookie:
+      - SWID=1B3E9E16-66B1-461F-A618-9DC4B6A66B12; path=/; expires=Tue, 16 Jan 2035
+        04:29:34 GMT; domain=go.com;
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
+        src=\"http://sports-ak.espn.go.com/sports/optimizely.js\"></script><meta charset=\"iso-8859-1\">\n<meta
+        http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n<script type=\"text/javascript\">
+        \   \n    if(true && navigator && navigator.userAgent.toLowerCase().indexOf(\"teamstream\")
+        >= 0) {\n        window.location = 'http://a.m.espn.go.com/mobilecache/general/apps/sc';\n
+        \   }\n</script><script type=\"text/javascript\">\nvar espn=window.espn||{};espn.beta=(function(f,i,b){var
+        c=\"http://beta.espn.go.com\",j=f.location.href,l=i.location.pathname;function
+        a(n){var r,m,o,q,s,v,w,p,t;if(n!==b){j=n;r=n.match(/http:\\/\\/([^\\/]*)([^?]*).*/);if(r&&r.length===3){l=r[2];}}if(l.match(/\\/story$/i)||l.match(/\\/story\\//i)){q=k(\"storyId\",n)||k(\"id\",n);s=k(\"storyPage\",n)||k(\"page\",n);if(q!==\"\"){return
+        c+l+\"/_/id/\"+q;}else{if(s!==\"\"){return c+l+\"/_/page/\"+s;}else{return
+        c+l;}}}if(l.match(/\\/blogpostindex$/i)){m=k(\"blogname\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"){return
+        c+\"/blog/\"+m;}}if(l.match(/\\/blogpost$/i)){m=k(\"blogname\",n);o=k(\"id\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"&&o!==\"\"){return
+        c+\"/blog/\"+m+\"/post/_/id/\"+o;}}if(l.match(/^\\/blog\\//i)){m=k(\"blogName\",n);o=k(\"id\",n);if(l.match(/\\/blog\\/.*\\/post$/i)){if(o!==\"\"){return
+        c+l+\"/_/id/\"+o;}}else{if(m!==\"\"&&o!==\"\"){return c+\"/blog/\"+m+\"/post/_/id/\"+o;}else{if(m!==\"\"){return
+        c+\"/blog/\"+m;}else{return c+l;}}}}if((l===\"\"||l===\"/\")&&!j.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)){return
+        c;}var u=l.match(/^\\/.*?\\/(?:index)?$/i);if(u){v={\"/frontpage/\":true,\"/wireless/\":true,\"/general/\":true,\"/extra/\":true,\"/mobile/\":true,\"/nfl/\":true,\"/nba/\":true,\"/mlb/\":true,\"/nhl/\":true,\"/ncf/\":true,\"/college-football/\":true,\"/ncb/\":true,\"/mens-college-basketball/\":true,\"/ncw/\":true,\"/womenbb/\":true,\"/womens-basketball/\":true,\"/wnba/\":true,\"/golf/\":true,\"/tennis/\":true,\"/general/tennis/\":true,\"/mma/\":true,\"/extra/mma/\":true,\"/racing/\":true,\"/rpm/\":true,\"/racing/nascar/\":true,\"/rpm/nascar/\":true,\"/boxing/\":true,\"/extra/boxing/\":true,\"/college-sports/\":true,\"/ncaa/\":true,\"/extra/ncaa/\":true,\"/olympics/\":true,\"/extra/olympics/\":true,\"/horse-racing/\":true,\"/horse/\":true,\"/general/horse/\":true,\"/poker/\":true,\"/general/poker/\":true,\"/sports/endurance/\":true,\"/extra/endurance/\":true};if(l.match(/\\/index$/i)){l=l.substring(0,l.length-5);}if(v[l]===true){return
+        c+l;}}if(l.match(/\\/nflpreview$/i)||l.match(/\\/preview$/i)){w=k(\"gameId\",n);if(w!==\"\"){if(l.match(/\\/nflpreview$/i)){return
+        c+\"/nfl/preview?gameId=\"+w;}else{return c+l+\"?gameId=\"+w;}}}if(l.match(/\\/recap$/i)){w=k(\"gameId\",n);if(w!==\"\"){return
+        c+l+\"?gameId=\"+w;}}if(l===\"/general/video\"){p=k(\"cid\",n);t=k(\"vid\",n);if(p!==\"\"){return
+        c+\"/video/clip?id=\"+p;}else{if(t!==\"\"){return c+\"/video/clip?id=\"+t;}}}if(l.match(/^\\/(?:videohub\\/video|video)\\/clip$/i)){p=k(\"id\",n);if(p!==\"\"){return
+        c+l+\"?id=\"+p;}}}function h(o){var n=a(o);var m=j.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)||(o&&o.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i))||(espn&&espn.GLOBALS&&espn.GLOBALS.isPremium);if(n){n=n.replace(\"/wireless/\",\"/\");n=n.replace(\"/general/\",\"/\");n=n.replace(\"/extra/\",\"/\");n=n.replace(\"/mobile/\",\"/\");n=n.replace(\"/frontpage/\",\"/\");n=n.replace(\"/videohub/\",\"/\");n=n.replace(\"/ncf/\",\"/college-football/\");n=n.replace(\"/rpm/\",\"/racing/\");n=n.replace(\"/ncb/\",\"/mens-college-basketball/\");n=n.replace(\"/ncw/\",\"/womens-basketball/\");n=n.replace(\"/wnba/\",\"/womens-basketball/\");n=n.replace(\"/ncaa/\",\"/college-sports/\");if(m){n=n.replace(\"/story/\",\"/insider/story/\");n=n.replace(\"/post/\",\"/insider/post/\");if(n.match(/\\/blog\\/[^_]*$/i)){if(n.charAt(n.length-1)===\"/\"){n=n+\"insider/\";}else{n=n+\"/insider/\";}}}}return
+        n;}function k(o,q){var m=location.search;if(q!==b){var n=q.indexOf(\"?\");if(n>-1){m=q.substr(n);}}o=o.replace(/[\\[]/,\"\\\\[\").replace(/[\\]]/,\"\\\\]\");var
+        r=new RegExp(\"[\\\\?&]\"+o+\"=([^&#]*)\"),p=r.exec(m);return p===null?\"\":decodeURIComponent(p[1].replace(/\\+/g,\"
+        \"));}function d(){var n=e(\"betauser\");var m=e(\"betacohort\")||\"\";if(n!==null&&m.indexOf(\"cohort-\")===0){var
+        p=m.split(\"-\");if(p&&p.length===2){if(parseInt(p[1],10)===999){return;}}var
+        o=h();if(o){f.location=o;}}}function e(n){var p=n+\"=\";var m=i.cookie.split(\";\");for(var
+        o=0;o<m.length;o++){var q=m[o];while(q.charAt(0)===\" \"){q=q.substring(1,q.length);}if(q.indexOf(p)===0){return
+        q.substring(p.length,q.length);}}return null;}function g(){if(k(\"rand\")===\"beta\"){espn.beta.recheck=true;}else{d();}}return{init:function(){g();}};})(this,this.document);espn.beta.init();\n</script><title>New
+        York Islanders vs. Pittsburgh Penguins - Photos - November 21, 2014 - ESPN</title>\n<meta
+        name=\"google-site-verification\" content=\"xuj1ODRluWa0frM-BjIr_aSHoUC7HB5C1MgmYAM_GkA\"
+        />\n<meta name=\"msvalidate.01\" content=\"B1FEB7C682C46C8FCDA3130F3D18AC28\"
+        />\n<meta name=\"googlebot\" content=\"noodp\" />\n<meta name=\"robots\" content=\"index,
+        follow\" />\n<meta name=\"description\" content=\"NHL Hockey Photos: Final
+        statistics from the New York vs. Pittsburgh game played on November 21, 2014\"
+        />\n<meta name=\"keywords\" content=\"nhl hockey Photos, New York stats, Pittsburgh
+        stats\" />\n<meta property=\"fb:app_id\" content=\"116656161708917\">\n<meta
+        property=\"og:site_name\" content=\"ESPN.com\">\n<link rel=\"canonical\" href=\"http://scores.espn.go.com/nhl/photos?gameId=400564325\"
+        />\n\n\t\t<script>var _sf_startpt=(new Date()).getTime();</script>\n<link
+        rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"http://a.espncdn.com/search/opensearch.xml\"
+        title=\"ESPN Search\" />\n<link rel=\"stylesheet\" href=\"http://a.espncdn.com/combiner/c/201401211964?css=global_reset.r1.css,base.r236.css,modules.r462.css,global_header.r44.css,header_topbar.r1.css,modules/global_nav.r54.css,modules/insider_enhanced.r1.css,modules/mem/mem.r12.1.css,modules/mem/mem_espn360.r8.4.css,modules/mem/skirmish.r8.css,modules/twin.r1.css,modules/facebook/button.r2.css,universal_overlay/universal_overlay.css,universal_overlay/media_overlay.css,universal_overlay/video_overlay.css,universal_overlay/photo_overlay.css,universal_overlay/dyk_overlay.css,fonts/bentonsans.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/201303290924?css=sprites/teamlogos.r18.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c?v=201407081137&css=/espn/espn/styles/gamepackage10/ootCSS,/espn/espn/styles/gamepackage10/gamepackage10CSS,/espn/espn/styles/gamepackage10/gamepackage10moduleCSS\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c?v=201308011131&css=modules/playerpopup.r2.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c?v=201108152006&css=modules/videoplayer12.r1.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/prod/styles/social_upgrade.r1.css\" type=\"text/css\"
+        media=\"screen\" charset=\"utf-8\" />\n<script type=\"text/javascript\">\nvar
+        _vrq = _vrq || [];\n _vrq.push(['id', 489]);\n _vrq.push(['automate', false]);\n
+        _vrq.push(['track', function(){}]);\n (function(d, a){var s = d.createElement(a),x
+        = d.getElementsByTagName(a)[0];\ns.async = true;\ns.src = 'http://a.visualrevenue.com/vrs.js';\n
+        x.parentNode.insertBefore(s, x);})(document, 'script'); </script>\n<script
+        src=\"http://a.espncdn.com/combiner/c?js=jquery-1.7.1.js,plugins/json2.r3.js,plugins/teacrypt.js,plugins/jquery.metadata.js,plugins/jquery.bgiframe.r3.js,plugins/jquery.easing.1.3.js,plugins/jquery.hoverIntent.js,plugins/jquery.jcarousel.0.2.9.js,plugins/jquery.tinysort.r4.js,plugins/jquery.pubsub.r5.js,ui/1.8.16/jquery.ui.core.js,ui/1.8.16/jquery.ui.widget.js,ui/1.8.16/jquery.ui.tabs.js,ui/1.8.16/jquery.ui.accordion.js,plugins/ba-debug-0.4.js,espn.l10n.r12.js,swfobject/2.2/swfobject.js,flashObjWrapper.r7.js,plugins/jquery.colorbox.1.3.14.js,plugins/jquery.ba-postmessage.js,espn.core.duo.r57.js,m/beta/betacheck.r5.js,espn.mem.r39.js,stub.search.r9.js,espn.nav.mega.r38b.js,espn.storage.r6.js,espn.p13n.r19.5.js,espn.geo.r3.js,espn.video.r81.r5.js,analytics/chartbeat/video/strategy_comprehensive.r1.js,registration/staticLogin.r12.06102014.js,espn.universal.overlay.r19.js,insider/espn.insider.20140915.js,espn.espn360.stub.r9.js,espn.myHeadlines.stub.r16.js,espn.myfaves.stub.r3.js,tsscoreboard.20090612.js,ie9pinning.r3.js,espn.f8.noauth.r3.js,espn.socialmediamod.r7.js,playerpopup.r14.js\"></script>\n<script
+        src=\"http://a.espncdn.com/prod/scripts/espn.loader.200901201835.js\" type=\"text/javascript\"
+        charset=\"utf-8\"></script>\n<script type=\"text/javascript\" charset=\"utf-8\">\nESPN.include([\n\t'http://widgets.outbrain.com/outbrain.js'\n]);\n</script>\n<script>espn.core.navVersion
+        = 'a';</script>\n<script>var ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlphotos\",ad_kvps=\"pgtyp=nhlphotos;sp=nhl;\",ad_swid=\"\",ad_counter=1,ad_ord=Math.floor(9999999999*Math.random()),ad_seg=\"\",ad_mnr=-1<document.cookie.indexOf(\"grif=1\")?\"t\":\"f\",ad_ref=\"other\",ref=document.referrer,refsMap={\"facebook.com\":\"facebook\",\"twitter.com|t.co\":\"twitter\",\"plus.url.google.com|plus.google.com\":\"googleplus\",\"google.com\":\"google\",\"bing.com\":\"bing\",\"yahoo.com\":\"yahoo\",\"espn.go.com\":\"espn\"},refKey;for(refKey
+        in refsMap)ref.match(refKey)&&(ad_ref=refsMap[refKey]);\nad_kvps=ad_kvps+\"ref=\"+ad_ref+\";mnr=\"+ad_mnr+\";\";ad_swid=jQuery.cookie(\"SWID\");\"function\"===typeof
+        espn.core.ad_segments&&(ad_seg=espn.core.ad_segments(),null!=ad_seg&&\"\"!=ad_seg&&(ad_kvps+=ad_seg));var
+        ad_u=\"\";null!=ad_swid&&\"\"!=ad_swid&&(ad_u=\"swid=\"+ad_swid+\";\");</script>\n</head>\n<body
+        class=\"game-package nhl {sportId:90}\" >\n<div class=\"mboxDefault\"><link
+        rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/prod/styles/modules/hideGravity.css\"
+        type=\"text/css\" /></div><script>mboxCreate('ESPN_global');</script><!--[if
+        IE 5]><div class=\"ie5\"><![endif]-->\n<!--[if IE 6]><div class=\"ie ie6\"><![endif]-->\n<!--[if
+        IE 7]><div class=\"ie ie7\"><![endif]-->\n<!--[if IE 8]><div class=\"ie ie8\"><![endif]-->\n<!--[if
+        IE 9]><div class=\"ie9\"><![endif]-->\n<!-- begin bg-elements -->\n<div class=\"bg-elements\">\n<!--
+        begin header -->\n<div id=\"header\" class=\"container\">\n<!-- begin top-bar
+        -->\n<div class=\"top-bar\">\n<!-- begin uni login -->\n<script type=\"text/javascript\">\nvar
+        returnURL = document.location.href;\nvar anCV = \"\";\nvar myEspnText = {'welcometext':'Welcome','register':'Register','signin':'Sign
+        In','signout':'Sign Out','heliumdown':'Login Temporarily Unavailable','connectedfacebook':'Connected
+        to Facebook','connectfacebook':'Connect with Facebook','activateinsider':'Activate
+        Insider'};\n</script>\n<form id=\"form-memberarea\">\n<input type=\"hidden\"
+        name=\"language\" id=\"language\" value=\"en\"/>\n<input type=\"hidden\" name=\"affiliateName\"
+        id=\"memberAreaAffiliateName\" value=\"espn\"/>\n<input type=\"hidden\" name=\"regFormId\"
+        id=\"regFormId\" value=\"espn\"/>\n</form>\n<div class=\"signin\" id=\"signin\"></div>\n<script>espn.memberservices.welcome();</script>\n<div
+        class=\"nav-edition editions\">\n<label>EDITIONS:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-usa active\"><a href=\"http://espn.go.com/\" name=\"&amp;lpos=editionsnav&amp;lid=usa\">USA</a></li>\n\t<li
+        class=\"e-deportes\"><a href=\"http://www.espn.com?country-view=us&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=deportes\" class=\"{langPref:'spanish'}\">DEPORTES</a></li>\n\t<li
+        class=\"last dropdown\">\n\t<ul class=\"\">\n\t<li class=\"selected\">More</li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=ar&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=argentina\">Argentina</a></li>\n\t<li><a
+        href=\"http://www.espn.com.au\" name=\"&amp;lpos=editionsnav&amp;lid=australia\">Australia</a></li>\n\t<li><a
+        href=\"http://www.espn.com.br\" name=\"&amp;lpos=editionsnav&amp;lid=brazil\">Brazil</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=co&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=colombia\">Colombia</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=mx&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=mexico\">Mexico</a></li>\n\t<li><a
+        href=\"http://www.espn.co.uk/\" name=\"&amp;lpos=editionsnav&amp;lid=uk\">United
+        Kingdom</a></li>\n        <li><a href=\"http://www.espn.com?country-view=ve&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=venezuela\">Venezuela</a></li>\n\t</ul>\n\t</li>\n</ul>\n</div>\n\n<div
+        class=\"nav-edition\">\n<label>CITIES:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-boston\"><a href=\"http://espn.go.com/boston/\" name=\"&amp;lpos=citynav&amp;lid=boston\">BOSTON</a></li>\n\t<li
+        class=\"e-chicago\"><a href=\"http://espn.go.com/chicago/\" name=\"&amp;lpos=citynav&amp;lid=chicago\">CHICAGO</a></li>\n\t<li
+        class=\"e-dallas\"><a href=\"http://espn.go.com/dallas/\" name=\"&amp;lpos=citynav&amp;lid=dallas\">DALLAS</a></li>\n\t<li
+        class=\"e-losangeles\"><a href=\"http://espn.go.com/los-angeles/\" name=\"&amp;lpos=citynav&amp;lid=losangeles\">LOS
+        ANGELES</a></li>\n\t<li class=\"last e-newyork\"><a href=\"http://espn.go.com/new-york/\"
+        name=\"&amp;lpos=citynav&amp;lid=newyork\">NEW YORK</a></li>\n</ul>\n</div>\n</div>\n<!--
+        end top-bar -->\n<!-- begin espn-logo -->\n<div class=\"espn-logo\">\n<h1>\n<a
+        href=\"http://espn.go.com/\" name=\"&lpos=sitenavdefault&lid=sitenav_main-logo\"
+        class=\"espn\">ESPN</a> <a href=\"http://espn.go.com/nhl/\" class=\"section-title\">NHL</a></h1>\n</div>\n<!--
+        end espn-logo -->\n<!-- begin ad -->\n<span class=\"presby\"><!--espn.us.com.nhl
+        sitezone--><!--http://ad.Doubleclick.net hostUrl-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlphotos\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=SponsoredByLogoHeader;\"+ad_u+\"sz=150x45,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"SponsoredByLogoHeader\" data-cb-dfp-id=\"'+ad_kvps+'sz=150x45,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nhl/nhlphotos;pgtyp=nhlphotos;sp=nhl;sz=150x45,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlphotos;pgtyp=nhlphotos;sp=nhl;sz=150x45,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</span>\n<!-- end ad -->\n<div class=\"header-right\">\n<style>.ie6
+        #searchBox, .ie6 #searchBox div { display: inline; } </style><!-- begin search
+        -->\n<div id=\"nav-main-search\">\n<form id=\"searchBox\" name=\"searchBox\"
+        action=\"http://search.espn.go.com/results\" method=\"get\" accept-charset=\"utf-8\"
+        style=\"color: #999999;\">\n<div class=\"clearfix\">\n<input autocomplete=\"off\"
+        class=\"text\" type=\"text\" placeholder=\"Search\" name=\"searchString\"
+        id=\"searchString\" />\n<input type=\"hidden\" name=\"page\" id=\"page\" value=\"null\"
+        />\n<input type=\"hidden\" name=\"fromForm\" value=\"true\" />\n<input class=\"submit\"
+        type=\"submit\" value=\"\" />\n</div>\n</form>\n</div>\n<!-- end search -->\n<div
+        id=\"shop\"><a class=\"shop-btn\" href=\"http://www.dickssportinggoods.com/category/index.jsp?categoryId=15504466&camp=Part:ESPNpart::nhlshopbutton:NHL\"
+        name=\"&lpos=sitenavdefault&lid=sitenav_shopbutton\" rel=\"nofollow\">Shop</a></div></div>\n</div>\n<!--
+        end header -->\n<!--espn.us.com.nhl sitezone--><!--http://ad.Doubleclick.net
+        hostUrl-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlphotos\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Background_Skin;\"+ad_u+\"sz=1280x946,200x800,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Background_Skin\" data-cb-dfp-id=\"'+ad_kvps+'sz=1280x946,200x800,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nhl/nhlphotos;pgtyp=nhlphotos;sp=nhl;sz=1280x946,200x800,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlphotos;pgtyp=nhlphotos;sp=nhl;sz=1280x946,200x800,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n<!-- begin subheader -->\n<div id=\"subheader\">\n<!--
+        begin content -->\n<div id=\"content-wrapper\">\n<div id=\"ad-top\" class=\"container\">\n<!--
+        begin Banner ad -->\n<div class=\"span-6 ad banner top\"><div class=\"ad-center\"><div
+        class=\"ad-wrapper\"><!--espn.us.com.nhl sitezone--><!--http://ad.Doubleclick.net
+        hostUrl-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlphotos\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Banner;\"+ad_u+\"sz=728x90,970x66,924x50,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Banner\" data-cb-dfp-id=\"'+ad_kvps+'sz=728x90,970x66,924x50,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nhl/nhlphotos;pgtyp=nhlphotos;sp=nhl;sz=728x90,970x66,924x50,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlphotos;pgtyp=nhlphotos;sp=nhl;sz=728x90,970x66,924x50,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div></div></div>\n<!-- end Banner
+        ad -->\n</div>\n<div id=\"content\" class=\"container\">\n<div id=\"fb-root\"></div><!--[if
+        lte IE 7]><link rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/combiner/c?css=modules/browser-alert.r7.css\"
+        type=\"text/css\" /><div class=\"span-6\" id=\"browser-alert-wrapper\" style=\"display:none;\"><div
+        class=\"mod-container mod-no-header-footer browser-alert\"><div class=\"mod-content\"><div
+        class=\"gradient-container\"><h1><span>Your Web Browser</span> is no longer
+        supported</h1><p>To experience everything that ESPN.com has to offer, we recommend
+        that you upgrade to a newer version of your web browser. Click the upgrade
+        button to the right or <a href=\"http://espn.go.com/espn/news/story?id=5630562\">learn
+        more</a>.</p><ul><li><a class=\"btn-upgrade\" href=\"http://www.microsoft.com/windows/internet-explorer/default.aspx\">Upgrade</a></li><li><a
+        class=\"btn-faq\" href=\"http://espn.go.com/espn/news/story?id=5630562\">FAQs</a></li></ul></div></div></div></div><script>(function(b){setTimeout(function(){var
+        a=b(\"#browser-alert-wrapper\");if(espn.cookie.get(\"browseralert\")!=\"true\"){b('<a
+        class=\"btn-close\" href=\"#\">Close</a>').bind(\"click\",function(){a.hide();espn.cookie.set(\"browseralert\",\"true\",30);return
+        false}).appendTo(a.find(\".gradient-container\"));a.show();espn.cookie.set(\"browseralert\",\"true\")}},100)})(jQuery);</script><![endif]--><!--
+        left column -->\n\n<div class=\"scoreboard-strip-wrapper\" style=\"height:61px;
+        width:916px;\">\n    <div class=\"scoreboard-strip oot-wide\" id=\"ootScoreboard\">\n
+        \       <div id=\"ootShadow\"></div>\n\n        <div class=\"scoreboard-title-hq\">\n\n
+        \           <div class=\"subhead\">\n\n                <span>\n                    <a
+        name=\"&lpos=nhlGamePackageOOT&lid=scoreLinkOOT\" href=\"/nhl/scoreboard?date=20141121\">Scores
+        for Nov 21, 2014</a>\n                <span>\n\n        </div>\n\n        </div>\n\n
+        \       <div class=\"scoreboard-container\" id=\"scoreboard2\" style=\"width:auto
+        !important; margin-left: 210px !important\">\n            <div class=\"container\">\n
+        \               <div style=\"display: block;\" class=\"jcarousel-prev jcarousel-next-horizontal
+        oot-prev\"></div>\n                <div style=\"display: block;\" class=\"jcarousel-next
+        jcarousel-next-horizontal oot-next\"></div>\n                <div class=\"mod-content
+        mod-content-hq\">\n                    <div id=\"nhl-scores\" class=\"scores-carousel
+        {note:'THERE ARE NO NHL GAMES TODAY'} ui-tabs-panel ui-widget-content ui-corner-bottom\">\n
+        \                       <ul>\n                            <li id=\"nhl-400563818\"><!--
+        url: /nhl/photos --><div name=\"&lpos=nhlGamePackageOOT&lid=gameLinkOOT\"
+        onclick=\"window.location = '/nhl/preview?gameId=400563818'\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"clock\">Postponed</span><span class=\"hidden-clock\"></span></div><div
+        class=\"game-right\"><span class=\"period\"></span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"teams\"><span class=\"away\">NYR</span><br/><span class=\"home\">BUF</span></div><div
+        class=\"hidden-scores\"><span class=\"awayScore\">0</span><br/><span class=\"homeScore\">0</span></div><div
+        class=\"scores\"><span class=\"awayScore\">0</span><br/><span class=\"homeScore\">0</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">0</span></div></div></li><li id=\"nhl-400563738\"><!--
+        url: /nhl/photos --><div name=\"&lpos=nhlGamePackageOOT&lid=gameLinkOOT\"
+        onclick=\"window.location = '/nhl/photos?gameId=400563738'\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"clock\">Final</span><span class=\"hidden-clock\"> SO</span></div><div
+        class=\"game-right\"><span class=\"period\"> SO</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info away-winner\"></div><div
+        class=\"teams\"><span class=\"away\">BOS</span><br/><span class=\"home\">CBJ</span></div><div
+        class=\"hidden-scores\"><span class=\"awayScore\">4</span><br/><span class=\"homeScore\">3</span></div><div
+        class=\"scores\"><span class=\"awayScore\">4</span><br/><span class=\"homeScore\">3</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">1</span></div></div></li><li id=\"nhl-400564325\"><!--
+        url: /nhl/photos --><div name=\"&lpos=nhlGamePackageOOT&lid=gameLinkOOT\"
+        onclick=\"window.location = '/nhl/photos?gameId=400564325'\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"clock\">Final</span><span class=\"hidden-clock\"> SO</span></div><div
+        class=\"game-right\"><span class=\"period\"> SO</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info away-winner\"></div><div
+        class=\"teams\"><span class=\"away\">NYI</span><br/><span class=\"home\">PIT</span></div><div
+        class=\"hidden-scores\"><span class=\"awayScore\">5</span><br/><span class=\"homeScore\">4</span></div><div
+        class=\"scores\"><span class=\"awayScore\">5</span><br/><span class=\"homeScore\">4</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">2</span></div></div></li><li id=\"nhl-400564268\"><!--
+        url: /nhl/photos --><div name=\"&lpos=nhlGamePackageOOT&lid=gameLinkOOT\"
+        onclick=\"window.location = '/nhl/photos?gameId=400564268'\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"clock\">Final</span><span class=\"hidden-clock\"></span></div><div
+        class=\"game-right\"><span class=\"period\"></span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info away-winner\"></div><div
+        class=\"teams\"><span class=\"away\">NJ</span><br/><span class=\"home\">EDM</span></div><div
+        class=\"hidden-scores\"><span class=\"awayScore\">2</span><br/><span class=\"homeScore\">0</span></div><div
+        class=\"scores\"><span class=\"awayScore\">2</span><br/><span class=\"homeScore\">0</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">3</span></div></div></li>\n                        </ul>\n
+        \                   </div>\n                </div>\n\n            </div>\n
+        \       </div>\n\n    </div>\n</div>\n\n<script type=\"text/javascript\">\n\n
+        \   var ESPNootScoreboard = {};\n\n    ESPNootScoreboard.activeSport = 'nhl';\n\n\n
+        \   ESPNootScoreboard.myTeams = {'90-12': ['nhl-400564325'], \n'90-11': ['nhl-400564268'],
+        \n'90-1': ['nhl-400563738'], \n'90-6': ['nhl-400564268'], \n'90-2': ['nhl-400563818'],
+        \n'90-29': ['nhl-400563738'], \n'90-13': ['nhl-400563818'], \n'90-16': ['nhl-400564325']};\n\n</script><div
+        class=\"gamehq-wrapper\"><div class=\"summary-tabs-container\"><div class=\"span-4\"
+        id=\"gamepackageTop\"><div class=\"status-bar status-final\" id=\"gameStatusBarWrap\"><p
+        class=\"game-state\" id=\"gameStatusBarText\"><span id=\"status-bar-period\">Final</span>
+        <span id=\"status-bar-clock\"> SO</span></p><!-- Series at a Glance -->\n<div
+        class=\"series-status\"><p><span id=\"seriesTextTitle\">Series</span> (Game
+        2 of 5)</p><a href=\"#\" class=\"arrow\" id=\"series-dd-arrow\"></a></div><div
+        class=\"series-dropdown\" id=\"series-dd\"><p class=\"close-link\"><a href=\"#\"
+        id=\"dd-close\">Close</a></p><p class=\"dd-series-status\">New York leads
+        3-1</p><table cellspacing=\"0\" class=\"dd-game\"><tr><th colspan=\"3\"><span>Game
+        1:</span> Saturday, October 18th</th></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders
+        \" style=\"color:#000 !important;\">Islanders</a></td><td class=\"score \">1</td><td
+        class=\"dd-game-status\" rowspan=\"2\">Final<br/></td></tr><tr><td class=\"team\"><a
+        href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins \" style=\"color:#000
+        !important;\">Penguins</a></td><td class=\"score \">3</td></tr><tr><td colspan=\"3\"
+        class=\"footer-links\" id=\"footerLinks-400564316\"><a href=\"\" style=\"display:none\"
+        id=\"sdd-preview-400564316\">Preview &#187;</a><a href=\"/nhl/recap?gameId=400564316\"
+        \ id=\"sdd-recap-400564316\">Recap &#187;</a><a href=\"/nhl/boxscore?gameId=400564316\"
+        \ id=\"sdd-boxscore-400564316\">Boxscore &#187;</a></td></tr></table><table
+        cellspacing=\"0\" class=\"dd-game\"><tr><th colspan=\"3\"><span>Game 2:</span>
+        Friday, November 21st</th></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders
+        \" style=\"color:#000 !important;\">Islanders</a></td><td class=\"score gp-awayScore\">5</td><td
+        class=\"dd-game-status\" id=\"sg-clockPeriod\"  rowspan=\"2\">Final<br/> SO</td></tr><tr><td
+        class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins
+        \" style=\"color:#000 !important;\">Penguins</a></td><td class=\"score gp-homeScore\">4</td></tr><tr><td
+        colspan=\"3\" class=\"footer-links\" id=\"footerLinks-400564325\"><a href=\"\"
+        style=\"display:none\" id=\"sdd-preview-400564325\">Preview &#187;</a><a href=\"/nhl/recap?gameId=400564325\"
+        \ id=\"sdd-recap-400564325\">Recap &#187;</a><a href=\"/nhl/boxscore?gameId=400564325\"
+        \ id=\"sdd-boxscore-400564325\">Boxscore &#187;</a></td></tr></table><table
+        cellspacing=\"0\" class=\"dd-game\"><tr><th colspan=\"3\"><span>Game 3:</span>
+        Saturday, November 22nd</th></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins
+        \" style=\"color:#000 !important;\">Penguins</a></td><td class=\"score \">1</td><td
+        class=\"dd-game-status\" rowspan=\"2\">Final<br/></td></tr><tr><td class=\"team\"><a
+        href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders \" style=\"color:#000
+        !important;\">Islanders</a></td><td class=\"score \">4</td></tr><tr><td colspan=\"3\"
+        class=\"footer-links\" id=\"footerLinks-400564326\"><a href=\"\" style=\"display:none\"
+        id=\"sdd-preview-400564326\">Preview &#187;</a><a href=\"/nhl/recap?gameId=400564326\"
+        \ id=\"sdd-recap-400564326\">Recap &#187;</a><a href=\"/nhl/boxscore?gameId=400564326\"
+        \ id=\"sdd-boxscore-400564326\">Boxscore &#187;</a></td></tr></table><table
+        cellspacing=\"0\" class=\"dd-game\"><tr><th colspan=\"3\"><span>Game 4:</span>
+        Friday, January 16th</th></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins
+        \" style=\"color:#000 !important;\">Penguins</a></td><td class=\"score \">3</td><td
+        class=\"dd-game-status\" rowspan=\"2\">Final<br/></td></tr><tr><td class=\"team\"><a
+        href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders \" style=\"color:#000
+        !important;\">Islanders</a></td><td class=\"score \">6</td></tr><tr><td colspan=\"3\"
+        class=\"footer-links\" id=\"footerLinks-400564341\"><a href=\"\" style=\"display:none\"
+        id=\"sdd-preview-400564341\">Preview &#187;</a><a href=\"/nhl/recap?gameId=400564341\"
+        \ id=\"sdd-recap-400564341\">Recap &#187;</a><a href=\"/nhl/boxscore?gameId=400564341\"
+        \ id=\"sdd-boxscore-400564341\">Boxscore &#187;</a></td></tr></table><table
+        cellspacing=\"0\" class=\"dd-game\"><tr><th colspan=\"3\"><span>Game 5:</span>
+        Friday, April 10th</th></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders
+        \" style=\"color:#000 !important;\">Islanders</a></td><td class=\"score \"></td><td
+        class=\"dd-game-status\" rowspan=\"2\">7:00 PM<br/> ET</td></tr><tr><td class=\"team\"><a
+        href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins \" style=\"color:#000
+        !important;\">Penguins</a></td><td class=\"score \"></td></tr><tr><td colspan=\"3\"
+        class=\"footer-links\" id=\"footerLinks-400564364\"><a href=\"/nhl/preview?gameId=400564364\"
+        \ id=\"sdd-preview-400564364\">Preview &#187;</a><a href=\"\" style=\"display:none\"
+        id=\"sdd-recap-400564364\">Recap &#187;</a><a href=\"\" style=\"display:none\"
+        id=\"sdd-boxscore-400564364\">Boxscore &#187;</a></td></tr></table></div><!--
+        end Series at a Glance -->\n</div><div class=\"matchup \" id=\"matchup-nhl-400564325\"><div
+        class=\"team away\"><div class=\"logo-medium\" style=\"background:#06143F;\"><img
+        src=\"http://a.espncdn.com/combiner/i?img=/i/teamlogos/nhl/500-dark/nyi.png&w=40&h=40&transparent=true\"
+        alt=\"\"/></div><div class=\"team-info\"><h3><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\">Islanders</a>
+        <span id=\"matchup-nhl-400564325-awayScore\" class=\"gp-awayScore\">5</span></h3><p
+        id=\"awayRecord\">(13-6-0, 26 pts)</p></div></div><div class=\"team home\"><div
+        class=\"logo-medium\" style=\"background:#C3B263;\"><img src=\"http://a.espncdn.com/combiner/i?img=/i/teamlogos/nhl/500-dark/pit.png&w=40&h=40&transparent=true\"
+        alt=\"\"/></div><div class=\"team-info\"><h3><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins\">Penguins</a>
+        <span id=\"matchup-nhl-400564325-homeScore\" class=\"gp-homeScore\">4</span></h3><p
+        id=\"homeRecord\">(13-3-2, 28 pts)</p></div></div></div><div class=\"game-actions\"><ul><li
+        id=\"ga-realtime\" style=\"display:none\"><a href=\"#\" onclick=\"window.open('http://insider.espn.go.com/nhl/caster/realtime','','width=785,height=214,scrollbars=no');
+        return false;\"\"><span class=\"outer\"><span class=\"title\" style=\"position:relative;
+        padding-right:15px;\">Realtime</span></span></a></li><li id=\"ga-motion\"
+        style=\"display:none\"><a href=\"#\"><span class=\"outer\"><span class=\"title\">&nbsp;</span></span></a></li></ul></div><div
+        class=\"game-vitals\"><p style=\"padding: 8px 0px 0px; float: right; font-size:
+        11px;\">Coverage: <strong>SPNET</strong></p><div class=\"game-time-location\"><p>7:00
+        PM ET, November 21, 2014</p><p>CONSOL Energy Center, Pittsburgh, Pennsylvania</p></div></div>\n\n
+        \   <!-- begin line score -->\n    <div class=\"line-score clear\">\n        <div
+        class=\"line-score-container\">\n            <table cellspacing=\"0\" id=\"gp-linescore\"
+        class=\"linescore\"  >\n                <tr class=\"periods\">\n                    <td
+        class=\"team\"></td>\n\n                    <td class=\"period\" style=\"text-align:center\"
+        > 1</td><td class=\"period\" style=\"text-align:center\" > 2</td><td class=\"period\"
+        style=\"text-align:center\" > 3</td><td class=\"period otPeriod\" style=\"text-align:center\"
+        > SO</td>\n                    <td class=\"total\" style=\"text-align:center\">T</td>\n\n
+        \               </tr>\n\n                <tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\">NYI</a></td><td
+        id=\"lsAway1\" style=\"text-align:center\" > 3</td><td id=\"lsAway2\" style=\"text-align:center\"
+        > 1</td><td id=\"lsAway3\" style=\"text-align:center\" > 0</td><td id=\"lsAwayot\"
+        style=\"text-align:center\" class=\"otPeriod\" > 1</td><td class=\"ts gp-awayScore\"
+        style=\"text-align:center\" id=\"linescore-totalScoreAway\">5</td></tr><tr><td
+        class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins\">PIT</a></td><td
+        id=\"lsHome1\" style=\"text-align:center\" > 2</td><td id=\"lsHome2\" style=\"text-align:center\"
+        > 1</td><td id=\"lsHome3\" style=\"text-align:center\" > 1</td><td id=\"lsHomeot\"
+        style=\"text-align:center\" class=\"otPeriod\" > 0</td><td class=\"ts gp-homeScore\"
+        style=\"text-align:center\" id=\"linescore-totalScoreHome\">4</td></tr>\n
+        \           </table>\n            \n\n                <table class=\"season-leaders\"
+        id=\"gp-season-leaders\" cellspacing=\"4\" style=\"display:none\">\n                    <thead>\n
+        \                       <tr class=\"periods\">\n                            <th>&nbsp;</th>\n
+        \                           <th style=\"text-align:left\">Points</th>\n                            <th
+        style=\"text-align:left\">Goals</th>\n                            <th style=\"text-align:left\">Assists</th>\n
+        \                       </tr>\n                    </thead>\n                    <tbody>\n
+        \                   <tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\"><strong>NYI</strong></a></td><td
+        style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/5160/john-tavares\">J&nbsp;Tavares</a>
+        <b>45</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/5160/john-tavares\">J&nbsp;Tavares</a>
+        <b>21</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3859/kyle-okposo\">K&nbsp;Okposo</a>
+        <b>30</b></td></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins\"><strong>PIT</strong></a></td><td
+        style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3114/sidney-crosby\">S&nbsp;Crosby</a>
+        <b>51</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3124/evgeni-malkin\">E&nbsp;Malkin</a>
+        <b>19</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3114/sidney-crosby\">S&nbsp;Crosby</a>
+        <b>36</b></td></tr>\n                    </tbody>\n                </table>\n
+        \               \n            \n\n\n        </div>\n\n        <!-- end line
+        score -->\n\n        <div id=\"gp-gameNotes\" class=\"game-notes\"  >\n        <p><span
+        class=\"stars\" style=\"width:45px; display:inline-block; text-align:right;
+        padding-right:5px; padding-top: 6px;\"><img src=\"http://a.espncdn.com/nhl/i/star-gold.png\"
+        alt=\"\" /></span><span><a href=\"http://espn.go.com/nhl/player/_/id/2562636/ryan-strome\"
+        style=\"color:#000;\">R. Strome</a></span> (Islanders - C): Goals: 1, Assists:
+        2</p><p><span class=\"stars\" style=\"width:45px; display:inline-block; text-align:right;
+        padding-right:5px; \"><img src=\"http://a.espncdn.com/nhl/i/star-gold.png\"
+        alt=\"\" /><img src=\"http://a.espncdn.com/nhl/i/star-gold.png\" alt=\"\"
+        /></span><span><a href=\"http://espn.go.com/nhl/player/_/id/3859/kyle-okposo\"
+        style=\"color:#000;\">K. Okposo</a></span> (Islanders - RW): Goals: 0, Assists:
+        0</p><p><span class=\"stars\" style=\"width:45px; display:inline-block; text-align:right;
+        padding-right:5px; \"><img src=\"http://a.espncdn.com/nhl/i/star-gold.png\"
+        alt=\"\" /><img src=\"http://a.espncdn.com/nhl/i/star-gold.png\" alt=\"\"
+        /><img src=\"http://a.espncdn.com/nhl/i/star-gold.png\" alt=\"\" /></span><span><a
+        href=\"http://espn.go.com/nhl/player/_/id/3699/patric-hornqvist\" style=\"color:#000;\">P.
+        Hornqvist</a></span> (Penguins - RW): Goals: 1, Assists: 1</p>\n        </div>\n
+        \   </div>\n</div><div class=\"span-2 last\" id=\"gp-adwrap\"><div class=\"ad-box\"
+        style=\"padding:2px 0px; height:250px;\"><iframe width=\"300\" id=\"adIframe\"
+        scrolling=\"NO\" height=\"250\" frameborder=\"0\" src=\"/nhl/photos?ads=incontent\"
+        marginheight=\"0\" marginwidth=\"0\"/></iframe></div></div>\n\t<div class=\"tabs
+        clear\">\n\t\t<ul>\n\n\t\t<li class=\"\" style=\"display:none;\"><a href=\"preview?gameId=400564325\"><span
+        class=\"title\">Preview</span></a></li><li class=\"\" style=\"display:block;\"><a
+        href=\"recap?gameId=400564325\"><span class=\"title\">Recap</span></a></li><li
+        class=\"\" style=\"display:block;\"><a href=\"boxscore?gameId=400564325\"><span
+        class=\"title\">Box Score</span></a></li><li class=\"\" style=\"display:block;\"><a
+        href=\"playbyplay?gameId=400564325\"><span class=\"title\">Play-By-Play</span></a></li><li
+        class=\"\" style=\"display:block;\"><a href=\"gamecast?gameId=400564325\"><span
+        class=\"title\">GameCast</span></a></li><li class=\"active\" style=\"display:block;\"><a
+        href=\"photos?gameId=400564325\"><span class=\"title\">Photos</span><span
+        class=\"quantity\"><span>25</span></span></a></li><li class=\"\" style=\"display:block;\"><a
+        href=\"conversation?gameId=400564325\"><span class=\"title\">Conversation</span><span
+        class=\"fb-comments-long quantity\"><span class=\"count\"></span></span></a></li><li
+        class=\"\" style=\"display:none;\"><a href=\"commentary?gameId=400564325\"><span
+        class=\"title\">Pressbox</span></a></li></ul></div><script>jQuery.getScriptCache(\"http://a.espncdn.com/combiner/c/69?js=jquery.sharetools.r15-u4.js\",
+        function() {jQuery(\".tabs\").sharetools(\"http://scores.espn.go.com/nhl/conversation?gameId=400564325\");});</script></div><div
+        class=\"story-container\"><div class=\"gp-body\"><div style=\"height:0px;
+        visibility:hidden;\" id=\"presByIframeContainer\"><iframe width=\"715\" id=\"presbyIframe\"
+        scrolling=\"NO\" frameborder=\"0\" src=\"/nhl/photos?ads=presby\" marginheight=\"0\"
+        marginwidth=\"0\"/></iframe></div><noscript><InLineReplace name=ad type=PresentedByLogo></noscript>\n\t<style
+        type=\"text/css\">\n\t\t.photo-index dl dt a img {padding:3px; border:1px
+        solid #CCC;}\n\t\t.photo-index dl dt a:hover img {border-color:#000;}\n\t</style>\n\t<div
+        class=\"photo-nav\"><p><span style=\"float:left;\">Photos 19 - 25 of 25</span>&nbsp;&nbsp;<a
+        href=\"/nhl/photos?gameId=400564325&page=1\" style=\"text-decoration:none;\"
+        class=\"navLink\" id=\"page_1\">Previous</a>&nbsp;&nbsp;<a href=\"/nhl/photos?gameId=400564325&page=1\"
+        style=\"text-decoration:none;\" class=\"navLink\" id=\"page_1\">1</a>&nbsp;<strong
+        class=\"currentPage\" style=\"border-bottom:2px solid #000;\">2</strong>&nbsp;&nbsp;</p></div><div
+        class=\"photo-index\" style=\"display:none\"><div class=\"photo-row clearfix\"
+        style=\"padding:0 0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0;
+        padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4306158\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Frans
+        Nielsen #51 of the New York Islanders scores past Marc-Andre Fleury #29 of
+        the Pittsburgh Penguins at Consol Energy Center on November 21, 2014 in Pittsburgh,
+        Pennsylvania. New York won the game 5-4 in a shootout. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389750.jpg&amp;w=127&amp;h=91\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4306160\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Patric
+        Hornqvist #72 of the Pittsburgh Penguins skates for the loose puck alongside
+        Thomas Hickey #14 of the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania.  \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389758.jpg&amp;w=127&amp;h=90\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4306161\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Chris
+        Kunitz #14 of the Pittsburgh Penguins battles for the puck against Lubomir
+        Visnovsky #11 of the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania.  \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389760.jpg&amp;w=127&amp;h=97\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4306162\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Chad
+        Johnson #30 celebrates with Casey Cizikas #53 of the New York Islanders after
+        a 5-4 shootout win over the Pittsburgh Penguins at Consol Energy Center on
+        November 21, 2014 in Pittsburgh, Pennsylvania.  \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389764.jpg&amp;w=127&amp;h=97\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4306163\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Patric
+        Hornqvist #72 of the Pittsburgh Penguins is knocked down while battling for
+        the puck by Calvin de Haan #44 and John Tavares #91 of the New York Islanders
+        at Consol Energy Center on November 21, 2014 in Pittsburgh, Pennsylvania.
+        \ \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389768.jpg&amp;w=127&amp;h=85\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4306165\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Patric
+        Hornqvist #72 of the Pittsburgh Penguins celebrates his goal in front of Chad
+        Johnson #30 of the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. New York won the game 5-4 in a shootout.
+        \ \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389772.jpg&amp;w=127&amp;h=80\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl></div><div class=\"photo-row clearfix\"
+        style=\"padding:0 0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0;
+        padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4306168\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Sidney
+        Crosby #87 of the Pittsburgh Penguins tries to get past the defense of Thomas
+        Hickey #14 of the New York Islanders at Consol Energy Center on November 21,
+        2014 in Pittsburgh, Pennsylvania.  \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389796.jpg&amp;w=127&amp;h=100\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl></div></div><noscript><div class=\"photo-index\"><div
+        class=\"photo-row clearfix\" style=\"padding:0 0 10px 0;\"><dl style=\"width:auto;
+        text-align:center; margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a
+        href=\"/nhl/photos?gameId=400564325&photoId=4306158\" style=\"margin:0; padding:0;\"
+        title = \"PITTSBURGH, PA - NOVEMBER 21:  Frans Nielsen #51 of the New York
+        Islanders scores past Marc-Andre Fleury #29 of the Pittsburgh Penguins at
+        Consol Energy Center on November 21, 2014 in Pittsburgh, Pennsylvania. New
+        York won the game 5-4 in a shootout. \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389750.jpg&amp;w=127&amp;h=91\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4306160\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Patric
+        Hornqvist #72 of the Pittsburgh Penguins skates for the loose puck alongside
+        Thomas Hickey #14 of the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania.  \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389758.jpg&amp;w=127&amp;h=90\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4306161\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Chris
+        Kunitz #14 of the Pittsburgh Penguins battles for the puck against Lubomir
+        Visnovsky #11 of the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania.  \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389760.jpg&amp;w=127&amp;h=97\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4306162\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Chad
+        Johnson #30 celebrates with Casey Cizikas #53 of the New York Islanders after
+        a 5-4 shootout win over the Pittsburgh Penguins at Consol Energy Center on
+        November 21, 2014 in Pittsburgh, Pennsylvania.  \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389764.jpg&amp;w=127&amp;h=97\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4306163\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Patric
+        Hornqvist #72 of the Pittsburgh Penguins is knocked down while battling for
+        the puck by Calvin de Haan #44 and John Tavares #91 of the New York Islanders
+        at Consol Energy Center on November 21, 2014 in Pittsburgh, Pennsylvania.
+        \ \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389768.jpg&amp;w=127&amp;h=85\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4306165\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Patric
+        Hornqvist #72 of the Pittsburgh Penguins celebrates his goal in front of Chad
+        Johnson #30 of the New York Islanders at Consol Energy Center on November
+        21, 2014 in Pittsburgh, Pennsylvania. New York won the game 5-4 in a shootout.
+        \ \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389772.jpg&amp;w=127&amp;h=80\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl></div><div class=\"photo-row clearfix\"
+        style=\"padding:0 0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0;
+        padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nhl/photos?gameId=400564325&photoId=4306168\"
+        style=\"margin:0; padding:0;\" title = \"PITTSBURGH, PA - NOVEMBER 21:  Sidney
+        Crosby #87 of the Pittsburgh Penguins tries to get past the defense of Thomas
+        Hickey #14 of the New York Islanders at Consol Energy Center on November 21,
+        2014 in Pittsburgh, Pennsylvania.  \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C11%5C21%5C459389796.jpg&amp;w=127&amp;h=100\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Gregory
+        Shamus/NHLI via Getty Images)<br/></dt></dl></div></div></noscript><div class=\"photo-nav\"><p><span
+        style=\"float:left;\">Photos 19 - 25 of 25</span>&nbsp;&nbsp;<a href=\"/nhl/photos?gameId=400564325&page=1\"
+        style=\"text-decoration:none;\" class=\"navLink\" id=\"page_1\">Previous</a>&nbsp;&nbsp;<a
+        href=\"/nhl/photos?gameId=400564325&page=1\" style=\"text-decoration:none;\"
+        class=\"navLink\" id=\"page_1\">1</a>&nbsp;<strong class=\"currentPage\" style=\"border-bottom:2px
+        solid #000;\">2</strong>&nbsp;&nbsp;</p></div>\n\n\t<script src=\"http://a.espncdn.com/combiner/c?v=201004161710&js=/plugins/jquery.history_2010.js\"
+        type=\"text/javascript\"></script>\n\t<script src=\"http://scores.espn.go.com/espn/javascript/gamepackage10/photoPageJS?sportId=90&sportName=nhl&gameId=400564325&pageType=gallery&langType=0\"
+        type=\"text/javascript\"></script>\n\n\t<!-- begin sp links -->\n<div style=\"margin:
+        10px 0 0 0;\">\n<!-- CONTENT: photos990990, SPORT: nhl--><div style=\"margin:0px
+        0px 5px 0px; text-align: center; width: 614px;\"><ins id=\"splinks-44475\"></ins>\n
+        \       <script type=\"text/javascript\">\n            (function($) {\n                //
+        config params\n                var width = '614',\n                    height
+        = '300',\n                    client = 'ca-espn-q-game',\n                    channel
+        = 'nhl bottom',\n                    lang = 'null';\n\n                //
+        builds iframe HTML\n                function buildIframe(width, height, client,
+        channel) {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
+        \                   // pass params as the hash as they are only needed on
+        the client\n                    var hash = '44475|' + width + '|' + height
+        + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
+        = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
+        + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
+        \                   return iframe;\n                }\n\n                //
+        handles messages from child iframe\n                function handleMessage(event)
+        {\n                    if (event.origin === 'http://sports-ak.espn.go.com')
+        {\n                        $('#splinks-' + event.data).html('<!-- no ads served
+        -->');\n                    }\n                }\n\n                if (typeof
+        window.addEventListener === 'function') {\n                    window.addEventListener('message',
+        handleMessage, false);\n                } else {\n                    window.attachEvent('onmessage',
+        handleMessage);\n                }\n\n                // insert the iframe\n
+        \               if (espn.geo) {\n                    espn.geo.getLocation().done(function(loc)
+        {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
+        || espn.core.android) {\n                            // outside US or not
+        on desktop\n                            client = 'ca-espn-nq';\n                        }\n
+        \                       $('#splinks-44475').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-44475').html(buildIframe(width,
+        height, 'ca-espn-nq', channel));\n                    });\n                }
+        else {\n                    // can't locate them, assume they are outside
+        US\n                    $('#splinks-44475').html(buildIframe(width, height,
+        'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
+        \   </div></div>\n<!-- end sp links -->\n\n<div id=\"caster\"></div>\n\n<script
+        type=\"text/javascript\">\n\tvar settings = {\n\t\t\"gameId\": 400564325,\n\t\t\"seasonType\":
+        2,\n\t\t\"sessionId\": \"nhlGC400564325\",\n\t\t\"status\": 3,\n\t\t\"period\":
+        5,\n\t\t\"currentSnapshotId\": 0\n\t};\n\ttry {\n\t\tconsole.log(settings);\n\t}\n\tcatch(e)
+        {}\n</script>\n\n<script type=\"text/javascript\" src=\"http://a.espncdn.com/combiner/c?v=201101281234&js=/espn/espn/javascript/gamepackage10/gamepackageOOTJS?sport=nhl,/espn/espn/javascript/gamepackage10/fixedOOTJS,/espn/espn/javascript/gamepackage10/seriesDropdown\"></script></div><!--
+        end gp-body --></div><!-- end story-container --><div class=\"clear\"></div></div><!--
+        end span-6 --></div>\n<div id=\"nav-wrapper\" class=\"container\">\n<div id=\"nav-wrapper-container\">\n<div
+        id=\"nav-main\">\n<!-- begin site nav -->\n<ul class=\"top\">\n<!-- begin
+        site nav -->\n<p><!-- begin site nav --></p>\n<ul class=\"top\" id=\"nav-main-list\"><!--
+        start: Menuitem :: MyTAB -->\n<li class=\"last myespn\" id=\"menu-myespn\"><a
+        class=\"myespn\" ref=\"#\">MyESPN</a></li>\n<!-- start: Menuitem :: NFL -->\n<li
+        class=\"sport-menu default t-nfl\" data-sportid=\"28\" id=\"menu-nfl\"><a
+        href=\"http://espn.go.com/nfl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nfl\">NFL</a></li>\n<!--
+        start: Menuitem :: MLB -->\n<li class=\"sport-menu default t-mlb\" data-sportid=\"10\"
+        id=\"menu-mlb\"><a href=\"http://espn.go.com/mlb/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mlb\">MLB</a></li>\n<!--
+        start: Menuitem :: NBA -->\n<li class=\"sport-menu default t-nba\" data-sportid=\"46\"
+        id=\"menu-nba\"><a href=\"http://espn.go.com/nba/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nba\">NBA</a></li>\n<!--
+        start: Menuitem :: NHL -->\n<li class=\"sport-menu default t-nhl selected\"
+        data-sportid=\"90\" id=\"menu-nhl\"><a href=\"http://espn.go.com/nhl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nhl\">NHL</a></li>\n<!--
+        start: Menuitem :: NCAA FB -->\n<li class=\"sport-menu default t-ncf\" data-sportid=\"23\"
+        id=\"menu-ncf\"><a href=\"http://espn.go.com/college-football/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncf\">NCAAF</a></li>\n<!--
+        start: Menuitem :: NCAA BB -->\n<li class=\"sport-menu default t-ncb\" data-sportid=\"41\"
+        id=\"menu-ncb\"><a href=\"http://espn.go.com/mens-college-basketball/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncb\">NCAAM</a></li>\n<!--
+        start: Menuitem :: NASCAR -->\n<li class=\"sport-menu default t-nascar\" data-sportid=\"2020\"
+        id=\"menu-nascar\"><a href=\"http://espn.go.com/racing/nascar/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nascar\">NASCAR</a></li>\n<!--
+        start: Menuitem :: SOCCER -->\n<li class=\"sport-menu default t-soccer\" data-sportid=\"600\"
+        id=\"menu-soccer\"><a href=\"http://espnfc.us/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_soccer\">SOCCER</a></li>\n<!--
+        start: Menuitem :: GOLF -->\n<li class=\"sport-menu t-golf\" data-sportid=\"1106\"
+        id=\"menu-golf\" style=\"display: none;\"><a href=\"http://espn.go.com/golf/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_golfl\">GOLF</a></li>\n<!--
+        start: Menuitem :: TENNIS -->\n<li class=\"sport-menu t-tennis\" data-sportid=\"850\"
+        id=\"menu-tennis\" style=\"display: none;\"><a href=\"http://espn.go.com/tennis/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_tennis\">TENNIS</a></li>\n<!--
+        start: Menuitem :: BOXING-->\n<li class=\"sport-menu t-boxing\" data-sportid=\"1000\"
+        id=\"menu-boxing\" style=\"display: none;\"><a href=\"http://espn.go.com/boxing/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_boxing\">BOXING</a></li>\n<!--
+        start: Menuitem :: MMA -->\n<li class=\"sport-menu t-mma\" data-sportid=\"3301\"
+        id=\"menu-mma\" style=\"display: none;\"><a href=\"http://espn.go.com/mma/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mma\">MMA</a></li>\n<!-- start:
+        Menuitem :: ALL SPORTS -->\n<li class=\"nav-allsports t-allsports\" id=\"menu-allsports\"><a
+        href=\"http://espn.go.com/sports/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_allsports\">MORE
+        SPORTS</a></li>\n<!-- start: Menuitem :: INSIDER -->\n<li class=\"sport-menu
+        t-insider\" id=\"menu-insider\" style=\"display: none;\"><a href=\"http://insider.espn.go.com/insider/index\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_insider\">INSIDER</a></li>\n<!--
+        start: Menuitem :: SPORTSNATION -->\n<li class=\"sport-menu t-sportsnation\"
+        id=\"menu-sportsnation\" style=\"display: none;\"><a href=\"http://espn.go.com/sportsnation/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_sportsnation\">SN</a></li>\n<!--
+        start: Menuitem :: RADIO & MORE -->\n<li class=\"right-menu two-line last
+        t-radio\" id=\"menu-radio\"><a href=\"http://espn.go.com/espnradio/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_radioandmore\">RADIO<span>&amp;
+        MORE</span></a></li>\n<!-- start: Menuitem :: espnW & PLAYBOOK -->\n<li class=\"right-menu
+        two-line t-page2\" id=\"menu-page2\"><a href=\"http://espn.go.com/espnw/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_espnwandxgames\" target=\"_blank\">espnW<span>&amp;
+        X GAMES</span></a></li>\n<!-- start: Menuitem :: FANTASY & GAMES -->\n<li
+        class=\"right-menu two-line t-fantasy\" id=\"menu-fantasy\"><a href=\"http://games.espn.go.com/frontpage\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_fantasy\">FANTASY<span>&amp;
+        GAMES</span></a></li>\n<!-- start: Menuitem :: WATCH -->\n<li class=\"right-menu
+        t-watch\" id=\"menu-watch\"><a href=\"http://espn.go.com/video/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_watch\">WATCH</a></li>\n</ul>\n<!--
+        end site nav -->\n<!-- end site nav -->\n</ul>\n<!-- end site nav -->\n</div>\n<div
+        class=\"nav-main-secondary\">\n<!--/nhl/photos--><ul>\n<li><a href=\"http://espn.go.com/nhl/\"
+        name=\"&lpos=subnav&lid=subnav_NHL_NHL+Home\">NHL Home</a></li><!--<li><a
+        href=\"http://sports.espn.go.com/nhl/playoffs\" name=\"&lpos=subnav&lid=subnav_NHL+Playoffs\">Playoffs</a></li>--><li><a
+        href=\"http://scores.espn.go.com/nhl/scoreboard\" name=\"&lpos=subnav&lid=subnav_NHL+Scores\">Scores</a></li><!--<li><a
+        href=\"http://espn.go.com/nhl/preview2014/\" name=\"&lpos=subnav&lid=subnav_NHL+Preview\">Preview</a></li>--><li><a
+        href=\"http://espn.go.com/nhl/schedule\" name=\"&lpos=subnav&lid=subnav_NHL_Schedule\">Schedule</a></li><li><a
+        href=\"http://espn.go.com/nhl/powerranking\" name=\"&lpos=subnav&lid=subnav_NHL+Power+Rankings\">Rankings</a></li><li><a
+        href=\"http://espn.go.com/nhl/standings\" name=\"&lpos=subnav&lid=subnav_NHL_Standings\">Standings</a></li><li><a
+        href=\"http://espn.go.com/nhl/statistics\" name=\"&lpos=subnav&lid=subnav_NHL_Statistics\">Stats</a></li><li><a
+        href=\"http://espn.go.com/nhl/story/_/page/nhltradetracker/nhl-trade-tracker\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Trade\">Trades</a></li><li><a href=\"http://espn.go.com/nhl/freeagents/_/type/signed/sort/signDate\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Signings\">Signings</a></li><li><a href=\"http://insider.espn.go.com/nhl/features/rumors\"
+        name=\"&lpos=subnav&lid=subnav_NHL+Rumor+Central\">Rumors</a></li><li><a href=\"http://espn.go.com/nhl/players\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Players\">Players</a></li><li class=\"expandable\"><a
+        href=\"http://espn.go.com/nhl/teams\" name=\"&lpos=subnav&lid=subnav_NHL_Teams\"><span>Teams</span></a><div><dl><dt
+        class=\"first\">Metropolitan</dt><dd><a href=\"http://espn.go.com/nhl/team/_/name/car/carolina-hurricanes\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_car\">Carolina Hurricanes</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_cls\">Columbus
+        B. Jackets</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_njd\">New Jersey Devils</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_nyi\">New
+        York Islanders</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/nyr/new-york-rangers\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_nyr\">New York Rangers</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/phi/philadelphia-flyers\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_phi\">Philadelphia
+        Flyers</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_pit\">Pittsburgh Penguins</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/wsh/washington-capitals\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_was\">Washington
+        Capitals</a></dd><dt class=\"first\">Atlantic</dt><dd><a href=\"http://espn.go.com/nhl/team/_/name/bos/boston-bruins\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_bos\">Boston Bruins</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/buf/buffalo-sabres\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_buf\">Buffalo
+        Sabres</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_det\">Detroit Red Wings</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/fla/florida-panthers\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_fla\">Florida
+        Panthers</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/mtl/montreal-canadiens\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_mon\">Montreal Canadiens</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/ott/ottawa-senators\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_ott\">Ottawa
+        Senators</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/tb/tampa-bay-lightning\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_tam\">Tampa Bay Lightning</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/tor/toronto-maple-leafs\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_tor\">Toronto
+        Maple Leafs</a></dd></dl><dl class=\"last\"><dt class=\"first\">Central</dt><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/chi/chicago-blackhawks\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_chi\">Chicago
+        Blackhawks</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/col/colorado-avalanche\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_col\">Colorado Avalanche</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/dal/dallas-stars\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_dal\">Dallas
+        Stars</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/min/minnesota-wild\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_min\">Minnesota Wild</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/nsh/nashville-predators\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_nsh\">Nashville
+        Predators</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/stl/st-louis-blues\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_stl\">St. Louis Blues</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/wpg/winnipeg-jets \"name=\"&lpos=subnav&lid=subnav_NHL_Teams_win\">Winnipeg
+        Jets</a></dd><dt class=\"first\">Pacific</dt><dd><a href=\"http://espn.go.com/nhl/team/_/name/ana/anaheim-ducks\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_ana\">Anaheim Ducks</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/ari/arizona-coyotes\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_ari\">Arizona
+        Coyotes</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/cgy/calgary-flames\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_cgy\">Calgary Flames</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/edm/edmonton-oilers\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_edm\">Edmonton
+        Oilers</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/la/los-angeles-kings\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_los\">Los Angeles Kings</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/sj/san-jose-sharks\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_san\">San
+        Jose Sharks</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/van/vancouver-canucks\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_van\">Vancouver Canucks</a></dd></dl></div></li><li><a
+        href=\"http://games.espn.go.com/frontpage/hockey\" name=\"&lpos=subnav&lid=subnav_NHL+Fantasy\">Fantasy</a></li><!--<li><a
+        href=\"http://espn.go.com/nhl/lines\" name=\"&lpos=subnav&lid=subnav_NHL+Odds\">Odds</a></li>--><li
+        class=\"expandable\"><a href=\"javascript:void(0);\"><span>Resources</span></a><div><dl><dd><a
+        href=\"http://espn.go.com/nhl/injuries\" name=\"&lpos=subnav&lid=subnav_NHL_Injuries\">Injuries</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/glance\" name=\"&lpos=subnav&lid=subnav_NHL_Glance\">Daily
+        Glance</a></dd><dd><a href=\"http://espn.go.com/nhl/stats/dailyleaders\" name=\"&lpos=subnav&lid=subnav_NHL_Leaders\">Daily
+        Leaders</a></dd><dd><a href=\"http://espn.go.com/nhl/story/_/page/nhltradetracker/nhl-trade-tracker\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Trade\">Trade Tracker</a></dd><dd><a href=\"http://espn.go.com/nhl/playoffs/matchups\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Matchups\">Projected Matchups</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/history/leaders\" name=\"&lpos=subnav&lid=subnav_NHL_History\">Career
+        Leaders</a></dd><dd><a href=\"http://espn.go.com/nhl/stats/rpi\" name=\"&lpos=subnav&lid=subnav_NHL_RPI\">Relative
+        Power Index</a></dd><dd><a href=\"http://espn.go.com/nhl/attendance\" name=\"&lpos=subnav&lid=subnav_NHL_Attendance\">Attendance</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/freeagents/_/type/signed/sort/signDate\" name=\"&lpos=subnav&lid=subnav_NHL+Tracker\">Free-Agent
+        Tracker</a></dd><dd><a href=\"http://sports.espn.go.com/nhl/playoffs/2011/news/story?page=cupchamps11\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Stanley_Cup_Winners\">Stanley Cup Winners</a></dd></dl><dl
+        class=\"last\">                <dd><a href=\"http://espn.go.com/nhl/transactions\"
+        name=\"&lpos=subnav&lid=subnav_Transactions\">Transactions</a></dd>                <dd><a
+        href=\"http://espn.go.com/nhl/story/_/page/calendar2014/2014-15-nhl-calendar\"
+        name=\"&lpos=subnav&lid=subnav_Dates\">Key Dates</a></dd><dd><a href=\"http://espn.go.com/nhl/preview2014/\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Preview\">2014-15 Season Preview</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/winterclassic15/\" name=\"&lpos=subnav&lid=subnav_NHL_2015_Winter_Classic\">2015
+        Winter Classic</a></dd><dd><a href=\"http://espn.go.com/nhl/winterclassic14/\"
+        name=\"&lpos=subnav&lid=subnav_NHL_2014_Winter_Classic\">2014 Winter Classic</a></dd><dd><a
+        href=\"http://espn.go.com/nhldraft/draft/tracker/round\" name=\"&lpos=subnav&lid=subnav_NHL_Draft\">2014
+        NHL Draft</a></dd><dd><a href=\"http://espn.go.com/nhl/playoffs/2014/matchup/_/teams/la-nyr\">2014
+        Stanley Cup playoffs</a></dd><dd><a href=\"http://espn.go.com/nhl/playoffs/2013/matchup/_/teams/blackhawks-bruins\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Playoffs\">2013 Stanley Cup playoffs</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/playoffs/2012/matchup/_/teams/devils-kings\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Playoffs\">2012 Stanley Cup playoffs</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/allstargame\" name=\"&lpos=subnav&lid=subnav_ASG\">2012
+        All-Star Game</a></dd><!--<dd><a href=\"http://espn.go.com/nhl/topics/_/page/hockey-hall-fame\">Hockey
+        Hall of Fame</a></dd><dd><a href=\"http://espn.go.com/nhl/trophytracker\"
+        name=\"&lpos=subnav&lid=subnav_Trophy+Tracker\">Trophy Tracker</a></dd>--><dd><a
+        href=\"http://espn.go.com/nhl/news/story?page=awardshistory\" name=\"&lpos=subnav&lid=subnav_NHL_Awards\">Awards
+        History</a></dd></dl></div></li><li><a href=\"http://www.stubhub.com/nhl-tickets/\"
+        target=\"_blank\" onclick=\"this.href=this.href+'?gcid=C12289x522&gtkw=NHL+Sub+Nav'\"
+        class=\"external\" name=\"&lpos=subnav&lid=subnav_NHL+Tickets\">Tix</a></li>\n</ul>\n</div>\n</div>\n</div>\n</div>\n<!--
+        end content -->\n</div>\n<!-- end subheader -->\n\n<script>\nespn.core.init.nav();\nespn.insider.checkUserForPromo();\n</script>\n<!--
+        begin footer -->\n<div id=\"footer\" class=\"container\">\n<script type=\"text/javascript\">\n//<![CDATA[\nvar
+        link = window.location;\nvar bugText = '<a href=\"#\" onclick=\"window.open(\\'http://dynamic.espn.go.com/espn/bugs?url='
+        + escape(link) + '\\', \\'Bugs\\',\\'noresizable,noscrollbars,height=400,width=400\\');\">Report
+        a Bug</a> | ';\n//]]>\n</script>\n<span style=\"font-weight:bold;\">ESPN.com:</span>
+        <a href=\"http://sports.espn.go.com/espn/news/story?page=help/index\">Help</a>
+        | <a href=\"http://espnmediazone.com/us/\" rel=\"nofollow\">Press</a> | <a
+        href=\"http://www.espncms.com/Advertise-on-ESPN.aspx\" rel=\"nofollow\">Advertise
+        on ESPN.com</a> | <a href=\"http://www.espncms.com\" rel=\"nofollow\">Sales
+        Media Kit</a> | <a href=\"http://preferences.truste.com/2.0/?type=espn&affiliateId=148\"
+        onclick=\"window.open('http://preferences.truste.com/2.0/?type=espn&affiliateId=148','popup','width=986,height=878,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0');
+        return false\">Interest-Based Ads</a> | <script type=\"text/javascript\">document.write(bugText);</script><a
+        href=\"http://espn.go.com/espn/corrections\">Corrections</a> | <a href=\"http://sports.espn.go.com/espn/news/story?page=contact/index\">Contact
+        Us</a> | <a href=\"http://espn.go.com/espn/sitemap\">Site Map</a> | <a href=\"http://espncareers.com\">Jobs
+        at ESPN</a> | <!--a href=\"http://corporate.disney.go.com/corporate/sourcing.html\"
+        rel=\"nofollow\"><span style=\"font-weight:bold;\">Supplier Information</span></a--><a
+        href=\"http://go.com\">Go.com</a><br/>&copy; 2015  ESPN Internet Ventures.
+        <a href=\"http://disneytermsofuse.com/\" rel=\"nofollow\">Terms of Use</a>,
+        <a href=\"http://disneyprivacycenter.com/\" rel=\"nofollow\">Privacy Policy</a>,
+        <a href=\"https://disneyprivacycenter.com/notice-to-california-residents/\"
+        rel=\"nofollow\">Your California Privacy Rights</a>,  <a href=\"https://disneyprivacycenter.com/kids-privacy-policy/english/\">Children's
+        Online Privacy Policy</a> and <a href=\"http://preferences-mgr.truste.com/?type=espn&affiliateId=148\">Interest-Based
+        Ads</a> are applicable to you.  All rights reserved.\n\n<!--\n<a href=\"http://www.espnshop.com/\"
+        onClick=\"location.href('http://log.go.com/log?srvc=sz&guid=73B641A0-6660-4EFC-B8FF-9DE23E8CD9BD&drop=0&addata=3374:65:478847:65&a=1&goto=http://www.espnshop.com/');return
+        false\">Shop</a>\n--></div>\n<!-- end footer -->\n<!--[if lte IE 9]></div><![endif]-->\n</div>\n<!--
+        end bg-elements -->\n\n\n<!-- SiteCatalyst code version: H.21.3 Copyright
+        1997-2010 Omniture, Inc. http://www.omniture.com -->\n<script type=\"text/javascript\">\n\tvar
+        undef = 'undefined'\n\t,s_account=\"wdgespcom\"\n\t,omniPageName = \"espn:nhl:game:photos:400564325+-+nyi+at+pit\"\n\t\n\t,insiderStatus
+        = \"\"\n\t,anGen = \"\"\n\t,anYear = \"\"\n\t,anDateString = \"\"\n\t,anLoginStatus
+        = \"\"\n\t,callOmniture = function(){\n\t\t/*-- core story s_omni properties
+        --*/\n\t\tif (typeof anCV != \"undefined\"){anParseLoginBarInfo(anCV);}\n\t\ts_omni.pageName=\"nhl:game:photos:400564325+-+nyi+at+pit\";\n\t\ts_omni.server
+        = window.location.host; // Server from the Host\n\t\ts_omni.channel = \"nhl\";\n\t\ts_omni.prop1
+        = \"espn\";\n\t\ts_omni.prop4 = \"nhlphotos\";\n\t\ts_omni.prop5 = \"nhl:game:photos\";\n\t\ts_omni.prop11
+        = (insiderStatus !== null) ? insiderStatus + \":premium-no\" : \"premium-no\";\n\t\ts_omni.prop17
+        = \"en\";\n\t\ts_omni.prop21 = anDateString;\n\t\ts_omni.prop22 = anGen;\n\t\ts_omni.prop25
+        = \"hockey\";\n\t\ts_omni.prop26 = \"nhl\";\n\t\ts_omni.prop29 = anLoginStatus;\n\t\ts_omni.prop30
+        = \"n\";\n\t\ts_omni.hier1 = \"nhl:game:photos:400564325+-+nyi+at+pit\";\n\t\ts_omni.eVar7
+        = anYear + \":\" + anGen + \":\" + anLoginStatus + \":\" + s_omni.prop11 +
+        \":\";\n\t\ts_omni.eVar9 = \"en\";\n\t\ts_omni.eVar13 = \"nhl:game:photos:400564325+-+nyi+at+pit\";\n\t\ts_omni.eVar19
+        = \"hockey\";\n\t\ts_omni.eVar21 = \"nhl\";\n\t\t\n\t\tif (s_omni.prop11==\"anonymous:premium-yes\"
+        || s_omni.prop11==\"insider-no:premium-yes\" && typeof s_omni.prop4!=\"undefined\"
+        &&\n\t\t\t(s_omni.prop4==\"story\" || s_omni.prop4==\"blog\")) {\n\t\t\tif
+        (typeof s_omni.events != \"undefined\" && s_omni.events!=\"\") {\n\t\t\t\ts_omni.events
+        = s_omni.events+\",event8\" }\n\t\t\telse { s_omni.events=\"event8\" }\n\t\t}\n\t\t\n\t\t\n\t\tanVersion
+        = \"_11apr14_v2_0_r5_\";\n\t\t\n\t\t/************* DO NOT ALTER ANYTHING BELOW
+        THIS LINE ! **************/\n\t\t\n\t\tvar s_code = s_omni.t();\n\t\tif(s_code)
+        {\n\t\t\tvar sci = new Image(1,1);\n\t\t\tsci.onload = function() {console.log(\"loaded
+        no append\")};\n\t\t\tsci.src = s_code;\n\t\t}\n\t\t\n\t};\t\n</script>\n\n\n\n<script
+        type=\"text/javascript\">\n\tif (typeof(s_omni) === 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\t// we want to load the analytics files from the cache if possible
+        - so, let's use full $.ajax() calls\n\t\t\t$.ajax({\n\t\t\t\ttype:'GET',\n\t\t\t\turl:
+        'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/externalnielsen.js&v=11',\n\t\t\t\tdataType:
+        'script',\n\t\t\t\tcache: true,\n\t\t\t\tsuccess: function() {\n\t\t\t\t\tvar
+        lgSrc;\n\t\t\t\t\tif(typeof anCV !== undef && anCV === '' && document.getElementById('form-memberarea')
+        != null) {\n\t\t\t\t\t\tlgSrc = 'https://r.espn.go.com/members/util/getUserInfo?cb=runOmnitureIndependently&regType=true';\n\t\t\t\t\t\t$.getScript(lgSrc);
+        // we don't want this to be cached - so we'll use the $.getScript() method\n\t\t\t\t\t}
+        else {\n\t\t\t\t\t\tcallOmniture();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t});\n\t\t});\n\t}\n</script>\n\n<!--
+        End SiteCatalyst code version: H.21. -->\n\n\n<!-- Begin comScore Tag -->\n<script
+        type=\"text/javascript\">\n\tif (typeof(jQuery) !== 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\tif(typeof window._comscore === 'undefined') {\n\t\t\t\twindow._comscore
+        = window._comscore || [];\n\t\t\t\twindow._comscore.push({ c1: \"2\", c2:
+        \"3000005\" });\n\t\t\t\tjQuery.getScript((document.location.protocol == \"https:\"
+        ? \"https://sb\" : \"http://b\") + \".scorecardresearch.com/beacon.js\");\n\t\t\t}\n\t\t});\n\t}\n</script>\n<!--
+        End comScore Tag -->\n\t\t<script>\n\t\tvar _sf_async_config={\n\t\t\t\"uid\":22222,\n\t\t\t\"domain\":\"espn.go.com\",\n\t\t\t\"pingServer\":\"pespn.chartbeat.net\",\n\t\t\t\"useCanonical\":true,\n\t\t\t\"useSubDomains\":false,\n\t\t\t\"sections\":\"nhl:gamehq:photos,photos,game\",\n\t\t\t\"authors\":\"gamehq\"\n\t\t};\n\t\tif
+        (typeof(ad_site) !== 'undefined') { _sf_async_config.zone = ad_site; }\n\n\t\t//
+        load both chartbeat_pub and chartbeat_video\n\t\t(function () {\n\t\t\tfunction
+        a() {\n\t\t\t\twindow._sf_endpt = (new Date()).getTime();\n\n\t\t\t\tvar cbDomain
+        = ((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\");\n\n\t\t\t\tvar
+        c = document.createElement(\"script\");\n\t\t\t\tc.setAttribute(\"language\",\"javascript\");\n\t\t\t\tc.setAttribute(\"type\",\"text/javascript\");\n\t\t\t\tc.setAttribute(\"src\",
+        cbDomain+\"js/chartbeat_pub.js\");\n\t\t\t\tdocument.body.appendChild(c);\n\n\t\t\t\tif(typeof
+        StrategyInterface !== 'undefined' && (typeof espn !== 'undefined' && typeof
+        espn.video !== 'undefined')){\n\t\t\t\t\tvar e = document.createElement(\"script\");\n\t\t\t\t\te.setAttribute(\"language\",\t\"javascript\");\n\t\t\t\t\te.setAttribute(\"type\",
+        \"text/javascript\");\n\t\t\t\t\te.setAttribute(\"src\", cbDomain+\"js/chartbeat_video.js\");\n\t\t\t\t\tdocument.body.appendChild(e);\n\t\t\t\t}\n\t\t\t}\n\t\t\tvar
+        b = window.onload;\n\t\t\twindow.onload = (typeof window.onload != \"function\")
+        ? a : function () { b(); a() }\n\t\t})();\n\t\t//(function(){function a(){window._sf_endpt=(new
+        Date()).getTime();var c=document.createElement(\"script\");c.setAttribute(\"language\",\"javascript\");c.setAttribute(\"type\",\"text/javascript\");c.setAttribute(\"src\",((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\")+\"js/chartbeat_pub.js\");document.body.appendChild(c)}var
+        b=window.onload;window.onload=(typeof window.onload!=\"function\")?a:function(){b();a()}})();\n\t\t</script>\n\t\n<!--
+        dynamic logic: safecount -->\n<script src=\"http://content.dl-rms.com/rms/mother/508/nodetag.js\"></script>\n\n<script
+        type=\"text/javascript\" charset=\"utf-8\">buildOutHeadlinesForPinnedSite();</script>\n<script
+        type=\"text/javascript\">\n   var isInIFrame = (window.location != window.parent.location)
+        ? true : false;\n   if(isInIFrame){ if(document.referrer){ if(document.referrer.indexOf(\".go.com\")==-1){
+        top.location.href=self.location.href; } } }\n</script>\n\n<script type='text/javascript'>\n
+        \ //<![CDATA[\n    (function(){\n    window.gravityInsightsParams = {\n      'type':
+        'content',\n      'action': '',\n      'site_guid': '9a41401e9b7c945344e001ee7f23031e'\n
+        \   };\n    var b,c;b=\"https:\"===document.location.protocol?\"https://b-ssl.grvcdn.com/moth-min.js\":\"http://b.grvcdn.com/moth-min.js\";window.grvMakeScript=function(d){var
+        a;a=document.createElement(\"script\");a.type=\"text/javascript\";a.async=!0;a.src=d;return
+        a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
+        \ //]]>\n</script></body>\n</html>"
+    http_version: 
+  recorded_at: Wed, 21 Jan 2015 04:29:35 GMT
+recorded_with: VCR 2.9.3

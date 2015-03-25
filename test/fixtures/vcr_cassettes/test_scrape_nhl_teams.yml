@@ -1,0 +1,912 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://espn.go.com/nhl/teams
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Content-Type:
+      - text/html;charset=iso-8859-1
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Sat, 08 Nov 2014 22:11:36 GMT
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=15
+      P3p:
+      - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
+        BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
+      Set-Cookie:
+      - SWID=5A93F641-0BAF-4012-B13B-368533774B41; path=/; expires=Fri, 03 Nov 2034
+        22:11:36 GMT; domain=go.com;
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
+        src=\"http://sports-ak.espn.go.com/sports/optimizely.js\"></script><meta charset=\"iso-8859-1\">\n<meta
+        http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n<script type=\"text/javascript\">
+        \   \n    if(true && navigator && navigator.userAgent.toLowerCase().indexOf(\"teamstream\")
+        >= 0) {\n        window.location = 'http://a.m.espn.go.com/mobilecache/general/apps/sc';\n
+        \   }\n</script><script type=\"text/javascript\">\nvar espn=window.espn||{};espn.beta=(function(f,i,b){var
+        c=\"http://beta.espn.go.com\",j=f.location.href,l=i.location.pathname;function
+        a(n){var r,m,o,q,s,v,w,p,t;if(n!==b){j=n;r=n.match(/http:\\/\\/([^\\/]*)([^?]*).*/);if(r&&r.length===3){l=r[2];}}if(l.match(/\\/story$/i)||l.match(/\\/story\\//i)){q=k(\"storyId\",n)||k(\"id\",n);s=k(\"storyPage\",n)||k(\"page\",n);if(q!==\"\"){return
+        c+l+\"/_/id/\"+q;}else{if(s!==\"\"){return c+l+\"/_/page/\"+s;}else{return
+        c+l;}}}if(l.match(/\\/blogpostindex$/i)){m=k(\"blogname\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"){return
+        c+\"/blog/\"+m;}}if(l.match(/\\/blogpost$/i)){m=k(\"blogname\",n);o=k(\"id\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"&&o!==\"\"){return
+        c+\"/blog/\"+m+\"/post/_/id/\"+o;}}if(l.match(/^\\/blog\\//i)){m=k(\"blogName\",n);o=k(\"id\",n);if(l.match(/\\/blog\\/[^\\/]*?\\/post$/i)){if(o!==\"\"){return
+        c+l+\"/_/id/\"+o;}}else{if(m!==\"\"&&o!==\"\"){return c+\"/blog/\"+m+\"/post/_/id/\"+o;}else{if(m!==\"\"){return
+        c+\"/blog/\"+m;}else{return c+l;}}}}if((l===\"\"||l===\"/\")&&!j.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)){return
+        c;}var u=l.match(/^\\/.*?\\/(?:index)?$/i);if(u){v={\"/frontpage/\":true,\"/wireless/\":true,\"/general/\":true,\"/extra/\":true,\"/mobile/\":true,\"/nfl/\":true,\"/nba/\":true,\"/mlb/\":true,\"/nhl/\":true,\"/ncf/\":true,\"/college-football/\":true,\"/ncb/\":true,\"/mens-college-basketball/\":true,\"/ncw/\":true,\"/womenbb/\":true,\"/womens-basketball/\":true,\"/wnba/\":true,\"/golf/\":true,\"/tennis/\":true,\"/general/tennis/\":true,\"/mma/\":true,\"/extra/mma/\":true,\"/racing/\":true,\"/rpm/\":true,\"/racing/nascar/\":true,\"/rpm/nascar/\":true,\"/boxing/\":true,\"/extra/boxing/\":true,\"/college-sports/\":true,\"/ncaa/\":true,\"/extra/ncaa/\":true,\"/olympics/\":true,\"/extra/olympics/\":true,\"/horse-racing/\":true,\"/horse/\":true,\"/general/horse/\":true,\"/poker/\":true,\"/general/poker/\":true,\"/sports/endurance/\":true,\"/extra/endurance/\":true};if(l.match(/\\/index$/i)){l=l.substring(0,l.length-5);}if(v[l]===true){return
+        c+l;}}if(l.match(/\\/nflpreview$/i)||l.match(/\\/preview$/i)){w=k(\"gameId\",n);if(w!==\"\"){if(l.match(/\\/nflpreview$/i)){return
+        c+\"/nfl/preview?gameId=\"+w;}else{return c+l+\"?gameId=\"+w;}}}if(l.match(/\\/recap$/i)){w=k(\"gameId\",n);if(w!==\"\"){return
+        c+l+\"?gameId=\"+w;}}if(l===\"/general/video\"){p=k(\"cid\",n);t=k(\"vid\",n);if(p!==\"\"){return
+        c+\"/video/clip?id=\"+p;}else{if(t!==\"\"){return c+\"/video/clip?id=\"+t;}}}if(l.match(/^\\/(?:videohub\\/video|video)\\/clip$/i)){p=k(\"id\",n);if(p!==\"\"){return
+        c+l+\"?id=\"+p;}}}function h(o){var n=a(o);var m=j.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)||(o&&o.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i))||(espn&&espn.GLOBALS&&espn.GLOBALS.isPremium);if(n){n=n.replace(\"/wireless/\",\"/\");n=n.replace(\"/general/\",\"/\");n=n.replace(\"/extra/\",\"/\");n=n.replace(\"/mobile/\",\"/\");n=n.replace(\"/frontpage/\",\"/\");n=n.replace(\"/videohub/\",\"/\");n=n.replace(\"/ncf/\",\"/college-football/\");n=n.replace(\"/rpm/\",\"/racing/\");n=n.replace(\"/ncb/\",\"/mens-college-basketball/\");n=n.replace(\"/ncw/\",\"/womens-basketball/\");n=n.replace(\"/wnba/\",\"/womens-basketball/\");n=n.replace(\"/ncaa/\",\"/college-sports/\");if(m){n=n.replace(\"/story/\",\"/insider/story/\");n=n.replace(\"/post/\",\"/insider/post/\");if(n.match(/\\/blog\\/[^_]*$/i)){if(n.charAt(n.length-1)===\"/\"){n=n+\"insider/\";}else{n=n+\"/insider/\";}}}}return
+        n;}function k(o,q){var m=location.search;if(q!==b){var n=q.indexOf(\"?\");if(n>-1){m=q.substr(n);}}o=o.replace(/[\\[]/,\"\\\\[\").replace(/[\\]]/,\"\\\\]\");var
+        r=new RegExp(\"[\\\\?&]\"+o+\"=([^&#]*)\"),p=r.exec(m);return p===null?\"\":decodeURIComponent(p[1].replace(/\\+/g,\"
+        \"));}function d(){var n=e(\"betauser\");var m=e(\"betacohort\")||\"\";if(n!==null&&m.indexOf(\"cohort-\")===0){var
+        p=m.split(\"-\");if(p&&p.length===2){if(parseInt(p[1],10)===999){return;}}var
+        o=h();if(o){f.location=o;}}}function e(n){var p=n+\"=\";var m=i.cookie.split(\";\");for(var
+        o=0;o<m.length;o++){var q=m[o];while(q.charAt(0)===\" \"){q=q.substring(1,q.length);}if(q.indexOf(p)===0){return
+        q.substring(p.length,q.length);}}return null;}function g(){if(k(\"rand\")===\"beta\"){espn.beta.recheck=true;}else{d();}}return{init:function(){g();}};})(this,this.document);espn.beta.init();\n</script><title>NHL
+        Hockey Teams - National Hockey League - ESPN</title>\n<meta name=\"slice\"
+        scheme=\"IE\" content=\"off\" />\n<meta name=\"google-site-verification\"
+        content=\"xuj1ODRluWa0frM-BjIr_aSHoUC7HB5C1MgmYAM_GkA\" />\n<meta name=\"msvalidate.01\"
+        content=\"B1FEB7C682C46C8FCDA3130F3D18AC28\" />\n<meta name=\"googlebot\"
+        content=\"noodp\" />\n<meta name=\"robots\" content=\"index, follow\" />\n<meta
+        name=\"description\" content=\"Find every NHL team broken down by division
+        with the option to search team stats, schedules, rosters, and more, only when
+        you visit ESPN.com.\" />\n<meta name=\"keywords\" content=\"NHL teams, pro
+        hockey teams, NHL organizations, pro hockey organizations, NHL rosters\" />\n<meta
+        property=\"fb:app_id\" content=\"116656161708917\">\n<meta property=\"og:site_name\"
+        content=\"ESPN.com\">\n<link rel=\"canonical\" href=\"http://espn.go.com/nhl/teams\"
+        />\n\n\t\t<script>var _sf_startpt=(new Date()).getTime();</script>\n<link
+        rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"http://a.espncdn.com/search/opensearch.xml\"
+        title=\"ESPN Search\" />\n<link rel=\"stylesheet\" href=\"http://a.espncdn.com/combiner/c/201401211964?css=global_reset.r1.css,base.r236.css,modules.r462.css,global_header.r44.css,header_topbar.r1.css,modules/global_nav.r54.css,modules/insider_enhanced.r1.css,modules/mem/mem.r12.1.css,modules/mem/mem_espn360.r8.4.css,modules/mem/skirmish.r8.css,modules/twin.r1.css,modules/facebook/button.r2.css,universal_overlay/universal_overlay.css,universal_overlay/media_overlay.css,universal_overlay/video_overlay.css,universal_overlay/photo_overlay.css,universal_overlay/dyk_overlay.css,fonts/bentonsans.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/201303290924?css=sprites/teamlogos.r18.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/20120509325?css=modules/master_tables_09.r3.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<script type=\"text/javascript\">\nvar
+        _vrq = _vrq || [];\n _vrq.push(['id', 489]);\n _vrq.push(['automate', false]);\n
+        _vrq.push(['track', function(){}]);\n (function(d, a){var s = d.createElement(a),x
+        = d.getElementsByTagName(a)[0];\ns.async = true;\ns.src = 'http://a.visualrevenue.com/vrs.js';\n
+        x.parentNode.insertBefore(s, x);})(document, 'script'); </script>\n<script
+        src=\"http://a.espncdn.com/combiner/c?js=jquery-1.7.1.js,plugins/json2.r3.js,plugins/teacrypt.js,plugins/jquery.metadata.js,plugins/jquery.bgiframe.r3.js,plugins/jquery.easing.1.3.js,plugins/jquery.hoverIntent.js,plugins/jquery.jcarousel.0.2.9.js,plugins/jquery.tinysort.r4.js,plugins/jquery.pubsub.r5.js,ui/1.8.16/jquery.ui.core.js,ui/1.8.16/jquery.ui.widget.js,ui/1.8.16/jquery.ui.tabs.js,ui/1.8.16/jquery.ui.accordion.js,plugins/ba-debug-0.4.js,espn.l10n.r12.js,swfobject/2.2/swfobject.js,flashObjWrapper.r7.js,plugins/jquery.colorbox.1.3.14.js,plugins/jquery.ba-postmessage.js,espn.core.duo.r57.js,m/beta/betacheck.r5.js,espn.mem.r39.js,stub.search.r9.js,espn.nav.mega.r38b.js,espn.storage.r6.js,espn.p13n.r19.5.js,espn.geo.r3.js,espn.video.r81.js,analytics/chartbeat/video/strategy_comprehensive.r1.js,registration/staticLogin.r12.06102014.js,espn.universal.overlay.r19.js,insider/espn.insider.20140915.js,espn.espn360.stub.r9.js,espn.myHeadlines.stub.r16.js,espn.myfaves.stub.r3.js,tsscoreboard.20090612.js,ie9pinning.r3.js,espn.f8.noauth.r3.js,espn.socialmediamod.r7.js\"></script>\n<script>espn.core.navVersion
+        = 'a';</script>\n<script>var ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlteams\",ad_kvps=\"pgtyp=nhlteams;sp=nhl;\",ad_swid=\"\",ad_counter=1,ad_ord=Math.floor(9999999999*Math.random()),ad_seg=\"\",ad_mnr=-1<document.cookie.indexOf(\"grif=1\")?\"t\":\"f\",ad_ref=\"other\",ref=document.referrer,refsMap={\"facebook.com\":\"facebook\",\"twitter.com|t.co\":\"twitter\",\"plus.url.google.com|plus.google.com\":\"googleplus\",\"google.com\":\"google\",\"bing.com\":\"bing\",\"yahoo.com\":\"yahoo\",\"espn.go.com\":\"espn\"},refKey;for(refKey
+        in refsMap)ref.match(refKey)&&(ad_ref=refsMap[refKey]);\nad_kvps=ad_kvps+\"ref=\"+ad_ref+\";mnr=\"+ad_mnr+\";\";ad_swid=jQuery.cookie(\"SWID\");\"function\"===typeof
+        espn.core.ad_segments&&(ad_seg=espn.core.ad_segments(),null!=ad_seg&&\"\"!=ad_seg&&(ad_kvps+=ad_seg));var
+        ad_u=\"\";null!=ad_swid&&\"\"!=ad_swid&&(ad_u=\"swid=\"+ad_swid+\";\");</script>\n</head>\n<body
+        class=\"nhl nhl-secondary-bg {sportId:90}\" >\n<div class=\"mboxDefault\"><link
+        rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/prod/styles/modules/hideGravity.css\"
+        type=\"text/css\" /></div><script>mboxCreate('ESPN_global');</script><!--[if
+        IE 5]><div class=\"ie5\"><![endif]-->\n<!--[if IE 6]><div class=\"ie ie6\"><![endif]-->\n<!--[if
+        IE 7]><div class=\"ie ie7\"><![endif]-->\n<!--[if IE 8]><div class=\"ie ie8\"><![endif]-->\n<!--[if
+        IE 9]><div class=\"ie9\"><![endif]-->\n<!-- begin bg-elements -->\n<div class=\"bg-elements\">\n<!--
+        begin header -->\n<div id=\"header\" class=\"container\">\n<!-- begin top-bar
+        -->\n<div class=\"top-bar\">\n<!-- begin uni login -->\n<script type=\"text/javascript\">\nvar
+        returnURL = document.location.href;\nvar anCV = \"\";\nvar myEspnText = {'welcometext':'Welcome','register':'Register','signin':'Sign
+        In','signout':'Sign Out','heliumdown':'Login Temporarily Unavailable','connectedfacebook':'Connected
+        to Facebook','connectfacebook':'Connect with Facebook','activateinsider':'Activate
+        Insider'};\n</script>\n<form id=\"form-memberarea\">\n<input type=\"hidden\"
+        name=\"language\" id=\"language\" value=\"en\"/>\n<input type=\"hidden\" name=\"affiliateName\"
+        id=\"memberAreaAffiliateName\" value=\"espn\"/>\n<input type=\"hidden\" name=\"regFormId\"
+        id=\"regFormId\" value=\"espn\"/>\n</form>\n<div class=\"signin\" id=\"signin\"></div>\n<script>espn.memberservices.welcome();</script>\n<div
+        class=\"nav-edition editions\">\n<label>EDITIONS:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-usa active\"><a href=\"http://espn.go.com/\" name=\"&amp;lpos=editionsnav&amp;lid=usa\">USA</a></li>\n\t<li
+        class=\"e-deportes\"><a href=\"http://www.espn.com?country-view=us&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=deportes\" class=\"{langPref:'spanish'}\">DEPORTES</a></li>\n\t<li
+        class=\"last dropdown\">\n\t<ul class=\"\">\n\t<li class=\"selected\">More</li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=ar&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=argentina\">Argentina</a></li>\n\t<li><a
+        href=\"http://www.espn.com.au\" name=\"&amp;lpos=editionsnav&amp;lid=australia\">Australia</a></li>\n\t<li><a
+        href=\"http://www.espn.com.br\" name=\"&amp;lpos=editionsnav&amp;lid=brazil\">Brazil</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=co&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=colombia\">Colombia</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=mx&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=mexico\">Mexico</a></li>\n\t<li><a
+        href=\"http://www.espn.co.uk/\" name=\"&amp;lpos=editionsnav&amp;lid=uk\">United
+        Kingdom</a></li>\n        <li><a href=\"http://www.espn.com?country-view=ve&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=venezuela\">Venezuela</a></li>\n\t</ul>\n\t</li>\n</ul>\n</div>\n\n<div
+        class=\"nav-edition\">\n<label>CITIES:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-boston\"><a href=\"http://espn.go.com/boston/\" name=\"&amp;lpos=citynav&amp;lid=boston\">BOSTON</a></li>\n\t<li
+        class=\"e-chicago\"><a href=\"http://espn.go.com/chicago/\" name=\"&amp;lpos=citynav&amp;lid=chicago\">CHICAGO</a></li>\n\t<li
+        class=\"e-dallas\"><a href=\"http://espn.go.com/dallas/\" name=\"&amp;lpos=citynav&amp;lid=dallas\">DALLAS</a></li>\n\t<li
+        class=\"e-losangeles\"><a href=\"http://espn.go.com/los-angeles/\" name=\"&amp;lpos=citynav&amp;lid=losangeles\">LOS
+        ANGELES</a></li>\n\t<li class=\"last e-newyork\"><a href=\"http://espn.go.com/new-york/\"
+        name=\"&amp;lpos=citynav&amp;lid=newyork\">NEW YORK</a></li>\n</ul>\n</div>\n</div>\n<!--
+        end top-bar -->\n<!-- begin espn-logo -->\n<div class=\"espn-logo\">\n<h1>\n<a
+        href=\"http://espn.go.com/\" name=\"&lpos=sitenavdefault&lid=sitenav_main-logo\"
+        class=\"espn\">ESPN</a> <a href=\"http://espn.go.com/nhl/\" class=\"section-title\">NHL</a></h1>\n</div>\n<!--
+        end espn-logo -->\n<!-- begin ad -->\n<span class=\"presby\"><!--espn.us.com.nhl
+        sitezone-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlteams\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=SponsoredByLogoHeader;\"+ad_u+\"sz=150x45,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"SponsoredByLogoHeader\" data-cb-dfp-id=\"'+ad_kvps+'sz=150x45,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nhl/nhlteams;pgtyp=nhlteams;sp=nhl;sz=150x45,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlteams;pgtyp=nhlteams;sp=nhl;sz=150x45,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</span>\n<!-- end ad -->\n<div class=\"header-right\">\n<style>.ie6
+        #searchBox, .ie6 #searchBox div { display: inline; } </style><!-- begin search
+        -->\n<div id=\"nav-main-search\">\n<form id=\"searchBox\" name=\"searchBox\"
+        action=\"http://search.espn.go.com/results\" method=\"get\" accept-charset=\"utf-8\"
+        style=\"color: #999999;\">\n<div class=\"clearfix\">\n<input autocomplete=\"off\"
+        class=\"text\" type=\"text\" placeholder=\"Search\" name=\"searchString\"
+        id=\"searchString\" />\n<input type=\"hidden\" name=\"page\" id=\"page\" value=\"null\"
+        />\n<input type=\"hidden\" name=\"fromForm\" value=\"true\" />\n<input class=\"submit\"
+        type=\"submit\" value=\"\" />\n</div>\n</form>\n</div>\n<!-- end search -->\n<div
+        id=\"shop\"><a class=\"shop-btn\" href=\"http://www.dickssportinggoods.com/category/index.jsp?categoryId=15504466&camp=Part:ESPNpart::nhlshopbutton:NHL\"
+        name=\"&lpos=sitenavdefault&lid=sitenav_shopbutton\" rel=\"nofollow\">Shop</a></div></div>\n</div>\n<!--
+        end header -->\n<!--espn.us.com.nhl sitezone-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlteams\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Background_Skin;\"+ad_u+\"sz=1280x946,200x800,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Background_Skin\" data-cb-dfp-id=\"'+ad_kvps+'sz=1280x946,200x800,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nhl/nhlteams;pgtyp=nhlteams;sp=nhl;sz=1280x946,200x800,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlteams;pgtyp=nhlteams;sp=nhl;sz=1280x946,200x800,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n<!-- begin subheader -->\n<div id=\"subheader\">\n<!--
+        begin content -->\n<div id=\"content-wrapper\">\n<div id=\"ad-top\" class=\"container\">\n<!--
+        begin Banner ad -->\n<div class=\"span-6 ad banner top\"><div class=\"ad-center\"><div
+        class=\"ad-wrapper\"><!--espn.us.com.nhl sitezone-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlteams\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Banner;\"+ad_u+\"sz=728x90,970x66,924x50,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Banner\" data-cb-dfp-id=\"'+ad_kvps+'sz=728x90,970x66,924x50,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nhl/nhlteams;pgtyp=nhlteams;sp=nhl;sz=728x90,970x66,924x50,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlteams;pgtyp=nhlteams;sp=nhl;sz=728x90,970x66,924x50,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div></div></div>\n<!-- end Banner
+        ad -->\n</div>\n<div id=\"content\" class=\"container\">\n<div id=\"fb-root\"></div><!--[if
+        lte IE 7]><link rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/combiner/c?css=modules/browser-alert.r7.css\"
+        type=\"text/css\" /><div class=\"span-6\" id=\"browser-alert-wrapper\" style=\"display:none;\"><div
+        class=\"mod-container mod-no-header-footer browser-alert\"><div class=\"mod-content\"><div
+        class=\"gradient-container\"><h1><span>Your Web Browser</span> is no longer
+        supported</h1><p>To experience everything that ESPN.com has to offer, we recommend
+        that you upgrade to a newer version of your web browser. Click the upgrade
+        button to the right or <a href=\"http://espn.go.com/espn/news/story?id=5630562\">learn
+        more</a>.</p><ul><li><a class=\"btn-upgrade\" href=\"http://www.microsoft.com/windows/internet-explorer/default.aspx\">Upgrade</a></li><li><a
+        class=\"btn-faq\" href=\"http://espn.go.com/espn/news/story?id=5630562\">FAQs</a></li></ul></div></div></div></div><script>(function(b){setTimeout(function(){var
+        a=b(\"#browser-alert-wrapper\");if(espn.cookie.get(\"browseralert\")!=\"true\"){b('<a
+        class=\"btn-close\" href=\"#\">Close</a>').bind(\"click\",function(){a.hide();espn.cookie.set(\"browseralert\",\"true\",30);return
+        false}).appendTo(a.find(\".gradient-container\"));a.show();espn.cookie.set(\"browseralert\",\"true\")}},100)})(jQuery);</script><![endif]--><div
+        class=\"span-6\"><div class=\"mod-container mod-no-header-footer mod-page-header\"><div
+        class=\"mod-content\"><h1 class=\"h2\">NHL Teams</h1></div></div></div><style>.webicon
+        { margin:-13px 0 2px 160px; } </style><div class=\"span-6\"><div class=\"span-4\"><div
+        class=\"mod-container mod-table mod-no-header\"><div class=\"span-2\"><div
+        class=\"mod-container mod-open-list mod-teams-list-medium mod-no-footer\"><div
+        class=\"mod-header stathead\"><h4>Central Division</h4></div><div class=\"mod-content\"><ul
+        class=\"medium-logos\"><li class=\"first\"><div class=\"logo-nhl-medium nhl-medium-4\"><h5><a
+        href=\"http://espn.go.com/nhl/team/_/name/chi/chicago-blackhawks\" class=\"bi\">Chicago
+        Blackhawks</a></h5><!-- nbtest here a --><!-- begin slice icon -->\n<span
+        class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_chi_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Blackhawks</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=chi\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=chi#nhl_chi_clubhouseslice',
+        'ESPN\\: Blackhawks', 'slice'); anTrackLink (this,'espn','webslice_nhl_chi_clubhouseslice_add','ESPN\\:
+        Blackhawks');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\"
+        alt=\"IE8 Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice
+        icon -->\n<span><a href=\"/nhl/teams/stats?team=Chi\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Chi\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Chi\">Roster</a></span></div></li><li class=\"alt\"><div
+        class=\"logo-nhl-medium nhl-medium-17\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/col/colorado-avalanche\"
+        class=\"bi\">Colorado Avalanche</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_col_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Avalanche</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=col\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=col#nhl_col_clubhouseslice',
+        'ESPN\\: Avalanche', 'slice'); anTrackLink (this,'espn','webslice_nhl_col_clubhouseslice_add','ESPN\\:
+        Avalanche');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\"
+        alt=\"IE8 Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice
+        icon -->\n<span><a href=\"/nhl/teams/stats?team=Col\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Col\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Col\">Roster</a></span></div></li><li class=\"\"><div
+        class=\"logo-nhl-medium nhl-medium-9\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/dal/dallas-stars\"
+        class=\"bi\">Dallas Stars</a></h5><!-- nbtest here a --><!-- begin slice icon
+        -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_dal_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Stars</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=dal\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=dal#nhl_dal_clubhouseslice',
+        'ESPN\\: Stars', 'slice'); anTrackLink (this,'espn','webslice_nhl_dal_clubhouseslice_add','ESPN\\:
+        Stars');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=Dal\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Dal\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Dal\">Roster</a></span></div></li><li class=\"alt\"><div
+        class=\"logo-nhl-medium nhl-medium-30\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/min/minnesota-wild\"
+        class=\"bi\">Minnesota Wild</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_min_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Wild</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=min\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=min#nhl_min_clubhouseslice',
+        'ESPN\\: Wild', 'slice'); anTrackLink (this,'espn','webslice_nhl_min_clubhouseslice_add','ESPN\\:
+        Wild');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=Min\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Min\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Min\">Roster</a></span></div></li><li class=\"\"><div
+        class=\"logo-nhl-medium nhl-medium-27\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/nsh/nashville-predators\"
+        class=\"bi\">Nashville Predators</a></h5><!-- nbtest here a --><!-- begin
+        slice icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_nsh_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Predators</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=nsh\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=nsh#nhl_nsh_clubhouseslice',
+        'ESPN\\: Predators', 'slice'); anTrackLink (this,'espn','webslice_nhl_nsh_clubhouseslice_add','ESPN\\:
+        Predators');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\"
+        alt=\"IE8 Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice
+        icon -->\n<span><a href=\"/nhl/teams/stats?team=Nsh\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Nsh\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Nsh\">Roster</a></span></div></li><li class=\"alt\"><div
+        class=\"logo-nhl-medium nhl-medium-19\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/stl/st-louis-blues\"
+        class=\"bi\">St. Louis Blues</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_stl_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Blues</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=stl\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=stl#nhl_stl_clubhouseslice',
+        'ESPN\\: Blues', 'slice'); anTrackLink (this,'espn','webslice_nhl_stl_clubhouseslice_add','ESPN\\:
+        Blues');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=StL\">Stats</a> | <a href=\"/nhl/teams/schedule?team=StL\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=StL\">Roster</a></span></div></li><li class=\"last\"><div
+        class=\"logo-nhl-medium nhl-medium-28\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/wpg/winnipeg-jets\"
+        class=\"bi\">Winnipeg Jets</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_wpg_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Jets</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=wpg\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=wpg#nhl_wpg_clubhouseslice',
+        'ESPN\\: Jets', 'slice'); anTrackLink (this,'espn','webslice_nhl_wpg_clubhouseslice_add','ESPN\\:
+        Jets');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=Wpg\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Wpg\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Wpg\">Roster</a></span></div></li></ul></div></div><div
+        class=\"mod-container mod-open-list mod-teams-list-medium mod-no-footer\"><div
+        class=\"mod-header stathead\"><h4>Pacific Division</h4></div><div class=\"mod-content\"><ul
+        class=\"medium-logos\"><li class=\"first\"><div class=\"logo-nhl-medium nhl-medium-25\"><h5><a
+        href=\"http://espn.go.com/nhl/team/_/name/ana/anaheim-ducks\" class=\"bi\">Anaheim
+        Ducks</a></h5><!-- nbtest here a --><!-- begin slice icon -->\n<span class=\"webicon\"
+        style=\"display:none;\">\n<span id=\"nhl_ana_clubhouseslice\" class=\"hslice\"
+        style=\"display: none;\">\n<span style=\"display: none;\" class=\"entry-title\">ESPN:
+        Ducks</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=ana\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=ana#nhl_ana_clubhouseslice',
+        'ESPN\\: Ducks', 'slice'); anTrackLink (this,'espn','webslice_nhl_ana_clubhouseslice_add','ESPN\\:
+        Ducks');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=ANA\">Stats</a> | <a href=\"/nhl/teams/schedule?team=ANA\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=ANA\">Roster</a></span></div></li><li class=\"alt\"><div
+        class=\"logo-nhl-medium nhl-medium-24\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/ari/arizona-coyotes\"
+        class=\"bi\">Arizona Coyotes</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_ari_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Coyotes</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=ari\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=ari#nhl_ari_clubhouseslice',
+        'ESPN\\: Coyotes', 'slice'); anTrackLink (this,'espn','webslice_nhl_ari_clubhouseslice_add','ESPN\\:
+        Coyotes');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=Ari\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Ari\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Ari\">Roster</a></span></div></li><li class=\"\"><div
+        class=\"logo-nhl-medium nhl-medium-3\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/cgy/calgary-flames\"
+        class=\"bi\">Calgary Flames</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_cgy_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Flames</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=cgy\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=cgy#nhl_cgy_clubhouseslice',
+        'ESPN\\: Flames', 'slice'); anTrackLink (this,'espn','webslice_nhl_cgy_clubhouseslice_add','ESPN\\:
+        Flames');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=Cgy\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Cgy\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Cgy\">Roster</a></span></div></li><li class=\"alt\"><div
+        class=\"logo-nhl-medium nhl-medium-6\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/edm/edmonton-oilers\"
+        class=\"bi\">Edmonton Oilers</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_edm_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Oilers</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=edm\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=edm#nhl_edm_clubhouseslice',
+        'ESPN\\: Oilers', 'slice'); anTrackLink (this,'espn','webslice_nhl_edm_clubhouseslice_add','ESPN\\:
+        Oilers');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=Edm\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Edm\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Edm\">Roster</a></span></div></li><li class=\"\"><div
+        class=\"logo-nhl-medium nhl-medium-8\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/la/los-angeles-kings\"
+        class=\"bi\">Los Angeles Kings</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_los_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Kings</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=los\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=los#nhl_los_clubhouseslice',
+        'ESPN\\: Kings', 'slice'); anTrackLink (this,'espn','webslice_nhl_los_clubhouseslice_add','ESPN\\:
+        Kings');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=LA\">Stats</a> | <a href=\"/nhl/teams/schedule?team=LA\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=LA\">Roster</a></span></div></li><li class=\"alt\"><div
+        class=\"logo-nhl-medium nhl-medium-18\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/sj/san-jose-sharks\"
+        class=\"bi\">San Jose Sharks</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_san_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Sharks</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=san\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=san#nhl_san_clubhouseslice',
+        'ESPN\\: Sharks', 'slice'); anTrackLink (this,'espn','webslice_nhl_san_clubhouseslice_add','ESPN\\:
+        Sharks');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=SJ\">Stats</a> | <a href=\"/nhl/teams/schedule?team=SJ\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=SJ\">Roster</a></span></div></li><li class=\"last\"><div
+        class=\"logo-nhl-medium nhl-medium-22\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/van/vancouver-canucks\"
+        class=\"bi\">Vancouver Canucks</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_van_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Canucks</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=van\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=van#nhl_van_clubhouseslice',
+        'ESPN\\: Canucks', 'slice'); anTrackLink (this,'espn','webslice_nhl_van_clubhouseslice_add','ESPN\\:
+        Canucks');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=Van\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Van\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Van\">Roster</a></span></div></li></ul></div></div></div><div
+        class=\"span-2 last\"><div class=\"mod-container mod-open-list mod-teams-list-medium
+        mod-no-footer\"><div class=\"mod-header stathead\"><h4>Atlantic Division</h4></div><div
+        class=\"mod-content\"><ul class=\"medium-logos\"><li class=\"first\"><div
+        class=\"logo-nhl-medium nhl-medium-1\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/bos/boston-bruins\"
+        class=\"bi\">Boston Bruins</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_bos_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Bruins</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=bos\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=bos#nhl_bos_clubhouseslice',
+        'ESPN\\: Bruins', 'slice'); anTrackLink (this,'espn','webslice_nhl_bos_clubhouseslice_add','ESPN\\:
+        Bruins');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=Bos\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Bos\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Bos\">Roster</a></span></div></li><li class=\"alt\"><div
+        class=\"logo-nhl-medium nhl-medium-2\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/buf/buffalo-sabres\"
+        class=\"bi\">Buffalo Sabres</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_buf_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Sabres</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=buf\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=buf#nhl_buf_clubhouseslice',
+        'ESPN\\: Sabres', 'slice'); anTrackLink (this,'espn','webslice_nhl_buf_clubhouseslice_add','ESPN\\:
+        Sabres');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=Buf\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Buf\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Buf\">Roster</a></span></div></li><li class=\"\"><div
+        class=\"logo-nhl-medium nhl-medium-5\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\"
+        class=\"bi\">Detroit Red Wings</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_det_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Red Wings</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=det\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=det#nhl_det_clubhouseslice',
+        'ESPN\\: Red Wings', 'slice'); anTrackLink (this,'espn','webslice_nhl_det_clubhouseslice_add','ESPN\\:
+        Red Wings');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\"
+        alt=\"IE8 Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice
+        icon -->\n<span><a href=\"/nhl/teams/stats?team=Det\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Det\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Det\">Roster</a></span></div></li><li class=\"alt\"><div
+        class=\"logo-nhl-medium nhl-medium-26\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/fla/florida-panthers\"
+        class=\"bi\">Florida Panthers</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_fla_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Panthers</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=fla\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=fla#nhl_fla_clubhouseslice',
+        'ESPN\\: Panthers', 'slice'); anTrackLink (this,'espn','webslice_nhl_fla_clubhouseslice_add','ESPN\\:
+        Panthers');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\"
+        alt=\"IE8 Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice
+        icon -->\n<span><a href=\"/nhl/teams/stats?team=Fla\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Fla\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Fla\">Roster</a></span></div></li><li class=\"\"><div
+        class=\"logo-nhl-medium nhl-medium-10\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/mtl/montreal-canadiens\"
+        class=\"bi\">Montreal Canadiens</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_mon_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Canadiens</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=mon\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=mon#nhl_mon_clubhouseslice',
+        'ESPN\\: Canadiens', 'slice'); anTrackLink (this,'espn','webslice_nhl_mon_clubhouseslice_add','ESPN\\:
+        Canadiens');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\"
+        alt=\"IE8 Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice
+        icon -->\n<span><a href=\"/nhl/teams/stats?team=MTL\">Stats</a> | <a href=\"/nhl/teams/schedule?team=MTL\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=MTL\">Roster</a></span></div></li><li class=\"alt\"><div
+        class=\"logo-nhl-medium nhl-medium-14\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/ott/ottawa-senators\"
+        class=\"bi\">Ottawa Senators</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_ott_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Senators</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=ott\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=ott#nhl_ott_clubhouseslice',
+        'ESPN\\: Senators', 'slice'); anTrackLink (this,'espn','webslice_nhl_ott_clubhouseslice_add','ESPN\\:
+        Senators');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\"
+        alt=\"IE8 Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice
+        icon -->\n<span><a href=\"/nhl/teams/stats?team=Ott\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Ott\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Ott\">Roster</a></span></div></li><li class=\"\"><div
+        class=\"logo-nhl-medium nhl-medium-20\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/tb/tampa-bay-lightning\"
+        class=\"bi\">Tampa Bay Lightning</a></h5><!-- nbtest here a --><!-- begin
+        slice icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_tam_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Lightning</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=tam\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=tam#nhl_tam_clubhouseslice',
+        'ESPN\\: Lightning', 'slice'); anTrackLink (this,'espn','webslice_nhl_tam_clubhouseslice_add','ESPN\\:
+        Lightning');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\"
+        alt=\"IE8 Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice
+        icon -->\n<span><a href=\"/nhl/teams/stats?team=TB\">Stats</a> | <a href=\"/nhl/teams/schedule?team=TB\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=TB\">Roster</a></span></div></li><li class=\"last
+        alt\"><div class=\"logo-nhl-medium nhl-medium-21\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/tor/toronto-maple-leafs\"
+        class=\"bi\">Toronto Maple Leafs</a></h5><!-- nbtest here a --><!-- begin
+        slice icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_tor_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Maple Leafs</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=tor\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=tor#nhl_tor_clubhouseslice',
+        'ESPN\\: Maple Leafs', 'slice'); anTrackLink (this,'espn','webslice_nhl_tor_clubhouseslice_add','ESPN\\:
+        Maple Leafs');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\"
+        alt=\"IE8 Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice
+        icon -->\n<span><a href=\"/nhl/teams/stats?team=Tor\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Tor\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Tor\">Roster</a></span></div></li></ul></div></div><div
+        class=\"mod-container mod-open-list mod-teams-list-medium mod-no-footer\"><div
+        class=\"mod-header stathead\"><h4>Metropolitan Division</h4></div><div class=\"mod-content\"><ul
+        class=\"medium-logos\"><li class=\"first\"><div class=\"logo-nhl-medium nhl-medium-7\"><h5><a
+        href=\"http://espn.go.com/nhl/team/_/name/car/carolina-hurricanes\" class=\"bi\">Carolina
+        Hurricanes</a></h5><!-- nbtest here a --><!-- begin slice icon -->\n<span
+        class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_car_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Hurricanes</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=car\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=car#nhl_car_clubhouseslice',
+        'ESPN\\: Hurricanes', 'slice'); anTrackLink (this,'espn','webslice_nhl_car_clubhouseslice_add','ESPN\\:
+        Hurricanes');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\"
+        alt=\"IE8 Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice
+        icon -->\n<span><a href=\"/nhl/teams/stats?team=Car\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Car\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Car\">Roster</a></span></div></li><li class=\"alt\"><div
+        class=\"logo-nhl-medium nhl-medium-29\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\"
+        class=\"bi\">Columbus Blue Jackets</a></h5><!-- nbtest here a --><!-- begin
+        slice icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_cls_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Blue Jackets</span>\n<a rel=\"entry-content\"
+        href=\"http://espn.go.com/nhl/webslices/clubhouse?team=cls\" style=\"display:
+        none;\"></a>\n<span style=\"display: none;\">\nUpdates every <span class=\"ttl\">60</span>
+        minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=cls#nhl_cls_clubhouseslice',
+        'ESPN\\: Blue Jackets', 'slice'); anTrackLink (this,'espn','webslice_nhl_cls_clubhouseslice_add','ESPN\\:
+        Blue Jackets');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\"
+        alt=\"IE8 Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice
+        icon -->\n<span><a href=\"/nhl/teams/stats?team=CBJ\">Stats</a> | <a href=\"/nhl/teams/schedule?team=CBJ\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=CBJ\">Roster</a></span></div></li><li class=\"\"><div
+        class=\"logo-nhl-medium nhl-medium-11\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\"
+        class=\"bi\">New Jersey Devils</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_njd_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Devils</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=njd\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=njd#nhl_njd_clubhouseslice',
+        'ESPN\\: Devils', 'slice'); anTrackLink (this,'espn','webslice_nhl_njd_clubhouseslice_add','ESPN\\:
+        Devils');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=NJ\">Stats</a> | <a href=\"/nhl/teams/schedule?team=NJ\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=NJ\">Roster</a></span></div></li><li class=\"alt\"><div
+        class=\"logo-nhl-medium nhl-medium-12\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\"
+        class=\"bi\">New York Islanders</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_nyi_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Islanders</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=nyi\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=nyi#nhl_nyi_clubhouseslice',
+        'ESPN\\: Islanders', 'slice'); anTrackLink (this,'espn','webslice_nhl_nyi_clubhouseslice_add','ESPN\\:
+        Islanders');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\"
+        alt=\"IE8 Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice
+        icon -->\n<span><a href=\"/nhl/teams/stats?team=NYI\">Stats</a> | <a href=\"/nhl/teams/schedule?team=NYI\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=NYI\">Roster</a></span></div></li><li class=\"\"><div
+        class=\"logo-nhl-medium nhl-medium-13\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/nyr/new-york-rangers\"
+        class=\"bi\">New York Rangers</a></h5><!-- nbtest here a --><!-- begin slice
+        icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_nyr_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Rangers</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=nyr\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=nyr#nhl_nyr_clubhouseslice',
+        'ESPN\\: Rangers', 'slice'); anTrackLink (this,'espn','webslice_nhl_nyr_clubhouseslice_add','ESPN\\:
+        Rangers');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=NYR\">Stats</a> | <a href=\"/nhl/teams/schedule?team=NYR\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=NYR\">Roster</a></span></div></li><li class=\"alt\"><div
+        class=\"logo-nhl-medium nhl-medium-15\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/phi/philadelphia-flyers\"
+        class=\"bi\">Philadelphia Flyers</a></h5><!-- nbtest here a --><!-- begin
+        slice icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_phi_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Flyers</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=phi\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=phi#nhl_phi_clubhouseslice',
+        'ESPN\\: Flyers', 'slice'); anTrackLink (this,'espn','webslice_nhl_phi_clubhouseslice_add','ESPN\\:
+        Flyers');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\" alt=\"IE8
+        Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice icon -->\n<span><a
+        href=\"/nhl/teams/stats?team=Phi\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Phi\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Phi\">Roster</a></span></div></li><li class=\"\"><div
+        class=\"logo-nhl-medium nhl-medium-16\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins\"
+        class=\"bi\">Pittsburgh Penguins</a></h5><!-- nbtest here a --><!-- begin
+        slice icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_pit_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Penguins</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=pit\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=pit#nhl_pit_clubhouseslice',
+        'ESPN\\: Penguins', 'slice'); anTrackLink (this,'espn','webslice_nhl_pit_clubhouseslice_add','ESPN\\:
+        Penguins');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\"
+        alt=\"IE8 Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice
+        icon -->\n<span><a href=\"/nhl/teams/stats?team=Pit\">Stats</a> | <a href=\"/nhl/teams/schedule?team=Pit\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=Pit\">Roster</a></span></div></li><li class=\"last
+        alt\"><div class=\"logo-nhl-medium nhl-medium-23\"><h5><a href=\"http://espn.go.com/nhl/team/_/name/wsh/washington-capitals\"
+        class=\"bi\">Washington Capitals</a></h5><!-- nbtest here a --><!-- begin
+        slice icon -->\n<span class=\"webicon\" style=\"display:none;\">\n<span id=\"nhl_was_clubhouseslice\"
+        class=\"hslice\" style=\"display: none;\">\n<span style=\"display: none;\"
+        class=\"entry-title\">ESPN: Capitals</span>\n<a rel=\"entry-content\" href=\"http://espn.go.com/nhl/webslices/clubhouse?team=was\"
+        style=\"display: none;\"></a>\n<span style=\"display: none;\">\nUpdates every
+        <span class=\"ttl\">60</span> minute(s)\n</span>\n</span>\n<a href=\"#\" onclick=\"javascript:window.external.AddToFavoritesBar('http://espn.go.com/nhl/webslices/clubhouse?team=was#nhl_was_clubhouseslice',
+        'ESPN\\: Capitals', 'slice'); anTrackLink (this,'espn','webslice_nhl_was_clubhouseslice_add','ESPN\\:
+        Capitals');\"><img src=\"http://a.espncdn.com/webslices/icons/12x12.png\"
+        alt=\"IE8 Web Slice\" class=\"sliceicon-img\" /></a></span><!-- end slice
+        icon -->\n<span><a href=\"/nhl/teams/stats?team=WSH\">Stats</a> | <a href=\"/nhl/teams/schedule?team=WSH\">Schedule</a>
+        | <a href=\"/nhl/teams/roster?team=WSH\">Roster</a></span></div></li></ul></div></div></div></div></div><div
+        class=\"span-2 last\"><div class=\"ad-box\"><!-- begin InContent --><div class=\"gutter\"><!--espn.us.com.nhl
+        sitezone-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlteams\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=InContent;\"+ad_u+\"dcopt=ist;sz=300x600,300x250,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"InContent\" data-cb-dfp-id=\"'+ad_kvps+'sz=300x600,300x250,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nhl/nhlteams;pgtyp=nhlteams;sp=espn;sz=300x600,300x250,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlteams;pgtyp=nhlteams;sp=espn;sz=300x600,300x250,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div><!-- end InContent -->\n</div></div></div><div
+        class=\"span-4\"><!-- begin sponsored links -->\n<div id=\"sponsored\" class=\"mod-container
+        mod-no-footer\">\n<!-- begin sp links -->\n<div style=\"margin: 10px 0 0 0;\">\n<!--
+        CONTENT: 09stats614, SPORT: nhl--><div style=\"margin:0px 0px 5px 0px; text-align:
+        center; width: 614px;\"><ins id=\"splinks-48801\"></ins>\n        <script
+        type=\"text/javascript\">\n            (function($) {\n                //
+        config params\n                var width = '614',\n                    height
+        = '250',\n                    client = 'ca-espn-q-teams',\n                    channel
+        = 'nhl bottom',\n                    lang = 'null';\n\n                //
+        builds iframe HTML\n                function buildIframe(width, height, client,
+        channel) {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
+        \                   // pass params as the hash as they are only needed on
+        the client\n                    var hash = '48801|' + width + '|' + height
+        + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
+        = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
+        + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
+        \                   return iframe;\n                }\n\n                //
+        handles messages from child iframe\n                function handleMessage(event)
+        {\n                    if (event.origin === 'http://sports-ak.espn.go.com')
+        {\n                        $('#splinks-' + event.data).html('<!-- no ads served
+        -->');\n                    }\n                }\n\n                if (typeof
+        window.addEventListener === 'function') {\n                    window.addEventListener('message',
+        handleMessage, false);\n                } else {\n                    window.attachEvent('onmessage',
+        handleMessage);\n                }\n\n                // insert the iframe\n
+        \               if (espn.geo) {\n                    espn.geo.getLocation().done(function(loc)
+        {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
+        || espn.core.android) {\n                            // outside US or not
+        on desktop\n                            client = 'ca-espn-nq';\n                        }\n
+        \                       $('#splinks-48801').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-48801').html(buildIframe(width,
+        height, 'ca-espn-nq', channel));\n                    });\n                }
+        else {\n                    // can't locate them, assume they are outside
+        US\n                    $('#splinks-48801').html(buildIframe(width, height,
+        'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
+        \   </div></div>\n<!-- end sp links -->\n</div>\n<!-- end sponsored links
+        -->\n</div><div class=\"clear\"></div><!-- begin bottom nav -->\n<!-- begin
+        bottom nav/sitemap -->\n<div class=\"mod-container mod-jump-menu span-6\">\n<div
+        class=\"mod-content\">\n<!-- NOVALIDATE -->\n<ul>\n<li>\n<ul>\n<li><h4><a
+        href=\"http://espn.go.com/sports/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_scores\">SPORTS</a></h4></li>\n<li><a
+        href=\"http://espn.go.com/nfl/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_scores_nfl\">NFL</a></li>\n<li><a
+        href=\"http://espn.go.com/mlb/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_scores_mlb\">MLB</a></li>\n<li><a
+        href=\"http://espn.go.com/nba/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_scores_nba\">NBA</a></li>\n<li><a
+        href=\"http://espn.go.com/nhl/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_scores_nhl\">NHL</a></li>\n<li><a
+        href=\"http://espn.go.com/college-football/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_scores_ncf\">College
+        Football</a></li>\n<li><a href=\"http://espn.go.com/mens-college-basketball/\"
+        name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_scores_ncb\">College Basketball</a></li>\n<li><a
+        href=\"http://soccernet.espn.go.com/index\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_scores_soccer\">Soccer</a></li>\n<li><a
+        href=\"http://espn.go.com/racing/nascar/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_scores_nascar\">NASCAR</a></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><h4><a
+        href=\"http://espn.go.com/sports/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_sports\">MORE</a></h4></li>\n<li><a
+        href=\"http://espn.go.com/racing/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_sports_racing\">Racing</a></li>\n<li><a
+        href=\"http://espn.go.com/golf/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_sports_golf\">Golf</a></li>\n<li><a
+        href=\"http://espn.go.com/tennis/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_sports_tennis\">Tennis</a></li>\n<li><a
+        href=\"http://espn.go.com/boxing/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_sports_boxing\">Boxing</a></li>\n<li><a
+        href=\"http://espn.go.com/mma/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_sports_mma\">MMA</a></li>\n<li><a
+        href=\"http://espn.go.com/college-football/recruiting/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_sports_recruiting\">Recruiting</a></li>\n<li><a
+        href=\"http://espn.go.com/olympics/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_sports_oly\">Olympic
+        Sports</a></li>\n<li><a href=\"http://espn.go.com/horse-racing/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_sports_horse\">Horse
+        Racing</a></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><h4><a href=\"http://games.espn.go.com/frontpage\"
+        name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_fantasy\">FANTASY</a></h4></li>\n<li><a
+        href=\"http://games.espn.go.com/frontpage/football\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_fantasy_football\">Football</a></li>\n<li><a
+        href=\"http://games.espn.go.com/frontpage/baseball\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_fantasy_baseball\">Baseball</a></li>\n<li><a
+        href=\"http://streak.espn.go.com\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_fantasy_streak\">Streak
+        for the Cash</a></li>\n</ul>\n<ul>\n<li><h4><a href=\"http://espn.go.com/sportsnation/\"
+        name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_sportsnation\">SPORTSNATION</a></h4></li>\n<li><a
+        href=\"http://espn.go.com/sportsnation/polls\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_sportsnation_polls\">Polls</a></li>\n<li><a
+        href=\"http://espn.go.com/sportsnation/chats\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_sportsnation_chats\">Chats</a></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><h4><a
+        href=\"http://espn.go.com/video/\">VIDEO</a></h4></li>\n<li><a href=\"http://espn.go.com/video/category?id=2378529\"
+        name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_video_mostrecent\">Most Recent</a></li>\n<li><a
+        href=\"http://search.espn.go.com/highlights/video/6\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_video_highlights\">Highlights</a></li>\n</ul>\n<ul>\n<li><h4>MORE</h4></li>\n<li><a
+        href=\"http://espn.go.com/blog/playbook/sounds/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_music\">Music</a></li>\n<li><a
+        href=\"http://travel.espn.go.com/travel/passport/index\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_thelife_passport\">Sports
+        Passport</a></li>\n<li><a href=\"http://espn.go.com/travel/sports/calendar/\"
+        name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_thelife_calendar\">Sports Calendar</a></li>\n<li><a
+        href=\"http://espn.go.com/free-online-games/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_thelife_arcade\">Arcade</a></li>\n<li><a
+        href=\"http://sports.espn.go.com/espn/contests/index\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_thelife_contests\">Contests</a></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><h4>TOOLS</h4></li>\n<li><a
+        href=\"http://sports.espn.go.com/espn/news/story?page=contact/index\"  name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_tools_contactus\">Contact
+        Us</a></li>\n<li><a tref=\"/members/v3_1/index\" href=\"\" class=\"cbOverlay\"
+        data-options='{\"language\":\"en\",\"width\":\"825\",\"height\":\"425\"}'>Member
+        Services</a></li>\n<li><a href=\"http://espn.go.com/personalization/\"  name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_tools_myespn\">myESPN</a></li>\n<li><a
+        href=\"http://proxy.espn.go.com/mobile/alerts/alertmanager\"  name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_tools_myespn\">ESPN
+        Alerts</a></li>\n<li><a href=\"http://espn.go.com/espn/corrections\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_tools_corrections\">Corrections</a></li>\n<li><a
+        href=\"http://sports.espn.go.com/nfl/lines\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_tools_dailyline\">Daily
+        Line</a></li>\n<li><a href=\"http://sports.espn.go.com/espn/news/story?page=rssinfo\"
+        name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_tools_rss\">RSS</a></li>\n</ul>\n</li>\n<li
+        class=\"last\">\n<ul>\n<li><h4><a href=\"http://sports.espn.go.com/espntv/espnGuide\"
+        name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_tv\">TV LISTINGS</a></h4></li>\n<li><h4><a
+        href=\"http://www.espn3.com\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_3\">WatchESPN</a></h4></li>\n<li><h4><a
+        href=\"http://espnradio.espn.go.com/espnradio/index\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_radio\">RADIO</a></h4></li>\n<!--<li><h4><a
+        href=\"http://espnradio.espn.go.com/espnradio/podcast/index\" name=\"&amp;lpos=bottomnav2&amp;lid=podcenter\">PODCENTER</a></h4></li>-->\n\n<li><h4><a
+        href=\"http://insider.espn.go.com/insider/espn-the-magazine/\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_mag\">ESPN
+        THE MAGAZINE</a></h4></li>\n<li><h4><a href=\"http://log.go.com/log?srvc=sz&amp;guid=20547CF2-0B36-404D-81D3-E5339A6CEFBE&amp;drop=0&amp;addata=3374:65:478847:65&amp;a=1&amp;goto=http://espn.teamfanshop.com\"
+        name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_shop\">SHOP</a></h4></li>\n<li><h4><a
+        href=\"http://www.sportscenter.com\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_sportscenter\">SPORTSCENTER</a></h4></li>\n<li><h4><a
+        href=\"http://www.teamespn.com\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_teamespn\">TEAM
+        ESPN</a></h4></li>\n<li><h4><a href=\"http://www.espnfrontrow.com\" name=\"&amp;lpos=bottomnav2&amp;lid=bottomnav2_espnfrontrow\">ESPN
+        FRONT ROW</a></h4></li>\n</ul>\n</li>\n</ul>\n</div>\n</div>\n<!-- end bottom
+        nav/sitemap -->\n<!-- end bottom nav -->\n</div>\n<div id=\"nav-wrapper\"
+        class=\"container\">\n<div id=\"nav-wrapper-container\">\n<div id=\"nav-main\">\n<!--
+        begin site nav -->\n<ul class=\"top\">\n<!-- begin site nav -->\n<p><!-- begin
+        site nav --></p>\n<ul class=\"top\" id=\"nav-main-list\"><!-- start: Menuitem
+        :: MyTAB -->\n<li class=\"last myespn\" id=\"menu-myespn\"><a class=\"myespn\"
+        ref=\"#\">MyESPN</a></li>\n<!-- start: Menuitem :: NFL -->\n<li class=\"sport-menu
+        default t-nfl\" data-sportid=\"28\" id=\"menu-nfl\"><a href=\"http://espn.go.com/nfl/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nfl\">NFL</a></li>\n<!-- start:
+        Menuitem :: MLB -->\n<li class=\"sport-menu default t-mlb\" data-sportid=\"10\"
+        id=\"menu-mlb\"><a href=\"http://espn.go.com/mlb/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mlb\">MLB</a></li>\n<!--
+        start: Menuitem :: NBA -->\n<li class=\"sport-menu default t-nba\" data-sportid=\"46\"
+        id=\"menu-nba\"><a href=\"http://espn.go.com/nba/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nba\">NBA</a></li>\n<!--
+        start: Menuitem :: NHL -->\n<li class=\"sport-menu default t-nhl selected\"
+        data-sportid=\"90\" id=\"menu-nhl\"><a href=\"http://espn.go.com/nhl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nhl\">NHL</a></li>\n<!--
+        start: Menuitem :: NCAA FB -->\n<li class=\"sport-menu default t-ncf\" data-sportid=\"23\"
+        id=\"menu-ncf\"><a href=\"http://espn.go.com/college-football/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncf\">NCAAF</a></li>\n<!--
+        start: Menuitem :: NCAA BB -->\n<li class=\"sport-menu default t-ncb\" data-sportid=\"41\"
+        id=\"menu-ncb\"><a href=\"http://espn.go.com/mens-college-basketball/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncb\">NCAAM</a></li>\n<!--
+        start: Menuitem :: NASCAR -->\n<li class=\"sport-menu default t-nascar\" data-sportid=\"2020\"
+        id=\"menu-nascar\"><a href=\"http://espn.go.com/racing/nascar/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nascar\">NASCAR</a></li>\n<!--
+        start: Menuitem :: SOCCER -->\n<li class=\"sport-menu default t-soccer\" data-sportid=\"600\"
+        id=\"menu-soccer\"><a href=\"http://espnfc.us/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_soccer\">SOCCER</a></li>\n<!--
+        start: Menuitem :: GOLF -->\n<li class=\"sport-menu t-golf\" data-sportid=\"1106\"
+        id=\"menu-golf\" style=\"display: none;\"><a href=\"http://espn.go.com/golf/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_golfl\">GOLF</a></li>\n<!--
+        start: Menuitem :: TENNIS -->\n<li class=\"sport-menu t-tennis\" data-sportid=\"850\"
+        id=\"menu-tennis\" style=\"display: none;\"><a href=\"http://espn.go.com/tennis/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_tennis\">TENNIS</a></li>\n<!--
+        start: Menuitem :: BOXING-->\n<li class=\"sport-menu t-boxing\" data-sportid=\"1000\"
+        id=\"menu-boxing\" style=\"display: none;\"><a href=\"http://espn.go.com/boxing/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_boxing\">BOXING</a></li>\n<!--
+        start: Menuitem :: MMA -->\n<li class=\"sport-menu t-mma\" data-sportid=\"3301\"
+        id=\"menu-mma\" style=\"display: none;\"><a href=\"http://espn.go.com/mma/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mma\">MMA</a></li>\n<!-- start:
+        Menuitem :: ALL SPORTS -->\n<li class=\"nav-allsports t-allsports\" id=\"menu-allsports\"><a
+        href=\"http://espn.go.com/sports/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_allsports\">MORE
+        SPORTS</a></li>\n<!-- start: Menuitem :: INSIDER -->\n<li class=\"sport-menu
+        t-insider\" id=\"menu-insider\" style=\"display: none;\"><a href=\"http://insider.espn.go.com/insider/index\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_insider\">INSIDER</a></li>\n<!--
+        start: Menuitem :: SPORTSNATION -->\n<li class=\"sport-menu t-sportsnation\"
+        id=\"menu-sportsnation\" style=\"display: none;\"><a href=\"http://espn.go.com/sportsnation/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_sportsnation\">SN</a></li>\n<!--
+        start: Menuitem :: RADIO & MORE -->\n<li class=\"right-menu two-line last
+        t-radio\" id=\"menu-radio\"><a href=\"http://espn.go.com/espnradio/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_radioandmore\">RADIO<span>&amp;
+        MORE</span></a></li>\n<!-- start: Menuitem :: espnW & PLAYBOOK -->\n<li class=\"right-menu
+        two-line t-page2\" id=\"menu-page2\"><a href=\"http://espn.go.com/espnw/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_espnwandxgames\" target=\"_blank\">espnW<span>&amp;
+        X GAMES</span></a></li>\n<!-- start: Menuitem :: FANTASY & GAMES -->\n<li
+        class=\"right-menu two-line t-fantasy\" id=\"menu-fantasy\"><a href=\"http://games.espn.go.com/frontpage\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_fantasy\">FANTASY<span>&amp;
+        GAMES</span></a></li>\n<!-- start: Menuitem :: WATCH -->\n<li class=\"right-menu
+        t-watch\" id=\"menu-watch\"><a href=\"http://espn.go.com/video/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_watch\">WATCH</a></li>\n</ul>\n<!--
+        end site nav -->\n<!-- end site nav -->\n</ul>\n<!-- end site nav -->\n</div>\n<div
+        class=\"nav-main-secondary\">\n<!--/nhl/teams--><ul>\n<li><a href=\"http://espn.go.com/nhl/\"
+        name=\"&lpos=subnav&lid=subnav_NHL_NHL+Home\">NHL Home</a></li>\n<!--<li><a
+        href=\"http://sports.espn.go.com/nhl/playoffs\" name=\"&lpos=subnav&lid=subnav_NHL+Playoffs\">Playoffs</a></li>\n--><li><a
+        href=\"http://scores.espn.go.com/nhl/scoreboard\" name=\"&lpos=subnav&lid=subnav_NHL+Scores\">Scores</a></li>\n<!--<li><a
+        href=\"http://espn.go.com/nhl/preview2014/\" name=\"&lpos=subnav&lid=subnav_NHL+Preview\">Preview</a></li>\n--><li><a
+        href=\"http://espn.go.com/nhl/schedule\" name=\"&lpos=subnav&lid=subnav_NHL_Schedule\">Schedule</a></li>\n<li><a
+        href=\"http://espn.go.com/nhl/powerranking\" name=\"&lpos=subnav&lid=subnav_NHL+Power+Rankings\">Rankings</a></li>\n<li><a
+        href=\"http://espn.go.com/nhl/standings\" name=\"&lpos=subnav&lid=subnav_NHL_Standings\">Standings</a></li>\n<li><a
+        href=\"http://espn.go.com/nhl/statistics\" name=\"&lpos=subnav&lid=subnav_NHL_Statistics\">Stats</a></li>\n<li><a
+        href=\"http://espn.go.com/nhl/story/_/page/nhltradetracker/nhl-trade-tracker\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Trade\">Trades</a></li>\n<li><a href=\"http://espn.go.com/nhl/freeagents/_/type/signed/sort/signDate\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Signings\">Signings</a></li>\n<li><a href=\"http://insider.espn.go.com/nhl/features/rumors\"
+        name=\"&lpos=subnav&lid=subnav_NHL+Rumor+Central\">Rumors</a></li>\n<li><a
+        href=\"http://espn.go.com/nhl/players\" name=\"&lpos=subnav&lid=subnav_NHL_Players\">Players</a></li>\n<li
+        class=\"active expandable\"><a href=\"http://espn.go.com/nhl/teams\" name=\"&lpos=subnav&lid=subnav_NHL_Teams\"><span>Teams</span></a><div><dl><dt
+        class=\"first\">Metropolitan</dt><dd><a href=\"http://espn.go.com/nhl/team/_/name/car/carolina-hurricanes\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_car\">Carolina Hurricanes</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_cls\">Columbus
+        B. Jackets</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_njd\">New Jersey Devils</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_nyi\">New
+        York Islanders</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/nyr/new-york-rangers\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_nyr\">New York Rangers</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/phi/philadelphia-flyers\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_phi\">Philadelphia
+        Flyers</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_pit\">Pittsburgh Penguins</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/wsh/washington-capitals\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_was\">Washington
+        Capitals</a></dd><dt class=\"first\">Atlantic</dt><dd><a href=\"http://espn.go.com/nhl/team/_/name/bos/boston-bruins\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_bos\">Boston Bruins</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/buf/buffalo-sabres\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_buf\">Buffalo
+        Sabres</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_det\">Detroit Red Wings</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/fla/florida-panthers\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_fla\">Florida
+        Panthers</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/mtl/montreal-canadiens\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_mon\">Montreal Canadiens</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/ott/ottawa-senators\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_ott\">Ottawa
+        Senators</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/tb/tampa-bay-lightning\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_tam\">Tampa Bay Lightning</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/tor/toronto-maple-leafs\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_tor\">Toronto
+        Maple Leafs</a></dd></dl><dl class=\"last\"><dt class=\"first\">Central</dt><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/chi/chicago-blackhawks\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_chi\">Chicago
+        Blackhawks</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/col/colorado-avalanche\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_col\">Colorado Avalanche</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/dal/dallas-stars\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_dal\">Dallas
+        Stars</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/min/minnesota-wild\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_min\">Minnesota Wild</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/nsh/nashville-predators\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_nsh\">Nashville
+        Predators</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/stl/st-louis-blues\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_stl\">St. Louis Blues</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/wpg/winnipeg-jets \"name=\"&lpos=subnav&lid=subnav_NHL_Teams_win\">Winnipeg
+        Jets</a></dd><dt class=\"first\">Pacific</dt><dd><a href=\"http://espn.go.com/nhl/team/_/name/ana/anaheim-ducks\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_ana\">Anaheim Ducks</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/ari/arizona-coyotes\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_ari\">Arizona
+        Coyotes</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/cgy/calgary-flames\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_cgy\">Calgary Flames</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/edm/edmonton-oilers\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_edm\">Edmonton
+        Oilers</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/la/los-angeles-kings\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_los\">Los Angeles Kings</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/sj/san-jose-sharks\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_san\">San
+        Jose Sharks</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/van/vancouver-canucks\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_van\">Vancouver Canucks</a></dd></dl></div></li><li><a
+        href=\"http://games.espn.go.com/frontpage/hockey\" name=\"&lpos=subnav&lid=subnav_NHL+Fantasy\">Fantasy</a></li>\n<!--<li><a
+        href=\"http://espn.go.com/nhl/lines\" name=\"&lpos=subnav&lid=subnav_NHL+Odds\">Odds</a></li>\n--><li
+        class=\"expandable\"><a href=\"javascript:void(0);\"><span>Resources</span></a><div><dl><dd><a
+        href=\"http://espn.go.com/nhl/injuries\" name=\"&lpos=subnav&lid=subnav_NHL_Injuries\">Injuries</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/attendance\" name=\"&lpos=subnav&lid=subnav_NHL_Attendance\">Attendance</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/glance\" name=\"&lpos=subnav&lid=subnav_NHL_Glance\">Daily
+        Glance</a></dd><dd><a href=\"http://espn.go.com/nhl/stats/dailyleaders\" name=\"&lpos=subnav&lid=subnav_NHL_Leaders\">Daily
+        Leaders</a></dd><dd><a href=\"http://espn.go.com/nhl/history/leaders\" name=\"&lpos=subnav&lid=subnav_NHL_History\">History</a></dd><!--<dd><a
+        href=\"http://insider.espn.go.com/nhl/pickcenter\" name=\"&lpos=subnav&lid=subnav_NHL_Pick_Center\">Pick
+        Center <img src=\"http://assets.espn.go.com/i/design07/mast/tinyin.gif\" alt=\"Insider\"></a></dd>--><dd><a
+        href=\"http://espn.go.com/nhl/stats/rpi\" name=\"&lpos=subnav&lid=subnav_NHL_RPI\">Relative
+        Power Index</a></dd><dd><a href=\"http://espn.go.com/nhl/playoffs/matchups\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Matchups\">Playoffs Matchups</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/story/_/page/nhltradetracker/nhl-trade-tracker\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Trade\">Trade Tracker</a></dd><dd><a href=\"http://espn.go.com/nhl/freeagents/_/type/signed/sort/signDate\"
+        name=\"&lpos=subnav&lid=subnav_NHL+Tracker\">Free Agent Tracker</a></dd><dd><a
+        href=\"http://sports.espn.go.com/nhl/playoffs/2011/news/story?page=cupchamps11\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Stanley_Cup_Winners\">Stanley Cup winners</a></dd></dl><dl
+        class=\"last\">                <dd><a href=\"http://espn.go.com/nhl/story/_/page/calendar2014/2014-15-nhl-calendar\"
+        name=\"&lpos=subnav&lid=subnav_Dates\">Key Dates</a></dd>                <dd><a
+        href=\"http://espn.go.com/nhl/transactions\" name=\"&lpos=subnav&lid=subnav_Transactions\">Transactions</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/winterclassic14/\" name=\"&lpos=subnav&lid=subnav_NHL_2014_Winter_Classic\">2014
+        Winter Classic</a></dd><dd><a href=\"http://espn.go.com/nhl/preview2014/\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Preview\">2014-15 Season Preview</a></dd><dd><a
+        href=\"http://espn.go.com/nhldraft/draft/tracker/round\" name=\"&lpos=subnav&lid=subnav_NHL_Draft\">2014
+        NHL Draft</a></dd><dd><a href=\"http://espn.go.com/nhl/playoffs/2014/matchup/_/teams/la-nyr\">2014
+        Stanley Cup playoffs</a></dd><dd><a href=\"http://espn.go.com/nhl/playoffs/2013/matchup/_/teams/blackhawks-bruins\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Playoffs\">2013 Stanley Cup playoffs</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/allstargame\" name=\"&lpos=subnav&lid=subnav_ASG\">2012
+        All-Star Game</a></dd><!--<dd><a href=\"http://espn.go.com/nhl/playoffs/2012/matchup/_/teams/devils-kings\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Playoffs\">2012 NHL Playoffs</a></dd>-->
+        \               <dd><a href=\"http://espn.go.com/nhl/topics/_/page/hockey-hall-fame\">Hockey
+        Hall of Fame</a></dd><!--<dd><a href=\"http://espn.go.com/nhl/trophytracker\"
+        name=\"&lpos=subnav&lid=subnav_Trophy+Tracker\">Trophy Tracker</a></dd>--><dd><a
+        href=\"http://espn.go.com/nhl/news/story?page=awardshistory\" name=\"&lpos=subnav&lid=subnav_NHL_Awards\">Awards
+        History</a></dd></dl></div></li><li><a href=\"http://www.stubhub.com/nhl-tickets/\"
+        target=\"_blank\" onclick=\"this.href=this.href+'?gcid=C12289x522&gtkw=NHL+Sub+Nav'\"
+        class=\"external\" name=\"&lpos=subnav&lid=subnav_NHL+Tickets\">Tix</a></li>\n\n</ul>\n</div>\n</div>\n</div>\n</div>\n<!--
+        end content -->\n</div>\n<!-- end subheader -->\n\n<script>\nespn.core.init.nav();\nespn.insider.checkUserForPromo();\n</script>\n<!--
+        begin footer -->\n<div id=\"footer\" class=\"container\">\n<script type=\"text/javascript\">\n//<![CDATA[\nvar
+        link = window.location;\nvar bugText = '<a href=\"#\" onclick=\"window.open(\\'http://dynamic.espn.go.com/espn/bugs?url='
+        + escape(link) + '\\', \\'Bugs\\',\\'noresizable,noscrollbars,height=400,width=400\\');\">Report
+        a Bug</a> | ';\n//]]>\n</script>\n<span style=\"font-weight:bold;\">ESPN.com:</span>
+        <a href=\"http://sports.espn.go.com/espn/news/story?page=help/index\">Help</a>
+        | <a href=\"http://espnmediazone.com/us/\" rel=\"nofollow\">Press</a> | <a
+        href=\"http://www.espncms.com/Advertise-on-ESPN.aspx\" rel=\"nofollow\">Advertise
+        on ESPN.com</a> | <a href=\"http://www.espncms.com\" rel=\"nofollow\">Sales
+        Media Kit</a> | <a href=\"http://preferences.truste.com/2.0/?type=espn&affiliateId=148\"
+        onclick=\"window.open('http://preferences.truste.com/2.0/?type=espn&affiliateId=148','popup','width=986,height=878,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0');
+        return false\">Interest-Based Ads</a> | <script type=\"text/javascript\">document.write(bugText);</script><a
+        href=\"http://espn.go.com/espn/corrections\">Corrections</a> | <a href=\"http://sports.espn.go.com/espn/news/story?page=contact/index\">Contact
+        Us</a> | <a href=\"http://espn.go.com/espn/sitemap\">Site Map</a> | <a href=\"http://espncareers.com\">Jobs
+        at ESPN</a> | <!--a href=\"http://corporate.disney.go.com/corporate/sourcing.html\"
+        rel=\"nofollow\"><span style=\"font-weight:bold;\">Supplier Information</span></a--><a
+        href=\"http://go.com\">Go.com</a><br/>&copy; 2014  ESPN Internet Ventures.
+        <a href=\"http://disneytermsofuse.com/\" rel=\"nofollow\">Terms of Use</a>,
+        <a href=\"http://disneyprivacycenter.com/\" rel=\"nofollow\">Privacy Policy</a>,
+        <a href=\"https://disneyprivacycenter.com/notice-to-california-residents/\"
+        rel=\"nofollow\">Your California Privacy Rights</a>,  <a href=\"https://disneyprivacycenter.com/kids-privacy-policy/english/\">Children's
+        Online Privacy Policy</a> and <a href=\"http://preferences-mgr.truste.com/?type=espn&affiliateId=148\">Internet-Based
+        Ads</a> are applicable to you.  All rights reserved.\n\n<!--\n<a href=\"http://www.espnshop.com/\"
+        onClick=\"location.href('http://log.go.com/log?srvc=sz&guid=73B641A0-6660-4EFC-B8FF-9DE23E8CD9BD&drop=0&addata=3374:65:478847:65&a=1&goto=http://www.espnshop.com/');return
+        false\">Shop</a>\n--></div>\n<!-- end footer -->\n<!--[if lte IE 9]></div><![endif]-->\n</div>\n<!--
+        end bg-elements -->\n<script type=\"text/javascript\">jQuery(document).ready(function()
+        {var ua = navigator.userAgent;if (ua && ua.indexOf(\"Trident/4.0\") >= 0)
+        { jQuery(\".webicon\").show(); }if (ua && ua.indexOf(\"Trident/4.0\") >= 0)
+        { jQuery(\".webiconmod\").show(); }});</script>\n\n<!-- SiteCatalyst code
+        version: H.21.3 Copyright 1997-2010 Omniture, Inc. http://www.omniture.com
+        -->\n<script type=\"text/javascript\">\n\tvar undef = 'undefined'\n\t,s_account=\"wdgespcom\"\n\t,omniPageName
+        = \"espn:nhl:teams\"\n\t\n\t,insiderStatus = \"\"\n\t,anGen = \"\"\n\t,anYear
+        = \"\"\n\t,anDateString = \"\"\n\t,anLoginStatus = \"\"\n\t,callOmniture =
+        function(){\n\t\t/*-- core story s_omni properties --*/\n\t\tif (typeof anCV
+        != \"undefined\"){anParseLoginBarInfo(anCV);}\n\t\ts_omni.pageName=\"nhl:teams\";\n\t\ts_omni.server
+        = window.location.host; // Server from the Host\n\t\ts_omni.channel = \"nhl\";\n\t\ts_omni.prop1
+        = \"espn\";\n\t\ts_omni.prop4 = \"teams\";\n\t\ts_omni.prop5 = \"nhl:teams\";\n\t\ts_omni.prop11
+        = (insiderStatus !== null) ? insiderStatus + \":premium-no\" : \"premium-no\";\n\t\ts_omni.prop13
+        = \"automated-general\";\n\t\ts_omni.prop17 = \"en\";\n\t\ts_omni.prop21 =
+        anDateString;\n\t\ts_omni.prop22 = anGen;\n\t\ts_omni.prop25 = \"hockey\";\n\t\ts_omni.prop26
+        = \"nhl\";\n\t\ts_omni.prop29 = anLoginStatus;\n\t\ts_omni.prop30 = \"n\";\n\t\ts_omni.hier1
+        = \"nhl:teams\";\n\t\ts_omni.eVar7 = anYear + \":\" + anGen + \":\" + anLoginStatus
+        + \":\" + s_omni.prop11 + \":\";\n\t\ts_omni.eVar9 = \"en\";\n\t\ts_omni.eVar13
+        = \"nhl:teams\";\n\t\ts_omni.eVar19 = \"hockey\";\n\t\ts_omni.eVar21 = \"nhl\";\n\t\t\n\t\tif
+        (s_omni.prop11==\"anonymous:premium-yes\" || s_omni.prop11==\"insider-no:premium-yes\"
+        && typeof s_omni.prop4!=\"undefined\" &&\n\t\t\t(s_omni.prop4==\"story\" ||
+        s_omni.prop4==\"blog\")) {\n\t\t\tif (typeof s_omni.events != \"undefined\"
+        && s_omni.events!=\"\") {\n\t\t\t\ts_omni.events = s_omni.events+\",event8\"
+        }\n\t\t\telse { s_omni.events=\"event8\" }\n\t\t}\n\t\t\n\t\t\n\t\tanVersion
+        = \"_11apr14_v2_0_r5_\";\n\t\t\n\t\t/************* DO NOT ALTER ANYTHING BELOW
+        THIS LINE ! **************/\n\t\t\n\t\tvar s_code = s_omni.t();\n\t\tif(s_code)
+        {\n\t\t\tvar sci = new Image(1,1);\n\t\t\tsci.onload = function() {console.log(\"loaded
+        no append\")};\n\t\t\tsci.src = s_code;\n\t\t}\n\t\t\n\t};\t\n</script>\n\n\n\n<script
+        type=\"text/javascript\">\n\tif (typeof(s_omni) === 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\t// we want to load the analytics files from the cache if possible
+        - so, let's use full $.ajax() calls\n\t\t\t$.ajax({\n\t\t\t\ttype:'GET',\n\t\t\t\turl:
+        'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/externalnielsen.js&v=5',\n\t\t\t\tdataType:
+        'script',\n\t\t\t\tcache: true,\n\t\t\t\tsuccess: function() {\n\t\t\t\t\tvar
+        lgSrc;\n\t\t\t\t\tif(typeof anCV !== undef && anCV === '' && document.getElementById('form-memberarea')
+        != null) {\n\t\t\t\t\t\tlgSrc = 'https://r.espn.go.com/members/util/getUserInfo?cb=runOmnitureIndependently';\n\t\t\t\t\t\t$.getScript(lgSrc);
+        // we don't want this to be cached - so we'll use the $.getScript() method\n\t\t\t\t\t}
+        else {\n\t\t\t\t\t\tcallOmniture();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t});\n\t\t});\n\t}\n</script>\n\n<!--
+        End SiteCatalyst code version: H.21. -->\n\n\n<!-- Begin comScore Tag -->\n<script
+        type=\"text/javascript\">\n\tif (typeof(jQuery) !== 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\tif(typeof window._comscore === 'undefined') {\n\t\t\t\twindow._comscore
+        = window._comscore || [];\n\t\t\t\twindow._comscore.push({ c1: \"2\", c2:
+        \"3000005\" });\n\t\t\t\tjQuery.getScript((document.location.protocol == \"https:\"
+        ? \"https://sb\" : \"http://b\") + \".scorecardresearch.com/beacon.js\");\n\t\t\t}\n\t\t});\n\t}\n</script>\n<!--
+        End comScore Tag -->\n\t\t<script>\n\t\tvar _sf_async_config={\n\t\t\t\"uid\":22222,\n\t\t\t\"domain\":\"espn.go.com\",\n\t\t\t\"pingServer\":\"pespn.chartbeat.net\",\n\t\t\t\"useCanonical\":true,\n\t\t\t\"useSubDomains\":false,\n\t\t\t\"sections\":\"nhl\",\n\t\t\t\"authors\":\"teams\"\n\t\t};\n\t\tif
+        (typeof(ad_site) !== 'undefined') { _sf_async_config.zone = ad_site; }\n\n\t\t//
+        load both chartbeat_pub and chartbeat_video\n\t\t(function () {\n\t\t\tfunction
+        a() {\n\t\t\t\twindow._sf_endpt = (new Date()).getTime();\n\n\t\t\t\tvar cbDomain
+        = ((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\");\n\n\t\t\t\tvar
+        c = document.createElement(\"script\");\n\t\t\t\tc.setAttribute(\"language\",\"javascript\");\n\t\t\t\tc.setAttribute(\"type\",\"text/javascript\");\n\t\t\t\tc.setAttribute(\"src\",
+        cbDomain+\"js/chartbeat_pub.js\");\n\t\t\t\tdocument.body.appendChild(c);\n\n\t\t\t\tif(typeof
+        StrategyInterface !== 'undefined' && (typeof espn !== 'undefined' && typeof
+        espn.video !== 'undefined')){\n\t\t\t\t\tvar e = document.createElement(\"script\");\n\t\t\t\t\te.setAttribute(\"language\",\t\"javascript\");\n\t\t\t\t\te.setAttribute(\"type\",
+        \"text/javascript\");\n\t\t\t\t\te.setAttribute(\"src\", cbDomain+\"js/chartbeat_video.js\");\n\t\t\t\t\tdocument.body.appendChild(e);\n\t\t\t\t}\n\t\t\t}\n\t\t\tvar
+        b = window.onload;\n\t\t\twindow.onload = (typeof window.onload != \"function\")
+        ? a : function () { b(); a() }\n\t\t})();\n\t\t//(function(){function a(){window._sf_endpt=(new
+        Date()).getTime();var c=document.createElement(\"script\");c.setAttribute(\"language\",\"javascript\");c.setAttribute(\"type\",\"text/javascript\");c.setAttribute(\"src\",((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\")+\"js/chartbeat_pub.js\");document.body.appendChild(c)}var
+        b=window.onload;window.onload=(typeof window.onload!=\"function\")?a:function(){b();a()}})();\n\t\t</script>\n\t\n<!--
+        dynamic logic: safecount -->\n<script src=\"http://content.dl-rms.com/rms/mother/508/nodetag.js\"></script>\n\n<script
+        type=\"text/javascript\" charset=\"utf-8\">buildOutHeadlinesForPinnedSite();</script>\n<script
+        type=\"text/javascript\">\n   var isInIFrame = (window.location != window.parent.location)
+        ? true : false;\n   if(isInIFrame){ if(document.referrer){ if(document.referrer.indexOf(\".go.com\")==-1){
+        top.location.href=self.location.href; } } }\n</script>\n\n<script type='text/javascript'>\n
+        \ //<![CDATA[\n    (function(){\n    window.gravityInsightsParams = {\n      'type':
+        'content',\n      'action': '',\n      'site_guid': '9a41401e9b7c945344e001ee7f23031e'\n
+        \   };\n    var b,c;b=\"https:\"===document.location.protocol?\"https://b-ssl.grvcdn.com/moth-min.js\":\"http://b.grvcdn.com/moth-min.js\";window.grvMakeScript=function(d){var
+        a;a=document.createElement(\"script\");a.type=\"text/javascript\";a.async=!0;a.src=d;return
+        a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
+        \ //]]>\n</script></body>\n</html>"
+    http_version: 
+  recorded_at: Sat, 08 Nov 2014 22:11:36 GMT
+recorded_with: VCR 2.9.3

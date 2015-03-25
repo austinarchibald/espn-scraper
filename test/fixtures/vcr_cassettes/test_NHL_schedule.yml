@@ -1,0 +1,1351 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://espn.go.com/nhl/team/schedule/_/name/pit
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Content-Type:
+      - text/html;charset=iso-8859-1
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Sun, 07 Dec 2014 03:39:38 GMT
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=15
+      P3p:
+      - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
+        BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
+      Set-Cookie:
+      - SWID=F90B3131-899D-40AA-85D3-87533089960D; path=/; expires=Sat, 02 Dec 2034
+        03:39:38 GMT; domain=go.com;
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
+        src=\"http://sports-ak.espn.go.com/sports/optimizely.js\"></script><meta charset=\"iso-8859-1\">\n<meta
+        http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n<script type=\"text/javascript\">
+        \   \n    if(true && navigator && navigator.userAgent.toLowerCase().indexOf(\"teamstream\")
+        >= 0) {\n        window.location = 'http://a.m.espn.go.com/mobilecache/general/apps/sc';\n
+        \   }\n</script><script type=\"text/javascript\">\nvar espn=window.espn||{};espn.beta=(function(f,i,b){var
+        c=\"http://beta.espn.go.com\",j=f.location.href,l=i.location.pathname;function
+        a(n){var r,m,o,q,s,v,w,p,t;if(n!==b){j=n;r=n.match(/http:\\/\\/([^\\/]*)([^?]*).*/);if(r&&r.length===3){l=r[2];}}if(l.match(/\\/story$/i)||l.match(/\\/story\\//i)){q=k(\"storyId\",n)||k(\"id\",n);s=k(\"storyPage\",n)||k(\"page\",n);if(q!==\"\"){return
+        c+l+\"/_/id/\"+q;}else{if(s!==\"\"){return c+l+\"/_/page/\"+s;}else{return
+        c+l;}}}if(l.match(/\\/blogpostindex$/i)){m=k(\"blogname\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"){return
+        c+\"/blog/\"+m;}}if(l.match(/\\/blogpost$/i)){m=k(\"blogname\",n);o=k(\"id\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"&&o!==\"\"){return
+        c+\"/blog/\"+m+\"/post/_/id/\"+o;}}if(l.match(/^\\/blog\\//i)){m=k(\"blogName\",n);o=k(\"id\",n);if(l.match(/\\/blog\\/[^\\/]*?\\/post$/i)){if(o!==\"\"){return
+        c+l+\"/_/id/\"+o;}}else{if(m!==\"\"&&o!==\"\"){return c+\"/blog/\"+m+\"/post/_/id/\"+o;}else{if(m!==\"\"){return
+        c+\"/blog/\"+m;}else{return c+l;}}}}if((l===\"\"||l===\"/\")&&!j.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)){return
+        c;}var u=l.match(/^\\/.*?\\/(?:index)?$/i);if(u){v={\"/frontpage/\":true,\"/wireless/\":true,\"/general/\":true,\"/extra/\":true,\"/mobile/\":true,\"/nfl/\":true,\"/nba/\":true,\"/mlb/\":true,\"/nhl/\":true,\"/ncf/\":true,\"/college-football/\":true,\"/ncb/\":true,\"/mens-college-basketball/\":true,\"/ncw/\":true,\"/womenbb/\":true,\"/womens-basketball/\":true,\"/wnba/\":true,\"/golf/\":true,\"/tennis/\":true,\"/general/tennis/\":true,\"/mma/\":true,\"/extra/mma/\":true,\"/racing/\":true,\"/rpm/\":true,\"/racing/nascar/\":true,\"/rpm/nascar/\":true,\"/boxing/\":true,\"/extra/boxing/\":true,\"/college-sports/\":true,\"/ncaa/\":true,\"/extra/ncaa/\":true,\"/olympics/\":true,\"/extra/olympics/\":true,\"/horse-racing/\":true,\"/horse/\":true,\"/general/horse/\":true,\"/poker/\":true,\"/general/poker/\":true,\"/sports/endurance/\":true,\"/extra/endurance/\":true};if(l.match(/\\/index$/i)){l=l.substring(0,l.length-5);}if(v[l]===true){return
+        c+l;}}if(l.match(/\\/nflpreview$/i)||l.match(/\\/preview$/i)){w=k(\"gameId\",n);if(w!==\"\"){if(l.match(/\\/nflpreview$/i)){return
+        c+\"/nfl/preview?gameId=\"+w;}else{return c+l+\"?gameId=\"+w;}}}if(l.match(/\\/recap$/i)){w=k(\"gameId\",n);if(w!==\"\"){return
+        c+l+\"?gameId=\"+w;}}if(l===\"/general/video\"){p=k(\"cid\",n);t=k(\"vid\",n);if(p!==\"\"){return
+        c+\"/video/clip?id=\"+p;}else{if(t!==\"\"){return c+\"/video/clip?id=\"+t;}}}if(l.match(/^\\/(?:videohub\\/video|video)\\/clip$/i)){p=k(\"id\",n);if(p!==\"\"){return
+        c+l+\"?id=\"+p;}}}function h(o){var n=a(o);var m=j.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)||(o&&o.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i))||(espn&&espn.GLOBALS&&espn.GLOBALS.isPremium);if(n){n=n.replace(\"/wireless/\",\"/\");n=n.replace(\"/general/\",\"/\");n=n.replace(\"/extra/\",\"/\");n=n.replace(\"/mobile/\",\"/\");n=n.replace(\"/frontpage/\",\"/\");n=n.replace(\"/videohub/\",\"/\");n=n.replace(\"/ncf/\",\"/college-football/\");n=n.replace(\"/rpm/\",\"/racing/\");n=n.replace(\"/ncb/\",\"/mens-college-basketball/\");n=n.replace(\"/ncw/\",\"/womens-basketball/\");n=n.replace(\"/wnba/\",\"/womens-basketball/\");n=n.replace(\"/ncaa/\",\"/college-sports/\");if(m){n=n.replace(\"/story/\",\"/insider/story/\");n=n.replace(\"/post/\",\"/insider/post/\");if(n.match(/\\/blog\\/[^_]*$/i)){if(n.charAt(n.length-1)===\"/\"){n=n+\"insider/\";}else{n=n+\"/insider/\";}}}}return
+        n;}function k(o,q){var m=location.search;if(q!==b){var n=q.indexOf(\"?\");if(n>-1){m=q.substr(n);}}o=o.replace(/[\\[]/,\"\\\\[\").replace(/[\\]]/,\"\\\\]\");var
+        r=new RegExp(\"[\\\\?&]\"+o+\"=([^&#]*)\"),p=r.exec(m);return p===null?\"\":decodeURIComponent(p[1].replace(/\\+/g,\"
+        \"));}function d(){var n=e(\"betauser\");var m=e(\"betacohort\")||\"\";if(n!==null&&m.indexOf(\"cohort-\")===0){var
+        p=m.split(\"-\");if(p&&p.length===2){if(parseInt(p[1],10)===999){return;}}var
+        o=h();if(o){f.location=o;}}}function e(n){var p=n+\"=\";var m=i.cookie.split(\";\");for(var
+        o=0;o<m.length;o++){var q=m[o];while(q.charAt(0)===\" \"){q=q.substring(1,q.length);}if(q.indexOf(p)===0){return
+        q.substring(p.length,q.length);}}return null;}function g(){if(k(\"rand\")===\"beta\"){espn.beta.recheck=true;}else{d();}}return{init:function(){g();}};})(this,this.document);espn.beta.init();\n</script>\n\t<script>(function(){function
+        r(a){a=a.replace(/[\\[]/,\"\\\\[\").replace(/[\\]]/,\"\\\\]\");var c=new RegExp(\"[\\\\?&]\"+a+\"=([^&#]*)\"),b=c.exec(location.search);return
+        b==null?\"\":decodeURIComponent(b[1].replace(/\\+/g,\" \"));}var p=navigator.userAgent,o=window.location,l=document.cookie,f=document.referrer,n=(f===\"\"||f.indexOf(\".go.com\")!==-1),d=(n)?\"http://m.espn.go.com/nhl/clubhouse?teamId=16&src=desktop\":\"http://m.espn.go.com/nhl/clubhouse?teamId=16&src=desktop&rand=ref~%7B%22ref%22%3A%22\"+encodeURIComponent(f)+\"%22%7D\",i=(p.match(/iPad/i)||(p.match(/Android/i)&&!p.match(/Mobile/i))||p.match(/RIM
+        Tablet/i)||p.match(/Silk/i)),k=(p.match(/Mobile/i)||p.match(/Mini/i)),g=o.href.match(/src=mobile/i),q=l.indexOf(\"iphone_redirect=false\")>-1,e=l.indexOf(\"iphone_redirect=true\")>-1,j=r(\"addata\"),h=r(\"ex_cid\"),m=r(\"rand\");if(j!=\"\"){d+=\"&addata=\"+j;}if(h!=\"\"){d+=\"&ex_cid=\"+h;}if(m===\"beta\"){d+=\"&rand=beta\";}if(i){document.documentElement.className+=\"
+        tablet \";if((!p.match(/iPad/i)||e)&&!q){o.href=d;}}else{if(k&&!q&&!g){o.href=d;}}})();</script>\n\t<title>Pittsburgh
+        Penguins 2015 Schedule - Penguins Home and Away - ESPN</title>\n<meta name=\"google-site-verification\"
+        content=\"xuj1ODRluWa0frM-BjIr_aSHoUC7HB5C1MgmYAM_GkA\" />\n<meta name=\"msvalidate.01\"
+        content=\"B1FEB7C682C46C8FCDA3130F3D18AC28\" />\n<meta name=\"googlebot\"
+        content=\"noodp\" />\n<meta name=\"robots\" content=\"index, follow\" />\n<meta
+        name=\"description\" content=\"View the complete Pittsburgh Penguins team
+        schedule on ESPN.com.  Includes home and away, preseason, regular season,
+        playoff and printable schedules.\" />\n<meta name=\"keywords\" content=\"pittsburgh
+        penguins, schedule, nhl, preseason, regular season, playoffs, printable\"
+        />\n<meta property=\"fb:app_id\" content=\"116656161708917\">\n<meta property=\"og:site_name\"
+        content=\"ESPN.com\">\n<link rel=\"canonical\" href=\"http://espn.go.com/nhl/team/schedule/_/name/pit/pittsburgh-penguins\"
+        />\n\n\t\t<script>var _sf_startpt=(new Date()).getTime();</script>\n<link
+        rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"http://a.espncdn.com/search/opensearch.xml\"
+        title=\"ESPN Search\" />\n<link rel=\"stylesheet\" href=\"http://a.espncdn.com/combiner/c/201401211964?css=global_reset.r1.css,base.r236.css,modules.r462.css,global_header.r44.css,header_topbar.r1.css,modules/global_nav.r54.css,modules/insider_enhanced.r1.css,modules/mem/mem.r12.1.css,modules/mem/mem_espn360.r8.4.css,modules/mem/skirmish.r8.css,modules/twin.r1.css,modules/facebook/button.r2.css,universal_overlay/universal_overlay.css,universal_overlay/media_overlay.css,universal_overlay/video_overlay.css,universal_overlay/photo_overlay.css,universal_overlay/dyk_overlay.css,fonts/bentonsans.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/201303290924?css=sprites/teamlogos.r18.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/20121005125?css=clubhouse_nhl_10.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/20120509325?css=modules/master_tables_10.r3.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/20121024544?css=pagetype/clubhouse.r9.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/20120509325?css=modules/tabs-page-nav.3.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<script type=\"text/javascript\">\nvar
+        _vrq = _vrq || [];\n _vrq.push(['id', 489]);\n _vrq.push(['automate', false]);\n
+        _vrq.push(['track', function(){}]);\n (function(d, a){var s = d.createElement(a),x
+        = d.getElementsByTagName(a)[0];\ns.async = true;\ns.src = 'http://a.visualrevenue.com/vrs.js';\n
+        x.parentNode.insertBefore(s, x);})(document, 'script'); </script>\n<script
+        src=\"http://a.espncdn.com/combiner/c?js=jquery-1.7.1.js,plugins/json2.r3.js,plugins/teacrypt.js,plugins/jquery.metadata.js,plugins/jquery.bgiframe.r3.js,plugins/jquery.easing.1.3.js,plugins/jquery.hoverIntent.js,plugins/jquery.jcarousel.0.2.9.js,plugins/jquery.tinysort.r4.js,plugins/jquery.pubsub.r5.js,ui/1.8.16/jquery.ui.core.js,ui/1.8.16/jquery.ui.widget.js,ui/1.8.16/jquery.ui.tabs.js,ui/1.8.16/jquery.ui.accordion.js,plugins/ba-debug-0.4.js,espn.l10n.r12.js,swfobject/2.2/swfobject.js,flashObjWrapper.r7.js,plugins/jquery.colorbox.1.3.14.js,plugins/jquery.ba-postmessage.js,espn.core.duo.r57.js,m/beta/betacheck.r5.js,espn.mem.r39.js,stub.search.r9.js,espn.nav.mega.r38b.js,espn.storage.r6.js,espn.p13n.r19.5.js,espn.geo.r3.js,espn.video.r81.r5.js,analytics/chartbeat/video/strategy_comprehensive.r1.js,registration/staticLogin.r12.06102014.js,espn.universal.overlay.r19.js,insider/espn.insider.20140915.js,espn.espn360.stub.r9.js,espn.myHeadlines.stub.r16.js,espn.myfaves.stub.r3.js,tsscoreboard.20090612.js,ie9pinning.r3.js,espn.f8.noauth.r3.js,espn.socialmediamod.r7.js\"></script>\n<script>espn.core.navVersion
+        = 'a';</script>\n<script>var ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlteamschedule\",ad_kvps=\"pgtyp=nhlteamschedule;sp=nhl;tm=pit;\",ad_swid=\"\",ad_counter=1,ad_ord=Math.floor(9999999999*Math.random()),ad_seg=\"\",ad_mnr=-1<document.cookie.indexOf(\"grif=1\")?\"t\":\"f\",ad_ref=\"other\",ref=document.referrer,refsMap={\"facebook.com\":\"facebook\",\"twitter.com|t.co\":\"twitter\",\"plus.url.google.com|plus.google.com\":\"googleplus\",\"google.com\":\"google\",\"bing.com\":\"bing\",\"yahoo.com\":\"yahoo\",\"espn.go.com\":\"espn\"},refKey;for(refKey
+        in refsMap)ref.match(refKey)&&(ad_ref=refsMap[refKey]);\nad_kvps=ad_kvps+\"ref=\"+ad_ref+\";mnr=\"+ad_mnr+\";\";ad_swid=jQuery.cookie(\"SWID\");\"function\"===typeof
+        espn.core.ad_segments&&(ad_seg=espn.core.ad_segments(),null!=ad_seg&&\"\"!=ad_seg&&(ad_kvps+=ad_seg));var
+        ad_u=\"\";null!=ad_swid&&\"\"!=ad_swid&&(ad_u=\"swid=\"+ad_swid+\";\");</script>\n</head>\n<body
+        class=\"nhl {sportId:90, teamId:16} clubhouse pit\" >\n<div class=\"mboxDefault\"><link
+        rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/prod/styles/modules/hideGravity.css\"
+        type=\"text/css\" /></div><script>mboxCreate('ESPN_global');</script><!--[if
+        IE 5]><div class=\"ie5\"><![endif]-->\n<!--[if IE 6]><div class=\"ie ie6\"><![endif]-->\n<!--[if
+        IE 7]><div class=\"ie ie7\"><![endif]-->\n<!--[if IE 8]><div class=\"ie ie8\"><![endif]-->\n<!--[if
+        IE 9]><div class=\"ie9\"><![endif]-->\n<!-- begin bg-elements -->\n<div class=\"bg-elements\">\n<!--
+        begin header -->\n<div id=\"header\" class=\"container\">\n<!-- begin top-bar
+        -->\n<div class=\"top-bar\">\n<!-- begin uni login -->\n<script type=\"text/javascript\">\nvar
+        returnURL = document.location.href;\nvar anCV = \"\";\nvar myEspnText = {'welcometext':'Welcome','register':'Register','signin':'Sign
+        In','signout':'Sign Out','heliumdown':'Login Temporarily Unavailable','connectedfacebook':'Connected
+        to Facebook','connectfacebook':'Connect with Facebook','activateinsider':'Activate
+        Insider'};\n</script>\n<form id=\"form-memberarea\">\n<input type=\"hidden\"
+        name=\"language\" id=\"language\" value=\"en\"/>\n<input type=\"hidden\" name=\"affiliateName\"
+        id=\"memberAreaAffiliateName\" value=\"espn\"/>\n<input type=\"hidden\" name=\"regFormId\"
+        id=\"regFormId\" value=\"espn\"/>\n</form>\n<div class=\"signin\" id=\"signin\"></div>\n<script>espn.memberservices.welcome();</script>\n<div
+        class=\"nav-edition editions\">\n<label>EDITIONS:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-usa active\"><a href=\"http://espn.go.com/\" name=\"&amp;lpos=editionsnav&amp;lid=usa\">USA</a></li>\n\t<li
+        class=\"e-deportes\"><a href=\"http://www.espn.com?country-view=us&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=deportes\" class=\"{langPref:'spanish'}\">DEPORTES</a></li>\n\t<li
+        class=\"last dropdown\">\n\t<ul class=\"\">\n\t<li class=\"selected\">More</li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=ar&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=argentina\">Argentina</a></li>\n\t<li><a
+        href=\"http://www.espn.com.au\" name=\"&amp;lpos=editionsnav&amp;lid=australia\">Australia</a></li>\n\t<li><a
+        href=\"http://www.espn.com.br\" name=\"&amp;lpos=editionsnav&amp;lid=brazil\">Brazil</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=co&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=colombia\">Colombia</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=mx&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=mexico\">Mexico</a></li>\n\t<li><a
+        href=\"http://www.espn.co.uk/\" name=\"&amp;lpos=editionsnav&amp;lid=uk\">United
+        Kingdom</a></li>\n        <li><a href=\"http://www.espn.com?country-view=ve&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=venezuela\">Venezuela</a></li>\n\t</ul>\n\t</li>\n</ul>\n</div>\n\n<div
+        class=\"nav-edition\">\n<label>CITIES:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-boston\"><a href=\"http://espn.go.com/boston/\" name=\"&amp;lpos=citynav&amp;lid=boston\">BOSTON</a></li>\n\t<li
+        class=\"e-chicago\"><a href=\"http://espn.go.com/chicago/\" name=\"&amp;lpos=citynav&amp;lid=chicago\">CHICAGO</a></li>\n\t<li
+        class=\"e-dallas\"><a href=\"http://espn.go.com/dallas/\" name=\"&amp;lpos=citynav&amp;lid=dallas\">DALLAS</a></li>\n\t<li
+        class=\"e-losangeles\"><a href=\"http://espn.go.com/los-angeles/\" name=\"&amp;lpos=citynav&amp;lid=losangeles\">LOS
+        ANGELES</a></li>\n\t<li class=\"last e-newyork\"><a href=\"http://espn.go.com/new-york/\"
+        name=\"&amp;lpos=citynav&amp;lid=newyork\">NEW YORK</a></li>\n</ul>\n</div>\n</div>\n<!--
+        end top-bar -->\n<!-- begin espn-logo -->\n<div class=\"espn-logo\">\n<div
+        class=\"h1\"><a href=\"http://espn.go.com/\" name=\"&lpos=sitenavdefault&lid=sitenav_main-logo\"
+        class=\"espn\">ESPN</a> <a href=\"http://espn.go.com/nhl/\" class=\"section-title\">NHL</a></div></div>\n<!--
+        end espn-logo -->\n<!-- begin ad -->\n<span class=\"presby\"><!--espn.us.com.nhl
+        sitezone-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlteamschedule\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=SponsoredByLogoHeader;\"+ad_u+\"sz=150x45,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"SponsoredByLogoHeader\" data-cb-dfp-id=\"'+ad_kvps+'sz=150x45,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nhl/nhlteamschedule;pgtyp=nhlteamschedule;sp=nhl;tm=pit;sz=150x45,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlteamschedule;pgtyp=nhlteamschedule;sp=nhl;tm=pit;sz=150x45,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</span>\n<!-- end ad -->\n<div class=\"header-right\">\n<style>.ie6
+        #searchBox, .ie6 #searchBox div { display: inline; } </style><!-- begin search
+        -->\n<div id=\"nav-main-search\">\n<form id=\"searchBox\" name=\"searchBox\"
+        action=\"http://search.espn.go.com/results\" method=\"get\" accept-charset=\"utf-8\"
+        style=\"color: #999999;\">\n<div class=\"clearfix\">\n<input autocomplete=\"off\"
+        class=\"text\" type=\"text\" placeholder=\"Search\" name=\"searchString\"
+        id=\"searchString\" />\n<input type=\"hidden\" name=\"page\" id=\"page\" value=\"null\"
+        />\n<input type=\"hidden\" name=\"fromForm\" value=\"true\" />\n<input class=\"submit\"
+        type=\"submit\" value=\"\" />\n</div>\n</form>\n</div>\n<!-- end search -->\n<div
+        id=\"shop\"><a class=\"shop-btn\" href=\"http://www.dickssportinggoods.com/category/index.jsp?categoryId=15504466&camp=Part:ESPNpart::nhlshopbutton:NHL\"
+        name=\"&lpos=sitenavdefault&lid=sitenav_shopbutton\" rel=\"nofollow\">Shop</a></div></div>\n</div>\n<!--
+        end header -->\n<!--espn.us.com.nhl sitezone-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlteamschedule\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Background_Skin;\"+ad_u+\"sz=1280x946,200x800,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Background_Skin\" data-cb-dfp-id=\"'+ad_kvps+'sz=1280x946,200x800,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nhl/nhlteamschedule;pgtyp=nhlteamschedule;sp=nhl;tm=pit;sz=1280x946,200x800,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlteamschedule;pgtyp=nhlteamschedule;sp=nhl;tm=pit;sz=1280x946,200x800,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n<!-- begin subheader -->\n<div id=\"subheader\">\n<!--
+        begin content -->\n<div id=\"content-wrapper\">\n<div id=\"ad-top\" class=\"container\">\n<!--
+        begin Banner ad -->\n<div class=\"span-6 ad banner top\"><div class=\"ad-center\"><div
+        class=\"ad-wrapper\"><!--espn.us.com.nhl sitezone-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlteamschedule\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Banner;\"+ad_u+\"sz=728x90,970x66,924x50,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Banner\" data-cb-dfp-id=\"'+ad_kvps+'sz=728x90,970x66,924x50,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nhl/nhlteamschedule;pgtyp=nhlteamschedule;sp=nhl;tm=pit;sz=728x90,970x66,924x50,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlteamschedule;pgtyp=nhlteamschedule;sp=nhl;tm=pit;sz=728x90,970x66,924x50,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div></div></div>\n<!-- end Banner
+        ad -->\n</div>\n<div id=\"content\" class=\"container\">\n<div id=\"fb-root\"></div><!--[if
+        lte IE 7]><link rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/combiner/c?css=modules/browser-alert.r7.css\"
+        type=\"text/css\" /><div class=\"span-6\" id=\"browser-alert-wrapper\" style=\"display:none;\"><div
+        class=\"mod-container mod-no-header-footer browser-alert\"><div class=\"mod-content\"><div
+        class=\"gradient-container\"><h1><span>Your Web Browser</span> is no longer
+        supported</h1><p>To experience everything that ESPN.com has to offer, we recommend
+        that you upgrade to a newer version of your web browser. Click the upgrade
+        button to the right or <a href=\"http://espn.go.com/espn/news/story?id=5630562\">learn
+        more</a>.</p><ul><li><a class=\"btn-upgrade\" href=\"http://www.microsoft.com/windows/internet-explorer/default.aspx\">Upgrade</a></li><li><a
+        class=\"btn-faq\" href=\"http://espn.go.com/espn/news/story?id=5630562\">FAQs</a></li></ul></div></div></div></div><script>(function(b){setTimeout(function(){var
+        a=b(\"#browser-alert-wrapper\");if(espn.cookie.get(\"browseralert\")!=\"true\"){b('<a
+        class=\"btn-close\" href=\"#\">Close</a>').bind(\"click\",function(){a.hide();espn.cookie.set(\"browseralert\",\"true\",30);return
+        false}).appendTo(a.find(\".gradient-container\"));a.show();espn.cookie.set(\"browseralert\",\"true\")}},100)})(jQuery);</script><![endif]--><div
+        id=\"sub-branding\"><h2 class=\"logo\"><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins\"
+        class=\"sub-brand-title\"><b>Pittsburgh Penguins</b></a></h2><div class=\"presby\"><!--espn.us.com.nhl
+        sitezone-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlteamschedule\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=EnhancedLogo;\"+ad_u+\"sz=180x45,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"EnhancedLogo\" data-cb-dfp-id=\"'+ad_kvps+'sz=180x45,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nhl/nhlteamschedule;pgtyp=nhlteamschedule;sp=nhl;tm=pit;sz=180x45,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlteamschedule;pgtyp=nhlteamschedule;sp=nhl;tm=pit;sz=180x45,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div><div class=\"sub-title\">18-6-2,
+        1st in Metropolitan Division</div></div>\n\n<script type=\"text/javascript\">\n\tvar
+        loggedIn = espn.core.loggedIn;\n\tvar displayModule = false;\n\tvar showAddButton
+        = true;\n\tvar fadeTime = 1500;\n\tvar baseRef = '/';\n\tvar lang = 'en';\n\t(function($)
+        {\n\t\tfunction resetData(checkSport, checkTeam){\n\t\t\tif (loggedIn){\n\t\t\t\tespn.p13n.reset({\n\t\t\t\t\tsuccess:
+        function(data){\n\t\t\t\t\t\tif (data != null && data != 'UNDEF' && typeof(data.myTeams)
+        != 'UNDEF' && data.myTeams != null){\n\t\t\t\t\t\t\tvar count = 0;\n\t\t\t\t\t\t\tvar
+        sportTypes = {10:'mlb',46:'nba',28:'nfl',90:'nhl',23:'ncf',41:'ncb',54:'ncw',600:'soccer'}\n\t\t\t\t\t\t\tvar
+        sportAbbrevs = {10:'MLB',46:'NBA',28:'NFL',90:'NHL',23:'NCAAF',41:'NCAAB',54:'NCAAW',600:'Soccer'}\n\t\t\t\t\t\t\t$.each(data.myTeams,
+        function(i,item){\n\t\t\t\t\t\t\t\tif ((checkTeam == item.id && checkSport
+        == item.sport) || (checkTeam == 0 && checkSport == 0)){ // when updating a
+        team, only update that specific team\n\t\t\t\t\t\t\t\t\tvar logo = '';\n\t\t\t\t\t\t\t\t\tif
+        (typeof(item.sport) != 'UNDEF' && item.sport != null){\n\t\t\t\t\t\t\t\t\t\tsportType
+        = sportTypes[item.sport];\n\t\t\t\t\t\t\t\t\t\tsportAbbrev = sportAbbrevs[item.sport];\n\t\t\t\t\t\t\t\t\t\tsport
+        = item.sport;\n\t\t\t\t\t\t\t\t\t\tabbrev = '';\n\t\t\t\t\t\t\t\t\t\tswabbrev
+        = '';\n\t\t\t\t\t\t\t\t\t\tif (typeof(item.abbrev) != 'UNDEF' && item.abbrev
+        != null){\n\t\t\t\t\t\t\t\t\t\t\tabbrev = item.abbrev.toLowerCase();\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tif
+        (typeof(item.sw_abbrev) != 'UNDEF' && item.sw_abbrev != null){\n\t\t\t\t\t\t\t\t\t\t\tswabbrev
+        = item.sw_abbrev.toLowerCase();\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tdesc
+        = item.text;\n\t\t\t\t\t\t\t\t\t\tdescSEO = desc;\n\t\t\t\t\t\t\t\t\t\twhile(descSEO.indexOf('
+        ')!=-1)descSEO=descSEO.replace(' ','-');\n\t\t\t\t\t\t\t\t\t\tif (sport ==
+        10 || sport == 28 || sport == 90 || sport == 46){ // mlb, nfl and nhl (new
+        reshelled clubhouses will go here)\n\t\t\t\t\t\t\t\t\t\t\tif (swabbrev ==
+        ''){ swabbrev = abbrev; }\n\t\t\t\t\t\t\t\t\t\t\tlogo = '<a href=\"http://espn.go.com/'
+        + sportType + baseRef + 'team/_/name/' + abbrev + '/' + descSEO.toLowerCase()
+        + '\"  title=\"' + desc + '\"><div class=\"logo-medium logo-' + sportType
+        + '-medium ' + sportType + '-medium-' + item.id + '\"></div></a>';\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\telse
+        if (sportType == 'ncf'){\n\t\t\t\t\t\t\t\t\t\t\ttAbbrev = item.id\n\t\t\t\t\t\t\t\t\t\t\tlogo
+        = '<a href=\"http://espn.go.com/college-football/team/_/id/' + tAbbrev + '/'
+        + descSEO.toLowerCase() + '\" title=\"' + desc + ' - ' + sportAbbrev + '\"><img
+        src=\"http://a.espncdn.com/i/teamlogos/ncaa/sml/trans/' + tAbbrev + '.gif\"
+        alt=\"\"/></a>';\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\telse if (sportType
+        == 'ncb'){\n\t\t\t\t\t\t\t\t\t\t\ttAbbrev = item.id\n\t\t\t\t\t\t\t\t\t\t\tlogo
+        = '<a href=\"http://espn.go.com/mens-college-basketball/team/_/id/' + tAbbrev
+        + '/' + descSEO.toLowerCase() + '\" title=\"' + desc + ' - ' + sportAbbrev
+        + '\"><img src=\"http://a.espncdn.com/i/teamlogos/ncaa/sml/trans/' + tAbbrev
+        + '.gif\" alt=\"\"/></a>';\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\telse
+        if (sportType == 'ncw'){ // ncaa\n\t\t\t\t\t\t\t\t\t\t\ttAbbrev = item.id;\n\t\t\t\t\t\t\t\t\t\t\tlogoAbbrev
+        = tAbbrev\n\t\t\t\t\t\t\t\t\t\t\tif (item.sport == 54 && item.id == 2633){
+        logoAbbrev = tAbbrev + '_ncw'; }\n\t\t\t\t\t\t\t\t\t\t\tlogo = '<a href=\"http://espn.go.com/womens-college-basketball/team/_/id/'
+        + tAbbrev + '/' + descSEO.toLowerCase() + '\" title=\"' + desc + ' - ' + sportAbbrev
+        + '\"><img src=\"http://a.espncdn.com/i/teamlogos/ncaa/sml/trans/' + logoAbbrev
+        + '.gif\" alt=\"\"/></a>';\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\telse
+        if (sportType == 'soccer'){ // all inclusive soccer list\n\t\t\t\t\t\t\t\t\t\t\tlogo
+        = '<a href=\"http://espnfc.com/team?id=' + item.id + '\" title=\"' + desc
+        + ' ' + sportAbbrev + '\"><img width=\"50\" height=\"50\" src=\"http://soccernet-akamai.espn.go.com/design05/i/clubhouse/badges/'
+        + item.id + '.gif\" alt=\"\"/></a>';\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tif
+        (count == 0 && !displayModule){\n\t\t\t\t\t\t\t\t\t\t\t$('.mod-myespn .personalization-teams').html('');\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tif
+        (logo != ''){\n\t\t\t\t\t\t\t\t\t\t\tif (checkTeam == item.id && checkSport
+        == item.sport){\n\t\t\t\t\t\t\t\t\t\t\t\t$('.mod-myespn .personalization-teams').append(logo).fadeIn(fadeTime,
+        function(){\n\t\t\t\t\t\t\t\t\t\t\t\t\tespn.core.init.faves();\n\t\t\t\t\t\t\t\t\t\t\t\t});\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\telse{\n\t\t\t\t\t\t\t\t\t\t\t\t$('.mod-myespn
+        .personalization-teams').append(logo);\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tcount++;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\tif
+        (count == 1 && !displayModule){\n\t\t\t\t\t\t\t\t\t\t$('#myespn-personalization').show();\n\t\t\t\t\t\t\t\t\t\tdisplayModule
+        = true;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t}\n\t\t}\n\t\t$(document).ready(function()
+        {\n\t\t\tvar teamId = $('body').metadata()['teamId'];\n\t\t\tvar sportId =
+        $('body').metadata()['sportId'];\n\t\t\tvar teamName = 'Pittsburgh Penguins';\n\t\t\tvar
+        abbrevs = {10:'mlb',46:'nba',28:'nfl',90:'nhl',23:'ncf',41:'ncb',54:'ncw'}\n\t\t\tvar
+        teamAbbrev = abbrevs[sportId];\n\t\t\tif (loggedIn){\n\t\t\t\tif ($('#sub-branding
+        h1').length > 0){\n\t\t\t\t\t$('#sub-branding h1').after('<a class=\"btn-add-fave-team\"></a>');\n\t\t\t\t}\n\t\t\t\telse{\n\t\t\t\t\t$('#sub-branding
+        h2').after('<a class=\"btn-add-fave-team\"></a>');\n\t\t\t\t}\n\t\t\t\tresetData(0,
+        0);\n\t\t\t\tespn.p13n.get({\n\t\t\t\t\t\"success\" : function(data) {\n\t\t\t\t\t\tif
+        (data!=null && data!='UNDEF' && typeof(data.myTeams) != 'UNDEF' && data.myTeams
+        != null) {\n\t\t\t\t\t\t\t$.each(data.myTeams, function(i,item) {\n\t\t\t\t\t\t\t\tif
+        (typeof(item.sport) != 'UNDEF' && item.sport != null) {\n\t\t\t\t\t\t\t\t\tif
+        (item.sport == sportId && item.id == teamId){\n\t\t\t\t\t\t\t\t\t\tshowAddButton
+        = false;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t}\n\t\t\t\t\t\tif
+        (showAddButton){\n\t\t\t\t\t\t\t$('#sub-branding a.btn-add-fave-team').html('Add
+        to my favorites').show().attr(\"onclick\",\"anTrackLink(this,'espn','teamclubhouse','\"
+        + teamAbbrev + \"_\" + teamName.toLowerCase().replace(' ','') + \"_addfavorite_loggedin-add');
+        return false;\");\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse{\n\t\t\t\t\t\t\t$('#sub-branding
+        a.btn-add-fave-team').html('Favorite Team').show().addClass('favorite cbOverlay').attr({href:'',name:'&lpos=teamclubhouse&lid='
+        + teamAbbrev + '_'+teamName.toLowerCase().replace(' ','')+'_addfavorite_loggedin-modify',tref:'/personalization/v3_1/personalization','data-language':lang.toLowerCase(),tab:'teams'});\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t\"error\"
+        : function(){\n\t\t\t\t\t\t$('body.clubhouse #clubhouse-city-teams').show();\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t\t$('#sub-branding
+        a.btn-add-fave-team').click(function(){\n\t\t\t\t\tif (showAddButton){ //
+        don't allow the button to click through if it is informing you of their favorite
+        team\n\t\t\t\t\t\tshowAddButton = false; // don't allow multiple clicks during
+        the transition\n\t\t\t\t\t\tespn.p13n.add(\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"teams\":
+        sportId+\":\"+teamId\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"success\"
+        : function() {\n\t\t\t\t\t\t\t\t\t$('#sub-branding a.btn-add-fave-team').html('Added').addClass('favorite').css('cursor','default');\n\t\t\t\t\t\t\t\t\tsetTimeout(function(){\n\t\t\t\t\t\t\t\t\t\t\tresetData(sportId,teamId);\n\t\t\t\t\t\t\t\t\t\t},
+        fadeTime\n\t\t\t\t\t\t\t\t\t);\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"error\"
+        : function() {\n\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t);\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t}\n\t\t\telse{\n\t\t\t\t$('body.clubhouse
+        #clubhouse-city-teams').show();\n\t\t\t\tif ($('#sub-branding h1').length
+        > 0){\n\t\t\t\t\t$('#sub-branding h1').after('<a class=\"btn-add-fave-team\">Sign
+        in to personalize</a>');\n\t\t\t\t}\n\t\t\t\telse{\n\t\t\t\t\t$('#sub-branding
+        h2').after('<a class=\"btn-add-fave-team\">Sign in to personalize</a>');\n\t\t\t\t}\n\t\t\t\t$('#sub-branding
+        a.btn-add-fave-team').show().attr('href','').attr('name','&lpos=teamclubhouse&lid='
+        + teamAbbrev + '_' + teamName.toLowerCase().replace(' ','') + '_addfavorite_loggedout').attr('tref','/members/v3_1/login').attr('data-options','{\"addTeams\":\"'+sportId+':'+teamId+'\",\"width\":\"820\",\"height\":\"385\"}').addClass(\"cbOverlay\");\n\t\t\t}\n\t\t\t$('#sub-branding
+        a.btn-add-fave-team').hover(\n\t\t\t\tfunction(){\n\t\t\t\t\t$(this).addClass('favorite').css('font-size','10px');\n\t\t\t\t},\n\t\t\t\tfunction(){\n\t\t\t\t\tif
+        (showAddButton){\n\t\t\t\t\t\t$(this).removeClass('favorite').css('font-size','11px');\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t);\n\n\t\t\t$('.inline-header
+        ul.links li a').addClass('cbOverlay').attr({href:'',tref:'/personalization/v3_1/personalization','data-language':lang.toLowerCase(),tab:'teams'});\n\t\t});\n\t})(jQuery);\n</script><style>body.nhl
+        .stathead td,body.nhl .stathead,.mod-content tr.stathead,.mod-content tr.stathead
+        td,.mod-header,body.clubhouse .mod-calendar-month td.day.home div.day-top,body.clubhouse
+        .mod-calendar-month tr.util td ul.key li span.home, body.nhl .mod-data-table
+        .mod-header{background: #C3B263 !important;}</style>\n\n    <div class=\"mod-page-tabs
+        mod-pagenav-tabs\"><ul class=\"ui-tabs\"><li ><a href=\"/nhl/team/_/name/pit/pittsburgh-penguins\">Clubhouse</a></li><li
+        ><a href=\"/nhl/team/stats/_/name/pit/pittsburgh-penguins\">Statistics</a></li><li
+        class=\"active\"><a href=\"/nhl/team/schedule/_/name/pit/pittsburgh-penguins\">Schedule</a></li><li
+        ><a href=\"/nhl/team/roster/_/name/pit/pittsburgh-penguins\">Roster</a></li><li
+        ><a href=\"/nhl/team/transactions/_/name/pit/pittsburgh-penguins\">Transactions</a></li><li
+        ><a href=\"/nhl/team/rankings/_/name/pit/pittsburgh-penguins\">Rankings</a></li><li
+        ><a href=\"/nhl/team/photos/_/name/pit/pittsburgh-penguins\">Photos</a></li><li
+        ><a href=\"/nhl/team/stadium/_/name/pit/pittsburgh-penguins\">Stadium</a></li><li
+        \ onclick=\"this.href=this.href+'?gcid=C12289x463&keyword=Pittsburgh+Penguins+Nav'\"
+        target=\"_blank\"><a href=\"http://www.stubhub.com/pittsburgh-penguins-tickets/?gcid=C12289x463&keyword=Pittsburgh+Penguins+Nav\">Tickets</a></li><li
+        ><a href=\"http://www.dickssportinggoods.com/category/index.jsp?categoryId=15530626&camp=Part:ESPNpart::nhlclubhousenav:PittsburghPenguins\"
+        rel=\"nofollow\">Shop</a></li></ul></div>\n    <div class=\"bg-opaque\" id=\"my-teams-table\">\n
+        \       <div class=\"span-6\">\n            <div class=\"col-main\" id=\"my-teams-table\">\n
+        \               <div class=\"mod-section-header\">\n                    <h1
+        class=\"h2\">Pittsburgh Penguins Schedule - 2014-15</h1>\n                    <form
+        class=\"js-goto\"><select class=\"select-box\"><option value=\"\">NHL Teams</option><option
+        value=\"http://espn.go.com/nhl/team/schedule/_/name/ana/anaheim-ducks\">Anaheim
+        Ducks</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/ari/arizona-coyotes\">Arizona
+        Coyotes</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/bos/boston-bruins\">Boston
+        Bruins</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/buf/buffalo-sabres\">Buffalo
+        Sabres</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/cgy/calgary-flames\">Calgary
+        Flames</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/car/carolina-hurricanes\">Carolina
+        Hurricanes</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/chi/chicago-blackhawks\">Chicago
+        Blackhawks</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/col/colorado-avalanche\">Colorado
+        Avalanche</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/cbj/columbus-blue-jackets\">Columbus
+        Blue Jackets</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/dal/dallas-stars\">Dallas
+        Stars</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/det/detroit-red-wings\">Detroit
+        Red Wings</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/edm/edmonton-oilers\">Edmonton
+        Oilers</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/fla/florida-panthers\">Florida
+        Panthers</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/la/los-angeles-kings\">Los
+        Angeles Kings</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/min/minnesota-wild\">Minnesota
+        Wild</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/mtl/montreal-canadiens\">Montreal
+        Canadiens</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/nsh/nashville-predators\">Nashville
+        Predators</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/nj/new-jersey-devils\">New
+        Jersey Devils</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/nyi/new-york-islanders\">New
+        York Islanders</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/nyr/new-york-rangers\">New
+        York Rangers</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/ott/ottawa-senators\">Ottawa
+        Senators</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/phi/philadelphia-flyers\">Philadelphia
+        Flyers</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/pit/pittsburgh-penguins\">Pittsburgh
+        Penguins</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/sj/san-jose-sharks\">San
+        Jose Sharks</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/stl/st-louis-blues\">St.
+        Louis Blues</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/tb/tampa-bay-lightning\">Tampa
+        Bay Lightning</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/tor/toronto-maple-leafs\">Toronto
+        Maple Leafs</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/van/vancouver-canucks\">Vancouver
+        Canucks</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/wsh/washington-capitals\">Washington
+        Capitals</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/wpg/winnipeg-jets\">Winnipeg
+        Jets</option></select></form>\n                </div>\n                <div
+        class=\"floatleft\">\n                    Year:\n                    <form
+        class=\"js-goto\" style=\"display: inline; margin-bottom: 5px;\">\n                        <select
+        class=\"tablesm\">\n                            <option value=\"http://espn.go.com/nhl/team/schedule/_/name/pit/pittsburgh-penguins\"
+        selected=\"selected\">2014-15</option><option value=\"http://espn.go.com/nhl/team/schedule/_/name/pit/year/2014/pittsburgh-penguins\">2013-14</option><option
+        value=\"http://espn.go.com/nhl/team/schedule/_/name/pit/year/2013/pittsburgh-penguins\">2012-13</option><option
+        value=\"http://espn.go.com/nhl/team/schedule/_/name/pit/year/2012/pittsburgh-penguins\">2011-12</option><option
+        value=\"http://espn.go.com/nhl/team/schedule/_/name/pit/year/2011/pittsburgh-penguins\">2010-11</option><option
+        value=\"http://espn.go.com/nhl/team/schedule/_/name/pit/year/2010/pittsburgh-penguins\">2009-10</option><option
+        value=\"http://espn.go.com/nhl/team/schedule/_/name/pit/year/2009/pittsburgh-penguins\">2008-09</option><option
+        value=\"http://espn.go.com/nhl/team/schedule/_/name/pit/year/2008/pittsburgh-penguins\">2007-08</option><option
+        value=\"http://espn.go.com/nhl/team/schedule/_/name/pit/year/2007/pittsburgh-penguins\">2006-07</option><option
+        value=\"http://espn.go.com/nhl/team/schedule/_/name/pit/year/2006/pittsburgh-penguins\">2005-06</option><option
+        value=\"http://espn.go.com/nhl/team/schedule/_/name/pit/year/2004/pittsburgh-penguins\">2003-04</option><option
+        value=\"http://espn.go.com/nhl/team/schedule/_/name/pit/year/2003/pittsburgh-penguins\">2002-03</option>\n
+        \                       </select>\n                    </form>\n                </div>\n
+        \               <div class=\"floatright cross-links tablehead\" style=\"width:
+        auto;\">\n                    <a href=\"http://espn.go.com/nhl/teams/printSchedule?team=pit&season=2015\"
+        rel=\"nofollow\" target=\"_blank\">Printable schedule &#187;</a>\n                    <br/>\n\t\t\t\t\t\n<style>\nul.dropdown
+        a { text-decoration: none; background:none !important; }\n/* LEVEL ONE */\nul.dropdown
+        {  \n\tposition:relative; \n\ttext-align:left !important;\n\tcolor: #666666;\n
+        \   float: left;\n    cursor:pointer;\n    z-index:999;\n}\nul.dropdown li
+        { \n\tfloat: left; \n\tzoom: 1; \n \tcolor:#225db7 !important; \n}\nul.dropdown
+        a:active { color: #ffa500; }\nul.dropdown li a { \n\tdisplay: block; \n\tpadding:
+        4px 8px; \n\tborder-right: 1px solid #333; \n\tcolor: #000;\n\tbackground:none;\n}\nul.dropdown
+        li:last-child a { border-right: none; } /* Doesn't work in IE */\nul.dropdown
+        li.hover, ul.dropdown li:hover { \n\tposition: relative; \n}\n/* LEVEL TWO
+        */\nul.dropdown ul { \n\twidth: 110px; \n\tvisibility: hidden; \n\tposition:
+        absolute; \n\ttop: 100%; \n\tleft: 0; \n\tborder-left: 1px solid #CCCCCC;\n
+        \   border-right: 1px solid #CCCCCC;\n}\n\nul.dropdown ul li { \n\tfont-weight:
+        normal; \n\tbackground: #fff;\n\tcolor: #225db7;\n\tborder-bottom: 1px solid
+        #ccc; \n\tborder-right: 1px solid #ccc; \n\tfloat: none;\n\twidth:100%;\n\tbackground:
+        #fff;\n}\nul.dropdown ul li:hover { \n\tbackground-color:#ccc;\n\tcolor:#fff;\n}\t\t\t\t\t\t\t\t
+        \ \n/* IE 6 & 7 Needs Inline Block */\nul.dropdown ul li a {\n\tborder-right:
+        none; \n\twidth: 100%; \n\tdisplay: inline-block;\n\tcolor: #225db7;\n\tbackground:none;\n}
+        \n</style>\n\n<ul class=\"dropdown\"><li><img style=\"vertical-align: text-bottom;\"
+        src=\"http://a.espncdn.com/prod/assets/calendar/calendar_icon-2.png\" />&nbsp;Export
+        Calendar<ul class=\"sub_menu\"><li><a target=\"_blank\" href=\"http://espn.go.com/travel/sports/calendar/export/espnCal?teams=9_16\"><img
+        style=\"vertical-align: text-bottom;\" src=\"http://a.espncdn.com/prod/assets/calendar/outlook.png\"
+        />&nbsp;Outlook &#187;</a></li><li><a target=\"_blank\" href=\"webcal://espn.go.com/travel/sports/calendar/export/espnCal?teams=9_16\"><img
+        style=\"vertical-align: text-bottom;\" src=\"http://a.espncdn.com/prod/assets/calendar/ical.png\"
+        />&nbsp;iCal &#187;</a></li><li><a target=\"_blank\" href=\"http://www.google.com/calendar/render?cid=http%3A%2F%2Fespn.go.com%2Ftravel%2Fsports%2fcalendar%2fexport%2fespnCal?teams=9_16\"><img
+        style=\"vertical-align: text-bottom;\" src=\"http://a.espncdn.com/prod/assets/calendar/google_cal.png\"
+        />&nbsp;Google Cal &#187;</a></li></ul></li></ul>\n<script>\njQuery(function(){\n\n
+        \   jQuery(\"ul.dropdown li\").hover(function(){\n        jQuery(this).addClass(\"hover\");\n
+        \       jQuery('ul:first',this).css('visibility', 'visible');\n    }, function(){\n
+        \       jQuery(this).removeClass(\"hover\");\n        jQuery('ul:first',this).css('visibility',
+        'hidden');\n    });\n\n});\n</script>\n\n                </div>\n                <br/>\n
+        \               <br/>\n                <div class=\"mod-container mod-table
+        mod-no-header-footer\"><div class=\"mod-content\"><table cellspacing=\"1\"
+        cellpadding=\"3\" class=\"tablehead\"><tr class=\"stathead\"><td colspan=\"9\">2015
+        Regular Season Schedule</td></tr><tr class=\"colhead\"><td>OCTOBER</td><td>OPPONENT</td><td>RESULT</td><td>W-L-OL</td><td>GOALIE</td><td>TOP
+        PERFORMER</td><td align=\"right\" title=\"Shots for - Shots against\">SF-SA</td><td
+        align=\"right\" title=\"Power play goals - opportunities\">PP</td><td align=\"right\"
+        title=\"Penalty kills - opportunities\">PK</td></tr><tr class=\"oddrow team-90-25\"><td>Thu,
+        Oct 9</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-25\"><a href=\"http://espn.go.com/nhl/team/_/name/ana/anaheim-ducks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/ana/anaheim-ducks\">Anaheim</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400564461\">6-4</a></li></ul></td><td>1-0-0</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/1147/pascal-dupuis\">Dupuis</a>,
+        G: 1, A: 3</td><td align=\"right\">39-29</td>\n<td align=\"right\">1-4</td>\n<td
+        align=\"right\">3-6</td>\n</tr><tr class=\"evenrow team-90-21\"><td>Sat, Oct
+        11</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-21\"><a href=\"http://espn.go.com/nhl/team/_/name/tor/toronto-maple-leafs\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/tor/toronto-maple-leafs\">Toronto</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400563879\">5-2</a></li></ul></td><td>2-0-0</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3699/patric-hornqvist\">Hornqvist</a>,
+        G: 1, A: 1</td><td align=\"right\">41-25</td>\n<td align=\"right\">3-5</td>\n<td
+        align=\"right\">3-5</td>\n</tr><tr class=\"oddrow team-90-9\"><td>Thu, Oct
+        16</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-9\"><a href=\"http://espn.go.com/nhl/team/_/name/dal/dallas-stars\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/dal/dallas-stars\">Dallas</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status loss\"><span class=\"redfont\">L</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400564462\">3-2</a></li></ul></td><td>2-1-0</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2179/chris-kunitz\">Kunitz</a>,
+        G: 1, A: 1</td><td align=\"right\">29-28</td>\n<td align=\"right\">2-4</td>\n<td
+        align=\"right\">3-4</td>\n</tr><tr class=\"evenrow team-90-12\"><td>Sat, Oct
+        18</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-12\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\">NY
+        Islanders</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        win\"><span class=\"greenfont\">W</span></li><li class=\"score\"><a href=\"/nhl/recap?gameId=400564316\">3-1</a></li></ul></td><td>3-1-0</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3699/patric-hornqvist\">Hornqvist</a>,
+        G: 2, A: 1</td><td align=\"right\">38-35</td>\n<td align=\"right\">2-4</td>\n<td
+        align=\"right\">7-7</td>\n</tr><tr class=\"oddrow team-90-15\"><td>Wed, Oct
+        22</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-15\"><a href=\"http://espn.go.com/nhl/team/_/name/phi/philadelphia-flyers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/phi/philadelphia-flyers\">Philadelphia</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status loss\"><span class=\"redfont\">L</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400564418\">5-3</a></li></ul></td><td>3-2-0</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/4887/nick-spaling\">Spaling</a>,
+        G: 1, A: 1</td><td align=\"right\">25-33</td>\n<td align=\"right\">0-2</td>\n<td
+        align=\"right\">2-2</td>\n</tr><tr class=\"evenrow team-90-5\"><td>Thu, Oct
+        23</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-5\"><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\">Detroit</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status loss\"><span class=\"redfont\">L</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400564087\">4-3 OT</a></li></ul></td><td>3-2-1</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3375/thomas-greiss\">Greiss</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3257/blake-comeau\">Comeau</a>,
+        G: 0, A: 2</td><td align=\"right\">26-31</td>\n<td align=\"right\">0-3</td>\n<td
+        align=\"right\">3-3</td>\n</tr><tr class=\"oddrow team-90-27\"><td>Sat, Oct
+        25</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-27\"><a href=\"http://espn.go.com/nhl/team/_/name/nsh/nashville-predators\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nsh/nashville-predators\">Nashville</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400564463\">3-0</a></li></ul></td><td>4-2-1</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a>,
+        SV%: 1.00</td><td align=\"right\">26-25</td>\n<td align=\"right\">2-3</td>\n<td
+        align=\"right\">3-3</td>\n</tr><tr class=\"evenrow team-90-11\"><td>Tue, Oct
+        28</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-11\"><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\">New
+        Jersey</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        win\"><span class=\"greenfont\">W</span></li><li class=\"score\"><a href=\"/nhl/recap?gameId=400564259\">8-3</a></li></ul></td><td>5-2-1</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3114/sidney-crosby\">Crosby</a>,
+        G: 2, A: 0</td><td align=\"right\">33-19</td>\n<td align=\"right\">3-7</td>\n<td
+        align=\"right\">3-3</td>\n</tr><tr class=\"oddrow team-90-8\"><td>Thu, Oct
+        30</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-8\"><a href=\"http://espn.go.com/nhl/team/_/name/la/los-angeles-kings\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/la/los-angeles-kings\">Los
+        Angeles</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        win\"><span class=\"greenfont\">W</span></li><li class=\"score\"><a href=\"/nhl/recap?gameId=400564464\">3-0</a></li></ul></td><td>6-2-1</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a>,
+        SV%: 1.00</td><td align=\"right\">23-36</td>\n<td align=\"right\">2-6</td>\n<td
+        align=\"right\">4-4</td>\n</tr><tr class=\"colhead\"><td>NOVEMBER</td><td>OPPONENT</td><td>RESULT</td><td>W-L-OL</td><td>GOALIE</td><td>TOP
+        PERFORMER</td><td align=\"right\" title=\"Shots for - Shots against\">SF-SA</td><td
+        align=\"right\" title=\"Power play goals - opportunities\">PP</td><td align=\"right\"
+        title=\"Penalty kills - opportunities\">PK</td></tr><tr class=\"oddrow team-90-2\"><td>Sat,
+        Nov 1</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-2\"><a href=\"http://espn.go.com/nhl/team/_/name/buf/buffalo-sabres\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/buf/buffalo-sabres\">Buffalo</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400563809\">5-0</a></li></ul></td><td>7-2-1</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2179/chris-kunitz\">Kunitz</a>,
+        G: 2, A: 1</td><td align=\"right\">34-18</td>\n<td align=\"right\">3-5</td>\n<td
+        align=\"right\">4-4</td>\n</tr><tr class=\"evenrow team-90-30\"><td>Tue, Nov
+        4</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-30\"><a href=\"http://espn.go.com/nhl/team/_/name/min/minnesota-wild\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/min/minnesota-wild\">Minnesota</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400564465\">4-1</a></li></ul></td><td>8-2-1</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3375/thomas-greiss\">Greiss</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3375/thomas-greiss\">Greiss</a>,
+        SV%: 0.97</td><td align=\"right\">22-34</td>\n<td align=\"right\">1-3</td>\n<td
+        align=\"right\">4-4</td>\n</tr><tr class=\"oddrow team-90-28\"><td>Thu, Nov
+        6</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-28\"><a href=\"http://espn.go.com/nhl/team/_/name/wpg/winnipeg-jets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/wpg/winnipeg-jets\">Winnipeg</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400564466\">4-3 SO</a></li></ul></td><td>9-2-1</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3791/brandon-sutter\">Sutter</a>,
+        G: 1, A: 2</td><td align=\"right\">35-37</td>\n<td align=\"right\">0-5</td>\n<td
+        align=\"right\">4-4</td>\n</tr><tr class=\"evenrow team-90-2\"><td>Sat, Nov
+        8</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-2\"><a href=\"http://espn.go.com/nhl/team/_/name/buf/buffalo-sabres\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/buf/buffalo-sabres\">Buffalo</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400563813\">6-1</a></li></ul></td><td>10-2-1</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3114/sidney-crosby\">Crosby</a>,
+        G: 0, A: 5</td><td align=\"right\">39-21</td>\n<td align=\"right\">2-5</td>\n<td
+        align=\"right\">3-3</td>\n</tr><tr class=\"oddrow team-90-13\"><td>Tue, Nov
+        11</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-13\"><a href=\"http://espn.go.com/nhl/team/_/name/nyr/new-york-rangers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nyr/new-york-rangers\">NY
+        Rangers</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        loss\"><span class=\"redfont\">L</span></li><li class=\"score\"><a href=\"/nhl/recap?gameId=400564374\">5-0</a></li></ul></td><td>10-3-1</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3124/evgeni-malkin\">Malkin</a>,
+        G: 0, A: 0</td><td align=\"right\">33-35</td>\n<td align=\"right\">0-3</td>\n<td
+        align=\"right\">3-4</td>\n</tr><tr class=\"evenrow team-90-21\"><td>Fri, Nov
+        14</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-21\"><a href=\"http://espn.go.com/nhl/team/_/name/tor/toronto-maple-leafs\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/tor/toronto-maple-leafs\">Toronto</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400563891\">2-1</a></li></ul></td><td>11-3-1</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3375/thomas-greiss\">Greiss</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3375/thomas-greiss\">Greiss</a>,
+        SV%: 0.97</td><td align=\"right\">40-31</td>\n<td align=\"right\">0-3</td>\n<td
+        align=\"right\">6-6</td>\n</tr><tr class=\"oddrow team-90-13\"><td>Sat, Nov
+        15</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-13\"><a href=\"http://espn.go.com/nhl/team/_/name/nyr/new-york-rangers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nyr/new-york-rangers\">NY
+        Rangers</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        win\"><span class=\"greenfont\">W</span></li><li class=\"score\"><a href=\"/nhl/recap?gameId=400564376\">3-2
+        SO</a></li></ul></td><td>12-3-1</td><td><a href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a>,
+        SV%: 0.94</td><td align=\"right\">38-31</td>\n<td align=\"right\">0-2</td>\n<td
+        align=\"right\">3-4</td>\n</tr><tr class=\"evenrow team-90-10\"><td>Tue, Nov
+        18</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-10\"><a href=\"http://espn.go.com/nhl/team/_/name/mtl/montreal-canadiens\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/mtl/montreal-canadiens\">Montreal</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400563966\">4-0</a></li></ul></td><td>13-3-1</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a>,
+        SV%: 1.00</td><td align=\"right\">22-27</td>\n<td align=\"right\">1-1</td>\n<td
+        align=\"right\">3-3</td>\n</tr><tr class=\"oddrow team-90-12\"><td>Fri, Nov
+        21</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-12\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\">NY
+        Islanders</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        loss\"><span class=\"redfont\">L</span></li><li class=\"score\"><a href=\"/nhl/recap?gameId=400564325\">5-4
+        SO</a></li></ul></td><td>13-3-2</td><td><a href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/1965/christian-ehrhoff\">Ehrhoff</a>,
+        G: 0, A: 1</td><td align=\"right\">30-35</td>\n<td align=\"right\">0-0</td>\n<td
+        align=\"right\">1-1</td>\n</tr><tr class=\"evenrow team-90-12\"><td>Sat, Nov
+        22</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-12\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\">NY
+        Islanders</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        loss\"><span class=\"redfont\">L</span></li><li class=\"score\"><a href=\"/nhl/recap?gameId=400564326\">4-1</a></li></ul></td><td>13-4-2</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3375/thomas-greiss\">Greiss</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/4887/nick-spaling\">Spaling</a>,
+        G: 0, A: 1</td><td align=\"right\">28-35</td>\n<td align=\"right\">0-1</td>\n<td
+        align=\"right\">1-2</td>\n</tr><tr class=\"oddrow team-90-1\"><td>Mon, Nov
+        24</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-1\"><a href=\"http://espn.go.com/nhl/team/_/name/bos/boston-bruins\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/bos/boston-bruins\">Boston</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400563740\">3-2 OT</a></li></ul></td><td>14-4-2</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3114/sidney-crosby\">Crosby</a>,
+        G: 1, A: 2</td><td align=\"right\">33-29</td>\n<td align=\"right\">1-3</td>\n<td
+        align=\"right\">2-2</td>\n</tr><tr class=\"evenrow team-90-21\"><td>Wed, Nov
+        26</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-21\"><a href=\"http://espn.go.com/nhl/team/_/name/tor/toronto-maple-leafs\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/tor/toronto-maple-leafs\">Toronto</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400563895\">4-3 OT</a></li></ul></td><td>15-4-2</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3257/blake-comeau\">Comeau</a>,
+        G: 3, A: 0</td><td align=\"right\">26-27</td>\n<td align=\"right\">1-3</td>\n<td
+        align=\"right\">3-3</td>\n</tr><tr class=\"oddrow team-90-7\"><td>Fri, Nov
+        28</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-7\"><a href=\"http://espn.go.com/nhl/team/_/name/car/carolina-hurricanes\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/car/carolina-hurricanes\">Carolina</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status loss\"><span class=\"redfont\">L</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400564467\">4-2</a></li></ul></td><td>15-5-2</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3699/patric-hornqvist\">Hornqvist</a>,
+        G: 1, A: 0</td><td align=\"right\">22-35</td>\n<td align=\"right\">0-1</td>\n<td
+        align=\"right\">1-3</td>\n</tr><tr class=\"evenrow team-90-7\"><td>Sat, Nov
+        29</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-7\"><a href=\"http://espn.go.com/nhl/team/_/name/car/carolina-hurricanes\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/car/carolina-hurricanes\">Carolina</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400564468\">3-2</a></li></ul></td><td>16-5-2</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3375/thomas-greiss\">Greiss</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3375/thomas-greiss\">Greiss</a>,
+        SV%: 0.94</td><td align=\"right\">33-34</td>\n<td align=\"right\">0-3</td>\n<td
+        align=\"right\">4-6</td>\n</tr><tr class=\"colhead\"><td>DECEMBER</td><td>OPPONENT</td><td>RESULT</td><td>W-L-OL</td><td>GOALIE</td><td>TOP
+        PERFORMER</td><td align=\"right\" title=\"Shots for - Shots against\">SF-SA</td><td
+        align=\"right\" title=\"Power play goals - opportunities\">PP</td><td align=\"right\"
+        title=\"Penalty kills - opportunities\">PK</td></tr><tr class=\"oddrow team-90-11\"><td>Tue,
+        Dec 2</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-11\"><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\">New
+        Jersey</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        win\"><span class=\"greenfont\">W</span></li><li class=\"score\"><a href=\"/nhl/recap?gameId=400564272\">1-0</a></li></ul></td><td>17-5-2</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a>,
+        SV%: 1.00</td><td align=\"right\">23-29</td>\n<td align=\"right\">0-2</td>\n<td
+        align=\"right\">4-4</td>\n</tr><tr class=\"evenrow team-90-22\"><td>Thu, Dec
+        4</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-22\"><a href=\"http://espn.go.com/nhl/team/_/name/van/vancouver-canucks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/van/vancouver-canucks\">Vancouver</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status loss\"><span class=\"redfont\">L</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400564469\">3-0</a></li></ul></td><td>17-6-2</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3375/thomas-greiss\">Greiss</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/3375/thomas-greiss\">Greiss</a>,
+        SV%: 0.90</td><td align=\"right\">21-31</td>\n<td align=\"right\">0-3</td>\n<td
+        align=\"right\">2-2</td>\n</tr><tr class=\"oddrow team-90-14\"><td>Sat, Dec
+        6</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-14\"><a href=\"http://espn.go.com/nhl/team/_/name/ott/ottawa-senators\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/ott/ottawa-senators\">Ottawa</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400564045\">3-2</a></li></ul></td><td>18-6-2</td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a></td><td><a
+        href=\"http://espn.go.com/nhl/player/_/id/2346/marc-andre-fleury\">Fleury</a>,
+        SV%: 0.93</td><td align=\"right\">33-29</td>\n<td align=\"right\">1-4</td>\n<td
+        align=\"right\">4-5</td>\n</tr><tr class=\"colhead\"><td>DECEMBER</td><td>OPPONENT</td><td>TIME
+        (ET)</td><td>TV</td><td>LOCAL TV</td><td colspan=\"4\">TICKETS</td></tr><tr
+        class=\"oddrow team-90-13\"><td>Mon, Dec 8</td><td><ul class=\"game-schedule\"><li
+        class=\"game-status\">@</li><li class=\"team-logo-small logo-nhl-small nhl-small-13\"><a
+        href=\"http://espn.go.com/nhl/team/_/name/nyr/new-york-rangers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nyr/new-york-rangers\">NY
+        Rangers</a></li></ul></td><td>7:00 PM</td><td align=\"center\">SPNET</td>\n<td>ROOT</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/new-york-rangers-new-york-madison-square-garden-12-8-2014-9075317?gcid=C12289x466&keyword=NHL+Team+Schedule+New+York+Rangers+20141208\">653
+        available from $90</a></td></tr><tr class=\"evenrow team-90-3\"><td>Fri, Dec
+        12</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-3\"><a href=\"http://espn.go.com/nhl/team/_/name/cgy/calgary-flames\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/cgy/calgary-flames\">Calgary</a></li></ul></td><td>7:00
+        PM</td><td align=\"center\">TVA</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-12-12-2014-9075988?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20141212\">625
+        available from $60</a></td></tr><tr class=\"oddrow team-90-29\"><td>Sat, Dec
+        13</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-29\"><a href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\">Columbus</a></li></ul></td><td>7:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/columbus-blue-jackets-columbus-nationwide-arena-12-13-2014-9076348?gcid=C12289x466&keyword=NHL+Team+Schedule+Columbus+Blue+Jackets+20141213\">958
+        available from $50</a></td></tr><tr class=\"evenrow team-90-20\"><td>Mon,
+        Dec 15</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-20\"><a href=\"http://espn.go.com/nhl/team/_/name/tb/tampa-bay-lightning\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/tb/tampa-bay-lightning\">Tampa
+        Bay</a></li></ul></td><td>7:00 PM</td><td align=\"center\">NBCSN</td>\n<td>ROOT</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-12-15-2014-9076012?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20141215\">575
+        available from $59</a></td></tr><tr class=\"oddrow team-90-17\"><td>Thu, Dec
+        18</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-17\"><a href=\"http://espn.go.com/nhl/team/_/name/col/colorado-avalanche\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/col/colorado-avalanche\">Colorado</a></li></ul></td><td>7:00
+        PM</td><td align=\"center\">NHL</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-12-18-2014-9075957?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20141218\">541
+        available from $62</a></td></tr><tr class=\"evenrow team-90-26\"><td>Sat,
+        Dec 20</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-26\"><a href=\"http://espn.go.com/nhl/team/_/name/fla/florida-panthers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/fla/florida-panthers\">Florida</a></li></ul></td><td>7:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-12-20-2014-9076030?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20141220\">443
+        available from $88</a></td></tr><tr class=\"oddrow team-90-26\"><td>Mon, Dec
+        22</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-26\"><a href=\"http://espn.go.com/nhl/team/_/name/fla/florida-panthers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/fla/florida-panthers\">Florida</a></li></ul></td><td>7:30
+        PM</td><td align=\"center\">SPNET</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/florida-panthers-sunrise-bb-t-center-12-22-2014-9076061?gcid=C12289x466&keyword=NHL+Team+Schedule+Florida+Panthers+20141222\">671
+        available from $35</a></td></tr><tr class=\"evenrow team-90-20\"><td>Tue,
+        Dec 23</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-20\"><a href=\"http://espn.go.com/nhl/team/_/name/tb/tampa-bay-lightning\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/tb/tampa-bay-lightning\">Tampa
+        Bay</a></li></ul></td><td>7:30 PM</td><td align=\"center\">TVA</td>\n<td>ROOT</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/tampa-bay-lightning-tampa-tampa-bay-times-forum-12-23-2014-9075492?gcid=C12289x466&keyword=NHL+Team+Schedule+Tampa+Bay+Lightning+20141223\">1,255
+        available from $52</a></td></tr><tr class=\"oddrow team-90-23\"><td>Sat, Dec
+        27</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-23\"><a href=\"http://espn.go.com/nhl/team/_/name/wsh/washington-capitals\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/wsh/washington-capitals\">Washington</a></li></ul></td><td>7:30
+        PM</td><td align=\"center\">NBCSN</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-12-27-2014-9075973?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20141227\">287
+        available from $143</a></td></tr><tr class=\"evenrow team-90-11\"><td>Mon,
+        Dec 29</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-11\"><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\">New
+        Jersey</a></li></ul></td><td>7:00 PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/new-jersey-devils-newark-prudential-center-12-29-2014-9076568?gcid=C12289x466&keyword=NHL+Team+Schedule+New+Jersey+Devils+20141229\">2,040
+        available from $71</a></td></tr><tr class=\"oddrow team-90-7\"><td>Wed, Dec
+        31</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-7\"><a href=\"http://espn.go.com/nhl/team/_/name/car/carolina-hurricanes\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/car/carolina-hurricanes\">Carolina</a></li></ul></td><td>7:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-12-31-2014-9075999?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20141231\">738
+        available from $80</a></td></tr><tr class=\"colhead\"><td>JANUARY</td><td>OPPONENT</td><td>TIME
+        (ET)</td><td>TV</td><td>LOCAL TV</td><td colspan=\"4\">TICKETS</td></tr><tr
+        class=\"oddrow team-90-20\"><td>Fri, Jan 2</td><td><ul class=\"game-schedule\"><li
+        class=\"game-status\">vs</li><li class=\"team-logo-small logo-nhl-small nhl-small-20\"><a
+        href=\"http://espn.go.com/nhl/team/_/name/tb/tampa-bay-lightning\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/tb/tampa-bay-lightning\">Tampa
+        Bay</a></li></ul></td><td>7:00 PM</td><td align=\"center\">TVA</td>\n<td>ROOT</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-1-2-2015-9076015?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150102\">601
+        available from $98</a></td></tr><tr class=\"evenrow team-90-10\"><td>Sat,
+        Jan 3</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-10\"><a href=\"http://espn.go.com/nhl/team/_/name/mtl/montreal-canadiens\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/mtl/montreal-canadiens\">Montreal</a></li></ul></td><td>7:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-1-3-2015-9075971?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150103\">357
+        available from $123</a></td></tr><tr class=\"oddrow team-90-1\"><td>Wed, Jan
+        7</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-1\"><a href=\"http://espn.go.com/nhl/team/_/name/bos/boston-bruins\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/bos/boston-bruins\">Boston</a></li></ul></td><td>8:00
+        PM</td><td align=\"center\">NBCSN</td>\n<td></td>\n<td colspan=\"4\"><a href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-1-7-2015-9075969?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150107\">651
+        available from $70</a></td></tr><tr class=\"evenrow team-90-10\"><td>Sat,
+        Jan 10</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-10\"><a href=\"http://espn.go.com/nhl/team/_/name/mtl/montreal-canadiens\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/mtl/montreal-canadiens\">Montreal</a></li></ul></td><td>7:00
+        PM</td><td align=\"center\">NHL</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/montreal-canadiens-montreal-bell-centre-1-10-2015-9075593?gcid=C12289x466&keyword=NHL+Team+Schedule+Montreal+Canadiens+20150110\">707
+        available from $89</a></td></tr><tr class=\"oddrow team-90-30\"><td>Tue, Jan
+        13</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-30\"><a href=\"http://espn.go.com/nhl/team/_/name/min/minnesota-wild\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/min/minnesota-wild\">Minnesota</a></li></ul></td><td>7:00
+        PM</td><td align=\"center\">NBCSN</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-1-13-2015-9076063?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150113\">647
+        available from $63</a></td></tr><tr class=\"evenrow team-90-12\"><td>Fri,
+        Jan 16</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-12\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\">NY
+        Islanders</a></li></ul></td><td>7:00 PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/new-york-islanders-uniondale-nassau-coliseum-1-16-2015-9075825?gcid=C12289x466&keyword=NHL+Team+Schedule+New+York+Islanders+20150116\">2,870
+        available from $47</a></td></tr><tr class=\"oddrow team-90-13\"><td>Sun, Jan
+        18</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-13\"><a href=\"http://espn.go.com/nhl/team/_/name/nyr/new-york-rangers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nyr/new-york-rangers\">NY
+        Rangers</a></li></ul></td><td>12:30 PM</td><td align=\"center\">NBC</td>\n<td></td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-1-18-2015-9076039?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150118\">477
+        available from $97</a></td></tr><tr class=\"evenrow team-90-15\"><td>Tue,
+        Jan 20</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-15\"><a href=\"http://espn.go.com/nhl/team/_/name/phi/philadelphia-flyers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/phi/philadelphia-flyers\">Philadelphia</a></li></ul></td><td>7:30
+        PM</td><td align=\"center\">NBCSN</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/philadelphia-flyers-philadelphia-wells-fargo-center-philadelphia-1-20-2015-9076168?gcid=C12289x466&keyword=NHL+Team+Schedule+Philadelphia+Flyers+20150120\">2,479
+        available from $70</a></td></tr><tr class=\"oddrow team-90-4\"><td>Wed, Jan
+        21</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-4\"><a href=\"http://espn.go.com/nhl/team/_/name/chi/chicago-blackhawks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/chi/chicago-blackhawks\">Chicago</a></li></ul></td><td>8:00
+        PM</td><td align=\"center\">NBCSN</td>\n<td></td>\n<td colspan=\"4\"><a href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-1-21-2015-9075961?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150121\">780
+        available from $75</a></td></tr><tr class=\"evenrow team-90-28\"><td>Tue,
+        Jan 27</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-28\"><a href=\"http://espn.go.com/nhl/team/_/name/wpg/winnipeg-jets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/wpg/winnipeg-jets\">Winnipeg</a></li></ul></td><td>7:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-1-27-2015-9076007?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150127\">691
+        available from $58</a></td></tr><tr class=\"oddrow team-90-23\"><td>Wed, Jan
+        28</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-23\"><a href=\"http://espn.go.com/nhl/team/_/name/wsh/washington-capitals\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/wsh/washington-capitals\">Washington</a></li></ul></td><td>8:00
+        PM</td><td align=\"center\">NBCSN</td>\n<td></td>\n<td colspan=\"4\"><a href=\"http://www.stubhub.com/washington-capitals-washington-verizon-center-washington-dc-1-28-2015-9076437?gcid=C12289x466&keyword=NHL+Team+Schedule+Washington+Capitals+20150128\">2,259
+        available from $60</a></td></tr><tr class=\"evenrow team-90-11\"><td>Fri,
+        Jan 30</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-11\"><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\">New
+        Jersey</a></li></ul></td><td>7:00 PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/new-jersey-devils-newark-prudential-center-1-30-2015-9076569?gcid=C12289x466&keyword=NHL+Team+Schedule+New+Jersey+Devils+20150130\">2,300
+        available from $64</a></td></tr><tr class=\"colhead\"><td>FEBRUARY</td><td>OPPONENT</td><td>TIME
+        (ET)</td><td>TV</td><td>LOCAL TV</td><td colspan=\"4\">TICKETS</td></tr><tr
+        class=\"oddrow team-90-27\"><td>Sun, Feb 1</td><td><ul class=\"game-schedule\"><li
+        class=\"game-status\">vs</li><li class=\"team-logo-small logo-nhl-small nhl-small-27\"><a
+        href=\"http://espn.go.com/nhl/team/_/name/nsh/nashville-predators\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nsh/nashville-predators\">Nashville</a></li></ul></td><td>2:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-2-1-2015-9076034?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150201\">647
+        available from $79</a></td></tr><tr class=\"evenrow team-90-6\"><td>Wed, Feb
+        4</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-6\"><a href=\"http://espn.go.com/nhl/team/_/name/edm/edmonton-oilers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/edm/edmonton-oilers\">Edmonton</a></li></ul></td><td>8:00
+        PM</td><td align=\"center\">SPNET</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/edmonton-oilers-edmonton-rexall-place-2-4-2015-9075795?gcid=C12289x466&keyword=NHL+Team+Schedule+Edmonton+Oilers+20150204\">997
+        available from $85</a></td></tr><tr class=\"oddrow team-90-3\"><td>Fri, Feb
+        6</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-3\"><a href=\"http://espn.go.com/nhl/team/_/name/cgy/calgary-flames\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/cgy/calgary-flames\">Calgary</a></li></ul></td><td>9:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/calgary-flames-calgary-scotiabank-saddledome-2-6-2015-9075637?gcid=C12289x466&keyword=NHL+Team+Schedule+Calgary+Flames+20150206\">549
+        available from $85</a></td></tr><tr class=\"evenrow team-90-22\"><td>Sat,
+        Feb 7</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-22\"><a href=\"http://espn.go.com/nhl/team/_/name/van/vancouver-canucks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/van/vancouver-canucks\">Vancouver</a></li></ul></td><td>10:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/vancouver-canucks-vancouver-rogers-arena-2-7-2015-9076397?gcid=C12289x466&keyword=NHL+Team+Schedule+Vancouver+Canucks+20150207\">799
+        available from $120</a></td></tr><tr class=\"oddrow team-90-5\"><td>Wed, Feb
+        11</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-5\"><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\">Detroit</a></li></ul></td><td>8:00
+        PM</td><td align=\"center\">NBCSN</td>\n<td></td>\n<td colspan=\"4\"><a href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-2-11-2015-9076040?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150211\">803
+        available from $58</a></td></tr><tr class=\"evenrow team-90-14\"><td>Thu,
+        Feb 12</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-14\"><a href=\"http://espn.go.com/nhl/team/_/name/ott/ottawa-senators\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/ott/ottawa-senators\">Ottawa</a></li></ul></td><td>7:30
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/ottawa-senators-ottawa-canadian-tire-centre-2-12-2015-9075802?gcid=C12289x466&keyword=NHL+Team+Schedule+Ottawa+Senators+20150212\">876
+        available from $43</a></td></tr><tr class=\"oddrow team-90-4\"><td>Sun, Feb
+        15</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-4\"><a href=\"http://espn.go.com/nhl/team/_/name/chi/chicago-blackhawks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/chi/chicago-blackhawks\">Chicago</a></li></ul></td><td>12:30
+        PM</td><td align=\"center\">NBC</td>\n<td></td>\n<td colspan=\"4\"><a href=\"http://www.stubhub.com/chicago-blackhawks-chicago-united-center-2-15-2015-9075363?gcid=C12289x466&keyword=NHL+Team+Schedule+Chicago+Blackhawks+20150215\">2,569
+        available from $69</a></td></tr><tr class=\"evenrow team-90-23\"><td>Tue,
+        Feb 17</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-23\"><a href=\"http://espn.go.com/nhl/team/_/name/wsh/washington-capitals\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/wsh/washington-capitals\">Washington</a></li></ul></td><td>7:00
+        PM</td><td align=\"center\">RSNE</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-2-17-2015-9075974?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150217\">745
+        available from $68</a></td></tr><tr class=\"oddrow team-90-29\"><td>Thu, Feb
+        19</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-29\"><a href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\">Columbus</a></li></ul></td><td>7:00
+        PM</td><td align=\"center\">NBCSN</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-2-19-2015-9075963?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150219\">828
+        available from $58</a></td></tr><tr class=\"evenrow team-90-19\"><td>Sat,
+        Feb 21</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-19\"><a href=\"http://espn.go.com/nhl/team/_/name/stl/st-louis-blues\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/stl/st-louis-blues\">St.
+        Louis</a></li></ul></td><td>8:00 PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/st-louis-blues-saint-louis-scottrade-center-2-21-2015-9076303?gcid=C12289x466&keyword=NHL+Team+Schedule+St.+Louis+Blues+20150221\">3,527
+        available from $69</a></td></tr><tr class=\"oddrow team-90-26\"><td>Sun, Feb
+        22</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-26\"><a href=\"http://espn.go.com/nhl/team/_/name/fla/florida-panthers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/fla/florida-panthers\">Florida</a></li></ul></td><td>6:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-2-22-2015-9076033?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150222\">796
+        available from $68</a></td></tr><tr class=\"evenrow team-90-23\"><td>Wed,
+        Feb 25</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-23\"><a href=\"http://espn.go.com/nhl/team/_/name/wsh/washington-capitals\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/wsh/washington-capitals\">Washington</a></li></ul></td><td>8:00
+        PM</td><td align=\"center\">NBCSN</td>\n<td></td>\n<td colspan=\"4\"><a href=\"http://www.stubhub.com/washington-capitals-washington-verizon-center-washington-dc-2-25-2015-9076436?gcid=C12289x466&keyword=NHL+Team+Schedule+Washington+Capitals+20150225\">2,770
+        available from $56</a></td></tr><tr class=\"colhead\"><td>MARCH</td><td>OPPONENT</td><td>TIME
+        (ET)</td><td>TV</td><td>LOCAL TV</td><td colspan=\"4\">TICKETS</td></tr><tr
+        class=\"oddrow team-90-29\"><td>Sun, Mar 1</td><td><ul class=\"game-schedule\"><li
+        class=\"game-status\">vs</li><li class=\"team-logo-small logo-nhl-small nhl-small-29\"><a
+        href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\">Columbus</a></li></ul></td><td>5:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-3-1-2015-9075965?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150301\">856
+        available from $68</a></td></tr><tr class=\"evenrow team-90-17\"><td>Wed,
+        Mar 4</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-17\"><a href=\"http://espn.go.com/nhl/team/_/name/col/colorado-avalanche\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/col/colorado-avalanche\">Colorado</a></li></ul></td><td>10:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/colorado-avalanche-denver-pepsi-center-3-4-2015-9075713?gcid=C12289x466&keyword=NHL+Team+Schedule+Colorado+Avalanche+20150304\">1,875
+        available from $41</a></td></tr><tr class=\"oddrow team-90-25\"><td>Fri, Mar
+        6</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-25\"><a href=\"http://espn.go.com/nhl/team/_/name/ana/anaheim-ducks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/ana/anaheim-ducks\">Anaheim</a></li></ul></td><td>10:00
+        PM</td><td align=\"center\">SNO</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/anaheim-ducks-anaheim-honda-center-3-6-2015-9075463?gcid=C12289x466&keyword=NHL+Team+Schedule+Anaheim+Ducks+20150306\">2,246
+        available from $46</a></td></tr><tr class=\"evenrow team-90-8\"><td>Sat, Mar
+        7</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-8\"><a href=\"http://espn.go.com/nhl/team/_/name/la/los-angeles-kings\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/la/los-angeles-kings\">Los
+        Angeles</a></li></ul></td><td>10:00 PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/los-angeles-kings-los-angeles-staples-center-3-7-2015-9075294?gcid=C12289x466&keyword=NHL+Team+Schedule+Los+Angeles+Kings+20150307\">2,773
+        available from $75</a></td></tr><tr class=\"oddrow team-90-18\"><td>Mon, Mar
+        9</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-18\"><a href=\"http://espn.go.com/nhl/team/_/name/sj/san-jose-sharks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/sj/san-jose-sharks\">San
+        Jose</a></li></ul></td><td>10:00 PM</td><td align=\"center\">NBCSN</td>\n<td>ROOT</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/san-jose-sharks-san-jose-sap-center-3-9-2015-9075544?gcid=C12289x466&keyword=NHL+Team+Schedule+San+Jose+Sharks+20150309\">2,411
+        available from $55</a></td></tr><tr class=\"evenrow team-90-6\"><td>Thu, Mar
+        12</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-6\"><a href=\"http://espn.go.com/nhl/team/_/name/edm/edmonton-oilers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/edm/edmonton-oilers\">Edmonton</a></li></ul></td><td>7:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-3-12-2015-9076024?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150312\">800
+        available from $58</a></td></tr><tr class=\"oddrow team-90-1\"><td>Sat, Mar
+        14</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-1\"><a href=\"http://espn.go.com/nhl/team/_/name/bos/boston-bruins\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/bos/boston-bruins\">Boston</a></li></ul></td><td>1:00
+        PM</td><td align=\"center\">NHL</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-3-14-2015-9075970?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150314\">670
+        available from $83</a></td></tr><tr class=\"evenrow team-90-5\"><td>Sun, Mar
+        15</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-5\"><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\">Detroit</a></li></ul></td><td>12:30
+        PM</td><td align=\"center\">NBC</td>\n<td></td>\n<td colspan=\"4\"><a href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-3-15-2015-9076045?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150315\">913
+        available from $78</a></td></tr><tr class=\"oddrow team-90-11\"><td>Tue, Mar
+        17</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-11\"><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\">New
+        Jersey</a></li></ul></td><td>7:00 PM</td><td align=\"center\">RSNE</td>\n<td>ROOT</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/new-jersey-devils-newark-prudential-center-3-17-2015-9076570?gcid=C12289x466&keyword=NHL+Team+Schedule+New+Jersey+Devils+20150317\">2,441
+        available from $66</a></td></tr><tr class=\"evenrow team-90-9\"><td>Thu, Mar
+        19</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-9\"><a href=\"http://espn.go.com/nhl/team/_/name/dal/dallas-stars\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/dal/dallas-stars\">Dallas</a></li></ul></td><td>8:30
+        PM</td><td align=\"center\">NHL</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/dallas-stars-dallas-american-airlines-center-3-19-2015-9075936?gcid=C12289x466&keyword=NHL+Team+Schedule+Dallas+Stars+20150319\">835
+        available from $55</a></td></tr><tr class=\"oddrow team-90-24\"><td>Sat, Mar
+        21</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-24\"><a href=\"http://espn.go.com/nhl/team/_/name/ari/arizona-coyotes\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/ari/arizona-coyotes\">Arizona</a></li></ul></td><td>9:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/arizona-coyotes-tickets/?gcid=C12289x466&keyword=NHL+Team+Schedule+Arizona+Coyotes+20150321\">Buy
+        on StubHub</a></td></tr><tr class=\"evenrow team-90-19\"><td>Tue, Mar 24</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nhl-small nhl-small-19\"><a href=\"http://espn.go.com/nhl/team/_/name/stl/st-louis-blues\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/stl/st-louis-blues\">St.
+        Louis</a></li></ul></td><td>7:00 PM</td><td align=\"center\">TVA</td>\n<td>ROOT</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-3-24-2015-9075968?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150324\">838
+        available from $58</a></td></tr><tr class=\"oddrow team-90-7\"><td>Thu, Mar
+        26</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-7\"><a href=\"http://espn.go.com/nhl/team/_/name/car/carolina-hurricanes\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/car/carolina-hurricanes\">Carolina</a></li></ul></td><td>7:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/carolina-hurricanes-raleigh-pnc-arena-3-26-2015-9076523?gcid=C12289x466&keyword=NHL+Team+Schedule+Carolina+Hurricanes+20150326\">1,214
+        available from $30</a></td></tr><tr class=\"evenrow team-90-24\"><td>Sat,
+        Mar 28</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-24\"><a href=\"http://espn.go.com/nhl/team/_/name/ari/arizona-coyotes\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/ari/arizona-coyotes\">Arizona</a></li></ul></td><td>1:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-3-28-2015-9075976?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150328\">749
+        available from $71</a></td></tr><tr class=\"oddrow team-90-18\"><td>Sun, Mar
+        29</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-18\"><a href=\"http://espn.go.com/nhl/team/_/name/sj/san-jose-sharks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/sj/san-jose-sharks\">San
+        Jose</a></li></ul></td><td>7:30 PM</td><td align=\"center\">NBCSN</td>\n<td>ROOT</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-3-29-2015-9076056?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150329\">814
+        available from $61</a></td></tr><tr class=\"colhead\"><td>APRIL</td><td>OPPONENT</td><td>TIME
+        (ET)</td><td>TV</td><td>LOCAL TV</td><td colspan=\"4\">TICKETS</td></tr><tr
+        class=\"oddrow team-90-15\"><td>Wed, Apr 1</td><td><ul class=\"game-schedule\"><li
+        class=\"game-status\">vs</li><li class=\"team-logo-small logo-nhl-small nhl-small-15\"><a
+        href=\"http://espn.go.com/nhl/team/_/name/phi/philadelphia-flyers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/phi/philadelphia-flyers\">Philadelphia</a></li></ul></td><td>8:00
+        PM</td><td align=\"center\">NBCSN</td>\n<td></td>\n<td colspan=\"4\"><a href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-4-1-2015-9075992?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150401\">780
+        available from $75</a></td></tr><tr class=\"evenrow team-90-29\"><td>Sat,
+        Apr 4</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-29\"><a href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\">Columbus</a></li></ul></td><td>2:00
+        PM</td><td align=\"center\">NHL</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/columbus-blue-jackets-columbus-nationwide-arena-4-4-2015-9076349?gcid=C12289x466&keyword=NHL+Team+Schedule+Columbus+Blue+Jackets+20150404\">1,343
+        available from $55</a></td></tr><tr class=\"oddrow team-90-15\"><td>Sun, Apr
+        5</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-15\"><a href=\"http://espn.go.com/nhl/team/_/name/phi/philadelphia-flyers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/phi/philadelphia-flyers\">Philadelphia</a></li></ul></td><td>12:30
+        PM</td><td align=\"center\">NBC</td>\n<td></td>\n<td colspan=\"4\"><a href=\"http://www.stubhub.com/philadelphia-flyers-philadelphia-wells-fargo-center-philadelphia-4-5-2015-9076169?gcid=C12289x466&keyword=NHL+Team+Schedule+Philadelphia+Flyers+20150405\">3,121
+        available from $79</a></td></tr><tr class=\"evenrow team-90-14\"><td>Tue,
+        Apr 7</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-14\"><a href=\"http://espn.go.com/nhl/team/_/name/ott/ottawa-senators\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/ott/ottawa-senators\">Ottawa</a></li></ul></td><td>7:30
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/ottawa-senators-ottawa-canadian-tire-centre-4-7-2015-9075834?gcid=C12289x466&keyword=NHL+Team+Schedule+Ottawa+Senators+20150407\">1,043
+        available from $41</a></td></tr><tr class=\"oddrow team-90-12\"><td>Fri, Apr
+        10</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-12\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\">NY
+        Islanders</a></li></ul></td><td>7:00 PM</td><td align=\"center\">SPNET</td>\n<td>ROOT</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/pittsburgh-penguins-pittsburgh-consol-energy-center-4-10-2015-9076004?gcid=C12289x466&keyword=NHL+Team+Schedule+Pittsburgh+Penguins+20150410\">762
+        available from $88</a></td></tr><tr class=\"evenrow team-90-2\"><td>Sat, Apr
+        11</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-2\"><a href=\"http://espn.go.com/nhl/team/_/name/buf/buffalo-sabres\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/buf/buffalo-sabres\">Buffalo</a></li></ul></td><td>7:00
+        PM</td><td align=\"center\">&nbsp;</td>\n<td>ROOT</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/buffalo-sabres-buffalo-first-niagara-center-4-11-2015-9076269?gcid=C12289x466&keyword=NHL+Team+Schedule+Buffalo+Sabres+20150411\">1,760
+        available from $47</a></td></tr><tr class=\"stathead\"><td colspan=\"9\">2015
+        Preseason Schedule</td></tr><tr class=\"colhead\"><td>SEPTEMBER</td><td>OPPONENT</td><td>RESULT</td><td>W-L-OL</td><td
+        colspan=\"5\">LOCATION</td></tr><tr class=\"oddrow team-90-5\"><td>Mon, Sep
+        22</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-5\"><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\">Detroit</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status loss\"><span class=\"redfont\">L</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400567184\">2-1</a></li></ul></td><td>0-1-0</td><td
+        colspan=\"5\">CONSOL Energy Center</td></tr><tr class=\"evenrow team-90-29\"><td>Tue,
+        Sep 23</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-29\"><a href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\">Columbus</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status loss\"><span class=\"redfont\">L</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400567189\">2-0</a></li></ul></td><td>0-2-0</td><td
+        colspan=\"5\">Nationwide Arena</td></tr><tr class=\"oddrow team-90-30\"><td>Thu,
+        Sep 25</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-30\"><a href=\"http://espn.go.com/nhl/team/_/name/min/minnesota-wild\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/min/minnesota-wild\">Minnesota</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400567216\">3-2 OT</a></li></ul></td><td>1-2-0</td><td
+        colspan=\"5\">CONSOL Energy Center</td></tr><tr class=\"evenrow team-90-29\"><td>Sat,
+        Sep 27</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-29\"><a href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\">Columbus</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400567191\">2-1</a></li></ul></td><td>2-2-0</td><td
+        colspan=\"5\">CONSOL Energy Center</td></tr><tr class=\"oddrow team-90-30\"><td>Mon,
+        Sep 29</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-30\"><a href=\"http://espn.go.com/nhl/team/_/name/min/minnesota-wild\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/min/minnesota-wild\">Minnesota</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status loss\"><span class=\"redfont\">L</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400567218\">4-1</a></li></ul></td><td>2-3-0</td><td
+        colspan=\"5\">Xcel Energy Center</td></tr><tr class=\"colhead\"><td>OCTOBER</td><td>OPPONENT</td><td>RESULT</td><td>W-L-OL</td><td
+        colspan=\"5\">LOCATION</td></tr><tr class=\"oddrow team-90-5\"><td>Wed, Oct
+        1</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nhl-small nhl-small-5\"><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\">Detroit</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nhl/recap?gameId=400567187\">2-0</a></li></ul></td><td>3-3-0</td><td
+        colspan=\"5\">Joe Louis Arena</td></tr></table></div></div><!-- begin sponsored
+        links -->\n<div id=\"sponsored\" class=\"mod-container mod-no-footer\">\n<!--
+        begin sp links -->\n<div style=\"margin: 10px 0 0 0;\">\n<!-- CONTENT: 09stats758,
+        SPORT: nhl--><div style=\"margin:0px 0px 5px 0px; text-align: center; width:
+        758px;\"><ins id=\"splinks-3834\"></ins>\n        <script type=\"text/javascript\">\n
+        \           (function($) {\n                // config params\n                var
+        width = '758',\n                    height = '300',\n                    client
+        = 'ca-espn-q-teams',\n                    channel = 'nhl bottom',\n                    lang
+        = 'null';\n\n                // builds iframe HTML\n                function
+        buildIframe(width, height, client, channel) {\n                    var path
+        = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
+        \                   // pass params as the hash as they are only needed on
+        the client\n                    var hash = '3834|' + width + '|' + height
+        + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
+        = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
+        + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
+        \                   return iframe;\n                }\n\n                //
+        handles messages from child iframe\n                function handleMessage(event)
+        {\n                    if (event.origin === 'http://sports-ak.espn.go.com')
+        {\n                        $('#splinks-' + event.data).html('<!-- no ads served
+        -->');\n                    }\n                }\n\n                if (typeof
+        window.addEventListener === 'function') {\n                    window.addEventListener('message',
+        handleMessage, false);\n                } else {\n                    window.attachEvent('onmessage',
+        handleMessage);\n                }\n\n                // insert the iframe\n
+        \               if (espn.geo) {\n                    espn.geo.getLocation().done(function(loc)
+        {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
+        || espn.core.android) {\n                            // outside US or not
+        on desktop\n                            client = 'ca-espn-nq';\n                        }\n
+        \                       $('#splinks-3834').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-3834').html(buildIframe(width,
+        height, 'ca-espn-nq', channel));\n                    });\n                }
+        else {\n                    // can't locate them, assume they are outside
+        US\n                    $('#splinks-3834').html(buildIframe(width, height,
+        'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
+        \   </div></div>\n<!-- end sp links -->\n</div>\n<!-- end sponsored links
+        -->\n\n            </div>\n            <div class=\"col-ad-160\">\n                <div
+        class=\"ad-box\"><!-- begin Poster --><div class=\"gutter\"><!--espn.us.com.nhl
+        sitezone-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nhl\",ad_zone=\"nhlteamschedule\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Poster;\"+ad_u+\"sz=160x600,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Poster\" data-cb-dfp-id=\"'+ad_kvps+'sz=160x600,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nhl/nhlteamschedule;pgtyp=nhlteamschedule;sp=espn;sz=160x600,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlteamschedule;pgtyp=nhlteamschedule;sp=espn;sz=160x600,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div><!-- end Poster -->\n</div><div><!--
+        CONTENT: 09storyright160, SPORT: nhl--><div style=\"margin:0px 0px 5px 0px;
+        text-align: center; width: 160px;\"><ins id=\"splinks-8840\"></ins>\n        <script
+        type=\"text/javascript\">\n            (function($) {\n                //
+        config params\n                var width = '160',\n                    height
+        = '400',\n                    client = 'ca-espn-q-teams',\n                    channel
+        = 'nhl right',\n                    lang = 'null';\n\n                // builds
+        iframe HTML\n                function buildIframe(width, height, client, channel)
+        {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
+        \                   // pass params as the hash as they are only needed on
+        the client\n                    var hash = '8840|' + width + '|' + height
+        + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
+        = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
+        + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
+        \                   return iframe;\n                }\n\n                //
+        handles messages from child iframe\n                function handleMessage(event)
+        {\n                    if (event.origin === 'http://sports-ak.espn.go.com')
+        {\n                        $('#splinks-' + event.data).html('<!-- no ads served
+        -->');\n                    }\n                }\n\n                if (typeof
+        window.addEventListener === 'function') {\n                    window.addEventListener('message',
+        handleMessage, false);\n                } else {\n                    window.attachEvent('onmessage',
+        handleMessage);\n                }\n\n                // insert the iframe\n
+        \               if (espn.geo) {\n                    espn.geo.getLocation().done(function(loc)
+        {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
+        || espn.core.android) {\n                            // outside US or not
+        on desktop\n                            client = 'ca-espn-nq';\n                        }\n
+        \                       $('#splinks-8840').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-8840').html(buildIframe(width,
+        height, 'ca-espn-nq', channel));\n                    });\n                }
+        else {\n                    // can't locate them, assume they are outside
+        US\n                    $('#splinks-8840').html(buildIframe(width, height,
+        'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
+        \   </div></div>\n            </div>\n            <div class=\"span-6\">\n
+        \               <div class=\"mod-container mod-team-footer\"><div class=\"logo-medium
+        logo-nhl-medium nhl-medium-16\"></div><h3 class=\"txt-nhl-pit\">Pittsburgh
+        Penguins</h3><ul><li ><a href=\"/nhl/team/_/name/pit/pittsburgh-penguins\">Clubhouse</a></li><li
+        ><a href=\"/nhl/team/stats/_/name/pit/pittsburgh-penguins\">Statistics</a></li><li
+        class=\"active\"><a href=\"/nhl/team/schedule/_/name/pit/pittsburgh-penguins\">Schedule</a></li><li
+        ><a href=\"/nhl/team/roster/_/name/pit/pittsburgh-penguins\">Roster</a></li><li
+        ><a href=\"/nhl/team/transactions/_/name/pit/pittsburgh-penguins\">Transactions</a></li><li
+        ><a href=\"/nhl/team/rankings/_/name/pit/pittsburgh-penguins\">Rankings</a></li><li
+        ><a href=\"/nhl/team/photos/_/name/pit/pittsburgh-penguins\">Photos</a></li><li
+        ><a href=\"/nhl/team/stadium/_/name/pit/pittsburgh-penguins\">Stadium</a></li><li
+        \ onclick=\"this.href=this.href+'?gcid=C12289x463&keyword=Pittsburgh+Penguins+Nav'\"
+        target=\"_blank\"><a href=\"http://www.stubhub.com/pittsburgh-penguins-tickets/?gcid=C12289x463&keyword=Pittsburgh+Penguins+Nav\">Tickets</a></li><li
+        ><a href=\"http://www.dickssportinggoods.com/category/index.jsp?categoryId=15530626&camp=Part:ESPNpart::nhlclubhousenav:PittsburghPenguins\"
+        rel=\"nofollow\">Shop</a></li></ul></div>\n            </div>\n        </div>\n
+        \   <div class=\"clear\"></div>\n\n    </div>\n    <div class=\"clear\"></div>\n\n</div>\n<div
+        id=\"nav-wrapper\" class=\"container\">\n<div id=\"nav-wrapper-container\">\n<div
+        id=\"nav-main\">\n<!-- begin site nav -->\n<ul class=\"top\">\n<!-- begin
+        site nav -->\n<p><!-- begin site nav --></p>\n<ul class=\"top\" id=\"nav-main-list\"><!--
+        start: Menuitem :: MyTAB -->\n<li class=\"last myespn\" id=\"menu-myespn\"><a
+        class=\"myespn\" ref=\"#\">MyESPN</a></li>\n<!-- start: Menuitem :: NFL -->\n<li
+        class=\"sport-menu default t-nfl\" data-sportid=\"28\" id=\"menu-nfl\"><a
+        href=\"http://espn.go.com/nfl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nfl\">NFL</a></li>\n<!--
+        start: Menuitem :: MLB -->\n<li class=\"sport-menu default t-mlb\" data-sportid=\"10\"
+        id=\"menu-mlb\"><a href=\"http://espn.go.com/mlb/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mlb\">MLB</a></li>\n<!--
+        start: Menuitem :: NBA -->\n<li class=\"sport-menu default t-nba\" data-sportid=\"46\"
+        id=\"menu-nba\"><a href=\"http://espn.go.com/nba/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nba\">NBA</a></li>\n<!--
+        start: Menuitem :: NHL -->\n<li class=\"sport-menu default t-nhl selected\"
+        data-sportid=\"90\" id=\"menu-nhl\"><a href=\"http://espn.go.com/nhl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nhl\">NHL</a></li>\n<!--
+        start: Menuitem :: NCAA FB -->\n<li class=\"sport-menu default t-ncf\" data-sportid=\"23\"
+        id=\"menu-ncf\"><a href=\"http://espn.go.com/college-football/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncf\">NCAAF</a></li>\n<!--
+        start: Menuitem :: NCAA BB -->\n<li class=\"sport-menu default t-ncb\" data-sportid=\"41\"
+        id=\"menu-ncb\"><a href=\"http://espn.go.com/mens-college-basketball/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncb\">NCAAM</a></li>\n<!--
+        start: Menuitem :: NASCAR -->\n<li class=\"sport-menu default t-nascar\" data-sportid=\"2020\"
+        id=\"menu-nascar\"><a href=\"http://espn.go.com/racing/nascar/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nascar\">NASCAR</a></li>\n<!--
+        start: Menuitem :: SOCCER -->\n<li class=\"sport-menu default t-soccer\" data-sportid=\"600\"
+        id=\"menu-soccer\"><a href=\"http://espnfc.us/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_soccer\">SOCCER</a></li>\n<!--
+        start: Menuitem :: GOLF -->\n<li class=\"sport-menu t-golf\" data-sportid=\"1106\"
+        id=\"menu-golf\" style=\"display: none;\"><a href=\"http://espn.go.com/golf/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_golfl\">GOLF</a></li>\n<!--
+        start: Menuitem :: TENNIS -->\n<li class=\"sport-menu t-tennis\" data-sportid=\"850\"
+        id=\"menu-tennis\" style=\"display: none;\"><a href=\"http://espn.go.com/tennis/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_tennis\">TENNIS</a></li>\n<!--
+        start: Menuitem :: BOXING-->\n<li class=\"sport-menu t-boxing\" data-sportid=\"1000\"
+        id=\"menu-boxing\" style=\"display: none;\"><a href=\"http://espn.go.com/boxing/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_boxing\">BOXING</a></li>\n<!--
+        start: Menuitem :: MMA -->\n<li class=\"sport-menu t-mma\" data-sportid=\"3301\"
+        id=\"menu-mma\" style=\"display: none;\"><a href=\"http://espn.go.com/mma/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mma\">MMA</a></li>\n<!-- start:
+        Menuitem :: ALL SPORTS -->\n<li class=\"nav-allsports t-allsports\" id=\"menu-allsports\"><a
+        href=\"http://espn.go.com/sports/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_allsports\">MORE
+        SPORTS</a></li>\n<!-- start: Menuitem :: INSIDER -->\n<li class=\"sport-menu
+        t-insider\" id=\"menu-insider\" style=\"display: none;\"><a href=\"http://insider.espn.go.com/insider/index\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_insider\">INSIDER</a></li>\n<!--
+        start: Menuitem :: SPORTSNATION -->\n<li class=\"sport-menu t-sportsnation\"
+        id=\"menu-sportsnation\" style=\"display: none;\"><a href=\"http://espn.go.com/sportsnation/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_sportsnation\">SN</a></li>\n<!--
+        start: Menuitem :: RADIO & MORE -->\n<li class=\"right-menu two-line last
+        t-radio\" id=\"menu-radio\"><a href=\"http://espn.go.com/espnradio/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_radioandmore\">RADIO<span>&amp;
+        MORE</span></a></li>\n<!-- start: Menuitem :: espnW & PLAYBOOK -->\n<li class=\"right-menu
+        two-line t-page2\" id=\"menu-page2\"><a href=\"http://espn.go.com/espnw/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_espnwandxgames\" target=\"_blank\">espnW<span>&amp;
+        X GAMES</span></a></li>\n<!-- start: Menuitem :: FANTASY & GAMES -->\n<li
+        class=\"right-menu two-line t-fantasy\" id=\"menu-fantasy\"><a href=\"http://games.espn.go.com/frontpage\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_fantasy\">FANTASY<span>&amp;
+        GAMES</span></a></li>\n<!-- start: Menuitem :: WATCH -->\n<li class=\"right-menu
+        t-watch\" id=\"menu-watch\"><a href=\"http://espn.go.com/video/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_watch\">WATCH</a></li>\n</ul>\n<!--
+        end site nav -->\n<!-- end site nav -->\n</ul>\n<!-- end site nav -->\n</div>\n<div
+        class=\"nav-main-secondary\">\n<!--/nhl/team/schedule--><ul>\n<li><a href=\"http://espn.go.com/nhl/\"
+        name=\"&lpos=subnav&lid=subnav_NHL_NHL+Home\">NHL Home</a></li><!--<li><a
+        href=\"http://sports.espn.go.com/nhl/playoffs\" name=\"&lpos=subnav&lid=subnav_NHL+Playoffs\">Playoffs</a></li>--><li><a
+        href=\"http://scores.espn.go.com/nhl/scoreboard\" name=\"&lpos=subnav&lid=subnav_NHL+Scores\">Scores</a></li><!--<li><a
+        href=\"http://espn.go.com/nhl/preview2014/\" name=\"&lpos=subnav&lid=subnav_NHL+Preview\">Preview</a></li>--><li><a
+        href=\"http://espn.go.com/nhl/schedule\" name=\"&lpos=subnav&lid=subnav_NHL_Schedule\">Schedule</a></li><li><a
+        href=\"http://espn.go.com/nhl/powerranking\" name=\"&lpos=subnav&lid=subnav_NHL+Power+Rankings\">Rankings</a></li><li><a
+        href=\"http://espn.go.com/nhl/standings\" name=\"&lpos=subnav&lid=subnav_NHL_Standings\">Standings</a></li><li><a
+        href=\"http://espn.go.com/nhl/statistics\" name=\"&lpos=subnav&lid=subnav_NHL_Statistics\">Stats</a></li><li><a
+        href=\"http://espn.go.com/nhl/story/_/page/nhltradetracker/nhl-trade-tracker\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Trade\">Trades</a></li><li><a href=\"http://espn.go.com/nhl/freeagents/_/type/signed/sort/signDate\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Signings\">Signings</a></li><li><a href=\"http://insider.espn.go.com/nhl/features/rumors\"
+        name=\"&lpos=subnav&lid=subnav_NHL+Rumor+Central\">Rumors</a></li><li><a href=\"http://espn.go.com/nhl/players\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Players\">Players</a></li><li class=\"expandable\"><a
+        href=\"http://espn.go.com/nhl/teams\" name=\"&lpos=subnav&lid=subnav_NHL_Teams\"><span>Teams</span></a><div><dl><dt
+        class=\"first\">Metropolitan</dt><dd><a href=\"http://espn.go.com/nhl/team/_/name/car/carolina-hurricanes\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_car\">Carolina Hurricanes</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_cls\">Columbus
+        B. Jackets</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_njd\">New Jersey Devils</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_nyi\">New
+        York Islanders</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/nyr/new-york-rangers\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_nyr\">New York Rangers</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/phi/philadelphia-flyers\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_phi\">Philadelphia
+        Flyers</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_pit\">Pittsburgh Penguins</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/wsh/washington-capitals\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_was\">Washington
+        Capitals</a></dd><dt class=\"first\">Atlantic</dt><dd><a href=\"http://espn.go.com/nhl/team/_/name/bos/boston-bruins\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_bos\">Boston Bruins</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/buf/buffalo-sabres\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_buf\">Buffalo
+        Sabres</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_det\">Detroit Red Wings</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/fla/florida-panthers\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_fla\">Florida
+        Panthers</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/mtl/montreal-canadiens\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_mon\">Montreal Canadiens</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/ott/ottawa-senators\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_ott\">Ottawa
+        Senators</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/tb/tampa-bay-lightning\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_tam\">Tampa Bay Lightning</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/tor/toronto-maple-leafs\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_tor\">Toronto
+        Maple Leafs</a></dd></dl><dl class=\"last\"><dt class=\"first\">Central</dt><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/chi/chicago-blackhawks\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_chi\">Chicago
+        Blackhawks</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/col/colorado-avalanche\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_col\">Colorado Avalanche</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/dal/dallas-stars\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_dal\">Dallas
+        Stars</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/min/minnesota-wild\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_min\">Minnesota Wild</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/nsh/nashville-predators\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_nsh\">Nashville
+        Predators</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/stl/st-louis-blues\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_stl\">St. Louis Blues</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/wpg/winnipeg-jets \"name=\"&lpos=subnav&lid=subnav_NHL_Teams_win\">Winnipeg
+        Jets</a></dd><dt class=\"first\">Pacific</dt><dd><a href=\"http://espn.go.com/nhl/team/_/name/ana/anaheim-ducks\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_ana\">Anaheim Ducks</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/ari/arizona-coyotes\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_ari\">Arizona
+        Coyotes</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/cgy/calgary-flames\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_cgy\">Calgary Flames</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/edm/edmonton-oilers\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_edm\">Edmonton
+        Oilers</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/la/los-angeles-kings\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_los\">Los Angeles Kings</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/team/_/name/sj/san-jose-sharks\" name=\"&lpos=subnav&lid=subnav_NHL_Teams_san\">San
+        Jose Sharks</a></dd><dd><a href=\"http://espn.go.com/nhl/team/_/name/van/vancouver-canucks\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Teams_van\">Vancouver Canucks</a></dd></dl></div></li><li><a
+        href=\"http://games.espn.go.com/frontpage/hockey\" name=\"&lpos=subnav&lid=subnav_NHL+Fantasy\">Fantasy</a></li><!--<li><a
+        href=\"http://espn.go.com/nhl/lines\" name=\"&lpos=subnav&lid=subnav_NHL+Odds\">Odds</a></li>--><li
+        class=\"expandable\"><a href=\"javascript:void(0);\"><span>Resources</span></a><div><dl><dd><a
+        href=\"http://espn.go.com/nhl/injuries\" name=\"&lpos=subnav&lid=subnav_NHL_Injuries\">Injuries</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/glance\" name=\"&lpos=subnav&lid=subnav_NHL_Glance\">Daily
+        Glance</a></dd><dd><a href=\"http://espn.go.com/nhl/stats/dailyleaders\" name=\"&lpos=subnav&lid=subnav_NHL_Leaders\">Daily
+        Leaders</a></dd><dd><a href=\"http://espn.go.com/nhl/history/leaders\" name=\"&lpos=subnav&lid=subnav_NHL_History\">Career
+        Leaders</a></dd><!--<dd><a href=\"http://insider.espn.go.com/nhl/pickcenter\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Pick_Center\">Pick Center <img src=\"http://assets.espn.go.com/i/design07/mast/tinyin.gif\"
+        alt=\"Insider\"></a></dd>--><dd><a href=\"http://espn.go.com/nhl/stats/rpi\"
+        name=\"&lpos=subnav&lid=subnav_NHL_RPI\">Relative Power Index</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/attendance\" name=\"&lpos=subnav&lid=subnav_NHL_Attendance\">Attendance</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/playoffs/matchups\" name=\"&lpos=subnav&lid=subnav_NHL_Matchups\">Projected
+        Matchups</a></dd><dd><a href=\"http://espn.go.com/nhl/story/_/page/nhltradetracker/nhl-trade-tracker\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Trade\">Trade Tracker</a></dd><dd><a href=\"http://espn.go.com/nhl/freeagents/_/type/signed/sort/signDate\"
+        name=\"&lpos=subnav&lid=subnav_NHL+Tracker\">Free-Agent Tracker</a></dd><dd><a
+        href=\"http://sports.espn.go.com/nhl/playoffs/2011/news/story?page=cupchamps11\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Stanley_Cup_Winners\">Stanley Cup Winners</a></dd></dl><dl
+        class=\"last\">                <dd><a href=\"http://espn.go.com/nhl/transactions\"
+        name=\"&lpos=subnav&lid=subnav_Transactions\">Transactions</a></dd>                <dd><a
+        href=\"http://espn.go.com/nhl/story/_/page/calendar2014/2014-15-nhl-calendar\"
+        name=\"&lpos=subnav&lid=subnav_Dates\">Key Dates</a></dd><dd><a href=\"http://espn.go.com/nhl/preview2014/\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Preview\">2014-15 Season Preview</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/winterclassic14/\" name=\"&lpos=subnav&lid=subnav_NHL_2014_Winter_Classic\">2014
+        Winter Classic</a></dd><dd><a href=\"http://espn.go.com/nhldraft/draft/tracker/round\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Draft\">2014 NHL Draft</a></dd><dd><a href=\"http://espn.go.com/nhl/playoffs/2014/matchup/_/teams/la-nyr\">2014
+        Stanley Cup playoffs</a></dd><dd><a href=\"http://espn.go.com/nhl/playoffs/2013/matchup/_/teams/blackhawks-bruins\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Playoffs\">2013 Stanley Cup playoffs</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/playoffs/2012/matchup/_/teams/devils-kings\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Playoffs\">2012 Stanley Cup playoffs</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/allstargame\" name=\"&lpos=subnav&lid=subnav_ASG\">2012
+        All-Star Game</a></dd><!--<dd><a href=\"http://espn.go.com/nhl/topics/_/page/hockey-hall-fame\">Hockey
+        Hall of Fame</a></dd><dd><a href=\"http://espn.go.com/nhl/trophytracker\"
+        name=\"&lpos=subnav&lid=subnav_Trophy+Tracker\">Trophy Tracker</a></dd>--><dd><a
+        href=\"http://espn.go.com/nhl/news/story?page=awardshistory\" name=\"&lpos=subnav&lid=subnav_NHL_Awards\">Awards
+        History</a></dd></dl></div></li><li><a href=\"http://www.stubhub.com/nhl-tickets/\"
+        target=\"_blank\" onclick=\"this.href=this.href+'?gcid=C12289x522&gtkw=NHL+Sub+Nav'\"
+        class=\"external\" name=\"&lpos=subnav&lid=subnav_NHL+Tickets\">Tix</a></li>\n</ul>\n</div>\n</div>\n</div>\n</div>\n<!--
+        end content -->\n</div>\n<!-- end subheader -->\n\n<script>\nespn.core.init.nav();\nespn.insider.checkUserForPromo();\n</script>\n<!--
+        begin footer -->\n<div id=\"footer\" class=\"container\">\n<script type=\"text/javascript\">\n//<![CDATA[\nvar
+        link = window.location;\nvar bugText = '<a href=\"#\" onclick=\"window.open(\\'http://dynamic.espn.go.com/espn/bugs?url='
+        + escape(link) + '\\', \\'Bugs\\',\\'noresizable,noscrollbars,height=400,width=400\\');\">Report
+        a Bug</a> | ';\n//]]>\n</script>\n<span style=\"font-weight:bold;\">ESPN.com:</span>
+        <a href=\"http://sports.espn.go.com/espn/news/story?page=help/index\">Help</a>
+        | <a href=\"http://espnmediazone.com/us/\" rel=\"nofollow\">Press</a> | <a
+        href=\"http://www.espncms.com/Advertise-on-ESPN.aspx\" rel=\"nofollow\">Advertise
+        on ESPN.com</a> | <a href=\"http://www.espncms.com\" rel=\"nofollow\">Sales
+        Media Kit</a> | <a href=\"http://preferences.truste.com/2.0/?type=espn&affiliateId=148\"
+        onclick=\"window.open('http://preferences.truste.com/2.0/?type=espn&affiliateId=148','popup','width=986,height=878,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0');
+        return false\">Interest-Based Ads</a> | <script type=\"text/javascript\">document.write(bugText);</script><a
+        href=\"http://espn.go.com/espn/corrections\">Corrections</a> | <a href=\"http://sports.espn.go.com/espn/news/story?page=contact/index\">Contact
+        Us</a> | <a href=\"http://espn.go.com/espn/sitemap\">Site Map</a> | <a href=\"http://espncareers.com\">Jobs
+        at ESPN</a> | <!--a href=\"http://corporate.disney.go.com/corporate/sourcing.html\"
+        rel=\"nofollow\"><span style=\"font-weight:bold;\">Supplier Information</span></a--><a
+        href=\"http://go.com\">Go.com</a><br/>&copy; 2014  ESPN Internet Ventures.
+        <a href=\"http://disneytermsofuse.com/\" rel=\"nofollow\">Terms of Use</a>,
+        <a href=\"http://disneyprivacycenter.com/\" rel=\"nofollow\">Privacy Policy</a>,
+        <a href=\"https://disneyprivacycenter.com/notice-to-california-residents/\"
+        rel=\"nofollow\">Your California Privacy Rights</a>,  <a href=\"https://disneyprivacycenter.com/kids-privacy-policy/english/\">Children's
+        Online Privacy Policy</a> and <a href=\"http://preferences-mgr.truste.com/?type=espn&affiliateId=148\">Interest-Based
+        Ads</a> are applicable to you.  All rights reserved.\n\n<!--\n<a href=\"http://www.espnshop.com/\"
+        onClick=\"location.href('http://log.go.com/log?srvc=sz&guid=73B641A0-6660-4EFC-B8FF-9DE23E8CD9BD&drop=0&addata=3374:65:478847:65&a=1&goto=http://www.espnshop.com/');return
+        false\">Shop</a>\n--></div>\n<!-- end footer -->\n<!--[if lte IE 9]></div><![endif]-->\n</div>\n<!--
+        end bg-elements -->\n\n\n<!-- SiteCatalyst code version: H.21.3 Copyright
+        1997-2010 Omniture, Inc. http://www.omniture.com -->\n<script type=\"text/javascript\">\n\tvar
+        undef = 'undefined'\n\t,s_account=\"wdgespcom\"\n\t,omniPageName = \"espn:nhl:teams:schedule:pittsburgh+penguins\"\n\t\n\t,insiderStatus
+        = \"\"\n\t,anGen = \"\"\n\t,anYear = \"\"\n\t,anDateString = \"\"\n\t,anLoginStatus
+        = \"\"\n\t,callOmniture = function(){\n\t\t/*-- core story s_omni properties
+        --*/\n\t\tif (typeof anCV != \"undefined\"){anParseLoginBarInfo(anCV);}\n\t\ts_omni.pageName=\"nhl:teams:schedule:pittsburgh+penguins\";\n\t\ts_omni.server
+        = window.location.host; // Server from the Host\n\t\ts_omni.channel = \"nhl\";\n\t\ts_omni.prop1
+        = \"espn\";\n\t\ts_omni.prop4 = \"schedule\";\n\t\ts_omni.prop5 = \"nhl:teams\";\n\t\ts_omni.prop11
+        = (insiderStatus !== null) ? insiderStatus + \":premium-no\" : \"premium-no\";\n\t\ts_omni.prop13
+        = \"automated-general\";\n\t\ts_omni.prop17 = \"en\";\n\t\ts_omni.prop21 =
+        anDateString;\n\t\ts_omni.prop22 = anGen;\n\t\ts_omni.prop25 = \"hockey\";\n\t\ts_omni.prop26
+        = \"nhl\";\n\t\ts_omni.prop29 = anLoginStatus;\n\t\ts_omni.prop30 = \"n\";\n\t\ts_omni.prop32
+        = \"nhl:teamid=16-pittsburgh+penguins\";\n\t\ts_omni.hier1 = \"nhl:teams:schedule:pittsburgh+penguins\";\n\t\ts_omni.eVar7
+        = anYear + \":\" + anGen + \":\" + anLoginStatus + \":\" + s_omni.prop11 +
+        \":\";\n\t\ts_omni.eVar9 = \"en\";\n\t\ts_omni.eVar13 = \"nhl:teams:schedule:pittsburgh+penguins\";\n\t\ts_omni.eVar19
+        = \"hockey\";\n\t\ts_omni.eVar21 = \"nhl\";\n\t\t\n\t\tif (s_omni.prop11==\"anonymous:premium-yes\"
+        || s_omni.prop11==\"insider-no:premium-yes\" && typeof s_omni.prop4!=\"undefined\"
+        &&\n\t\t\t(s_omni.prop4==\"story\" || s_omni.prop4==\"blog\")) {\n\t\t\tif
+        (typeof s_omni.events != \"undefined\" && s_omni.events!=\"\") {\n\t\t\t\ts_omni.events
+        = s_omni.events+\",event8\" }\n\t\t\telse { s_omni.events=\"event8\" }\n\t\t}\n\t\t\n\t\t\n\t\tanVersion
+        = \"_11apr14_v2_0_r5_\";\n\t\t\n\t\t/************* DO NOT ALTER ANYTHING BELOW
+        THIS LINE ! **************/\n\t\t\n\t\tvar s_code = s_omni.t();\n\t\tif(s_code)
+        {\n\t\t\tvar sci = new Image(1,1);\n\t\t\tsci.onload = function() {console.log(\"loaded
+        no append\")};\n\t\t\tsci.src = s_code;\n\t\t}\n\t\t\n\t};\t\n</script>\n\n\n\n<script
+        type=\"text/javascript\">\n\tif (typeof(s_omni) === 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\t// we want to load the analytics files from the cache if possible
+        - so, let's use full $.ajax() calls\n\t\t\t$.ajax({\n\t\t\t\ttype:'GET',\n\t\t\t\turl:
+        'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/externalnielsen.js&v=6',\n\t\t\t\tdataType:
+        'script',\n\t\t\t\tcache: true,\n\t\t\t\tsuccess: function() {\n\t\t\t\t\tvar
+        lgSrc;\n\t\t\t\t\tif(typeof anCV !== undef && anCV === '' && document.getElementById('form-memberarea')
+        != null) {\n\t\t\t\t\t\tlgSrc = 'https://r.espn.go.com/members/util/getUserInfo?cb=runOmnitureIndependently';\n\t\t\t\t\t\t$.getScript(lgSrc);
+        // we don't want this to be cached - so we'll use the $.getScript() method\n\t\t\t\t\t}
+        else {\n\t\t\t\t\t\tcallOmniture();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t});\n\t\t});\n\t}\n</script>\n\n<!--
+        End SiteCatalyst code version: H.21. -->\n\n\n<!-- Begin comScore Tag -->\n<script
+        type=\"text/javascript\">\n\tif (typeof(jQuery) !== 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\tif(typeof window._comscore === 'undefined') {\n\t\t\t\twindow._comscore
+        = window._comscore || [];\n\t\t\t\twindow._comscore.push({ c1: \"2\", c2:
+        \"3000005\" });\n\t\t\t\tjQuery.getScript((document.location.protocol == \"https:\"
+        ? \"https://sb\" : \"http://b\") + \".scorecardresearch.com/beacon.js\");\n\t\t\t}\n\t\t});\n\t}\n</script>\n<!--
+        End comScore Tag -->\n\t\t<script>\n\t\tvar _sf_async_config={\n\t\t\t\"uid\":22222,\n\t\t\t\"domain\":\"espn.go.com\",\n\t\t\t\"pingServer\":\"pespn.chartbeat.net\",\n\t\t\t\"useCanonical\":true,\n\t\t\t\"useSubDomains\":false,\n\t\t\t\"sections\":\"nhl\",\n\t\t\t\"authors\":\"schedule\"\n\t\t};\n\t\tif
+        (typeof(ad_site) !== 'undefined') { _sf_async_config.zone = ad_site; }\n\n\t\t//
+        load both chartbeat_pub and chartbeat_video\n\t\t(function () {\n\t\t\tfunction
+        a() {\n\t\t\t\twindow._sf_endpt = (new Date()).getTime();\n\n\t\t\t\tvar cbDomain
+        = ((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\");\n\n\t\t\t\tvar
+        c = document.createElement(\"script\");\n\t\t\t\tc.setAttribute(\"language\",\"javascript\");\n\t\t\t\tc.setAttribute(\"type\",\"text/javascript\");\n\t\t\t\tc.setAttribute(\"src\",
+        cbDomain+\"js/chartbeat_pub.js\");\n\t\t\t\tdocument.body.appendChild(c);\n\n\t\t\t\tif(typeof
+        StrategyInterface !== 'undefined' && (typeof espn !== 'undefined' && typeof
+        espn.video !== 'undefined')){\n\t\t\t\t\tvar e = document.createElement(\"script\");\n\t\t\t\t\te.setAttribute(\"language\",\t\"javascript\");\n\t\t\t\t\te.setAttribute(\"type\",
+        \"text/javascript\");\n\t\t\t\t\te.setAttribute(\"src\", cbDomain+\"js/chartbeat_video.js\");\n\t\t\t\t\tdocument.body.appendChild(e);\n\t\t\t\t}\n\t\t\t}\n\t\t\tvar
+        b = window.onload;\n\t\t\twindow.onload = (typeof window.onload != \"function\")
+        ? a : function () { b(); a() }\n\t\t})();\n\t\t//(function(){function a(){window._sf_endpt=(new
+        Date()).getTime();var c=document.createElement(\"script\");c.setAttribute(\"language\",\"javascript\");c.setAttribute(\"type\",\"text/javascript\");c.setAttribute(\"src\",((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\")+\"js/chartbeat_pub.js\");document.body.appendChild(c)}var
+        b=window.onload;window.onload=(typeof window.onload!=\"function\")?a:function(){b();a()}})();\n\t\t</script>\n\t\n<!--
+        dynamic logic: safecount -->\n<script src=\"http://content.dl-rms.com/rms/mother/508/nodetag.js\"></script>\n\n<script
+        type=\"text/javascript\" charset=\"utf-8\">buildOutHeadlinesForPinnedSite();</script>\n<script
+        type=\"text/javascript\">\n   var isInIFrame = (window.location != window.parent.location)
+        ? true : false;\n   if(isInIFrame){ if(document.referrer){ if(document.referrer.indexOf(\".go.com\")==-1){
+        top.location.href=self.location.href; } } }\n</script>\n\n<script type='text/javascript'>\n
+        \ //<![CDATA[\n    (function(){\n    window.gravityInsightsParams = {\n      'type':
+        'content',\n      'action': '',\n      'site_guid': '9a41401e9b7c945344e001ee7f23031e'\n
+        \   };\n    var b,c;b=\"https:\"===document.location.protocol?\"https://b-ssl.grvcdn.com/moth-min.js\":\"http://b.grvcdn.com/moth-min.js\";window.grvMakeScript=function(d){var
+        a;a=document.createElement(\"script\");a.type=\"text/javascript\";a.async=!0;a.src=d;return
+        a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
+        \ //]]>\n</script></body>\n</html>"
+    http_version: 
+  recorded_at: Sun, 07 Dec 2014 03:39:38 GMT
+recorded_with: VCR 2.9.3

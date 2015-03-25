@@ -1,0 +1,1374 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://espn.go.com/nba/team/schedule/_/name/gs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html; charset=iso-8859-1
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Tue, 20 Jan 2015 02:51:07 GMT
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=30
+      P3p:
+      - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
+        BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
+      Set-Cookie:
+      - SWID=0788A4E2-2DC3-4AC3-A9CE-B38950B87F04; path=/; expires=Mon, 15 Jan 2035
+        02:51:07 GMT; domain=go.com;
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
+        src=\"http://sports-ak.espn.go.com/sports/optimizely.js\"></script><meta charset=\"iso-8859-1\">\n<meta
+        http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n<script type=\"text/javascript\">
+        \   \n    if(true && navigator && navigator.userAgent.toLowerCase().indexOf(\"teamstream\")
+        >= 0) {\n        window.location = 'http://a.m.espn.go.com/mobilecache/general/apps/sc';\n
+        \   }\n</script><script type=\"text/javascript\">\nvar espn=window.espn||{};espn.beta=(function(f,i,b){var
+        c=\"http://beta.espn.go.com\",j=f.location.href,l=i.location.pathname;function
+        a(n){var r,m,o,q,s,v,w,p,t;if(n!==b){j=n;r=n.match(/http:\\/\\/([^\\/]*)([^?]*).*/);if(r&&r.length===3){l=r[2];}}if(l.match(/\\/story$/i)||l.match(/\\/story\\//i)){q=k(\"storyId\",n)||k(\"id\",n);s=k(\"storyPage\",n)||k(\"page\",n);if(q!==\"\"){return
+        c+l+\"/_/id/\"+q;}else{if(s!==\"\"){return c+l+\"/_/page/\"+s;}else{return
+        c+l;}}}if(l.match(/\\/blogpostindex$/i)){m=k(\"blogname\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"){return
+        c+\"/blog/\"+m;}}if(l.match(/\\/blogpost$/i)){m=k(\"blogname\",n);o=k(\"id\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"&&o!==\"\"){return
+        c+\"/blog/\"+m+\"/post/_/id/\"+o;}}if(l.match(/^\\/blog\\//i)){m=k(\"blogName\",n);o=k(\"id\",n);if(l.match(/\\/blog\\/.*\\/post$/i)){if(o!==\"\"){return
+        c+l+\"/_/id/\"+o;}}else{if(m!==\"\"&&o!==\"\"){return c+\"/blog/\"+m+\"/post/_/id/\"+o;}else{if(m!==\"\"){return
+        c+\"/blog/\"+m;}else{return c+l;}}}}if((l===\"\"||l===\"/\")&&!j.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)){return
+        c;}var u=l.match(/^\\/.*?\\/(?:index)?$/i);if(u){v={\"/frontpage/\":true,\"/wireless/\":true,\"/general/\":true,\"/extra/\":true,\"/mobile/\":true,\"/nfl/\":true,\"/nba/\":true,\"/mlb/\":true,\"/nhl/\":true,\"/ncf/\":true,\"/college-football/\":true,\"/ncb/\":true,\"/mens-college-basketball/\":true,\"/ncw/\":true,\"/womenbb/\":true,\"/womens-basketball/\":true,\"/wnba/\":true,\"/golf/\":true,\"/tennis/\":true,\"/general/tennis/\":true,\"/mma/\":true,\"/extra/mma/\":true,\"/racing/\":true,\"/rpm/\":true,\"/racing/nascar/\":true,\"/rpm/nascar/\":true,\"/boxing/\":true,\"/extra/boxing/\":true,\"/college-sports/\":true,\"/ncaa/\":true,\"/extra/ncaa/\":true,\"/olympics/\":true,\"/extra/olympics/\":true,\"/horse-racing/\":true,\"/horse/\":true,\"/general/horse/\":true,\"/poker/\":true,\"/general/poker/\":true,\"/sports/endurance/\":true,\"/extra/endurance/\":true};if(l.match(/\\/index$/i)){l=l.substring(0,l.length-5);}if(v[l]===true){return
+        c+l;}}if(l.match(/\\/nflpreview$/i)||l.match(/\\/preview$/i)){w=k(\"gameId\",n);if(w!==\"\"){if(l.match(/\\/nflpreview$/i)){return
+        c+\"/nfl/preview?gameId=\"+w;}else{return c+l+\"?gameId=\"+w;}}}if(l.match(/\\/recap$/i)){w=k(\"gameId\",n);if(w!==\"\"){return
+        c+l+\"?gameId=\"+w;}}if(l===\"/general/video\"){p=k(\"cid\",n);t=k(\"vid\",n);if(p!==\"\"){return
+        c+\"/video/clip?id=\"+p;}else{if(t!==\"\"){return c+\"/video/clip?id=\"+t;}}}if(l.match(/^\\/(?:videohub\\/video|video)\\/clip$/i)){p=k(\"id\",n);if(p!==\"\"){return
+        c+l+\"?id=\"+p;}}}function h(o){var n=a(o);var m=j.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)||(o&&o.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i))||(espn&&espn.GLOBALS&&espn.GLOBALS.isPremium);if(n){n=n.replace(\"/wireless/\",\"/\");n=n.replace(\"/general/\",\"/\");n=n.replace(\"/extra/\",\"/\");n=n.replace(\"/mobile/\",\"/\");n=n.replace(\"/frontpage/\",\"/\");n=n.replace(\"/videohub/\",\"/\");n=n.replace(\"/ncf/\",\"/college-football/\");n=n.replace(\"/rpm/\",\"/racing/\");n=n.replace(\"/ncb/\",\"/mens-college-basketball/\");n=n.replace(\"/ncw/\",\"/womens-basketball/\");n=n.replace(\"/wnba/\",\"/womens-basketball/\");n=n.replace(\"/ncaa/\",\"/college-sports/\");if(m){n=n.replace(\"/story/\",\"/insider/story/\");n=n.replace(\"/post/\",\"/insider/post/\");if(n.match(/\\/blog\\/[^_]*$/i)){if(n.charAt(n.length-1)===\"/\"){n=n+\"insider/\";}else{n=n+\"/insider/\";}}}}return
+        n;}function k(o,q){var m=location.search;if(q!==b){var n=q.indexOf(\"?\");if(n>-1){m=q.substr(n);}}o=o.replace(/[\\[]/,\"\\\\[\").replace(/[\\]]/,\"\\\\]\");var
+        r=new RegExp(\"[\\\\?&]\"+o+\"=([^&#]*)\"),p=r.exec(m);return p===null?\"\":decodeURIComponent(p[1].replace(/\\+/g,\"
+        \"));}function d(){var n=e(\"betauser\");var m=e(\"betacohort\")||\"\";if(n!==null&&m.indexOf(\"cohort-\")===0){var
+        p=m.split(\"-\");if(p&&p.length===2){if(parseInt(p[1],10)===999){return;}}var
+        o=h();if(o){f.location=o;}}}function e(n){var p=n+\"=\";var m=i.cookie.split(\";\");for(var
+        o=0;o<m.length;o++){var q=m[o];while(q.charAt(0)===\" \"){q=q.substring(1,q.length);}if(q.indexOf(p)===0){return
+        q.substring(p.length,q.length);}}return null;}function g(){if(k(\"rand\")===\"beta\"){espn.beta.recheck=true;}else{d();}}return{init:function(){g();}};})(this,this.document);espn.beta.init();\n</script>\n\t<script>(function(){function
+        r(a){a=a.replace(/[\\[]/,\"\\\\[\").replace(/[\\]]/,\"\\\\]\");var c=new RegExp(\"[\\\\?&]\"+a+\"=([^&#]*)\"),b=c.exec(location.search);return
+        b==null?\"\":decodeURIComponent(b[1].replace(/\\+/g,\" \"));}var p=navigator.userAgent,o=window.location,l=document.cookie,f=document.referrer,n=(f===\"\"||f.indexOf(\".go.com\")!==-1),d=(n)?\"http://m.espn.go.com/nba/clubhouse?teamId=9&src=desktop\":\"http://m.espn.go.com/nba/clubhouse?teamId=9&src=desktop&rand=ref~%7B%22ref%22%3A%22\"+encodeURIComponent(f)+\"%22%7D\",i=(p.match(/iPad/i)||(p.match(/Android/i)&&!p.match(/Mobile/i))||p.match(/RIM
+        Tablet/i)||p.match(/Silk/i)),k=(p.match(/Mobile/i)||p.match(/Mini/i)),g=o.href.match(/src=mobile/i),q=l.indexOf(\"iphone_redirect=false\")>-1,e=l.indexOf(\"iphone_redirect=true\")>-1,j=r(\"addata\"),h=r(\"ex_cid\"),m=r(\"rand\");if(j!=\"\"){d+=\"&addata=\"+j;}if(h!=\"\"){d+=\"&ex_cid=\"+h;}if(m===\"beta\"){d+=\"&rand=beta\";}if(i){document.documentElement.className+=\"
+        tablet \";if((!p.match(/iPad/i)||e)&&!q){o.href=d;}}else{if(k&&!q&&!g){o.href=d;}}})();</script>\n\t<title>Golden
+        State Warriors 2015 Schedule - Warriors Home and Away - ESPN</title>\n<meta
+        name=\"google-site-verification\" content=\"xuj1ODRluWa0frM-BjIr_aSHoUC7HB5C1MgmYAM_GkA\"
+        />\n<meta name=\"msvalidate.01\" content=\"B1FEB7C682C46C8FCDA3130F3D18AC28\"
+        />\n<meta name=\"googlebot\" content=\"noodp\" />\n<meta name=\"robots\" content=\"index,
+        follow\" />\n<meta name=\"description\" content=\"View the complete Golden
+        State Warriors team schedule on ESPN.com.  Includes home and away, preseason,
+        regular season, playoff and printable schedules.\" />\n<meta name=\"keywords\"
+        content=\"golden state warriors, schedule, nba, preseason, regular season,
+        playoffs, printable\" />\n<meta property=\"fb:app_id\" content=\"116656161708917\">\n<meta
+        property=\"og:site_name\" content=\"ESPN.com\">\n<link rel=\"canonical\" href=\"http://espn.go.com/nba/team/schedule/_/name/GS/golden-state-warriors\"
+        />\n<script type=\"text/javascript\">var NREUMQ=NREUMQ||[];NREUMQ.push([\"mark\",\"firstbyte\",new
+        Date().getTime()]);</script>\n\t\t<script>var _sf_startpt=(new Date()).getTime();</script>\n<link
+        rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"http://a.espncdn.com/search/opensearch.xml\"
+        title=\"ESPN Search\" />\n<link rel=\"stylesheet\" href=\"http://a.espncdn.com/combiner/c/201401211964?css=global_reset.r1.css,base.r236.css,modules.r462.css,global_header.r44.css,header_topbar.r1.css,modules/global_nav.r54.css,modules/insider_enhanced.r1.css,modules/mem/mem.r12.1.css,modules/mem/mem_espn360.r8.4.css,modules/mem/skirmish.r8.css,modules/twin.r1.css,modules/facebook/button.r2.css,universal_overlay/universal_overlay.css,universal_overlay/media_overlay.css,universal_overlay/video_overlay.css,universal_overlay/photo_overlay.css,universal_overlay/dyk_overlay.css,fonts/bentonsans.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/201303290924?css=sprites/teamlogos.r18.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/20121005125?css=clubhouse_nba_10.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/20120509325?css=modules/master_tables_10.r3.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/20121024544?css=pagetype/clubhouse.r9.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/20120509325?css=modules/tabs-page-nav.3.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<script type=\"text/javascript\">\nvar
+        _vrq = _vrq || [];\n _vrq.push(['id', 489]);\n _vrq.push(['automate', false]);\n
+        _vrq.push(['track', function(){}]);\n (function(d, a){var s = d.createElement(a),x
+        = d.getElementsByTagName(a)[0];\ns.async = true;\ns.src = 'http://a.visualrevenue.com/vrs.js';\n
+        x.parentNode.insertBefore(s, x);})(document, 'script'); </script>\n<script
+        src=\"http://a.espncdn.com/combiner/c?js=jquery-1.7.1.js,plugins/json2.r3.js,plugins/teacrypt.js,plugins/jquery.metadata.js,plugins/jquery.bgiframe.r3.js,plugins/jquery.easing.1.3.js,plugins/jquery.hoverIntent.js,plugins/jquery.jcarousel.0.2.9.js,plugins/jquery.tinysort.r4.js,plugins/jquery.pubsub.r5.js,ui/1.8.16/jquery.ui.core.js,ui/1.8.16/jquery.ui.widget.js,ui/1.8.16/jquery.ui.tabs.js,ui/1.8.16/jquery.ui.accordion.js,plugins/ba-debug-0.4.js,espn.l10n.r12.js,swfobject/2.2/swfobject.js,flashObjWrapper.r7.js,plugins/jquery.colorbox.1.3.14.js,plugins/jquery.ba-postmessage.js,espn.core.duo.r57.js,m/beta/betacheck.r5.js,espn.mem.r39.js,stub.search.r9.js,espn.nav.mega.r38b.js,espn.storage.r6.js,espn.p13n.r19.5.js,espn.geo.r3.js,espn.video.r81.r5.js,analytics/chartbeat/video/strategy_comprehensive.r1.js,registration/staticLogin.r12.06102014.js,espn.universal.overlay.r19.js,insider/espn.insider.20140915.js,espn.espn360.stub.r9.js,espn.myHeadlines.stub.r16.js,espn.myfaves.stub.r3.js,tsscoreboard.20090612.js,ie9pinning.r3.js,espn.f8.noauth.r3.js,espn.socialmediamod.r7.js\"></script>\n<script>espn.core.navVersion
+        = 'a';</script>\n<script>var ad_site=\"espn.us.com.nba\",ad_zone=\"nbateamschedule\",ad_kvps=\"pgtyp=nbateamschedule;sp=nba;tm=gs;\",ad_swid=\"\",ad_counter=1,ad_ord=Math.floor(9999999999*Math.random()),ad_seg=\"\",ad_mnr=-1<document.cookie.indexOf(\"grif=1\")?\"t\":\"f\",ad_ref=\"other\",ref=document.referrer,refsMap={\"facebook.com\":\"facebook\",\"twitter.com|t.co\":\"twitter\",\"plus.url.google.com|plus.google.com\":\"googleplus\",\"google.com\":\"google\",\"bing.com\":\"bing\",\"yahoo.com\":\"yahoo\",\"espn.go.com\":\"espn\"},refKey;for(refKey
+        in refsMap)ref.match(refKey)&&(ad_ref=refsMap[refKey]);\nad_kvps=ad_kvps+\"ref=\"+ad_ref+\";mnr=\"+ad_mnr+\";\";ad_swid=jQuery.cookie(\"SWID\");\"function\"===typeof
+        espn.core.ad_segments&&(ad_seg=espn.core.ad_segments(),null!=ad_seg&&\"\"!=ad_seg&&(ad_kvps+=ad_seg));var
+        ad_u=\"\";null!=ad_swid&&\"\"!=ad_swid&&(ad_u=\"swid=\"+ad_swid+\";\");</script>\n</head>\n<body
+        class=\"nba {sportId:46, teamId:9} clubhouse gs\" >\n<div class=\"mboxDefault\"><link
+        rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/prod/styles/modules/hideGravity.css\"
+        type=\"text/css\" /></div><script>mboxCreate('ESPN_global');</script><!--[if
+        IE 5]><div class=\"ie5\"><![endif]-->\n<!--[if IE 6]><div class=\"ie ie6\"><![endif]-->\n<!--[if
+        IE 7]><div class=\"ie ie7\"><![endif]-->\n<!--[if IE 8]><div class=\"ie ie8\"><![endif]-->\n<!--[if
+        IE 9]><div class=\"ie9\"><![endif]-->\n<!-- begin bg-elements -->\n<div class=\"bg-elements\">\n<!--
+        begin header -->\n<div id=\"header\" class=\"container\">\n<!-- begin top-bar
+        -->\n<div class=\"top-bar\">\n<!-- begin uni login -->\n<script type=\"text/javascript\">\nvar
+        returnURL = document.location.href;\nvar anCV = \"\";\nvar myEspnText = {'welcometext':'Welcome','register':'Register','signin':'Sign
+        In','signout':'Sign Out','heliumdown':'Login Temporarily Unavailable','connectedfacebook':'Connected
+        to Facebook','connectfacebook':'Connect with Facebook','activateinsider':'Activate
+        Insider'};\n</script>\n<form id=\"form-memberarea\">\n<input type=\"hidden\"
+        name=\"language\" id=\"language\" value=\"en\"/>\n<input type=\"hidden\" name=\"affiliateName\"
+        id=\"memberAreaAffiliateName\" value=\"espn\"/>\n<input type=\"hidden\" name=\"regFormId\"
+        id=\"regFormId\" value=\"espn\"/>\n</form>\n<div class=\"signin\" id=\"signin\"></div>\n<script>espn.memberservices.welcome();</script>\n<div
+        class=\"nav-edition editions\">\n<label>EDITIONS:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-usa active\"><a href=\"http://espn.go.com/\" name=\"&amp;lpos=editionsnav&amp;lid=usa\">USA</a></li>\n\t<li
+        class=\"e-deportes\"><a href=\"http://www.espn.com?country-view=us&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=deportes\" class=\"{langPref:'spanish'}\">DEPORTES</a></li>\n\t<li
+        class=\"last dropdown\">\n\t<ul class=\"\">\n\t<li class=\"selected\">More</li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=ar&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=argentina\">Argentina</a></li>\n\t<li><a
+        href=\"http://www.espn.com.au\" name=\"&amp;lpos=editionsnav&amp;lid=australia\">Australia</a></li>\n\t<li><a
+        href=\"http://www.espn.com.br\" name=\"&amp;lpos=editionsnav&amp;lid=brazil\">Brazil</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=co&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=colombia\">Colombia</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=mx&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=mexico\">Mexico</a></li>\n\t<li><a
+        href=\"http://www.espn.co.uk/\" name=\"&amp;lpos=editionsnav&amp;lid=uk\">United
+        Kingdom</a></li>\n        <li><a href=\"http://www.espn.com?country-view=ve&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=venezuela\">Venezuela</a></li>\n\t</ul>\n\t</li>\n</ul>\n</div>\n\n<div
+        class=\"nav-edition\">\n<label>CITIES:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-boston\"><a href=\"http://espn.go.com/boston/\" name=\"&amp;lpos=citynav&amp;lid=boston\">BOSTON</a></li>\n\t<li
+        class=\"e-chicago\"><a href=\"http://espn.go.com/chicago/\" name=\"&amp;lpos=citynav&amp;lid=chicago\">CHICAGO</a></li>\n\t<li
+        class=\"e-dallas\"><a href=\"http://espn.go.com/dallas/\" name=\"&amp;lpos=citynav&amp;lid=dallas\">DALLAS</a></li>\n\t<li
+        class=\"e-losangeles\"><a href=\"http://espn.go.com/los-angeles/\" name=\"&amp;lpos=citynav&amp;lid=losangeles\">LOS
+        ANGELES</a></li>\n\t<li class=\"last e-newyork\"><a href=\"http://espn.go.com/new-york/\"
+        name=\"&amp;lpos=citynav&amp;lid=newyork\">NEW YORK</a></li>\n</ul>\n</div>\n</div>\n<!--
+        end top-bar -->\n<!-- begin espn-logo -->\n<div class=\"espn-logo\">\n<div
+        class=\"h1\"><a href=\"http://espn.go.com/\" name=\"&lpos=sitenavdefault&lid=sitenav_main-logo\"
+        class=\"espn\">ESPN</a> <a href=\"http://espn.go.com/nba/\" class=\"section-title\">NBA</a></div></div>\n<!--
+        end espn-logo -->\n<!-- begin ad -->\n<span class=\"presby\"><!--espn.us.com.nba
+        sitezone--><!--http://ad.Doubleclick.net hostUrl-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.nba\",ad_zone=\"nbateamschedule\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=SponsoredByLogoHeader;\"+ad_u+\"sz=150x45,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"SponsoredByLogoHeader\" data-cb-dfp-id=\"'+ad_kvps+'sz=150x45,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nba/nbateamschedule;pgtyp=nbateamschedule;sp=nba;tm=gs;sz=150x45,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nba/nbateamschedule;pgtyp=nbateamschedule;sp=nba;tm=gs;sz=150x45,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</span>\n<!-- end ad -->\n<div class=\"header-right\">\n<style>.ie6
+        #searchBox, .ie6 #searchBox div { display: inline; } </style><!-- begin search
+        -->\n<div id=\"nav-main-search\">\n<form id=\"searchBox\" name=\"searchBox\"
+        action=\"http://search.espn.go.com/results\" method=\"get\" accept-charset=\"utf-8\"
+        style=\"color: #999999;\">\n<div class=\"clearfix\">\n<input autocomplete=\"off\"
+        class=\"text\" type=\"text\" placeholder=\"Search\" name=\"searchString\"
+        id=\"searchString\" />\n<input type=\"hidden\" name=\"page\" id=\"page\" value=\"null\"
+        />\n<input type=\"hidden\" name=\"fromForm\" value=\"true\" />\n<input class=\"submit\"
+        type=\"submit\" value=\"\" />\n</div>\n</form>\n</div>\n<!-- end search -->\n<div
+        id=\"shop\"><a class=\"shop-btn\" href=\"http://www.dickssportinggoods.com/category/index.jsp?categoryId=15504446&camp=Part:ESPNpart::nbashopbutton:NBA\"
+        name=\"&lpos=sitenavdefault&lid=sitenav_shopbutton\" rel=\"nofollow\">Shop</a></div></div>\n</div>\n<!--
+        end header -->\n<!--espn.us.com.nba sitezone--><!--http://ad.Doubleclick.net
+        hostUrl-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nba\",ad_zone=\"nbateamschedule\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Background_Skin;\"+ad_u+\"sz=1280x946,200x800,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Background_Skin\" data-cb-dfp-id=\"'+ad_kvps+'sz=1280x946,200x800,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nba/nbateamschedule;pgtyp=nbateamschedule;sp=nba;tm=gs;sz=1280x946,200x800,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nba/nbateamschedule;pgtyp=nbateamschedule;sp=nba;tm=gs;sz=1280x946,200x800,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n<!-- begin subheader -->\n<div id=\"subheader\">\n<!--
+        begin content -->\n<div id=\"content-wrapper\">\n<div id=\"ad-top\" class=\"container\">\n<!--
+        begin Banner ad -->\n<div class=\"span-6 ad banner top\"><div class=\"ad-center\"><div
+        class=\"ad-wrapper\"><!--espn.us.com.nba sitezone--><!--http://ad.Doubleclick.net
+        hostUrl-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nba\",ad_zone=\"nbateamschedule\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Banner;\"+ad_u+\"sz=728x90,970x66,924x50,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Banner\" data-cb-dfp-id=\"'+ad_kvps+'sz=728x90,970x66,924x50,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nba/nbateamschedule;pgtyp=nbateamschedule;sp=nba;tm=gs;sz=728x90,970x66,924x50,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nba/nbateamschedule;pgtyp=nbateamschedule;sp=nba;tm=gs;sz=728x90,970x66,924x50,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div></div></div>\n<!-- end Banner
+        ad -->\n</div>\n<div id=\"content\" class=\"container\">\n<div id=\"fb-root\"></div><!--[if
+        lte IE 7]><link rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/combiner/c?css=modules/browser-alert.r7.css\"
+        type=\"text/css\" /><div class=\"span-6\" id=\"browser-alert-wrapper\" style=\"display:none;\"><div
+        class=\"mod-container mod-no-header-footer browser-alert\"><div class=\"mod-content\"><div
+        class=\"gradient-container\"><h1><span>Your Web Browser</span> is no longer
+        supported</h1><p>To experience everything that ESPN.com has to offer, we recommend
+        that you upgrade to a newer version of your web browser. Click the upgrade
+        button to the right or <a href=\"http://espn.go.com/espn/news/story?id=5630562\">learn
+        more</a>.</p><ul><li><a class=\"btn-upgrade\" href=\"http://www.microsoft.com/windows/internet-explorer/default.aspx\">Upgrade</a></li><li><a
+        class=\"btn-faq\" href=\"http://espn.go.com/espn/news/story?id=5630562\">FAQs</a></li></ul></div></div></div></div><script>(function(b){setTimeout(function(){var
+        a=b(\"#browser-alert-wrapper\");if(espn.cookie.get(\"browseralert\")!=\"true\"){b('<a
+        class=\"btn-close\" href=\"#\">Close</a>').bind(\"click\",function(){a.hide();espn.cookie.set(\"browseralert\",\"true\",30);return
+        false}).appendTo(a.find(\".gradient-container\"));a.show();espn.cookie.set(\"browseralert\",\"true\")}},100)})(jQuery);</script><![endif]--><div
+        id=\"sub-branding\"><h2 class=\"logo\"><a href=\"http://espn.go.com/nba/team/_/name/GS/golden-state-warriors\"
+        class=\"sub-brand-title\"><b>Golden State Warriors</b></a></h2><div class=\"presby\"><!--espn.us.com.nba
+        sitezone--><!--http://ad.Doubleclick.net hostUrl-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.nba\",ad_zone=\"nbateamschedule\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=EnhancedLogo;\"+ad_u+\"sz=180x45,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"EnhancedLogo\" data-cb-dfp-id=\"'+ad_kvps+'sz=180x45,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nba/nbateamschedule;pgtyp=nbateamschedule;sp=nba;tm=gs;sz=180x45,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nba/nbateamschedule;pgtyp=nbateamschedule;sp=nba;tm=gs;sz=180x45,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div><div class=\"sub-title\">33-6,
+        1st in Pacific Division</div></div>\n\n<script type=\"text/javascript\">\n\tvar
+        loggedIn = espn.core.loggedIn;\n\tvar displayModule = false;\n\tvar showAddButton
+        = true;\n\tvar fadeTime = 1500;\n\tvar baseRef = '/';\n\tvar lang = 'en';\n\t(function($)
+        {\n\t\tfunction resetData(checkSport, checkTeam){\n\t\t\tif (loggedIn){\n\t\t\t\tespn.p13n.reset({\n\t\t\t\t\tsuccess:
+        function(data){\n\t\t\t\t\t\tif (data != null && data != 'UNDEF' && typeof(data.myTeams)
+        != 'UNDEF' && data.myTeams != null){\n\t\t\t\t\t\t\tvar count = 0;\n\t\t\t\t\t\t\tvar
+        sportTypes = {10:'mlb',46:'nba',28:'nfl',90:'nhl',23:'ncf',41:'ncb',54:'ncw',600:'soccer'}\n\t\t\t\t\t\t\tvar
+        sportAbbrevs = {10:'MLB',46:'NBA',28:'NFL',90:'NHL',23:'NCAAF',41:'NCAAM',54:'NCAAW',600:'Soccer'}\n\t\t\t\t\t\t\t$.each(data.myTeams,
+        function(i,item){\n\t\t\t\t\t\t\t\tif ((checkTeam == item.id && checkSport
+        == item.sport) || (checkTeam == 0 && checkSport == 0)){ // when updating a
+        team, only update that specific team\n\t\t\t\t\t\t\t\t\tvar logo = '';\n\t\t\t\t\t\t\t\t\tif
+        (typeof(item.sport) != 'UNDEF' && item.sport != null){\n\t\t\t\t\t\t\t\t\t\tsportType
+        = sportTypes[item.sport];\n\t\t\t\t\t\t\t\t\t\tsportAbbrev = sportAbbrevs[item.sport];\n\t\t\t\t\t\t\t\t\t\tsport
+        = item.sport;\n\t\t\t\t\t\t\t\t\t\tabbrev = '';\n\t\t\t\t\t\t\t\t\t\tswabbrev
+        = '';\n\t\t\t\t\t\t\t\t\t\tif (typeof(item.abbrev) != 'UNDEF' && item.abbrev
+        != null){\n\t\t\t\t\t\t\t\t\t\t\tabbrev = item.abbrev.toLowerCase();\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tif
+        (typeof(item.sw_abbrev) != 'UNDEF' && item.sw_abbrev != null){\n\t\t\t\t\t\t\t\t\t\t\tswabbrev
+        = item.sw_abbrev.toLowerCase();\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tdesc
+        = item.text;\n\t\t\t\t\t\t\t\t\t\tdescSEO = desc;\n\t\t\t\t\t\t\t\t\t\twhile(descSEO.indexOf('
+        ')!=-1)descSEO=descSEO.replace(' ','-');\n\t\t\t\t\t\t\t\t\t\tif (sport ==
+        10 || sport == 28 || sport == 90 || sport == 46){ // mlb, nfl and nhl (new
+        reshelled clubhouses will go here)\n\t\t\t\t\t\t\t\t\t\t\tif (swabbrev ==
+        ''){ swabbrev = abbrev; }\n\t\t\t\t\t\t\t\t\t\t\tlogo = '<a href=\"http://espn.go.com/'
+        + sportType + baseRef + 'team/_/name/' + abbrev + '/' + descSEO.toLowerCase()
+        + '\"  title=\"' + desc + '\"><div class=\"logo-medium logo-' + sportType
+        + '-medium ' + sportType + '-medium-' + item.id + '\"></div></a>';\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\telse
+        if (sportType == 'ncf'){\n\t\t\t\t\t\t\t\t\t\t\ttAbbrev = item.id\n\t\t\t\t\t\t\t\t\t\t\tlogo
+        = '<a href=\"http://espn.go.com/college-football/team/_/id/' + tAbbrev + '/'
+        + descSEO.toLowerCase() + '\" title=\"' + desc + ' - ' + sportAbbrev + '\"><img
+        src=\"http://a.espncdn.com/i/teamlogos/ncaa/sml/trans/' + tAbbrev + '.gif\"
+        alt=\"\"/></a>';\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\telse if (sportType
+        == 'ncb'){\n\t\t\t\t\t\t\t\t\t\t\ttAbbrev = item.id\n\t\t\t\t\t\t\t\t\t\t\tlogo
+        = '<a href=\"http://espn.go.com/mens-college-basketball/team/_/id/' + tAbbrev
+        + '/' + descSEO.toLowerCase() + '\" title=\"' + desc + ' - ' + sportAbbrev
+        + '\"><img src=\"http://a.espncdn.com/i/teamlogos/ncaa/sml/trans/' + tAbbrev
+        + '.gif\" alt=\"\"/></a>';\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\telse
+        if (sportType == 'ncw'){ // ncaa\n\t\t\t\t\t\t\t\t\t\t\ttAbbrev = item.id;\n\t\t\t\t\t\t\t\t\t\t\tlogoAbbrev
+        = tAbbrev\n\t\t\t\t\t\t\t\t\t\t\tif (item.sport == 54 && item.id == 2633){
+        logoAbbrev = tAbbrev + '_ncw'; }\n\t\t\t\t\t\t\t\t\t\t\tlogo = '<a href=\"http://espn.go.com/womens-college-basketball/team/_/id/'
+        + tAbbrev + '/' + descSEO.toLowerCase() + '\" title=\"' + desc + ' - ' + sportAbbrev
+        + '\"><img src=\"http://a.espncdn.com/i/teamlogos/ncaa/sml/trans/' + logoAbbrev
+        + '.gif\" alt=\"\"/></a>';\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\telse
+        if (sportType == 'soccer'){ // all inclusive soccer list\n\t\t\t\t\t\t\t\t\t\t\tlogo
+        = '<a href=\"http://espnfc.com/team?id=' + item.id + '\" title=\"' + desc
+        + ' ' + sportAbbrev + '\"><img width=\"50\" height=\"50\" src=\"http://soccernet-akamai.espn.go.com/design05/i/clubhouse/badges/'
+        + item.id + '.gif\" alt=\"\"/></a>';\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tif
+        (count == 0 && !displayModule){\n\t\t\t\t\t\t\t\t\t\t\t$('.mod-myespn .personalization-teams').html('');\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tif
+        (logo != ''){\n\t\t\t\t\t\t\t\t\t\t\tif (checkTeam == item.id && checkSport
+        == item.sport){\n\t\t\t\t\t\t\t\t\t\t\t\t$('.mod-myespn .personalization-teams').append(logo).fadeIn(fadeTime,
+        function(){\n\t\t\t\t\t\t\t\t\t\t\t\t\tespn.core.init.faves();\n\t\t\t\t\t\t\t\t\t\t\t\t});\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\telse{\n\t\t\t\t\t\t\t\t\t\t\t\t$('.mod-myespn
+        .personalization-teams').append(logo);\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tcount++;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\tif
+        (count == 1 && !displayModule){\n\t\t\t\t\t\t\t\t\t\t$('#myespn-personalization').show();\n\t\t\t\t\t\t\t\t\t\tdisplayModule
+        = true;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t}\n\t\t}\n\t\t$(document).ready(function()
+        {\n\t\t\tvar teamId = $('body').metadata()['teamId'];\n\t\t\tvar sportId =
+        $('body').metadata()['sportId'];\n\t\t\tvar teamName = 'Golden State Warriors';\n\t\t\tvar
+        abbrevs = {10:'mlb',46:'nba',28:'nfl',90:'nhl',23:'ncf',41:'ncb',54:'ncw'}\n\t\t\tvar
+        teamAbbrev = abbrevs[sportId];\n\t\t\tif (loggedIn){\n\t\t\t\tif ($('#sub-branding
+        h1').length > 0){\n\t\t\t\t\t$('#sub-branding h1').after('<a class=\"btn-add-fave-team\"></a>');\n\t\t\t\t}\n\t\t\t\telse{\n\t\t\t\t\t$('#sub-branding
+        h2').after('<a class=\"btn-add-fave-team\"></a>');\n\t\t\t\t}\n\t\t\t\tresetData(0,
+        0);\n\t\t\t\tespn.p13n.get({\n\t\t\t\t\t\"success\" : function(data) {\n\t\t\t\t\t\tif
+        (data!=null && data!='UNDEF' && typeof(data.myTeams) != 'UNDEF' && data.myTeams
+        != null) {\n\t\t\t\t\t\t\t$.each(data.myTeams, function(i,item) {\n\t\t\t\t\t\t\t\tif
+        (typeof(item.sport) != 'UNDEF' && item.sport != null) {\n\t\t\t\t\t\t\t\t\tif
+        (item.sport == sportId && item.id == teamId){\n\t\t\t\t\t\t\t\t\t\tshowAddButton
+        = false;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t}\n\t\t\t\t\t\tif
+        (showAddButton){\n\t\t\t\t\t\t\t$('#sub-branding a.btn-add-fave-team').html('Add
+        to my favorites').show().attr(\"onclick\",\"anTrackLink(this,'espn','teamclubhouse','\"
+        + teamAbbrev + \"_\" + teamName.toLowerCase().replace(' ','') + \"_addfavorite_loggedin-add');
+        return false;\");\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse{\n\t\t\t\t\t\t\t//$('#sub-branding
+        a.btn-add-fave-team').html('Favorite Team').show().addClass('favorite').attr('name','&lpos=teamclubhouse&lid='
+        + teamAbbrev + '_'+teamName.toLowerCase().replace(' ','')+'_addfavorite_loggedin-modify');\n\t\t\t\t\t\t\t$('#sub-branding
+        a.btn-add-fave-team').html('Favorite Team').show().addClass('favorite cbOverlay').attr({href:'',name:'&lpos=teamclubhouse&lid='
+        + teamAbbrev + '_'+teamName.toLowerCase().replace(' ','')+'_addfavorite_loggedin-modify',tref:'/personalization/v3_1/personalization','data-language':lang.toLowerCase(),tab:'teams'});\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t\"error\"
+        : function(){\n\t\t\t\t\t\t$('body.clubhouse #clubhouse-city-teams').show();\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t\t$('#sub-branding
+        a.btn-add-fave-team').click(function(){\n\t\t\t\t\tif (showAddButton){ //
+        don't allow the button to click through if it is informing you of their favorite
+        team\n\t\t\t\t\t\tshowAddButton = false; // don't allow multiple clicks during
+        the transition\n\t\t\t\t\t\tespn.p13n.add(\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"teams\":
+        sportId+\":\"+teamId\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"success\"
+        : function() {\n\t\t\t\t\t\t\t\t\t$('#sub-branding a.btn-add-fave-team').html('Added').addClass('favorite').css('cursor','default');\n\t\t\t\t\t\t\t\t\tsetTimeout(function(){\n\t\t\t\t\t\t\t\t\t\t\tresetData(sportId,teamId);\n\t\t\t\t\t\t\t\t\t\t},
+        fadeTime\n\t\t\t\t\t\t\t\t\t);\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"error\"
+        : function() {\n\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t);\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t}\n\t\t\telse{\n\t\t\t\t$('body.clubhouse
+        #clubhouse-city-teams').show();\n\t\t\t\tif ($('#sub-branding h1').length
+        > 0){\n\t\t\t\t\t$('#sub-branding h1').after('<a class=\"btn-add-fave-team\">Sign
+        in to personalize</a>');\n\t\t\t\t}\n\t\t\t\telse{\n\t\t\t\t\t$('#sub-branding
+        h2').after('<a class=\"btn-add-fave-team\">Sign in to personalize</a>');\n\t\t\t\t}\n\t\t\t\t$('#sub-branding
+        a.btn-add-fave-team').show().attr('href','').attr('name','&lops=teamclubhouse&lid='
+        + teamAbbrev + '_' + teamName.toLowerCase().replace(' ','') + '_addfavorite_loggedout').attr('tref','/members/v3_1/login').attr('data-options','{\"addTeams\":\"'+sportId+':'+teamId+'\",\"width\":\"820\",\"height\":\"385\"}').addClass(\"cbOverlay\");\n\t\t\t}\n\t\t\t$('#sub-branding
+        a.btn-add-fave-team').hover(\n\t\t\t\tfunction(){\n\t\t\t\t\t$(this).addClass('favorite').css('font-size','10px');\n\t\t\t\t},\n\t\t\t\tfunction(){\n\t\t\t\t\tif
+        (showAddButton){\n\t\t\t\t\t\t$(this).removeClass('favorite').css('font-size','11px');\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t);\n\n\t\t\t$('.inline-header
+        ul.links li a').addClass('cbOverlay').attr({href:'',tref:'/personalization/v3_1/personalization','data-language':lang.toLowerCase(),tab:'teams'});\n\n\t\t});\n\t})(jQuery);\n</script><style>body.nba
+        .stathead td,body.nba .stathead,.mod-content tr.stathead,.mod-content tr.stathead
+        td,.mod-header,body.clubhouse .mod-calendar-month td.day.home div.day-top,body.clubhouse
+        .mod-calendar-month tr.util td ul.key li span.home, body.nba .mod-data-table
+        .mod-header{background: #00275D !important;}</style><div class=\"mod-page-tabs
+        mod-pagenav-tabs\"><ul class=\"ui-tabs\"><li ><a href=\"/nba/team/_/name/gs/golden-state-warriors\">Clubhouse</a></li><li
+        ><a href=\"/nba/team/stats/_/name/gs/golden-state-warriors\">Statistics</a></li><li
+        class=\"active\"><a href=\"/nba/team/schedule/_/name/gs/golden-state-warriors\">Schedule</a></li><li
+        ><a href=\"/nba/team/roster/_/name/gs/golden-state-warriors\">Roster</a></li><li
+        ><a href=\"/nba/team/depth/_/name/gs/golden-state-warriors\">Depth</a></li><li
+        ><a href=\"/nba/team/transactions/_/name/gs/golden-state-warriors\">Transactions</a></li><li
+        ><a href=\"/nba/team/rankings/_/name/gs/golden-state-warriors\">Rankings</a></li><li
+        ><a href=\"/nba/team/photos/_/name/gs/golden-state-warriors\">Photos</a></li><li
+        ><a href=\"/nba/team/stadium/_/name/gs/golden-state-warriors\">Stadium</a></li><li
+        \ onclick=\"this.href=this.href+'?gcid=C12289x468&keyword=Golden+State+Warriors+Nav'\"
+        target=\"_blank\"><a href=\"http://www.stubhub.com/golden-state-warriors-tickets/?gcid=C12289x468&keyword=Golden+State+Warriors+Nav\">Tickets</a></li><li
+        ><a href=\"http://www.dickssportinggoods.com/category/index.jsp?categoryId=15528706&camp=Part:ESPNpart::nbaclubhousenav:GoldenStateWarriors\"
+        rel=\"nofollow\">Shop</a></li></ul></div>\n<div id=\"stubhub-click-tracking\"></div>\n<div
+        class=\"mboxDefault\">\n    <style type=\"text/css\">\n        .stubhub-link.long
+        {display: inline;}\n        .stubhub-link.short {display: none;}\n    </style>\n</div>\n<script
+        type=\"text/javascript\">\n    mboxCreate('ESPN_Schedule', 'sport=nba');\n
+        \   mboxDefine('stubhub-click-tracking', 'ESPN_StubHub_Clicks');\n    jQuery(document).ready(function(){\n
+        \       jQuery('a.stubhub-link').on('click', function(){\n            mboxUpdate('ESPN_StubHub_Clicks');\n
+        \           setTimeout('window.location.href=\"' + jQuery(this).attr('href')
+        + '\";', 500);\n            return false;\n        });\n    });\n</script>\n\t<div
+        class=\"bg-opaque\" id=\"my-teams-table\">\n\t\t<div class=\"span-6\">\n\t\t\t<div
+        class=\"col-main\" id=\"my-teams-table\">\n\t\t\t\t<div class=\"mod-section-header\">\n\t\t\t\t\t<h1
+        class=\"h2\">Golden State Warriors Schedule/Results - 2014-15</h1>\n\t\t\t\t\t<form
+        class=\"js-goto\"><select class=\"select-box\"><option value=\"\">NBA Teams</option><option
+        value=\"http://espn.go.com/nba/team/schedule/_/name/atl/atlanta-hawks\">Atlanta
+        Hawks</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/bos/boston-celtics\">Boston
+        Celtics</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/bkn/brooklyn-nets\">Brooklyn
+        Nets</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/cha/charlotte-hornets\">Charlotte
+        Hornets</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/chi/chicago-bulls\">Chicago
+        Bulls</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/cle/cleveland-cavaliers\">Cleveland
+        Cavaliers</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/dal/dallas-mavericks\">Dallas
+        Mavericks</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/den/denver-nuggets\">Denver
+        Nuggets</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/det/detroit-pistons\">Detroit
+        Pistons</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/gs/golden-state-warriors\">Golden
+        State Warriors</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/hou/houston-rockets\">Houston
+        Rockets</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/ind/indiana-pacers\">Indiana
+        Pacers</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/lac/los-angeles-clippers\">Los
+        Angeles Clippers</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/lal/los-angeles-lakers\">Los
+        Angeles Lakers</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/mem/memphis-grizzlies\">Memphis
+        Grizzlies</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/mia/miami-heat\">Miami
+        Heat</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/mil/milwaukee-bucks\">Milwaukee
+        Bucks</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/min/minnesota-timberwolves\">Minnesota
+        Timberwolves</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/no/new-orleans-pelicans\">New
+        Orleans Pelicans</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/ny/new-york-knicks\">New
+        York Knicks</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/okc/oklahoma-city-thunder\">Oklahoma
+        City Thunder</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/orl/orlando-magic\">Orlando
+        Magic</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/phi/philadelphia-76ers\">Philadelphia
+        76ers</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/phx/phoenix-suns\">Phoenix
+        Suns</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/por/portland-trail-blazers\">Portland
+        Trail Blazers</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/sac/sacramento-kings\">Sacramento
+        Kings</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/sa/san-antonio-spurs\">San
+        Antonio Spurs</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/tor/toronto-raptors\">Toronto
+        Raptors</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/utah/utah-jazz\">Utah
+        Jazz</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/wsh/washington-wizards\">Washington
+        Wizards</option></select></form>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"floatleft\">\n\t\t\t\t\tYear:\n\t\t\t\t\t<form
+        class=\"js-goto\" style=\"display: inline; margin-bottom: 5px;\">\n\t\t\t\t\t\t<select
+        class=\"tablesm\">\n\t\t\t\t\t\t\t<option value=\"http://espn.go.com/nba/team/schedule/_/name/gs/golden-state-warriors\"
+        selected=\"selected\">2014-15</option><option value=\"http://espn.go.com/nba/team/schedule/_/name/gs/year/2014/golden-state-warriors\">2013-14</option><option
+        value=\"http://espn.go.com/nba/team/schedule/_/name/gs/year/2013/golden-state-warriors\">2012-13</option><option
+        value=\"http://espn.go.com/nba/team/schedule/_/name/gs/year/2012/golden-state-warriors\">2011-12</option><option
+        value=\"http://espn.go.com/nba/team/schedule/_/name/gs/year/2011/golden-state-warriors\">2010-11</option><option
+        value=\"http://espn.go.com/nba/team/schedule/_/name/gs/year/2010/golden-state-warriors\">2009-10</option><option
+        value=\"http://espn.go.com/nba/team/schedule/_/name/gs/year/2009/golden-state-warriors\">2008-09</option><option
+        value=\"http://espn.go.com/nba/team/schedule/_/name/gs/year/2008/golden-state-warriors\">2007-08</option><option
+        value=\"http://espn.go.com/nba/team/schedule/_/name/gs/year/2007/golden-state-warriors\">2006-07</option><option
+        value=\"http://espn.go.com/nba/team/schedule/_/name/gs/year/2006/golden-state-warriors\">2005-06</option><option
+        value=\"http://espn.go.com/nba/team/schedule/_/name/gs/year/2005/golden-state-warriors\">2004-05</option><option
+        value=\"http://espn.go.com/nba/team/schedule/_/name/gs/year/2004/golden-state-warriors\">2003-04</option><option
+        value=\"http://espn.go.com/nba/team/schedule/_/name/gs/year/2003/golden-state-warriors\">2002-03</option>\n\t\t\t\t\t\t</select>\n\t\t\t\t\t</form>\n\t\t\t\t</div>\n\t\t\t\t<div
+        class=\"floatright cross-links tablehead\" style=\"width: auto;\">\n\t\t\t\t\t<a
+        href=\"/nba/teams/printSchedule?team=gs&season=2015\" rel=\"nofollow\" target=\"_blank\">Printable
+        schedule &#187;</a>\n\t\t\t\t\t<br/>\n\t\t\t\t\t<script>(function () {var
+        so = document.createElement(\"script\"); so.async = true;so.src = \"http://dff2h0hbfv6w4.cloudfront.net/scripts/loader.js\";var
+        s = document.getElementsByTagName(\"script\")[0]; s.parentNode.insertBefore(so,
+        s);})();</script><a data-size=\"medium\" href=\"https://spoton.it/schedules/espn-nba/gs\"
+        data-options=\"ticker\" class=\"spoton-it\">Add to calendar</a>\n\t\t\t\t</div>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<div
+        class=\"mod-page-tabs mod-thirdnav-tabs\" style=\"padding-top: 3px;\"><ul
+        class=\"ui-tabs\"><li class=\"shiftleft\"><a href=\"http://espn.go.com/nba/team/schedule/_/name/gs/seasontype/1/golden-state-warriors\">Preseason</a></li><li
+        class=\"active\"><a href=\"http://espn.go.com/nba/team/schedule/_/name/gs/golden-state-warriors\">Regular</a></li></ul></div><div
+        class=\"mod-container mod-table mod-no-header-footer\"><div class=\"mod-content\"><table
+        cellspacing=\"1\" cellpadding=\"3\" class=\"tablehead\"><tr class=\"stathead\"><td
+        colspan=\"9\">2015 Regular Season Schedule</td></tr><tr class=\"colhead\"><td>OCTOBER</td><td>OPPONENT</td><td>RESULT</td><td>W-L</td><td
+        align=\"left\" title=\"Points Leader\">HI POINTS</td><td align=\"left\" title=\"Rebounds
+        Leader\">HI REBOUNDS</td><td align=\"left\" title=\"Assists Leader\">HI ASSISTS</td></tr><tr
+        class=\"oddrow team-46-23\"><td>Wed, Oct 29</td><td><ul class=\"game-schedule\"><li
+        class=\"game-status\">@</li><li class=\"team-logo-small logo-nba-small nba-small-23\"><a
+        href=\"http://espn.go.com/nba/team/_/name/sac/sacramento-kings\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/sac/sacramento-kings\">Sacramento</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578306\">95-77</a></li></ul></td><td>1-0</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 24</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/4258/demarcus-cousins\">D.
+        Cousins</a> 11</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3973/darren-collison\">D.
+        Collison</a> 8</td></tr><tr class=\"colhead\"><td>NOVEMBER</td><td>OPPONENT</td><td>RESULT</td><td>W-L</td><td
+        align=\"left\" title=\"Points Leader\">HI POINTS</td><td align=\"left\" title=\"Rebounds
+        Leader\">HI REBOUNDS</td><td align=\"left\" title=\"Assists Leader\">HI ASSISTS</td></tr><tr
+        class=\"oddrow team-46-13\"><td>Sat, Nov 1</td><td><ul class=\"game-schedule\"><li
+        class=\"game-status\">vs</li><li class=\"team-logo-small logo-nba-small nba-small-13\"><a
+        href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\">Los
+        Angeles</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        win\"><span class=\"greenfont\">W</span></li><li class=\"score\"><a href=\"/nba/recap?id=400578330\">127-104</a></li></ul></td><td>2-0</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6475/klay-thompson\">K.
+        Thompson</a> 41</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2747/andrew-bogut\">A.
+        Bogut</a> 10</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 10</td></tr><tr class=\"evenrow team-46-22\"><td>Sun, Nov 2</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-22\"><a href=\"http://espn.go.com/nba/team/_/name/por/portland-trail-blazers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/por/portland-trail-blazers\">Portland</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578334\">95-90</a></li></ul></td><td>3-0</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6475/klay-thompson\">K.
+        Thompson</a> 29</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2983/lamarcus-aldridge\">L.
+        Aldridge</a> 13</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 6</td></tr><tr class=\"oddrow team-46-12\"><td>Wed, Nov 5</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-12\"><a href=\"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers\">Los
+        Angeles</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        win\"><span class=\"greenfont\">W</span></li><li class=\"score\"><a href=\"/nba/recap?id=400578360\">121-104</a></li></ul></td><td>4-0</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 28</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2747/andrew-bogut\">A.
+        Bogut</a> 14</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2779/chris-paul\">C.
+        Paul</a> 12</td></tr><tr class=\"evenrow team-46-10\"><td>Sat, Nov 8</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-10\"><a href=\"http://espn.go.com/nba/team/_/name/hou/houston-rockets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/hou/houston-rockets\">Houston</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578379\">98-87</a></li></ul></td><td>5-0</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 34</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2747/andrew-bogut\">A.
+        Bogut</a> 18</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3992/james-harden\">J.
+        Harden</a> 7</td></tr><tr class=\"oddrow team-46-21\"><td>Sun, Nov 9</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-21\"><a href=\"http://espn.go.com/nba/team/_/name/phx/phoenix-suns\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/phx/phoenix-suns\">Phoenix</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status loss\"><span class=\"redfont\">L</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578387\">107-95</a></li></ul></td><td>5-1</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 28</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6462/marcus-morris\">M.
+        Morris</a> 9</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 10</td></tr><tr class=\"evenrow team-46-24\"><td>Tue, Nov 11</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-24\"><a href=\"http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs\">San
+        Antonio</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        loss\"><span class=\"redfont\">L</span></li><li class=\"score\"><a href=\"/nba/recap?id=400578400\">113-100</a></li></ul></td><td>5-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6475/klay-thompson\">K.
+        Thompson</a> 29</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/215/tim-duncan\">T.
+        Duncan</a> 13</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/1015/tony-parker\">T.
+        Parker</a> 7</td></tr><tr class=\"oddrow team-46-17\"><td>Thu, Nov 13</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-17\"><a href=\"http://espn.go.com/nba/team/_/name/bkn/brooklyn-nets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/bkn/brooklyn-nets\">Brooklyn</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578413\">107-99</a></li></ul></td><td>6-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6475/klay-thompson\">K.
+        Thompson</a> 25</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2747/andrew-bogut\">A.
+        Bogut</a> 14</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6589/draymond-green\">D.
+        Green</a> 7</td></tr><tr class=\"evenrow team-46-30\"><td>Sat, Nov 15</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-30\"><a href=\"http://espn.go.com/nba/team/_/name/cha/charlotte-hornets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/cha/charlotte-hornets\">Charlotte</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578432\">112-87</a></li></ul></td><td>7-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6475/klay-thompson\">K.
+        Thompson</a> 21</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2579258/cody-zeller\">C.
+        Zeller</a> 10</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 9</td></tr><tr class=\"oddrow team-46-13\"><td>Sun, Nov 16</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-13\"><a href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\">Los
+        Angeles</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        win\"><span class=\"greenfont\">W</span></li><li class=\"score\"><a href=\"/nba/recap?id=400578437\">136-115</a></li></ul></td><td>8-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/110/kobe-bryant\">K.
+        Bryant</a> 44</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3994/jordan-hill\">J.
+        Hill</a> 11</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 15</td></tr><tr class=\"evenrow team-46-26\"><td>Fri, Nov 21</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-26\"><a href=\"http://espn.go.com/nba/team/_/name/utah/utah-jazz\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/utah/utah-jazz\">Utah</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578474\">101-88</a></li></ul></td><td>9-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6447/enes-kanter\">E.
+        Kanter</a> 18</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6578/harrison-barnes\">H.
+        Barnes</a> 11</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 10</td></tr><tr class=\"oddrow team-46-25\"><td>Sun, Nov 23</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-25\"><a href=\"http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder\">Oklahoma
+        City</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        win\"><span class=\"greenfont\">W</span></li><li class=\"score\"><a href=\"/nba/recap?id=400578488\">91-86</a></li></ul></td><td>10-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3460/marreese-speights\">M.
+        Speights</a> 28</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3474/anthony-morrow\">A.
+        Morrow</a> 11</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6443/reggie-jackson\">R.
+        Jackson</a> 8</td></tr><tr class=\"evenrow team-46-14\"><td>Tue, Nov 25</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-14\"><a href=\"http://espn.go.com/nba/team/_/name/mia/miami-heat\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/mia/miami-heat\">Miami</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578498\">114-97</a></li></ul></td><td>11-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 40</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2747/andrew-bogut\">A.
+        Bogut</a> 10</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 7</td></tr><tr class=\"oddrow team-46-19\"><td>Wed, Nov 26</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-19\"><a href=\"http://espn.go.com/nba/team/_/name/orl/orlando-magic\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/orl/orlando-magic\">Orlando</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578504\">111-96</a></li></ul></td><td>12-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 28</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6478/nikola-vucevic\">N.
+        Vucevic</a> 13</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 8</td></tr><tr class=\"evenrow team-46-30\"><td>Fri, Nov 28</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-30\"><a href=\"http://espn.go.com/nba/team/_/name/cha/charlotte-hornets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/cha/charlotte-hornets\">Charlotte</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578516\">106-101</a></li></ul></td><td>13-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3460/marreese-speights\">M.
+        Speights</a> 27</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2579258/cody-zeller\">C.
+        Zeller</a> 14</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6479/kemba-walker\">K.
+        Walker</a> 13</td></tr><tr class=\"oddrow team-46-8\"><td>Sun, Nov 30</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-8\"><a href=\"http://espn.go.com/nba/team/_/name/det/detroit-pistons\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/det/detroit-pistons\">Detroit</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578535\">104-93</a></li></ul></td><td>14-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2581018/kentavious-caldwell-pope\">K.
+        Caldwell-Pope</a> 23</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3460/marreese-speights\">M.
+        Speights</a> 12</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2411/josh-smith\">J.
+        Smith</a> 12</td></tr><tr class=\"colhead\"><td>DECEMBER</td><td>OPPONENT</td><td>RESULT</td><td>W-L</td><td
+        align=\"left\" title=\"Points Leader\">HI POINTS</td><td align=\"left\" title=\"Rebounds
+        Leader\">HI REBOUNDS</td><td align=\"left\" title=\"Assists Leader\">HI ASSISTS</td></tr><tr
+        class=\"oddrow team-46-19\"><td>Tue, Dec 2</td><td><ul class=\"game-schedule\"><li
+        class=\"game-status\">vs</li><li class=\"team-logo-small logo-nba-small nba-small-19\"><a
+        href=\"http://espn.go.com/nba/team/_/name/orl/orlando-magic\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/orl/orlando-magic\">Orlando</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578554\">98-97</a></li></ul></td><td>15-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2527963/victor-oladipo\">V.
+        Oladipo</a> 27</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2747/andrew-bogut\">A.
+        Bogut</a> 12</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6589/draymond-green\">D.
+        Green</a> 6</td></tr><tr class=\"evenrow team-46-3\"><td>Thu, Dec 4</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-3\"><a href=\"http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans\">New
+        Orleans</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        win\"><span class=\"greenfont\">W</span></li><li class=\"score\"><a href=\"/nba/recap?id=400578567\">112-85</a></li></ul></td><td>16-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6583/anthony-davis\">A.
+        Davis</a> 30</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3414/omer-asik\">O.
+        Asik</a> 15</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 11</td></tr><tr class=\"oddrow team-46-4\"><td>Sat, Dec 6</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-4\"><a href=\"http://espn.go.com/nba/team/_/name/chi/chicago-bulls\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/chi/chicago-bulls\">Chicago</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578581\">112-102</a></li></ul></td><td>17-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6589/draymond-green\">D.
+        Green</a> 31</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/996/pau-gasol\">P.
+        Gasol</a> 20</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 7</td></tr><tr class=\"evenrow team-46-16\"><td>Mon, Dec 8</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-16\"><a href=\"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves\">Minnesota</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578597\">102-86</a></li></ul></td><td>18-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 21</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2534781/gorgui-dieng\">G.
+        Dieng</a> 11</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3064440/zach-lavine\">Z.
+        LaVine</a> 8</td></tr><tr class=\"oddrow team-46-10\"><td>Wed, Dec 10</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-10\"><a href=\"http://espn.go.com/nba/team/_/name/hou/houston-rockets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/hou/houston-rockets\">Houston</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578616\">105-93</a></li></ul></td><td>19-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3992/james-harden\">J.
+        Harden</a> 34</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3460/marreese-speights\">M.
+        Speights</a> 8</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 7</td></tr><tr class=\"evenrow team-46-6\"><td>Sat, Dec 13</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-6\"><a href=\"http://espn.go.com/nba/team/_/name/dal/dallas-mavericks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/dal/dallas-mavericks\">Dallas</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578632\">105-98</a></li></ul></td><td>20-2</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 29</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/1006/richard-jefferson\">R.
+        Jefferson</a> 13</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 8</td></tr><tr class=\"oddrow team-46-3\"><td>Sun, Dec 14</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-3\"><a href=\"http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans\">New
+        Orleans</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        win\"><span class=\"greenfont\">W</span></li><li class=\"score\"><a href=\"/nba/recap?id=400578640\">128-122
+        OT</a></li></ul></td><td>21-2</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 34</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6589/draymond-green\">D.
+        Green</a> 13</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3995/jrue-holiday\">J.
+        Holiday</a> 9</td></tr><tr class=\"evenrow team-46-29\"><td>Tue, Dec 16</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-29\"><a href=\"http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies\">Memphis</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status loss\"><span class=\"redfont\">L</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578657\">105-98</a></li></ul></td><td>21-3</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3206/marc-gasol\">M.
+        Gasol</a> 24</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/1017/zach-randolph\">Z.
+        Randolph</a> 10</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2448/beno-udrih\">B.
+        Udrih</a> 8</td></tr><tr class=\"oddrow team-46-25\"><td>Thu, Dec 18</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-25\"><a href=\"http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder\">Oklahoma
+        City</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        win\"><span class=\"greenfont\">W</span></li><li class=\"score\"><a href=\"/nba/recap?id=400578674\">114-109</a></li></ul></td><td>22-3</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 34</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2530596/andre-roberson\">A.
+        Roberson</a> 12</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 9</td></tr><tr class=\"evenrow team-46-23\"><td>Mon, Dec 22</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-23\"><a href=\"http://espn.go.com/nba/team/_/name/sac/sacramento-kings\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/sac/sacramento-kings\">Sacramento</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578707\">128-108</a></li></ul></td><td>23-3</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6475/klay-thompson\">K.
+        Thompson</a> 25</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3005/rudy-gay\">R.
+        Gay</a> 9</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 11</td></tr><tr class=\"oddrow team-46-13\"><td>Tue, Dec 23</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-13\"><a href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\">Los
+        Angeles</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        loss\"><span class=\"redfont\">L</span></li><li class=\"score\"><a href=\"/nba/recap?id=400578718\">115-105</a></li></ul></td><td>23-4</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 22</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/1703/carlos-boozer\">C.
+        Boozer</a> 9</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2807/ronnie-price\">R.
+        Price</a> 8</td></tr><tr class=\"evenrow team-46-12\"><td>Thu, Dec 25</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-12\"><a href=\"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers\">Los
+        Angeles</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        loss\"><span class=\"redfont\">L</span></li><li class=\"score\"><a href=\"/nba/recap?id=400578723\">100-86</a></li></ul></td><td>23-5</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/165/jamal-crawford\">J.
+        Crawford</a> 24</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3989/blake-griffin\">B.
+        Griffin</a> 15</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 7</td></tr><tr class=\"oddrow team-46-16\"><td>Sat, Dec 27</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-16\"><a href=\"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves\">Minnesota</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578744\">110-97</a></li></ul></td><td>24-5</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 25</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2993875/shabazz-muhammad\">S.
+        Muhammad</a> 9</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3064440/zach-lavine\">Z.
+        LaVine</a> 14</td></tr><tr class=\"evenrow team-46-20\"><td>Tue, Dec 30</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-20\"><a href=\"http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers\">Philadelphia</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578766\">126-86</a></li></ul></td><td>25-5</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3460/marreese-speights\">M.
+        Speights</a> 23</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6589/draymond-green\">D.
+        Green</a> 10</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 9</td></tr><tr class=\"colhead\"><td>JANUARY</td><td>OPPONENT</td><td>RESULT</td><td>W-L</td><td
+        align=\"left\" title=\"Points Leader\">HI POINTS</td><td align=\"left\" title=\"Rebounds
+        Leader\">HI REBOUNDS</td><td align=\"left\" title=\"Assists Leader\">HI ASSISTS</td></tr><tr
+        class=\"oddrow team-46-28\"><td>Fri, Jan 2</td><td><ul class=\"game-schedule\"><li
+        class=\"game-status\">vs</li><li class=\"team-logo-small logo-nba-small nba-small-28\"><a
+        href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors\">Toronto</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578785\">126-105</a></li></ul></td><td>26-5</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 32</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6589/draymond-green\">D.
+        Green</a> 11</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6589/draymond-green\">D.
+        Green</a> 13</td></tr><tr class=\"evenrow team-46-25\"><td>Mon, Jan 5</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-25\"><a href=\"http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder\">Oklahoma
+        City</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        win\"><span class=\"greenfont\">W</span></li><li class=\"score\"><a href=\"/nba/recap?id=400578810\">117-91</a></li></ul></td><td>27-5</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6578/harrison-barnes\">H.
+        Barnes</a> 23</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6589/draymond-green\">D.
+        Green</a> 13</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2386/andre-iguodala\">A.
+        Iguodala</a> 6</td></tr><tr class=\"oddrow team-46-11\"><td>Wed, Jan 7</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-11\"><a href=\"http://espn.go.com/nba/team/_/name/ind/indiana-pacers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/ind/indiana-pacers\">Indiana</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578825\">117-102</a></li></ul></td><td>28-5</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6475/klay-thompson\">K.
+        Thompson</a> 40</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6424/lavoy-allen\">L.
+        Allen</a> 9</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 15</td></tr><tr class=\"evenrow team-46-5\"><td>Fri, Jan 9</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-5\"><a href=\"http://espn.go.com/nba/team/_/name/cle/cleveland-cavaliers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/cle/cleveland-cavaliers\">Cleveland</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578839\">112-94</a></li></ul></td><td>29-5</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2444/j.r.-smith\">J.
+        Smith</a> 27</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3449/kevin-love\">K.
+        Love</a> 14</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 10</td></tr><tr class=\"oddrow team-46-26\"><td>Tue, Jan 13</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-26\"><a href=\"http://espn.go.com/nba/team/_/name/utah/utah-jazz\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/utah/utah-jazz\">Utah</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578863\">116-105</a></li></ul></td><td>30-5</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 27</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/4257/derrick-favors\">D.
+        Favors</a> 11</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 11</td></tr><tr class=\"evenrow team-46-14\"><td>Wed, Jan 14</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-14\"><a href=\"http://espn.go.com/nba/team/_/name/mia/miami-heat\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/mia/miami-heat\">Miami</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578874\">104-89</a></li></ul></td><td>31-5</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 32</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/4262/hassan-whiteside\">H.
+        Whiteside</a> 12</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2386/andre-iguodala\">A.
+        Iguodala</a> 7</td></tr><tr class=\"oddrow team-46-25\"><td>Fri, Jan 16</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-25\"><a href=\"http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder\">Oklahoma
+        City</a></li></ul></td><td><ul class=\"game-schedule\"><li class=\"game-status
+        loss\"><span class=\"redfont\">L</span></li><li class=\"score\"><a href=\"/nba/recap?id=400578885\">127-115</a></li></ul></td><td>31-6</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3202/kevin-durant\">K.
+        Durant</a> 36</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3468/russell-westbrook\">R.
+        Westbrook</a> 15</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3468/russell-westbrook\">R.
+        Westbrook</a> 17</td></tr><tr class=\"evenrow team-46-10\"><td>Sat, Jan 17</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">@</li><li class=\"team-logo-small
+        logo-nba-small nba-small-10\"><a href=\"http://espn.go.com/nba/team/_/name/hou/houston-rockets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/hou/houston-rockets\">Houston</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578895\">131-106</a></li></ul></td><td>32-6</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 27</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2384/dwight-howard\">D.
+        Howard</a> 10</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 11</td></tr><tr class=\"oddrow team-46-7\"><td>Mon, Jan 19</td><td><ul
+        class=\"game-schedule\"><li class=\"game-status\">vs</li><li class=\"team-logo-small
+        logo-nba-small nba-small-7\"><a href=\"http://espn.go.com/nba/team/_/name/den/denver-nuggets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/den/denver-nuggets\">Denver</a></li></ul></td><td><ul
+        class=\"game-schedule\"><li class=\"game-status win\"><span class=\"greenfont\">W</span></li><li
+        class=\"score\"><a href=\"/nba/recap?id=400578907\">122-79</a></li></ul></td><td>33-6</td><td
+        colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/6475/klay-thompson\">K.
+        Thompson</a> 22</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/2772/david-lee\">D.
+        Lee</a> 10</td><td colspan=\"1\"><a href=\"http://espn.go.com/nba/player/_/id/3975/stephen-curry\">S.
+        Curry</a> 8</td></tr><tr class=\"colhead\"><td>JANUARY</td><td>OPPONENT</td><td>TIME
+        (ET)</td><td style=\"text-align:center;\">TV</td><td colspan=\"4\">TICKETS</td></tr><tr
+        class=\"oddrow team-46-10\"><td>Wed, Jan 21</td><td><ul class=\"game-schedule\"><li
+        class=\"game-status\">vs</li><li class=\"team-logo-small logo-nba-small nba-small-10\"><a
+        href=\"http://espn.go.com/nba/team/_/name/hou/houston-rockets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/hou/houston-rockets\">Houston</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\"><img src=\"http://a.espncdn.com/i/scoreboard/networkLogo_espn.gif\"
+        alt=\"ESPN\" /><a href=\"http://espn.go.com/watchespn/?channel=espn&launchPlayer=true\"><img
+        src=\"http://a.espncdn.com/i/scoreboard/watchespn-55x12.png\"/></a></td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-1-21-2015-9106827?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150121\">963
+        available from $50</a></td></tr><tr class=\"evenrow team-46-23\"><td>Fri,
+        Jan 23</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-23\"><a href=\"http://espn.go.com/nba/team/_/name/sac/sacramento-kings\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/sac/sacramento-kings\">Sacramento</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-1-23-2015-9106838?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150123\">1,009
+        available from $64</a></td></tr><tr class=\"oddrow team-46-2\"><td>Sun, Jan
+        25</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-2\"><a href=\"http://espn.go.com/nba/team/_/name/bos/boston-celtics\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/bos/boston-celtics\">Boston</a></li></ul></td><td>8:00
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-1-25-2015-9106861?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150125\">753
+        available from $60</a></td></tr><tr class=\"evenrow team-46-4\"><td>Tue, Jan
+        27</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-4\"><a href=\"http://espn.go.com/nba/team/_/name/chi/chicago-bulls\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/chi/chicago-bulls\">Chicago</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-1-27-2015-9106864?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150127\">868
+        available from $88</a></td></tr><tr class=\"oddrow team-46-26\"><td>Fri, Jan
+        30</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-26\"><a href=\"http://espn.go.com/nba/team/_/name/utah/utah-jazz\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/utah/utah-jazz\">Utah</a></li></ul></td><td>9:00
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/utah-jazz-salt-lake-city-energy-solutions-arena-1-30-2015-9107898?gcid=C12289x471&keyword=NBA+Team+Schedule+Utah+Jazz+20150130\">792
+        available from $18</a></td></tr><tr class=\"evenrow team-46-21\"><td>Sat,
+        Jan 31</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-21\"><a href=\"http://espn.go.com/nba/team/_/name/phx/phoenix-suns\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/phx/phoenix-suns\">Phoenix</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-1-31-2015-9106867?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150131\">724
+        available from $75</a></td></tr><tr class=\"colhead\"><td>FEBRUARY</td><td>OPPONENT</td><td>TIME
+        (ET)</td><td style=\"text-align:center;\">TV</td><td colspan=\"4\">TICKETS</td></tr><tr
+        class=\"oddrow team-46-23\"><td>Tue, Feb 3</td><td><ul class=\"game-schedule\"><li
+        class=\"game-status\">@</li><li class=\"team-logo-small logo-nba-small nba-small-23\"><a
+        href=\"http://espn.go.com/nba/team/_/name/sac/sacramento-kings\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/sac/sacramento-kings\">Sacramento</a></li></ul></td><td>10:00
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/sacramento-kings-sacramento-sleep-train-arena-2-3-2015-9107203?gcid=C12289x471&keyword=NBA+Team+Schedule+Sacramento+Kings+20150203\">233
+        available from $60</a></td></tr><tr class=\"evenrow team-46-6\"><td>Wed, Feb
+        4</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-6\"><a href=\"http://espn.go.com/nba/team/_/name/dal/dallas-mavericks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/dal/dallas-mavericks\">Dallas</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\"><img src=\"http://a.espncdn.com/i/scoreboard/networkLogo_espn.gif\"
+        alt=\"ESPN\" /><a href=\"http://espn.go.com/watchespn/?channel=espn&launchPlayer=true\"><img
+        src=\"http://a.espncdn.com/i/scoreboard/watchespn-55x12.png\"/></a></td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-2-4-2015-9106872?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150204\">741
+        available from $46</a></td></tr><tr class=\"oddrow team-46-1\"><td>Fri, Feb
+        6</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-1\"><a href=\"http://espn.go.com/nba/team/_/name/atl/atlanta-hawks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/atl/atlanta-hawks\">Atlanta</a></li></ul></td><td>7:30
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/atlanta-hawks-atlanta-philips-arena-2-6-2015-9107778?gcid=C12289x471&keyword=NBA+Team+Schedule+Atlanta+Hawks+20150206\">754
+        available from $63</a></td></tr><tr class=\"evenrow team-46-18\"><td>Sat,
+        Feb 7</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-18\"><a href=\"http://espn.go.com/nba/team/_/name/ny/new-york-knicks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/ny/new-york-knicks\">NY
+        Knicks</a></li></ul></td><td>7:30 PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/new-york-knicks-new-york-madison-square-garden-2-7-2015-9106869?gcid=C12289x471&keyword=NBA+Team+Schedule+New+York+Knicks+20150207\">3,518
+        available from $81</a></td></tr><tr class=\"oddrow team-46-20\"><td>Mon, Feb
+        9</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-20\"><a href=\"http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers\">Philadelphia</a></li></ul></td><td>7:00
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/philadelphia-76ers-philadelphia-wells-fargo-center-philadelphia-2-9-2015-9107806?gcid=C12289x471&keyword=NBA+Team+Schedule+Philadelphia+76ers+20150209\">828
+        available from $20</a></td></tr><tr class=\"evenrow team-46-16\"><td>Wed,
+        Feb 11</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-16\"><a href=\"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves\">Minnesota</a></li></ul></td><td>8:00
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/minnesota-timberwolves-minneapolis-target-center-2-11-2015-9107950?gcid=C12289x471&keyword=NBA+Team+Schedule+Minnesota+Timberwolves+20150211\">916
+        available from $13</a></td></tr><tr class=\"oddrow team-46-24\"><td>Fri, Feb
+        20</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-24\"><a href=\"http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs\">San
+        Antonio</a></li></ul></td><td>10:30 PM</td><td style=\"text-align:center;\"><img
+        src=\"http://a.espncdn.com/i/scoreboard/networkLogo_espn.gif\" alt=\"ESPN\"
+        /><a href=\"http://espn.go.com/watchespn/?channel=espn&launchPlayer=true\"><img
+        src=\"http://a.espncdn.com/i/scoreboard/watchespn-55x12.png\"/></a></td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-2-20-2015-9106807?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150220\">721
+        available from $91</a></td></tr><tr class=\"evenrow team-46-11\"><td>Sun,
+        Feb 22</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-11\"><a href=\"http://espn.go.com/nba/team/_/name/ind/indiana-pacers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/ind/indiana-pacers\">Indiana</a></li></ul></td><td>6:00
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/indiana-pacers-indianapolis-bankers-life-fieldhouse-2-22-2015-9107517?gcid=C12289x471&keyword=NBA+Team+Schedule+Indiana+Pacers+20150222\">900
+        available from $14</a></td></tr><tr class=\"oddrow team-46-27\"><td>Tue, Feb
+        24</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-27\"><a href=\"http://espn.go.com/nba/team/_/name/wsh/washington-wizards\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/wsh/washington-wizards\">Washington</a></li></ul></td><td>7:00
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/washington-wizards-washington-verizon-center-washington-dc-2-24-2015-9107409?gcid=C12289x471&keyword=NBA+Team+Schedule+Washington+Wizards+20150224\">2,015
+        available from $36</a></td></tr><tr class=\"evenrow team-46-5\"><td>Thu, Feb
+        26</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-5\"><a href=\"http://espn.go.com/nba/team/_/name/cle/cleveland-cavaliers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/cle/cleveland-cavaliers\">Cleveland</a></li></ul></td><td>8:00
+        PM</td><td style=\"text-align:center;\">TNT</td>\n<td colspan=\"4\"><a href=\"http://www.stubhub.com/cleveland-cavaliers-cleveland-quicken-loans-arena-2-26-2015-9106963?gcid=C12289x471&keyword=NBA+Team+Schedule+Cleveland+Cavaliers+20150226\">95
+        available from $135</a></td></tr><tr class=\"oddrow team-46-28\"><td>Fri,
+        Feb 27</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-28\"><a href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors\">Toronto</a></li></ul></td><td>7:30
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/toronto-raptors-toronto-air-canada-centre-2-27-2015-9107669?gcid=C12289x471&keyword=NBA+Team+Schedule+Toronto+Raptors+20150227\">1,344
+        available from $85</a></td></tr><tr class=\"colhead\"><td>MARCH</td><td>OPPONENT</td><td>TIME
+        (ET)</td><td style=\"text-align:center;\">TV</td><td colspan=\"4\">TICKETS</td></tr><tr
+        class=\"oddrow team-46-2\"><td>Sun, Mar 1</td><td><ul class=\"game-schedule\"><li
+        class=\"game-status\">@</li><li class=\"team-logo-small logo-nba-small nba-small-2\"><a
+        href=\"http://espn.go.com/nba/team/_/name/bos/boston-celtics\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/bos/boston-celtics\">Boston</a></li></ul></td><td>6:00
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/boston-celtics-boston-td-garden-3-1-2015-9107070?gcid=C12289x471&keyword=NBA+Team+Schedule+Boston+Celtics+20150301\">1,584
+        available from $45</a></td></tr><tr class=\"evenrow team-46-17\"><td>Mon,
+        Mar 2</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-17\"><a href=\"http://espn.go.com/nba/team/_/name/bkn/brooklyn-nets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/bkn/brooklyn-nets\">Brooklyn</a></li></ul></td><td>7:30
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/brooklyn-nets-brooklyn-barclays-center-3-2-2015-9107011?gcid=C12289x471&keyword=NBA+Team+Schedule+Brooklyn+Nets+20150302\">3,321
+        available from $30</a></td></tr><tr class=\"oddrow team-46-15\"><td>Wed, Mar
+        4</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-15\"><a href=\"http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks\">Milwaukee</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-3-4-2015-9106878?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150304\">1,043
+        available from $39</a></td></tr><tr class=\"evenrow team-46-6\"><td>Fri, Mar
+        6</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-6\"><a href=\"http://espn.go.com/nba/team/_/name/dal/dallas-mavericks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/dal/dallas-mavericks\">Dallas</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\"><img src=\"http://a.espncdn.com/i/scoreboard/networkLogo_espn.gif\"
+        alt=\"ESPN\" /><a href=\"http://espn.go.com/watchespn/?channel=espn&launchPlayer=true\"><img
+        src=\"http://a.espncdn.com/i/scoreboard/watchespn-55x12.png\"/></a></td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-3-6-2015-9106875?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150306\">852
+        available from $72</a></td></tr><tr class=\"oddrow team-46-12\"><td>Sun, Mar
+        8</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-12\"><a href=\"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers\">Los
+        Angeles</a></li></ul></td><td>3:30 PM</td><td style=\"text-align:center;\"><a
+        href=\"http://espn.go.com/abcsports/\"><img src=\"http://a.espncdn.com/i/scoreboard/networkLogo_abc.gif\"
+        alt=\"ABC\"/></a></td>\n<td colspan=\"4\"><a href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-3-8-2015-9106802?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150308\">735
+        available from $107</a></td></tr><tr class=\"evenrow team-46-21\"><td>Mon,
+        Mar 9</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-21\"><a href=\"http://espn.go.com/nba/team/_/name/phx/phoenix-suns\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/phx/phoenix-suns\">Phoenix</a></li></ul></td><td>10:00
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/phoenix-suns-phoenix-us-airways-center-3-9-2015-9107616?gcid=C12289x471&keyword=NBA+Team+Schedule+Phoenix+Suns+20150309\">259
+        available from $36</a></td></tr><tr class=\"oddrow team-46-8\"><td>Wed, Mar
+        11</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-8\"><a href=\"http://espn.go.com/nba/team/_/name/det/detroit-pistons\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/det/detroit-pistons\">Detroit</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-3-11-2015-9106885?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150311\">1,064
+        available from $32</a></td></tr><tr class=\"evenrow team-46-7\"><td>Fri, Mar
+        13</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-7\"><a href=\"http://espn.go.com/nba/team/_/name/den/denver-nuggets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/den/denver-nuggets\">Denver</a></li></ul></td><td>9:00
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/denver-nuggets-denver-pepsi-center-3-13-2015-9107560?gcid=C12289x471&keyword=NBA+Team+Schedule+Denver+Nuggets+20150313\">1,296
+        available from $22</a></td></tr><tr class=\"oddrow team-46-18\"><td>Sat, Mar
+        14</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-18\"><a href=\"http://espn.go.com/nba/team/_/name/ny/new-york-knicks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/ny/new-york-knicks\">NY
+        Knicks</a></li></ul></td><td>10:30 PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-3-14-2015-9106888?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150314\">1,176
+        available from $60</a></td></tr><tr class=\"evenrow team-46-13\"><td>Mon,
+        Mar 16</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-13\"><a href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\">Los
+        Angeles</a></li></ul></td><td>10:30 PM</td><td style=\"text-align:center;\"><img
+        src=\"http://a.espncdn.com/i/scoreboard/networkLogo_espn.gif\" alt=\"ESPN\"
+        /><a href=\"http://espn.go.com/watchespn/?channel=espn&launchPlayer=true\"><img
+        src=\"http://a.espncdn.com/i/scoreboard/watchespn-55x12.png\"/></a></td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-3-16-2015-9106796?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150316\">1,017
+        available from $89</a></td></tr><tr class=\"oddrow team-46-1\"><td>Wed, Mar
+        18</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-1\"><a href=\"http://espn.go.com/nba/team/_/name/atl/atlanta-hawks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/atl/atlanta-hawks\">Atlanta</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-3-18-2015-9106889?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150318\">1,091
+        available from $49</a></td></tr><tr class=\"evenrow team-46-3\"><td>Fri, Mar
+        20</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-3\"><a href=\"http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans\">New
+        Orleans</a></li></ul></td><td>10:30 PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-3-20-2015-9106821?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150320\">1,008
+        available from $52</a></td></tr><tr class=\"oddrow team-46-26\"><td>Sat, Mar
+        21</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-26\"><a href=\"http://espn.go.com/nba/team/_/name/utah/utah-jazz\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/utah/utah-jazz\">Utah</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-3-21-2015-9106813?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150321\">972
+        available from $54</a></td></tr><tr class=\"evenrow team-46-27\"><td>Mon,
+        Mar 23</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-27\"><a href=\"http://espn.go.com/nba/team/_/name/wsh/washington-wizards\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/wsh/washington-wizards\">Washington</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-3-23-2015-9106890?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150323\">958
+        available from $52</a></td></tr><tr class=\"oddrow team-46-22\"><td>Tue, Mar
+        24</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-22\"><a href=\"http://espn.go.com/nba/team/_/name/por/portland-trail-blazers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/por/portland-trail-blazers\">Portland</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\">TNT</td>\n<td colspan=\"4\"><a href=\"http://www.stubhub.com/portland-trail-blazers-portland-moda-center-at-the-rose-quarter-3-24-2015-9107360?gcid=C12289x471&keyword=NBA+Team+Schedule+Portland+Trail+Blazers+20150324\">716
+        available from $54</a></td></tr><tr class=\"evenrow team-46-29\"><td>Fri,
+        Mar 27</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-29\"><a href=\"http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies\">Memphis</a></li></ul></td><td>8:00
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/memphis-grizzlies-memphis-fedexforum-3-27-2015-9107763?gcid=C12289x471&keyword=NBA+Team+Schedule+Memphis+Grizzlies+20150327\">1,132
+        available from $23</a></td></tr><tr class=\"oddrow team-46-15\"><td>Sat, Mar
+        28</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-15\"><a href=\"http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks\">Milwaukee</a></li></ul></td><td>8:30
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/milwaukee-bucks-milwaukee-bmo-harris-bradley-center-3-28-2015-9107680?gcid=C12289x471&keyword=NBA+Team+Schedule+Milwaukee+Bucks+20150328\">536
+        available from $31</a></td></tr><tr class=\"evenrow team-46-12\"><td>Tue,
+        Mar 31</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-12\"><a href=\"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers\">Los
+        Angeles</a></li></ul></td><td>10:30 PM</td><td style=\"text-align:center;\">TNT</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/los-angeles-clippers-los-angeles-staples-center-3-31-2015-9108010?gcid=C12289x471&keyword=NBA+Team+Schedule+Los+Angeles+Clippers+20150331\">3,205
+        available from $46</a></td></tr><tr class=\"colhead\"><td>APRIL</td><td>OPPONENT</td><td>TIME
+        (ET)</td><td style=\"text-align:center;\">TV</td><td colspan=\"4\">TICKETS</td></tr><tr
+        class=\"oddrow team-46-21\"><td>Thu, Apr 2</td><td><ul class=\"game-schedule\"><li
+        class=\"game-status\">vs</li><li class=\"team-logo-small logo-nba-small nba-small-21\"><a
+        href=\"http://espn.go.com/nba/team/_/name/phx/phoenix-suns\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/phx/phoenix-suns\">Phoenix</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\">TNT</td>\n<td colspan=\"4\"><a href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-4-2-2015-9106870?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150402\">1,007
+        available from $46</a></td></tr><tr class=\"evenrow team-46-6\"><td>Sat, Apr
+        4</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-6\"><a href=\"http://espn.go.com/nba/team/_/name/dal/dallas-mavericks\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/dal/dallas-mavericks\">Dallas</a></li></ul></td><td>8:30
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/dallas-mavericks-dallas-american-airlines-center-4-4-2015-9107094?gcid=C12289x471&keyword=NBA+Team+Schedule+Dallas+Mavericks+20150404\">2,570
+        available from $39</a></td></tr><tr class=\"oddrow team-46-24\"><td>Sun, Apr
+        5</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-24\"><a href=\"http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs\">San
+        Antonio</a></li></ul></td><td>7:00 PM</td><td style=\"text-align:center;\">NBATV</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/san-antonio-spurs-san-antonio-at-t-center-4-5-2015-9107509?gcid=C12289x471&keyword=NBA+Team+Schedule+San+Antonio+Spurs+20150405\">1,663
+        available from $41</a></td></tr><tr class=\"evenrow team-46-3\"><td>Tue, Apr
+        7</td><td><ul class=\"game-schedule\"><li class=\"game-status\">@</li><li
+        class=\"team-logo-small logo-nba-small nba-small-3\"><a href=\"http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans\">New
+        Orleans</a></li></ul></td><td>8:00 PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/new-orleans-pelicans-new-orleans-smoothie-king-center-4-7-2015-9107349?gcid=C12289x471&keyword=NBA+Team+Schedule+New+Orleans+Pelicans+20150407\">2,202
+        available from $14</a></td></tr><tr class=\"oddrow team-46-22\"><td>Thu, Apr
+        9</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-22\"><a href=\"http://espn.go.com/nba/team/_/name/por/portland-trail-blazers\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/por/portland-trail-blazers\">Portland</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\">TNT</td>\n<td colspan=\"4\"><a href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-4-9-2015-9106891?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150409\">882
+        available from $52</a></td></tr><tr class=\"evenrow team-46-16\"><td>Sat,
+        Apr 11</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-16\"><a href=\"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves\">Minnesota</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\">&nbsp;</td>\n<td colspan=\"4\"><a
+        href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-4-11-2015-9108927?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150411\">1,083
+        available from $55</a></td></tr><tr class=\"oddrow team-46-29\"><td>Mon, Apr
+        13</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-29\"><a href=\"http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies\">Memphis</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\">NBATV</td>\n<td colspan=\"4\"><a href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-4-13-2015-9108928?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150413\">952
+        available from $58</a></td></tr><tr class=\"evenrow team-46-7\"><td>Wed, Apr
+        15</td><td><ul class=\"game-schedule\"><li class=\"game-status\">vs</li><li
+        class=\"team-logo-small logo-nba-small nba-small-7\"><a href=\"http://espn.go.com/nba/team/_/name/den/denver-nuggets\"></a></li><li
+        class=\"team-name\"><a href=\"http://espn.go.com/nba/team/_/name/den/denver-nuggets\">Denver</a></li></ul></td><td>10:30
+        PM</td><td style=\"text-align:center;\"><img src=\"http://a.espncdn.com/i/scoreboard/networkLogo_espn.gif\"
+        alt=\"ESPN\" /><a href=\"http://espn.go.com/watchespn/?channel=espn&launchPlayer=true\"><img
+        src=\"http://a.espncdn.com/i/scoreboard/watchespn-55x12.png\"/></a></td>\n<td
+        colspan=\"4\"><a href=\"http://www.stubhub.com/golden-state-warriors-oakland-oracle-arena-4-15-2015-9108930?gcid=C12289x471&keyword=NBA+Team+Schedule+Golden+State+Warriors+20150415\">1,011
+        available from $40</a></td></tr></table></div></div><!-- begin sponsored links
+        -->\n<div id=\"sponsored\" class=\"mod-container mod-no-footer\">\n<!-- begin
+        sp links -->\n<div style=\"margin: 10px 0 0 0;\">\n<!-- CONTENT: 09stats758,
+        SPORT: nba--><div style=\"margin:0px 0px 5px 0px; text-align: center; width:
+        758px;\"><ins id=\"splinks-43356\"></ins>\n        <script type=\"text/javascript\">\n
+        \           (function($) {\n                // config params\n                var
+        width = '758',\n                    height = '300',\n                    client
+        = 'ca-espn-q-teams',\n                    channel = 'nba bottom',\n                    lang
+        = 'null';\n\n                // builds iframe HTML\n                function
+        buildIframe(width, height, client, channel) {\n                    var path
+        = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
+        \                   // pass params as the hash as they are only needed on
+        the client\n                    var hash = '43356|' + width + '|' + height
+        + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
+        = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
+        + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
+        \                   return iframe;\n                }\n\n                //
+        handles messages from child iframe\n                function handleMessage(event)
+        {\n                    if (event.origin === 'http://sports-ak.espn.go.com')
+        {\n                        $('#splinks-' + event.data).html('<!-- no ads served
+        -->');\n                    }\n                }\n\n                if (typeof
+        window.addEventListener === 'function') {\n                    window.addEventListener('message',
+        handleMessage, false);\n                } else {\n                    window.attachEvent('onmessage',
+        handleMessage);\n                }\n\n                // insert the iframe\n
+        \               if (espn.geo) {\n                    espn.geo.getLocation().done(function(loc)
+        {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
+        || espn.core.android) {\n                            // outside US or not
+        on desktop\n                            client = 'ca-espn-nq';\n                        }\n
+        \                       $('#splinks-43356').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-43356').html(buildIframe(width,
+        height, 'ca-espn-nq', channel));\n                    });\n                }
+        else {\n                    // can't locate them, assume they are outside
+        US\n                    $('#splinks-43356').html(buildIframe(width, height,
+        'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
+        \   </div></div>\n<!-- end sp links -->\n</div>\n<!-- end sponsored links
+        -->\n\n\t\t\t</div>\n\t\t\t<div class=\"col-ad-160\">\n\t\t\t\t<div class=\"ad-box\"><!--
+        begin Poster --><div class=\"gutter\"><!--espn.us.com.nba sitezone--><!--http://ad.Doubleclick.net
+        hostUrl-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nba\",ad_zone=\"nbateamschedule\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Poster;\"+ad_u+\"sz=160x600,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Poster\" data-cb-dfp-id=\"'+ad_kvps+'sz=160x600,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nba/nbateamschedule;pgtyp=nbateamschedule;sp=espn;sz=160x600,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nba/nbateamschedule;pgtyp=nbateamschedule;sp=espn;sz=160x600,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div><!-- end Poster -->\n</div><div><!--
+        CONTENT: 09storyright160, SPORT: nba--><div style=\"margin:0px 0px 5px 0px;
+        text-align: center; width: 160px;\"><ins id=\"splinks-25490\"></ins>\n        <script
+        type=\"text/javascript\">\n            (function($) {\n                //
+        config params\n                var width = '160',\n                    height
+        = '400',\n                    client = 'ca-espn-q-teams',\n                    channel
+        = 'nba right',\n                    lang = 'null';\n\n                // builds
+        iframe HTML\n                function buildIframe(width, height, client, channel)
+        {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
+        \                   // pass params as the hash as they are only needed on
+        the client\n                    var hash = '25490|' + width + '|' + height
+        + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
+        = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
+        + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
+        \                   return iframe;\n                }\n\n                //
+        handles messages from child iframe\n                function handleMessage(event)
+        {\n                    if (event.origin === 'http://sports-ak.espn.go.com')
+        {\n                        $('#splinks-' + event.data).html('<!-- no ads served
+        -->');\n                    }\n                }\n\n                if (typeof
+        window.addEventListener === 'function') {\n                    window.addEventListener('message',
+        handleMessage, false);\n                } else {\n                    window.attachEvent('onmessage',
+        handleMessage);\n                }\n\n                // insert the iframe\n
+        \               if (espn.geo) {\n                    espn.geo.getLocation().done(function(loc)
+        {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
+        || espn.core.android) {\n                            // outside US or not
+        on desktop\n                            client = 'ca-espn-nq';\n                        }\n
+        \                       $('#splinks-25490').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-25490').html(buildIframe(width,
+        height, 'ca-espn-nq', channel));\n                    });\n                }
+        else {\n                    // can't locate them, assume they are outside
+        US\n                    $('#splinks-25490').html(buildIframe(width, height,
+        'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
+        \   </div></div>\n\t\t\t</div>\n\t\t\t<div class=\"span-6\">\n\t\t\t\t<div
+        class=\"mod-container mod-team-footer\"><div class=\"logo-medium logo-nba-medium
+        nba-medium-9\"></div><h3 class=\"txt-nba-gs\">Golden State Warriors</h3><ul><li
+        ><a href=\"/nba/team/_/name/gs/golden-state-warriors\">Clubhouse</a></li><li
+        ><a href=\"/nba/team/stats/_/name/gs/golden-state-warriors\">Statistics</a></li><li
+        class=\"active\"><a href=\"/nba/team/schedule/_/name/gs/golden-state-warriors\">Schedule</a></li><li
+        ><a href=\"/nba/team/roster/_/name/gs/golden-state-warriors\">Roster</a></li><li
+        ><a href=\"/nba/team/depth/_/name/gs/golden-state-warriors\">Depth</a></li><li
+        ><a href=\"/nba/team/transactions/_/name/gs/golden-state-warriors\">Transactions</a></li><li
+        ><a href=\"/nba/team/rankings/_/name/gs/golden-state-warriors\">Rankings</a></li><li
+        ><a href=\"/nba/team/photos/_/name/gs/golden-state-warriors\">Photos</a></li><li
+        ><a href=\"/nba/team/stadium/_/name/gs/golden-state-warriors\">Stadium</a></li><li
+        \ onclick=\"this.href=this.href+'?gcid=C12289x468&keyword=Golden+State+Warriors+Nav'\"
+        target=\"_blank\"><a href=\"http://www.stubhub.com/golden-state-warriors-tickets/?gcid=C12289x468&keyword=Golden+State+Warriors+Nav\">Tickets</a></li><li
+        ><a href=\"http://www.dickssportinggoods.com/category/index.jsp?categoryId=15528706&camp=Part:ESPNpart::nbaclubhousenav:GoldenStateWarriors\"
+        rel=\"nofollow\">Shop</a></li></ul></div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div
+        class=\"clear\"></div>\n\t</div>\n\t<div class=\"clear\"></div></div>\n<div
+        id=\"nav-wrapper\" class=\"container\">\n<div id=\"nav-wrapper-container\">\n<div
+        id=\"nav-main\">\n<!-- begin site nav -->\n<ul class=\"top\">\n<!-- begin
+        site nav -->\n<p><!-- begin site nav --></p>\n<ul class=\"top\" id=\"nav-main-list\"><!--
+        start: Menuitem :: MyTAB -->\n<li class=\"last myespn\" id=\"menu-myespn\"><a
+        class=\"myespn\" ref=\"#\">MyESPN</a></li>\n<!-- start: Menuitem :: NFL -->\n<li
+        class=\"sport-menu default t-nfl\" data-sportid=\"28\" id=\"menu-nfl\"><a
+        href=\"http://espn.go.com/nfl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nfl\">NFL</a></li>\n<!--
+        start: Menuitem :: MLB -->\n<li class=\"sport-menu default t-mlb\" data-sportid=\"10\"
+        id=\"menu-mlb\"><a href=\"http://espn.go.com/mlb/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mlb\">MLB</a></li>\n<!--
+        start: Menuitem :: NBA -->\n<li class=\"sport-menu default t-nba selected\"
+        data-sportid=\"46\" id=\"menu-nba\"><a href=\"http://espn.go.com/nba/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nba\">NBA</a></li>\n<!--
+        start: Menuitem :: NHL -->\n<li class=\"sport-menu default t-nhl\" data-sportid=\"90\"
+        id=\"menu-nhl\"><a href=\"http://espn.go.com/nhl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nhl\">NHL</a></li>\n<!--
+        start: Menuitem :: NCAA FB -->\n<li class=\"sport-menu default t-ncf\" data-sportid=\"23\"
+        id=\"menu-ncf\"><a href=\"http://espn.go.com/college-football/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncf\">NCAAF</a></li>\n<!--
+        start: Menuitem :: NCAA BB -->\n<li class=\"sport-menu default t-ncb\" data-sportid=\"41\"
+        id=\"menu-ncb\"><a href=\"http://espn.go.com/mens-college-basketball/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncb\">NCAAM</a></li>\n<!--
+        start: Menuitem :: NASCAR -->\n<li class=\"sport-menu default t-nascar\" data-sportid=\"2020\"
+        id=\"menu-nascar\"><a href=\"http://espn.go.com/racing/nascar/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nascar\">NASCAR</a></li>\n<!--
+        start: Menuitem :: SOCCER -->\n<li class=\"sport-menu default t-soccer\" data-sportid=\"600\"
+        id=\"menu-soccer\"><a href=\"http://espnfc.us/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_soccer\">SOCCER</a></li>\n<!--
+        start: Menuitem :: GOLF -->\n<li class=\"sport-menu t-golf\" data-sportid=\"1106\"
+        id=\"menu-golf\" style=\"display: none;\"><a href=\"http://espn.go.com/golf/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_golfl\">GOLF</a></li>\n<!--
+        start: Menuitem :: TENNIS -->\n<li class=\"sport-menu t-tennis\" data-sportid=\"850\"
+        id=\"menu-tennis\" style=\"display: none;\"><a href=\"http://espn.go.com/tennis/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_tennis\">TENNIS</a></li>\n<!--
+        start: Menuitem :: BOXING-->\n<li class=\"sport-menu t-boxing\" data-sportid=\"1000\"
+        id=\"menu-boxing\" style=\"display: none;\"><a href=\"http://espn.go.com/boxing/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_boxing\">BOXING</a></li>\n<!--
+        start: Menuitem :: MMA -->\n<li class=\"sport-menu t-mma\" data-sportid=\"3301\"
+        id=\"menu-mma\" style=\"display: none;\"><a href=\"http://espn.go.com/mma/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mma\">MMA</a></li>\n<!-- start:
+        Menuitem :: ALL SPORTS -->\n<li class=\"nav-allsports t-allsports\" id=\"menu-allsports\"><a
+        href=\"http://espn.go.com/sports/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_allsports\">MORE
+        SPORTS</a></li>\n<!-- start: Menuitem :: INSIDER -->\n<li class=\"sport-menu
+        t-insider\" id=\"menu-insider\" style=\"display: none;\"><a href=\"http://insider.espn.go.com/insider/index\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_insider\">INSIDER</a></li>\n<!--
+        start: Menuitem :: SPORTSNATION -->\n<li class=\"sport-menu t-sportsnation\"
+        id=\"menu-sportsnation\" style=\"display: none;\"><a href=\"http://espn.go.com/sportsnation/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_sportsnation\">SN</a></li>\n<!--
+        start: Menuitem :: RADIO & MORE -->\n<li class=\"right-menu two-line last
+        t-radio\" id=\"menu-radio\"><a href=\"http://espn.go.com/espnradio/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_radioandmore\">RADIO<span>&amp;
+        MORE</span></a></li>\n<!-- start: Menuitem :: espnW & PLAYBOOK -->\n<li class=\"right-menu
+        two-line t-page2\" id=\"menu-page2\"><a href=\"http://espn.go.com/espnw/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_espnwandxgames\" target=\"_blank\">espnW<span>&amp;
+        X GAMES</span></a></li>\n<!-- start: Menuitem :: FANTASY & GAMES -->\n<li
+        class=\"right-menu two-line t-fantasy\" id=\"menu-fantasy\"><a href=\"http://games.espn.go.com/frontpage\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_fantasy\">FANTASY<span>&amp;
+        GAMES</span></a></li>\n<!-- start: Menuitem :: WATCH -->\n<li class=\"right-menu
+        t-watch\" id=\"menu-watch\"><a href=\"http://espn.go.com/video/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_watch\">WATCH</a></li>\n</ul>\n<!--
+        end site nav -->\n<!-- end site nav -->\n</ul>\n<!-- end site nav -->\n</div>\n<div
+        class=\"nav-main-secondary\">\n<!--/nba/team/schedule--><ul>\n<li><a href=\"http://espn.go.com/nba/\"name=\"&lpos=subnav&lid=subnav_NBA_NBA+Home\">NBA
+        Home</a></li><li><a href=\"http://scores.espn.go.com/nba/scoreboard\"name=\"&lpos=subnav&lid=subnav_NBA_Scoreboard\">Scores</a></li><li><a
+        href=\"http://espn.go.com/nba/schedule\"name=\"&lpos=subnav&lid=subnav_NBA_NBA+Schedule\">Schedule</a></li><li><a
+        href=\"http://espn.go.com/nba/statistics\"name=\"&lpos=subnav&lid=subnav_NBA_Stats\">Stats</a></li><li><a
+        href=\"http://espn.go.com/nba/standings\"name=\"&lpos=subnav&lid=subnav_NBA_Standings\">Standings</a></li><li><a
+        href=\"http://espn.go.com/nba/hollinger/powerrankings\"name=\"&lpos=subnav&lid=subnav_NBA_Rankings\">Rankings</a></li><li><a
+        href=\"http://espn.go.com/nba/players\"name=\"&lpos=subnav&lid=subnav_NBA_Players\">Players</a></li><li
+        class=\"expandable\"><a href=\"http://espn.go.com/nba/teams\" name=\"&lpos=subnav&lid=subnav_NBA_Teams\"><span>Teams</span></a><div><dl><dt
+        class=\"first\">Atlantic</dt><dd><a href=\"http://espn.go.com/nba/team/_/name/bos/boston-celtics\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_bos\">Boston Celtics</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/bkn/brooklyn-nets\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_bkn\">Brooklyn
+        Nets</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/ny/new-york-knicks\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_ny\">New York Knicks</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_phi\">Philadelphia
+        76ers</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_tor\">Toronto Raptors</a></dd><dt
+        class=\"first\">Central</dt><dd><a href=\"http://espn.go.com/nba/team/_/name/chi/chicago-bulls\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_chi\">Chicago Bulls</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/cle/cleveland-cavaliers\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_cle\">Cleveland
+        Cavaliers</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/det/detroit-pistons\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_det\">Detroit Pistons</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/ind/indiana-pacers\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_ind\">Indiana
+        Pacers</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_mil\">Milwaukee Bucks</a></dd><dt
+        class=\"first\">Southeast</dt><dd><a href=\"http://espn.go.com/nba/team/_/name/atl/atlanta-hawks\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_atl\">Atlanta Hawks</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/cha/charlotte-hornets\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_cha\">Charlotte
+        Hornets</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/mia/miami-heat\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_mia\">Miami Heat</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/orl/orlando-magic\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_orl\">Orlando Magic</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/wsh/washington-wizards\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_was\">Washington
+        Wizards</a></dd></dl><dl class=\"last\"><dt class=\"first\">Pacific</dt><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/gs/golden-state-warriors\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_gs\">Golden
+        State Warriors</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_lac\">Los Angeles Clippers</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_lal\">Los
+        Angeles Lakers</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/phx/phoenix-suns\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_phx\">Phoenix Suns</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/sac/sacramento-kings\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_sac\">Sacramento
+        Kings</a></dd><dt class=\"first\">Southwest</dt><dd><a href=\"http://espn.go.com/nba/team/_/name/dal/dallas-mavericks\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_dal\">Dallas Mavericks</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/hou/houston-rockets\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_hou\">Houston
+        Rockets</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_mem\">Memphis Grizzlies</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_no\">New
+        Orleans Pelicans</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_sa\">San Antonio Spurs</a></dd><dt
+        class=\"first\">Northwest</dt><dd><a href=\"http://espn.go.com/nba/team/_/name/den/denver-nuggets\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_den\">Denver Nuggets</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_min\">Minnesota
+        Timberwolves</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_okc\">Oklahoma City Thunder</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/por/portland-trail-blazers\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_por\">Portland
+        Trail Blazers</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/utah/utah-jazz\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_uth\">Utah Jazz</a></dd></dl></div></li></li><li><a
+        href=\"http://espn.go.com/nba/draft\">Draft</a></li><li><a href=\"http://espn.go.com/nba/theten\">The
+        Ten</a></li><li class=\"expandable\"><a href=\"http://espn.go.com/blog/truehoop\"
+        name=\"&lpos=subnav&lid=subnav_NBA_TrueHoop\"><span>TrueHoop</span></a><div><dl
+        class=\"last\"><dd><a href=\"http://espn.go.com/blog/truehoop\" name=\"&lpos=subnav&lid=subnav_NBA_TrueHoop\">TrueHoop</a></dd><dd><a
+        href=\"http://espn.go.com/blog/truehoop/category/_/name/truehoop-tv\" name=\"&lpos=subnav&lid=subnav_NBA_TrueHoopTV\">TrueHoop
+        TV</a></dd><dd><a href=\"http://espn.go.com/blog/truehoop/category/_/name/truecities\"
+        name=\"&lpos=subnav&lid=subnav_TrueCities\">TrueCities</a></dd><dd><a href=\"http://espn.go.com/blog/truehoop/category/_/name/hoopidea\"
+        name=\"&lpos=subnav&lid=subnav_HoopIdea\">HoopIdea</a></dd></dl></div></li><li
+        class=\"expandable\"><a href=\"http://espn.go.com/blog/truehoop\" name=\"&lpos=subnav&lid=subnav_NBA_Blogs\"><span>Blogs</span></a><div><dl
+        class=\"last\"><dd><a href=\"http://espn.go.com/blog/boston/celtics\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Celtics\">Boston
+        Celtics</a></dd><dd><a href=\"http://espn.go.com/blog/brooklyn-nets\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Nets\">Brooklyn
+        Nets</a></dd><dd><a href=\"http://espn.go.com/blog/chicago-bulls\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Bulls\">Chicago
+        Bulls</a></dd><dd><a href=\"http://espn.go.com/blog/cleveland-cavaliers\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Blog_Cavs\">Cleveland Cavaliers</a></dd><dd><a
+        href=\"http://espn.go.com/blog/dallas-mavericks\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Mavericks\">Dallas
+        Mavericks</a></dd><dd><a href=\"http://espn.go.com/blog/golden-state-warriors\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Blog_Warriors\">Golden State Warriors</a></dd><dd><a
+        href=\"http://espn.go.com/blog/los-angeles-clippers/\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Clippers\">Los
+        Angeles Clippers</a></dd><dd><a href=\"http://espn.go.com/blog/los-angeles-lakers\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Blog_Lakers\">Los Angeles Lakers</a></dd><dd><a
+        href=\"http://espn.go.com/blog/truehoop/miamiheat\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Heat\">Miami
+        Heat</a></dd><dd><a href=\"http://espn.go.com/blog/new-york-knicks\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Knicks\">New
+        York Knicks</a></dd><dd><a href=\"http://espn.go.com/blog/okc-thunder\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Thunder\">Oklahoma
+        City Thunder</a></dd><dd><a href=\"http://espn.go.com/blog/marc-stein\" name=\"&lpos=subnav&lid=subnav_Stein_Line_Live\">Stein
+        Line Live</a></dd></dl></div></li><li><a href=\"http://insider.espn.go.com/blog/nba/rumors/\"name=\"&lpos=subnav&lid=subnav_NBA_Rumors\">Rumors</a></li><!--<li><a
+        href=\"http://espn.go.com/espn/chalk/\">Odds</a></li>--><li class=\"expandable\"><a
+        href=\"\" name=\"&lpos=subnav&lid=subnav_NBA_More\"><span>More</span></a><div><!--<dl><dt
+        class=\"first\">Blogs</dt><dd><a href=\"http://espn.go.com/blog/marc-stein\"
+        name=\"&lpos=subnav&lid=subnav_Stein_Line_Live\">Stein Line Live</a></dd><dd><a
+        href=\"http://espn.go.com/blog/truehoop\" name=\"&lpos=subnav&lid=subnav_TrueHoop\">TrueHoop</a></dd><dt
+        class=\"first\">Events</dt><dd><a href=\"http://espn.go.com/nba/preview2014/\"
+        name=\"&lpos=subnav&lid=subnav_All_Star_Game\">2014-15 Preview</a></dd><dd><a
+        href=\"http://espn.go.com/nba/playoffs/2014/matchup\" name=\"&lpos=subnav&lid=subnav_NBA_Playoffs\">2014
+        NBA Playoffs</a></dd><dd><a href=\"http://espn.go.com/nba/draft\" name=\"&lpos=subnav&lid=subnav_NBA_Draft\">2014
+        NBA Draft</a></dd><dd><a href=\"http://sports.espn.go.com/nba/feature/index?page=nbaallstar2014\"
+        name=\"&lpos=subnav&lid=subnav_All_Star_Game\">2014 All-Star Game</a></dd><dd><a
+        href=\"http://espn.go.com/nba/halloffame\" name=\"&lpos=subnav&lid=subnav_Hall_Of_Fame\">Basketball
+        HOF</a></dd></dl>--><dl class=\"last\"><dd><a href=\"http://sports.espn.go.com/nba/feature/index?page=nbaallstar2014\"
+        name=\"&lpos=subnav&lid=subnav_NBA_ASG\">All-Star Game</a></dd><dd><a href=\"http://espn.go.com/nba/history/leaders\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Leaders\">All-time Leaders</a></dd><dd><a
+        href=\"http://espn.go.com/nba/history/awards\" name=\"&lpos=subnav&lid=subnav_NBA_Awards\">Awards
+        History</a></dd><dd><a href=\"http://espn.go.com/nba/coaches\" name=\"&lpos=subnav&lid=subnav_NBA_Coaches\">Coaches</a></dd><dd><a
+        href=\"http://espn.go.com/nba/depth\" name=\"&lpos=subnav&lid=subnav_Depth_Charts\">Depth
+        Charts</a></dd><dd><a href=\"http://insider.espn.go.com/nba/draft/results/team\"
+        name=\"&lpos=subnav&lid=subnav_Draft_History\">Draft History</a></dd><dd><a
+        href=\"http://espn.go.com/nba/story/_/id/11377133/nba-free-agents-2015-2016\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Free_Agents\">Free Agents</a></dd><dd><a
+        href=\"http://espn.go.com/nba/halloffame\" name=\"&lpos=subnav&lid=subnav_NBA_HOFs\">Hall
+        of Fame</a></dd><dd><a href=\"http://espn.go.com/espn/chalk/\" name=\"&lpos=subnav&lid=subnav_NBA_Odds\">Odds
+        & Info</a></dd><dd><a href=\"http://espn.go.com/nba/salaries\" name=\"&lpos=subnav&lid=subnav_NBA_Salaries\">Salaries</a></dd><dd><a
+        href=\"http://espn.go.com/nba/tradeMachine\" name=\"&lpos=subnav&lid=subnav_NBA_TradeMachine\">Trade
+        Machine</a></dd><dd><a href=\"http://espn.go.com/nba/transactions\" name=\"&lpos=subnav&lid=subnav_NBA_Transactions\">Transactions</a></dd></dl></div></li><li><a
+        href=\"http://www.stubhub.com/nba-tickets/\" target=\"_blank\" onclick=\"this.href=this.href+'?gcid=C12289x522&gtkw=NBA+Sub+Nav'\"
+        class=\"external\" name=\"&lpos=subnav&lid=subnav_NBA+Tickets\">Tickets</a></li>\n</ul>\n</div>\n</div>\n</div>\n</div>\n<!--
+        end content -->\n</div>\n<!-- end subheader -->\n\n<script>\nespn.core.init.nav();\nespn.insider.checkUserForPromo();\n</script>\n<!--
+        begin footer -->\n<div id=\"footer\" class=\"container\">\n<script type=\"text/javascript\">\n//<![CDATA[\nvar
+        link = window.location;\nvar bugText = '<a href=\"#\" onclick=\"window.open(\\'http://dynamic.espn.go.com/espn/bugs?url='
+        + escape(link) + '\\', \\'Bugs\\',\\'noresizable,noscrollbars,height=400,width=400\\');\">Report
+        a Bug</a> | ';\n//]]>\n</script>\n<span style=\"font-weight:bold;\">ESPN.com:</span>
+        <a href=\"http://sports.espn.go.com/espn/news/story?page=help/index\">Help</a>
+        | <a href=\"http://espnmediazone.com/us/\" rel=\"nofollow\">Press</a> | <a
+        href=\"http://www.espncms.com/Advertise-on-ESPN.aspx\" rel=\"nofollow\">Advertise
+        on ESPN.com</a> | <a href=\"http://www.espncms.com\" rel=\"nofollow\">Sales
+        Media Kit</a> | <a href=\"http://preferences.truste.com/2.0/?type=espn&affiliateId=148\"
+        onclick=\"window.open('http://preferences.truste.com/2.0/?type=espn&affiliateId=148','popup','width=986,height=878,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0');
+        return false\">Interest-Based Ads</a> | <script type=\"text/javascript\">document.write(bugText);</script><a
+        href=\"http://espn.go.com/espn/corrections\">Corrections</a> | <a href=\"http://sports.espn.go.com/espn/news/story?page=contact/index\">Contact
+        Us</a> | <a href=\"http://espn.go.com/espn/sitemap\">Site Map</a> | <a href=\"http://espncareers.com\">Jobs
+        at ESPN</a> | <!--a href=\"http://corporate.disney.go.com/corporate/sourcing.html\"
+        rel=\"nofollow\"><span style=\"font-weight:bold;\">Supplier Information</span></a--><a
+        href=\"http://go.com\">Go.com</a><br/>&copy; 2015  ESPN Internet Ventures.
+        <a href=\"http://disneytermsofuse.com/\" rel=\"nofollow\">Terms of Use</a>,
+        <a href=\"http://disneyprivacycenter.com/\" rel=\"nofollow\">Privacy Policy</a>,
+        <a href=\"https://disneyprivacycenter.com/notice-to-california-residents/\"
+        rel=\"nofollow\">Your California Privacy Rights</a>,  <a href=\"https://disneyprivacycenter.com/kids-privacy-policy/english/\">Children's
+        Online Privacy Policy</a> and <a href=\"http://preferences-mgr.truste.com/?type=espn&affiliateId=148\">Interest-Based
+        Ads</a> are applicable to you.  All rights reserved.\n\n<!--\n<a href=\"http://www.espnshop.com/\"
+        onClick=\"location.href('http://log.go.com/log?srvc=sz&guid=73B641A0-6660-4EFC-B8FF-9DE23E8CD9BD&drop=0&addata=3374:65:478847:65&a=1&goto=http://www.espnshop.com/');return
+        false\">Shop</a>\n--></div>\n<!-- end footer -->\n<!--[if lte IE 9]></div><![endif]-->\n</div>\n<!--
+        end bg-elements -->\n\n\n<!-- SiteCatalyst code version: H.21.3 Copyright
+        1997-2010 Omniture, Inc. http://www.omniture.com -->\n<script type=\"text/javascript\">\n\tvar
+        undef = 'undefined'\n\t,s_account=\"wdgespcom\"\n\t,omniPageName = \"espn:nba:teams:schedule:golden+state+warriors\"\n\t\n\t,insiderStatus
+        = \"\"\n\t,anGen = \"\"\n\t,anYear = \"\"\n\t,anDateString = \"\"\n\t,anLoginStatus
+        = \"\"\n\t,callOmniture = function(){\n\t\t/*-- core story s_omni properties
+        --*/\n\t\tif (typeof anCV != \"undefined\"){anParseLoginBarInfo(anCV);}\n\t\ts_omni.pageName=\"nba:teams:schedule:golden+state+warriors\";\n\t\ts_omni.server
+        = window.location.host; // Server from the Host\n\t\ts_omni.channel = \"nba\";\n\t\ts_omni.prop1
+        = \"espn\";\n\t\ts_omni.prop4 = \"schedule\";\n\t\ts_omni.prop5 = \"nba:teams\";\n\t\ts_omni.prop11
+        = (insiderStatus !== null) ? insiderStatus + \":premium-no\" : \"premium-no\";\n\t\ts_omni.prop13
+        = \"automated-general\";\n\t\ts_omni.prop17 = \"en\";\n\t\ts_omni.prop21 =
+        anDateString;\n\t\ts_omni.prop22 = anGen;\n\t\ts_omni.prop25 = \"basketball\";\n\t\ts_omni.prop26
+        = \"nba\";\n\t\ts_omni.prop29 = anLoginStatus;\n\t\ts_omni.prop30 = \"n\";\n\t\ts_omni.prop32
+        = \"nba:teamid=9-golden+state+warriors\";\n\t\ts_omni.hier1 = \"nba:teams:schedule:golden+state+warriors\";\n\t\ts_omni.eVar7
+        = anYear + \":\" + anGen + \":\" + anLoginStatus + \":\" + s_omni.prop11 +
+        \":\";\n\t\ts_omni.eVar9 = \"en\";\n\t\ts_omni.eVar13 = \"nba:teams:schedule:golden+state+warriors\";\n\t\ts_omni.eVar19
+        = \"basketball\";\n\t\ts_omni.eVar21 = \"nba\";\n\t\t\n\t\tif (s_omni.prop11==\"anonymous:premium-yes\"
+        || s_omni.prop11==\"insider-no:premium-yes\" && typeof s_omni.prop4!=\"undefined\"
+        &&\n\t\t\t(s_omni.prop4==\"story\" || s_omni.prop4==\"blog\")) {\n\t\t\tif
+        (typeof s_omni.events != \"undefined\" && s_omni.events!=\"\") {\n\t\t\t\ts_omni.events
+        = s_omni.events+\",event8\" }\n\t\t\telse { s_omni.events=\"event8\" }\n\t\t}\n\t\t\n\t\t\n\t\tanVersion
+        = \"_11apr14_v2_0_r5_\";\n\t\t\n\t\t/************* DO NOT ALTER ANYTHING BELOW
+        THIS LINE ! **************/\n\t\t\n\t\tvar s_code = s_omni.t();\n\t\tif(s_code)
+        {\n\t\t\tvar sci = new Image(1,1);\n\t\t\tsci.onload = function() {console.log(\"loaded
+        no append\")};\n\t\t\tsci.src = s_code;\n\t\t}\n\t\t\n\t};\t\n</script>\n\n\n\n<script
+        type=\"text/javascript\">\n\tif (typeof(s_omni) === 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\t// we want to load the analytics files from the cache if possible
+        - so, let's use full $.ajax() calls\n\t\t\t$.ajax({\n\t\t\t\ttype:'GET',\n\t\t\t\turl:
+        'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/externalnielsen.js&v=11',\n\t\t\t\tdataType:
+        'script',\n\t\t\t\tcache: true,\n\t\t\t\tsuccess: function() {\n\t\t\t\t\tvar
+        lgSrc;\n\t\t\t\t\tif(typeof anCV !== undef && anCV === '' && document.getElementById('form-memberarea')
+        != null) {\n\t\t\t\t\t\tlgSrc = 'https://r.espn.go.com/members/util/getUserInfo?cb=runOmnitureIndependently&regType=true';\n\t\t\t\t\t\t$.getScript(lgSrc);
+        // we don't want this to be cached - so we'll use the $.getScript() method\n\t\t\t\t\t}
+        else {\n\t\t\t\t\t\tcallOmniture();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t});\n\t\t});\n\t}\n</script>\n\n<!--
+        End SiteCatalyst code version: H.21. -->\n\n\n<!-- Begin comScore Tag -->\n<script
+        type=\"text/javascript\">\n\tif (typeof(jQuery) !== 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\tif(typeof window._comscore === 'undefined') {\n\t\t\t\twindow._comscore
+        = window._comscore || [];\n\t\t\t\twindow._comscore.push({ c1: \"2\", c2:
+        \"3000005\" });\n\t\t\t\tjQuery.getScript((document.location.protocol == \"https:\"
+        ? \"https://sb\" : \"http://b\") + \".scorecardresearch.com/beacon.js\");\n\t\t\t}\n\t\t});\n\t}\n</script>\n<!--
+        End comScore Tag -->\n\t\t<script>\n\t\tvar _sf_async_config={\n\t\t\t\"uid\":22222,\n\t\t\t\"domain\":\"espn.go.com\",\n\t\t\t\"pingServer\":\"pespn.chartbeat.net\",\n\t\t\t\"useCanonical\":true,\n\t\t\t\"useSubDomains\":false,\n\t\t\t\"sections\":\"nba\",\n\t\t\t\"authors\":\"schedule\"\n\t\t};\n\t\tif
+        (typeof(ad_site) !== 'undefined') { _sf_async_config.zone = ad_site; }\n\n\t\t//
+        load both chartbeat_pub and chartbeat_video\n\t\t(function () {\n\t\t\tfunction
+        a() {\n\t\t\t\twindow._sf_endpt = (new Date()).getTime();\n\n\t\t\t\tvar cbDomain
+        = ((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\");\n\n\t\t\t\tvar
+        c = document.createElement(\"script\");\n\t\t\t\tc.setAttribute(\"language\",\"javascript\");\n\t\t\t\tc.setAttribute(\"type\",\"text/javascript\");\n\t\t\t\tc.setAttribute(\"src\",
+        cbDomain+\"js/chartbeat_pub.js\");\n\t\t\t\tdocument.body.appendChild(c);\n\n\t\t\t\tif(typeof
+        StrategyInterface !== 'undefined' && (typeof espn !== 'undefined' && typeof
+        espn.video !== 'undefined')){\n\t\t\t\t\tvar e = document.createElement(\"script\");\n\t\t\t\t\te.setAttribute(\"language\",\t\"javascript\");\n\t\t\t\t\te.setAttribute(\"type\",
+        \"text/javascript\");\n\t\t\t\t\te.setAttribute(\"src\", cbDomain+\"js/chartbeat_video.js\");\n\t\t\t\t\tdocument.body.appendChild(e);\n\t\t\t\t}\n\t\t\t}\n\t\t\tvar
+        b = window.onload;\n\t\t\twindow.onload = (typeof window.onload != \"function\")
+        ? a : function () { b(); a() }\n\t\t})();\n\t\t//(function(){function a(){window._sf_endpt=(new
+        Date()).getTime();var c=document.createElement(\"script\");c.setAttribute(\"language\",\"javascript\");c.setAttribute(\"type\",\"text/javascript\");c.setAttribute(\"src\",((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\")+\"js/chartbeat_pub.js\");document.body.appendChild(c)}var
+        b=window.onload;window.onload=(typeof window.onload!=\"function\")?a:function(){b();a()}})();\n\t\t</script>\n\t\n<!--
+        dynamic logic: safecount -->\n<script src=\"http://content.dl-rms.com/rms/mother/508/nodetag.js\"></script>\n\n<script
+        type=\"text/javascript\" charset=\"utf-8\">buildOutHeadlinesForPinnedSite();</script>\n<script
+        type=\"text/javascript\">\n   var isInIFrame = (window.location != window.parent.location)
+        ? true : false;\n   if(isInIFrame){ if(document.referrer){ if(document.referrer.indexOf(\".go.com\")==-1){
+        top.location.href=self.location.href; } } }\n</script>\n\n<script type='text/javascript'>\n
+        \ //<![CDATA[\n    (function(){\n    window.gravityInsightsParams = {\n      'type':
+        'content',\n      'action': '',\n      'site_guid': '9a41401e9b7c945344e001ee7f23031e'\n
+        \   };\n    var b,c;b=\"https:\"===document.location.protocol?\"https://b-ssl.grvcdn.com/moth-min.js\":\"http://b.grvcdn.com/moth-min.js\";window.grvMakeScript=function(d){var
+        a;a=document.createElement(\"script\");a.type=\"text/javascript\";a.async=!0;a.src=d;return
+        a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
+        \ //]]>\n</script><script type=\"text/javascript\">if (!NREUMQ.f) { NREUMQ.f=function()
+        {NREUMQ.push([\"load\",new Date().getTime()]);var e=document.createElement(\"script\");e.type=\"text/javascript\";e.src=((\"http:\"===document.location.protocol)?\"http:\":\"https:\")
+        + \"//\" + \"js-agent.newrelic.com/nr-100.js\";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push([\"nrfj\",\"beacon-4.newrelic.com\",\"7c16f39f8d\",\"2256671\",\"NVxTZBFZXUFQW0ZQVwwWZEIKF11QUBdGXFkPFkJTC11XR11d\",0,38,new
+        Date().getTime(),\"\",\"\",\"\",\"\",\"\"]);</script></body>\n</html>"
+    http_version: 
+  recorded_at: Sun, 02 Nov 2014 07:00:02 GMT
+recorded_with: VCR 2.9.3

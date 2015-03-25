@@ -1,0 +1,1184 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://espn.go.com/ncf/preview?gameId=400610197
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html; charset=iso-8859-1
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 17 Dec 2014 22:36:51 GMT
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=300
+      P3p:
+      - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
+        BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
+      Set-Cookie:
+      - SWID=38E24BBE-0300-4793-A04F-AFB0CE40F4F7; path=/; expires=Tue, 12 Dec 2034
+        22:36:51 GMT; domain=go.com;
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
+        src=\"http://sports-ak.espn.go.com/sports/optimizely.js\"></script><meta charset=\"iso-8859-1\">\n<meta
+        http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n<script type=\"text/javascript\">
+        \   \n    if(true && navigator && navigator.userAgent.toLowerCase().indexOf(\"teamstream\")
+        >= 0) {\n        window.location = 'http://a.m.espn.go.com/mobilecache/general/apps/sc';\n
+        \   }\n</script><script type=\"text/javascript\">\nvar espn=window.espn||{};espn.beta=(function(f,i,b){var
+        c=\"http://beta.espn.go.com\",j=f.location.href,l=i.location.pathname;function
+        a(n){var r,m,o,q,s,v,w,p,t;if(n!==b){j=n;r=n.match(/http:\\/\\/([^\\/]*)([^?]*).*/);if(r&&r.length===3){l=r[2];}}if(l.match(/\\/story$/i)||l.match(/\\/story\\//i)){q=k(\"storyId\",n)||k(\"id\",n);s=k(\"storyPage\",n)||k(\"page\",n);if(q!==\"\"){return
+        c+l+\"/_/id/\"+q;}else{if(s!==\"\"){return c+l+\"/_/page/\"+s;}else{return
+        c+l;}}}if(l.match(/\\/blogpostindex$/i)){m=k(\"blogname\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"){return
+        c+\"/blog/\"+m;}}if(l.match(/\\/blogpost$/i)){m=k(\"blogname\",n);o=k(\"id\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"&&o!==\"\"){return
+        c+\"/blog/\"+m+\"/post/_/id/\"+o;}}if(l.match(/^\\/blog\\//i)){m=k(\"blogName\",n);o=k(\"id\",n);if(l.match(/\\/blog\\/.*\\/post$/i)){if(o!==\"\"){return
+        c+l+\"/_/id/\"+o;}}else{if(m!==\"\"&&o!==\"\"){return c+\"/blog/\"+m+\"/post/_/id/\"+o;}else{if(m!==\"\"){return
+        c+\"/blog/\"+m;}else{return c+l;}}}}if((l===\"\"||l===\"/\")&&!j.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)){return
+        c;}var u=l.match(/^\\/.*?\\/(?:index)?$/i);if(u){v={\"/frontpage/\":true,\"/wireless/\":true,\"/general/\":true,\"/extra/\":true,\"/mobile/\":true,\"/nfl/\":true,\"/nba/\":true,\"/mlb/\":true,\"/nhl/\":true,\"/ncf/\":true,\"/college-football/\":true,\"/ncb/\":true,\"/mens-college-basketball/\":true,\"/ncw/\":true,\"/womenbb/\":true,\"/womens-basketball/\":true,\"/wnba/\":true,\"/golf/\":true,\"/tennis/\":true,\"/general/tennis/\":true,\"/mma/\":true,\"/extra/mma/\":true,\"/racing/\":true,\"/rpm/\":true,\"/racing/nascar/\":true,\"/rpm/nascar/\":true,\"/boxing/\":true,\"/extra/boxing/\":true,\"/college-sports/\":true,\"/ncaa/\":true,\"/extra/ncaa/\":true,\"/olympics/\":true,\"/extra/olympics/\":true,\"/horse-racing/\":true,\"/horse/\":true,\"/general/horse/\":true,\"/poker/\":true,\"/general/poker/\":true,\"/sports/endurance/\":true,\"/extra/endurance/\":true};if(l.match(/\\/index$/i)){l=l.substring(0,l.length-5);}if(v[l]===true){return
+        c+l;}}if(l.match(/\\/nflpreview$/i)||l.match(/\\/preview$/i)){w=k(\"gameId\",n);if(w!==\"\"){if(l.match(/\\/nflpreview$/i)){return
+        c+\"/nfl/preview?gameId=\"+w;}else{return c+l+\"?gameId=\"+w;}}}if(l.match(/\\/recap$/i)){w=k(\"gameId\",n);if(w!==\"\"){return
+        c+l+\"?gameId=\"+w;}}if(l===\"/general/video\"){p=k(\"cid\",n);t=k(\"vid\",n);if(p!==\"\"){return
+        c+\"/video/clip?id=\"+p;}else{if(t!==\"\"){return c+\"/video/clip?id=\"+t;}}}if(l.match(/^\\/(?:videohub\\/video|video)\\/clip$/i)){p=k(\"id\",n);if(p!==\"\"){return
+        c+l+\"?id=\"+p;}}}function h(o){var n=a(o);var m=j.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)||(o&&o.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i))||(espn&&espn.GLOBALS&&espn.GLOBALS.isPremium);if(n){n=n.replace(\"/wireless/\",\"/\");n=n.replace(\"/general/\",\"/\");n=n.replace(\"/extra/\",\"/\");n=n.replace(\"/mobile/\",\"/\");n=n.replace(\"/frontpage/\",\"/\");n=n.replace(\"/videohub/\",\"/\");n=n.replace(\"/ncf/\",\"/college-football/\");n=n.replace(\"/rpm/\",\"/racing/\");n=n.replace(\"/ncb/\",\"/mens-college-basketball/\");n=n.replace(\"/ncw/\",\"/womens-basketball/\");n=n.replace(\"/wnba/\",\"/womens-basketball/\");n=n.replace(\"/ncaa/\",\"/college-sports/\");if(m){n=n.replace(\"/story/\",\"/insider/story/\");n=n.replace(\"/post/\",\"/insider/post/\");if(n.match(/\\/blog\\/[^_]*$/i)){if(n.charAt(n.length-1)===\"/\"){n=n+\"insider/\";}else{n=n+\"/insider/\";}}}}return
+        n;}function k(o,q){var m=location.search;if(q!==b){var n=q.indexOf(\"?\");if(n>-1){m=q.substr(n);}}o=o.replace(/[\\[]/,\"\\\\[\").replace(/[\\]]/,\"\\\\]\");var
+        r=new RegExp(\"[\\\\?&]\"+o+\"=([^&#]*)\"),p=r.exec(m);return p===null?\"\":decodeURIComponent(p[1].replace(/\\+/g,\"
+        \"));}function d(){var n=e(\"betauser\");var m=e(\"betacohort\")||\"\";if(n!==null&&m.indexOf(\"cohort-\")===0){var
+        p=m.split(\"-\");if(p&&p.length===2){if(parseInt(p[1],10)===999){return;}}var
+        o=h();if(o){f.location=o;}}}function e(n){var p=n+\"=\";var m=i.cookie.split(\";\");for(var
+        o=0;o<m.length;o++){var q=m[o];while(q.charAt(0)===\" \"){q=q.substring(1,q.length);}if(q.indexOf(p)===0){return
+        q.substring(p.length,q.length);}}return null;}function g(){if(k(\"rand\")===\"beta\"){espn.beta.recheck=true;}else{d();}}return{init:function(){g();}};})(this,this.document);espn.beta.init();\n</script>\n\t<script>(function(){function
+        r(a){a=a.replace(/[\\[]/,\"\\\\[\").replace(/[\\]]/,\"\\\\]\");var c=new RegExp(\"[\\\\?&]\"+a+\"=([^&#]*)\"),b=c.exec(location.search);return
+        b==null?\"\":decodeURIComponent(b[1].replace(/\\+/g,\" \"));}var p=navigator.userAgent,o=window.location,l=document.cookie,f=document.referrer,n=(f===\"\"||f.indexOf(\".go.com\")!==-1),d=(n)?\"http://espn.go.com/ncf/gamecast?gameId=400610197&version=mobile&src=desktop\":\"http://espn.go.com/ncf/gamecast?gameId=400610197&version=mobile&src=desktop&rand=ref~%7B%22ref%22%3A%22\"+encodeURIComponent(f)+\"%22%7D\",i=(p.match(/iPad/i)||(p.match(/Android/i)&&!p.match(/Mobile/i))||p.match(/RIM
+        Tablet/i)||p.match(/Silk/i)),k=(p.match(/Mobile/i)||p.match(/Mini/i)),g=o.href.match(/src=mobile/i),q=l.indexOf(\"iphone_redirect=false\")>-1,e=l.indexOf(\"iphone_redirect=true\")>-1,j=r(\"addata\"),h=r(\"ex_cid\"),m=r(\"rand\");if(j!=\"\"){d+=\"&addata=\"+j;}if(h!=\"\"){d+=\"&ex_cid=\"+h;}if(m===\"beta\"){d+=\"&rand=beta\";}if(i){document.documentElement.className+=\"
+        tablet \";if((!p.match(/iPad/i)||e)&&!q){o.href=d;}}else{if(k&&!q&&!g){o.href=d;}}})();</script>\n\t<title>Nevada
+        Wolf Pack vs. Louisiana-Lafayette Ragin' Cajuns - Preview - December 20, 2014
+        - ESPN</title>\n<meta name=\"google-site-verification\" content=\"xuj1ODRluWa0frM-BjIr_aSHoUC7HB5C1MgmYAM_GkA\"
+        />\n<meta name=\"msvalidate.01\" content=\"B1FEB7C682C46C8FCDA3130F3D18AC28\"
+        />\n<meta name=\"googlebot\" content=\"noodp\" />\n<meta name=\"robots\" content=\"index,
+        follow\" />\n<meta name=\"description\" content=\"NCAA College Football Preview\"
+        />\n<meta name=\"keywords\" content=\"nevada wolf pack, louisiana-lafayette
+        ragin' cajuns, ncaa, college football\" />\n<meta property=\"fb:app_id\" content=\"116656161708917\">\n<meta
+        property=\"og:site_name\" content=\"ESPN.com\">\n<meta property=\"og:title\"
+        content=\"Nevada-Louisiana-Lafayette Preview\" />\n<meta property=\"og:type\"
+        content=\"article\" />\n<meta property=\"og:description\" content=\"NCAA College
+        Football Preview\" />\n<meta property=\"og:image\" content=\"http://a.espncdn.com/i/espn/espn_logos/espn_red.png\"
+        />\n<meta property=\"og:url\" content=\"http://scores.espn.go.com/ncf/preview?gameId=400610197\"
+        />\n<meta name=\"twitter:site\" content=\"espn\">\n<meta name=\"twitter:title\"
+        content=\"Nevada-Louisiana-Lafayette Preview\">\n<meta name=\"twitter:card\"
+        content=\"summary\">\n<meta name=\"twitter:description\" content=\"NCAA College
+        Football Preview\">\n<meta name=\"twitter:image\" content=\"http://a.espncdn.com/i/espn/espn_logos/espn_red.png\">\n<meta
+        name=\"twitter:url\" content=\"http://scores.espn.go.com/ncf/preview?gameId=400610197\">\n<meta
+        name=\"twitter:app:name:iphone\" content=\"SportsCenter\"/>\n<meta name=\"twitter:app:id:iphone\"
+        content=\"317469184\"/>\n<meta name=\"twitter:app:name:googleplay\" content=\"SportsCenter\"/>\n<meta
+        name=\"twitter:app:id:googleplay\" content=\"com.espn.score_center\"/>\n<link
+        rel=\"canonical\" href=\"http://scores.espn.go.com/ncf/preview?gameId=400610197\"
+        />\n\n\t\t<script>var _sf_startpt=(new Date()).getTime();</script>\n<link
+        rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"http://a.espncdn.com/search/opensearch.xml\"
+        title=\"ESPN Search\" />\n<link rel=\"stylesheet\" href=\"http://a.espncdn.com/combiner/c/201401211964?css=global_reset.r1.css,base.r236.css,modules.r462.css,global_header.r44.css,header_topbar.r1.css,modules/global_nav.r54.css,modules/insider_enhanced.r1.css,modules/mem/mem.r12.1.css,modules/mem/mem_espn360.r8.4.css,modules/mem/skirmish.r8.css,modules/twin.r1.css,modules/facebook/button.r2.css,universal_overlay/universal_overlay.css,universal_overlay/media_overlay.css,universal_overlay/video_overlay.css,universal_overlay/photo_overlay.css,universal_overlay/dyk_overlay.css,fonts/bentonsans.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/201303290924?css=sprites/teamlogos.r18.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c?v=201407081137&css=/espn/ncf/scoreboard09/format/css,/espn/espn/styles/gamepackage10/ootCSS,/espn/espn/styles/gamepackage10/gamepackage10CSS,/espn/espn/styles/gamepackage10/gamepackage10moduleCSS\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/prod/styles/social_upgrade.r1.css\" type=\"text/css\"
+        media=\"screen\" charset=\"utf-8\" />\n<script type=\"text/javascript\">\nvar
+        _vrq = _vrq || [];\n _vrq.push(['id', 489]);\n _vrq.push(['automate', false]);\n
+        _vrq.push(['track', function(){}]);\n (function(d, a){var s = d.createElement(a),x
+        = d.getElementsByTagName(a)[0];\ns.async = true;\ns.src = 'http://a.visualrevenue.com/vrs.js';\n
+        x.parentNode.insertBefore(s, x);})(document, 'script'); </script>\n<script
+        src=\"http://a.espncdn.com/combiner/c?js=jquery-1.7.1.js,plugins/json2.r3.js,plugins/teacrypt.js,plugins/jquery.metadata.js,plugins/jquery.bgiframe.r3.js,plugins/jquery.easing.1.3.js,plugins/jquery.hoverIntent.js,plugins/jquery.jcarousel.0.2.9.js,plugins/jquery.tinysort.r4.js,plugins/jquery.pubsub.r5.js,ui/1.8.16/jquery.ui.core.js,ui/1.8.16/jquery.ui.widget.js,ui/1.8.16/jquery.ui.tabs.js,ui/1.8.16/jquery.ui.accordion.js,plugins/ba-debug-0.4.js,espn.l10n.r12.js,swfobject/2.2/swfobject.js,flashObjWrapper.r7.js,plugins/jquery.colorbox.1.3.14.js,plugins/jquery.ba-postmessage.js,espn.core.duo.r57.js,m/beta/betacheck.r5.js,espn.mem.r39.js,stub.search.r9.js,espn.nav.mega.r38b.js,espn.storage.r6.js,espn.p13n.r19.5.js,espn.geo.r3.js,espn.video.r81.r5.js,analytics/chartbeat/video/strategy_comprehensive.r1.js,registration/staticLogin.r12.06102014.js,espn.universal.overlay.r19.js,insider/espn.insider.20140915.js,espn.espn360.stub.r9.js,espn.myHeadlines.stub.r16.js,espn.myfaves.stub.r3.js,tsscoreboard.20090612.js,ie9pinning.r3.js,espn.f8.noauth.r3.js,espn.socialmediamod.r7.js\"></script>\n<script
+        src=\"http://a.espncdn.com/prod/scripts/espn.loader.200901201835.js\" type=\"text/javascript\"
+        charset=\"utf-8\"></script>\n<script type=\"text/javascript\" charset=\"utf-8\">\nESPN.include([\n\t'http://widgets.outbrain.com/outbrain.js'\n]);\n</script>\n<script>espn.core.navVersion
+        = 'a';</script>\n<script>var ad_site=\"espn.us.com.ncf\",ad_zone=\"ncfpreview\",ad_kvps=\"pgtyp=ncfpreview;sp=ncf;gmid=400610197;\",ad_swid=\"\",ad_counter=1,ad_ord=Math.floor(9999999999*Math.random()),ad_seg=\"\",ad_mnr=-1<document.cookie.indexOf(\"grif=1\")?\"t\":\"f\",ad_ref=\"other\",ref=document.referrer,refsMap={\"facebook.com\":\"facebook\",\"twitter.com|t.co\":\"twitter\",\"plus.url.google.com|plus.google.com\":\"googleplus\",\"google.com\":\"google\",\"bing.com\":\"bing\",\"yahoo.com\":\"yahoo\",\"espn.go.com\":\"espn\"},refKey;for(refKey
+        in refsMap)ref.match(refKey)&&(ad_ref=refsMap[refKey]);\nad_kvps=ad_kvps+\"ref=\"+ad_ref+\";mnr=\"+ad_mnr+\";\";ad_swid=jQuery.cookie(\"SWID\");\"function\"===typeof
+        espn.core.ad_segments&&(ad_seg=espn.core.ad_segments(),null!=ad_seg&&\"\"!=ad_seg&&(ad_kvps+=ad_seg));var
+        ad_u=\"\";null!=ad_swid&&\"\"!=ad_swid&&(ad_u=\"swid=\"+ad_swid+\";\");</script>\n</head>\n<body
+        class=\"game-package ncf {sportId:23}\" >\n<div class=\"mboxDefault\"><link
+        rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/prod/styles/modules/hideGravity.css\"
+        type=\"text/css\" /></div><script>mboxCreate('ESPN_global');</script><!--[if
+        IE 5]><div class=\"ie5\"><![endif]-->\n<!--[if IE 6]><div class=\"ie ie6\"><![endif]-->\n<!--[if
+        IE 7]><div class=\"ie ie7\"><![endif]-->\n<!--[if IE 8]><div class=\"ie ie8\"><![endif]-->\n<!--[if
+        IE 9]><div class=\"ie9\"><![endif]-->\n<!-- begin bg-elements -->\n<div class=\"bg-elements\">\n<!--
+        begin header -->\n<div id=\"header\" class=\"container\">\n<!-- begin top-bar
+        -->\n<div class=\"top-bar\">\n<!-- begin uni login -->\n<script type=\"text/javascript\">\nvar
+        returnURL = document.location.href;\nvar anCV = \"\";\nvar myEspnText = {'welcometext':'Welcome','register':'Register','signin':'Sign
+        In','signout':'Sign Out','heliumdown':'Login Temporarily Unavailable','connectedfacebook':'Connected
+        to Facebook','connectfacebook':'Connect with Facebook','activateinsider':'Activate
+        Insider'};\n</script>\n<form id=\"form-memberarea\">\n<input type=\"hidden\"
+        name=\"language\" id=\"language\" value=\"en\"/>\n<input type=\"hidden\" name=\"affiliateName\"
+        id=\"memberAreaAffiliateName\" value=\"espn\"/>\n<input type=\"hidden\" name=\"regFormId\"
+        id=\"regFormId\" value=\"espn\"/>\n</form>\n<div class=\"signin\" id=\"signin\"></div>\n<script>espn.memberservices.welcome();</script>\n<div
+        class=\"nav-edition editions\">\n<label>EDITIONS:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-usa active\"><a href=\"http://espn.go.com/\" name=\"&amp;lpos=editionsnav&amp;lid=usa\">USA</a></li>\n\t<li
+        class=\"e-deportes\"><a href=\"http://www.espn.com?country-view=us&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=deportes\" class=\"{langPref:'spanish'}\">DEPORTES</a></li>\n\t<li
+        class=\"last dropdown\">\n\t<ul class=\"\">\n\t<li class=\"selected\">More</li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=ar&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=argentina\">Argentina</a></li>\n\t<li><a
+        href=\"http://www.espn.com.au\" name=\"&amp;lpos=editionsnav&amp;lid=australia\">Australia</a></li>\n\t<li><a
+        href=\"http://www.espn.com.br\" name=\"&amp;lpos=editionsnav&amp;lid=brazil\">Brazil</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=co&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=colombia\">Colombia</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=mx&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=mexico\">Mexico</a></li>\n\t<li><a
+        href=\"http://www.espn.co.uk/\" name=\"&amp;lpos=editionsnav&amp;lid=uk\">United
+        Kingdom</a></li>\n        <li><a href=\"http://www.espn.com?country-view=ve&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=venezuela\">Venezuela</a></li>\n\t</ul>\n\t</li>\n</ul>\n</div>\n\n<div
+        class=\"nav-edition\">\n<label>CITIES:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-boston\"><a href=\"http://espn.go.com/boston/\" name=\"&amp;lpos=citynav&amp;lid=boston\">BOSTON</a></li>\n\t<li
+        class=\"e-chicago\"><a href=\"http://espn.go.com/chicago/\" name=\"&amp;lpos=citynav&amp;lid=chicago\">CHICAGO</a></li>\n\t<li
+        class=\"e-dallas\"><a href=\"http://espn.go.com/dallas/\" name=\"&amp;lpos=citynav&amp;lid=dallas\">DALLAS</a></li>\n\t<li
+        class=\"e-losangeles\"><a href=\"http://espn.go.com/los-angeles/\" name=\"&amp;lpos=citynav&amp;lid=losangeles\">LOS
+        ANGELES</a></li>\n\t<li class=\"last e-newyork\"><a href=\"http://espn.go.com/new-york/\"
+        name=\"&amp;lpos=citynav&amp;lid=newyork\">NEW YORK</a></li>\n</ul>\n</div>\n</div>\n<!--
+        end top-bar -->\n<!-- begin espn-logo -->\n<div class=\"espn-logo\">\n<h1>\n<a
+        href=\"http://espn.go.com/\" name=\"&lpos=sitenavdefault&lid=sitenav_main-logo\"
+        class=\"espn\">ESPN</a> <a href=\"http://espn.go.com/college-football/\" class=\"section-title\">College
+        Football</a></h1>\n</div>\n<!-- end espn-logo -->\n<!-- begin ad -->\n<span
+        class=\"presby\"><!--espn.us.com.ncf sitezone-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.ncf\",ad_zone=\"ncfpreview\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=SponsoredByLogoHeader;\"+ad_u+\"sz=150x45,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"SponsoredByLogoHeader\" data-cb-dfp-id=\"'+ad_kvps+'sz=150x45,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.ncf/ncfpreview;pgtyp=ncfpreview;sp=ncf;gmid=400610197;sz=150x45,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.ncf/ncfpreview;pgtyp=ncfpreview;sp=ncf;gmid=400610197;sz=150x45,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</span>\n<!-- end ad -->\n<div class=\"header-right\">\n<style>.ie6
+        #searchBox, .ie6 #searchBox div { display: inline; } </style><!-- begin search
+        -->\n<div id=\"nav-main-search\">\n<form id=\"searchBox\" name=\"searchBox\"
+        action=\"http://search.espn.go.com/results\" method=\"get\" accept-charset=\"utf-8\"
+        style=\"color: #999999;\">\n<div class=\"clearfix\">\n<input autocomplete=\"off\"
+        class=\"text\" type=\"text\" placeholder=\"Search\" name=\"searchString\"
+        id=\"searchString\" />\n<input type=\"hidden\" name=\"page\" id=\"page\" value=\"null\"
+        />\n<input type=\"hidden\" name=\"fromForm\" value=\"true\" />\n<input class=\"submit\"
+        type=\"submit\" value=\"\" />\n</div>\n</form>\n</div>\n<!-- end search -->\n<div
+        id=\"shop\"><a class=\"shop-btn\" href=\"http://www.dickssportinggoods.com/category/index.jsp?categoryId=15504456&camp=Part:ESPNpart::ncfshopbutton:NCF\"
+        name=\"&lpos=sitenavdefault&lid=sitenav_shopbutton\" rel=\"nofollow\">Shop</a></div></div>\n</div>\n<!--
+        end header -->\n<!--espn.us.com.ncf sitezone-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.ncf\",ad_zone=\"ncfpreview\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Background_Skin;\"+ad_u+\"sz=1280x946,200x800,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Background_Skin\" data-cb-dfp-id=\"'+ad_kvps+'sz=1280x946,200x800,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.ncf/ncfpreview;pgtyp=ncfpreview;sp=ncf;gmid=400610197;sz=1280x946,200x800,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.ncf/ncfpreview;pgtyp=ncfpreview;sp=ncf;gmid=400610197;sz=1280x946,200x800,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n<!-- begin subheader -->\n<div id=\"subheader\">\n<!--
+        begin content -->\n<div id=\"content-wrapper\">\n<div id=\"ad-top\" class=\"container\">\n<!--
+        begin Banner ad -->\n<div class=\"span-6 ad banner top\"><div class=\"ad-center\"><div
+        class=\"ad-wrapper\"><!--espn.us.com.ncf sitezone-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.ncf\",ad_zone=\"ncfpreview\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Banner;\"+ad_u+\"sz=728x90,970x66,924x50,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Banner\" data-cb-dfp-id=\"'+ad_kvps+'sz=728x90,970x66,924x50,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.ncf/ncfpreview;pgtyp=ncfpreview;sp=ncf;gmid=400610197;sz=728x90,970x66,924x50,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.ncf/ncfpreview;pgtyp=ncfpreview;sp=ncf;gmid=400610197;sz=728x90,970x66,924x50,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div></div></div>\n<!-- end Banner
+        ad -->\n</div>\n<div id=\"content\" class=\"container\">\n<div id=\"fb-root\"></div><!--[if
+        lte IE 7]><link rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/combiner/c?css=modules/browser-alert.r7.css\"
+        type=\"text/css\" /><div class=\"span-6\" id=\"browser-alert-wrapper\" style=\"display:none;\"><div
+        class=\"mod-container mod-no-header-footer browser-alert\"><div class=\"mod-content\"><div
+        class=\"gradient-container\"><h1><span>Your Web Browser</span> is no longer
+        supported</h1><p>To experience everything that ESPN.com has to offer, we recommend
+        that you upgrade to a newer version of your web browser. Click the upgrade
+        button to the right or <a href=\"http://espn.go.com/espn/news/story?id=5630562\">learn
+        more</a>.</p><ul><li><a class=\"btn-upgrade\" href=\"http://www.microsoft.com/windows/internet-explorer/default.aspx\">Upgrade</a></li><li><a
+        class=\"btn-faq\" href=\"http://espn.go.com/espn/news/story?id=5630562\">FAQs</a></li></ul></div></div></div></div><script>(function(b){setTimeout(function(){var
+        a=b(\"#browser-alert-wrapper\");if(espn.cookie.get(\"browseralert\")!=\"true\"){b('<a
+        class=\"btn-close\" href=\"#\">Close</a>').bind(\"click\",function(){a.hide();espn.cookie.set(\"browseralert\",\"true\",30);return
+        false}).appendTo(a.find(\".gradient-container\"));a.show();espn.cookie.set(\"browseralert\",\"true\")}},100)})(jQuery);</script><![endif]--><!--URL
+        built:http://scores.espn.go.com/ncf/preview-->\n\n<script type=\"text/javascript\">\nvar
+        ootUpdater;\nfunction updateOotGames(confId){\n\tvar paramString=\"gameId=400610197&confId=\"+confId+\"&langType=0&url=http://scores.espn.go.com/ncf/preview\";\n\tjQuery(\"#ajax-loader-oot\").css(\"display\",
+        \"block\");\n\tjQuery(\"#ncf-scores\").css(\"display\", \"none\");\n\tjQuery.ajax({\n\t
+        \  url: \"/ncf/gamepackage10/util/printOotGames?\"+paramString,\n\t   success:
+        function (data, textStatus) {\n\t\t    jQuery(\"#ajax-loader-oot\").css(\"display\",
+        \"none\");\n\t\t\tjQuery('#scoreboard2').html(data);\n\t\t\tjQuery(\"#scoreboard2\").find('div.oot-prev').bind('click',function()
+        { ESPNootScoreboard.prev(); return false; });\n\t\t\tjQuery(\"#scoreboard2\").find('div.oot-next').bind('click',function()
+        { ESPNootScoreboard.next(); return false; });\n\n\t\t\tESPNMakeMyGames();\n\t
+        \  }\n\t });\n\n}\n</script>\n<div class=\"scoreboard-strip-wrapper\" style=\"height:61px;
+        width:916px;\">\n\t<div class=\"scoreboard-strip oot-wide\" id=\"ootScoreboard\">\n\t\t<div
+        id=\"ootShadow\"></div>\n\n\t\t<div class=\"scoreboard-title-hq\">\n\n\t\t\t<div
+        class=\"subhead\">\n\n\t\t\t\t<span>\n\t\t\t\t\t<a href=\"/ncf/scoreboard?seasonYear=2014&seasonType=3&weekNumber=1\">Scores</a>\n\t\t\t\t</span>\n\n\t\t\t\t<select
+        class=\"league-selector-hq\" onchange=\"updateOotGames(this.options[this.selectedIndex].value)\">\n\t\t\t\t<option
+        value=\"100\">Bowl Games</option><option value=\"1\">ACC</option><option value=\"151\">American</option><option
+        value=\"4\">Big 12</option><option value=\"5\">Big Ten</option><option value=\"12\">C-USA</option><option
+        value=\"18\">FBS Indep.</option><option value=\"15\">MAC</option><option value=\"17\">MW</option><option
+        value=\"9\">Pac-12</option><option value=\"8\">SEC</option><option value=\"37\">Sun
+        Belt</option><option value=\"20\">Big Sky</option><option value=\"40\">Big
+        South</option><option value=\"48\">CAA</option><option value=\"32\">FCS Indep.</option><option
+        value=\"43\">Great West</option><option value=\"22\">Ivy</option><option value=\"24\">MEAC</option><option
+        value=\"21\">MVFC</option><option value=\"25\">NEC</option><option value=\"26\">OVC</option><option
+        value=\"27\">Patriot</option><option value=\"28\">Pioneer</option><option
+        value=\"29\">Southern</option><option value=\"30\">Southland</option><option
+        value=\"31\">SWAC</option>\n\t\t\t\t</select>\n\t\t\t</div>\n\t\t</div>\n\n\t<script
+        type=\"text/javascript\">\n\t\tvar ESPNootScoreboard = {};\n\t\tESPNootScoreboard.activeSport
+        = 'ncf';\n\n\t\t(function($){\n\t\t\t//checking insider access for pickcenter
+        module on preview page\n\t\t\tvar insiderAccess = false;\n\t\t    if(espn.core.loggedIn
+        == true){\n\t\t        szprem = espn.storage.getItem('szpremToken');\n\t\t
+        \       insiderDirect = espn.storage.getItem('insiderDirectToken');\n\t\t
+        \       if(szprem == true || insiderDirect == true){\n\t\t            insiderAccess
+        = true;\n\t\t        }\n\t\t    }\n\t\t    $(document).ready(function(){\n\t\t\t
+        \   if(insiderAccess){\n\t\t\t    \t$(\"div#insiderTrue\").show();\n\t\t\t
+        \   }\n\t\t\t    if(!insiderAccess){\n\t\t\t    \t$(\"div#insiderFalse\").show();\n\t\t\t
+        \   \t$(\"div#insiderTrue\").html('');\n\t\t\t    }\n\t\t\t});\n\t    }(jQuery));\n\n\t</script>\n\n\t\t<div
+        class=\"scoreboard-container\" id=\"scoreboard2\" style=\"width:auto !important;
+        \ margin-left: 210px !important\">\n\t\t\t\n\n\t<div class=\"container\">\n\t\t<div
+        style=\"display: block;\" class=\"jcarousel-prev jcarousel-next-horizontal
+        oot-prev\"></div>\n\t\t<div style=\"display: block;\" class=\"jcarousel-next
+        jcarousel-next-horizontal oot-next\"></div>\n\t\t<div class=\"mod-content
+        mod-content-hq\">\n\t\t\t<div id=\"ajax-loader-oot\" style=\"margin: 8px auto;
+        width: 128px; display: none; position: relative;\">\n\t\t\t\t<img src=\"http://a.espncdn.com/img/ajax-loader-oot.gif\"
+        alt=\"Loading...\" />\n\t\t\t</div>\n\t\t\t<div id=\"ncf-scores\" class=\"scores-carousel
+        {note:'THERE ARE NO COLLEGE FOOTBALL GAMES THIS WEEK'} ui-tabs-panel ui-widget-content
+        ui-corner-bottom\">\n\t\t\t\t\t<ul><li id=\"ncf-400610197\"><a href=\"/ncf/preview?gameId=400610197\"
+        class=\"ootLink\"><div class=\"game pregame\" ><div class=\"game-status pregame
+        \"><div class=\"game-left\"><span class=\"status\">11:00</span><span class=\"hidden-clock\">AM
+        ET</span></div><div class=\"game-right\"><span class=\"clock\">AM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">NEV</span><br/><span
+        class=\"home\">ULL</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">0</span></div></a></li><li
+        id=\"ncf-400610202\"><a href=\"/ncf/preview?gameId=400610202\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">2:20</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">USU</span><br/><span
+        class=\"home\">UTEP</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">1</span></div></a></li><li
+        id=\"ncf-400610221\"><a href=\"/ncf/preview?gameId=400610221\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">3:30</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\">22<br/></div><div class=\"teams\"><span class=\"away\">UTAH</span><br/><span
+        class=\"home\">CSU</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">2</span></div></a></li><li
+        id=\"ncf-400610198\"><a href=\"/ncf/preview?gameId=400610198\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">5:45</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">WMU</span><br/><span
+        class=\"home\">AFA</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">3</span></div></a></li><li
+        id=\"ncf-400610201\"><a href=\"/ncf/preview?gameId=400610201\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">9:15</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">USA</span><br/><span
+        class=\"home\">BGSU</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">4</span></div></a></li><li
+        id=\"ncf-400610225\"><a href=\"/ncf/preview?gameId=400610225\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">2:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">BYU</span><br/><span
+        class=\"home\">MEM</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">5</span></div></a></li><li
+        id=\"ncf-400610203\"><a href=\"/ncf/preview?gameId=400610203\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">6:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">MRSH</span><br/><span
+        class=\"home\">NIU</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">6</span></div></a></li><li
+        id=\"ncf-400610199\"><a href=\"/ncf/preview?gameId=400610199\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">9:30</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">NAVY</span><br/><span
+        class=\"home\">SDSU</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">7</span></div></a></li><li
+        id=\"ncf-400610205\"><a href=\"/ncf/preview?gameId=400610205\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">12:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">CMU</span><br/><span
+        class=\"home\">WKU</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">8</span></div></a></li><li
+        id=\"ncf-400610204\"><a href=\"/ncf/preview?gameId=400610204\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">8:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">FRES</span><br/><span
+        class=\"home\">RICE</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">9</span></div></a></li><li
+        id=\"ncf-400610222\"><a href=\"/ncf/preview?gameId=400610222\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">1:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">ILL</span><br/><span
+        class=\"home\">LT</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">10</span></div></a></li><li
+        id=\"ncf-400610212\"><a href=\"/ncf/preview?gameId=400610212\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">4:30</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">RUTG</span><br/><span
+        class=\"home\">UNC</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">11</span></div></a></li><li
+        id=\"ncf-400610209\"><a href=\"/ncf/preview?gameId=400610209\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">8:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">NCST</span><br/><span
+        class=\"home\">UCF</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">12</span></div></a></li><li
+        id=\"ncf-400610207\"><a href=\"/ncf/preview?gameId=400610207\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">1:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">CIN</span><br/><span
+        class=\"home\">VT</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">13</span></div></a></li><li
+        id=\"ncf-400610211\"><a href=\"/ncf/preview?gameId=400610211\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">2:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\">15<br/></div><div class=\"teams\"><span class=\"away\">ASU</span><br/><span
+        class=\"home\">DUKE</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">14</span></div></a></li><li
+        id=\"ncf-400610216\"><a href=\"/ncf/preview?gameId=400610216\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">3:30</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">MIA</span><br/><span
+        class=\"home\">SC</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">15</span></div></a></li><li
+        id=\"ncf-400610210\"><a href=\"/ncf/preview?gameId=400610210\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">4:30</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">BC</span><br/><span
+        class=\"home\">PSU</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">16</span></div></a></li><li
+        id=\"ncf-400610220\"><a href=\"/ncf/preview?gameId=400610220\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">8:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/>24</div><div class=\"teams\"><span class=\"away\">NEB</span><br/><span
+        class=\"home\">USC</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">17</span></div></a></li><li
+        id=\"ncf-400610226\"><a href=\"/ncf/preview?gameId=400610226\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">2:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">TA&M</span><br/><span
+        class=\"home\">WVU</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">18</span></div></a></li><li
+        id=\"ncf-400610208\"><a href=\"/ncf/preview?gameId=400610208\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">5:30</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/>17</div><div class=\"teams\"><span class=\"away\">OKLA</span><br/><span
+        class=\"home\">CLEM</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">19</span></div></a></li><li
+        id=\"ncf-400610223\"><a href=\"/ncf/preview?gameId=400610223\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">9:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">ARK</span><br/><span
+        class=\"home\">TEX</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">20</span></div></a></li><li
+        id=\"ncf-400610214\"><a href=\"/ncf/preview?gameId=400610214\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">3:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/>23</div><div class=\"teams\"><span class=\"away\">ND</span><br/><span
+        class=\"home\">LSU</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">21</span></div></a></li><li
+        id=\"ncf-400610215\"><a href=\"/ncf/preview?gameId=400610215\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">6:30</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\">13<br/>21</div><div class=\"teams\"><span class=\"away\">UGA</span><br/><span
+        class=\"home\">LOU</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">22</span></div></a></li><li
+        id=\"ncf-400610206\"><a href=\"/ncf/preview?gameId=400610206\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">10:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">MD</span><br/><span
+        class=\"home\">STAN</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">23</span></div></a></li><li
+        id=\"ncf-400610182\"><a href=\"/ncf/preview?gameId=400610182\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">12:30</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\">9<br/>6</div><div class=\"teams\"><span class=\"away\">MISS</span><br/><span
+        class=\"home\">TCU</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">24</span></div></a></li><li
+        id=\"ncf-400610181\"><a href=\"/ncf/preview?gameId=400610181\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">4:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\">20<br/>10</div><div class=\"teams\"><span class=\"away\">BSU</span><br/><span
+        class=\"home\">ARIZ</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">25</span></div></a></li><li
+        id=\"ncf-400610180\"><a href=\"/ncf/preview?gameId=400610180\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">8:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\">7<br/>12</div><div class=\"teams\"><span class=\"away\">MSST</span><br/><span
+        class=\"home\">GT</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">26</span></div></a></li><li
+        id=\"ncf-400610219\"><a href=\"/ncf/preview?gameId=400610219\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">12:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\">19<br/>18</div><div class=\"teams\"><span class=\"away\">AUB</span><br/><span
+        class=\"home\">WIS</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">27</span></div></a></li><li
+        id=\"ncf-400610179\"><a href=\"/ncf/preview?gameId=400610179\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">12:30</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\">8<br/>5</div><div class=\"teams\"><span class=\"away\">MSU</span><br/><span
+        class=\"home\">BAY</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">28</span></div></a></li><li
+        id=\"ncf-400610217\"><a href=\"/ncf/preview?gameId=400610217\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">1:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\">16<br/>25</div><div class=\"teams\"><span class=\"away\">MIZZ</span><br/><span
+        class=\"home\">MINN</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">29</span></div></a></li><li
+        id=\"ncf-400610177\"><a href=\"/ncf/preview?gameId=400610177\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">5:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\">2<br/>3</div><div class=\"teams\"><span class=\"away\">ORE</span><br/><span
+        class=\"home\">FSU</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">30</span></div></a></li><li
+        id=\"ncf-400610178\"><a href=\"/ncf/preview?gameId=400610178\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">8:30</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\">1<br/>4</div><div class=\"teams\"><span class=\"away\">ALA</span><br/><span
+        class=\"home\">OSU</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">31</span></div></a></li><li
+        id=\"ncf-400610213\"><a href=\"/ncf/preview?gameId=400610213\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">12:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">HOU</span><br/><span
+        class=\"home\">PITT</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">32</span></div></a></li><li
+        id=\"ncf-400610224\"><a href=\"/ncf/preview?gameId=400610224\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">3:20</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">IOWA</span><br/><span
+        class=\"home\">TENN</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">33</span></div></a></li><li
+        id=\"ncf-400610218\"><a href=\"/ncf/preview?gameId=400610218\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">6:45</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\">11<br/>14</div><div class=\"teams\"><span class=\"away\">KSU</span><br/><span
+        class=\"home\">UCLA</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">34</span></div></a></li><li
+        id=\"ncf-400610227\"><a href=\"/ncf/preview?gameId=400610227\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">10:15</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">WASH</span><br/><span
+        class=\"home\">OKST</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">35</span></div></a></li><li
+        id=\"ncf-400610228\"><a href=\"/ncf/preview?gameId=400610228\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">12:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">ECU</span><br/><span
+        class=\"home\">FLA</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">36</span></div></a></li><li
+        id=\"ncf-400610200\"><a href=\"/ncf/preview?gameId=400610200\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">9:00</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">TOL</span><br/><span
+        class=\"home\">ARST</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">37</span></div></a></li><li
+        id=\"ncf-400610325\"><a href=\"/ncf/preview?gameId=400610325\" class=\"ootLink\"><div
+        class=\"game pregame\" ><div class=\"game-status pregame \"><div class=\"game-left\"><span
+        class=\"status\">8:30</span><span class=\"hidden-clock\">PM ET</span></div><div
+        class=\"game-right\"><span class=\"clock\">PM ET</span></div>&nbsp;</div><div
+        class=\"clear\"></div><div class=\"game-left\"><div class=\"info \"></div><div
+        class=\"rank\"><br/></div><div class=\"teams\"><span class=\"away\">TBD</span><br/><span
+        class=\"home\">TBD</span></div><div class=\"hidden-scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div><div class=\"scores\"><span class=\"away\">0</span><br/><span
+        class=\"home\">0</span></div></div><div class=\"clear\"></div><span class=\"sort\">38</span></div></a></li></ul>\n\n\t\t\t</div>\n\t\t</div>\n\n\t</div>\n\n\t<script
+        type=\"text/javascript\">\n\n\t\tESPNootScoreboard.myTeams = {'23-242': ['ncf-400610204'],
+        \n'23-245': ['ncf-400610226'], \n'23-99': ['ncf-400610214'], \n'23-248': ['ncf-400610213'],
+        \n'23-145': ['ncf-400610182'], \n'23-2032': ['ncf-400610200'], \n'23-103':
+        ['ncf-400610210'], \n'23-98': ['ncf-400610205'], \n'23-201': ['ncf-400610208'],
+        \n'23-142': ['ncf-400610217'], \n'23-97': ['ncf-400610215'], \n'23-189': ['ncf-400610201'],
+        \n'23-2633': ['ncf-400610224'], \n'23-2483': ['ncf-400610177'], \n'23-344':
+        ['ncf-400610180'], \n'23-2638': ['ncf-400610202'], \n'23-2440': ['ncf-400610197'],
+        \n'23-2132': ['ncf-400610207'], \n'23-2459': ['ncf-400610203'], \n'23-135':
+        ['ncf-400610217'], \n'23-235': ['ncf-400610225'], \n'23-59': ['ncf-400610180'],
+        \n'23-87': ['ncf-400610214'], \n'23-239': ['ncf-400610179'], \n'23-333': ['ncf-400610178'],
+        \n'23-52': ['ncf-400610177'], \n'23-57': ['ncf-400610228'], \n'23-2628': ['ncf-400610182'],
+        \n'23--2': ['ncf-400610325'], \n'23--1': ['ncf-400610325'], \n'23-276': ['ncf-400610203'],
+        \n'23-275': ['ncf-400610219'], \n'23-12': ['ncf-400610181'], \n'23-278': ['ncf-400610204'],
+        \n'23-277': ['ncf-400610226'], \n'23-264': ['ncf-400610227'], \n'23-2': ['ncf-400610219'],
+        \n'23-228': ['ncf-400610208'], \n'23-127': ['ncf-400610179'], \n'23-2711':
+        ['ncf-400610198'], \n'23-26': ['ncf-400610218'], \n'23-2426': ['ncf-400610199'],
+        \n'23-2117': ['ncf-400610205'], \n'23-2116': ['ncf-400610209'], \n'23-221':
+        ['ncf-400610213'], \n'23-8': ['ncf-400610223'], \n'23-9': ['ncf-400610211'],
+        \n'23-120': ['ncf-400610206'], \n'23-6': ['ncf-400610201'], \n'23-164': ['ncf-400610212'],
+        \n'23-68': ['ncf-400610181'], \n'23-2294': ['ncf-400610224'], \n'23-2390':
+        ['ncf-400610216'], \n'23-61': ['ncf-400610215'], \n'23-24': ['ncf-400610206'],
+        \n'23-328': ['ncf-400610202'], \n'23-21': ['ncf-400610199'], \n'23-309': ['ncf-400610197'],
+        \n'23-254': ['ncf-400610221'], \n'23-251': ['ncf-400610223'], \n'23-252':
+        ['ncf-400610225'], \n'23-213': ['ncf-400610210'], \n'23-2579': ['ncf-400610216'],
+        \n'23-259': ['ncf-400610207'], \n'23-151': ['ncf-400610228'], \n'23-2649':
+        ['ncf-400610200'], \n'23-150': ['ncf-400610211'], \n'23-153': ['ncf-400610212'],
+        \n'23-356': ['ncf-400610222'], \n'23-152': ['ncf-400610209'], \n'23-2348':
+        ['ncf-400610222'], \n'23-2005': ['ncf-400610198'], \n'23-194': ['ncf-400610178'],
+        \n'23-36': ['ncf-400610221'], \n'23-158': ['ncf-400610220'], \n'23-197': ['ncf-400610227'],
+        \n'23-30': ['ncf-400610220'], \n'23-2306': ['ncf-400610218']};\n\n\t</script>\n\n\t\t</div>\n\t</div>\n\n</div><div
+        class=\"gamehq-wrapper\"><div class=\"summary-tabs-container\"><div class=\"span-4\"
+        id=\"gamepackageTop\"><div class=\"status-bar status-pregame\"><div style=\"float:
+        right; padding: 6px; font-weight: bold;\">R+L CARRIERS NEW ORLEANS BOWL</div><p
+        class=\"game-state\">11:00 AM ET</p></div><div class=\"matchup \" id=\"matchup-ncf-400610197\"><div
+        class=\"team away\"><div class=\"logo-medium\" style=\"background:#001532;\"><img
+        src=\"http://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500-dark/2440.png&w=40&h=40&transparent=true\"
+        /></div><div class=\"team-info\"><h3><a href=\"http://espn.go.com/college-football/team/_/id/2440/nevada-wolf-pack\">Nevada</a></h3><p>(7-5)</p></div></div><div
+        class=\"team home\"><div class=\"logo-medium\" style=\"background:#ce2842;\"><img
+        src=\"http://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500-dark/309.png&w=40&h=40&transparent=true\"
+        /></div><div class=\"team-info\"><h3><a href=\"http://espn.go.com/college-football/team/_/id/309/louisiana-lafayette-ragin'-cajuns\">LA-Lafayette</a></h3><p>(8-4)</p></div></div></div><div
+        class=\"game-actions\"><ul><li><a href=\"http://www.stubhub.com/lousiana-lafayette-ragin-cajun-football-tickets/?gcid=C12289ESPN046&keyword=ESPN+Louisiana-Lafayette+Ragin\\'+Cajuns+20141220\"
+        target=\"_blank\"><span class=\"outer\"><span class=\"title\">Tickets</span></span></a></li><li><a
+        href=\"http://proxy.espn.go.com/mobile/alerts/callout?sportAbbrev=NCF&type=game&id=400610197\"><span
+        class=\"outer\"><span class=\"title\" style=\"position:relative; padding-right:
+        19px;\">Alerts<img src=\"http://a.espncdn.com/prod/assets/alert_trans_5.png\"
+        style=\"position: absolute; right: 0px; top:4px;\" /></span></span></a></li></ul></div><div
+        class=\"game-vitals\">\n\t<style type=\"text/css\">\n\t\tp.weather {\n\t\t\tbackground-color:#EBEBEB;\n\t\t\tbackground-image:
+        none;\n\t\t\tpadding:0px 8px 0px 0px;\n\t\t\theight:31px;\n\t\t\tmargin-top:
+        6px;\n\t\t}\n\t\tp.weather .weatherIcon {\n\t\t\tpadding:0px 8px 0 0;\n\t\t\tdisplay:block;\n\t\t\tfloat:left;\n\t\t}\n\t\tp.weather
+        .weatherText {\n\t\t\tdisplay:block;\n\t\t\tfloat:left;\n\t\t\tfont-size:
+        11px;\n\t\t\tline-height:15px;\n\t\t\tcolor: #5e5e5e;\n\t\t}\n\t</style>\n\t<div
+        style=\"padding: 8px 0px 0px; float: right; font-size: 11px; line-height:13px;
+        font-family:Verdana,Arial,Helvetica,sans-serif;\"><p>Coverage: <strong>ESPN/WatchESPN</strong></p></div><div
+        class=\"game-time-location\"><p>11:00 AM ET, December 20, 2014</p><p>Mercedes-Benz
+        Superdome, New Orleans, LA</p></div></div><div class=\"line-score clear\"><div
+        class=\"game-notes\" style=\"border-left:none; padding-right:10px; padding-left:0;\"><p
+        class=\"heading\"><span>Nevada Leaders</span></p><p><span>Passing: </span><a
+        href=\"http://espn.go.com/college-football/player/_/id/501241/cody-fajardo\"
+        style=\"color:#000;\">Fajardo</a> - 225-376, 2374 yds, 18 tds</p><p><span>Rushing:
+        </span><a href=\"http://espn.go.com/college-football/player/_/id/501241/cody-fajardo\"
+        style=\"color:#000;\">Fajardo</a> - 164 car, 997 yds, 13 tds</p><p><span>Receiving:
+        </span><a href=\"http://espn.go.com/college-football/player/_/id/550567/jerico-richardson\"
+        style=\"color:#000;\">Richardson</a> - 53 rec, 626 yds, 3 tds</p></div><div
+        class=\"game-notes\" ><p class=\"heading\"><span>LA-Lafayette Leaders</span></p><p><span>Passing:
+        </span><a href=\"http://espn.go.com/college-football/player/_/id/503922/terrance-broadway\"
+        style=\"color:#000;\">Broadway</a> - 190-311, 2073 yds, 12 tds</p><p><span>Rushing:
+        </span><a href=\"http://espn.go.com/college-football/player/_/id/545809/elijah-mcguire\"
+        style=\"color:#000;\">McGuire</a> - 150 car, 1165 yds, 14 tds</p><p><span>Receiving:
+        </span><a href=\"http://espn.go.com/college-football/player/_/id/505168/james-butler\"
+        style=\"color:#000;\">Butler</a> - 30 rec, 417 yds, 0 tds</p></div></div></div><div
+        class=\"span-2 last\" id=\"gp-adwrap\"><div class=\"ad-box\" style=\"padding:2px
+        0px; height:250px;\"><!--espn.us.com.ncf sitezone-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.ncf\",ad_zone=\"ncfpreview\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=InContent;\"+ad_u+\"dcopt=ist;sz=300x600,300x250,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"InContent\" data-cb-dfp-id=\"'+ad_kvps+'sz=300x600,300x250,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.ncf/ncfpreview;pgtyp=ncfpreview;sp=ncf;sz=300x600,300x250,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.ncf/ncfpreview;pgtyp=ncfpreview;sp=ncf;sz=300x600,300x250,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div></div>\n\t<div class=\"tabs clear\">\n\t\t<ul>\n\n\t<li
+        class=\"active\" ><a href=\"preview?gameId=400610197\"><span class=\"title\">Preview</span></a></li><li
+        class=\"\" ><a href=\"conversation?gameId=400610197\"><span class=\"title\">Conversation</span><span
+        class=\"fb-comments-long quantity\"><span class=\"count\"></span></span></a></li></ul></div><script>jQuery.getScriptCache(\"http://a.espncdn.com/combiner/c/70?js=jquery.sharetools.r15-u4.js\",
+        function() {jQuery(\".tabs\").sharetools(\"http://scores.espn.go.com/ncf/conversation?gameId=400610197\");});</script></div><div
+        class=\"story-container\"><div style=\"background:#fff; overflow: hidden;\"><div
+        class=\"span-4\"><div class=\"bg-opaque pad-16 article\"><div class=\"mod-article-title\"><div
+        class=\"headline\"><div style=\"width: 884px; overflow: hidden; padding-bottom:
+        10px;\"><!--espn.us.com.ncf sitezone-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.ncf\",ad_zone=\"ncfpreview\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=PresentedByLogoGameHQ;\"+ad_u+\"sz=884x40,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"PresentedByLogoGameHQ\" data-cb-dfp-id=\"'+ad_kvps+'sz=884x40,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.ncf/ncfpreview;pgtyp=ncfpreview;sp=ncf;gmid=400610197;sz=884x40,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.ncf/ncfpreview;pgtyp=ncfpreview;sp=ncf;gmid=400610197;sz=884x40,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div><h2>Nevada-Louisiana-Lafayette&nbsp;Preview</h2></div><div
+        class=\"subhead\"><div class=\"date\"><span class=\"page-actions\"><!--gameUrl:http://scores.espn.go.com/ncf/preview?gameId=400610197--><!--shareUrl:http://es.pn/13sjSCf--><div
+        id=\"page-actions-top\"><ul class=\"mod-page-actions\"><li class=\"social
+        facebook-recommend\"><a href=\"https://www.facebook.com/sharer.php?u=http%3A%2f%2fes.pn%2f13sjSCf&t=Nevada%2dLouisiana%2dLafayette+Preview\"
+        target=\"_new\" rel=\"nofollow\"><span class=\"sprite-page-actions facebook\"></span><span
+        class=\"label\">Recommend</span></a><a class=\"count\" href=\"https://www.facebook.com/sharer.php?u=http%3A%2f%2fes.pn%2f13sjSCf&t=Nevada%2dLouisiana%2dLafayette+Preview\"
+        target=\"_new\" rel=\"nofollow\">0</a></li>\n<li class=\"social twitter-tweet\"><a
+        href=\"http://twitter.com/intent/tweet?url=http%3A%2f%2fes.pn%2f13sjSCf&text=Nevada%2dLouisiana%2dLafayette+Preview\"
+        target=\"_new\" rel=\"nofollow\"><span class=\"sprite-page-actions twitter\"></span><span
+        class=\"label\">Tweet</span></a><a class=\"count\" href=\"http://twitter.com/intent/tweet?url=http%3A%2f%2fes.pn%2f13sjSCf&text=Nevada%2dLouisiana%2dLafayette+Preview\"
+        target=\"_new\" rel=\"nofollow\">0</a></li>\n</ul><script>jQuery.getScriptCache('http://a.espncdn.com/combiner/c/70?js=jquery.sharetools.r15-u4.js',
+        function() {jQuery('.mod-page-actions').sharetools('http://scores.espn.go.com/ncf/preview?gameId=400610197');});</script></div></span></div><cite
+        class=\"source\">STATS LLC</cite></div></div><p>Louisiana-Lafayette is in
+        its comfort zone for bowl season again.</p><p>The Ragin' Cajuns return to
+        the New Orleans Bowl looking to win it for the fourth consecutive year when
+        they play in the first bowl of 2014 against Nevada on Saturday.</p><p>Louisiana-Lafayette
+        (8-4) bounced back from having a six-game winning streak snapped by defeating
+        Troy 42-23 on Nov. 29. <a href=\"http://espn.go.com/college-football/player/_/id/503922/terrance-broadway\"
+        target=\"_new\">Terrance Broadway</a> completed a strong season by going 14
+        of 19 for 142 yards and rushing for 78 and a touchdown, while <a href=\"http://espn.go.com/college-football/player/_/id/545809/elijah-mcguire\"
+        target=\"_new\">Elijah McGuire</a> rushed for 169 and two scores.</p><p>McGuire
+        (1,165) and Broadway (646) help power a running game that includes <a href=\"http://espn.go.com/college-football/player/_/id/512325/alonzo-harris\"
+        target=\"_new\">Alonzo Harris</a> (737) and averages 229.4 yards, good for
+        23rd in the FBS. McGuire has run for 14 touchdowns and Harris 12.</p><p>They'll
+        look to lead the Ragin' Cajuns to another win in the very familiar surroundings
+        of the Superdome. Louisiana-Lafayette knocked off Tulane 24-21 last year,
+        giving it three consecutive wins in this bowl by a total of 14 points.</p><p>Broadway
+        was the New Orleans Bowl MVP in 2012, when he went 21 of 32 for 316 yards
+        and a touchdown and rushed for 108 and a score in a 43-34 victory over East
+        Carolina.</p><p>\"They (Nevada) are a program that has had a lot of bowl experience
+        and it will be quite a challenge as we go down to play them,\" coach Mark
+        Hudspeth told Louisiana-Lafayette's official website. \"They're very competitive.
+        When you look at the way they've played against teams that have gone on to
+        bowl games, they've played the majority of them within one score. In other
+        games they were supposed to win, they won those and did their job.\"</p><p>The
+        Wolf Pack (7-5) mirror the Ragin' Cajuns offensively, as they're a rush-heavy
+        team that also boasts a running senior quarterback in <a href=\"http://espn.go.com/college-football/player/_/id/501241/cody-fajardo\"
+        target=\"_new\">Cody Fajardo</a>. He led Nevada with 997 yards and 13 TDs
+        on the ground -- passing for 2,374 yards -- while <a href=\"http://espn.go.com/college-football/player/_/id/546279/don-jackson\"
+        target=\"_new\">Don Jackson</a> (932, seven) and <a href=\"http://espn.go.com/college-football/player/_/id/505168/james-butler\"
+        target=\"_new\">James Butler</a> (620, five) also key a rushing attack that
+        averages 215.2 yards.</p><p>The Wolf Pack avoided a third straight loss to
+        close the season by running for a season-high 408 yards in a 49-27 victory
+        at UNLV on Nov. 29. Fajardo rushed for 143, Jackson had 132 and Butler 116
+        as Nevada held the ball for 33 minutes, 39 seconds.</p><p>\"To run it the
+        way we ran it, we showed that we were tough guys tonight -- physically and
+        mentally,\" coach Brian Polian said.</p><p>Polian's team has rushed for at
+        least 223 yards in each of its last five games.</p><p>\"They're an outstanding
+        team. They can run it, they can throw it and they play good defense,\" Hudspeth
+        said. \"They are a very multiple team on offense and they spread the ball
+        a lot of different ways to a lot of different people. (Fajardo) does a great
+        job in distributing the football.\"</p><p>Nevada hasn't had quite the level
+        of recent success in bowl games as Louisiana-Lafayette, dropping six of its
+        past seven. It lost 49-48 to Arizona in the last one, the 2012 New Mexico
+        Bowl.</p><p>Still, the Wolf Pack rebounded from a 4-8 effort in 2013 that
+        snapped their eight-year streak of bowl appearances.</p><p>\"I am very excited
+        that our players and staff will have one more opportunity to compete together
+        at the R+L Carriers New Orleans Bowl,\" Polian said. \"The game presents us
+        a chance to pursue an eighth win on the season and also serves as a reward
+        for our players, who have worked so hard this year.</p><p>\"This bowl also
+        gives our young people a chance to spend some time in New Orleans and continue
+        to enjoy the opportunities and experiences that being a football player at
+        the University of Nevada provides.\"</p><p>The Wolf Pack have forced 26 turnovers
+        and their plus-11 margin is tied for 11th in the country. Eight Nevada players
+        combined to make 13 interceptions and they returned three for touchdowns,
+        among the most in the FBS.</p><p>Nevada and Louisiana-Lafayette were members
+        of the Big West Conference from 1993-95, with Nevada winning 38-14 in the
+        teams' only meeting Sept. 2, 1995.</p>\n<script type=\"text/javascript\" src=\"http://a.espncdn.com/combiner/c?v=201011241602&js=/espn/espn/javascript/gamepackage10/gamepackageOOTJS?sport=ncf,/espn/espn/javascript/gamepackage10/fixedOOTJS\"></script></div><div
+        class=\"bg-opaque mod-outbrain mod-no-border\">\n<div class=\"mod-content\">\n<div
+        class=\"col-full\">\n<h4 class=\"first\">SPONSORED HEADLINES</h4>\n<div class=\"OUTBRAIN\"
+        data-src=\"http://scores.espn.go.com/ncf/preview\" data-widget-id=\"AR_7\"
+        data-ob-template=\"espn\" ></div></div>\n</div>\n</div>\n</div><div class=\"span-2
+        last\" style=\"padding-top:10px;\"><link rel=\"stylesheet\" href=\"http://a.espncdn.com/prod/styles/insider/pickcenter/line_analysis_module.r10.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" /><div class=\"mod-container
+        mod-no-footer mod-open mod-open-gamepack mod-ncf-scorebox\" id=\"insiderTrue\"
+        style=\"display:none;\"><div class=\"mod-header\"><img src=\"http://a.espncdn.com/combiner/i?img=/i/insider/pickcenter/logo_insider_pickcenter.png?w=53&h=14\"
+        style=\"margin: 5px 10px 0px 10px; float: left;\" alt=\"Insider\" /><h4>LINE
+        ANALYSIS</h4></div><div class=\"mod-content\"><div class=\"gradient-container\"><img
+        src=\"http://a.espncdn.com/i/insider/pickcenter/tournament/pickcenter.png\"
+        style=\"margin: 15px 0px 8px 68px; float: left;\"><div class=\"winning-team\"><div
+        class=\"percentage-block\"><div class=\"percentage-team\"><b>Louisiana-Lafayette
+        Ragin' Cajuns </b></div><div class=\"percentage-bg\"><div class=\"percentage\"
+        style=\"width:54%\">54%</div></div></div></div><div class=\"pickcenter-pick-all\"><div
+        class=\"pickcenter-pick\">Spread Consensus Pick<a style=\"font-weight:bold;
+        font-size:12px; width:20px;\" href=\"#\" class=\"tooltip\">[?]</a><div style=\"position:
+        absolute; display: none; z-index:10; text-transform:none; margin:5px 0px 0px
+        75px;\" class=\"tooltip-content\"><p style=\"color:inherit;\"><p>The Consensus
+        Pick is derived from data accumulated from sportsbooks. The percentage and
+        pick provides insight as to what side the public is taking in this game. </p>This
+        data is provided by SportsInsights.</p></div></div></div><table class=\"trnf\"><thead><tr
+        style=\"border-bottom:1px solid #ccc;\"><td>Teams</td><td>Team Rankings</td><td>numberFire</td></tr></thead><tbody><tr><td
+        style=\"margin-left:-5px;\"><b>ULL</b></td><td style=\"color:#555;\"><img
+        src=\"http://a.espncdn.com/i/insider/pickcenter/arrow.png\" alt=\"arrow\"
+        />30.1</td><td style=\"color:#555;\"><img src=\"http://a.espncdn.com/i/insider/pickcenter/arrow.png\"
+        alt=\"arrow\" />31.1</td></tr><tr><td style=\"margin-left:-5px;\"><b>NEV</b></td><td
+        style=\"color:#555;\">29.1</td><td style=\"color:#555;\">30.3</td></tr></tbody></table><table
+        class=\"favTeam\"><thead><tr><td>Favorite</td><td>Spread</td><td>Money Line</td><td>Over/Under</td></tr></thead><tbody><tr><td>NEV</td><td
+        style=\"color:#555;\">-1</td><td style=\"color:#555;\">-105</td><td style=\"color:#555;\">61</td></tr></tbody></table><div
+        class=\"insider-link\"><a name=\"&amp;lpos=fp_featvid\" href=\"http://espn.go.com/ncf/lines\">Daily
+        Lines &#187;</a></div><div class=\"insider-link\"><a name=\"&amp;lpos=fp_featvid\"
+        href=\"http://insider.espn.go.com/insider/pickcenter/ncf/game?gameid=400610197\"><img
+        src=\"http://a.espncdn.com/icons/in.gif\" style=\"margin:0 3px -2px 0;\" />PickCenter
+        Breakdown &#187;</a></div></div></div></div><div class=\"mod-container mod-no-footer
+        mod-open mod-open-gamepack mod-ncf-scorebox\" id=\"insiderFalse\" style=\"display:none;\"><div
+        class=\"mod-header\"><img src=\"http://a.espncdn.com/combiner/i?img=/i/insider/pickcenter/logo_insider_pickcenter.png?w=53&h=13\"
+        style=\"margin: 5px 10px 0px 10px; float: left;\" alt=\"Insider\" /><h4>LINE
+        ANALYSIS</h4></div><div class=\"mod-content\"><div class=\"gradient-container\"><div
+        class=\"subscribe-container\"><div class=\"subscribe\"><a href=\"http://insider.espn.go.com/insider/promo/offer?addata=insdr_pc_prev_mod\"><img
+        src=\"http://a.espncdn.com/i/insider/pickcenter/subscribe_new.png\" /></a></div></div><img
+        src=\"http://a.espncdn.com/i/insider/pickcenter/tournament/pickcenter.png\"
+        style=\"margin: 15px 0px 8px 68px; float: left;\"><div class=\"winning-team\"
+        style=\"height:50px;\"><div class=\"percentage-block\"><div class=\"percentage-team\"><b>Louisiana-Lafayette
+        Ragin' Cajuns </b></div><div class=\"percentage-bg\"></div></div></div><div
+        class=\"pickcenter-pick-all\"><div class=\"pickcenter-pick\">Spread Consensus
+        Pick</div></div><table class=\"trnf\"><thead><tr style=\"border-bottom:1px
+        solid #ccc;\"><td>Teams</td><td>Team Rankings</td><td>numberFire</td></tr></thead><tbody><tr><td
+        style=\"margin-left:-5px;\"><b>ULL</b></td><td></td><td></td></tr><tr><td
+        style=\"margin-left:-5px;\"><b>NEV</b></td><td></td><td></td></tr></tbody></table><table
+        class=\"favTeam\"><thead><tr><td>Favorite</td><td>Open</td><td>Money Line</td><td>Over/Under</td></tr></thead><tbody><tr><td>NEV</td><td
+        style=\"color:#555;\">-1</td><td style=\"color:#555;\">-105</td><td style=\"color:#555;\">61</td></tr></tbody></table><div
+        class=\"insider-link\"><a name=\"&amp;lpos=fp_featvid\" href=\"http://espn.go.com/ncf/lines\">Daily
+        Lines &#187;</a></div><div class=\"insider-link\"><a name=\"&amp;lpos=fp_featvid\"
+        href=\"http://insider.espn.go.com/insider/pickcenter/ncf/game?gameid=400610197\"><img
+        src=\"http://a.espncdn.com/icons/in.gif\" style=\"margin:0 3px -2px 0;\" />PickCenter
+        Breakdown &#187;</a></div></div></div></div>\n\t\t\t<!--Tooltip-->\n\t\t\t<script>\n\t\t\t\tjQuery(document).ready(function()
+        {\n\t\t\t\t\tjQuery(\".tooltip\").hover(\n\t\t\t\t\t\tfunction () {\n\t\t\t\t\t\t\tjQuery(this).siblings('.tooltip-content').show();\n\t\t\t\t\t\t},\n\t\t\t\t\t\tfunction
+        () {\n\t\t\t\t\t\t\tjQuery(this).siblings('.tooltip-content').hide();\n\t\t\t\t\t\t}\n\t\t\t\t\t);\n\t\t\t\t})\n\t\t\t</script>\n\t\t\t<div
+        class=\"rail-object\"></div><div class=\"rail-object\"></div><div class=\"rail-object\"></div><div
+        class=\"rail-object\"><div class=\"mod-container mod-no-footer mod-open mod-open-gamepack\"><div
+        class=\"mod-header\"><h4>Bowl Overview</h4></div><div class=\"mod-content\"><div
+        class=\"col-full\"><p>Nevada quarterback Cody Fajardo has quietly been one
+        of the most dynamic players in college football over the past couple of seasons.
+        But the Ragin Cajuns closed the year by winning seven of eight with a potent
+        rushing attack that averages almost 230 yards per game on the ground. La-Lafayette
+        and Nevada rank 78th and 79th, respectively, in scoring defense. So we could
+        see some big numbers offensively. </p></div><div style=\"text-align:right;
+        border-top:1px solid #DADADA; font-size:10px;\"><div class=\"footerwrap\"
+        style=\"padding:5px; line-height:15px;\"><a style=\"color:#000 !important;\"
+        href=\"/ncf/overview?date=20141220\">Complete Bowl Overview</a> </div></div></div></div></div><div
+        class=\"rail-object\"></div><div class=\"rail-object\"><div class=\"mod-container
+        mod-no-footer mod-open mod-open-gamepack\"><div class=\"mod-header\"><h4>Matchup</h4></div><div
+        class=\"mod-content\"><table class=\"mod-data\"><thead><tr class=\"team-color-strip\"><th>&nbsp;</th><th
+        nowrap style=\"border-bottom-color: #001532; text-align: left; line-height:
+        25px;\"><div class=\"logo-small  logo-ncaa-small teamId-2440 floatleft\" style=\"margin-right:
+        6px;\"></div>NEV</th><th nowrap style=\"border-bottom-color: #ce2842; text-align:
+        left; line-height: 25px;\"><div class=\"logo-small  logo-ncaa-small teamId-309
+        floatleft\" style=\"margin-right: 6px;\"></div>ULL</th></tr></thead><tbody><tr
+        class=\"even\"><td style=\"text-align:left;\">W-L</td><td style=\"text-align:right;\">7-5</td><td
+        style=\"text-align:right;\">8-4</td></tr><tr class=\"odd\"><td style=\"text-align:left;\">Avg
+        Points</td><td style=\"text-align:right;\">31.3</td><td style=\"text-align:right;\">30.6</td></tr><tr
+        class=\"even\"><td style=\"text-align:left;\">Avg Points Allowed</td><td style=\"text-align:right;\">28.2</td><td
+        style=\"text-align:right;\">27.9</td></tr><tr class=\"odd\"><td style=\"text-align:left;\">Home
+        Record</td><td style=\"text-align:right;\">3-3</td><td style=\"text-align:right;\">4-2</td></tr><tr
+        class=\"even\"><td style=\"text-align:left;\">Road Record</td><td style=\"text-align:right;\">4-2</td><td
+        style=\"text-align:right;\">4-2</td></tr><tr class=\"odd\"><td style=\"text-align:left;\">Division
+        Record</td><td style=\"text-align:right;\">4-1</td><td style=\"text-align:right;\">0-0</td></tr><tr
+        class=\"even\"><td style=\"text-align:left;\">Conference Record</td><td style=\"text-align:right;\">4-4</td><td
+        style=\"text-align:right;\">7-1</td></tr><tr class=\"last footer\"><td colspan=\"3\"><a
+        href=\"/ncf/standings\">Complete Standings</a></td></tr></tbody></table></div></div></div><div
+        class=\"rail-object\"></div><div class=\"rail-object\"><div class=\"mod-container
+        mod-no-header mod-open mod-open-gamepack\"><div class=\"mod-header\"><h4>Passing
+        Leaders</h4></div><div class=\"mod-content\"><table class=\"mod-data\"><thead><tr
+        class=\"team-color-strip\"><th style=\"border-right:1px solid #FFF; border-bottom-color:
+        #001532; padding:0px !important;\" colspan=\"6\"></th></tr><tr align=\"right\"><th
+        style=\"text-align:left;\">Nevada</th><th>CMP%</th><th>YDS</th><th>TD</th><th>INT</th></tr></thead><tbody><tr
+        class=\"even\" style=\"text-align:left;\"><td style=\"text-align:left;\" nowrap=\"nowrap\"><a
+        href=\"http://espn.go.com/college-football/player/_/id/501241/cody-fajardo\">C.
+        Fajardo</a></td><td>59.8</td><td>2374</td><td>18</td><td>11</td></tr></tbody><thead><tr
+        class=\"team-color-strip\"><th style=\"border-right:1px solid #FFF; border-bottom-color:
+        #ce2842; padding:0px !important;\" colspan=\"6\"></th></tr><tr align=\"right\"><th
+        style=\"text-align:left;\">LA-Lafayette</th><th>CMP%</th><th>YDS</th><th>TD</th><th>INT</th></tr></thead><tbody><tr
+        class=\"even\" style=\"text-align:left;\"><td style=\"text-align:left;\" nowrap=\"nowrap\"><a
+        href=\"http://espn.go.com/college-football/player/_/id/503922/terrance-broadway\">T.
+        Broadway</a></td><td>61.1</td><td>2073</td><td>12</td><td>9</td></tr><tr class=\"odd\"
+        style=\"text-align:left;\"><td style=\"text-align:left;\" nowrap=\"nowrap\"><a
+        href=\"http://espn.go.com/college-football/player/_/id/531678/brooks-haack\">B.
+        Haack</a></td><td>87.0</td><td>179</td><td>2</td><td>0</td></tr></tbody></table></div></div><div
+        class=\"mod-container mod-no-header mod-open mod-open-gamepack\"><div class=\"mod-header\"><h4>Rushing
+        Leaders</h4></div><div class=\"mod-content\"><table class=\"mod-data\"><thead><tr
+        class=\"team-color-strip\"><th style=\"border-right:1px solid #FFF; border-bottom-color:
+        #001532; padding:0px !important;\" colspan=\"6\"></th></tr><tr class=\"colhead\"
+        align=\"right\"><th style=\"text-align:left;\">Nevada</th><th>CAR</th><th>YDS</th><th>AVG</th><th>TD</th></tr></thead><tbody><tr
+        class=\"even\" align=\"right\"><td style=\"text-align:left;\" nowrap=\"nowrap\"><a
+        href=\"http://espn.go.com/college-football/player/_/id/501241/cody-fajardo\">C.
+        Fajardo</a></td><td>164</td><td>997</td><td>6.1</td><td>13</td></tr><tr class=\"odd\"
+        align=\"right\"><td style=\"text-align:left;\" nowrap=\"nowrap\"><a href=\"http://espn.go.com/college-football/player/_/id/546279/don-jackson\">D.
+        Jackson</a></td><td>206</td><td>932</td><td>4.5</td><td>7</td></tr></tbody><thead><tr
+        class=\"team-color-strip\"><th style=\"border-right:1px solid #FFF; border-bottom-color:
+        #ce2842; padding:0px !important;\" colspan=\"6\"></th></tr><tr class=\"colhead\"
+        align=\"right\"><th style=\"text-align:left;\">LA-Lafayette</th><th>CAR</th><th>YDS</th><th>AVG</th><th>TD</th></tr></thead><tbody><tr
+        class=\"even\" align=\"right\"><td style=\"text-align:left;\" nowrap=\"nowrap\"><a
+        href=\"http://espn.go.com/college-football/player/_/id/545809/elijah-mcguire\">E.
+        McGuire</a></td><td>150</td><td>1165</td><td>7.8</td><td>14</td></tr><tr class=\"odd\"
+        align=\"right\"><td style=\"text-align:left;\" nowrap=\"nowrap\"><a href=\"http://espn.go.com/college-football/player/_/id/512325/alonzo-harris\">A.
+        Harris</a></td><td>159</td><td>737</td><td>4.6</td><td>12</td></tr></tbody></table></div></div><div
+        class=\"mod-container mod-no-header mod-open mod-open-gamepack\"><div class=\"mod-header\"><h4>Receiving
+        Leaders</h4></div><div class=\"mod-content\"><table class=\"mod-data\"><thead><tr
+        class=\"team-color-strip\"><th style=\"border-right:1px solid #FFF; border-bottom-color:
+        #001532; padding:0px !important;\" colspan=\"6\"></th></tr><tr class=\"colhead\"
+        align=\"right\"><th style=\"text-align:left;\">Nevada</th><th>REC</th><th>YDS</th><th>AVG</th><th>TD</th></tr></thead><tbody><tr
+        class=\"even\" align=\"right\"><td style=\"text-align:left;\" nowrap=\"nowrap\"><a
+        href=\"http://espn.go.com/college-football/player/_/id/550567/jerico-richardson\">J.
+        Richardson</a></td><td>53</td><td>626</td><td>11.8</td><td>3</td></tr><tr
+        class=\"odd\" align=\"right\"><td style=\"text-align:left;\" nowrap=\"nowrap\"><a
+        href=\"http://espn.go.com/college-football/player/_/id/533196/hasaan-henderson\">H.
+        Henderson</a></td><td>45</td><td>579</td><td>12.9</td><td>4</td></tr></tbody><thead><tr
+        class=\"team-color-strip\"><th style=\"border-right:1px solid #FFF; border-bottom-color:
+        #ce2842; padding:0px !important;\" colspan=\"6\"></th></tr><tr class=\"colhead\"
+        align=\"right\"><th style=\"text-align:left;\">LA-Lafayette</th><th>REC</th><th>YDS</th><th>AVG</th><th>TD</th></tr></thead><tbody><tr
+        class=\"even\" align=\"right\"><td style=\"text-align:left;\" nowrap=\"nowrap\"><a
+        href=\"http://espn.go.com/college-football/player/_/id/505168/james-butler\">J.
+        Butler</a></td><td>30</td><td>417</td><td>13.9</td><td>0</td></tr><tr class=\"odd\"
+        align=\"right\"><td style=\"text-align:left;\" nowrap=\"nowrap\"><a href=\"http://espn.go.com/college-football/player/_/id/545809/elijah-mcguire\">E.
+        McGuire</a></td><td>40</td><td>414</td><td>10.4</td><td>2</td></tr></tbody></table></div></div></div><div
+        class=\"rail-object\"><div class=\"mod-container mod-open mod-open-gamepack\"
+        id=\"nst-module\"><div class=\"mod-header\"><h4>Research Notes</h4></div><div
+        class=\"mod-content\" style=\"overflow: visible; position:relative;\"><table
+        class=\"mod-data mod-pbp\">\n\t\t\t\t\t\t<style type=\"text/css\">\n\t\t\t\t\t\t\t.extras-module
+        {\n\t\t\t\t\t\t\t\tposition:relative;\n\t\t\t\t\t\t\t\tz-index: 99;\n\t\t\t\t\t\t\t\tbackground:
+        #FFF;\n\t\t\t\t\t\t\t\tborder: 1px solid #CCC;\n\t\t\t\t\t\t\t\tpadding: 10px;\n\t\t\t\t\t\t\t\tbox-shadow:
+        3px 3px 3px #AAA;\n\t\t\t\t\t\t\t\tleft:10px;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.ie7
+        .extras-module {\n\t\t\t\t\t\t\t\tmargin-top:15px;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.extras-module
+        table {\n\t\t\t\t\t\t\t\tmargin:0;\n\t\t\t\t\t\t\t\tpadding:0 7px 7px;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.extras-module
+        table thead tr th {\n\t\t\t\t\t\t\t\tbackground:#D6D6D6;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.extras-module
+        table {\n\t\t\t\t\t\t\t\tpadding-bottom:3px !important;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.extras-module
+        div.close {\n\t\t\t\t\t\t\t\tfloat: right;\n\t\t\t\t\t\t\t\tfont-size: 9px;\n\t\t\t\t\t\t\t\tpadding:
+        0 7px 3px;\n\t\t\t\t\t\t\t\tmargin: 0;\n\t\t\t\t\t\t\t\ttext-transform: uppercase;\n\t\t\t\t\t\t\t\tcursor:
+        pointer;\n\t\t\t\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t</style>\n\t\t\t\t\t<tbody><tr
+        class=\"even\"><td><div class=\"mod-inline\" style=\"margin: 5px;\"><div style=\"display:inline;\">Louisiana-Lafayette
+        faces Nevada in Saturday's R+L Carriers New Orleans Bowl. The Ragin' Cajuns
+        have won this bowl game in each of the last three seasons. With a win here,
+        Louisiana-Lafayette would become the first school ever to win the same bowl
+        game four straight years.</div></div></td></tr><tr class=\"even\"><td><p align=\"right\"
+        style=\"margin: 5px; font-style:italic;\">ESPN Stats &amp; Information</p></td></tr>\n\t\t\t\t\t\t<script
+        type=\"text/javascript\">\n\t\t\t\t\t\t\t(function($) {\n\n\t\t\t\t\t\t\t\t$(function()
+        {\n\t\t\t\t\t\t\t\t\t$(\"#nst-module\").find(\"a.showExtras\").bind(\"click\",
+        function(e) {\n\t\t\t\t\t\t\t\t\t\te.preventDefault();\n\t\t\t\t\t\t\t\t\t\tvar
+        $this = $(this),\n\t\t\t\t\t\t\t\t\t\t\t$extras = $(this).siblings(\".extras-module\");\n\n\t\t\t\t\t\t\t\t\t\t$.data($this[0],
+        \"data-open\", \"true\");\n\n\t\t\t\t\t\t\t\t\t\t$(\"#nst-module\").find(\"a.showExtras\").each(function()
+        {\n\t\t\t\t\t\t\t\t\t\t\tvar $other = $(this),\n\t\t\t\t\t\t\t\t\t\t\t\t$otherExtras
+        = $other.parent().children(\"div.extras-module\");\n\n\t\t\t\t\t\t\t\t\t\t\tif($.data($other[0],
+        \"data-open\") != \"true\" && $otherExtras.is(\":visible\")) {\n\t\t\t\t\t\t\t\t\t\t\t\t$other.text(\"[+]\");\n\t\t\t\t\t\t\t\t\t\t\t\t$otherExtras.hide();\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t});\n\n\t\t\t\t\t\t\t\t\t\t$extras.toggle();\n\t\t\t\t\t\t\t\t\t\tif($extras.is(\":visible\"))
+        {\n\t\t\t\t\t\t\t\t\t\t\t$this.text(\"[-]\");\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\telse
+        {\n\t\t\t\t\t\t\t\t\t\t\t$this.text(\"[+]\");\n\t\t\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t\t\t$.data($this[0],
+        \"data-open\", \"false\");\n\t\t\t\t\t\t\t\t\t});\n\n\t\t\t\t\t\t\t\t\t$(\"#nst-module\").find(\".extras-module\").children(\".close\").bind(\"click\",
+        function(e) {\n\t\t\t\t\t\t\t\t\t\te.preventDefault();\n\t\t\t\t\t\t\t\t\t\tvar
+        $extras = $(this).parent(\".extras-module\"),\n\t\t\t\t\t\t\t\t\t\t\t$showExtras=
+        $extras.siblings(\"a.showExtras\");\n\n\t\t\t\t\t\t\t\t\t\t$extras.hide();\n\t\t\t\t\t\t\t\t\t\t$showExtras.text(\"[+]\");\n\n\t\t\t\t\t\t\t\t\t});\n\t\t\t\t\t\t\t\t});\n\n\t\t\t\t\t\t\t\t})(jQuery)\n\t\t\t\t\t\t</script>\n\t\t\t\t\t\t</tbody></table></div></div></div></div></div><!--
+        end gp-body --><div class=\"clear\"></div></div></div></div>\n<div id=\"nav-wrapper\"
+        class=\"container\">\n<div id=\"nav-wrapper-container\">\n<div id=\"nav-main\">\n<!--
+        begin site nav -->\n<ul class=\"top\">\n<!-- begin site nav -->\n<p><!-- begin
+        site nav --></p>\n<ul class=\"top\" id=\"nav-main-list\"><!-- start: Menuitem
+        :: MyTAB -->\n<li class=\"last myespn\" id=\"menu-myespn\"><a class=\"myespn\"
+        ref=\"#\">MyESPN</a></li>\n<!-- start: Menuitem :: NFL -->\n<li class=\"sport-menu
+        default t-nfl\" data-sportid=\"28\" id=\"menu-nfl\"><a href=\"http://espn.go.com/nfl/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nfl\">NFL</a></li>\n<!-- start:
+        Menuitem :: MLB -->\n<li class=\"sport-menu default t-mlb\" data-sportid=\"10\"
+        id=\"menu-mlb\"><a href=\"http://espn.go.com/mlb/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mlb\">MLB</a></li>\n<!--
+        start: Menuitem :: NBA -->\n<li class=\"sport-menu default t-nba\" data-sportid=\"46\"
+        id=\"menu-nba\"><a href=\"http://espn.go.com/nba/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nba\">NBA</a></li>\n<!--
+        start: Menuitem :: NHL -->\n<li class=\"sport-menu default t-nhl\" data-sportid=\"90\"
+        id=\"menu-nhl\"><a href=\"http://espn.go.com/nhl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nhl\">NHL</a></li>\n<!--
+        start: Menuitem :: NCAA FB -->\n<li class=\"sport-menu default t-ncf selected\"
+        data-sportid=\"23\" id=\"menu-ncf\"><a href=\"http://espn.go.com/college-football/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncf\">NCAAF</a></li>\n<!--
+        start: Menuitem :: NCAA BB -->\n<li class=\"sport-menu default t-ncb\" data-sportid=\"41\"
+        id=\"menu-ncb\"><a href=\"http://espn.go.com/mens-college-basketball/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncb\">NCAAM</a></li>\n<!--
+        start: Menuitem :: NASCAR -->\n<li class=\"sport-menu default t-nascar\" data-sportid=\"2020\"
+        id=\"menu-nascar\"><a href=\"http://espn.go.com/racing/nascar/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nascar\">NASCAR</a></li>\n<!--
+        start: Menuitem :: SOCCER -->\n<li class=\"sport-menu default t-soccer\" data-sportid=\"600\"
+        id=\"menu-soccer\"><a href=\"http://espnfc.us/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_soccer\">SOCCER</a></li>\n<!--
+        start: Menuitem :: GOLF -->\n<li class=\"sport-menu t-golf\" data-sportid=\"1106\"
+        id=\"menu-golf\" style=\"display: none;\"><a href=\"http://espn.go.com/golf/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_golfl\">GOLF</a></li>\n<!--
+        start: Menuitem :: TENNIS -->\n<li class=\"sport-menu t-tennis\" data-sportid=\"850\"
+        id=\"menu-tennis\" style=\"display: none;\"><a href=\"http://espn.go.com/tennis/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_tennis\">TENNIS</a></li>\n<!--
+        start: Menuitem :: BOXING-->\n<li class=\"sport-menu t-boxing\" data-sportid=\"1000\"
+        id=\"menu-boxing\" style=\"display: none;\"><a href=\"http://espn.go.com/boxing/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_boxing\">BOXING</a></li>\n<!--
+        start: Menuitem :: MMA -->\n<li class=\"sport-menu t-mma\" data-sportid=\"3301\"
+        id=\"menu-mma\" style=\"display: none;\"><a href=\"http://espn.go.com/mma/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mma\">MMA</a></li>\n<!-- start:
+        Menuitem :: ALL SPORTS -->\n<li class=\"nav-allsports t-allsports\" id=\"menu-allsports\"><a
+        href=\"http://espn.go.com/sports/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_allsports\">MORE
+        SPORTS</a></li>\n<!-- start: Menuitem :: INSIDER -->\n<li class=\"sport-menu
+        t-insider\" id=\"menu-insider\" style=\"display: none;\"><a href=\"http://insider.espn.go.com/insider/index\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_insider\">INSIDER</a></li>\n<!--
+        start: Menuitem :: SPORTSNATION -->\n<li class=\"sport-menu t-sportsnation\"
+        id=\"menu-sportsnation\" style=\"display: none;\"><a href=\"http://espn.go.com/sportsnation/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_sportsnation\">SN</a></li>\n<!--
+        start: Menuitem :: RADIO & MORE -->\n<li class=\"right-menu two-line last
+        t-radio\" id=\"menu-radio\"><a href=\"http://espn.go.com/espnradio/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_radioandmore\">RADIO<span>&amp;
+        MORE</span></a></li>\n<!-- start: Menuitem :: espnW & PLAYBOOK -->\n<li class=\"right-menu
+        two-line t-page2\" id=\"menu-page2\"><a href=\"http://espn.go.com/espnw/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_espnwandxgames\" target=\"_blank\">espnW<span>&amp;
+        X GAMES</span></a></li>\n<!-- start: Menuitem :: FANTASY & GAMES -->\n<li
+        class=\"right-menu two-line t-fantasy\" id=\"menu-fantasy\"><a href=\"http://games.espn.go.com/frontpage\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_fantasy\">FANTASY<span>&amp;
+        GAMES</span></a></li>\n<!-- start: Menuitem :: WATCH -->\n<li class=\"right-menu
+        t-watch\" id=\"menu-watch\"><a href=\"http://espn.go.com/video/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_watch\">WATCH</a></li>\n</ul>\n<!--
+        end site nav -->\n<!-- end site nav -->\n</ul>\n<!-- end site nav -->\n</div>\n<div
+        class=\"nav-main-secondary\">\n<!--/ncf/preview--><ul>\n<li><a href=\"http://espn.go.com/college-football/\"
+        name=\"&lpos=subnav&lid=subnav_ColFB_ColFB+Home\">NCAAF Home</a></li><li class=\"expandable\"><a
+        href=\"http://espn.go.com/college-football/bowls\" name=\"&lpos=subnav&lid=subnav_NCF_Bowl_Home\"><span>Playoff/Bowls</span></a><div><dl><dt
+        class=\"first\">Playoff Semifinal: Rose Bowl Game <br>Presented By Northwestern
+        Mutual</dt><dd><a href=\"http://espn.go.com/college-football/bowls/_/game/rose-bowl\"
+        name=\"&lpos=subnav&lid=subnav_NCF_SEMI_OrevsFSU\">No. 2 Oregon vs. No. 3
+        Florida State</a></dd><dt class=\"first\">Playoff Semifinal: Allstate Sugar
+        Bowl</dt><dd><a href=\"http://espn.go.com/college-football/bowls/_/game/sugar-bowl\"
+        name=\"&lpos=subnav&lid=subnav_NCF_SEMI_BamavsOSU\">No. 1 Alabama vs. No.
+        4 Ohio State</a></dd><dt class=\"first\">Playoff/Bowl Information</dt><dd><a
+        href=\"http://espn.go.com/college-football/story/_/id/11419086/2014-15-college-football-bowl-schedule\"
+        name=\"&lpos=subnav&lid=subnav_NCF_Bowl_Coverage\">Bowl schedule</a></dd><dd><a
+        href=\"http://espn.go.com/blog/ncfnation/tag/_/name/bowl-overview-2014\" name=\"&lpos=subnav&lid=subnav_NCF_Bowl_Overview\">Bowl
+        overviews</a></dd><dd><a href=\"http://espn.go.com/college-football/bowls\"
+        name=\"&lpos=subnav&lid=subnav_NCF_Bowls_Home\">Postseason Central</a></dd></dl><dl
+        class=\"last\"><dt class=\"first\">Chick-fil-A Peach Bowl</dt><dd><a href=\"http://espn.go.com/college-football/bowls/_/game/peach-bowl\"
+        name=\"&lpos=subnav&lid=subnav_NCF_Peach_OlevsTCU\">Ole Miss vs. TCU</a></dd><dt
+        class=\"first\">VIZIO Fiesta Bowl</dt><dd><a href=\"http://espn.go.com/college-football/bowls/_/game/fiesta-bowl\"
+        name=\"&lpos=subnav&lid=subnav_NCF_Fiesta_BoisevsArizona\">Boise State vs.
+        Arizona</a></dd><dt class=\"first\">Capital One Orange Bowl</dt><dd><a href=\"http://espn.go.com/college-football/bowls/_/game/orange-bowl\"
+        name=\"&lpos=subnav&lid=subnav_NCF_Orange_MSUvsGT\">Mississippi State vs.
+        Georgia Tech</a></dd><dt class=\"first\">Goodyear Cotton Bowl Classic</dt><dd><a
+        href=\"http://espn.go.com/college-football/bowls/_/game/cotton-bowl\" name=\"&lpos=subnav&lid=subnav_NCF_Cotton_MSUvsBU\">Michigan
+        State vs. Baylor</a></dd></dl></div></li><li><a href=\"http://scores.espn.go.com/ncf/scoreboard\"
+        name=\"&lpos=subnav&lid=subnav_ColFB_Scoreboard\">Scores</a></li><li><a href=\"http://espn.go.com/college-football/schedule\"
+        name=\"&lpos=subnav&lid=subnav_ColFB_Schedules\">Schedule</a></li><li class=\"expandable\"><a
+        href=\"http://espn.go.com/blog/ncfnation\" name=\"&lpos=subnav&lid=subnav_ColFB_Teams\"><span>CFB
+        Nation</span></a><div><dl><dt class=\"first\">Conference</dt><dd><a href=\"http://espn.go.com/blog/ncfnation\"
+        name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">CFB Nation</a></dd><dd><a
+        href=\"http://espn.go.com/blog/aac\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">American</a></dd><dd><a
+        href=\"http://espn.go.com/blog/acc\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">ACC</a></dd><dd><dd><a
+        href=\"http://espn.go.com/blog/big12\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Big
+        12</a></dd><dd><a href=\"http://espn.go.com/blog/bigten\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Big
+        Ten</a></dd><dd><a href=\"http://espn.go.com/blog/pac12\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Pac-12</a></dd><dd><a
+        href=\"http://espn.go.com/blog/sec\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">SEC</a></dd></dl><dl
+        class=\"last\"><dt class=\"first\">Team</dt><dd><a href=\"http://espn.go.com/blog/colleges/alabama/\"
+        name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Alabama</a></dd><dd><a href=\"http://espn.go.com/blog/colleges/auburn/\"
+        name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Auburn</a></dd><dd></dd><dd><a
+        href=\"http://espn.go.com/blog/colleges/florida/\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Florida</a></dd><dd><a
+        href=\"http://espn.go.com/blog/colleges/fsu/\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Florida
+        State</a></dd><dd><a href=\"http://espn.go.com/blog/colleges/georgia/\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Georgia</a></dd><dd><a
+        href=\"http://espn.go.com/blog/colleges/lsu/\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">LSU</a></dd><dd><a
+        href=\"http://espn.go.com/blog/colleges/michigan/\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Michigan</a></dd><dd><a
+        href=\"http://espn.go.com/blog/colleges/nebraska/\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Nebraska</a></dd><dd><a
+        href=\"http://espn.go.com/blog/notre-dame-football\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Notre
+        Dame</a></dd><dd><a href=\"http://espn.go.com/blog/colleges/osu/\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Ohio
+        State</a></dd><dd><a href=\"http://espn.go.com/blog/colleges/oklahoma/\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Oklahoma</a></dd><dd><a
+        href=\"http://espn.go.com/blog/colleges/oregon/\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Oregon</a></dd><dd><a
+        href=\"http://espn.go.com/blog/colleges/psu/\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Penn
+        State</a></dd><dd><a href=\"http://espn.go.com/blog/stanford-football\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Stanford</a></dd><dd><a
+        href=\"http://espn.go.com/blog/colleges/texas/\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Texas</a></dd><dd><a
+        href=\"http://espn.go.com/blog/colleges/tamu/\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">Texas
+        A&M</a></dd><dd><a href=\"http://espn.go.com/colleges/usc/index\" name=\"&lpos=subnav&lid=subnav_ColFB_Recruiting\">USC</a></dd><dd></div></li><li><a
+        href=\"http://espn.go.com/college-football/rankings\" name=\"&lpos=subnav&lid=subnav_ColFB_Rankings\">Rankings</a></li><li><a
+        href=\"http://espn.go.com/college-football/standings\" name=\"&lpos=subnav&lid=subnav_ColFB_Standings\">Standings</a></li><li><a
+        href=\"http://espn.go.com/college-football/statistics\" name=\"&lpos=subnav&lid=subnav_ColFB_Stats\">Stats</a></li><li
+        class=\"expandable\"><a href=\"http://espn.go.com/college-sports/football/recruiting/index\"><span>Recruiting</span></a>
+        <div> <dl class=\"last\"> <dd><a href=\"http://espn.go.com/college-sports/football/recruiting/index\">Recruiting
+        home</a></dd>                                <dd><a href=\"http://espn.go.com/college-sports/football/recruiting/playerrankings/_/order/true\">2015
+        ESPN 300</a></dd><dd><a href=\"http://insider.espn.go.com/college-sports/football/recruiting/classrankings\">Class
+        rankings</a></dd>                                <dd><a href=\"http://insider.espn.go.com/blog/ncfrecruiting/on-the-trail/\">On
+        The Trail blog</a></dd><dd><a href=\"http://espn.go.com/college-sports/football/recruiting/school\">Commitments</a></dd>
+        \                               <dd><a href=\"http://insider.espn.go.com/college-sports/recruiting/football/story/_/id/11739155/predictions-all-uncommitted-college-football-recruits\">Hot
+        Board predictions <img src=\"http://assets.espn.go.com/i/in.gif\" width=\"11\"
+        height=\"11\" border=\"0\" alt=\"Insider\"></a></dd><dd><a href=\"http://espn.go.com/college-sports/football/recruiting/database\">Database</a></dd><dd><a
+        href=\"http://espn.go.com/college-sports/football/recruiting/scorecard\">Scorecard</a></dd>
+        </dl> </div> </li><li><a href=\"http://espn.go.com/espn/chalk/\" name=\"&lpos=subnav&lid=subnav_ColFB_Odds\">Odds
+        Info</a></li><li class=\"expandable\"><a href=\"javascript:void(0);\"><span>Resources</span></a><div><dl><dd><a
+        href=\"http://espn.go.com/college-football/awards\" name=\"&lpos=subnav_resources&lid=subnav_resources_ColFB_awards+tracker\">Awards
+        Tracker</a></dd><dd><a href=\"http://espn.go.com/college-football/conferences\"
+        name=\"&lpos=subnav_resources&lid=subnav_resources_ColFB_conferences\">Conferences</a></dd><dd><a
+        href=\"http://espn.go.com/college-football/lines\" name=\"&lpos=subnav_resources&lid=subnav_resources_ColFB_odds\">Odds</a></dd><dd><a
+        href=\"http://insider.espn.go.com/ncf/pickcenter\" name=\"&lpos=subnav_resources&lid=subnav_resources_ColFB_pick+center\">Pick
+        Center <img src=\"http://assets.espn.go.com/i/design07/mast/tinyin.gif\" alt=\"Insider\"></a></dd><dd><a
+        href=\"http://espn.go.com/college-football/players\" name=\"&lpos=subnav_resources&lid=subnav_resources_ColFB_players\">Players</a></dd><dd><a
+        href=\"http://espn.go.com/college-football/rankings\" name=\"&lpos=subnav_resources&lid=subnav_resources_ColFB_power+rankings\">Power
+        Rankings</a></dd><dd><a href=\"http://espn.go.com/ncaa/revenue\" name=\"&lpos=subnav_resources&lid=subnav_resources_ColFB_revenue\">Revenue
+        and Expenses</a></dd><dd><a href=\"http://espn.go.com/college-football/weekly\"
+        name=\"&lpos=subnav_resources&lid=subnav_resources_ColFB_weekly+leaders\">Weekly
+        Leaders</a></dd><dd><a href=\"http://www.fcsinsider.com/\" target=\"new\"
+        name=\"&lpos=subnav_resources&lid=subnav_resources_ColFB_FCS\">FCS Insider</a></dd></dl><dl
+        class=\"last\"><dd><a href=\"http://espn.go.com/college-football/story/_/id/11885461/football-bowl-subdivision-head-coaching-changes\"
+        name=\"&lpos=subnav_resources&lid=subnav_resources_ColFB_coaching+changes\">2014-15
+        Coaching changes</a></dd><dd><a href=\"http://espn.go.com/college-football/bowls\"
+        name=\"&lpos=subnav_resources&lid=subnav_resources_ColFB_bowl+season\">2014-15
+        Bowl coverage</a></dd><dd><a href=\"http://espn.go.com/college-football/story/_/id/11419086/2014-15-college-football-bowl-schedule\">2014-15
+        Bowl schedule</a></dd><dd><a href=\"http://espn.go.com/college-football/networks\"
+        name=\"&lpos=subnav_resources&lid=subnav_resources_ColFB_tv+schedule\">2014
+        ESPN TV Schedule</a></dd><dd><a href=\"http://espn.go.com/college-football/story/_/id/9301782/2013-14-bowl-schedule\">2013-14
+        Bowl results</a></dd><dd><a href=\"http://espn.go.com/college-football/story/_/id/8048429/2012-13-bowl-schedule\"
+        name=\"&lpos=subnav_resources&lid=subnav_resources_ColFB_bowl+schedule\">2012-13
+        Bowl results</a></dd><dd><a href=\"http://espn.go.com/blog/ncfnation\" name=\"&lpos=subnav_resources&lid=subnav_resources_ColFB_nation+blog\">College
+        Football Nation Blog</a></dd><dd><a href=\"http://espn.go.com/college-football/heisman/index\"
+        name=\"&lpos=subnav&lid=subnav_ColFB_Heisman+Watch\">Heisman Watch</a></dd><dd><a
+        href=\"http://espn.go.com/college-sports/football/recruiting/index\" name=\"&lpos=subnav_resources&lid=subnav_resources_recruiting_nation\">RecruitingNation</a></dd></dl></div></li><li><a
+        href=\"http://www.stubhub.com/ncaa-football-tickets/\" target=\"_blank\" onclick=\"this.href=this.href+'?gcid=C12289x522&gtkw=NCF+Sub+Nav'\"
+        class=\"external\" name=\"&lpos=subnav&lid=subnav_NCF+Tickets\">Tickets</a></li>\n</ul>\n</div>\n</div>\n</div>\n</div>\n<!--
+        end content -->\n</div>\n<!-- end subheader -->\n\n<script>\nespn.core.init.nav();\nespn.insider.checkUserForPromo();\n</script>\n<!--
+        begin footer -->\n<div id=\"footer\" class=\"container\">\n<script type=\"text/javascript\">\n//<![CDATA[\nvar
+        link = window.location;\nvar bugText = '<a href=\"#\" onclick=\"window.open(\\'http://dynamic.espn.go.com/espn/bugs?url='
+        + escape(link) + '\\', \\'Bugs\\',\\'noresizable,noscrollbars,height=400,width=400\\');\">Report
+        a Bug</a> | ';\n//]]>\n</script>\n<span style=\"font-weight:bold;\">ESPN.com:</span>
+        <a href=\"http://sports.espn.go.com/espn/news/story?page=help/index\">Help</a>
+        | <a href=\"http://espnmediazone.com/us/\" rel=\"nofollow\">Press</a> | <a
+        href=\"http://www.espncms.com/Advertise-on-ESPN.aspx\" rel=\"nofollow\">Advertise
+        on ESPN.com</a> | <a href=\"http://www.espncms.com\" rel=\"nofollow\">Sales
+        Media Kit</a> | <a href=\"http://preferences.truste.com/2.0/?type=espn&affiliateId=148\"
+        onclick=\"window.open('http://preferences.truste.com/2.0/?type=espn&affiliateId=148','popup','width=986,height=878,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0');
+        return false\">Interest-Based Ads</a> | <script type=\"text/javascript\">document.write(bugText);</script><a
+        href=\"http://espn.go.com/espn/corrections\">Corrections</a> | <a href=\"http://sports.espn.go.com/espn/news/story?page=contact/index\">Contact
+        Us</a> | <a href=\"http://espn.go.com/espn/sitemap\">Site Map</a> | <a href=\"http://espncareers.com\">Jobs
+        at ESPN</a> | <!--a href=\"http://corporate.disney.go.com/corporate/sourcing.html\"
+        rel=\"nofollow\"><span style=\"font-weight:bold;\">Supplier Information</span></a--><a
+        href=\"http://go.com\">Go.com</a><br/>&copy; 2014  ESPN Internet Ventures.
+        <a href=\"http://disneytermsofuse.com/\" rel=\"nofollow\">Terms of Use</a>,
+        <a href=\"http://disneyprivacycenter.com/\" rel=\"nofollow\">Privacy Policy</a>,
+        <a href=\"https://disneyprivacycenter.com/notice-to-california-residents/\"
+        rel=\"nofollow\">Your California Privacy Rights</a>,  <a href=\"https://disneyprivacycenter.com/kids-privacy-policy/english/\">Children's
+        Online Privacy Policy</a> and <a href=\"http://preferences-mgr.truste.com/?type=espn&affiliateId=148\">Interest-Based
+        Ads</a> are applicable to you.  All rights reserved.\n\n<!--\n<a href=\"http://www.espnshop.com/\"
+        onClick=\"location.href('http://log.go.com/log?srvc=sz&guid=73B641A0-6660-4EFC-B8FF-9DE23E8CD9BD&drop=0&addata=3374:65:478847:65&a=1&goto=http://www.espnshop.com/');return
+        false\">Shop</a>\n--></div>\n<!-- end footer -->\n<!--[if lte IE 9]></div><![endif]-->\n</div>\n<!--
+        end bg-elements -->\n\n\n<!-- SiteCatalyst code version: H.21.3 Copyright
+        1997-2010 Omniture, Inc. http://www.omniture.com -->\n<script type=\"text/javascript\">\n\tvar
+        undef = 'undefined'\n\t,s_account=\"wdgespcom\"\n\t,omniPageName = \"espn:ncf:game:preview:400610197+-+nev+at+ull\"\n\t\n\t,insiderStatus
+        = \"\"\n\t,anGen = \"\"\n\t,anYear = \"\"\n\t,anDateString = \"\"\n\t,anLoginStatus
+        = \"\"\n\t,callOmniture = function(){\n\t\t/*-- core story s_omni properties
+        --*/\n\t\tif (typeof anCV != \"undefined\"){anParseLoginBarInfo(anCV);}\n\t\ts_omni.pageName=\"ncf:game:preview:400610197+-+nev+at+ull\";\n\t\ts_omni.server
+        = window.location.host; // Server from the Host\n\t\ts_omni.channel = \"ncf\";\n\t\ts_omni.prop1
+        = \"espn\";\n\t\ts_omni.prop4 = \"ncfpreview\";\n\t\ts_omni.prop5 = \"ncf:game:preview\";\n\t\ts_omni.prop11
+        = (insiderStatus !== null) ? insiderStatus + \":premium-no\" : \"premium-no\";\n\t\ts_omni.prop17
+        = \"en\";\n\t\ts_omni.prop21 = anDateString;\n\t\ts_omni.prop22 = anGen;\n\t\ts_omni.prop25
+        = \"football\";\n\t\ts_omni.prop26 = \"ncf\";\n\t\ts_omni.prop29 = anLoginStatus;\n\t\ts_omni.prop30
+        = \"n\";\n\t\ts_omni.hier1 = \"ncf:game:preview:400610197+-+nev+at+ull\";\n\t\ts_omni.eVar7
+        = anYear + \":\" + anGen + \":\" + anLoginStatus + \":\" + s_omni.prop11 +
+        \":\";\n\t\ts_omni.eVar9 = \"en\";\n\t\ts_omni.eVar13 = \"ncf:game:preview:400610197+-+nev+at+ull\";\n\t\ts_omni.eVar19
+        = \"football\";\n\t\ts_omni.eVar21 = \"ncf\";\n\t\t\n\t\tif (s_omni.prop11==\"anonymous:premium-yes\"
+        || s_omni.prop11==\"insider-no:premium-yes\" && typeof s_omni.prop4!=\"undefined\"
+        &&\n\t\t\t(s_omni.prop4==\"story\" || s_omni.prop4==\"blog\")) {\n\t\t\tif
+        (typeof s_omni.events != \"undefined\" && s_omni.events!=\"\") {\n\t\t\t\ts_omni.events
+        = s_omni.events+\",event8\" }\n\t\t\telse { s_omni.events=\"event8\" }\n\t\t}\n\t\t\n\t\t\n\t\tanVersion
+        = \"_11apr14_v2_0_r5_\";\n\t\t\n\t\t/************* DO NOT ALTER ANYTHING BELOW
+        THIS LINE ! **************/\n\t\t\n\t\tvar s_code = s_omni.t();\n\t\tif(s_code)
+        {\n\t\t\tvar sci = new Image(1,1);\n\t\t\tsci.onload = function() {console.log(\"loaded
+        no append\")};\n\t\t\tsci.src = s_code;\n\t\t}\n\t\t\n\t};\t\n</script>\n\n\n\n<script
+        type=\"text/javascript\">\n\tif (typeof(s_omni) === 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\t// we want to load the analytics files from the cache if possible
+        - so, let's use full $.ajax() calls\n\t\t\t$.ajax({\n\t\t\t\ttype:'GET',\n\t\t\t\turl:
+        'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/externalnielsen.js&v=11',\n\t\t\t\tdataType:
+        'script',\n\t\t\t\tcache: true,\n\t\t\t\tsuccess: function() {\n\t\t\t\t\tvar
+        lgSrc;\n\t\t\t\t\tif(typeof anCV !== undef && anCV === '' && document.getElementById('form-memberarea')
+        != null) {\n\t\t\t\t\t\tlgSrc = 'https://r.espn.go.com/members/util/getUserInfo?cb=runOmnitureIndependently';\n\t\t\t\t\t\t$.getScript(lgSrc);
+        // we don't want this to be cached - so we'll use the $.getScript() method\n\t\t\t\t\t}
+        else {\n\t\t\t\t\t\tcallOmniture();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t});\n\t\t});\n\t}\n</script>\n\n<!--
+        End SiteCatalyst code version: H.21. -->\n\n\n<!-- Begin comScore Tag -->\n<script
+        type=\"text/javascript\">\n\tif (typeof(jQuery) !== 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\tif(typeof window._comscore === 'undefined') {\n\t\t\t\twindow._comscore
+        = window._comscore || [];\n\t\t\t\twindow._comscore.push({ c1: \"2\", c2:
+        \"3000005\" });\n\t\t\t\tjQuery.getScript((document.location.protocol == \"https:\"
+        ? \"https://sb\" : \"http://b\") + \".scorecardresearch.com/beacon.js\");\n\t\t\t}\n\t\t});\n\t}\n</script>\n<!--
+        End comScore Tag -->\n\t\t<script>\n\t\tvar _sf_async_config={\n\t\t\t\"uid\":22222,\n\t\t\t\"domain\":\"espn.go.com\",\n\t\t\t\"pingServer\":\"pespn.chartbeat.net\",\n\t\t\t\"useCanonical\":true,\n\t\t\t\"useSubDomains\":false,\n\t\t\t\"sections\":\"ncf:gamehq:preview,preview,game\",\n\t\t\t\"authors\":\"gamehq\"\n\t\t};\n\t\tif
+        (typeof(ad_site) !== 'undefined') { _sf_async_config.zone = ad_site; }\n\n\t\t//
+        load both chartbeat_pub and chartbeat_video\n\t\t(function () {\n\t\t\tfunction
+        a() {\n\t\t\t\twindow._sf_endpt = (new Date()).getTime();\n\n\t\t\t\tvar cbDomain
+        = ((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\");\n\n\t\t\t\tvar
+        c = document.createElement(\"script\");\n\t\t\t\tc.setAttribute(\"language\",\"javascript\");\n\t\t\t\tc.setAttribute(\"type\",\"text/javascript\");\n\t\t\t\tc.setAttribute(\"src\",
+        cbDomain+\"js/chartbeat_pub.js\");\n\t\t\t\tdocument.body.appendChild(c);\n\n\t\t\t\tif(typeof
+        StrategyInterface !== 'undefined' && (typeof espn !== 'undefined' && typeof
+        espn.video !== 'undefined')){\n\t\t\t\t\tvar e = document.createElement(\"script\");\n\t\t\t\t\te.setAttribute(\"language\",\t\"javascript\");\n\t\t\t\t\te.setAttribute(\"type\",
+        \"text/javascript\");\n\t\t\t\t\te.setAttribute(\"src\", cbDomain+\"js/chartbeat_video.js\");\n\t\t\t\t\tdocument.body.appendChild(e);\n\t\t\t\t}\n\t\t\t}\n\t\t\tvar
+        b = window.onload;\n\t\t\twindow.onload = (typeof window.onload != \"function\")
+        ? a : function () { b(); a() }\n\t\t})();\n\t\t//(function(){function a(){window._sf_endpt=(new
+        Date()).getTime();var c=document.createElement(\"script\");c.setAttribute(\"language\",\"javascript\");c.setAttribute(\"type\",\"text/javascript\");c.setAttribute(\"src\",((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\")+\"js/chartbeat_pub.js\");document.body.appendChild(c)}var
+        b=window.onload;window.onload=(typeof window.onload!=\"function\")?a:function(){b();a()}})();\n\t\t</script>\n\t\n<!--
+        dynamic logic: safecount -->\n<script src=\"http://content.dl-rms.com/rms/mother/508/nodetag.js\"></script>\n\n<!--
+        start cnt_code -->\n<!-- end cnt_code -->\n<script type=\"text/javascript\"
+        charset=\"utf-8\">buildOutHeadlinesForPinnedSite();</script>\n<script type=\"text/javascript\">\n
+        \  var isInIFrame = (window.location != window.parent.location) ? true : false;\n
+        \  if(isInIFrame){ if(document.referrer){ if(document.referrer.indexOf(\".go.com\")==-1){
+        top.location.href=self.location.href; } } }\n</script>\n\n<script type='text/javascript'>\n
+        \ //<![CDATA[\n    (function(){\n    window.gravityInsightsParams = {\n      'type':
+        'content',\n      'action': '',\n      'site_guid': '9a41401e9b7c945344e001ee7f23031e'\n
+        \   };\n    var b,c;b=\"https:\"===document.location.protocol?\"https://b-ssl.grvcdn.com/moth-min.js\":\"http://b.grvcdn.com/moth-min.js\";window.grvMakeScript=function(d){var
+        a;a=document.createElement(\"script\");a.type=\"text/javascript\";a.async=!0;a.src=d;return
+        a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
+        \ //]]>\n</script></body>\n</html>"
+    http_version: 
+  recorded_at: Wed, 17 Dec 2014 22:36:51 GMT
+recorded_with: VCR 2.9.3

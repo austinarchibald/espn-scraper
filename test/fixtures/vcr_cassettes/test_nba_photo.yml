@@ -1,0 +1,1851 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://espn.go.com/nba/photos?gameId=400489474
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html; charset=iso-8859-1
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 25 Feb 2015 20:48:16 GMT
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=300
+      P3p:
+      - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
+        BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
+      Set-Cookie:
+      - SWID=3156E5FF-BD04-47E2-AFD5-56BA4C3EB901; path=/; expires=Tue, 20 Feb 2035
+        20:48:16 GMT; domain=go.com;
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
+        src=\"http://sports-ak.espn.go.com/sports/optimizely.js\"></script><meta charset=\"iso-8859-1\">\n<meta
+        http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n<script type=\"text/javascript\">
+        \   \n    if(true && navigator && navigator.userAgent.toLowerCase().indexOf(\"teamstream\")
+        >= 0) {\n        window.location = 'http://a.m.espn.go.com/mobilecache/general/apps/sc';\n
+        \   }\n</script><script type=\"text/javascript\">\nvar espn=window.espn||{};espn.beta=function(a,b,c){function
+        d(b){var d,e,g,h,i,m,n,o,p;if(b!==c&&(k=b,d=b.match(/http:\\/\\/([^\\/]*)([^?]*).*/),d&&3===d.length&&(l=d[2])),l.match(/\\/story$/i)||l.match(/\\/story\\//i))return
+        h=f(\"storyId\",b)||f(\"id\",b),i=f(\"storyPage\",b)||f(\"page\",b),\"\"!==h?j+l+\"/_/id/\"+h:\"\"!==i?i.indexOf(\"/\")>-1?j+l+\"?page=\"+i:j+l+\"/_/page/\"+i:j+l;if(l.match(/\\/blogpostindex$/i)){if(e=f(\"blogname\",b),a.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===!0)return;if(\"\"!==e)return
+        j+\"/blog/\"+e}if(l.match(/\\/blogpost$/i)){if(e=f(\"blogname\",b),g=f(\"id\",b),a.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===!0)return;if(\"\"!==e&&\"\"!==g)return
+        j+\"/blog/\"+e+\"/post/_/id/\"+g}if(l.match(/^\\/blog\\//i)){if(e=f(\"blogName\",b),g=f(\"id\",b),!l.match(/\\/blog\\/.*\\/post$/i))return\"\"!==e&&\"\"!==g?j+\"/blog/\"+e+\"/post/_/id/\"+g:\"\"!==e?j+\"/blog/\"+e:j+l;if(\"\"!==g)return
+        j+l+\"/_/id/\"+g}if(!(\"\"!==l&&\"/\"!==l||k.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)||k.match(/^https?:\\/\\/search\\.espn\\.go\\.com/i)))return
+        j;var q=l.match(/^\\/.*?\\/(?:index)?$/i);if(q&&(m={\"/frontpage/\":!0,\"/wireless/\":!0,\"/general/\":!0,\"/extra/\":!0,\"/mobile/\":!0,\"/nfl/\":!0,\"/nba/\":!0,\"/mlb/\":!0,\"/nhl/\":!0,\"/ncf/\":!0,\"/college-football/\":!0,\"/ncb/\":!0,\"/mens-college-basketball/\":!0,\"/ncw/\":!0,\"/womenbb/\":!0,\"/womens-basketball/\":!0,\"/wnba/\":!0,\"/golf/\":!0,\"/tennis/\":!0,\"/general/tennis/\":!0,\"/mma/\":!0,\"/extra/mma/\":!0,\"/racing/\":!0,\"/rpm/\":!0,\"/racing/nascar/\":!0,\"/rpm/nascar/\":!0,\"/boxing/\":!0,\"/extra/boxing/\":!0,\"/college-sports/\":!0,\"/ncaa/\":!0,\"/extra/ncaa/\":!0,\"/olympics/\":!0,\"/extra/olympics/\":!0,\"/horse-racing/\":!0,\"/horse/\":!0,\"/general/horse/\":!0,\"/poker/\":!0,\"/general/poker/\":!0,\"/sports/endurance/\":!0,\"/extra/endurance/\":!0},l.match(/\\/index$/i)&&(l=l.substring(0,l.length-5)),m[l]===!0))return
+        j+l;if((l.match(/\\/nflpreview$/i)||l.match(/\\/preview$/i))&&(n=f(\"gameId\",b),\"\"!==n))return
+        l.match(/\\/nflpreview$/i)?j+\"/nfl/preview?gameId=\"+n:j+l+\"?gameId=\"+n;if(l.match(/\\/recap$/i)&&(n=f(\"gameId\",b),\"\"!==n))return
+        j+l+\"?gameId=\"+n;if(\"/general/video\"===l){if(o=f(\"cid\",b),p=f(\"vid\",b),\"\"!==o)return
+        j+\"/video/clip?id=\"+o;if(\"\"!==p)return j+\"/video/clip?id=\"+p}return
+        l.match(/^\\/(?:videohub\\/video|video)\\/clip$/i)&&(o=f(\"id\",b),\"\"!==o)?j+l+\"?id=\"+o:void
+        0}function e(a){var b=d(a),c=k.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)||a&&a.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)||espn&&espn.GLOBALS&&espn.GLOBALS.isPremium;return
+        b&&(b=b.replace(\"/wireless/\",\"/\"),b=b.replace(\"/general/\",\"/\"),b=b.replace(\"/extra/\",\"/\"),b=b.replace(\"/mobile/\",\"/\"),b=b.replace(\"/frontpage/\",\"/\"),b=b.replace(\"/videohub/\",\"/\"),b=b.replace(\"/ncf/\",\"/college-football/\"),b=b.replace(\"/rpm/\",\"/racing/\"),b=b.replace(\"/ncb/\",\"/mens-college-basketball/\"),b=b.replace(\"/ncw/\",\"/womens-basketball/\"),b=b.replace(\"/wnba/\",\"/womens-basketball/\"),b=b.replace(\"/ncaa/\",\"/college-sports/\"),c&&(b=b.replace(\"/story/\",\"/insider/story/\"),b=b.replace(\"/post/\",\"/insider/post/\"),b.match(/\\/blog\\/[^_]*$/i)&&(b+=\"/\"===b.charAt(b.length-1)?\"insider/\":\"/insider/\"))),b}function
+        f(a,b){var d=location.search;if(b!==c){var e=b.indexOf(\"?\");e>-1&&(d=b.substr(e))}a=a.replace(/[\\[]/,\"\\\\[\").replace(/[\\]]/,\"\\\\]\");var
+        f=new RegExp(\"[\\\\?&]\"+a+\"=([^&#]*)\"),g=f.exec(d);return null===g?\"\":decodeURIComponent(g[1].replace(/\\+/g,\"
+        \"))}function g(){var b=h(\"betauser\"),c=h(\"betacohort\")||\"\";if(null!==b&&0===c.indexOf(\"cohort-\")){var
+        d=c.split(\"-\");if(d&&2===d.length&&999===parseInt(d[1],10))return;var f=e();f&&(a.location=f)}}function
+        h(a){for(var c=a+\"=\",d=b.cookie.split(\";\"),e=0;e<d.length;e++){for(var
+        f=d[e];\" \"===f.charAt(0);)f=f.substring(1,f.length);if(0===f.indexOf(c))return
+        f.substring(c.length,f.length)}return null}function i(){\"beta\"===f(\"rand\")?espn.beta.recheck=!0:g()}var
+        j=\"http://beta.espn.go.com\",k=a.location.href,l=b.location.pathname;return{init:function(){i()},test:function(a){return
+        e(a)}}}(this,this.document),espn.beta.init();\n</script>\n\t<script>(function(){function
+        r(a){a=a.replace(/[\\[]/,\"\\\\[\").replace(/[\\]]/,\"\\\\]\");var c=new RegExp(\"[\\\\?&]\"+a+\"=([^&#]*)\"),b=c.exec(location.search);return
+        b==null?\"\":decodeURIComponent(b[1].replace(/\\+/g,\" \"));}var p=navigator.userAgent,o=window.location,l=document.cookie,f=document.referrer,n=(f===\"\"||f.indexOf(\".go.com\")!==-1),d=(n)?\"http://espn.go.com/nba/gamecast?gameId=400489474&version=mobile&src=desktop\":\"http://espn.go.com/nba/gamecast?gameId=400489474&version=mobile&src=desktop&rand=ref~%7B%22ref%22%3A%22\"+encodeURIComponent(f)+\"%22%7D\",i=(p.match(/iPad/i)||(p.match(/Android/i)&&!p.match(/Mobile/i))||p.match(/RIM
+        Tablet/i)||p.match(/Silk/i)),k=(p.match(/Mobile/i)||p.match(/Mini/i)),g=o.href.match(/src=mobile/i),q=l.indexOf(\"iphone_redirect=false\")>-1,e=l.indexOf(\"iphone_redirect=true\")>-1,j=r(\"addata\"),h=r(\"ex_cid\"),m=r(\"rand\");if(j!=\"\"){d+=\"&addata=\"+j;}if(h!=\"\"){d+=\"&ex_cid=\"+h;}if(m===\"beta\"){d+=\"&rand=beta\";}if(i){document.documentElement.className+=\"
+        tablet \";if((!p.match(/iPad/i)||e)&&!q){o.href=d;}}else{if(k&&!q&&!g){o.href=d;}}})();</script>\n\t<title>Los
+        Angeles Lakers vs. Toronto Raptors - Photos - January 19, 2014 - ESPN</title>\n<meta
+        name=\"google-site-verification\" content=\"xuj1ODRluWa0frM-BjIr_aSHoUC7HB5C1MgmYAM_GkA\"
+        />\n<meta name=\"msvalidate.01\" content=\"B1FEB7C682C46C8FCDA3130F3D18AC28\"
+        />\n<meta name=\"googlebot\" content=\"noodp\" />\n<meta name=\"robots\" content=\"index,
+        follow\" />\n<meta name=\"description\" content=\"NBA Basketball Photos: Final
+        statistics from the Los Angeles Lakers vs. Toronto Raptors game played on
+        January 19, 2014\" />\n<meta name=\"keywords\" content=\"nba basketball Photos,
+        Los Angeles stats, Toronto stats\" />\n<meta property=\"fb:app_id\" content=\"116656161708917\">\n<meta
+        property=\"og:site_name\" content=\"ESPN.com\">\n<link rel=\"canonical\" href=\"http://espn.go.com/nba/photos/_/id/400489474/la-lakers-lakers-vs-toronto-raptors\"
+        />\n<script type=\"text/javascript\">var NREUMQ=NREUMQ||[];NREUMQ.push([\"mark\",\"firstbyte\",new
+        Date().getTime()]);</script>\n\t\t<script>var _sf_startpt=(new Date()).getTime();</script>\n<link
+        rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"http://a.espncdn.com/search/opensearch.xml\"
+        title=\"ESPN Search\" />\n<link rel=\"stylesheet\" href=\"http://a.espncdn.com/combiner/c/201401211964?css=global_reset.r1.css,base.r236.css,modules.r462.css,global_header.r44.css,header_topbar.r1.css,modules/global_nav.r54.css,modules/insider_enhanced.r1.css,modules/mem/mem.r12.1.css,modules/mem/mem_espn360.r8.4.css,modules/mem/skirmish.r8.css,modules/twin.r1.css,modules/facebook/button.r2.css,universal_overlay/universal_overlay.css,universal_overlay/media_overlay.css,universal_overlay/video_overlay.css,universal_overlay/photo_overlay.css,universal_overlay/dyk_overlay.css,fonts/bentonsans.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/201303290924?css=sprites/teamlogos.r18.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c?v=201308011131&css=modules/playerpopup.r2.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c?v=201108152006&css=modules/videoplayer12.r1.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c?v=201407081137&css=/espn/espn/styles/gamepackage10/ootCSS,/espn/espn/styles/gamepackage10/gamepackage10CSS,/espn/espn/styles/gamepackage10/gamepackage10moduleCSS,/espn/espn/styles/teamSprites/nbaSpriteCSS&v=1\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/prod/styles/social_upgrade.r1.css\" type=\"text/css\"
+        media=\"screen\" charset=\"utf-8\" />\n<script type=\"text/javascript\">\nvar
+        _vrq = _vrq || [];\n _vrq.push(['id', 489]);\n _vrq.push(['automate', false]);\n
+        _vrq.push(['track', function(){}]);\n (function(d, a){var s = d.createElement(a),x
+        = d.getElementsByTagName(a)[0];\ns.async = true;\ns.src = 'http://a.visualrevenue.com/vrs.js';\n
+        x.parentNode.insertBefore(s, x);})(document, 'script'); </script>\n<script
+        src=\"http://a.espncdn.com/combiner/c?js=jquery-1.7.1.js,plugins/json2.r3.js,plugins/teacrypt.js,plugins/jquery.metadata.js,plugins/jquery.bgiframe.r3.js,plugins/jquery.easing.1.3.js,plugins/jquery.hoverIntent.js,plugins/jquery.jcarousel.0.2.9.js,plugins/jquery.tinysort.r4.js,plugins/jquery.pubsub.r5.js,ui/1.8.16/jquery.ui.core.js,ui/1.8.16/jquery.ui.widget.js,ui/1.8.16/jquery.ui.tabs.js,ui/1.8.16/jquery.ui.accordion.js,plugins/ba-debug-0.4.js,espn.l10n.r12.js,swfobject/2.2/swfobject.js,flashObjWrapper.r7.js,plugins/jquery.colorbox.1.3.14.js,plugins/jquery.ba-postmessage.js,espn.core.duo.r57.js,m/beta/betacheck.r5.js,espn.mem.r39.js,stub.search.r9.js,espn.nav.mega.r38b.js,espn.storage.r6.js,espn.p13n.r20.js,espn.geo.r3.js,espn.video.r81.r5.js,analytics/chartbeat/video/strategy_comprehensive.r1.js,registration/staticLogin.r12.06102014.js,espn.universal.overlay.r19.js,insider/espn.insider.20140915.js,espn.espn360.stub.r9.js,espn.myHeadlines.stub.r16.js,espn.myfaves.stub.r3.js,tsscoreboard.20090612.js,ie9pinning.r3.js,espn.f8.noauth.r3.js,espn.socialmediamod.r7.js,playerpopup.r14.js\"></script>\n<script
+        src=\"http://a.espncdn.com/prod/scripts/espn.loader.200901201835.js\" type=\"text/javascript\"
+        charset=\"utf-8\"></script>\n<script type=\"text/javascript\" charset=\"utf-8\">\nESPN.include([\n\t'http://widgets.outbrain.com/outbrain.js'\n]);\n</script>\n<script>espn.core.navVersion
+        = 'a';</script>\n<script>var ad_site=\"espn.us.com.nba\",ad_zone=\"nbaphotos\",ad_kvps=\"pgtyp=nbaphotos;sp=nba;\",ad_swid=\"\",ad_counter=1,ad_ord=Math.floor(9999999999*Math.random()),ad_seg=\"\",ad_mnr=-1<document.cookie.indexOf(\"grif=1\")?\"t\":\"f\",ad_ref=\"other\",ref=document.referrer,refsMap={\"facebook.com\":\"facebook\",\"twitter.com|t.co\":\"twitter\",\"plus.url.google.com|plus.google.com\":\"googleplus\",\"google.com\":\"google\",\"bing.com\":\"bing\",\"yahoo.com\":\"yahoo\",\"espn.go.com\":\"espn\"},refKey;for(refKey
+        in refsMap)ref.match(refKey)&&(ad_ref=refsMap[refKey]);\nad_kvps=ad_kvps+\"ref=\"+ad_ref+\";mnr=\"+ad_mnr+\";\";ad_swid=jQuery.cookie(\"SWID\");\"function\"===typeof
+        espn.core.ad_segments&&(ad_seg=espn.core.ad_segments(),null!=ad_seg&&\"\"!=ad_seg&&(ad_kvps+=ad_seg));var
+        ad_u=\"\";null!=ad_swid&&\"\"!=ad_swid&&(ad_u=\"swid=\"+ad_swid+\";\");</script>\n</head>\n<body
+        class=\"game-package nba {sportId:46}\" >\n<div class=\"mboxDefault\"><link
+        rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/prod/styles/modules/hideGravity.css\"
+        type=\"text/css\" /></div><script>mboxCreate('ESPN_global');</script><!--[if
+        IE 5]><div class=\"ie5\"><![endif]-->\n<!--[if IE 6]><div class=\"ie ie6\"><![endif]-->\n<!--[if
+        IE 7]><div class=\"ie ie7\"><![endif]-->\n<!--[if IE 8]><div class=\"ie ie8\"><![endif]-->\n<!--[if
+        IE 9]><div class=\"ie9\"><![endif]-->\n<!-- begin bg-elements -->\n<div class=\"bg-elements\">\n<!--
+        begin header -->\n<div id=\"header\" class=\"container\">\n<!-- begin top-bar
+        -->\n<div class=\"top-bar\">\n<!-- begin uni login -->\n<script type=\"text/javascript\">\nvar
+        returnURL = document.location.href;\nvar anCV = \"\";\nvar myEspnText = {'welcometext':'Welcome','register':'Register','signin':'Sign
+        In','signout':'Sign Out','heliumdown':'Login Temporarily Unavailable','connectedfacebook':'Connected
+        to Facebook','connectfacebook':'Connect with Facebook','activateinsider':'Activate
+        Insider'};\n</script>\n<form id=\"form-memberarea\">\n<input type=\"hidden\"
+        name=\"language\" id=\"language\" value=\"en\"/>\n<input type=\"hidden\" name=\"affiliateName\"
+        id=\"memberAreaAffiliateName\" value=\"espn\"/>\n<input type=\"hidden\" name=\"regFormId\"
+        id=\"regFormId\" value=\"espn\"/>\n</form>\n<div class=\"signin\" id=\"signin\"></div>\n<script>espn.memberservices.welcome();</script>\n<div
+        class=\"nav-edition editions\">\n<label>EDITIONS:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-usa active\"><a href=\"http://espn.go.com/\" name=\"&amp;lpos=editionsnav&amp;lid=usa\">USA</a></li>\n\t<li
+        class=\"e-deportes\"><a href=\"http://www.espn.com?country-view=us&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=deportes\" class=\"{langPref:'spanish'}\">DEPORTES</a></li>\n\t<li
+        class=\"last dropdown\">\n\t<ul class=\"\">\n\t<li class=\"selected\">More</li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=ar&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=argentina\">Argentina</a></li>\n\t<li><a
+        href=\"http://www.espn.com.au\" name=\"&amp;lpos=editionsnav&amp;lid=australia\">Australia</a></li>\n\t<li><a
+        href=\"http://www.espn.com.br\" name=\"&amp;lpos=editionsnav&amp;lid=brazil\">Brazil</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=co&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=colombia\">Colombia</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=mx&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=mexico\">Mexico</a></li>\n\t<li><a
+        href=\"http://www.espn.co.uk/\" name=\"&amp;lpos=editionsnav&amp;lid=uk\">United
+        Kingdom</a></li>\n        <li><a href=\"http://www.espn.com?country-view=ve&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=venezuela\">Venezuela</a></li>\n\t</ul>\n\t</li>\n</ul>\n</div>\n\n<div
+        class=\"nav-edition\">\n<label>CITIES:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-boston\"><a href=\"http://espn.go.com/boston/\" name=\"&amp;lpos=citynav&amp;lid=boston\">BOSTON</a></li>\n\t<li
+        class=\"e-chicago\"><a href=\"http://espn.go.com/chicago/\" name=\"&amp;lpos=citynav&amp;lid=chicago\">CHICAGO</a></li>\n\t<li
+        class=\"e-dallas\"><a href=\"http://espn.go.com/dallas/\" name=\"&amp;lpos=citynav&amp;lid=dallas\">DALLAS</a></li>\n\t<li
+        class=\"e-losangeles\"><a href=\"http://espn.go.com/los-angeles/\" name=\"&amp;lpos=citynav&amp;lid=losangeles\">LOS
+        ANGELES</a></li>\n\t<li class=\"last e-newyork\"><a href=\"http://espn.go.com/new-york/\"
+        name=\"&amp;lpos=citynav&amp;lid=newyork\">NEW YORK</a></li>\n</ul>\n</div>\n</div>\n<!--
+        end top-bar -->\n<!-- begin espn-logo -->\n<div class=\"espn-logo\">\n<h1>\n<a
+        href=\"http://espn.go.com/\" name=\"&lpos=sitenavdefault&lid=sitenav_main-logo\"
+        class=\"espn\">ESPN</a> <a href=\"http://espn.go.com/nba/\" class=\"section-title\">NBA</a></h1>\n</div>\n<!--
+        end espn-logo -->\n<!-- begin ad -->\n<span class=\"presby\"><!--espn.us.com.nba
+        sitezone--><!--http://ad.Doubleclick.net hostUrl-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.nba\",ad_zone=\"nbaphotos\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=SponsoredByLogoHeader;\"+ad_u+\"sz=150x45,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"SponsoredByLogoHeader\" data-cb-dfp-id=\"'+ad_kvps+'sz=150x45,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nba/nbaphotos;pgtyp=nbaphotos;sp=nba;sz=150x45,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nba/nbaphotos;pgtyp=nbaphotos;sp=nba;sz=150x45,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</span>\n<!-- end ad -->\n<div class=\"header-right\">\n<style>.ie6
+        #searchBox, .ie6 #searchBox div { display: inline; } </style><!-- begin search
+        -->\n<div id=\"nav-main-search\">\n<form id=\"searchBox\" name=\"searchBox\"
+        action=\"http://search.espn.go.com/results\" method=\"get\" accept-charset=\"utf-8\"
+        style=\"color: #999999;\">\n<div class=\"clearfix\">\n<input autocomplete=\"off\"
+        class=\"text\" type=\"text\" placeholder=\"Search\" name=\"searchString\"
+        id=\"searchString\" />\n<input type=\"hidden\" name=\"page\" id=\"page\" value=\"null\"
+        />\n<input type=\"hidden\" name=\"fromForm\" value=\"true\" />\n<input class=\"submit\"
+        type=\"submit\" value=\"\" />\n</div>\n</form>\n</div>\n<!-- end search -->\n<div
+        id=\"shop\"><a class=\"shop-btn\" href=\"http://www.dickssportinggoods.com/category/index.jsp?categoryId=15504446&camp=Part:ESPNpart::nbashopbutton:NBA\"
+        name=\"&lpos=sitenavdefault&lid=sitenav_shopbutton\" rel=\"nofollow\">Shop</a></div></div>\n</div>\n<!--
+        end header -->\n<!--espn.us.com.nba sitezone--><!--http://ad.Doubleclick.net
+        hostUrl-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nba\",ad_zone=\"nbaphotos\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Background_Skin;\"+ad_u+\"sz=1280x946,200x800,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Background_Skin\" data-cb-dfp-id=\"'+ad_kvps+'sz=1280x946,200x800,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nba/nbaphotos;pgtyp=nbaphotos;sp=nba;sz=1280x946,200x800,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nba/nbaphotos;pgtyp=nbaphotos;sp=nba;sz=1280x946,200x800,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n<!-- begin subheader -->\n<div id=\"subheader\">\n<!--
+        begin content -->\n<div id=\"content-wrapper\">\n<div id=\"ad-top\" class=\"container\">\n<!--
+        begin Banner ad -->\n<div class=\"span-6 ad banner top\"><div class=\"ad-center\"><div
+        class=\"ad-wrapper\"><!--espn.us.com.nba sitezone--><!--http://ad.Doubleclick.net
+        hostUrl-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nba\",ad_zone=\"nbaphotos\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Banner;\"+ad_u+\"sz=728x90,970x66,924x50,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Banner\" data-cb-dfp-id=\"'+ad_kvps+'sz=728x90,970x66,924x50,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nba/nbaphotos;pgtyp=nbaphotos;sp=nba;sz=728x90,970x66,924x50,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nba/nbaphotos;pgtyp=nbaphotos;sp=nba;sz=728x90,970x66,924x50,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div></div></div>\n<!-- end Banner
+        ad -->\n</div>\n<div id=\"content\" class=\"container\">\n<div id=\"fb-root\"></div><!--[if
+        lte IE 7]><link rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/combiner/c?css=modules/browser-alert.r7.css\"
+        type=\"text/css\" /><div class=\"span-6\" id=\"browser-alert-wrapper\" style=\"display:none;\"><div
+        class=\"mod-container mod-no-header-footer browser-alert\"><div class=\"mod-content\"><div
+        class=\"gradient-container\"><h1><span>Your Web Browser</span> is no longer
+        supported</h1><p>To experience everything that ESPN.com has to offer, we recommend
+        that you upgrade to a newer version of your web browser. Click the upgrade
+        button to the right or <a href=\"http://espn.go.com/espn/news/story?id=5630562\">learn
+        more</a>.</p><ul><li><a class=\"btn-upgrade\" href=\"http://www.microsoft.com/windows/internet-explorer/default.aspx\">Upgrade</a></li><li><a
+        class=\"btn-faq\" href=\"http://espn.go.com/espn/news/story?id=5630562\">FAQs</a></li></ul></div></div></div></div><script>(function(b){setTimeout(function(){var
+        a=b(\"#browser-alert-wrapper\");if(espn.cookie.get(\"browseralert\")!=\"true\"){b('<a
+        class=\"btn-close\" href=\"#\">Close</a>').bind(\"click\",function(){a.hide();espn.cookie.set(\"browseralert\",\"true\",30);return
+        false}).appendTo(a.find(\".gradient-container\"));a.show();espn.cookie.set(\"browseralert\",\"true\")}},100)})(jQuery);</script><![endif]-->\n\n<div
+        class=\"scoreboard-strip-wrapper\" style=\"height:61px; width:916px;\">\n\t<div
+        class=\"scoreboard-strip oot-wide\" id=\"ootScoreboard\">\n\t\t<div id=\"ootShadow\"></div>\n\n\t\t<div
+        class=\"scoreboard-title-hq\">\n\t\t\t\n\n\t\t\t\t<div class=\"subhead\">\n\n\t\t\t\t\t<span>\n\t\t\t\t\t\t<a
+        name=\"&lpos=nbaGamePackageOOT&lid=scoreLinkOOT\" href=\"/nba/scoreboard?date=20140119\">Scores
+        for Jan 19, 2014</a>\n\t\t\t\t\t</span>\n\n\t\t\t\t</div>\n\n\t\t\t\n\t\t</div>\n\n\t\t<div
+        class=\"scoreboard-container\" id=\"scoreboard2\" style=\"width:auto !important;
+        \ margin-left: 210px !important\">\n\t\t\t<div class=\"container\">\n\t\t\t\t<div
+        style=\"display: block;\" class=\"jcarousel-prev jcarousel-next-horizontal
+        oot-prev\"></div>\n\t\t\t\t<div style=\"display: block;\" class=\"jcarousel-next
+        jcarousel-next-horizontal oot-next\"></div>\n\t\t\t\t<div class=\"mod-content
+        \ mod-content-hq\">\n\t\t\t\t\t<div id=\"nba-scores\" class=\"scores-carousel
+        {note:'THERE ARE NO NBA GAMES TODAY'} ui-tabs-panel ui-widget-content ui-corner-bottom\">\n\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t<li
+        id=\"nba-400489474\"><!-- url: http://espn.go.com/nba/photos --><a name=\"&lpos=nbaGamePackageOOT&lid=gameLinkOOT\"
+        href=\"http://espn.go.com/nba/photos?gameId=400489474\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"status\">Final</span><span class=\"hidden-clock\"></span></div><div
+        class=\"game-right\"><span class=\"clock\"></span></div>&nbsp;</div><div class=\"clear\"></div><div
+        class=\"game-left\"><div class=\"info away-winner\"></div><div class=\"teams\"><span
+        class=\"away\">LAL</span><br/><span class=\"home\">TOR</span></div><div class=\"hidden-scores\"><span
+        class=\"away\">112</span><br/><span class=\"home\">106</span></div><div class=\"scores\"><span
+        class=\"away\">112</span><br/><span class=\"home\">106</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">0</span></div></a></li><li id=\"nba-400489475\"><!--
+        url: http://espn.go.com/nba/photos --><a name=\"&lpos=nbaGamePackageOOT&lid=gameLinkOOT\"
+        href=\"http://espn.go.com/nba/photos?gameId=400489475\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"status\">Final</span><span class=\"hidden-clock\"></span></div><div
+        class=\"game-right\"><span class=\"clock\"></span></div>&nbsp;</div><div class=\"clear\"></div><div
+        class=\"game-left\"><div class=\"info home-winner\"></div><div class=\"teams\"><span
+        class=\"away\">BOS</span><br/><span class=\"home\">ORL</span></div><div class=\"hidden-scores\"><span
+        class=\"away\">91</span><br/><span class=\"home\">93</span></div><div class=\"scores\"><span
+        class=\"away\">91</span><br/><span class=\"home\">93</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">1</span></div></a></li><li id=\"nba-400489476\"><!--
+        url: http://espn.go.com/nba/photos --><a name=\"&lpos=nbaGamePackageOOT&lid=gameLinkOOT\"
+        href=\"http://espn.go.com/nba/photos?gameId=400489476\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"status\">Final</span><span class=\"hidden-clock\"></span></div><div
+        class=\"game-right\"><span class=\"clock\"></span></div>&nbsp;</div><div class=\"clear\"></div><div
+        class=\"game-left\"><div class=\"info home-winner\"></div><div class=\"teams\"><span
+        class=\"away\">SAC</span><br/><span class=\"home\">OKC</span></div><div class=\"hidden-scores\"><span
+        class=\"away\">93</span><br/><span class=\"home\">108</span></div><div class=\"scores\"><span
+        class=\"away\">93</span><br/><span class=\"home\">108</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">2</span></div></a></li><li id=\"nba-400489477\"><!--
+        url: http://espn.go.com/nba/photos --><a name=\"&lpos=nbaGamePackageOOT&lid=gameLinkOOT\"
+        href=\"http://espn.go.com/nba/photos?gameId=400489477\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"status\">Final</span><span class=\"hidden-clock\"></span></div><div
+        class=\"game-right\"><span class=\"clock\"></span></div>&nbsp;</div><div class=\"clear\"></div><div
+        class=\"game-left\"><div class=\"info home-winner\"></div><div class=\"teams\"><span
+        class=\"away\">MIL</span><br/><span class=\"home\">SA</span></div><div class=\"hidden-scores\"><span
+        class=\"away\">82</span><br/><span class=\"home\">110</span></div><div class=\"scores\"><span
+        class=\"away\">82</span><br/><span class=\"home\">110</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">3</span></div></a></li><li id=\"nba-400489478\"><!--
+        url: http://espn.go.com/nba/photos --><a name=\"&lpos=nbaGamePackageOOT&lid=gameLinkOOT\"
+        href=\"http://espn.go.com/nba/photos?gameId=400489478\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"status\">Final</span><span class=\"hidden-clock\"></span></div><div
+        class=\"game-right\"><span class=\"clock\"></span></div>&nbsp;</div><div class=\"clear\"></div><div
+        class=\"game-left\"><div class=\"info home-winner\"></div><div class=\"teams\"><span
+        class=\"away\">DEN</span><br/><span class=\"home\">PHX</span></div><div class=\"hidden-scores\"><span
+        class=\"away\">103</span><br/><span class=\"home\">117</span></div><div class=\"scores\"><span
+        class=\"away\">103</span><br/><span class=\"home\">117</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">4</span></div></a></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<script
+        type=\"text/javascript\">\n\n\tvar ESPNootScoreboard = {};\n\n\tESPNootScoreboard.activeSport
+        = 'nba';\n\n\tESPNootScoreboard.myTeams = {'46-19': ['nba-400489475'], \n'46-28':
+        ['nba-400489474'], \n'46-2': ['nba-400489475'], \n'46-21': ['nba-400489478'],
+        \n'46-7': ['nba-400489478'], \n'46-15': ['nba-400489477'], \n'46-24': ['nba-400489477'],
+        \n'46-23': ['nba-400489476'], \n'46-13': ['nba-400489474'], \n'46-25': ['nba-400489476']};\n\n\t(function($){\n\t\t//checking
+        insider access for pickcenter module on preview page\n\t\tvar insiderAccess
+        = false;\n\t    if(espn.core.loggedIn == true){\n\t        szprem = espn.storage.getItem('szpremToken');\n\t
+        \       insiderDirect = espn.storage.getItem('insiderDirectToken');\n\t        if(szprem
+        == true || insiderDirect == true){\n\t            insiderAccess = true;\n\t
+        \       }\n\t    }\n\t    $(document).ready(function(){\n\t\t    if(insiderAccess){\n\t\t
+        \   \t$(\"div#insiderTrue\").show();\n\t\t    }\n\t\t    if(!insiderAccess){\n\t\t
+        \   \t$(\"div#insiderFalse\").show();\n\t\t    \t$(\"div#insiderTrue\").html('');\n\t\t
+        \   }\n\t\t});\n    }(jQuery));\n\n</script>\n\n\n<script type=\"text/javascript\"
+        src=\"http://a.espncdn.com/combiner/c?v=201011241739&js=/espn/espn/javascript/gamepackage10/gamepackageOOTJS?sport=nba_en,/espn/espn/javascript/gamepackage10/fixedOOTJS\"></script><div
+        class=\"gamehq-wrapper\"><div class=\"summary-tabs-container\"><div class=\"span-4\"
+        id=\"gamepackageTop\"><div class=\"status-bar status-final\"><p class=\"game-state\">Final
+        </p><!-- Series at a Glance -->\n\n\t\t\t<script langage=\"javascript\">\n\t\t\t\tjQuery(function($){\n\t\t\t\t\t$(\"#series-dd-arrow\").click(function(){\n\t\t\t\t\t\tif($('#series-dd').is(\":hidden\")){\n\t\t\t\t\t\t\t$('#series-dd').show();\n\t\t\t\t\t\t}else{\n\t\t\t\t\t\t\t$('#series-dd').hide();\n\t\t\t\t\t\t}\n\t\t\t\t\t\treturn
+        false;\n\t\t\t\t\t});\n\t\t\t\t\t$(\"#dd-close\").click(function(){\n\t\t\t\t\t\t$('#series-dd').hide();\n\t\t\t\t\t\treturn
+        false;\n\t\t\t\t\t});\n\t\t\t\t});\n\t\t\t</script>\n\n\n\t\t\t<div class=\"series-status\"><p>Regular
+        Season Series (Game 2 of 2)</p><a href=\"#\" class=\"arrow\" id=\"series-dd-arrow\"></a></div><div
+        class=\"series-dropdown\" id=\"series-dd\"><p class=\"close-link\"><a href=\"#\"
+        id=\"dd-close\">Close</a></p><p class=\"dd-series-status\">Series starts 12/8</p><table
+        cellspacing=\"0\" class=\"dd-game\"><tr><th colspan=\"3\"><span>Game 1:</span>
+        Sunday, December 8th</th></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors
+        \" style=\"color:#000 !important;\">Raptors</a></td><td class=\"score\">106</td><td
+        class=\"dd-game-status\" rowspan=\"2\">Final<br/></td></tr><tr><td class=\"team\"><a
+        href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers \" style=\"color:#000
+        !important;\">Lakers</a></td><td class=\"score\">94</td></tr><tr><td colspan=\"3\"
+        class=\"footer-links\"><a href=/nba/recap?gameId=400489176>Recap &#187;</a><a
+        href=/nba/boxscore?gameId=400489176>Boxscore &#187;</a></td></tr></table><table
+        cellspacing=\"0\" class=\"dd-game\"><tr><th colspan=\"3\"><span>Game 2:</span>
+        Sunday, January 19th</th></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers
+        \" style=\"color:#000 !important;\">Lakers</a></td><td class=\"score\">112</td><td
+        class=\"dd-game-status\" rowspan=\"2\">Final<br/></td></tr><tr><td class=\"team\"><a
+        href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors \" style=\"color:#000
+        !important;\">Raptors</a></td><td class=\"score\">106</td></tr><tr><td colspan=\"3\"
+        class=\"footer-links\"><a href=/nba/recap?gameId=400489474>Recap &#187;</a><a
+        href=/nba/boxscore?gameId=400489474>Boxscore &#187;</a></td></tr></table></div><!--
+        end Series at a Glance -->\n</div><div class=\"matchup \" id=\"matchup-nba-400489474\"><div
+        class=\"team away\"><div class=\"logo-medium\" style=\"background:#542582;\"><img
+        src=\"http://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500-dark/lal.png&w=40&h=40&transparent=true\"
+        alt=\"\"/></div><div class=\"team-info\"><h3 abbr=\"false\"><a href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\">Lakers</a>
+        <span>112</span></h3><p>(16-25, 8-14 away)</p></div></div><div class=\"team
+        home\"><div class=\"logo-medium\" style=\"background:#CE0F41;\"><img src=\"http://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500-dark/tor.png&w=40&h=40&transparent=true\"
+        alt=\"\"/></div><div class=\"team-info\"><h3><a href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors\">Raptors</a>
+        <span>106</span></h3><p>(20-19, 10-9 home)</p></div></div></div><div class=\"game-actions\"><ul></ul></div><style
+        type=\"text/css\">.game-actions {display:none;}</style><div class=\"game-vitals\"><p
+        style=\"padding: 8px 0px 0px; float: right; font-size: 11px;\">Coverage: <strong>TSN</strong></p><div
+        class=\"game-time-location\"><p>1:00 PM ET, January 19, 2014</p><p>Air Canada
+        Centre, Toronto, ON</p></div></div>\n\n\t<!-- begin line score -->\n\t<div
+        class=\"line-score clear\">\n\t\t<div class=\"line-score-container\">\n\t\t\t<table
+        cellspacing=\"0\" class=\"linescore\">\n\t\t\t\t<tr class=\"periods\">\n\t\t\t\t\t<td
+        class=\"team\"></td>\n\n\t\t\t\t\t<td class=\"period\" style=\"text-align:center\"
+        > 1</td><td class=\"period\" style=\"text-align:center\" > 2</td><td class=\"period\"
+        style=\"text-align:center\" > 3</td><td class=\"period\" style=\"text-align:center\"
+        > 4</td>\n\t\t\t\t\t<td class=\"total\" style=\"text-align:center\">T</td>\n\n\t\t\t\t</tr>\n\n\t\t\t\t<tr><td
+        class=\"team\"><a href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\">LAL</a></td><td
+        style=\"text-align:center\" > 29</td><td style=\"text-align:center\" > 25</td><td
+        style=\"text-align:center\" > 28</td><td style=\"text-align:center\" > 30</td><td
+        class=\"ts\" style=\"text-align:center\">112</td></tr><tr><td class=\"team\"><a
+        href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors\">TOR</a></td><td
+        style=\"text-align:center\" > 36</td><td style=\"text-align:center\" > 22</td><td
+        style=\"text-align:center\" > 23</td><td style=\"text-align:center\" > 25</td><td
+        class=\"ts\" style=\"text-align:center\">106</td></tr>\n\t\t\t</table>\n\n\t\t</div>\n\n\t\t<!--
+        end line score -->\n\n\t\t<div class=\"game-notes\">\n\t\t<p class=\"heading\"><span>Top
+        Performers</span></p><p><span>LAL: </span><a href=\"http://espn.go.com/nba/player/_/id/3243/nick-young\"
+        style=\"color:#000;\">N. Young</a> 29 Pts, 2 Reb, 1 Ast</p><p><span>Tor: </span><a
+        href=\"http://espn.go.com/nba/player/_/id/3012/kyle-lowry\" style=\"color:#000;\">K.
+        Lowry</a> 21 Pts, 2 Reb, 9 Ast, 1 Blk</p>\n\t\t</div>\n\t</div>\n</div><div
+        class=\"span-2 last\" id=\"gp-adwrap\"><div class=\"ad-box\" style=\"padding:2px
+        0px; height:250px;\"><iframe width=\"300\" id=\"adIframe\" scrolling=\"NO\"
+        height=\"250\" frameborder=\"0\" src=\"/nba/photos?ads=incontent\" marginheight=\"0\"
+        marginwidth=\"0\"/></iframe></div></div>\n\t<div class=\"tabs clear\">\n\t\t<ul>\n\n\t<li
+        class=\"\" ><a href=\"recap?gameId=400489474\"><span class=\"title\">Recap</span>\n</a>\n</li><li
+        class=\"\" ><a href=\"boxscore?gameId=400489474\"><span class=\"title\">Box
+        Score</span>\n</a>\n</li><li class=\"\" ><a href=\"playbyplay?gameId=400489474\"><span
+        class=\"title\">Play-By-Play</span>\n</a>\n</li><li class=\"\" ><a href=\"shotchart?gameId=400489474\"><span
+        class=\"title\">Shot Chart</span>\n</a>\n</li><li class=\"active\" ><a href=\"photos?gameId=400489474\"><span
+        class=\"title\">Photos</span>\n<span class=\"quantity\"><span>44</span></span></a>\n</li><li
+        class=\"\" ><a href=\"conversation?gameId=400489474\"><span class=\"title\">Conversation</span>\n<span
+        class=\"fb-comments-long quantity\"><span class=\"count\"></span></span></a>\n</li></ul></div><script>jQuery.getScriptCache(\"http://a.espncdn.com/combiner/c/70?js=jquery.sharetools.r15-u4.js\",
+        function() {jQuery(\".tabs\").sharetools(\"http://scores.espn.go.com/nba/conversation?gameId=400489474\");});</script></div><div
+        class=\"story-container\"><div class=\"gp-body\"><div style=\"height:0px;
+        visibility:visible; overflow:hidden;\" id=\"presByIframeContainer\"><iframe
+        width=\"715\" id=\"presbyIframe\" scrolling=\"NO\" frameborder=\"0\" src=\"/nba/photos?ads=presby\"
+        marginheight=\"0\" marginwidth=\"0\"/></iframe></div><noscript><InLineReplace
+        name=ad type=PresentedByLogo></noscript>\n\t<style type=\"text/css\">\n\t\t.photo-index
+        dl dt a img {padding:3px; border:1px solid #CCC;}\n\t\t.photo-index dl dt
+        a:hover img {border-color:#000;}\n\t</style>\n\t<div class=\"photo-nav\"><p><span
+        style=\"float:left;\">Photos 1 - 18 of 44</span>&nbsp;&nbsp;<strong class=\"currentPage\"
+        style=\"border-bottom:2px solid #000;\">1</strong>&nbsp;<a href=\"/nba/photos?gameId=400489474&page=2\"
+        style=\"text-decoration:none;\" class=\"navLink\" id=\"page_2\">2</a>&nbsp;<a
+        href=\"/nba/photos?gameId=400489474&page=3\" style=\"text-decoration:none;\"
+        class=\"navLink\" id=\"page_3\">3</a>&nbsp;&nbsp;<a href=\"/nba/photos?gameId=400489474&page=2\"
+        style=\"text-decoration:none;\" class=\"navLink\" id=\"page_2\">Next</a>&nbsp;&nbsp;</p></div><div
+        class=\"photo-index\" style=\"display:none\"><div class=\"photo-row clearfix\"
+        style=\"padding:0 0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0;
+        padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489189\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: DeMar
+        DeRozan #10 of the Toronto Raptors looks to pass the ball against the Los
+        Angeles Lakers during the game on January 19, 2014 at the Air Canada Centre
+        in Toronto, Ontario, Canada.  NOTE TO USER: User expressly acknowledges and
+        agrees that, by downloading and or using this Photograph, user is consenting
+        to the terms and conditions of the Getty Images License Agreement.  Mandatory
+        Copyright Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806957.jpg&amp;w=107&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489190\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Ryan
+        Kelly #4 of the Los Angeles Lakers goes up for the layup against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806961.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489191\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Pau
+        Gasol #16 of the Los Angeles Lakers goes up for the shot against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806965.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489192\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Jonas
+        Valanciunas #17 of the Toronto Raptors grabs a rebound against the Los Angeles
+        Lakers during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806967.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489193\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Nick
+        Young #0 of the Los Angeles Lakers shoots the ball against the Toronto Raptors
+        during the game on January 19, 2014 at the Air Canada Centre in Toronto, Ontario,
+        Canada.  NOTE TO USER: User expressly acknowledges and agrees that, by downloading
+        and or using this Photograph, user is consenting to the terms and conditions
+        of the Getty Images License Agreement.  Mandatory Copyright Notice: Copyright
+        2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806975.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489195\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Terrence
+        Ross #31 of the Toronto Raptors looks to pass the ball against the Los Angeles
+        Lakers during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806981.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl></div><div class=\"photo-row clearfix\" style=\"padding:0
+        0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0; padding:0
+        8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489196\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Kyle
+        Lowry #7 and Amir Johnson #15 of the Toronto Raptors look on against the Los
+        Angeles Lakers during the game on January 19, 2014 at the Air Canada Centre
+        in Toronto, Ontario, Canada.  NOTE TO USER: User expressly acknowledges and
+        agrees that, by downloading and or using this Photograph, user is consenting
+        to the terms and conditions of the Getty Images License Agreement.  Mandatory
+        Copyright Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806985.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489197\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Jodie
+        Meeks #20 of the Los Angeles Lakers goes up for the layup against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806993.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489199\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Pau
+        Gasol #16 of the Los Angeles Lakers goes up for the dunk against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806999.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489200\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Jonas
+        Valanciunas #17 of the Toronto Raptors grabs a rebound against the Los Angeles
+        Lakers during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807009.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489201\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: DeMar
+        DeRozan #10 of the Toronto Raptors goes up for the shot against the Los Angeles
+        Lakers during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807025.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489202\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: DeMar
+        DeRozan #10 of the Toronto Raptors goes up for the dunk against the Los Angeles
+        Lakers during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807027.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl></div><div class=\"photo-row clearfix\" style=\"padding:0
+        0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0; padding:0
+        8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489203\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Pau
+        Gasol #16 of the Los Angeles Lakers backs up to the basket against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807035.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489204\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Members
+        of the Toronto Raptors dance team throw t-shirts to the crowd, against the
+        Los Angeles Lakers during the game on January 19, 2014 at the Air Canada Centre
+        in Toronto, Ontario, Canada.  NOTE TO USER: User expressly acknowledges and
+        agrees that, by downloading and or using this Photograph, user is consenting
+        to the terms and conditions of the Getty Images License Agreement.  Mandatory
+        Copyright Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807041.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489206\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Kendall
+        Marshall #12 of the Los Angeles Lakers dribbles the ball against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807049.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489207\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Kendall
+        Marshall #12 of the Los Angeles Lakers goes up for the layup against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807055.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489208\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Pau
+        Gasol #16 of the Los Angeles Lakers goes up for the shot against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807063.jpg&amp;w=127&amp;h=84\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489209\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Kendall
+        Marshall #12 of the Los Angeles Lakers goes up for the shot against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807085.jpg&amp;w=127&amp;h=84\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl></div></div><noscript><div class=\"photo-index\"><div
+        class=\"photo-row clearfix\" style=\"padding:0 0 10px 0;\"><dl style=\"width:auto;
+        text-align:center; margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a
+        href=\"/nba/photos?gameId=400489474&photoId=3489189\" style=\"margin:0; padding:0;\"
+        title = \"TORONTO, CANADA - January 19: DeMar DeRozan #10 of the Toronto Raptors
+        looks to pass the ball against the Los Angeles Lakers during the game on January
+        19, 2014 at the Air Canada Centre in Toronto, Ontario, Canada.  NOTE TO USER:
+        User expressly acknowledges and agrees that, by downloading and or using this
+        Photograph, user is consenting to the terms and conditions of the Getty Images
+        License Agreement.  Mandatory Copyright Notice: Copyright 2014 NBAE \" ><img
+        src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806957.jpg&amp;w=107&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489190\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Ryan
+        Kelly #4 of the Los Angeles Lakers goes up for the layup against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806961.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489191\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Pau
+        Gasol #16 of the Los Angeles Lakers goes up for the shot against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806965.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489192\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Jonas
+        Valanciunas #17 of the Toronto Raptors grabs a rebound against the Los Angeles
+        Lakers during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806967.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489193\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Nick
+        Young #0 of the Los Angeles Lakers shoots the ball against the Toronto Raptors
+        during the game on January 19, 2014 at the Air Canada Centre in Toronto, Ontario,
+        Canada.  NOTE TO USER: User expressly acknowledges and agrees that, by downloading
+        and or using this Photograph, user is consenting to the terms and conditions
+        of the Getty Images License Agreement.  Mandatory Copyright Notice: Copyright
+        2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806975.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489195\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Terrence
+        Ross #31 of the Toronto Raptors looks to pass the ball against the Los Angeles
+        Lakers during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806981.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl></div><div class=\"photo-row clearfix\" style=\"padding:0
+        0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0; padding:0
+        8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489196\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Kyle
+        Lowry #7 and Amir Johnson #15 of the Toronto Raptors look on against the Los
+        Angeles Lakers during the game on January 19, 2014 at the Air Canada Centre
+        in Toronto, Ontario, Canada.  NOTE TO USER: User expressly acknowledges and
+        agrees that, by downloading and or using this Photograph, user is consenting
+        to the terms and conditions of the Getty Images License Agreement.  Mandatory
+        Copyright Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806985.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489197\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Jodie
+        Meeks #20 of the Los Angeles Lakers goes up for the layup against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806993.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489199\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Pau
+        Gasol #16 of the Los Angeles Lakers goes up for the dunk against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463806999.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489200\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Jonas
+        Valanciunas #17 of the Toronto Raptors grabs a rebound against the Los Angeles
+        Lakers during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807009.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489201\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: DeMar
+        DeRozan #10 of the Toronto Raptors goes up for the shot against the Los Angeles
+        Lakers during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807025.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489202\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: DeMar
+        DeRozan #10 of the Toronto Raptors goes up for the dunk against the Los Angeles
+        Lakers during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807027.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl></div><div class=\"photo-row clearfix\" style=\"padding:0
+        0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0; padding:0
+        8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489203\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Pau
+        Gasol #16 of the Los Angeles Lakers backs up to the basket against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807035.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489204\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Members
+        of the Toronto Raptors dance team throw t-shirts to the crowd, against the
+        Los Angeles Lakers during the game on January 19, 2014 at the Air Canada Centre
+        in Toronto, Ontario, Canada.  NOTE TO USER: User expressly acknowledges and
+        agrees that, by downloading and or using this Photograph, user is consenting
+        to the terms and conditions of the Getty Images License Agreement.  Mandatory
+        Copyright Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807041.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489206\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Kendall
+        Marshall #12 of the Los Angeles Lakers dribbles the ball against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807049.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489207\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Kendall
+        Marshall #12 of the Los Angeles Lakers goes up for the layup against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807055.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489208\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Pau
+        Gasol #16 of the Los Angeles Lakers goes up for the shot against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807063.jpg&amp;w=127&amp;h=84\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489209\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Kendall
+        Marshall #12 of the Los Angeles Lakers goes up for the shot against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463807085.jpg&amp;w=127&amp;h=84\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl></div></div></noscript><div class=\"photo-nav\"><p><span
+        style=\"float:left;\">Photos 1 - 18 of 44</span>&nbsp;&nbsp;<strong class=\"currentPage\"
+        style=\"border-bottom:2px solid #000;\">1</strong>&nbsp;<a href=\"/nba/photos?gameId=400489474&page=2\"
+        style=\"text-decoration:none;\" class=\"navLink\" id=\"page_2\">2</a>&nbsp;<a
+        href=\"/nba/photos?gameId=400489474&page=3\" style=\"text-decoration:none;\"
+        class=\"navLink\" id=\"page_3\">3</a>&nbsp;&nbsp;<a href=\"/nba/photos?gameId=400489474&page=2\"
+        style=\"text-decoration:none;\" class=\"navLink\" id=\"page_2\">Next</a>&nbsp;&nbsp;</p></div>\n\n\t<script
+        src=\"http://a.espncdn.com/combiner/c?v=201004161710&js=/plugins/jquery.history_2010.js\"
+        type=\"text/javascript\"></script>\n\t<script src=\"http://scores.espn.go.com/espn/javascript/gamepackage10/photoPageJS?sportId=46&sportName=nba&gameId=400489474&pageType=gallery&langType=0\"
+        type=\"text/javascript\"></script>\n\n\t<!-- begin sp links -->\n<div style=\"margin:
+        10px 0 0 0;\">\n<!-- CONTENT: 09scoreboard614, SPORT: nba--><div style=\"margin:0px
+        0px 5px 0px; text-align: center; width: 614px;\"><ins id=\"splinks-3984\"></ins>\n
+        \       <script type=\"text/javascript\">\n            (function($) {\n                //
+        config params\n                var width = '614',\n                    height
+        = '300',\n                    client = 'ca-espn-q-game',\n                    channel
+        = 'nba bottom',\n                    lang = 'null';\n\n                //
+        builds iframe HTML\n                function buildIframe(width, height, client,
+        channel) {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
+        \                   // pass params as the hash as they are only needed on
+        the client\n                    var hash = '3984|' + width + '|' + height
+        + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
+        = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
+        + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
+        \                   return iframe;\n                }\n\n                //
+        handles messages from child iframe\n                function handleMessage(event)
+        {\n                    if (event.origin === 'http://sports-ak.espn.go.com')
+        {\n                        $('#splinks-' + event.data).html('<!-- no ads served
+        -->');\n                    }\n                }\n\n                if (typeof
+        window.addEventListener === 'function') {\n                    window.addEventListener('message',
+        handleMessage, false);\n                } else {\n                    window.attachEvent('onmessage',
+        handleMessage);\n                }\n\n                // insert the iframe\n
+        \               if (espn.geo) {\n                    espn.geo.getLocation().done(function(loc)
+        {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
+        || espn.core.android) {\n                            // outside US or not
+        on desktop\n                            client = 'ca-espn-nq';\n                        }\n
+        \                       $('#splinks-3984').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-3984').html(buildIframe(width,
+        height, 'ca-espn-nq', channel));\n                    });\n                }
+        else {\n                    // can't locate them, assume they are outside
+        US\n                    $('#splinks-3984').html(buildIframe(width, height,
+        'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
+        \   </div></div>\n<!-- end sp links -->\n</div><!-- end gp-body --><div class=\"clear\"></div></div></div></div>\n<div
+        id=\"nav-wrapper\" class=\"container\">\n<div id=\"nav-wrapper-container\">\n<div
+        id=\"nav-main\">\n<!-- begin site nav -->\n<ul class=\"top\">\n<!-- begin
+        site nav -->\n<p><!-- begin site nav --></p>\n<ul class=\"top\" id=\"nav-main-list\"><!--
+        start: Menuitem :: MyTAB -->\n<li class=\"last myespn\" id=\"menu-myespn\"><a
+        class=\"myespn\" ref=\"#\">MyESPN</a></li>\n<!-- start: Menuitem :: NFL -->\n<li
+        class=\"sport-menu default t-nfl\" data-sportid=\"28\" id=\"menu-nfl\"><a
+        href=\"http://espn.go.com/nfl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nfl\">NFL</a></li>\n<!--
+        start: Menuitem :: MLB -->\n<li class=\"sport-menu default t-mlb\" data-sportid=\"10\"
+        id=\"menu-mlb\"><a href=\"http://espn.go.com/mlb/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mlb\">MLB</a></li>\n<!--
+        start: Menuitem :: NBA -->\n<li class=\"sport-menu default t-nba selected\"
+        data-sportid=\"46\" id=\"menu-nba\"><a href=\"http://espn.go.com/nba/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nba\">NBA</a></li>\n<!--
+        start: Menuitem :: NHL -->\n<li class=\"sport-menu default t-nhl\" data-sportid=\"90\"
+        id=\"menu-nhl\"><a href=\"http://espn.go.com/nhl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nhl\">NHL</a></li>\n<!--
+        start: Menuitem :: NCAA FB -->\n<li class=\"sport-menu default t-ncf\" data-sportid=\"23\"
+        id=\"menu-ncf\"><a href=\"http://espn.go.com/college-football/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncf\">NCAAF</a></li>\n<!--
+        start: Menuitem :: NCAA BB -->\n<li class=\"sport-menu default t-ncb\" data-sportid=\"41\"
+        id=\"menu-ncb\"><a href=\"http://espn.go.com/mens-college-basketball/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncb\">NCAAM</a></li>\n<!--
+        start: Menuitem :: NASCAR -->\n<li class=\"sport-menu default t-nascar\" data-sportid=\"2020\"
+        id=\"menu-nascar\"><a href=\"http://espn.go.com/racing/nascar/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nascar\">NASCAR</a></li>\n<!--
+        start: Menuitem :: SOCCER -->\n<li class=\"sport-menu default t-soccer\" data-sportid=\"600\"
+        id=\"menu-soccer\"><a href=\"http://espnfc.us/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_soccer\">SOCCER</a></li>\n<!--
+        start: Menuitem :: GOLF -->\n<li class=\"sport-menu t-golf\" data-sportid=\"1106\"
+        id=\"menu-golf\" style=\"display: none;\"><a href=\"http://espn.go.com/golf/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_golfl\">GOLF</a></li>\n<!--
+        start: Menuitem :: TENNIS -->\n<li class=\"sport-menu t-tennis\" data-sportid=\"850\"
+        id=\"menu-tennis\" style=\"display: none;\"><a href=\"http://espn.go.com/tennis/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_tennis\">TENNIS</a></li>\n<!--
+        start: Menuitem :: BOXING-->\n<li class=\"sport-menu t-boxing\" data-sportid=\"1000\"
+        id=\"menu-boxing\" style=\"display: none;\"><a href=\"http://espn.go.com/boxing/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_boxing\">BOXING</a></li>\n<!--
+        start: Menuitem :: MMA -->\n<li class=\"sport-menu t-mma\" data-sportid=\"3301\"
+        id=\"menu-mma\" style=\"display: none;\"><a href=\"http://espn.go.com/mma/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mma\">MMA</a></li>\n<!-- start:
+        Menuitem :: ALL SPORTS -->\n<li class=\"nav-allsports t-allsports\" id=\"menu-allsports\"><a
+        href=\"http://espn.go.com/sports/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_allsports\">MORE
+        SPORTS</a></li>\n<!-- start: Menuitem :: INSIDER -->\n<li class=\"sport-menu
+        t-insider\" id=\"menu-insider\" style=\"display: none;\"><a href=\"http://insider.espn.go.com/insider/index\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_insider\">INSIDER</a></li>\n<!--
+        start: Menuitem :: SPORTSNATION -->\n<li class=\"sport-menu t-sportsnation\"
+        id=\"menu-sportsnation\" style=\"display: none;\"><a href=\"http://espn.go.com/sportsnation/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_sportsnation\">SN</a></li>\n<!--
+        start: Menuitem :: RADIO & MORE -->\n<li class=\"right-menu two-line last
+        t-radio\" id=\"menu-radio\"><a href=\"http://espn.go.com/espnradio/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_radioandmore\">RADIO<span>&amp;
+        MORE</span></a></li>\n<!-- start: Menuitem :: espnW & PLAYBOOK -->\n<li class=\"right-menu
+        two-line t-page2\" id=\"menu-page2\"><a href=\"http://espn.go.com/espnw/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_espnwandxgames\" target=\"_blank\">espnW<span>&amp;
+        X GAMES</span></a></li>\n<!-- start: Menuitem :: FANTASY & GAMES -->\n<li
+        class=\"right-menu two-line t-fantasy\" id=\"menu-fantasy\"><a href=\"http://games.espn.go.com/frontpage\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_fantasy\">FANTASY<span>&amp;
+        GAMES</span></a></li>\n<!-- start: Menuitem :: WATCH -->\n<li class=\"right-menu
+        t-watch\" id=\"menu-watch\"><a href=\"http://espn.go.com/video/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_watch\">WATCH</a></li>\n</ul>\n<!--
+        end site nav -->\n<!-- end site nav -->\n</ul>\n<!-- end site nav -->\n</div>\n<div
+        class=\"nav-main-secondary\">\n<!--/nba/photos--><ul>\n<li><a href=\"http://espn.go.com/nba/\"name=\"&lpos=subnav&lid=subnav_NBA_NBA+Home\">NBA
+        Home</a></li><li><a href=\"http://scores.espn.go.com/nba/scoreboard\"name=\"&lpos=subnav&lid=subnav_NBA_Scoreboard\">Scores</a></li><li><a
+        href=\"http://espn.go.com/nba/schedule\"name=\"&lpos=subnav&lid=subnav_NBA_NBA+Schedule\">Schedule</a></li><li><a
+        href=\"http://espn.go.com/nba/statistics\"name=\"&lpos=subnav&lid=subnav_NBA_Stats\">Stats</a></li><li><a
+        href=\"http://espn.go.com/nba/standings\"name=\"&lpos=subnav&lid=subnav_NBA_Standings\">Standings</a></li><li
+        class=\"expandable\"><a href=\"http://espn.go.com/nba/hollinger/powerrankings\"name=\"&lpos=subnav&lid=subnav_NBA_Rankings\"><span>Rankings</span></a><div><dl
+        class=\"last\"><dd><a href=\"http://espn.go.com/nba/powerrankings\" name=\"&lpos=subnav&lid=subnav_NBA_Stein\">Stein's
+        Power Rankings</a></dd><dd><a href=\"http://espn.go.com/nba/hollinger/powerrankings\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Hollinger\">Hollinger Power Rankings</a></dd></dl></div></li><li><a
+        href=\"http://espn.go.com/nba/players\"name=\"&lpos=subnav&lid=subnav_NBA_Players\">Players</a></li><li
+        class=\"expandable\"><a href=\"http://espn.go.com/nba/teams\" name=\"&lpos=subnav&lid=subnav_NBA_Teams\"><span>Teams</span></a><div><dl><dt
+        class=\"first\">Atlantic</dt><dd><a href=\"http://espn.go.com/nba/team/_/name/bos/boston-celtics\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_bos\">Boston Celtics</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/bkn/brooklyn-nets\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_bkn\">Brooklyn
+        Nets</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/ny/new-york-knicks\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_ny\">New York Knicks</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_phi\">Philadelphia
+        76ers</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_tor\">Toronto Raptors</a></dd><dt
+        class=\"first\">Central</dt><dd><a href=\"http://espn.go.com/nba/team/_/name/chi/chicago-bulls\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_chi\">Chicago Bulls</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/cle/cleveland-cavaliers\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_cle\">Cleveland
+        Cavaliers</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/det/detroit-pistons\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_det\">Detroit Pistons</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/ind/indiana-pacers\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_ind\">Indiana
+        Pacers</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_mil\">Milwaukee Bucks</a></dd><dt
+        class=\"first\">Southeast</dt><dd><a href=\"http://espn.go.com/nba/team/_/name/atl/atlanta-hawks\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_atl\">Atlanta Hawks</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/cha/charlotte-hornets\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_cha\">Charlotte
+        Hornets</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/mia/miami-heat\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_mia\">Miami Heat</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/orl/orlando-magic\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_orl\">Orlando Magic</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/wsh/washington-wizards\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_was\">Washington
+        Wizards</a></dd></dl><dl class=\"last\"><dt class=\"first\">Pacific</dt><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/gs/golden-state-warriors\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_gs\">Golden
+        State Warriors</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_lac\">Los Angeles Clippers</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_lal\">Los
+        Angeles Lakers</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/phx/phoenix-suns\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_phx\">Phoenix Suns</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/sac/sacramento-kings\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_sac\">Sacramento
+        Kings</a></dd><dt class=\"first\">Southwest</dt><dd><a href=\"http://espn.go.com/nba/team/_/name/dal/dallas-mavericks\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_dal\">Dallas Mavericks</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/hou/houston-rockets\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_hou\">Houston
+        Rockets</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_mem\">Memphis Grizzlies</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_no\">New
+        Orleans Pelicans</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_sa\">San Antonio Spurs</a></dd><dt
+        class=\"first\">Northwest</dt><dd><a href=\"http://espn.go.com/nba/team/_/name/den/denver-nuggets\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_den\">Denver Nuggets</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_min\">Minnesota
+        Timberwolves</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_okc\">Oklahoma City Thunder</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/por/portland-trail-blazers\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_por\">Portland
+        Trail Blazers</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/utah/utah-jazz\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_uth\">Utah Jazz</a></dd></dl></div></li></li><li><a
+        href=\"http://espn.go.com/nba/draft\">Draft</a></li><li><a href=\"http://espn.go.com/nba/theten\">The
+        Ten</a></li><li class=\"expandable\"><a href=\"http://espn.go.com/blog/truehoop\"
+        name=\"&lpos=subnav&lid=subnav_NBA_TrueHoop\"><span>TrueHoop</span></a><div><dl
+        class=\"last\"><dd><a href=\"http://espn.go.com/blog/truehoop\" name=\"&lpos=subnav&lid=subnav_NBA_TrueHoop\">TrueHoop</a></dd><dd><a
+        href=\"http://espn.go.com/blog/truehoop/category/_/name/truehoop-tv\" name=\"&lpos=subnav&lid=subnav_NBA_TrueHoopTV\">TrueHoop
+        TV</a></dd><dd><a href=\"http://espn.go.com/blog/truehoop/category/_/name/truecities\"
+        name=\"&lpos=subnav&lid=subnav_TrueCities\">TrueCities</a></dd><dd><a href=\"http://espn.go.com/blog/truehoop/category/_/name/hoopidea\"
+        name=\"&lpos=subnav&lid=subnav_HoopIdea\">HoopIdea</a></dd></dl></div></li><li
+        class=\"expandable\"><a href=\"http://espn.go.com/blog/truehoop\" name=\"&lpos=subnav&lid=subnav_NBA_Blogs\"><span>Blogs</span></a><div><dl
+        class=\"last\"><dd><a href=\"http://espn.go.com/blog/boston/celtics\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Celtics\">Boston
+        Celtics</a></dd><dd><a href=\"http://espn.go.com/blog/brooklyn-nets\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Nets\">Brooklyn
+        Nets</a></dd><dd><a href=\"http://espn.go.com/blog/chicago-bulls\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Bulls\">Chicago
+        Bulls</a></dd><dd><a href=\"http://espn.go.com/blog/cleveland-cavaliers\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Blog_Cavs\">Cleveland Cavaliers</a></dd><dd><a
+        href=\"http://espn.go.com/blog/dallas-mavericks\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Mavericks\">Dallas
+        Mavericks</a></dd><dd><a href=\"http://espn.go.com/blog/golden-state-warriors\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Blog_Warriors\">Golden State Warriors</a></dd><dd><a
+        href=\"http://espn.go.com/blog/los-angeles-clippers/\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Clippers\">Los
+        Angeles Clippers</a></dd><dd><a href=\"http://espn.go.com/blog/los-angeles-lakers\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Blog_Lakers\">Los Angeles Lakers</a></dd><dd><a
+        href=\"http://espn.go.com/blog/truehoop/miamiheat\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Heat\">Miami
+        Heat</a></dd><dd><a href=\"http://espn.go.com/blog/new-york-knicks\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Knicks\">New
+        York Knicks</a></dd><dd><a href=\"http://espn.go.com/blog/okc-thunder\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Thunder\">Oklahoma
+        City Thunder</a></dd><dd><a href=\"http://espn.go.com/blog/marc-stein\" name=\"&lpos=subnav&lid=subnav_Stein_Line_Live\">Stein
+        Line Live</a></dd></dl></div></li><li><a href=\"http://insider.espn.go.com/blog/nba/rumors/\"name=\"&lpos=subnav&lid=subnav_NBA_Rumors\">Rumors</a></li><!--<li><a
+        href=\"http://espn.go.com/espn/chalk/\">Odds</a></li>--><li class=\"expandable\"><a
+        href=\"\" name=\"&lpos=subnav&lid=subnav_NBA_More\"><span>More</span></a><div><!--<dl><dt
+        class=\"first\">Blogs</dt><dd><a href=\"http://espn.go.com/blog/marc-stein\"
+        name=\"&lpos=subnav&lid=subnav_Stein_Line_Live\">Stein Line Live</a></dd><dd><a
+        href=\"http://espn.go.com/blog/truehoop\" name=\"&lpos=subnav&lid=subnav_TrueHoop\">TrueHoop</a></dd><dt
+        class=\"first\">Events</dt><dd><a href=\"http://espn.go.com/nba/preview2014/\"
+        name=\"&lpos=subnav&lid=subnav_All_Star_Game\">2014-15 Preview</a></dd><dd><a
+        href=\"http://espn.go.com/nba/playoffs/2014/matchup\" name=\"&lpos=subnav&lid=subnav_NBA_Playoffs\">2014
+        NBA Playoffs</a></dd><dd><a href=\"http://espn.go.com/nba/draft\" name=\"&lpos=subnav&lid=subnav_NBA_Draft\">2014
+        NBA Draft</a></dd><dd><a href=\"http://sports.espn.go.com/nba/feature/index?page=nbaallstar2014\"
+        name=\"&lpos=subnav&lid=subnav_All_Star_Game\">2014 All-Star Game</a></dd><dd><a
+        href=\"http://espn.go.com/nba/halloffame\" name=\"&lpos=subnav&lid=subnav_Hall_Of_Fame\">Basketball
+        HOF</a></dd></dl>--><dl class=\"last\"><dd><a href=\"http://espn.go.com/nba/allstargame\"
+        name=\"&lpos=subnav&lid=subnav_NBA_ASG\">All-Star Game</a></dd><dd><a href=\"http://espn.go.com/nba/history/leaders\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Leaders\">All-time Leaders</a></dd><dd><a
+        href=\"http://espn.go.com/nba/history/awards\" name=\"&lpos=subnav&lid=subnav_NBA_Awards\">Awards
+        History</a></dd><dd><a href=\"http://espn.go.com/nba/coaches\" name=\"&lpos=subnav&lid=subnav_NBA_Coaches\">Coaches</a></dd><dd><a
+        href=\"http://espn.go.com/nba/depth\" name=\"&lpos=subnav&lid=subnav_Depth_Charts\">Depth
+        Charts</a></dd><dd><a href=\"http://insider.espn.go.com/nba/draft/results/team\"
+        name=\"&lpos=subnav&lid=subnav_Draft_History\">Draft History</a></dd><dd><a
+        href=\"http://games.espn.go.com/frontpage/basketball\" name=\"&lpos=subnav&lid=subnav_Fantasy\">Fantasy
+        Hoops</a></dd><dd><a href=\"http://espn.go.com/nba/story/_/id/12307054/nba-free-agents-2015-2016\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Free_Agents\">Free Agents</a></dd><dd><a
+        href=\"http://espn.go.com/nba/halloffame\" name=\"&lpos=subnav&lid=subnav_NBA_HOFs\">Hall
+        of Fame</a></dd><dd><a href=\"http://espn.go.com/espn/chalk/\" name=\"&lpos=subnav&lid=subnav_NBA_Odds\">Odds
+        & Info</a></dd><dd><a href=\"http://espn.go.com/nba/hollinger/playoffodds\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Playoffs\">Playoff Odds</a></dd><dd><a
+        href=\"http://espn.go.com/nba/salaries\" name=\"&lpos=subnav&lid=subnav_NBA_Salaries\">Salaries</a></dd><dd><a
+        href=\"http://espn.go.com/nba/tradeMachine\" name=\"&lpos=subnav&lid=subnav_NBA_TradeMachine\">Trade
+        Machine</a></dd><dd><a href=\"http://espn.go.com/nba/transactions\" name=\"&lpos=subnav&lid=subnav_NBA_Transactions\">Transactions</a></dd></dl></div></li><li><a
+        href=\"http://www.stubhub.com/nba-tickets/\" target=\"_blank\" onclick=\"this.href=this.href+'?gcid=C12289x522&gtkw=NBA+Sub+Nav'\"
+        class=\"external\" name=\"&lpos=subnav&lid=subnav_NBA+Tickets\">Tickets</a></li>\n</ul>\n</div>\n</div>\n</div>\n</div>\n<!--
+        end content -->\n</div>\n<!-- end subheader -->\n\n<script>\nespn.core.init.nav();\nespn.insider.checkUserForPromo();\n</script>\n<!--
+        begin footer -->\n<div id=\"footer\" class=\"container\">\n<script type=\"text/javascript\">\n//<![CDATA[\nvar
+        link = window.location;\nvar bugText = '<a href=\"#\" onclick=\"window.open(\\'http://dynamic.espn.go.com/espn/bugs?url='
+        + escape(link) + '\\', \\'Bugs\\',\\'noresizable,noscrollbars,height=400,width=400\\');\">Report
+        a Bug</a> | ';\n//]]>\n</script>\n<span style=\"font-weight:bold;\">ESPN.com:</span>
+        <a href=\"http://sports.espn.go.com/espn/news/story?page=help/index\">Help</a>
+        | <a href=\"http://espnmediazone.com/us/\" rel=\"nofollow\">Press</a> | <a
+        href=\"http://www.espncms.com/Advertise-on-ESPN.aspx\" rel=\"nofollow\">Advertise
+        on ESPN.com</a> | <a href=\"http://www.espncms.com\" rel=\"nofollow\">Sales
+        Media Kit</a> | <a href=\"http://preferences.truste.com/2.0/?type=espn&affiliateId=148\"
+        onclick=\"window.open('http://preferences.truste.com/2.0/?type=espn&affiliateId=148','popup','width=986,height=878,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0');
+        return false\">Interest-Based Ads</a> | <script type=\"text/javascript\">document.write(bugText);</script><a
+        href=\"http://espn.go.com/espn/corrections\">Corrections</a> | <a href=\"http://sports.espn.go.com/espn/news/story?page=contact/index\">Contact
+        Us</a> | <a href=\"http://espn.go.com/espn/sitemap\">Site Map</a> | <a href=\"http://espncareers.com\">Jobs
+        at ESPN</a> | <!--a href=\"http://corporate.disney.go.com/corporate/sourcing.html\"
+        rel=\"nofollow\"><span style=\"font-weight:bold;\">Supplier Information</span></a--><a
+        href=\"http://go.com\">Go.com</a><br/>&copy; 2015  ESPN Internet Ventures.
+        <a href=\"http://disneytermsofuse.com/\" rel=\"nofollow\">Terms of Use</a>,
+        <a href=\"http://disneyprivacycenter.com/\" rel=\"nofollow\">Privacy Policy</a>,
+        <a href=\"https://disneyprivacycenter.com/notice-to-california-residents/\"
+        rel=\"nofollow\">Your California Privacy Rights</a>,  <a href=\"https://disneyprivacycenter.com/kids-privacy-policy/english/\">Children's
+        Online Privacy Policy</a> and <a href=\"http://preferences-mgr.truste.com/?type=espn&affiliateId=148\">Interest-Based
+        Ads</a> are applicable to you.  All rights reserved.\n\n<!--\n<a href=\"http://www.espnshop.com/\"
+        onClick=\"location.href('http://log.go.com/log?srvc=sz&guid=73B641A0-6660-4EFC-B8FF-9DE23E8CD9BD&drop=0&addata=3374:65:478847:65&a=1&goto=http://www.espnshop.com/');return
+        false\">Shop</a>\n--></div>\n<!-- end footer -->\n<!--[if lte IE 9]></div><![endif]-->\n</div>\n<!--
+        end bg-elements -->\n\n\n<!-- SiteCatalyst code version: H.21.3 Copyright
+        1997-2010 Omniture, Inc. http://www.omniture.com -->\n<script type=\"text/javascript\">\n\tvar
+        undef = 'undefined'\n\t,s_account=\"wdgespcom\"\n\t,omniPageName = \"espn:nba:game:photos:400489474+-+lal+at+tor\"\n\t\n\t,insiderStatus
+        = \"\"\n\t,anGen = \"\"\n\t,anYear = \"\"\n\t,anDateString = \"\"\n\t,anLoginStatus
+        = \"\"\n\t,callOmniture = function(){\n\t\t/*-- core story s_omni properties
+        --*/\n\t\tif (typeof anCV != \"undefined\"){anParseLoginBarInfo(anCV);}\n\t\ts_omni.pageName=\"nba:game:photos:400489474+-+lal+at+tor\";\n\t\ts_omni.server
+        = window.location.host; // Server from the Host\n\t\ts_omni.channel = \"nba\";\n\t\ts_omni.prop1
+        = \"espn\";\n\t\ts_omni.prop4 = \"nbaphotos\";\n\t\ts_omni.prop5 = \"nba:game:photos\";\n\t\ts_omni.prop11
+        = (insiderStatus !== null) ? insiderStatus + \":premium-no\" : \"premium-no\";\n\t\ts_omni.prop17
+        = \"en\";\n\t\ts_omni.prop21 = anDateString;\n\t\ts_omni.prop22 = anGen;\n\t\ts_omni.prop25
+        = \"basketball\";\n\t\ts_omni.prop26 = \"nba\";\n\t\ts_omni.prop29 = anLoginStatus;\n\t\ts_omni.prop30
+        = \"n\";\n\t\ts_omni.hier1 = \"nba:game:photos:400489474+-+lal+at+tor\";\n\t\ts_omni.eVar7
+        = anYear + \":\" + anGen + \":\" + anLoginStatus + \":\" + s_omni.prop11 +
+        \":\";\n\t\ts_omni.eVar9 = \"en\";\n\t\ts_omni.eVar13 = \"nba:game:photos:400489474+-+lal+at+tor\";\n\t\ts_omni.eVar19
+        = \"basketball\";\n\t\ts_omni.eVar21 = \"nba\";\n\t\t\n\t\tif (s_omni.prop11==\"anonymous:premium-yes\"
+        || s_omni.prop11==\"insider-no:premium-yes\" && typeof s_omni.prop4!=\"undefined\"
+        &&\n\t\t\t(s_omni.prop4==\"story\" || s_omni.prop4==\"blog\")) {\n\t\t\tif
+        (typeof s_omni.events != \"undefined\" && s_omni.events!=\"\") {\n\t\t\t\ts_omni.events
+        = s_omni.events+\",event8\";\n\t\t\t} else { \n\t\t\t\ts_omni.events=\"event8\";\n\t\t\t}\n\t\t}\n\t\t\n\t\ts_omni.prop38
+        = \"Desktop\";\n\t\ts_omni.eVar38 = \"D=c38\";\n\t\t\n\t\t\n\t\tanVersion
+        = \"_11apr14_v2_0_r5_\";\n\t\t\n\t\t/************* DO NOT ALTER ANYTHING BELOW
+        THIS LINE ! **************/\n\t\t\n\t\tvar s_code = s_omni.t();\n\t\tif(s_code)
+        {\n\t\t\tvar sci = new Image(1,1);\n\t\t\tsci.onload = function() {console.log(\"loaded
+        no append\")};\n\t\t\tsci.src = s_code;\n\t\t}\n\t\t\n\t};\t\n</script>\n\n\n\n<script
+        type=\"text/javascript\">\n\tif (typeof(s_omni) === 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\t// we want to load the analytics files from the cache if possible
+        - so, let's use full $.ajax() calls\n\t\t\t$.ajax({\n\t\t\t\ttype:'GET',\n\t\t\t\turl:
+        'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/externalnielsen.js&v=15',\n\t\t\t\tdataType:
+        'script',\n\t\t\t\tcache: true,\n\t\t\t\tsuccess: function() {\n\t\t\t\t\tvar
+        lgSrc;\n\t\t\t\t\tif(typeof anCV !== undef && anCV === '' && document.getElementById('form-memberarea')
+        != null) {\n\t\t\t\t\t\tlgSrc = 'https://r.espn.go.com/members/util/getUserInfo?cb=runOmnitureIndependently&regType=true';\n\t\t\t\t\t\t$.getScript(lgSrc);
+        // we don't want this to be cached - so we'll use the $.getScript() method\n\t\t\t\t\t}
+        else {\n\t\t\t\t\t\tcallOmniture();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t});\n\t\t});\n\t}\n</script>\n\n<!--
+        End SiteCatalyst code version: H.21. -->\n\n\n<!-- Begin comScore Tag -->\n<script
+        type=\"text/javascript\">\n\tif (typeof(jQuery) !== 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\tif(typeof window._comscore === 'undefined') {\n\t\t\t\twindow._comscore
+        = window._comscore || [];\n\t\t\t\twindow._comscore.push({ c1: \"2\", c2:
+        \"3000005\" });\n\t\t\t\tjQuery.getScript((document.location.protocol == \"https:\"
+        ? \"https://sb\" : \"http://b\") + \".scorecardresearch.com/beacon.js\");\n\t\t\t}\n\t\t});\n\t}\n</script>\n<!--
+        End comScore Tag -->\n\t\t<script>\n\t\tvar _sf_async_config={\n\t\t\t\"uid\":22222,\n\t\t\t\"domain\":\"espn.go.com\",\n\t\t\t\"pingServer\":\"pespn.chartbeat.net\",\n\t\t\t\"useCanonical\":true,\n\t\t\t\"useSubDomains\":false,\n\t\t\t\"sections\":\"nba:gamehq:photos,photos,game\",\n\t\t\t\"authors\":\"gamehq\"\n\t\t};\n\t\tif
+        (typeof(ad_site) !== 'undefined') { _sf_async_config.zone = ad_site; }\n\n\t\t//
+        load both chartbeat_pub and chartbeat_video\n\t\t(function () {\n\t\t\tfunction
+        a() {\n\t\t\t\twindow._sf_endpt = (new Date()).getTime();\n\n\t\t\t\tvar cbDomain
+        = ((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\");\n\n\t\t\t\tvar
+        c = document.createElement(\"script\");\n\t\t\t\tc.setAttribute(\"language\",\"javascript\");\n\t\t\t\tc.setAttribute(\"type\",\"text/javascript\");\n\t\t\t\tc.setAttribute(\"src\",
+        cbDomain+\"js/chartbeat_pub.js\");\n\t\t\t\tdocument.body.appendChild(c);\n\n\t\t\t\tif(typeof
+        StrategyInterface !== 'undefined' && (typeof espn !== 'undefined' && typeof
+        espn.video !== 'undefined')){\n\t\t\t\t\tvar e = document.createElement(\"script\");\n\t\t\t\t\te.setAttribute(\"language\",\t\"javascript\");\n\t\t\t\t\te.setAttribute(\"type\",
+        \"text/javascript\");\n\t\t\t\t\te.setAttribute(\"src\", cbDomain+\"js/chartbeat_video.js\");\n\t\t\t\t\tdocument.body.appendChild(e);\n\t\t\t\t}\n\t\t\t}\n\t\t\tvar
+        b = window.onload;\n\t\t\twindow.onload = (typeof window.onload != \"function\")
+        ? a : function () { b(); a() }\n\t\t})();\n\t\t//(function(){function a(){window._sf_endpt=(new
+        Date()).getTime();var c=document.createElement(\"script\");c.setAttribute(\"language\",\"javascript\");c.setAttribute(\"type\",\"text/javascript\");c.setAttribute(\"src\",((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\")+\"js/chartbeat_pub.js\");document.body.appendChild(c)}var
+        b=window.onload;window.onload=(typeof window.onload!=\"function\")?a:function(){b();a()}})();\n\t\t</script>\n\t\n<!--
+        dynamic logic: safecount -->\n<script src=\"http://content.dl-rms.com/rms/mother/508/nodetag.js\"></script>\n\n<script
+        type=\"text/javascript\" charset=\"utf-8\">buildOutHeadlinesForPinnedSite();</script>\n<script
+        type=\"text/javascript\">\n   var isInIFrame = (window.location != window.parent.location)
+        ? true : false;\n   if(isInIFrame){ if(document.referrer){ if(document.referrer.indexOf(\".go.com\")==-1){
+        top.location.href=self.location.href; } } }\n</script>\n\n<script type='text/javascript'>\n
+        \ //<![CDATA[\n    (function(){\n    window.gravityInsightsParams = {\n      'type':
+        'content',\n      'action': '',\n      'site_guid': '9a41401e9b7c945344e001ee7f23031e'\n
+        \   };\n    var b,c;b=\"https:\"===document.location.protocol?\"https://b-ssl.grvcdn.com/moth-min.js\":\"http://b.grvcdn.com/moth-min.js\";window.grvMakeScript=function(d){var
+        a;a=document.createElement(\"script\");a.type=\"text/javascript\";a.async=!0;a.src=d;return
+        a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
+        \ //]]>\n</script><script type=\"text/javascript\">if (!NREUMQ.f) { NREUMQ.f=function()
+        {NREUMQ.push([\"load\",new Date().getTime()]);var e=document.createElement(\"script\");e.type=\"text/javascript\";e.src=((\"http:\"===document.location.protocol)?\"http:\":\"https:\")
+        + \"//\" + \"js-agent.newrelic.com/nr-100.js\";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push([\"nrfj\",\"beacon-4.newrelic.com\",\"d1734eda45\",\"2756580\",\"NFMHbBFVVhYHAENcDA0ZMEoKG1YHB0xHXQwXWRY=\",0,38,new
+        Date().getTime(),\"\",\"\",\"\",\"\",\"\"]);</script></body>\n</html>"
+    http_version: 
+  recorded_at: Wed, 25 Feb 2015 20:48:18 GMT
+- request:
+    method: get
+    uri: http://espn.go.com/nba/photos?gameId=400489474&page=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html; charset=iso-8859-1
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 25 Feb 2015 20:48:16 GMT
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=300
+      P3p:
+      - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
+        BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
+      Set-Cookie:
+      - SWID=775C1363-B0D2-4D19-8D64-0D2750BE9B27; path=/; expires=Tue, 20 Feb 2035
+        20:48:16 GMT; domain=go.com;
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
+        src=\"http://sports-ak.espn.go.com/sports/optimizely.js\"></script><meta charset=\"iso-8859-1\">\n<meta
+        http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n<script type=\"text/javascript\">
+        \   \n    if(true && navigator && navigator.userAgent.toLowerCase().indexOf(\"teamstream\")
+        >= 0) {\n        window.location = 'http://a.m.espn.go.com/mobilecache/general/apps/sc';\n
+        \   }\n</script><script type=\"text/javascript\">\nvar espn=window.espn||{};espn.beta=function(a,b,c){function
+        d(b){var d,e,g,h,i,m,n,o,p;if(b!==c&&(k=b,d=b.match(/http:\\/\\/([^\\/]*)([^?]*).*/),d&&3===d.length&&(l=d[2])),l.match(/\\/story$/i)||l.match(/\\/story\\//i))return
+        h=f(\"storyId\",b)||f(\"id\",b),i=f(\"storyPage\",b)||f(\"page\",b),\"\"!==h?j+l+\"/_/id/\"+h:\"\"!==i?i.indexOf(\"/\")>-1?j+l+\"?page=\"+i:j+l+\"/_/page/\"+i:j+l;if(l.match(/\\/blogpostindex$/i)){if(e=f(\"blogname\",b),a.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===!0)return;if(\"\"!==e)return
+        j+\"/blog/\"+e}if(l.match(/\\/blogpost$/i)){if(e=f(\"blogname\",b),g=f(\"id\",b),a.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===!0)return;if(\"\"!==e&&\"\"!==g)return
+        j+\"/blog/\"+e+\"/post/_/id/\"+g}if(l.match(/^\\/blog\\//i)){if(e=f(\"blogName\",b),g=f(\"id\",b),!l.match(/\\/blog\\/.*\\/post$/i))return\"\"!==e&&\"\"!==g?j+\"/blog/\"+e+\"/post/_/id/\"+g:\"\"!==e?j+\"/blog/\"+e:j+l;if(\"\"!==g)return
+        j+l+\"/_/id/\"+g}if(!(\"\"!==l&&\"/\"!==l||k.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)||k.match(/^https?:\\/\\/search\\.espn\\.go\\.com/i)))return
+        j;var q=l.match(/^\\/.*?\\/(?:index)?$/i);if(q&&(m={\"/frontpage/\":!0,\"/wireless/\":!0,\"/general/\":!0,\"/extra/\":!0,\"/mobile/\":!0,\"/nfl/\":!0,\"/nba/\":!0,\"/mlb/\":!0,\"/nhl/\":!0,\"/ncf/\":!0,\"/college-football/\":!0,\"/ncb/\":!0,\"/mens-college-basketball/\":!0,\"/ncw/\":!0,\"/womenbb/\":!0,\"/womens-basketball/\":!0,\"/wnba/\":!0,\"/golf/\":!0,\"/tennis/\":!0,\"/general/tennis/\":!0,\"/mma/\":!0,\"/extra/mma/\":!0,\"/racing/\":!0,\"/rpm/\":!0,\"/racing/nascar/\":!0,\"/rpm/nascar/\":!0,\"/boxing/\":!0,\"/extra/boxing/\":!0,\"/college-sports/\":!0,\"/ncaa/\":!0,\"/extra/ncaa/\":!0,\"/olympics/\":!0,\"/extra/olympics/\":!0,\"/horse-racing/\":!0,\"/horse/\":!0,\"/general/horse/\":!0,\"/poker/\":!0,\"/general/poker/\":!0,\"/sports/endurance/\":!0,\"/extra/endurance/\":!0},l.match(/\\/index$/i)&&(l=l.substring(0,l.length-5)),m[l]===!0))return
+        j+l;if((l.match(/\\/nflpreview$/i)||l.match(/\\/preview$/i))&&(n=f(\"gameId\",b),\"\"!==n))return
+        l.match(/\\/nflpreview$/i)?j+\"/nfl/preview?gameId=\"+n:j+l+\"?gameId=\"+n;if(l.match(/\\/recap$/i)&&(n=f(\"gameId\",b),\"\"!==n))return
+        j+l+\"?gameId=\"+n;if(\"/general/video\"===l){if(o=f(\"cid\",b),p=f(\"vid\",b),\"\"!==o)return
+        j+\"/video/clip?id=\"+o;if(\"\"!==p)return j+\"/video/clip?id=\"+p}return
+        l.match(/^\\/(?:videohub\\/video|video)\\/clip$/i)&&(o=f(\"id\",b),\"\"!==o)?j+l+\"?id=\"+o:void
+        0}function e(a){var b=d(a),c=k.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)||a&&a.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)||espn&&espn.GLOBALS&&espn.GLOBALS.isPremium;return
+        b&&(b=b.replace(\"/wireless/\",\"/\"),b=b.replace(\"/general/\",\"/\"),b=b.replace(\"/extra/\",\"/\"),b=b.replace(\"/mobile/\",\"/\"),b=b.replace(\"/frontpage/\",\"/\"),b=b.replace(\"/videohub/\",\"/\"),b=b.replace(\"/ncf/\",\"/college-football/\"),b=b.replace(\"/rpm/\",\"/racing/\"),b=b.replace(\"/ncb/\",\"/mens-college-basketball/\"),b=b.replace(\"/ncw/\",\"/womens-basketball/\"),b=b.replace(\"/wnba/\",\"/womens-basketball/\"),b=b.replace(\"/ncaa/\",\"/college-sports/\"),c&&(b=b.replace(\"/story/\",\"/insider/story/\"),b=b.replace(\"/post/\",\"/insider/post/\"),b.match(/\\/blog\\/[^_]*$/i)&&(b+=\"/\"===b.charAt(b.length-1)?\"insider/\":\"/insider/\"))),b}function
+        f(a,b){var d=location.search;if(b!==c){var e=b.indexOf(\"?\");e>-1&&(d=b.substr(e))}a=a.replace(/[\\[]/,\"\\\\[\").replace(/[\\]]/,\"\\\\]\");var
+        f=new RegExp(\"[\\\\?&]\"+a+\"=([^&#]*)\"),g=f.exec(d);return null===g?\"\":decodeURIComponent(g[1].replace(/\\+/g,\"
+        \"))}function g(){var b=h(\"betauser\"),c=h(\"betacohort\")||\"\";if(null!==b&&0===c.indexOf(\"cohort-\")){var
+        d=c.split(\"-\");if(d&&2===d.length&&999===parseInt(d[1],10))return;var f=e();f&&(a.location=f)}}function
+        h(a){for(var c=a+\"=\",d=b.cookie.split(\";\"),e=0;e<d.length;e++){for(var
+        f=d[e];\" \"===f.charAt(0);)f=f.substring(1,f.length);if(0===f.indexOf(c))return
+        f.substring(c.length,f.length)}return null}function i(){\"beta\"===f(\"rand\")?espn.beta.recheck=!0:g()}var
+        j=\"http://beta.espn.go.com\",k=a.location.href,l=b.location.pathname;return{init:function(){i()},test:function(a){return
+        e(a)}}}(this,this.document),espn.beta.init();\n</script>\n\t<script>(function(){function
+        r(a){a=a.replace(/[\\[]/,\"\\\\[\").replace(/[\\]]/,\"\\\\]\");var c=new RegExp(\"[\\\\?&]\"+a+\"=([^&#]*)\"),b=c.exec(location.search);return
+        b==null?\"\":decodeURIComponent(b[1].replace(/\\+/g,\" \"));}var p=navigator.userAgent,o=window.location,l=document.cookie,f=document.referrer,n=(f===\"\"||f.indexOf(\".go.com\")!==-1),d=(n)?\"http://espn.go.com/nba/gamecast?gameId=400489474&version=mobile&src=desktop\":\"http://espn.go.com/nba/gamecast?gameId=400489474&version=mobile&src=desktop&rand=ref~%7B%22ref%22%3A%22\"+encodeURIComponent(f)+\"%22%7D\",i=(p.match(/iPad/i)||(p.match(/Android/i)&&!p.match(/Mobile/i))||p.match(/RIM
+        Tablet/i)||p.match(/Silk/i)),k=(p.match(/Mobile/i)||p.match(/Mini/i)),g=o.href.match(/src=mobile/i),q=l.indexOf(\"iphone_redirect=false\")>-1,e=l.indexOf(\"iphone_redirect=true\")>-1,j=r(\"addata\"),h=r(\"ex_cid\"),m=r(\"rand\");if(j!=\"\"){d+=\"&addata=\"+j;}if(h!=\"\"){d+=\"&ex_cid=\"+h;}if(m===\"beta\"){d+=\"&rand=beta\";}if(i){document.documentElement.className+=\"
+        tablet \";if((!p.match(/iPad/i)||e)&&!q){o.href=d;}}else{if(k&&!q&&!g){o.href=d;}}})();</script>\n\t<title>Los
+        Angeles Lakers vs. Toronto Raptors - Photos - January 19, 2014 - ESPN</title>\n<meta
+        name=\"google-site-verification\" content=\"xuj1ODRluWa0frM-BjIr_aSHoUC7HB5C1MgmYAM_GkA\"
+        />\n<meta name=\"msvalidate.01\" content=\"B1FEB7C682C46C8FCDA3130F3D18AC28\"
+        />\n<meta name=\"googlebot\" content=\"noodp\" />\n<meta name=\"robots\" content=\"index,
+        follow\" />\n<meta name=\"description\" content=\"NBA Basketball Photos: Final
+        statistics from the Los Angeles Lakers vs. Toronto Raptors game played on
+        January 19, 2014\" />\n<meta name=\"keywords\" content=\"nba basketball Photos,
+        Los Angeles stats, Toronto stats\" />\n<meta property=\"fb:app_id\" content=\"116656161708917\">\n<meta
+        property=\"og:site_name\" content=\"ESPN.com\">\n<link rel=\"canonical\" href=\"http://espn.go.com/nba/photos/_/id/400489474/page/3/la-lakers-lakers-vs-toronto-raptors\"
+        />\n<script type=\"text/javascript\">var NREUMQ=NREUMQ||[];NREUMQ.push([\"mark\",\"firstbyte\",new
+        Date().getTime()]);</script>\n\t\t<script>var _sf_startpt=(new Date()).getTime();</script>\n<link
+        rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"http://a.espncdn.com/search/opensearch.xml\"
+        title=\"ESPN Search\" />\n<link rel=\"stylesheet\" href=\"http://a.espncdn.com/combiner/c/201401211964?css=global_reset.r1.css,base.r236.css,modules.r462.css,global_header.r44.css,header_topbar.r1.css,modules/global_nav.r54.css,modules/insider_enhanced.r1.css,modules/mem/mem.r12.1.css,modules/mem/mem_espn360.r8.4.css,modules/mem/skirmish.r8.css,modules/twin.r1.css,modules/facebook/button.r2.css,universal_overlay/universal_overlay.css,universal_overlay/media_overlay.css,universal_overlay/video_overlay.css,universal_overlay/photo_overlay.css,universal_overlay/dyk_overlay.css,fonts/bentonsans.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c/201303290924?css=sprites/teamlogos.r18.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c?v=201308011131&css=modules/playerpopup.r2.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c?v=201108152006&css=modules/videoplayer12.r1.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c?v=201407081137&css=/espn/espn/styles/gamepackage10/ootCSS,/espn/espn/styles/gamepackage10/gamepackage10CSS,/espn/espn/styles/gamepackage10/gamepackage10moduleCSS,/espn/espn/styles/teamSprites/nbaSpriteCSS&v=1\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/prod/styles/social_upgrade.r1.css\" type=\"text/css\"
+        media=\"screen\" charset=\"utf-8\" />\n<script type=\"text/javascript\">\nvar
+        _vrq = _vrq || [];\n _vrq.push(['id', 489]);\n _vrq.push(['automate', false]);\n
+        _vrq.push(['track', function(){}]);\n (function(d, a){var s = d.createElement(a),x
+        = d.getElementsByTagName(a)[0];\ns.async = true;\ns.src = 'http://a.visualrevenue.com/vrs.js';\n
+        x.parentNode.insertBefore(s, x);})(document, 'script'); </script>\n<script
+        src=\"http://a.espncdn.com/combiner/c?js=jquery-1.7.1.js,plugins/json2.r3.js,plugins/teacrypt.js,plugins/jquery.metadata.js,plugins/jquery.bgiframe.r3.js,plugins/jquery.easing.1.3.js,plugins/jquery.hoverIntent.js,plugins/jquery.jcarousel.0.2.9.js,plugins/jquery.tinysort.r4.js,plugins/jquery.pubsub.r5.js,ui/1.8.16/jquery.ui.core.js,ui/1.8.16/jquery.ui.widget.js,ui/1.8.16/jquery.ui.tabs.js,ui/1.8.16/jquery.ui.accordion.js,plugins/ba-debug-0.4.js,espn.l10n.r12.js,swfobject/2.2/swfobject.js,flashObjWrapper.r7.js,plugins/jquery.colorbox.1.3.14.js,plugins/jquery.ba-postmessage.js,espn.core.duo.r57.js,m/beta/betacheck.r5.js,espn.mem.r39.js,stub.search.r9.js,espn.nav.mega.r38b.js,espn.storage.r6.js,espn.p13n.r20.js,espn.geo.r3.js,espn.video.r81.r5.js,analytics/chartbeat/video/strategy_comprehensive.r1.js,registration/staticLogin.r12.06102014.js,espn.universal.overlay.r19.js,insider/espn.insider.20140915.js,espn.espn360.stub.r9.js,espn.myHeadlines.stub.r16.js,espn.myfaves.stub.r3.js,tsscoreboard.20090612.js,ie9pinning.r3.js,espn.f8.noauth.r3.js,espn.socialmediamod.r7.js,playerpopup.r14.js\"></script>\n<script
+        src=\"http://a.espncdn.com/prod/scripts/espn.loader.200901201835.js\" type=\"text/javascript\"
+        charset=\"utf-8\"></script>\n<script type=\"text/javascript\" charset=\"utf-8\">\nESPN.include([\n\t'http://widgets.outbrain.com/outbrain.js'\n]);\n</script>\n<script>espn.core.navVersion
+        = 'a';</script>\n<script>var ad_site=\"espn.us.com.nba\",ad_zone=\"nbaphotos\",ad_kvps=\"pgtyp=nbaphotos;sp=nba;\",ad_swid=\"\",ad_counter=1,ad_ord=Math.floor(9999999999*Math.random()),ad_seg=\"\",ad_mnr=-1<document.cookie.indexOf(\"grif=1\")?\"t\":\"f\",ad_ref=\"other\",ref=document.referrer,refsMap={\"facebook.com\":\"facebook\",\"twitter.com|t.co\":\"twitter\",\"plus.url.google.com|plus.google.com\":\"googleplus\",\"google.com\":\"google\",\"bing.com\":\"bing\",\"yahoo.com\":\"yahoo\",\"espn.go.com\":\"espn\"},refKey;for(refKey
+        in refsMap)ref.match(refKey)&&(ad_ref=refsMap[refKey]);\nad_kvps=ad_kvps+\"ref=\"+ad_ref+\";mnr=\"+ad_mnr+\";\";ad_swid=jQuery.cookie(\"SWID\");\"function\"===typeof
+        espn.core.ad_segments&&(ad_seg=espn.core.ad_segments(),null!=ad_seg&&\"\"!=ad_seg&&(ad_kvps+=ad_seg));var
+        ad_u=\"\";null!=ad_swid&&\"\"!=ad_swid&&(ad_u=\"swid=\"+ad_swid+\";\");</script>\n</head>\n<body
+        class=\"game-package nba {sportId:46}\" >\n<div class=\"mboxDefault\"><link
+        rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/prod/styles/modules/hideGravity.css\"
+        type=\"text/css\" /></div><script>mboxCreate('ESPN_global');</script><!--[if
+        IE 5]><div class=\"ie5\"><![endif]-->\n<!--[if IE 6]><div class=\"ie ie6\"><![endif]-->\n<!--[if
+        IE 7]><div class=\"ie ie7\"><![endif]-->\n<!--[if IE 8]><div class=\"ie ie8\"><![endif]-->\n<!--[if
+        IE 9]><div class=\"ie9\"><![endif]-->\n<!-- begin bg-elements -->\n<div class=\"bg-elements\">\n<!--
+        begin header -->\n<div id=\"header\" class=\"container\">\n<!-- begin top-bar
+        -->\n<div class=\"top-bar\">\n<!-- begin uni login -->\n<script type=\"text/javascript\">\nvar
+        returnURL = document.location.href;\nvar anCV = \"\";\nvar myEspnText = {'welcometext':'Welcome','register':'Register','signin':'Sign
+        In','signout':'Sign Out','heliumdown':'Login Temporarily Unavailable','connectedfacebook':'Connected
+        to Facebook','connectfacebook':'Connect with Facebook','activateinsider':'Activate
+        Insider'};\n</script>\n<form id=\"form-memberarea\">\n<input type=\"hidden\"
+        name=\"language\" id=\"language\" value=\"en\"/>\n<input type=\"hidden\" name=\"affiliateName\"
+        id=\"memberAreaAffiliateName\" value=\"espn\"/>\n<input type=\"hidden\" name=\"regFormId\"
+        id=\"regFormId\" value=\"espn\"/>\n</form>\n<div class=\"signin\" id=\"signin\"></div>\n<script>espn.memberservices.welcome();</script>\n<div
+        class=\"nav-edition editions\">\n<label>EDITIONS:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-usa active\"><a href=\"http://espn.go.com/\" name=\"&amp;lpos=editionsnav&amp;lid=usa\">USA</a></li>\n\t<li
+        class=\"e-deportes\"><a href=\"http://www.espn.com?country-view=us&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=deportes\" class=\"{langPref:'spanish'}\">DEPORTES</a></li>\n\t<li
+        class=\"last dropdown\">\n\t<ul class=\"\">\n\t<li class=\"selected\">More</li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=ar&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=argentina\">Argentina</a></li>\n\t<li><a
+        href=\"http://www.espn.com.au\" name=\"&amp;lpos=editionsnav&amp;lid=australia\">Australia</a></li>\n\t<li><a
+        href=\"http://www.espn.com.br\" name=\"&amp;lpos=editionsnav&amp;lid=brazil\">Brazil</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=co&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=colombia\">Colombia</a></li>\n
+        \       <li><a href=\"http://www.espn.com?country-view=mx&lang-view=es\" name=\"&amp;lpos=editionsnav&amp;lid=mexico\">Mexico</a></li>\n\t<li><a
+        href=\"http://www.espn.co.uk/\" name=\"&amp;lpos=editionsnav&amp;lid=uk\">United
+        Kingdom</a></li>\n        <li><a href=\"http://www.espn.com?country-view=ve&lang-view=es\"
+        name=\"&amp;lpos=editionsnav&amp;lid=venezuela\">Venezuela</a></li>\n\t</ul>\n\t</li>\n</ul>\n</div>\n\n<div
+        class=\"nav-edition\">\n<label>CITIES:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-boston\"><a href=\"http://espn.go.com/boston/\" name=\"&amp;lpos=citynav&amp;lid=boston\">BOSTON</a></li>\n\t<li
+        class=\"e-chicago\"><a href=\"http://espn.go.com/chicago/\" name=\"&amp;lpos=citynav&amp;lid=chicago\">CHICAGO</a></li>\n\t<li
+        class=\"e-dallas\"><a href=\"http://espn.go.com/dallas/\" name=\"&amp;lpos=citynav&amp;lid=dallas\">DALLAS</a></li>\n\t<li
+        class=\"e-losangeles\"><a href=\"http://espn.go.com/los-angeles/\" name=\"&amp;lpos=citynav&amp;lid=losangeles\">LOS
+        ANGELES</a></li>\n\t<li class=\"last e-newyork\"><a href=\"http://espn.go.com/new-york/\"
+        name=\"&amp;lpos=citynav&amp;lid=newyork\">NEW YORK</a></li>\n</ul>\n</div>\n</div>\n<!--
+        end top-bar -->\n<!-- begin espn-logo -->\n<div class=\"espn-logo\">\n<h1>\n<a
+        href=\"http://espn.go.com/\" name=\"&lpos=sitenavdefault&lid=sitenav_main-logo\"
+        class=\"espn\">ESPN</a> <a href=\"http://espn.go.com/nba/\" class=\"section-title\">NBA</a></h1>\n</div>\n<!--
+        end espn-logo -->\n<!-- begin ad -->\n<span class=\"presby\"><!--espn.us.com.nba
+        sitezone--><!--http://ad.Doubleclick.net hostUrl-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.nba\",ad_zone=\"nbaphotos\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=SponsoredByLogoHeader;\"+ad_u+\"sz=150x45,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"SponsoredByLogoHeader\" data-cb-dfp-id=\"'+ad_kvps+'sz=150x45,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nba/nbaphotos;pgtyp=nbaphotos;sp=nba;sz=150x45,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nba/nbaphotos;pgtyp=nbaphotos;sp=nba;sz=150x45,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</span>\n<!-- end ad -->\n<div class=\"header-right\">\n<style>.ie6
+        #searchBox, .ie6 #searchBox div { display: inline; } </style><!-- begin search
+        -->\n<div id=\"nav-main-search\">\n<form id=\"searchBox\" name=\"searchBox\"
+        action=\"http://search.espn.go.com/results\" method=\"get\" accept-charset=\"utf-8\"
+        style=\"color: #999999;\">\n<div class=\"clearfix\">\n<input autocomplete=\"off\"
+        class=\"text\" type=\"text\" placeholder=\"Search\" name=\"searchString\"
+        id=\"searchString\" />\n<input type=\"hidden\" name=\"page\" id=\"page\" value=\"null\"
+        />\n<input type=\"hidden\" name=\"fromForm\" value=\"true\" />\n<input class=\"submit\"
+        type=\"submit\" value=\"\" />\n</div>\n</form>\n</div>\n<!-- end search -->\n<div
+        id=\"shop\"><a class=\"shop-btn\" href=\"http://www.dickssportinggoods.com/category/index.jsp?categoryId=15504446&camp=Part:ESPNpart::nbashopbutton:NBA\"
+        name=\"&lpos=sitenavdefault&lid=sitenav_shopbutton\" rel=\"nofollow\">Shop</a></div></div>\n</div>\n<!--
+        end header -->\n<!--espn.us.com.nba sitezone--><!--http://ad.Doubleclick.net
+        hostUrl-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nba\",ad_zone=\"nbaphotos\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Background_Skin;\"+ad_u+\"sz=1280x946,200x800,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Background_Skin\" data-cb-dfp-id=\"'+ad_kvps+'sz=1280x946,200x800,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nba/nbaphotos;pgtyp=nbaphotos;sp=nba;sz=1280x946,200x800,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nba/nbaphotos;pgtyp=nbaphotos;sp=nba;sz=1280x946,200x800,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n<!-- begin subheader -->\n<div id=\"subheader\">\n<!--
+        begin content -->\n<div id=\"content-wrapper\">\n<div id=\"ad-top\" class=\"container\">\n<!--
+        begin Banner ad -->\n<div class=\"span-6 ad banner top\"><div class=\"ad-center\"><div
+        class=\"ad-wrapper\"><!--espn.us.com.nba sitezone--><!--http://ad.Doubleclick.net
+        hostUrl-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nba\",ad_zone=\"nbaphotos\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Banner;\"+ad_u+\"sz=728x90,970x66,924x50,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Banner\" data-cb-dfp-id=\"'+ad_kvps+'sz=728x90,970x66,924x50,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nba/nbaphotos;pgtyp=nbaphotos;sp=nba;sz=728x90,970x66,924x50,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nba/nbaphotos;pgtyp=nbaphotos;sp=nba;sz=728x90,970x66,924x50,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div></div></div>\n<!-- end Banner
+        ad -->\n</div>\n<div id=\"content\" class=\"container\">\n<div id=\"fb-root\"></div><!--[if
+        lte IE 7]><link rel=\"stylesheet\" charset=\"utf-8\" media=\"screen\" href=\"http://a.espncdn.com/combiner/c?css=modules/browser-alert.r7.css\"
+        type=\"text/css\" /><div class=\"span-6\" id=\"browser-alert-wrapper\" style=\"display:none;\"><div
+        class=\"mod-container mod-no-header-footer browser-alert\"><div class=\"mod-content\"><div
+        class=\"gradient-container\"><h1><span>Your Web Browser</span> is no longer
+        supported</h1><p>To experience everything that ESPN.com has to offer, we recommend
+        that you upgrade to a newer version of your web browser. Click the upgrade
+        button to the right or <a href=\"http://espn.go.com/espn/news/story?id=5630562\">learn
+        more</a>.</p><ul><li><a class=\"btn-upgrade\" href=\"http://www.microsoft.com/windows/internet-explorer/default.aspx\">Upgrade</a></li><li><a
+        class=\"btn-faq\" href=\"http://espn.go.com/espn/news/story?id=5630562\">FAQs</a></li></ul></div></div></div></div><script>(function(b){setTimeout(function(){var
+        a=b(\"#browser-alert-wrapper\");if(espn.cookie.get(\"browseralert\")!=\"true\"){b('<a
+        class=\"btn-close\" href=\"#\">Close</a>').bind(\"click\",function(){a.hide();espn.cookie.set(\"browseralert\",\"true\",30);return
+        false}).appendTo(a.find(\".gradient-container\"));a.show();espn.cookie.set(\"browseralert\",\"true\")}},100)})(jQuery);</script><![endif]-->\n\n<div
+        class=\"scoreboard-strip-wrapper\" style=\"height:61px; width:916px;\">\n\t<div
+        class=\"scoreboard-strip oot-wide\" id=\"ootScoreboard\">\n\t\t<div id=\"ootShadow\"></div>\n\n\t\t<div
+        class=\"scoreboard-title-hq\">\n\t\t\t\n\n\t\t\t\t<div class=\"subhead\">\n\n\t\t\t\t\t<span>\n\t\t\t\t\t\t<a
+        name=\"&lpos=nbaGamePackageOOT&lid=scoreLinkOOT\" href=\"/nba/scoreboard?date=20140119\">Scores
+        for Jan 19, 2014</a>\n\t\t\t\t\t</span>\n\n\t\t\t\t</div>\n\n\t\t\t\n\t\t</div>\n\n\t\t<div
+        class=\"scoreboard-container\" id=\"scoreboard2\" style=\"width:auto !important;
+        \ margin-left: 210px !important\">\n\t\t\t<div class=\"container\">\n\t\t\t\t<div
+        style=\"display: block;\" class=\"jcarousel-prev jcarousel-next-horizontal
+        oot-prev\"></div>\n\t\t\t\t<div style=\"display: block;\" class=\"jcarousel-next
+        jcarousel-next-horizontal oot-next\"></div>\n\t\t\t\t<div class=\"mod-content
+        \ mod-content-hq\">\n\t\t\t\t\t<div id=\"nba-scores\" class=\"scores-carousel
+        {note:'THERE ARE NO NBA GAMES TODAY'} ui-tabs-panel ui-widget-content ui-corner-bottom\">\n\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t<li
+        id=\"nba-400489474\"><!-- url: http://espn.go.com/nba/photos --><a name=\"&lpos=nbaGamePackageOOT&lid=gameLinkOOT\"
+        href=\"http://espn.go.com/nba/photos?gameId=400489474\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"status\">Final</span><span class=\"hidden-clock\"></span></div><div
+        class=\"game-right\"><span class=\"clock\"></span></div>&nbsp;</div><div class=\"clear\"></div><div
+        class=\"game-left\"><div class=\"info away-winner\"></div><div class=\"teams\"><span
+        class=\"away\">LAL</span><br/><span class=\"home\">TOR</span></div><div class=\"hidden-scores\"><span
+        class=\"away\">112</span><br/><span class=\"home\">106</span></div><div class=\"scores\"><span
+        class=\"away\">112</span><br/><span class=\"home\">106</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">0</span></div></a></li><li id=\"nba-400489475\"><!--
+        url: http://espn.go.com/nba/photos --><a name=\"&lpos=nbaGamePackageOOT&lid=gameLinkOOT\"
+        href=\"http://espn.go.com/nba/photos?gameId=400489475\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"status\">Final</span><span class=\"hidden-clock\"></span></div><div
+        class=\"game-right\"><span class=\"clock\"></span></div>&nbsp;</div><div class=\"clear\"></div><div
+        class=\"game-left\"><div class=\"info home-winner\"></div><div class=\"teams\"><span
+        class=\"away\">BOS</span><br/><span class=\"home\">ORL</span></div><div class=\"hidden-scores\"><span
+        class=\"away\">91</span><br/><span class=\"home\">93</span></div><div class=\"scores\"><span
+        class=\"away\">91</span><br/><span class=\"home\">93</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">1</span></div></a></li><li id=\"nba-400489476\"><!--
+        url: http://espn.go.com/nba/photos --><a name=\"&lpos=nbaGamePackageOOT&lid=gameLinkOOT\"
+        href=\"http://espn.go.com/nba/photos?gameId=400489476\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"status\">Final</span><span class=\"hidden-clock\"></span></div><div
+        class=\"game-right\"><span class=\"clock\"></span></div>&nbsp;</div><div class=\"clear\"></div><div
+        class=\"game-left\"><div class=\"info home-winner\"></div><div class=\"teams\"><span
+        class=\"away\">SAC</span><br/><span class=\"home\">OKC</span></div><div class=\"hidden-scores\"><span
+        class=\"away\">93</span><br/><span class=\"home\">108</span></div><div class=\"scores\"><span
+        class=\"away\">93</span><br/><span class=\"home\">108</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">2</span></div></a></li><li id=\"nba-400489477\"><!--
+        url: http://espn.go.com/nba/photos --><a name=\"&lpos=nbaGamePackageOOT&lid=gameLinkOOT\"
+        href=\"http://espn.go.com/nba/photos?gameId=400489477\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"status\">Final</span><span class=\"hidden-clock\"></span></div><div
+        class=\"game-right\"><span class=\"clock\"></span></div>&nbsp;</div><div class=\"clear\"></div><div
+        class=\"game-left\"><div class=\"info home-winner\"></div><div class=\"teams\"><span
+        class=\"away\">MIL</span><br/><span class=\"home\">SA</span></div><div class=\"hidden-scores\"><span
+        class=\"away\">82</span><br/><span class=\"home\">110</span></div><div class=\"scores\"><span
+        class=\"away\">82</span><br/><span class=\"home\">110</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">3</span></div></a></li><li id=\"nba-400489478\"><!--
+        url: http://espn.go.com/nba/photos --><a name=\"&lpos=nbaGamePackageOOT&lid=gameLinkOOT\"
+        href=\"http://espn.go.com/nba/photos?gameId=400489478\" class=\"ootLink\"><div
+        class=\"game final\" ><div class=\"game-status final \"><div class=\"game-left\"><span
+        class=\"status\">Final</span><span class=\"hidden-clock\"></span></div><div
+        class=\"game-right\"><span class=\"clock\"></span></div>&nbsp;</div><div class=\"clear\"></div><div
+        class=\"game-left\"><div class=\"info home-winner\"></div><div class=\"teams\"><span
+        class=\"away\">DEN</span><br/><span class=\"home\">PHX</span></div><div class=\"hidden-scores\"><span
+        class=\"away\">103</span><br/><span class=\"home\">117</span></div><div class=\"scores\"><span
+        class=\"away\">103</span><br/><span class=\"home\">117</span></div></div><div
+        class=\"clear\"></div><span class=\"sort\">4</span></div></a></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<script
+        type=\"text/javascript\">\n\n\tvar ESPNootScoreboard = {};\n\n\tESPNootScoreboard.activeSport
+        = 'nba';\n\n\tESPNootScoreboard.myTeams = {'46-19': ['nba-400489475'], \n'46-28':
+        ['nba-400489474'], \n'46-2': ['nba-400489475'], \n'46-21': ['nba-400489478'],
+        \n'46-7': ['nba-400489478'], \n'46-15': ['nba-400489477'], \n'46-24': ['nba-400489477'],
+        \n'46-23': ['nba-400489476'], \n'46-13': ['nba-400489474'], \n'46-25': ['nba-400489476']};\n\n\t(function($){\n\t\t//checking
+        insider access for pickcenter module on preview page\n\t\tvar insiderAccess
+        = false;\n\t    if(espn.core.loggedIn == true){\n\t        szprem = espn.storage.getItem('szpremToken');\n\t
+        \       insiderDirect = espn.storage.getItem('insiderDirectToken');\n\t        if(szprem
+        == true || insiderDirect == true){\n\t            insiderAccess = true;\n\t
+        \       }\n\t    }\n\t    $(document).ready(function(){\n\t\t    if(insiderAccess){\n\t\t
+        \   \t$(\"div#insiderTrue\").show();\n\t\t    }\n\t\t    if(!insiderAccess){\n\t\t
+        \   \t$(\"div#insiderFalse\").show();\n\t\t    \t$(\"div#insiderTrue\").html('');\n\t\t
+        \   }\n\t\t});\n    }(jQuery));\n\n</script>\n\n\n<script type=\"text/javascript\"
+        src=\"http://a.espncdn.com/combiner/c?v=201011241739&js=/espn/espn/javascript/gamepackage10/gamepackageOOTJS?sport=nba_en,/espn/espn/javascript/gamepackage10/fixedOOTJS\"></script><div
+        class=\"gamehq-wrapper\"><div class=\"summary-tabs-container\"><div class=\"span-4\"
+        id=\"gamepackageTop\"><div class=\"status-bar status-final\"><p class=\"game-state\">Final
+        </p><!-- Series at a Glance -->\n\n\t\t\t<script langage=\"javascript\">\n\t\t\t\tjQuery(function($){\n\t\t\t\t\t$(\"#series-dd-arrow\").click(function(){\n\t\t\t\t\t\tif($('#series-dd').is(\":hidden\")){\n\t\t\t\t\t\t\t$('#series-dd').show();\n\t\t\t\t\t\t}else{\n\t\t\t\t\t\t\t$('#series-dd').hide();\n\t\t\t\t\t\t}\n\t\t\t\t\t\treturn
+        false;\n\t\t\t\t\t});\n\t\t\t\t\t$(\"#dd-close\").click(function(){\n\t\t\t\t\t\t$('#series-dd').hide();\n\t\t\t\t\t\treturn
+        false;\n\t\t\t\t\t});\n\t\t\t\t});\n\t\t\t</script>\n\n\n\t\t\t<div class=\"series-status\"><p>Regular
+        Season Series (Game 2 of 2)</p><a href=\"#\" class=\"arrow\" id=\"series-dd-arrow\"></a></div><div
+        class=\"series-dropdown\" id=\"series-dd\"><p class=\"close-link\"><a href=\"#\"
+        id=\"dd-close\">Close</a></p><p class=\"dd-series-status\">Series starts 12/8</p><table
+        cellspacing=\"0\" class=\"dd-game\"><tr><th colspan=\"3\"><span>Game 1:</span>
+        Sunday, December 8th</th></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors
+        \" style=\"color:#000 !important;\">Raptors</a></td><td class=\"score\">106</td><td
+        class=\"dd-game-status\" rowspan=\"2\">Final<br/></td></tr><tr><td class=\"team\"><a
+        href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers \" style=\"color:#000
+        !important;\">Lakers</a></td><td class=\"score\">94</td></tr><tr><td colspan=\"3\"
+        class=\"footer-links\"><a href=/nba/recap?gameId=400489176>Recap &#187;</a><a
+        href=/nba/boxscore?gameId=400489176>Boxscore &#187;</a></td></tr></table><table
+        cellspacing=\"0\" class=\"dd-game\"><tr><th colspan=\"3\"><span>Game 2:</span>
+        Sunday, January 19th</th></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers
+        \" style=\"color:#000 !important;\">Lakers</a></td><td class=\"score\">112</td><td
+        class=\"dd-game-status\" rowspan=\"2\">Final<br/></td></tr><tr><td class=\"team\"><a
+        href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors \" style=\"color:#000
+        !important;\">Raptors</a></td><td class=\"score\">106</td></tr><tr><td colspan=\"3\"
+        class=\"footer-links\"><a href=/nba/recap?gameId=400489474>Recap &#187;</a><a
+        href=/nba/boxscore?gameId=400489474>Boxscore &#187;</a></td></tr></table></div><!--
+        end Series at a Glance -->\n</div><div class=\"matchup \" id=\"matchup-nba-400489474\"><div
+        class=\"team away\"><div class=\"logo-medium\" style=\"background:#542582;\"><img
+        src=\"http://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500-dark/lal.png&w=40&h=40&transparent=true\"
+        alt=\"\"/></div><div class=\"team-info\"><h3 abbr=\"false\"><a href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\">Lakers</a>
+        <span>112</span></h3><p>(16-25, 8-14 away)</p></div></div><div class=\"team
+        home\"><div class=\"logo-medium\" style=\"background:#CE0F41;\"><img src=\"http://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500-dark/tor.png&w=40&h=40&transparent=true\"
+        alt=\"\"/></div><div class=\"team-info\"><h3><a href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors\">Raptors</a>
+        <span>106</span></h3><p>(20-19, 10-9 home)</p></div></div></div><div class=\"game-actions\"><ul></ul></div><style
+        type=\"text/css\">.game-actions {display:none;}</style><div class=\"game-vitals\"><p
+        style=\"padding: 8px 0px 0px; float: right; font-size: 11px;\">Coverage: <strong>TSN</strong></p><div
+        class=\"game-time-location\"><p>1:00 PM ET, January 19, 2014</p><p>Air Canada
+        Centre, Toronto, ON</p></div></div>\n\n\t<!-- begin line score -->\n\t<div
+        class=\"line-score clear\">\n\t\t<div class=\"line-score-container\">\n\t\t\t<table
+        cellspacing=\"0\" class=\"linescore\">\n\t\t\t\t<tr class=\"periods\">\n\t\t\t\t\t<td
+        class=\"team\"></td>\n\n\t\t\t\t\t<td class=\"period\" style=\"text-align:center\"
+        > 1</td><td class=\"period\" style=\"text-align:center\" > 2</td><td class=\"period\"
+        style=\"text-align:center\" > 3</td><td class=\"period\" style=\"text-align:center\"
+        > 4</td>\n\t\t\t\t\t<td class=\"total\" style=\"text-align:center\">T</td>\n\n\t\t\t\t</tr>\n\n\t\t\t\t<tr><td
+        class=\"team\"><a href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\">LAL</a></td><td
+        style=\"text-align:center\" > 29</td><td style=\"text-align:center\" > 25</td><td
+        style=\"text-align:center\" > 28</td><td style=\"text-align:center\" > 30</td><td
+        class=\"ts\" style=\"text-align:center\">112</td></tr><tr><td class=\"team\"><a
+        href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors\">TOR</a></td><td
+        style=\"text-align:center\" > 36</td><td style=\"text-align:center\" > 22</td><td
+        style=\"text-align:center\" > 23</td><td style=\"text-align:center\" > 25</td><td
+        class=\"ts\" style=\"text-align:center\">106</td></tr>\n\t\t\t</table>\n\n\t\t</div>\n\n\t\t<!--
+        end line score -->\n\n\t\t<div class=\"game-notes\">\n\t\t<p class=\"heading\"><span>Top
+        Performers</span></p><p><span>LAL: </span><a href=\"http://espn.go.com/nba/player/_/id/3243/nick-young\"
+        style=\"color:#000;\">N. Young</a> 29 Pts, 2 Reb, 1 Ast</p><p><span>Tor: </span><a
+        href=\"http://espn.go.com/nba/player/_/id/3012/kyle-lowry\" style=\"color:#000;\">K.
+        Lowry</a> 21 Pts, 2 Reb, 9 Ast, 1 Blk</p>\n\t\t</div>\n\t</div>\n</div><div
+        class=\"span-2 last\" id=\"gp-adwrap\"><div class=\"ad-box\" style=\"padding:2px
+        0px; height:250px;\"><iframe width=\"300\" id=\"adIframe\" scrolling=\"NO\"
+        height=\"250\" frameborder=\"0\" src=\"/nba/photos?ads=incontent\" marginheight=\"0\"
+        marginwidth=\"0\"/></iframe></div></div>\n\t<div class=\"tabs clear\">\n\t\t<ul>\n\n\t<li
+        class=\"\" ><a href=\"recap?gameId=400489474\"><span class=\"title\">Recap</span>\n</a>\n</li><li
+        class=\"\" ><a href=\"boxscore?gameId=400489474\"><span class=\"title\">Box
+        Score</span>\n</a>\n</li><li class=\"\" ><a href=\"playbyplay?gameId=400489474\"><span
+        class=\"title\">Play-By-Play</span>\n</a>\n</li><li class=\"\" ><a href=\"shotchart?gameId=400489474\"><span
+        class=\"title\">Shot Chart</span>\n</a>\n</li><li class=\"active\" ><a href=\"photos?gameId=400489474\"><span
+        class=\"title\">Photos</span>\n<span class=\"quantity\"><span>44</span></span></a>\n</li><li
+        class=\"\" ><a href=\"conversation?gameId=400489474\"><span class=\"title\">Conversation</span>\n<span
+        class=\"fb-comments-long quantity\"><span class=\"count\"></span></span></a>\n</li></ul></div><script>jQuery.getScriptCache(\"http://a.espncdn.com/combiner/c/70?js=jquery.sharetools.r15-u4.js\",
+        function() {jQuery(\".tabs\").sharetools(\"http://scores.espn.go.com/nba/conversation?gameId=400489474\");});</script></div><div
+        class=\"story-container\"><div class=\"gp-body\"><div style=\"height:0px;
+        visibility:visible; overflow:hidden;\" id=\"presByIframeContainer\"><iframe
+        width=\"715\" id=\"presbyIframe\" scrolling=\"NO\" frameborder=\"0\" src=\"/nba/photos?ads=presby\"
+        marginheight=\"0\" marginwidth=\"0\"/></iframe></div><noscript><InLineReplace
+        name=ad type=PresentedByLogo></noscript>\n\t<style type=\"text/css\">\n\t\t.photo-index
+        dl dt a img {padding:3px; border:1px solid #CCC;}\n\t\t.photo-index dl dt
+        a:hover img {border-color:#000;}\n\t</style>\n\t<div class=\"photo-nav\"><p><span
+        style=\"float:left;\">Photos 37 - 44 of 44</span>&nbsp;&nbsp;<a href=\"/nba/photos?gameId=400489474&page=2\"
+        style=\"text-decoration:none;\" class=\"navLink\" id=\"page_2\">Previous</a>&nbsp;&nbsp;<a
+        href=\"/nba/photos?gameId=400489474&page=1\" style=\"text-decoration:none;\"
+        class=\"navLink\" id=\"page_1\">1</a>&nbsp;<a href=\"/nba/photos?gameId=400489474&page=2\"
+        style=\"text-decoration:none;\" class=\"navLink\" id=\"page_2\">2</a>&nbsp;<strong
+        class=\"currentPage\" style=\"border-bottom:2px solid #000;\">3</strong>&nbsp;&nbsp;</p></div><div
+        class=\"photo-index\" style=\"display:none\"><div class=\"photo-row clearfix\"
+        style=\"padding:0 0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0;
+        padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489394\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: DeMar
+        DeRozan #10 of the Toronto Raptors goes up for the shot against the Los Angeles
+        Lakers during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824437.jpg&amp;w=127&amp;h=85\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489395\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Terrence
+        Ross #31 of the Toronto Raptors grabs a rebound against the Los Angeles Lakers
+        during the game on January 19, 2014 at the Air Canada Centre in Toronto, Ontario,
+        Canada.  NOTE TO USER: User expressly acknowledges and agrees that, by downloading
+        and or using this Photograph, user is consenting to the terms and conditions
+        of the Getty Images License Agreement.  Mandatory Copyright Notice: Copyright
+        2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824441.jpg&amp;w=127&amp;h=84\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489396\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Kyle
+        Lowry #7 of the Toronto Raptors goes up for the layup against the Los Angeles
+        Lakers during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824445.jpg&amp;w=127&amp;h=85\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489397\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Nick
+        Young #0 of the Los Angeles Lakers dribbles the ball against the Toronto Raptors
+        during the game on January 19, 2014 at the Air Canada Centre in Toronto, Ontario,
+        Canada.  NOTE TO USER: User expressly acknowledges and agrees that, by downloading
+        and or using this Photograph, user is consenting to the terms and conditions
+        of the Getty Images License Agreement.  Mandatory Copyright Notice: Copyright
+        2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824449.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489400\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: DeMar
+        DeRozan #10 of the Toronto Raptors backs up to the basket against the Los
+        Angeles Lakers during the game on January 19, 2014 at the Air Canada Centre
+        in Toronto, Ontario, Canada.  NOTE TO USER: User expressly acknowledges and
+        agrees that, by downloading and or using this Photograph, user is consenting
+        to the terms and conditions of the Getty Images License Agreement.  Mandatory
+        Copyright Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824455.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489401\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Jodie
+        Meeks #20 of the Los Angeles Lakers shoots the ball against the Toronto Raptors
+        during the game on January 19, 2014 at the Air Canada Centre in Toronto, Ontario,
+        Canada.  NOTE TO USER: User expressly acknowledges and agrees that, by downloading
+        and or using this Photograph, user is consenting to the terms and conditions
+        of the Getty Images License Agreement.  Mandatory Copyright Notice: Copyright
+        2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824461.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl></div><div class=\"photo-row clearfix\" style=\"padding:0
+        0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0; padding:0
+        8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489402\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Nick
+        Young #0 of the Los Angeles Lakers goes up for the layup against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824467.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489404\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Manny
+        Harris #3 of the Los Angeles Lakers goes up for the layup against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824471.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl></div></div><noscript><div class=\"photo-index\"><div
+        class=\"photo-row clearfix\" style=\"padding:0 0 10px 0;\"><dl style=\"width:auto;
+        text-align:center; margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a
+        href=\"/nba/photos?gameId=400489474&photoId=3489394\" style=\"margin:0; padding:0;\"
+        title = \"TORONTO, CANADA - January 19: DeMar DeRozan #10 of the Toronto Raptors
+        goes up for the shot against the Los Angeles Lakers during the game on January
+        19, 2014 at the Air Canada Centre in Toronto, Ontario, Canada.  NOTE TO USER:
+        User expressly acknowledges and agrees that, by downloading and or using this
+        Photograph, user is consenting to the terms and conditions of the Getty Images
+        License Agreement.  Mandatory Copyright Notice: Copyright 2014 NBAE \" ><img
+        src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824437.jpg&amp;w=127&amp;h=85\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489395\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Terrence
+        Ross #31 of the Toronto Raptors grabs a rebound against the Los Angeles Lakers
+        during the game on January 19, 2014 at the Air Canada Centre in Toronto, Ontario,
+        Canada.  NOTE TO USER: User expressly acknowledges and agrees that, by downloading
+        and or using this Photograph, user is consenting to the terms and conditions
+        of the Getty Images License Agreement.  Mandatory Copyright Notice: Copyright
+        2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824441.jpg&amp;w=127&amp;h=84\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489396\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Kyle
+        Lowry #7 of the Toronto Raptors goes up for the layup against the Los Angeles
+        Lakers during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824445.jpg&amp;w=127&amp;h=85\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489397\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Nick
+        Young #0 of the Los Angeles Lakers dribbles the ball against the Toronto Raptors
+        during the game on January 19, 2014 at the Air Canada Centre in Toronto, Ontario,
+        Canada.  NOTE TO USER: User expressly acknowledges and agrees that, by downloading
+        and or using this Photograph, user is consenting to the terms and conditions
+        of the Getty Images License Agreement.  Mandatory Copyright Notice: Copyright
+        2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824449.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489400\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: DeMar
+        DeRozan #10 of the Toronto Raptors backs up to the basket against the Los
+        Angeles Lakers during the game on January 19, 2014 at the Air Canada Centre
+        in Toronto, Ontario, Canada.  NOTE TO USER: User expressly acknowledges and
+        agrees that, by downloading and or using this Photograph, user is consenting
+        to the terms and conditions of the Getty Images License Agreement.  Mandatory
+        Copyright Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824455.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489401\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Jodie
+        Meeks #20 of the Los Angeles Lakers shoots the ball against the Toronto Raptors
+        during the game on January 19, 2014 at the Air Canada Centre in Toronto, Ontario,
+        Canada.  NOTE TO USER: User expressly acknowledges and agrees that, by downloading
+        and or using this Photograph, user is consenting to the terms and conditions
+        of the Getty Images License Agreement.  Mandatory Copyright Notice: Copyright
+        2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824461.jpg&amp;w=100&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl></div><div class=\"photo-row clearfix\" style=\"padding:0
+        0 10px 0;\"><dl style=\"width:auto; text-align:center; margin:0; padding:0
+        8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489402\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Nick
+        Young #0 of the Los Angeles Lakers goes up for the layup against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824467.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl><dl style=\"width:auto; text-align:center;
+        margin:0; padding:0 8px 0 0;\"><dt style=\"margin:0; padding:0;\"><a href=\"/nba/photos?gameId=400489474&photoId=3489404\"
+        style=\"margin:0; padding:0;\" title = \"TORONTO, CANADA - January 19: Manny
+        Harris #3 of the Los Angeles Lakers goes up for the layup against the Toronto
+        Raptors during the game on January 19, 2014 at the Air Canada Centre in Toronto,
+        Ontario, Canada.  NOTE TO USER: User expressly acknowledges and agrees that,
+        by downloading and or using this Photograph, user is consenting to the terms
+        and conditions of the Getty Images License Agreement.  Mandatory Copyright
+        Notice: Copyright 2014 NBAE \" ><img src=\"http://a.espncdn.com/combiner/i?img=media%2Fgettyphoto%2F2014%5C01%5C19%5C463824471.jpg&amp;w=85&amp;h=127\"
+        onContextMenu=\"return false;\" border=\"0\" /></a><br/>(Photo by Ron Turenne/NBAE
+        via Getty Images)<br/></dt></dl></div></div></noscript><div class=\"photo-nav\"><p><span
+        style=\"float:left;\">Photos 37 - 44 of 44</span>&nbsp;&nbsp;<a href=\"/nba/photos?gameId=400489474&page=2\"
+        style=\"text-decoration:none;\" class=\"navLink\" id=\"page_2\">Previous</a>&nbsp;&nbsp;<a
+        href=\"/nba/photos?gameId=400489474&page=1\" style=\"text-decoration:none;\"
+        class=\"navLink\" id=\"page_1\">1</a>&nbsp;<a href=\"/nba/photos?gameId=400489474&page=2\"
+        style=\"text-decoration:none;\" class=\"navLink\" id=\"page_2\">2</a>&nbsp;<strong
+        class=\"currentPage\" style=\"border-bottom:2px solid #000;\">3</strong>&nbsp;&nbsp;</p></div>\n\n\t<script
+        src=\"http://a.espncdn.com/combiner/c?v=201004161710&js=/plugins/jquery.history_2010.js\"
+        type=\"text/javascript\"></script>\n\t<script src=\"http://scores.espn.go.com/espn/javascript/gamepackage10/photoPageJS?sportId=46&sportName=nba&gameId=400489474&pageType=gallery&langType=0\"
+        type=\"text/javascript\"></script>\n\n\t<!-- begin sp links -->\n<div style=\"margin:
+        10px 0 0 0;\">\n<!-- CONTENT: 09scoreboard614, SPORT: nba--><div style=\"margin:0px
+        0px 5px 0px; text-align: center; width: 614px;\"><ins id=\"splinks-60078\"></ins>\n
+        \       <script type=\"text/javascript\">\n            (function($) {\n                //
+        config params\n                var width = '614',\n                    height
+        = '300',\n                    client = 'ca-espn-q-game',\n                    channel
+        = 'nba bottom',\n                    lang = 'null';\n\n                //
+        builds iframe HTML\n                function buildIframe(width, height, client,
+        channel) {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
+        \                   // pass params as the hash as they are only needed on
+        the client\n                    var hash = '60078|' + width + '|' + height
+        + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
+        = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
+        + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
+        \                   return iframe;\n                }\n\n                //
+        handles messages from child iframe\n                function handleMessage(event)
+        {\n                    if (event.origin === 'http://sports-ak.espn.go.com')
+        {\n                        $('#splinks-' + event.data).html('<!-- no ads served
+        -->');\n                    }\n                }\n\n                if (typeof
+        window.addEventListener === 'function') {\n                    window.addEventListener('message',
+        handleMessage, false);\n                } else {\n                    window.attachEvent('onmessage',
+        handleMessage);\n                }\n\n                // insert the iframe\n
+        \               if (espn.geo) {\n                    espn.geo.getLocation().done(function(loc)
+        {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
+        || espn.core.android) {\n                            // outside US or not
+        on desktop\n                            client = 'ca-espn-nq';\n                        }\n
+        \                       $('#splinks-60078').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-60078').html(buildIframe(width,
+        height, 'ca-espn-nq', channel));\n                    });\n                }
+        else {\n                    // can't locate them, assume they are outside
+        US\n                    $('#splinks-60078').html(buildIframe(width, height,
+        'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
+        \   </div></div>\n<!-- end sp links -->\n</div><!-- end gp-body --><div class=\"clear\"></div></div></div></div>\n<div
+        id=\"nav-wrapper\" class=\"container\">\n<div id=\"nav-wrapper-container\">\n<div
+        id=\"nav-main\">\n<!-- begin site nav -->\n<ul class=\"top\">\n<!-- begin
+        site nav -->\n<p><!-- begin site nav --></p>\n<ul class=\"top\" id=\"nav-main-list\"><!--
+        start: Menuitem :: MyTAB -->\n<li class=\"last myespn\" id=\"menu-myespn\"><a
+        class=\"myespn\" ref=\"#\">MyESPN</a></li>\n<!-- start: Menuitem :: NFL -->\n<li
+        class=\"sport-menu default t-nfl\" data-sportid=\"28\" id=\"menu-nfl\"><a
+        href=\"http://espn.go.com/nfl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nfl\">NFL</a></li>\n<!--
+        start: Menuitem :: MLB -->\n<li class=\"sport-menu default t-mlb\" data-sportid=\"10\"
+        id=\"menu-mlb\"><a href=\"http://espn.go.com/mlb/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mlb\">MLB</a></li>\n<!--
+        start: Menuitem :: NBA -->\n<li class=\"sport-menu default t-nba selected\"
+        data-sportid=\"46\" id=\"menu-nba\"><a href=\"http://espn.go.com/nba/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nba\">NBA</a></li>\n<!--
+        start: Menuitem :: NHL -->\n<li class=\"sport-menu default t-nhl\" data-sportid=\"90\"
+        id=\"menu-nhl\"><a href=\"http://espn.go.com/nhl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nhl\">NHL</a></li>\n<!--
+        start: Menuitem :: NCAA FB -->\n<li class=\"sport-menu default t-ncf\" data-sportid=\"23\"
+        id=\"menu-ncf\"><a href=\"http://espn.go.com/college-football/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncf\">NCAAF</a></li>\n<!--
+        start: Menuitem :: NCAA BB -->\n<li class=\"sport-menu default t-ncb\" data-sportid=\"41\"
+        id=\"menu-ncb\"><a href=\"http://espn.go.com/mens-college-basketball/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncb\">NCAAM</a></li>\n<!--
+        start: Menuitem :: NASCAR -->\n<li class=\"sport-menu default t-nascar\" data-sportid=\"2020\"
+        id=\"menu-nascar\"><a href=\"http://espn.go.com/racing/nascar/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nascar\">NASCAR</a></li>\n<!--
+        start: Menuitem :: SOCCER -->\n<li class=\"sport-menu default t-soccer\" data-sportid=\"600\"
+        id=\"menu-soccer\"><a href=\"http://espnfc.us/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_soccer\">SOCCER</a></li>\n<!--
+        start: Menuitem :: GOLF -->\n<li class=\"sport-menu t-golf\" data-sportid=\"1106\"
+        id=\"menu-golf\" style=\"display: none;\"><a href=\"http://espn.go.com/golf/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_golfl\">GOLF</a></li>\n<!--
+        start: Menuitem :: TENNIS -->\n<li class=\"sport-menu t-tennis\" data-sportid=\"850\"
+        id=\"menu-tennis\" style=\"display: none;\"><a href=\"http://espn.go.com/tennis/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_tennis\">TENNIS</a></li>\n<!--
+        start: Menuitem :: BOXING-->\n<li class=\"sport-menu t-boxing\" data-sportid=\"1000\"
+        id=\"menu-boxing\" style=\"display: none;\"><a href=\"http://espn.go.com/boxing/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_boxing\">BOXING</a></li>\n<!--
+        start: Menuitem :: MMA -->\n<li class=\"sport-menu t-mma\" data-sportid=\"3301\"
+        id=\"menu-mma\" style=\"display: none;\"><a href=\"http://espn.go.com/mma/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mma\">MMA</a></li>\n<!-- start:
+        Menuitem :: ALL SPORTS -->\n<li class=\"nav-allsports t-allsports\" id=\"menu-allsports\"><a
+        href=\"http://espn.go.com/sports/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_allsports\">MORE
+        SPORTS</a></li>\n<!-- start: Menuitem :: INSIDER -->\n<li class=\"sport-menu
+        t-insider\" id=\"menu-insider\" style=\"display: none;\"><a href=\"http://insider.espn.go.com/insider/index\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_insider\">INSIDER</a></li>\n<!--
+        start: Menuitem :: SPORTSNATION -->\n<li class=\"sport-menu t-sportsnation\"
+        id=\"menu-sportsnation\" style=\"display: none;\"><a href=\"http://espn.go.com/sportsnation/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_sportsnation\">SN</a></li>\n<!--
+        start: Menuitem :: RADIO & MORE -->\n<li class=\"right-menu two-line last
+        t-radio\" id=\"menu-radio\"><a href=\"http://espn.go.com/espnradio/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_radioandmore\">RADIO<span>&amp;
+        MORE</span></a></li>\n<!-- start: Menuitem :: espnW & PLAYBOOK -->\n<li class=\"right-menu
+        two-line t-page2\" id=\"menu-page2\"><a href=\"http://espn.go.com/espnw/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_espnwandxgames\" target=\"_blank\">espnW<span>&amp;
+        X GAMES</span></a></li>\n<!-- start: Menuitem :: FANTASY & GAMES -->\n<li
+        class=\"right-menu two-line t-fantasy\" id=\"menu-fantasy\"><a href=\"http://games.espn.go.com/frontpage\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_fantasy\">FANTASY<span>&amp;
+        GAMES</span></a></li>\n<!-- start: Menuitem :: WATCH -->\n<li class=\"right-menu
+        t-watch\" id=\"menu-watch\"><a href=\"http://espn.go.com/video/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_watch\">WATCH</a></li>\n</ul>\n<!--
+        end site nav -->\n<!-- end site nav -->\n</ul>\n<!-- end site nav -->\n</div>\n<div
+        class=\"nav-main-secondary\">\n<!--/nba/photos--><ul>\n<li><a href=\"http://espn.go.com/nba/\"name=\"&lpos=subnav&lid=subnav_NBA_NBA+Home\">NBA
+        Home</a></li><li><a href=\"http://scores.espn.go.com/nba/scoreboard\"name=\"&lpos=subnav&lid=subnav_NBA_Scoreboard\">Scores</a></li><li><a
+        href=\"http://espn.go.com/nba/schedule\"name=\"&lpos=subnav&lid=subnav_NBA_NBA+Schedule\">Schedule</a></li><li><a
+        href=\"http://espn.go.com/nba/statistics\"name=\"&lpos=subnav&lid=subnav_NBA_Stats\">Stats</a></li><li><a
+        href=\"http://espn.go.com/nba/standings\"name=\"&lpos=subnav&lid=subnav_NBA_Standings\">Standings</a></li><li
+        class=\"expandable\"><a href=\"http://espn.go.com/nba/hollinger/powerrankings\"name=\"&lpos=subnav&lid=subnav_NBA_Rankings\"><span>Rankings</span></a><div><dl
+        class=\"last\"><dd><a href=\"http://espn.go.com/nba/powerrankings\" name=\"&lpos=subnav&lid=subnav_NBA_Stein\">Stein's
+        Power Rankings</a></dd><dd><a href=\"http://espn.go.com/nba/hollinger/powerrankings\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Hollinger\">Hollinger Power Rankings</a></dd></dl></div></li><li><a
+        href=\"http://espn.go.com/nba/players\"name=\"&lpos=subnav&lid=subnav_NBA_Players\">Players</a></li><li
+        class=\"expandable\"><a href=\"http://espn.go.com/nba/teams\" name=\"&lpos=subnav&lid=subnav_NBA_Teams\"><span>Teams</span></a><div><dl><dt
+        class=\"first\">Atlantic</dt><dd><a href=\"http://espn.go.com/nba/team/_/name/bos/boston-celtics\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_bos\">Boston Celtics</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/bkn/brooklyn-nets\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_bkn\">Brooklyn
+        Nets</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/ny/new-york-knicks\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_ny\">New York Knicks</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_phi\">Philadelphia
+        76ers</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_tor\">Toronto Raptors</a></dd><dt
+        class=\"first\">Central</dt><dd><a href=\"http://espn.go.com/nba/team/_/name/chi/chicago-bulls\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_chi\">Chicago Bulls</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/cle/cleveland-cavaliers\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_cle\">Cleveland
+        Cavaliers</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/det/detroit-pistons\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_det\">Detroit Pistons</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/ind/indiana-pacers\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_ind\">Indiana
+        Pacers</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_mil\">Milwaukee Bucks</a></dd><dt
+        class=\"first\">Southeast</dt><dd><a href=\"http://espn.go.com/nba/team/_/name/atl/atlanta-hawks\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_atl\">Atlanta Hawks</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/cha/charlotte-hornets\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_cha\">Charlotte
+        Hornets</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/mia/miami-heat\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_mia\">Miami Heat</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/orl/orlando-magic\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_orl\">Orlando Magic</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/wsh/washington-wizards\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_was\">Washington
+        Wizards</a></dd></dl><dl class=\"last\"><dt class=\"first\">Pacific</dt><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/gs/golden-state-warriors\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_gs\">Golden
+        State Warriors</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_lac\">Los Angeles Clippers</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_lal\">Los
+        Angeles Lakers</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/phx/phoenix-suns\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_phx\">Phoenix Suns</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/sac/sacramento-kings\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_sac\">Sacramento
+        Kings</a></dd><dt class=\"first\">Southwest</dt><dd><a href=\"http://espn.go.com/nba/team/_/name/dal/dallas-mavericks\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_dal\">Dallas Mavericks</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/hou/houston-rockets\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_hou\">Houston
+        Rockets</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_mem\">Memphis Grizzlies</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_no\">New
+        Orleans Pelicans</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_sa\">San Antonio Spurs</a></dd><dt
+        class=\"first\">Northwest</dt><dd><a href=\"http://espn.go.com/nba/team/_/name/den/denver-nuggets\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_den\">Denver Nuggets</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_min\">Minnesota
+        Timberwolves</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_okc\">Oklahoma City Thunder</a></dd><dd><a
+        href=\"http://espn.go.com/nba/team/_/name/por/portland-trail-blazers\" name=\"&lpos=subnav&lid=subnav_NBA_Teams_por\">Portland
+        Trail Blazers</a></dd><dd><a href=\"http://espn.go.com/nba/team/_/name/utah/utah-jazz\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Teams_uth\">Utah Jazz</a></dd></dl></div></li></li><li><a
+        href=\"http://espn.go.com/nba/draft\">Draft</a></li><li><a href=\"http://espn.go.com/nba/theten\">The
+        Ten</a></li><li class=\"expandable\"><a href=\"http://espn.go.com/blog/truehoop\"
+        name=\"&lpos=subnav&lid=subnav_NBA_TrueHoop\"><span>TrueHoop</span></a><div><dl
+        class=\"last\"><dd><a href=\"http://espn.go.com/blog/truehoop\" name=\"&lpos=subnav&lid=subnav_NBA_TrueHoop\">TrueHoop</a></dd><dd><a
+        href=\"http://espn.go.com/blog/truehoop/category/_/name/truehoop-tv\" name=\"&lpos=subnav&lid=subnav_NBA_TrueHoopTV\">TrueHoop
+        TV</a></dd><dd><a href=\"http://espn.go.com/blog/truehoop/category/_/name/truecities\"
+        name=\"&lpos=subnav&lid=subnav_TrueCities\">TrueCities</a></dd><dd><a href=\"http://espn.go.com/blog/truehoop/category/_/name/hoopidea\"
+        name=\"&lpos=subnav&lid=subnav_HoopIdea\">HoopIdea</a></dd></dl></div></li><li
+        class=\"expandable\"><a href=\"http://espn.go.com/blog/truehoop\" name=\"&lpos=subnav&lid=subnav_NBA_Blogs\"><span>Blogs</span></a><div><dl
+        class=\"last\"><dd><a href=\"http://espn.go.com/blog/boston/celtics\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Celtics\">Boston
+        Celtics</a></dd><dd><a href=\"http://espn.go.com/blog/brooklyn-nets\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Nets\">Brooklyn
+        Nets</a></dd><dd><a href=\"http://espn.go.com/blog/chicago-bulls\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Bulls\">Chicago
+        Bulls</a></dd><dd><a href=\"http://espn.go.com/blog/cleveland-cavaliers\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Blog_Cavs\">Cleveland Cavaliers</a></dd><dd><a
+        href=\"http://espn.go.com/blog/dallas-mavericks\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Mavericks\">Dallas
+        Mavericks</a></dd><dd><a href=\"http://espn.go.com/blog/golden-state-warriors\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Blog_Warriors\">Golden State Warriors</a></dd><dd><a
+        href=\"http://espn.go.com/blog/los-angeles-clippers/\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Clippers\">Los
+        Angeles Clippers</a></dd><dd><a href=\"http://espn.go.com/blog/los-angeles-lakers\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Blog_Lakers\">Los Angeles Lakers</a></dd><dd><a
+        href=\"http://espn.go.com/blog/truehoop/miamiheat\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Heat\">Miami
+        Heat</a></dd><dd><a href=\"http://espn.go.com/blog/new-york-knicks\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Knicks\">New
+        York Knicks</a></dd><dd><a href=\"http://espn.go.com/blog/okc-thunder\" name=\"&lpos=subnav&lid=subnav_NBA_Blog_Thunder\">Oklahoma
+        City Thunder</a></dd><dd><a href=\"http://espn.go.com/blog/marc-stein\" name=\"&lpos=subnav&lid=subnav_Stein_Line_Live\">Stein
+        Line Live</a></dd></dl></div></li><li><a href=\"http://insider.espn.go.com/blog/nba/rumors/\"name=\"&lpos=subnav&lid=subnav_NBA_Rumors\">Rumors</a></li><!--<li><a
+        href=\"http://espn.go.com/espn/chalk/\">Odds</a></li>--><li class=\"expandable\"><a
+        href=\"\" name=\"&lpos=subnav&lid=subnav_NBA_More\"><span>More</span></a><div><!--<dl><dt
+        class=\"first\">Blogs</dt><dd><a href=\"http://espn.go.com/blog/marc-stein\"
+        name=\"&lpos=subnav&lid=subnav_Stein_Line_Live\">Stein Line Live</a></dd><dd><a
+        href=\"http://espn.go.com/blog/truehoop\" name=\"&lpos=subnav&lid=subnav_TrueHoop\">TrueHoop</a></dd><dt
+        class=\"first\">Events</dt><dd><a href=\"http://espn.go.com/nba/preview2014/\"
+        name=\"&lpos=subnav&lid=subnav_All_Star_Game\">2014-15 Preview</a></dd><dd><a
+        href=\"http://espn.go.com/nba/playoffs/2014/matchup\" name=\"&lpos=subnav&lid=subnav_NBA_Playoffs\">2014
+        NBA Playoffs</a></dd><dd><a href=\"http://espn.go.com/nba/draft\" name=\"&lpos=subnav&lid=subnav_NBA_Draft\">2014
+        NBA Draft</a></dd><dd><a href=\"http://sports.espn.go.com/nba/feature/index?page=nbaallstar2014\"
+        name=\"&lpos=subnav&lid=subnav_All_Star_Game\">2014 All-Star Game</a></dd><dd><a
+        href=\"http://espn.go.com/nba/halloffame\" name=\"&lpos=subnav&lid=subnav_Hall_Of_Fame\">Basketball
+        HOF</a></dd></dl>--><dl class=\"last\"><dd><a href=\"http://espn.go.com/nba/allstargame\"
+        name=\"&lpos=subnav&lid=subnav_NBA_ASG\">All-Star Game</a></dd><dd><a href=\"http://espn.go.com/nba/history/leaders\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Leaders\">All-time Leaders</a></dd><dd><a
+        href=\"http://espn.go.com/nba/history/awards\" name=\"&lpos=subnav&lid=subnav_NBA_Awards\">Awards
+        History</a></dd><dd><a href=\"http://espn.go.com/nba/coaches\" name=\"&lpos=subnav&lid=subnav_NBA_Coaches\">Coaches</a></dd><dd><a
+        href=\"http://espn.go.com/nba/depth\" name=\"&lpos=subnav&lid=subnav_Depth_Charts\">Depth
+        Charts</a></dd><dd><a href=\"http://insider.espn.go.com/nba/draft/results/team\"
+        name=\"&lpos=subnav&lid=subnav_Draft_History\">Draft History</a></dd><dd><a
+        href=\"http://games.espn.go.com/frontpage/basketball\" name=\"&lpos=subnav&lid=subnav_Fantasy\">Fantasy
+        Hoops</a></dd><dd><a href=\"http://espn.go.com/nba/story/_/id/12307054/nba-free-agents-2015-2016\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Free_Agents\">Free Agents</a></dd><dd><a
+        href=\"http://espn.go.com/nba/halloffame\" name=\"&lpos=subnav&lid=subnav_NBA_HOFs\">Hall
+        of Fame</a></dd><dd><a href=\"http://espn.go.com/espn/chalk/\" name=\"&lpos=subnav&lid=subnav_NBA_Odds\">Odds
+        & Info</a></dd><dd><a href=\"http://espn.go.com/nba/hollinger/playoffodds\"
+        name=\"&lpos=subnav&lid=subnav_NBA_Playoffs\">Playoff Odds</a></dd><dd><a
+        href=\"http://espn.go.com/nba/salaries\" name=\"&lpos=subnav&lid=subnav_NBA_Salaries\">Salaries</a></dd><dd><a
+        href=\"http://espn.go.com/nba/tradeMachine\" name=\"&lpos=subnav&lid=subnav_NBA_TradeMachine\">Trade
+        Machine</a></dd><dd><a href=\"http://espn.go.com/nba/transactions\" name=\"&lpos=subnav&lid=subnav_NBA_Transactions\">Transactions</a></dd></dl></div></li><li><a
+        href=\"http://www.stubhub.com/nba-tickets/\" target=\"_blank\" onclick=\"this.href=this.href+'?gcid=C12289x522&gtkw=NBA+Sub+Nav'\"
+        class=\"external\" name=\"&lpos=subnav&lid=subnav_NBA+Tickets\">Tickets</a></li>\n</ul>\n</div>\n</div>\n</div>\n</div>\n<!--
+        end content -->\n</div>\n<!-- end subheader -->\n\n<script>\nespn.core.init.nav();\nespn.insider.checkUserForPromo();\n</script>\n<!--
+        begin footer -->\n<div id=\"footer\" class=\"container\">\n<script type=\"text/javascript\">\n//<![CDATA[\nvar
+        link = window.location;\nvar bugText = '<a href=\"#\" onclick=\"window.open(\\'http://dynamic.espn.go.com/espn/bugs?url='
+        + escape(link) + '\\', \\'Bugs\\',\\'noresizable,noscrollbars,height=400,width=400\\');\">Report
+        a Bug</a> | ';\n//]]>\n</script>\n<span style=\"font-weight:bold;\">ESPN.com:</span>
+        <a href=\"http://sports.espn.go.com/espn/news/story?page=help/index\">Help</a>
+        | <a href=\"http://espnmediazone.com/us/\" rel=\"nofollow\">Press</a> | <a
+        href=\"http://www.espncms.com/Advertise-on-ESPN.aspx\" rel=\"nofollow\">Advertise
+        on ESPN.com</a> | <a href=\"http://www.espncms.com\" rel=\"nofollow\">Sales
+        Media Kit</a> | <a href=\"http://preferences.truste.com/2.0/?type=espn&affiliateId=148\"
+        onclick=\"window.open('http://preferences.truste.com/2.0/?type=espn&affiliateId=148','popup','width=986,height=878,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0');
+        return false\">Interest-Based Ads</a> | <script type=\"text/javascript\">document.write(bugText);</script><a
+        href=\"http://espn.go.com/espn/corrections\">Corrections</a> | <a href=\"http://sports.espn.go.com/espn/news/story?page=contact/index\">Contact
+        Us</a> | <a href=\"http://espn.go.com/espn/sitemap\">Site Map</a> | <a href=\"http://espncareers.com\">Jobs
+        at ESPN</a> | <!--a href=\"http://corporate.disney.go.com/corporate/sourcing.html\"
+        rel=\"nofollow\"><span style=\"font-weight:bold;\">Supplier Information</span></a--><a
+        href=\"http://go.com\">Go.com</a><br/>&copy; 2015  ESPN Internet Ventures.
+        <a href=\"http://disneytermsofuse.com/\" rel=\"nofollow\">Terms of Use</a>,
+        <a href=\"http://disneyprivacycenter.com/\" rel=\"nofollow\">Privacy Policy</a>,
+        <a href=\"https://disneyprivacycenter.com/notice-to-california-residents/\"
+        rel=\"nofollow\">Your California Privacy Rights</a>,  <a href=\"https://disneyprivacycenter.com/kids-privacy-policy/english/\">Children's
+        Online Privacy Policy</a> and <a href=\"http://preferences-mgr.truste.com/?type=espn&affiliateId=148\">Interest-Based
+        Ads</a> are applicable to you.  All rights reserved.\n\n<!--\n<a href=\"http://www.espnshop.com/\"
+        onClick=\"location.href('http://log.go.com/log?srvc=sz&guid=73B641A0-6660-4EFC-B8FF-9DE23E8CD9BD&drop=0&addata=3374:65:478847:65&a=1&goto=http://www.espnshop.com/');return
+        false\">Shop</a>\n--></div>\n<!-- end footer -->\n<!--[if lte IE 9]></div><![endif]-->\n</div>\n<!--
+        end bg-elements -->\n\n\n<!-- SiteCatalyst code version: H.21.3 Copyright
+        1997-2010 Omniture, Inc. http://www.omniture.com -->\n<script type=\"text/javascript\">\n\tvar
+        undef = 'undefined'\n\t,s_account=\"wdgespcom\"\n\t,omniPageName = \"espn:nba:game:photos:400489474+-+lal+at+tor\"\n\t\n\t,insiderStatus
+        = \"\"\n\t,anGen = \"\"\n\t,anYear = \"\"\n\t,anDateString = \"\"\n\t,anLoginStatus
+        = \"\"\n\t,callOmniture = function(){\n\t\t/*-- core story s_omni properties
+        --*/\n\t\tif (typeof anCV != \"undefined\"){anParseLoginBarInfo(anCV);}\n\t\ts_omni.pageName=\"nba:game:photos:400489474+-+lal+at+tor\";\n\t\ts_omni.server
+        = window.location.host; // Server from the Host\n\t\ts_omni.channel = \"nba\";\n\t\ts_omni.prop1
+        = \"espn\";\n\t\ts_omni.prop4 = \"nbaphotos\";\n\t\ts_omni.prop5 = \"nba:game:photos\";\n\t\ts_omni.prop11
+        = (insiderStatus !== null) ? insiderStatus + \":premium-no\" : \"premium-no\";\n\t\ts_omni.prop17
+        = \"en\";\n\t\ts_omni.prop21 = anDateString;\n\t\ts_omni.prop22 = anGen;\n\t\ts_omni.prop25
+        = \"basketball\";\n\t\ts_omni.prop26 = \"nba\";\n\t\ts_omni.prop29 = anLoginStatus;\n\t\ts_omni.prop30
+        = \"n\";\n\t\ts_omni.hier1 = \"nba:game:photos:400489474+-+lal+at+tor\";\n\t\ts_omni.eVar7
+        = anYear + \":\" + anGen + \":\" + anLoginStatus + \":\" + s_omni.prop11 +
+        \":\";\n\t\ts_omni.eVar9 = \"en\";\n\t\ts_omni.eVar13 = \"nba:game:photos:400489474+-+lal+at+tor\";\n\t\ts_omni.eVar19
+        = \"basketball\";\n\t\ts_omni.eVar21 = \"nba\";\n\t\t\n\t\tif (s_omni.prop11==\"anonymous:premium-yes\"
+        || s_omni.prop11==\"insider-no:premium-yes\" && typeof s_omni.prop4!=\"undefined\"
+        &&\n\t\t\t(s_omni.prop4==\"story\" || s_omni.prop4==\"blog\")) {\n\t\t\tif
+        (typeof s_omni.events != \"undefined\" && s_omni.events!=\"\") {\n\t\t\t\ts_omni.events
+        = s_omni.events+\",event8\";\n\t\t\t} else { \n\t\t\t\ts_omni.events=\"event8\";\n\t\t\t}\n\t\t}\n\t\t\n\t\ts_omni.prop38
+        = \"Desktop\";\n\t\ts_omni.eVar38 = \"D=c38\";\n\t\t\n\t\t\n\t\tanVersion
+        = \"_11apr14_v2_0_r5_\";\n\t\t\n\t\t/************* DO NOT ALTER ANYTHING BELOW
+        THIS LINE ! **************/\n\t\t\n\t\tvar s_code = s_omni.t();\n\t\tif(s_code)
+        {\n\t\t\tvar sci = new Image(1,1);\n\t\t\tsci.onload = function() {console.log(\"loaded
+        no append\")};\n\t\t\tsci.src = s_code;\n\t\t}\n\t\t\n\t};\t\n</script>\n\n\n\n<script
+        type=\"text/javascript\">\n\tif (typeof(s_omni) === 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\t// we want to load the analytics files from the cache if possible
+        - so, let's use full $.ajax() calls\n\t\t\t$.ajax({\n\t\t\t\ttype:'GET',\n\t\t\t\turl:
+        'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/externalnielsen.js&v=15',\n\t\t\t\tdataType:
+        'script',\n\t\t\t\tcache: true,\n\t\t\t\tsuccess: function() {\n\t\t\t\t\tvar
+        lgSrc;\n\t\t\t\t\tif(typeof anCV !== undef && anCV === '' && document.getElementById('form-memberarea')
+        != null) {\n\t\t\t\t\t\tlgSrc = 'https://r.espn.go.com/members/util/getUserInfo?cb=runOmnitureIndependently&regType=true';\n\t\t\t\t\t\t$.getScript(lgSrc);
+        // we don't want this to be cached - so we'll use the $.getScript() method\n\t\t\t\t\t}
+        else {\n\t\t\t\t\t\tcallOmniture();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t});\n\t\t});\n\t}\n</script>\n\n<!--
+        End SiteCatalyst code version: H.21. -->\n\n\n<!-- Begin comScore Tag -->\n<script
+        type=\"text/javascript\">\n\tif (typeof(jQuery) !== 'undefined') {\n\t\tjQuery(function($)
+        {\n\t\t\tif(typeof window._comscore === 'undefined') {\n\t\t\t\twindow._comscore
+        = window._comscore || [];\n\t\t\t\twindow._comscore.push({ c1: \"2\", c2:
+        \"3000005\" });\n\t\t\t\tjQuery.getScript((document.location.protocol == \"https:\"
+        ? \"https://sb\" : \"http://b\") + \".scorecardresearch.com/beacon.js\");\n\t\t\t}\n\t\t});\n\t}\n</script>\n<!--
+        End comScore Tag -->\n\t\t<script>\n\t\tvar _sf_async_config={\n\t\t\t\"uid\":22222,\n\t\t\t\"domain\":\"espn.go.com\",\n\t\t\t\"pingServer\":\"pespn.chartbeat.net\",\n\t\t\t\"useCanonical\":true,\n\t\t\t\"useSubDomains\":false,\n\t\t\t\"sections\":\"nba:gamehq:photos,photos,game\",\n\t\t\t\"authors\":\"gamehq\"\n\t\t};\n\t\tif
+        (typeof(ad_site) !== 'undefined') { _sf_async_config.zone = ad_site; }\n\n\t\t//
+        load both chartbeat_pub and chartbeat_video\n\t\t(function () {\n\t\t\tfunction
+        a() {\n\t\t\t\twindow._sf_endpt = (new Date()).getTime();\n\n\t\t\t\tvar cbDomain
+        = ((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\");\n\n\t\t\t\tvar
+        c = document.createElement(\"script\");\n\t\t\t\tc.setAttribute(\"language\",\"javascript\");\n\t\t\t\tc.setAttribute(\"type\",\"text/javascript\");\n\t\t\t\tc.setAttribute(\"src\",
+        cbDomain+\"js/chartbeat_pub.js\");\n\t\t\t\tdocument.body.appendChild(c);\n\n\t\t\t\tif(typeof
+        StrategyInterface !== 'undefined' && (typeof espn !== 'undefined' && typeof
+        espn.video !== 'undefined')){\n\t\t\t\t\tvar e = document.createElement(\"script\");\n\t\t\t\t\te.setAttribute(\"language\",\t\"javascript\");\n\t\t\t\t\te.setAttribute(\"type\",
+        \"text/javascript\");\n\t\t\t\t\te.setAttribute(\"src\", cbDomain+\"js/chartbeat_video.js\");\n\t\t\t\t\tdocument.body.appendChild(e);\n\t\t\t\t}\n\t\t\t}\n\t\t\tvar
+        b = window.onload;\n\t\t\twindow.onload = (typeof window.onload != \"function\")
+        ? a : function () { b(); a() }\n\t\t})();\n\t\t//(function(){function a(){window._sf_endpt=(new
+        Date()).getTime();var c=document.createElement(\"script\");c.setAttribute(\"language\",\"javascript\");c.setAttribute(\"type\",\"text/javascript\");c.setAttribute(\"src\",((\"https:\"==document.location.protocol)?\"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/\":\"http://static.chartbeat.com/\")+\"js/chartbeat_pub.js\");document.body.appendChild(c)}var
+        b=window.onload;window.onload=(typeof window.onload!=\"function\")?a:function(){b();a()}})();\n\t\t</script>\n\t\n<!--
+        dynamic logic: safecount -->\n<script src=\"http://content.dl-rms.com/rms/mother/508/nodetag.js\"></script>\n\n<script
+        type=\"text/javascript\" charset=\"utf-8\">buildOutHeadlinesForPinnedSite();</script>\n<script
+        type=\"text/javascript\">\n   var isInIFrame = (window.location != window.parent.location)
+        ? true : false;\n   if(isInIFrame){ if(document.referrer){ if(document.referrer.indexOf(\".go.com\")==-1){
+        top.location.href=self.location.href; } } }\n</script>\n\n<script type='text/javascript'>\n
+        \ //<![CDATA[\n    (function(){\n    window.gravityInsightsParams = {\n      'type':
+        'content',\n      'action': '',\n      'site_guid': '9a41401e9b7c945344e001ee7f23031e'\n
+        \   };\n    var b,c;b=\"https:\"===document.location.protocol?\"https://b-ssl.grvcdn.com/moth-min.js\":\"http://b.grvcdn.com/moth-min.js\";window.grvMakeScript=function(d){var
+        a;a=document.createElement(\"script\");a.type=\"text/javascript\";a.async=!0;a.src=d;return
+        a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
+        \ //]]>\n</script><script type=\"text/javascript\">if (!NREUMQ.f) { NREUMQ.f=function()
+        {NREUMQ.push([\"load\",new Date().getTime()]);var e=document.createElement(\"script\");e.type=\"text/javascript\";e.src=((\"http:\"===document.location.protocol)?\"http:\":\"https:\")
+        + \"//\" + \"js-agent.newrelic.com/nr-100.js\";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push([\"nrfj\",\"beacon-4.newrelic.com\",\"7c16f39f8d\",\"2256671\",\"NVxTZBFZXUFQW0ZQVwwWZEIKF11QUBdCUVcWVkI=\",0,84,new
+        Date().getTime(),\"\",\"\",\"\",\"\",\"\"]);</script></body>\n</html>"
+    http_version: 
+  recorded_at: Wed, 25 Feb 2015 20:48:19 GMT
+recorded_with: VCR 2.9.3
