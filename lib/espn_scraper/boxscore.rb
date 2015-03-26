@@ -93,6 +93,8 @@ module ESPN
       data[:location]   = markup.at_css('.game-time-location p:last').content
 
       data[:game_stats] = game_stats_basketball if %w[nba ncb].include?(league)
+      data[:game_stats] = game_stats_hockey if league == 'nhl'
+
 
       data[:score_detail] = if league == 'nhl'
                               score_detail_nhl
@@ -104,6 +106,37 @@ module ESPN
     end
 
     private
+
+    def game_stats_hockey
+      headers = []
+      away_stats = []
+      home_stats = []
+
+      markup.css('.mod-data.mod-pbp tr.even td table').each do |stat|
+        headers << stat.at_css('strong').content
+
+        away_stats << stat.css('tr')[1].content.gsub(/\u00A0/, '')
+        home_stats << stat.css('tr')[2].content.gsub(/\u00A0/, '')
+      end
+
+      markup.css('.mod-container').each do |container|
+        next unless container.at_css('.mod-header').try(:content).to_s.match(/Power/)
+        headers << 'Power Play'
+
+        container.css('tbody tr').each_with_index do |shots, index|
+          total_shots = shots.css('td')[1].content
+
+          away_stats << total_shots if index == 0
+          home_stats << total_shots if index == 1
+        end
+      end
+
+      return {
+        header: headers,
+        away_stats: away_stats,
+        home_stats: home_stats
+      }
+    end
 
     def game_stats_basketball
       headers = []
