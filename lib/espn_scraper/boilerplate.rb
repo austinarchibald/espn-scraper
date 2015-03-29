@@ -33,7 +33,7 @@ module ESPN
     # Ex: ESPN.get('teams', 'nba')
     def get(*path)
       http_url = self.url(*path)
-      response = HTTParty.get(http_url, timeout: 5)
+      response = HTTParty.get(http_url, timeout: 10)
       if response.code == 200
         Nokogiri::HTML(response.body)
       else
