@@ -65,7 +65,7 @@ module ESPN::Schedule
 
           if is_over
             game_info[:result] = tds[starting_index + 2].at_css('.score').content.strip
-            game_info[:win]    = tds[starting_index + 2].at_css('.game-status').content == 'W'
+            game_info[:win]    = tds[starting_index + 2].at_css('.game-status').content == 'W' rescue nil
           else
             game_info[:time] = DateTime.parse("#{game_info[:date].to_s} #{time_string}").utc
           end
