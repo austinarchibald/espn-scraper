@@ -111,8 +111,8 @@ module ESPN
           end
         end
 
-        game_info[:start_time] = event['status']['type']['shortDetail']
         game_info[:state]    = espn_state_to_scraper[event['status']['type']['description']]
+        game_info[:start_time] = event['status']['type']['shortDetail'] if state == 'pregame'
         game_info[:ended_in] = event['status']['type']['description']
         game_info
       end
