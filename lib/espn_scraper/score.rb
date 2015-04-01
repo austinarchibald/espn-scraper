@@ -51,9 +51,7 @@ module ESPN
     end
 
     def nba_scores
-      visitor_home_parse(date).tap do |scores|
-        scores.each { |report| report[:league] = 'nba' }
-      end
+      updated_visitor_home_parse(date)
     end
 
     def nhl_scores
@@ -81,6 +79,36 @@ module ESPN
                                 ESPN.get 'scores', league, "scoreboard?date=#{ day }"
                               end
                             end
+    end
+
+    def updated_visitor_home_parse(date = nil)
+      JSON.parse(markup_from_date.at_css('#scoreboard-page').attributes['data-data'])['events'].map do |event|
+        game_info = {}
+
+        game_info[:game_date] = Date.parse(event['date'])
+        game_info[:league]    = self.league
+        game_info[:boxscore]  = event['id']
+        game_info[:preview]   = event['id']
+
+        current_competition = event['competitions'].detect { |a| Date.parse(a['date']) == Date.today } || event['competitions'].last
+        game_info[:line] = current_competition['odds'].first['details'] rescue byebug
+
+        current_competition['competitors'].each_with_index do |competitor, i|
+          if i == 0
+            game_info[:home_team_rank] = competitor['records'].first['summary']
+            game_info[:hoem_team_rank] = competitor['team']['displayName']
+            game_info[:home_team]      = competitor['team']['abbreviation']
+          else
+            game_info[:away_team_rank] = competitor['records'].first['summary']
+            game_info[:away_team_name] = competitor['team']['displayName']
+            game_info[:away_team]      = competitor['team']['abbreviation']
+          end
+        end
+
+        game_info[:state]    = event['status']['type']['description'] == 'Final' ? 'postgame' : nil
+        game_info[:ended_in] = event['status']['type']['description']
+        game_info
+      end
     end
 
     # parsing strategies
