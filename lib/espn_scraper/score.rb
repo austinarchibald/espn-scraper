@@ -91,17 +91,19 @@ module ESPN
         game_info[:preview]   = event['id']
 
         current_competition = event['competitions'].detect { |a| Date.parse(a['date']) == Date.today } || event['competitions'].last
-        game_info[:line] = current_competition['odds'].first['details'] rescue byebug
+        game_info[:line] = current_competition['odds'].first['details']
 
         current_competition['competitors'].each_with_index do |competitor, i|
           if i == 0
-            game_info[:home_team_rank] = competitor['records'].first['summary']
-            game_info[:hoem_team_rank] = competitor['team']['displayName']
-            game_info[:home_team]      = competitor['team']['abbreviation']
+            game_info[:home_team_record] = competitor['records'].first['summary']
+            game_info[:hoem_team_name]   = competitor['team']['shortDisplayName']
+            game_info[:home_team]        = competitor['team']['abbreviation'].downcase
+            game_info[:home_sore]        = competitor['statistics'].detect { |hash| hash['abbreviation'] == 'PPG' }['displayValue'].to_i
           else
-            game_info[:away_team_rank] = competitor['records'].first['summary']
-            game_info[:away_team_name] = competitor['team']['displayName']
-            game_info[:away_team]      = competitor['team']['abbreviation']
+            game_info[:away_team_record] = competitor['records'].first['summary']
+            game_info[:away_team_name]   = competitor['team']['shortDisplayName']
+            game_info[:away_team]        = competitor['team']['abbreviation'].downcase
+            game_info[:away_score]       = competitor['statistics'].detect { |hash| hash['abbreviation'] == 'PPG' }['displayValue'].to_i
           end
         end
 
