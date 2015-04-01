@@ -107,7 +107,6 @@ module ESPN
           end
         end
 
-        byebug
         game_info[:state]    = event['status']['type']['description'] == 'Final' ? 'postgame' : nil
         game_info[:ended_in] = event['status']['type']['description']
         game_info
