@@ -14,8 +14,26 @@ module ESPN
 
     def get_with_cache
       ESPN::Cache.fetch("get_preview_#{league}_#{game_id}", expires_in: 1.day) do
-        get
+        league == 'nba' ? get_updated : get
       end
+    end
+
+    def get_updated
+      data[:content]    = markup.at_css('.article-body').css('p').map(&:content).join("\n")
+      data[:headline]   = markup.at_css('.article-header h1').content
+      data[:url]        = ESPN.url(path)
+      data[:game_id]    = self.game_id
+      data[:league]     = self.league
+      data[:start_time] = markup.at_css('.time')
+
+      data[:home_team_name]   = markup.at_css('.top-col.home .teamname a').content
+      data[:home_team]        = markup.at_css('.top-col.home .teamshortname a').content
+      data[:away_team]        = markup.at_css('.top-col.away .teamshortname a').content
+      data[:away_team_name]   = markup.at_css('.top-col.away .teamname a').content
+      data[:away_team_record] = markup.at_css('.top-col.away .record').content.gsub("\n", '').gsub("\t", '').strip
+      data[:home_team_record] = markup.at_css('.top-col.home .record').content.gsub("\n", '').gsub("\t", '').strip
+
+      return data
     end
 
     def get
