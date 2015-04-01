@@ -51,7 +51,7 @@ module ESPN
     end
 
     def nba_scores
-      updated_visitor_home_parse(date)
+      updated_visitor_home_parse
     end
 
     def nhl_scores
@@ -81,11 +81,15 @@ module ESPN
                             end
     end
 
-    def updated_visitor_home_parse(date = nil)
+    def updated_visitor_home_parse
+      espn_state_to_scraper = {
+        'Scheduled' => 'pregame',
+        'Final' => 'postgame'
+      }
       JSON.parse(markup_from_date.at_css('#scoreboard-page').attributes['data-data'])['events'].map do |event|
         game_info = {}
 
-        game_info[:game_date] = Date.parse(event['date'])
+        game_info[:game_date] = self.date
         game_info[:league]    = self.league
         game_info[:boxscore]  = event['id']
         game_info[:preview]   = event['id']
@@ -107,7 +111,8 @@ module ESPN
           end
         end
 
-        game_info[:state]    = event['status']['type']['description'] == 'Final' ? 'postgame' : nil
+        game_info[:start_time] = event['status']['type']['shortDetail']
+        game_info[:state]    = espn_state_to_scraper[event['status']['type']['description']]
         game_info[:ended_in] = event['status']['type']['description']
         game_info
       end
