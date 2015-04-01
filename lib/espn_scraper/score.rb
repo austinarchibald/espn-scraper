@@ -96,7 +96,7 @@ module ESPN
         current_competition['competitors'].each_with_index do |competitor, i|
           if i == 0
             game_info[:home_team_record] = competitor['records'].first['summary']
-            game_info[:hoem_team_name]   = competitor['team']['shortDisplayName']
+            game_info[:home_team_name]   = competitor['team']['shortDisplayName']
             game_info[:home_team]        = competitor['team']['abbreviation'].downcase
             game_info[:home_sore]        = competitor['statistics'].detect { |hash| hash['abbreviation'] == 'PPG' }['displayValue'].to_i
           else
@@ -107,6 +107,7 @@ module ESPN
           end
         end
 
+        byebug
         game_info[:state]    = event['status']['type']['description'] == 'Final' ? 'postgame' : nil
         game_info[:ended_in] = event['status']['type']['description']
         game_info
