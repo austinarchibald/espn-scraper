@@ -75,7 +75,7 @@ module ESPN
                               if %w[nfl ncf].include?(league)
                                 ESPN.get ESPN::DateToWeek.find(league, date).uri
                               else
-                                day = date.to_s.gsub(/[^\d]+/, '')
+                                day = date.to_date.to_s.gsub(/[^\d]+/, '')
                                 ESPN.get 'scores', league, "scoreboard?date=#{ day }"
                               end
                             end
