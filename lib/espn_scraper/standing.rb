@@ -25,7 +25,39 @@ module ESPN
     end
 
     def self.find(league, group)
-      new(league, group).get
+      %w[mlb nba].include?(league) ? new(league, group).get_updated : new(league, group).get
+    end
+
+    def get_updated
+      data = {
+        league: self.league,
+        headers: HEADERS[self.league.to_sym],
+        teams: {}
+      }
+      current_key = -1
+
+      markup.css('caption').each do |header|
+        data[:teams][header.content] = []
+      end
+
+      markup.css('.responsive-table-wrap tr').each do |team|
+        if team.children.first.name == 'th'
+          current_key += 1
+          next
+        end
+
+        key = data[:teams].keys[current_key] || data[:teams].keys.last
+        children = team.children
+
+        data[:teams][key] << {
+          team: (children.first.css('a').last.at_css('abbr').content rescue byebug),
+          team_name: children.first.css('a').last.at_css('span').content,
+          league: self.league,
+          stats: get_stats(team)
+        }
+      end
+
+      data
     end
 
     def get
