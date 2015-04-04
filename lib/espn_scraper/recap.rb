@@ -26,8 +26,8 @@ module ESPN
     end
 
     def get
-      data[:content]  = markup.at_css('.article').css('p').map(&:content).join("\n")
-      data[:headline] = markup.at_css('.headline h2').content.gsub("\u00A0", ' ')
+      data[:content]  = markup.at_css('.article-body').css('p').map(&:content).join("\n")
+      data[:headline] = markup.at_css('.article-header h1').content.gsub("\u00A0", ' ')
       data[:url]      = "http://m.espn.go.com/#{league}/gamecast?gameId=#{game_id}&appsrc=sc"
       data[:game_id]  = self.game_id
       data[:league]   = self.league
