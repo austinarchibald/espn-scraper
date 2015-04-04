@@ -38,6 +38,8 @@ module ESPN
       ## Game Info
       info = markup.css('.game-time-location p')
       data[:game_date] = Time.parse(info.first.content)
+      return {} if data[:game_date] > DateTime.now
+
       data[:arena]     = info.last.content.gsub(/\u00A0/, '')
       data[:league]    = self.league
       data[:game_id]   = self.game_id
@@ -100,6 +102,8 @@ module ESPN
                               score_detail_nhl
                             elsif %w[nfl ncf].include?(league)
                               score_detail_nfl
+                            elsif league == 'mlb'
+                              score_detail_mlb
                             end
 
       return data
@@ -181,6 +185,32 @@ module ESPN
           content.content
         end
       end
+    end
+
+    def score_detail_mlb
+      nhl_logo_finder
+      scores = []
+
+      markup.css('.mod-container.mod-open.mod-open-gamepack')[4].css('tr').each do |row|
+        next if row.css('th').any?
+        next if row.css('td').count < 3
+        columns = row.children
+        current_score = []
+
+        cssKlass = columns[0].at_xpath('div').attributes['class'].value.split(' ') rescue byebug
+        current_score << data[:away_team] if cssKlass.include? @away_team_class
+        current_score << data[:home_team] if cssKlass.include? @home_team_class
+
+        current_score << columns[1].content
+        current_score << columns[2].content
+
+        scores << current_score
+      end
+
+      return [{
+        header_info: '',
+        content_info: scores
+      }]
     end
 
     def score_detail_nhl
