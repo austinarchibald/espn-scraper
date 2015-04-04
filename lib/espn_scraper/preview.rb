@@ -14,7 +14,7 @@ module ESPN
 
     def get_with_cache
       ESPN::Cache.fetch("get_preview_#{league}_#{game_id}", expires_in: 1.day) do
-        league == 'nba' ? get_updated : get
+        get_updated
       end
     end
 
