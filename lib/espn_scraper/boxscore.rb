@@ -197,7 +197,7 @@ module ESPN
         columns = row.children
         current_score = []
 
-        cssKlass = columns[0].at_xpath('div').attributes['class'].value.split(' ') rescue byebug
+        cssKlass = columns[0].at_xpath('div').attributes['class'].value.split(' ')
         current_score << data[:away_team] if cssKlass.include? @away_team_class
         current_score << data[:home_team] if cssKlass.include? @home_team_class
 
