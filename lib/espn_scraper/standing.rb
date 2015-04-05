@@ -50,7 +50,7 @@ module ESPN
         children = team.children
 
         data[:teams][key] << {
-          team: (children.first.css('a').last.at_css('abbr').content rescue byebug),
+          team: (children.first.css('a').last.at_css('abbr').content.downcase),
           team_name: children.first.css('a').last.at_css('span').content,
           league: self.league,
           stats: get_stats(team)
