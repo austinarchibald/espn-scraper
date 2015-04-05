@@ -24,7 +24,6 @@ module ESPN
       data[:url]        = ESPN.url(path)
       data[:game_id]    = self.game_id
       data[:league]     = self.league
-      data[:start_time] = markup.at_css('.time')
 
       data[:home_team_name]   = markup.at_css('.top-col.home .teamname a').content
       data[:home_team]        = markup.at_css('.top-col.home .teamshortname a').content
