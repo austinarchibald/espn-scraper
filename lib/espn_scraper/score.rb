@@ -45,9 +45,7 @@ module ESPN
     end
 
     def mlb_scores
-      nhl_mlb_scores.tap do |scores|
-        scores.each { |report| report[:league] = 'mlb' }
-      end
+      updated_visitor_home_parse
     end
 
     def nba_scores
@@ -96,22 +94,22 @@ module ESPN
 
         current_competition = event['competitions'].detect { |a| Date.parse(a['date']) == Date.today } || event['competitions'].last
         game_info[:line] = current_competition['odds'].first['details']
+        game_info[:state]    = espn_state_to_scraper[event['status']['type']['description']]
 
-        current_competition['competitors'].each_with_index do |competitor, i|
-          if i == 0
+        current_competition['competitors'].each_with_index do |competitor, index|
+          if index == 0
             game_info[:home_team_record] = competitor['records'].first['summary']
             game_info[:home_team_name]   = competitor['team']['shortDisplayName']
             game_info[:home_team]        = competitor['team']['abbreviation'].downcase
-            game_info[:home_score]       = competitor['statistics'].detect { |hash| hash['abbreviation'] == 'PPG' }['displayValue'].to_i
+            game_info[:home_score]       = (competitor['statistics'].detect { |hash| hash['abbreviation'] == 'PPG' }['displayValue'].to_i unless game_info[:state] == 'pregame')
           else
             game_info[:away_team_record] = competitor['records'].first['summary']
             game_info[:away_team_name]   = competitor['team']['shortDisplayName']
             game_info[:away_team]        = competitor['team']['abbreviation'].downcase
-            game_info[:away_score]       = competitor['statistics'].detect { |hash| hash['abbreviation'] == 'PPG' }['displayValue'].to_i
+            game_info[:away_score]       = (competitor['statistics'].detect { |hash| hash['abbreviation'] == 'PPG' }['displayValue'].to_i unless game_info[:state] == 'pregame')
           end
         end
 
-        game_info[:state]    = espn_state_to_scraper[event['status']['type']['description']]
         game_info[:start_time] = event['status']['type']['shortDetail'] if game_info[:state] == 'pregame'
         game_info[:ended_in] = event['status']['type']['description']
         game_info
