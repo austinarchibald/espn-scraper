@@ -97,24 +97,18 @@ module ESPN
         game_info[:state]    = espn_state_to_scraper[event['status']['type']['description']]
 
         current_competition['competitors'].each_with_index do |competitor, index|
+          score_index = league == 'mlb' ? 1 : 9
+
           if index == 0
             game_info[:home_team_record] = competitor['records'].first['summary']
             game_info[:home_team_name]   = competitor['team']['shortDisplayName']
             game_info[:home_team]        = competitor['team']['abbreviation'].downcase
-            if league == 'mlb'
-              game_info[:home_score]       = competitor['statistics'][1]['displayValue'].to_i unless game_info[:state] == 'pregame'
-            else
-              game_info[:home_score]       = (competitor['statistics'].detect { |hash| hash['abbreviation'] == 'PPG' }['displayValue'].to_i unless game_info[:state] == 'pregame')
-            end
+            game_info[:home_score]       = competitor['statistics'][score_index]['displayValue'].to_i unless game_info[:state] == 'pregame'
           else
             game_info[:away_team_record] = competitor['records'].first['summary']
             game_info[:away_team_name]   = competitor['team']['shortDisplayName']
             game_info[:away_team]        = competitor['team']['abbreviation'].downcase
-            if league == 'mlb'
-              game_info[:away_score]       = competitor['statistics'][1]['displayValue'].to_i unless game_info[:state] == 'pregame'
-            else
-              game_info[:away_score]       = (competitor['statistics'].detect { |hash| hash['abbreviation'] == 'PPG' }['displayValue'].to_i unless game_info[:state] == 'pregame')
-            end
+            game_info[:away_score]       = competitor['statistics'][score_index]['displayValue'].to_i unless game_info[:state] == 'pregame'
           end
         end
 
