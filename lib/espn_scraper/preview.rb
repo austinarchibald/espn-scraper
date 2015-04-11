@@ -25,10 +25,10 @@ module ESPN
       data[:game_id]    = self.game_id
       data[:league]     = self.league
 
-      data[:home_team_name]   = markup.at_css('.top-col.home .teamname a').content
-      data[:home_team]        = markup.at_css('.top-col.home .teamshortname a').content
-      data[:away_team]        = markup.at_css('.top-col.away .teamshortname a').content
-      data[:away_team_name]   = markup.at_css('.top-col.away .teamname a').content
+      data[:home_team_name]   = markup.at_css('.top-col.home span.teamname').content.strip
+      data[:home_team]        = markup.at_css('.top-col.home span.teamshortname').content.strip.downcase
+      data[:away_team]        = markup.at_css('.top-col.away span.teamshortname').content.strip.downcase
+      data[:away_team_name]   = markup.at_css('.top-col.away span.teamname').content.strip
       data[:away_team_record] = markup.at_css('.top-col.away .record').content.gsub("\n", '').gsub("\t", '').strip
       data[:home_team_record] = markup.at_css('.top-col.home .record').content.gsub("\n", '').gsub("\t", '').strip
 
