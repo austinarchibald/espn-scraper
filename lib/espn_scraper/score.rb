@@ -82,6 +82,7 @@ module ESPN
     def updated_visitor_home_parse
       espn_state_to_scraper = {
         'Scheduled' => 'pregame',
+        'In Progress' => 'in-progress',
         'Final' => 'postgame'
       }
       JSON.parse(markup_from_date.at_css('#scoreboard-page').attributes['data-data'])['events'].map do |event|
@@ -112,8 +113,9 @@ module ESPN
           end
         end
 
+        game_info[:time_remaining] = event['status']['type']['shortDetail'] if game_info[:state] == 'in-progress'
         game_info[:start_time] = event['status']['type']['shortDetail'] if game_info[:state] == 'pregame'
-        game_info[:ended_in] = event['status']['type']['description']
+        game_info[:ended_in] = event['status']['type']['description'] if game_info[:state] == 'postgame'
         game_info
       end
     end
