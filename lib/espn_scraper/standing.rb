@@ -34,12 +34,24 @@ module ESPN
         headers: HEADERS[self.league.to_sym],
         teams: {}
       }
-      current_key = -1
 
-      markup.css('caption').each do |header|
-        data[:teams][header.content] = []
+      if league == 'mlb'
+        markup.css('table.standings').each do |header_table|
+          starting_caption = header_table.at_css('caption').content
+
+          header_table.css('tr').each do |header|
+            next unless header.children.first.name == 'th'
+
+            data[:teams]["#{starting_caption} #{header.children.first.content}"] = []
+          end
+        end
+      else
+        markup.css('caption').each do |header|
+          data[:teams][header.content] = []
+        end
       end
 
+      current_key = -1
       markup.css('.responsive-table-wrap tr').each do |team|
         if team.children.first.name == 'th'
           current_key += 1
