@@ -25,7 +25,7 @@ module ESPN
       data[:game_id]    = self.game_id
       data[:league]     = self.league
 
-      data[:start_time]       = DateTime.parse(markup.at_css('.dateWrapper').attributes['data-date']).in_time_zone("EST").strftime("%l-%M %p ET")
+      data[:start_time]       = markup.at_css('.dateWrapper').attributes['data-date'].content
       data[:home_team_name]   = markup.at_css('.top-col.home span.teamname').content.strip
       data[:home_team]        = markup.at_css('.top-col.home span.teamshortname').content.strip.downcase
       data[:away_team]        = markup.at_css('.top-col.away span.teamshortname').content.strip.downcase
