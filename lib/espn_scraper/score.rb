@@ -93,8 +93,8 @@ module ESPN
         game_info[:boxscore]  = event['id']
         game_info[:preview]   = event['id']
 
-        current_competition = event['competitions'].detect { |a| Date.parse(a['date']) == Date.today } || event['competitions'].last
-        game_info[:line] = current_competition['odds'].first['details']
+        current_competition  = event['competitions'].detect { |a| Date.parse(a['date']) == Date.today } || event['competitions'].last
+        game_info[:line]     = current_competition['odds'].first['details'] rescue nil
         game_info[:state]    = espn_state_to_scraper[event['status']['type']['description']]
 
         current_competition['competitors'].each_with_index do |competitor, index|
