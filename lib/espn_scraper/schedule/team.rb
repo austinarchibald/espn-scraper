@@ -85,7 +85,7 @@ module ESPN::Schedule
     end
 
     def markup
-      @markup ||= ESPN.get "#{league}/team/schedule/_/#{by}/#{name}"
+      @markup ||= ESPN.get "#{league}/team/schedule/_/#{by}/#{name}/year/#{Date.today.year}"
     end
   end
 end
