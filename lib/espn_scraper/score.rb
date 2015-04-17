@@ -140,8 +140,10 @@ module ESPN
           game_info[:game_date]      = date ? date : game_dates[i]
           game_info[:home_team]      = ESPN.parse_data_name_from game.at_css('.home .team-name')
           game_info[:home_team_name] = game.at_css('.home .team-name a').content.strip rescue game.at_css(".#{visitorKlass} .team-name").content
+          game_info[:home_team_abbr] = game_info[:home_team].upcase
           game_info[:away_team]      = ESPN.parse_data_name_from game.at_css(".#{visitorKlass} .team-name")
           game_info[:away_team_name] = game.at_css(".#{visitorKlass} .team-name a").content.strip rescue game.at_css(".#{visitorKlass} .team-name").content
+          game_info[:away_team_abbr] = game_info[:away_team].upcase
 
           next unless teams.include?(game_info[:home_team]) && teams.include?(game_info[:away_team])
 
@@ -244,6 +246,8 @@ module ESPN
                    game.css('.finalScore')[1..2].map { |s| s.content.to_i }
                  end
         game_info[:away_score], game_info[:home_score] = scores
+        game_info[:away_team_abbr] = game_info[:away_team].upcase
+        game_info[:home_team_abbr] = game_info[:home_team].upcase
 
         ## Scores, Start time, etc.
         timeCssKlass = league == 'nhl' ? '.game-info li' : '.game-status'
