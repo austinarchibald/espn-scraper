@@ -19,7 +19,6 @@ module ESPN
     end
 
     def get
-      byebug
       data[:content]    = markup.at_css('.article-body').css('p').map(&:content).join("\n")
       data[:headline]   = markup.at_css('.article-header h1').content
       data[:url]        = ESPN.url(path)
