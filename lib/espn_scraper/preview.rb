@@ -19,11 +19,13 @@ module ESPN
     end
 
     def get
+      byebug
       data[:content]    = markup.at_css('.article-body').css('p').map(&:content).join("\n")
       data[:headline]   = markup.at_css('.article-header h1').content
       data[:url]        = ESPN.url(path)
       data[:game_id]    = self.game_id
       data[:league]     = self.league
+      data[:photo]      = markup.at_css('picture img').attributes['data-default-src'].value
 
       data[:start_time]       = markup.at_css('.dateWrapper').attributes['data-date'].content
       data[:home_team_name]   = markup.at_css('.top-col.home span.teamname').content.strip
