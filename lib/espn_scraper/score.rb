@@ -1,4 +1,3 @@
-require 'byebug'
 require 'active_support/time'
 require 'addressable/uri'
 require 'cgi'
