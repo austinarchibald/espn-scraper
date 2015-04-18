@@ -24,7 +24,7 @@ module ESPN
       data[:url]        = ESPN.url(path)
       data[:game_id]    = self.game_id
       data[:league]     = self.league
-      data[:photo]      = markup.at_css('picture img').attributes['data-default-src'].value
+      data[:photo]      = markup.at_css('article').at_css('picture img').attributes['data-default-src'].value if markup.at_css('article').at_css('picture img')
 
       data[:start_time]       = markup.at_css('.dateWrapper').attributes['data-date'].content
       data[:home_team_name]   = markup.at_css('.top-col.home span.teamname').content.strip

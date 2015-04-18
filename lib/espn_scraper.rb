@@ -6,6 +6,7 @@ require_relative 'espn_scraper/schedule/league'
 require_relative 'espn_scraper/schedule/team'
 
 require_relative 'espn_scraper/railtie' if defined?(Rails)
+require 'byebug' if ENV['RACK_ENV'] == 'development'
 
 module ESPN
   LEAGUES = [
