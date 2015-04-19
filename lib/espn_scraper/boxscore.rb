@@ -133,16 +133,21 @@ module ESPN
       ## Power Play
       markup.css('.mod-container').each do |container|
         next unless container.at_css('.mod-header').try(:content).to_s.match(/Power/)
-        headers << 'Power Play'
 
+        away_power_play = nil
+        home_power_play = nil
         container.css('tbody tr').each_with_index do |shots, index|
-          total_shots = shots.css('td')[1].content
-          empty_string = '0 of 0'
+          power_plays = shots.css('td')[1].content
 
-          away_stats << (total_shots.present? ? total_shots : empty_string) if index == 0
-          home_stats << (total_shots.present? ? total_shots : empty_string) if index == 1
+          away_power_play = power_plays if index == 0
+          home_power_play = power_plays if index == 0
         end
 
+        if away_power_play.present? && home_power_play.present?
+          headers << 'Power Play'
+          away_stats << away_power_play
+          home_stats << home_power_play
+        end
       end
 
       return {
