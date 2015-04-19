@@ -117,10 +117,16 @@ module ESPN
       home_stats = []
 
       markup.css('.mod-data.mod-pbp tr.even td table').each do |stat|
-        headers << stat.at_css('strong').content
+        header    = stat.at_css('strong').content
+        away_stat = stat.css('tr')[1].content.gsub(/\u00A0/, '')
+        home_stat = stat.css('tr')[2].content.gsub(/\u00A0/, '')
 
-        away_stats << stat.css('tr')[1].content.gsub(/\u00A0/, '')
-        home_stats << stat.css('tr')[2].content.gsub(/\u00A0/, '')
+        if header.present? && away_stat.present? && home_stat.present?
+          headers << header
+
+          away_stats << away_stat
+          home_stats << home_stat
+        end
       end
 
       markup.css('.mod-container').each do |container|
