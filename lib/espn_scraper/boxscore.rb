@@ -38,7 +38,7 @@ module ESPN
       ## Game Info
       info = markup.css('.game-time-location p')
       data[:game_date] = Time.parse(info.first.content)
-      return {} if data[:game_date] > DateTime.now
+      #return {} if data[:game_date] > DateTime.now
 
       data[:arena]     = info.last.content.gsub(/\u00A0/, '')
       data[:league]    = self.league
@@ -116,6 +116,7 @@ module ESPN
       away_stats = []
       home_stats = []
 
+      ## All others
       markup.css('.mod-data.mod-pbp tr.even td table').each do |stat|
         header    = stat.at_css('strong').content
         away_stat = stat.css('tr')[1].content.gsub(/\u00A0/, '')
@@ -129,16 +130,19 @@ module ESPN
         end
       end
 
+      ## Power Play
       markup.css('.mod-container').each do |container|
         next unless container.at_css('.mod-header').try(:content).to_s.match(/Power/)
         headers << 'Power Play'
 
         container.css('tbody tr').each_with_index do |shots, index|
           total_shots = shots.css('td')[1].content
+          empty_string = '0 of 0'
 
-          away_stats << total_shots if index == 0
-          home_stats << total_shots if index == 1
+          away_stats << (total_shots.present? ? total_shots : empty_string) if index == 0
+          home_stats << (total_shots.present? ? total_shots : empty_string) if index == 1
         end
+
       end
 
       return {
