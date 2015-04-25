@@ -94,7 +94,7 @@ module ESPN
 
         current_competition  = event['competitions'].detect { |a| Date.parse(a['date']) == Date.today } || event['competitions'].last
         game_info[:line]     = current_competition['odds'].first['details'] rescue nil
-        game_info[:state]    = espn_state_to_scraper[event['status']['type']['description']]
+        game_info[:state]    = espn_state_to_scraper[event['status']['type']['description']] || espn_state_to_scraper['Scheduled']
 
         current_competition['competitors'].each_with_index do |competitor, index|
           score_index = league == 'mlb' ? 1 : 9
@@ -103,7 +103,7 @@ module ESPN
             game_info[:home_team_record] = competitor['records'].first['summary']
             game_info[:home_team_name]   = competitor['team']['shortDisplayName']
             game_info[:home_team]        = competitor['team']['abbreviation'].downcase
-            game_info[:home_score]       = competitor['statistics'][score_index]['displayValue'].to_i unless game_info[:state] == 'pregame'
+            game_info[:home_score]       = competitor['statistics'][score_index]['displayValue'].to_i unless game_info[:state] == 'pregame' rescue byebug
           else
             game_info[:away_team_record] = competitor['records'].first['summary']
             game_info[:away_team_name]   = competitor['team']['shortDisplayName']
@@ -220,6 +220,7 @@ module ESPN
         if league == 'mlb'
           game_info[:away_team_logo] = game.at_css(".team.away .logo-small img")['src'].gsub("=50", "=200")
           game_info[:home_team_logo] = game.at_css('.team.home .logo-small img')['src'].gsub("=50", "=200")
+        elsif league == 'nhl'
         end
 
         ## Records
