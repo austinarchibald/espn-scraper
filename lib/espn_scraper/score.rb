@@ -113,7 +113,7 @@ module ESPN
         end
 
         game_info[:time_remaining] = event['status']['type']['shortDetail'] if game_info[:state] == 'in-progress'
-        game_info[:start_time] = event['status']['type']['shortDetail'].match(/\d.*/) if game_info[:state] == 'pregame'
+        game_info[:start_time] = event['status']['type']['shortDetail'].match(/\d.*/).to_s if game_info[:state] == 'pregame'
         game_info[:ended_in] = event['status']['type']['description'] if game_info[:state] == 'postgame'
         game_info
       end
