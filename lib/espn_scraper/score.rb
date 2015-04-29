@@ -113,8 +113,8 @@ module ESPN
         end
 
         if league == 'mlb'
-          game_info[:time_remaining] = event['status']['type']['shortDetail'].split(" ")[1].strip if game_info[:state] == 'in-progress'
-          game_info[:progress] = event['status']['type']['shortDetail'].split(" ")[0].strip if game_info[:state] == 'in-progress'
+          game_info[:time_remaining] = event['status']['type']['shortDetail'].split(" ")[0].strip if game_info[:state] == 'in-progress'
+          game_info[:progress] = event['status']['type']['shortDetail'].split(" ")[1].strip if game_info[:state] == 'in-progress'
         else
           game_info[:time_remaining] = event['status']['type']['shortDetail'].split("-")[0].strip if game_info[:state] == 'in-progress'
           game_info[:progress] = event['status']['type']['shortDetail'].split("-")[1].strip if game_info[:state] == 'in-progress'
