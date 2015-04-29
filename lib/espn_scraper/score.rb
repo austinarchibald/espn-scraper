@@ -112,8 +112,14 @@ module ESPN
           end
         end
 
-        game_info[:time_remaining] = event['status']['type']['shortDetail'].split("-")[0].strip if game_info[:state] == 'in-progress'
-        game_info[:progress] = event['status']['type']['shortDetail'].split("-")[1].strip if game_info[:state] == 'in-progress'
+        if league == 'mlb'
+          game_info[:time_remaining] = event['status']['type']['shortDetail'].split(" ")[1].strip if game_info[:state] == 'in-progress'
+          game_info[:progress] = event['status']['type']['shortDetail'].split(" ")[0].strip if game_info[:state] == 'in-progress'
+        else
+          game_info[:time_remaining] = event['status']['type']['shortDetail'].split("-")[0].strip if game_info[:state] == 'in-progress'
+          game_info[:progress] = event['status']['type']['shortDetail'].split("-")[1].strip if game_info[:state] == 'in-progress'
+        end
+
         game_info[:start_time] = event['status']['type']['shortDetail'].match(/\d.*/).to_s if game_info[:state] == 'pregame'
         game_info[:ended_in] = event['status']['type']['description'] if game_info[:state] == 'postgame'
         game_info
