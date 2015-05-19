@@ -71,9 +71,14 @@ module ESPN
       @markup_from_date ||= begin
                               if %w[nfl ncf].include?(league)
                                 ESPN.get ESPN::DateToWeek.find(league, date).uri
+                              elsif %w[mlb nba].include?(league)
+                                league_string = league == 'mlb' ? 'baseball' : 'basketball'
+                                day = date.to_date.to_s.gsub(/[^\d]+/, '')
+                                http_url = "http://site.api.espn.com/apis/site/v2/sports/#{league_string}/#{league}/scoreboard?dates=#{day}"
+                                Nokogiri::HTML( HTTParty.get(http_url, timeout: 10).body)
                               else
                                 day = date.to_date.to_s.gsub(/[^\d]+/, '')
-                                ESPN.get 'scores', league, "scoreboard?date=#{ day }"
+                                ESPN.get('scores', league, "scoreboard?date=#{ day }")
                               end
                             end
     end
@@ -84,7 +89,7 @@ module ESPN
         'In Progress' => 'in-progress',
         'Final' => 'postgame'
       }
-      JSON.parse(markup_from_date.at_css('#scoreboard-page').attributes['data-data'])['events'].map do |event|
+      JSON.parse(markup_from_date)['events'].map do |event|
         game_info = {}
 
         game_info[:game_date] = self.date
